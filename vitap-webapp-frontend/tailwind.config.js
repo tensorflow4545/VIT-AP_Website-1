@@ -16,6 +16,7 @@ module.exports = {
       fontFamily: {
         // libre :  "'Libre Baskerville', serif",
         Emilo: "'Emilio Test', serif", 
+        Montserrant: "'Montserrat', sans-serif"
       },
       screens: {
         sm: "20px",
