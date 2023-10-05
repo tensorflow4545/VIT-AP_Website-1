@@ -4,7 +4,7 @@ import NavbarBottom from "@/components/HomePage Components/Navbar/NavbarBottom";
 import NavbarUpper from "@/components/HomePage Components/Navbar/NavbarUpper";
 import axios from "axios";
 import Image from "next/image";
-import headerimage from "../assets/images/Homepage Images/HeaderImage2.png";
+import HeroSection from "@/components/HomePage Components/Hero Section/HeroSection";
 
 export default function Home() {
   useEffect(() => {
@@ -21,10 +21,8 @@ export default function Home() {
     <>
       <NavbarUpper />
       <NavbarBottom />
+      <HeroSection/>
 
-      <div className="w-full h-auto object-cover">
-        <Image src={headerimage} alt="university image" className="w-full" />
-      </div>
     </>
   );
 }
