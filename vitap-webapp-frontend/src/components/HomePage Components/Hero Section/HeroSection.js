@@ -5,7 +5,7 @@ import { BsArrowRight } from "react-icons/bs";
 const HeroSection = () => {
   return (
     <>
-      <div className="z-0 absolute top-[352px] left-[108px] ls:text-[60px] md:text-[78px] text-white font-Emilo ls:w-[400px] md:w-[600px]">
+      <div className="z-0 absolute top-[352px] left-[108px] ls:text-[60px] md:text-[78px] text-white font-Emilo ls:w-[400px] md:w-[600px] ">
         <h1>
           Welcome to <br /> VIT-AP{" "}
           <u

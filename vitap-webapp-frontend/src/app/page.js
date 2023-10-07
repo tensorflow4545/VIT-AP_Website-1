@@ -5,6 +5,8 @@ import NavbarUpper from "@/components/HomePage Components/Navbar/NavbarUpper";
 import axios from "axios";
 import Image from "next/image";
 import HeroSection from "@/components/HomePage Components/Hero Section/HeroSection";
+import About from "@/components/HomePage Components/About VIT-AP Section/About";
+import OurSchools from "@/components/HomePage Components/Our Schools Section/OurSchools";
 
 export default function Home() {
   useEffect(() => {
@@ -22,6 +24,8 @@ export default function Home() {
       <NavbarUpper />
       <NavbarBottom />
       <HeroSection/>
+      <About/>
+      <OurSchools/>
 
     </>
   );
