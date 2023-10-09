@@ -1,4 +1,5 @@
-import headerimage from "../../../assets/images/Homepage Images";
+import Image from "next/image";
+import headerimage from "../../../assets/images/Homepage Images/HeaderImage.png";
 const HeroSection = () => {
   return (
     <>
