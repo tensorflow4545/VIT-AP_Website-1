@@ -6,6 +6,7 @@ import axios from "axios";
 import Image from "next/image";
 import HeroSection from "@/components/HomePage Components/Hero Section/HeroSection";
 import ResearchInnovation from "@/components/HomePage Components/Research and Innovation Section/ResearchInnovation";
+import OurEvents from "@/components/HomePage Components/Our Events Section/OurEvents";
 
 export default function Home() {
   useEffect(() => {
@@ -23,6 +24,7 @@ export default function Home() {
       <NavbarUpper />
       <NavbarBottom />
       <HeroSection/>
+      <OurEvents />
       <ResearchInnovation />
     </>
   );
