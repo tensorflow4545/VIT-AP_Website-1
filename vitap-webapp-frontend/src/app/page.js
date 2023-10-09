@@ -20,9 +20,9 @@ export default function Home() {
 
   return (
     <>
-      {/* <NavbarUpper />
+      <NavbarUpper />
       <NavbarBottom />
-      <HeroSection/> */}
+      <HeroSection/>
       <ResearchInnovation />
     </>
   );
