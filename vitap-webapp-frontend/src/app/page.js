@@ -7,6 +7,8 @@ import Image from "next/image";
 import HeroSection from "@/components/HomePage Components/Hero Section/HeroSection";
 import ResearchInnovation from "@/components/HomePage Components/Research and Innovation Section/ResearchInnovation";
 import OurEvents from "@/components/HomePage Components/Our Events Section/OurEvents";
+import About from "@/components/HomePage Components/About VIT-AP Section/About";
+import OurSchools from "@/components/HomePage Components/Our Schools Section/OurSchools";
 
 export default function Home() {
   useEffect(() => {
@@ -26,6 +28,8 @@ export default function Home() {
       <HeroSection/>
       <OurEvents />
       <ResearchInnovation />
+      <About/>
+      <OurSchools/>
     </>
   );
 }

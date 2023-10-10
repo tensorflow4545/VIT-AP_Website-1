@@ -15,6 +15,9 @@ module.exports = {
       // },
       fontFamily: {
         // libre :  "'Libre Baskerville', serif",
+        Emilo: "'Emilio Test', serif", 
+        Montserrant: "'Montserrat', sans-serif",
+        Inter : "'Inter', sans-serif"
       },
       screens: {
         sm: "20px",
@@ -29,6 +32,7 @@ module.exports = {
       colors: {
         primary : "#650010", //maroon
         backgroundRed: "rgba(92, 14, 20, 0.20)",
+        secondary: "#1B1C1E",
       },
     },
   },
