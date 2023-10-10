@@ -25,11 +25,11 @@ export default function Home() {
     <>
       <NavbarUpper />
       <NavbarBottom />
-      <HeroSection/>
+      <HeroSection />
+      <About />
+      <OurSchools />
       <OurEvents />
       <ResearchInnovation />
-      <About/>
-      <OurSchools/>
     </>
   );
 }
