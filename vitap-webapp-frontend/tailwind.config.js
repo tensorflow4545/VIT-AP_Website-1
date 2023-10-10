@@ -22,13 +22,16 @@ module.exports = {
       screens: {
         sm: "20px",
         ls: "640px",
+        lx: "880px",
         md: "1220px",
         lg: "1224px",
         xl: "1280px",
+        xxl: "1440px",
         "2xl": "1536px",
       },
       colors: {
         primary : "#650010", //maroon
+        backgroundRed: "rgba(92, 14, 20, 0.20)",
         secondary: "#1B1C1E",
       },
     },
