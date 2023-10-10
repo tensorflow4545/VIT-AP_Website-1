@@ -1,7 +1,6 @@
 import Image from "next/image";
 import headerimage from "../../../assets/images/Homepage Images/HeaderImage.png";
-import headerimage from "../../../assets/images/Homepage Images/HeaderImage2.png";
-import Image from "next/image";
+import headerimage2 from "../../../assets/images/Homepage Images/HeaderImage2.png";
 import { BsArrowRight } from "react-icons/bs";
 
 const HeroSection = () => {
