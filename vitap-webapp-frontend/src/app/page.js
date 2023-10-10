@@ -9,6 +9,7 @@ import ResearchInnovation from "@/components/HomePage Components/Research and In
 import OurEvents from "@/components/HomePage Components/Our Events Section/OurEvents";
 import About from "@/components/HomePage Components/About VIT-AP Section/About";
 import OurSchools from "@/components/HomePage Components/Our Schools Section/OurSchools";
+import ProgrammesOffered from "@/components/HomePage Components/Programmes Offered Section/ProgrammesOffered";
 
 export default function Home() {
   useEffect(() => {
@@ -28,6 +29,7 @@ export default function Home() {
       <HeroSection />
       <About />
       <OurSchools />
+      <ProgrammesOffered />
       <OurEvents />
       <ResearchInnovation />
     </>

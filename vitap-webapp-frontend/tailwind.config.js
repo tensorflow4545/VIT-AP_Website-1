@@ -2,9 +2,9 @@
 
 module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -15,9 +15,9 @@ module.exports = {
       // },
       fontFamily: {
         // libre :  "'Libre Baskerville', serif",
-        Emilo: "'Emilio Test', serif", 
+        Emilo: "'Emilio Test', serif",
         Montserrant: "'Montserrat', sans-serif",
-        Inter : "'Inter', sans-serif"
+        Inter: "'Inter', sans-serif",
       },
       screens: {
         sm: "20px",
@@ -30,12 +30,12 @@ module.exports = {
         "2xl": "1536px",
       },
       colors: {
-        primary : "#650010", //maroon
+        primary: "#650010", //maroon
         backgroundRed: "rgba(92, 14, 20, 0.20)",
         secondary: "#1B1C1E",
       },
     },
   },
 
-  plugins: [],
-}
+  plugins: [require("tailwind-scrollbar")],
+};
