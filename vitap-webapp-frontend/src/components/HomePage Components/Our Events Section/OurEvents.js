@@ -1,8 +1,13 @@
+"use client";
+
 import { eventsMain } from '@/constants';
-import React from 'react'
+import React, { useState } from 'react'
 import Card from './Card';
 
 const OurEvents = () => {
+
+  const [active, setActive] = useState(false);
+
   return (
     <>
       <div className="flex flex-col min-h-[800px] max-xxl:min-h-[1100px] max-md:min-h-[1200px] max-lx:min-h-[1300px]">
@@ -11,7 +16,7 @@ const OurEvents = () => {
             <h1 className="text-[#51060D] text-[48px] font-bold max-lx:text-[32px]">
               Our Events
             </h1>
-            <div className="flex flex-row gap-2 items-center justify-center">
+            <div className="flex flex-row gap-2 items-center justify-center hover:bg-white transition-all duration-300 ease-in">
               <h1 className="text-[#5C0E14] text-[18px] font-semibold max-lx:text-[15px]">
                 See all
               </h1>
@@ -38,7 +43,9 @@ const OurEvents = () => {
                 <h1>04 Apr</h1>
               </div>
               <div className="flex-2 w-full">
-                <h1 className="font-bold text-[18px]">CSI Meet’n Greet’23</h1>
+                <h1 className="font-bold text-[18px] hover:underline hover:underline-offset-4 ">
+                  CSI Meet’n Greet’23
+                </h1>
                 <p className="max-w-[280px] max-lx:max-w-[360px] font-normal text-[16px]">
                   Lorem ipsum dolor sit amet consectetur. A nulla donec cursus
                   tincidunt
@@ -50,7 +57,9 @@ const OurEvents = () => {
                 <h1>04 Apr</h1>
               </div>
               <div className="flex-2 w-full">
-                <h1 className="font-bold text-[18px]">CSI Meet’n Greet’23</h1>
+                <h1 className="font-bold text-[18px] hover:underline hover:underline-offset-4">
+                  CSI Meet’n Greet’23
+                </h1>
                 <p className="max-w-[280px] max-lx:max-w-[360px] font-normal text-[16px]">
                   Lorem ipsum dolor sit amet consectetur. A nulla donec cursus
                   tincidunt
@@ -62,7 +71,9 @@ const OurEvents = () => {
                 <h1>04 Apr</h1>
               </div>
               <div className="flex-2 w-full">
-                <h1 className="font-bold text-[18px]">CSI Meet’n Greet’23</h1>
+                <h1 className="font-bold text-[18px] hover:underline hover:underline-offset-4">
+                  CSI Meet’n Greet’23
+                </h1>
                 <p className="max-w-[280px] max-lx:max-w-[360px] font-normal text-[16px]">
                   Lorem ipsum dolor sit amet consectetur. A nulla donec cursus
                   tincidunt
@@ -74,7 +85,9 @@ const OurEvents = () => {
                 <h1>04 Apr</h1>
               </div>
               <div className="flex-2 w-full">
-                <h1 className="font-bold text-[18px]">CSI Meet’n Greet’23</h1>
+                <h1 className="font-bold text-[18px] hover:underline hover:underline-offset-4">
+                  CSI Meet’n Greet’23
+                </h1>
                 <p className="max-w-[280px] max-lx:max-w-[360px] font-normal text-[16px]">
                   Lorem ipsum dolor sit amet consectetur. A nulla donec cursus
                   tincidunt
@@ -86,7 +99,9 @@ const OurEvents = () => {
                 <h1>04 Apr</h1>
               </div>
               <div className="flex-2 w-full">
-                <h1 className="font-bold text-[18px]">CSI Meet’n Greet’23</h1>
+                <h1 className="font-bold text-[18px] hover:underline hover:underline-offset-4">
+                  CSI Meet’n Greet’23
+                </h1>
                 <p className="max-w-[280px] max-lx:max-w-[360px] font-normal text-[16px]">
                   Lorem ipsum dolor sit amet consectetur. A nulla donec cursus
                   tincidunt
@@ -98,7 +113,9 @@ const OurEvents = () => {
                 <h1>04 Apr</h1>
               </div>
               <div className="flex-2 w-full">
-                <h1 className="font-bold text-[18px]">CSI Meet’n Greet’23</h1>
+                <h1 className="font-bold text-[18px] hover:underline hover:underline-offset-4">
+                  CSI Meet’n Greet’23
+                </h1>
                 <p className="max-w-[280px] max-lx:max-w-[360px] font-normal text-[16px]">
                   Lorem ipsum dolor sit amet consectetur. A nulla donec cursus
                   tincidunt
