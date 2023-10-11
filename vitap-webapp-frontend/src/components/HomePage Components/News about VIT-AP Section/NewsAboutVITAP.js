@@ -8,16 +8,18 @@ const News = () => {
   return (
     <>
       <div className="bg-[#51060D] h-[964px]">
-        <div>
-          <h2 className="text-[#FFFFFF] font-Emilo text-[67px] ml-[108px] mt-[104px]">
-            News about VIT-AP
-          </h2>
-        </div>
-        <button className="text-[#FFFFFF] font-Montserrant ml-[1225px] relative">
-          See all
-        </button>
         <div className="flex">
-          <div className="w-[392px] h-[639px] bg-[#FFE1E3] ml-[108px] mt-[52px]">
+          <div className="ml-[108px] mt-[104px]">
+            <h2 className="text-[#FFFFFF] font-Emilo text-[67px] w-[550px]">
+              News about VIT-AP
+            </h2>
+          </div>
+          <div className="flex justify-end pt-[125px] ml-[674px]">
+            <h1 className="text-[#FFFFFF] text-[25px]">See all</h1>
+          </div>
+        </div>
+        <div className="flex ml-[108px] mt-[52px]">
+          <div className="w-[392px] h-[639px] bg-[#FFE1E3]">
             <Image
               src={news1}
               width={392}
@@ -46,7 +48,7 @@ const News = () => {
               </p>
             </button>
           </div>
-          <div className="w-[392px] h-[639px] bg-[#FFE1E3] ml-[24px] mt-[52px]">
+          <div className="w-[392px] h-[639px] bg-[#FFE1E3] ml-[24px]">
             <Image
               src={news1}
               width={392}
@@ -75,7 +77,7 @@ const News = () => {
               </p>
             </button>
           </div>
-          <div className="w-[392px] h-[639px] bg-[#FFE1E3] ml-[24px] mt-[52px]">
+          <div className="w-[392px] h-[639px] bg-[#FFE1E3] ml-[24px]">
             <Image
               src={news1}
               width={392}
