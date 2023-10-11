@@ -2,9 +2,10 @@
 
 import React, { useState } from "react";
 import { programmesOffered } from "@/constants";
+import { BiSolidDownArrow } from "react-icons/bi";
 
 const ProgrammesOffered = () => {
-  const [active, setActive] = useState("integrated");
+  const [active, setActive] = useState("undergraduate");
 
   return (
     <div className="w-full flex min-h-[960px] pr-[40px] max-lx:pr-[20px] pt-[40px] text-white">
@@ -53,22 +54,24 @@ const ProgrammesOffered = () => {
           </h1>
         </div>
       </div>
-      <div className="flex flex-col flex-[50%] bg-[#E6CFCF] min-h-[750px] overflow-auto my-auto z-10 relative max-w-[680px] scrollbar-thin scrollbar-thumb-red-900">
+      <div className="flex flex-col flex-[50%] bg-[#E6CFCF] min-h-[750px] overflow-auto my-auto z-10 relative max-w-[680px] scrollbar-thin scrollbar-thumb-red-900 relative">
         <div className="min-h-[1500px]w-full absolute pl-[75px] max-lx:pl-[40px] pt-[55px] max-lx:pt-[30px] ">
           <h3 className="text-[16px] max-lx:text-[14px] font-semibold text-gray-500 uppercase">
             Engineering
           </h3>
 
           {programmesOffered.map((program) =>
-            (program.field === active ? (
+            program.field === active ? (
               <h1 className="py-[19px] max-w-[432px] max-lx:py-[16px] text-[#51060D] text-[18px] max-lx:text-[15px] font-semibold capitalize border border-l-0 border-t-0 border-r-0 border-b-gray-500">
                 {program.title}
               </h1>
             ) : (
               ""
-            ))
+            )
           )}
-          
+        </div>
+        <div className="absolute bottom-10 right-10 bg-white p-4 rounded-xl">
+          <BiSolidDownArrow className="text-black text-[20px]" />
         </div>
       </div>
     </div>
