@@ -27,11 +27,11 @@
     
     padding-bottom: 47px;
 }
-ul{
+.list{
     width:147px;
     height:136px;
 }
-li{
+.listitem{
     color: #000;
     font-family: Montserrat;
     font-size: 16px;
