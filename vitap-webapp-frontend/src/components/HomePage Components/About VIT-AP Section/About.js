@@ -1,15 +1,16 @@
 import Image from "next/image";
-import aboutimage from "../../../assets/images/Homepage Images/about.png";
+// import aboutimage from "../../../assets/images/Homepage Images/about.png";
 import config from "@/config";
 import axios from 'axios';
 
-const fetchdata = async () => {
+const fetchannouncements = async () => {
   try {
     const response = await axios.get(`${config.api}/api/announcements`, {
       headers: {
         Authorization: `Bearer ${process.env.API_TOKEN}`,
       },
     });
+
     return response.data;
   } catch (error) {
     console.error('Error fetching data:', error);
@@ -17,11 +18,26 @@ const fetchdata = async () => {
   }
 };
 
-const About = async () => {
-  const data = await fetchdata();
-  const announcements = data.data;
-  console.log(announcements);
+const fetchaboutImage = async () =>{
 
+    const response = await axios.get(`${config.api}/api/aboutus-image?populate=*`, {
+      headers: {
+        Authorization: `Bearer ${process.env.API_TOKEN}`,
+      },
+    });
+
+    return response.data;
+}
+const About = async () => {
+
+
+  const announcementdata = await fetchannouncements();
+  const announcements = announcementdata.data;
+  // console.log(announcements);
+
+  const data1 = await fetchaboutImage();
+  const aboutimage = data1.data.attributes.image.data.attributes.url
+  console.log(aboutimage)
   return (
     <>
       <div className="px-[108px] mb-[100px]">
@@ -30,8 +46,8 @@ const About = async () => {
             <h1 className="font-Emilo ls:text-[48px] sm:text-[40px] text-primary font-bold pb-[9px]">
               About VIT-AP
             </h1>
-            <div className="justify-center sm:hidden ls:flex w-full ">
-              <Image src={aboutimage} width={600} height={295} />
+            <div className="sm:justify-center md:justify-normal sm:hidden ls:flex w-full object-cover">
+              <Image src={`${config.api}${aboutimage}`} width={600} height={295} />
             </div>
             <h1 className="font-Montserrant font-medium text-[22px] mt-[35px] leading-7">
               VIT-AP University is one of India's Best Top Emerging
@@ -86,11 +102,14 @@ const About = async () => {
               {announcements.map((announcement) => {
                 return (
                   <>
-                    <h1 className="font-semibold text-[14px] font-Montserrant">
+                  <div>
+                    
+                  </div>
+                    <h1 className="font-semibold text-[14px] font-Montserrant ">
                       {announcement.attributes.date}
                     </h1>
                     <h1 className="font-bold text-secondary font-Montserrant text-[20px]">
-                      <a href="https://www.instagram.com" target ="#">{announcement.attributes.title}</a>
+                      <a href={announcement.attributes.link} target ="#">{announcement.attributes.title}</a>
                     </h1>
                     <hr
                       style={{

@@ -10,6 +10,11 @@ import ProgrammesOffered from "@/components/HomePage Components/Programmes Offer
 
 import config from "@/config";
 import Image from "next/image";
+import LifeAtVITAP from "@/components/HomePage Components/Life at VIT-AP Section/LifeAtVITAP";
+import NewsAboutVITAP from "@/components/HomePage Components/News about VIT-AP Section/NewsAboutVITAP";
+import WallOfSocials from "@/components/HomePage Components/Wall of Socials VIT-AP Section/WallOfSocials";
+import NumberAtGlance from "@/components/HomePage Components/Number at a Glance Section/NumberAtGlance";
+import Footer from "@/components/HomePage Components/Footer Section/Footer";
 
 const fetchdata = async () => {
   const reqOptions = {
@@ -39,6 +44,11 @@ const url = data.data[0].attributes.image.data.attributes.url
       <ProgrammesOffered />
       <OurEvents />
       <ResearchInnovation />
+      <LifeAtVITAP/>
+      <NewsAboutVITAP/>
+      <WallOfSocials/>
+      <NumberAtGlance/>
+      <Footer/>
     </>
   );
 }

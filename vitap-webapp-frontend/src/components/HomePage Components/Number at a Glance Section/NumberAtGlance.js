@@ -1,5 +1,6 @@
 import Image from 'next/image';
-export default function placements(){
+import './placements.css'
+export default function NumberAtGlance(){
     return(
         <>
             <div class="placements">

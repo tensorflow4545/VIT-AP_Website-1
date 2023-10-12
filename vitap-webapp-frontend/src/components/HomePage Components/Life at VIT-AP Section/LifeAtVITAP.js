@@ -1,19 +1,19 @@
 import React from "react";
 import Image from "next/image";
-import exp1 from "../assets/explorePhotos/explore1.png";
-import exp2 from "../assets/explorePhotos/explore2.png";
-import exp3 from "../assets/explorePhotos/explore3.png";
-import exp4 from "../assets/explorePhotos/explore4.png";
-import exp5 from "../assets/explorePhotos/explore5.png";
-import exp6 from "../assets/explorePhotos/explore6.png";
-import exp7 from "../assets/explorePhotos/explore7.png";
-import exp8 from "../assets/explorePhotos/explore8.png";
-import exp9 from "../assets/explorePhotos/explore9.png";
+import exp1 from "../../../assets/images/explorePhotos/explore1.png";
+import exp2 from "../../../assets/images/explorePhotos/explore2.png";
+import exp3 from "../../../assets/images/explorePhotos/explore3.png";
+import exp4 from "../../../assets/images/explorePhotos/explore4.png";
+import exp5 from "../../../assets/images/explorePhotos/explore5.png";
+import exp6 from "../../../assets/images/explorePhotos/explore6.png";
+import exp7 from "../../../assets/images/explorePhotos/explore7.png";
+import exp8 from "../../../assets/images/explorePhotos/explore8.png";
+import exp9 from "../../../assets/images/explorePhotos/explore9.png";
 
-const Life = () => {
+const LifeAtVITAP = () => {
   return (
     <>
-      <div className="flex flex-col h-[960px] bg-[#E8E8E8]">
+      <div className="flex flex-col h-[960px] bg-[#E8E8E8] relative">
         <Image src={exp1} width={292} height={281} className="absolute" />
         <Image
           src={exp2}
@@ -81,4 +81,4 @@ const Life = () => {
   );
 };
 
-export default Life;
+export default LifeAtVITAP;

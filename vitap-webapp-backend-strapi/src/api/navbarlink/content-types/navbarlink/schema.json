@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navbarlinks",
+  "info": {
+    "singularName": "navbarlink",
+    "pluralName": "navbarlinks",
+    "displayName": "navbarlink"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "navitems": {
+      "type": "string"
+    },
+    "link": {
+      "type": "text"
+    }
+  }
+}
