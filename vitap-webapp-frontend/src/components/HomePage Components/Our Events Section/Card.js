@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Card = ({imgUrl, date, index, title}) => {
   return (
     <div
       key={index}
-      className="max-w-[380px] relative rounded-lg overflow-hidden "
+      className="max-w-[380px] relative rounded-lg overflow-hidden"
     >
       <Image
         src={imgUrl}
@@ -18,7 +19,7 @@ const Card = ({imgUrl, date, index, title}) => {
         <h1 className="flex-2 max-w-[250px] text-left p-[20px] max-ls:p-[10px] text-white">
           {title}
         </h1>
-        <h1 className="flex-1 bg-[#5C0E14] max-w-[150px] p-[20px] text-center max-ls:p-[10px]">
+        <h1 className={`flex-1 bg-[#5C0E14] max-w-[150px] p-[20px] text-center max-ls:p-[10px]`}>
           {date}
         </h1>
       </div>

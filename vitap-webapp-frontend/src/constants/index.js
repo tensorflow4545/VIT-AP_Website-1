@@ -51,3 +51,65 @@ export const eventsMain = [
     date: "19th Sept",
   },
 ];
+
+export const programmesOffered = [
+  {
+    id: 1,
+    title: "B.Tech in Computer Science and Engineering",
+    field: "undergraduate",
+  },
+  {
+    id: 2,
+    title:
+      "B.Tech in Computer Science and Engineering Specialization in AI and ML",
+    field: "undergraduate",
+  },
+  {
+    id: 3,
+    title:
+      "B.Tech in Computer Science and Engineering Specialization in Data Analytics",
+    field: "undergraduate",
+  },
+  {
+    id: 4,
+    title:
+      "B.Tech in Computer Science and Engineering Specialization in Network and Security",
+    field: "undergraduate",
+  },
+  {
+    id: 5,
+    title:
+      "B.Tech in Computer Science and Engineering Specialization in Network and Security",
+    field: "undergraduate",
+  },
+  {
+    id: 6,
+    title:
+      "B.Tech in Computer Science and Engineering Specialization in Network and Security",
+    field: "undergraduate",
+  },
+  {
+    id: 7,
+    title:
+      "B.Tech in Computer Science and Engineering Specialization in Network and Security",
+    field: "undergraduate",
+  },
+  {
+    id: 8,
+    title:
+      "B.Tech in Computer Science and Engineering Specialization in Network and Security",
+    field: "undergraduate",
+  },
+  {
+    id: 9,
+    title:
+      "B.Tech in Computer Science and Engineering Specialization in Network and Security",
+    field: "undergraduate",
+  },
+  {
+    id: 9,
+    title:
+      "B.Tech in Computer Science and Engineering Specialization in Network and Security",
+    field: "integrated",
+  },
+];
