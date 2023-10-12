@@ -1,5 +1,28 @@
 import Card from "./Card.js";
-const OurSchools = () => {
+import config from "@/config";
+
+
+const fetchdata = async () => {
+  const reqOptions = {
+    headers: {
+      Authorization: `Bearer ${process.env.API_TOKEN}`,
+    },
+  };
+
+  const response = await fetch(
+    `${config.api}/api/announcements/`,
+    reqOptions
+  );
+  const data = await response.json();
+  return data;
+};
+
+const OurSchools = async () => {
+  // const data = await fetchdata();
+
+  // console.log( data.data)
+  // console.log(typeof data)
+  
   return (
     <>
       <div className="flex-col">
@@ -7,7 +30,7 @@ const OurSchools = () => {
           <h1 className="font-Emilo font-bold text-primary text-[48px] pt-[80px]">
             Our Schools
           </h1>
-          <h1 className="font-Montserrant text-[18px] text-secondary w-[787px]">
+          <h1 className="font-Montserrant text-[18px] text-secondary w-full">
             At VIT-AP the entire teaching-learning process is concentrated
             around six schools. A research center is also part of the schools,
             that encourages students to participate in exciting research
