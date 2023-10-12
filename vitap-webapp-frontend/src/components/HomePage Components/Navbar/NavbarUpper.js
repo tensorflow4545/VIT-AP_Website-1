@@ -4,17 +4,20 @@ import { FiSearch } from "react-icons/fi";
 const NavbarUpper = () => {
   return (
     <>
-      <div className="w-full h-[60px] text-white bg-primary flex justify-between items-center px-[37px]">
+      <div className="z-auto w-full h-[60px] text-white bg-primary md:flex ls:flex sm:hidden justify-between items-center px-[37px]">
       
-          <ul className="flex h-[20px] space-x-[31px] text-[14px] ">
+          <ul className="flex  h-[20px] md:space-x-[31px] ls:space-x-[20px] text-[14px] ">
             <li><a>AP</a></li>
             <li><a>Vellore</a></li>
             <li><a>Chennai</a></li>
             <li><a>Bhopal</a></li>
             <li><a>Banglore</a></li>
           </ul>
+          {/* <div className=" h-[20px] space-x-[31px] text-[14px]">
 
-          <ul className="flex h-[25px] space-x-[31px] text-[14px] ">
+          </div> */}
+
+          <ul className="flex h-[20px] md:space-x-[31px] ls:space-x-[20px]  text-[14px] ">
             <li><a>How to reach VIT-AP</a></li>
             <li><a><FiSearch size={20}/></a></li>
             <li><a><Tb360View size={25}/></a></li>
