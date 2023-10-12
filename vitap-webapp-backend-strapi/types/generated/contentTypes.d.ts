@@ -677,6 +677,38 @@ export interface PluginI18NLocale extends Schema.CollectionType {
   };
 }
 
+export interface ApiAboutusImageAboutusImage extends Schema.SingleType {
+  collectionName: 'aboutus_images';
+  info: {
+    singularName: 'aboutus-image';
+    pluralName: 'aboutus-images';
+    displayName: 'aboutus image';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    image: Attribute.Media;
+    alt: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::aboutus-image.aboutus-image',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::aboutus-image.aboutus-image',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiAnnouncementAnnouncement extends Schema.CollectionType {
   collectionName: 'announcements';
   info: {
@@ -703,6 +735,72 @@ export interface ApiAnnouncementAnnouncement extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::announcement.announcement',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiHomepageelementHomepageelement
+  extends Schema.CollectionType {
+  collectionName: 'homepageelements';
+  info: {
+    singularName: 'homepageelement';
+    pluralName: 'homepageelements';
+    displayName: 'homepageelement';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    herotitle: Attribute.String;
+    herosubtitle: Attribute.String;
+    heromedia: Attribute.Media;
+    programmesofferedtitle: Attribute.String;
+    programmesoffereddescription: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::homepageelement.homepageelement',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::homepageelement.homepageelement',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiNavbarlinkNavbarlink extends Schema.CollectionType {
+  collectionName: 'navbarlinks';
+  info: {
+    singularName: 'navbarlink';
+    pluralName: 'navbarlinks';
+    displayName: 'navbarlink';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    navitems: Attribute.String;
+    link: Attribute.Text;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::navbarlink.navbarlink',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::navbarlink.navbarlink',
       'oneToOne',
       'admin::user'
     > &
@@ -752,7 +850,10 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'plugin::i18n.locale': PluginI18NLocale;
+      'api::aboutus-image.aboutus-image': ApiAboutusImageAboutusImage;
       'api::announcement.announcement': ApiAnnouncementAnnouncement;
+      'api::homepageelement.homepageelement': ApiHomepageelementHomepageelement;
+      'api::navbarlink.navbarlink': ApiNavbarlinkNavbarlink;
       'api::post.post': ApiPostPost;
     }
   }

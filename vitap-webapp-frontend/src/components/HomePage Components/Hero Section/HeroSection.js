@@ -1,5 +1,5 @@
 import Image from "next/image";
-import headerimage from "../../../assets/images/Homepage Images/HeaderImage.png";
+// import headerimage from "../../../assets/images/Homepage Images/HeaderImage.png";
 import headerimage2 from "../../../assets/images/Homepage Images/HeaderImage2.png";
 import { BsArrowRight } from "react-icons/bs";
 import config from "@/config";
@@ -23,23 +23,6 @@ const HeroSection = async () => {
   const data = await fetchdata();
 
   // console.log( media)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
   // console.log(typeof media)
 
   return (
@@ -68,7 +51,7 @@ const HeroSection = async () => {
 </div> */}
 
       <div className="w-full  ls:h-auto object-cover">
-        <Image className="w-full" src={headerimage} />
+        <Image className="w-full" src={headerimage2} />
       </div>
     </>
   );

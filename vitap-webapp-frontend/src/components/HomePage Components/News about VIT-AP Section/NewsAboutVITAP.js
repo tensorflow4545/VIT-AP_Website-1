@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import news1 from "../assets/newsPhotos/news1.png";
-import circle from "../assets/newsPhotos/circle.png";
-import arrow from "../assets/newsPhotos/Vector.png";
+import news1 from "../../../assets/images/newsPhotos/news1.png";
+import circle from "../../../assets/images/newsPhotos/circle.png";
+import arrow from "../../../assets/images/newsPhotos/Vector.png";
 
-const News = () => {
+const NewsAboutVITAP = () => {
   return (
     <>
       <div className="bg-[#51060D] h-[964px]">
@@ -103,4 +103,4 @@ const News = () => {
   );
 };
 
-export default News;
+export default NewsAboutVITAP;
