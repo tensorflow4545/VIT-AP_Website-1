@@ -34,16 +34,13 @@ const News = () => {
               consectetur amet consectetur.Lorem ipsum dolor sit amet
               consectetur.
             </p>
-            <button className="flex ml-[24px] mt-[87px] rounded-full hover:bg-[#5C0E14]">
-              <Image
-                src={circle}
-                className="relative transition-opacity hover:opacity-0"
-              />
+            <button className="flex ml-[24px] mt-[87px] rounded-full hover:bg-[#5C0E14] group">
+              <div className="w-[40px] h-[40px] bg-white rounded-full group-hover:w-[190px] group-hover:h-[40px] group-hover:bg-[#5C0E14]"></div>
               <Image
                 src={arrow}
-                className="absolute mt-[13px] ml-[11px] hover:opacity-0"
+                className="absolute mt-[13px] ml-[11px] group-hover:opacity-0"
               />
-              <p className="ml-[16px] mt-[9px] text-[#5C0E14] font-semibold">
+              <p className="ml-[16px] mt-[9px] text-[#5C0E14] font-semibold hover:text-[#FDFEFF] group-hover:ml-[28px] group-hover:mt-[9px] group-hover:absolute">
                 EXPLORE NEWS
               </p>
             </button>
@@ -63,16 +60,13 @@ const News = () => {
               consectetur amet consectetur.Lorem ipsum dolor sit amet
               consectetur.
             </p>
-            <button className="flex ml-[24px] mt-[87px] rounded-full hover:bg-[#5C0E14]">
-              <Image
-                src={circle}
-                className="relative transition-opacity hover:opacity-0"
-              />
+            <button className="flex ml-[24px] mt-[87px] rounded-full hover:bg-[#5C0E14] group">
+              <div className="w-[40px] h-[40px] bg-white rounded-full group-hover:w-[190px] group-hover:h-[40px] group-hover:bg-[#5C0E14]"></div>
               <Image
                 src={arrow}
-                className="absolute mt-[13px] ml-[11px] hover:opacity-0"
+                className="absolute mt-[13px] ml-[11px] group-hover:opacity-0"
               />
-              <p className="ml-[16px] mt-[9px] text-[#5C0E14] font-semibold">
+              <p className="ml-[16px] mt-[9px] text-[#5C0E14] font-semibold hover:text-[#FDFEFF] group-hover:ml-[28px] group-hover:mt-[9px] group-hover:absolute">
                 EXPLORE NEWS
               </p>
             </button>
@@ -92,16 +86,13 @@ const News = () => {
               consectetur amet consectetur.Lorem ipsum dolor sit amet
               consectetur.
             </p>
-            <button className="flex ml-[24px] mt-[87px] rounded-full hover:bg-[#5C0E14]">
-              <Image
-                src={circle}
-                className="relative transition-opacity hover:opacity-0"
-              />
+            <button className="flex ml-[24px] mt-[87px] rounded-full hover:bg-[#5C0E14] group">
+              <div className="w-[40px] h-[40px] bg-white rounded-full group-hover:w-[190px] group-hover:h-[40px] group-hover:bg-[#5C0E14]"></div>
               <Image
                 src={arrow}
-                className="absolute mt-[13px] ml-[11px] hover:opacity-0"
+                className="absolute mt-[13px] ml-[11px] group-hover:opacity-0"
               />
-              <p className="ml-[16px] mt-[9px] text-[#5C0E14] font-semibold">
+              <p className="ml-[16px] mt-[9px] text-[#5C0E14] font-semibold hover:text-[#FDFEFF] group-hover:ml-[28px] group-hover:mt-[9px] group-hover:absolute">
                 EXPLORE NEWS
               </p>
             </button>
