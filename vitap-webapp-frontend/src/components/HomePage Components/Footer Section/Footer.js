@@ -15,34 +15,34 @@ export default function Footer(){
              <div class="flex flex-row">
                <div class="part1">
                 <p class="heading">Quick Links</p>
-                <ul>
-                    <li>Academics</li>
-                    <li>Programs Offered</li>   
-                    <li>Careers</li>
-                    <li>Gallery</li>
-                    <li>Time of Service</li>
-                    <li>Privacy Policy</li>
+                <ul class="list">
+                    <li class="listitem">Academics</li>
+                    <li class="listitem">Programs Offered</li>   
+                    <li class="listitem">Careers</li>
+                    <li class="listitem">Gallery</li>
+                    <li class="listitem">Time of Service</li>
+                    <li class="listitem">Privacy Policy</li>
                 </ul>
                 </div>
                 <div class="part2">
                 <p class="heading">Quick Links</p>
-                <ul>
-                    <li>V-TOP Login</li>
-                    <li>V-TOP Parent Login </li>   
-                    <li>Mail</li>
-                    <li>Alumni</li>
-                    <li>Contact Us</li>
+                <ul class="list">
+                    <li class="listitem">V-TOP Login</li>
+                    <li class="listitem">V-TOP Parent Login </li>   
+                    <li class="listitem">Mail</li>
+                    <li class="listitem">Alumni</li>
+                    <li class="listitem">Contact Us</li>
                 </ul>
                 </div>
                 <div class="part3">
                 <p class="heading">Quick Links</p>
-                <ul>
-                    <li>Rankings</li>
-                    <li>Accreditation </li>   
-                    <li>Leadership</li>
-                    <li>Newsletter</li>
-                    <li>Press Media</li>
-                    <li>Governance</li>
+                <ul class="list">
+                    <li class="listitem">Rankings</li>
+                    <li class="listitem">Accreditation </li>   
+                    <li class="listitem">Leadership</li>
+                    <li class="listitem">Newsletter</li>
+                    <li class="listitem">Press Media</li>
+                    <li class="listitem">Governance</li>
                 </ul>
                 </div>
                
@@ -50,34 +50,34 @@ export default function Footer(){
                 <div class="flex flex-row">
                <div class="part1">
                 <p class="heading">Quick Links</p>
-                <ul>
-                    <li>Centres</li>
-                    <li>Google Scholars</li>   
-                    <li>News</li>
-                    <li>Patents</li>
-                    <li>Projects</li>
-                    <li>Publications</li>
+                <ul class="list">
+                    <li class="listitem">Centres</li>
+                    <li class="listitem">Google Scholars</li>   
+                    <li class="listitem">News</li>
+                    <li class="listitem">Patents</li>
+                    <li class="listitem">Projects</li>
+                    <li class="listitem">Publications</li>
                 </ul>
                 </div>
                 <div class="part2">
                 <p class="heading">Quick Links</p>
-                <ul>
-                    <li>Undergraduate</li>
-                    <li>Postgraduate</li>   
-                    <li>Integrated Degree</li>
-                    <li> Doctoral</li>
-                    <li>International</li>
+                <ul class="list">
+                    <li class="listitem">Undergraduate</li>
+                    <li class="listitem">Postgraduate</li>   
+                    <li class="listitem">Integrated Degree</li>
+                    <li class="listitem"> Doctoral</li>
+                    <li class="listitem">International</li>
                 </ul>
                 </div>
                 <div class="part3">
                 <p class="heading">Quick Links</p>
-                <ul>
-                    <li>Public Note</li>
-                    <li>Academic Calendar</li>   
-                    <li>Campus Maps</li>
-                    <li>Application Process</li>
-                    <li>Academic Bank of Credits</li>
-                    <li>IQAC</li>
+                <ul class="list">
+                    <li class="listitem">Public Note</li>
+                    <li class="listitem">Academic Calendar</li>   
+                    <li class="listitem">Campus Maps</li>
+                    <li class="listitem">Application Process</li>
+                    <li class="listitem">Academic Bank of Credits</li>
+                    <li class="listitem">IQAC</li>
                 </ul>
                 </div>
                
