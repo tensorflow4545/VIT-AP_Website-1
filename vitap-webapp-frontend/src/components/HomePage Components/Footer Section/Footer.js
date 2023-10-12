@@ -7,6 +7,7 @@ export default function Footer(){
     return(
         <>  
 
+        <div class="w-full">
           <div class="footer">
              
              <div class="flex flex-row">
@@ -141,6 +142,7 @@ export default function Footer(){
                     </div>
                 </div>
                 </div>
+              </div>
         </>
     )
 }
