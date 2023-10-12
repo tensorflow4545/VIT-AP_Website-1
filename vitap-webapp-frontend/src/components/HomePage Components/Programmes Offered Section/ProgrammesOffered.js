@@ -9,7 +9,7 @@ const ProgrammesOffered = () => {
 
   return (
     <>
-      <div className="max-w-[1440px] mx-auto flex min-h-[960px] pr-[40px] max-lx:pr-[20px] pt-[40px] text-white max-ls:hidden">
+      <div className="w-full mx-auto flex min-h-[960px] pr-[40px] max-lx:pr-[20px] pt-[40px] text-white max-ls:hidden">
         <div className=" p-[110px] max-lx:p-[60px] flex flex-col flex-[60%] bg-[#51060D]">
           <h1 className="text-white text-[40px] max-lx:text-[32px] font-bold">
             Programmes Offered
