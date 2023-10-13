@@ -14,10 +14,10 @@ const NavbarBottom = () => {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
   return (
     <>
-      <div className="sticky top-0 z-30 sm:hidden md:block">
+      <div className="sticky top-0 z-30 sm:hidden md:block ">
         {" "}
         {/* Increased z-index to 30 */}
-        <div className="bg-gray-900 shadow-sm w-full h-[85px] bg-opacity-50 absolute md:flex font-Montserrant font-medium text-white text-[16px]">
+        <div className="bg-gray-900 shadow-sm w-full h-[94px] bg-opacity-50 absolute md:flex font-Montserrant font-medium text-white text-[16px]">
           <ul className="flex flex-row space-x-[31px] items-center pl-[33px] w-full justify-between pr-[76px]">
             <li>
               <a>

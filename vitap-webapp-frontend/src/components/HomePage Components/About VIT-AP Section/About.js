@@ -40,7 +40,7 @@ const About = async () => {
   console.log(aboutimage)
   return (
     <>
-      <div className="px-[108px] mb-[100px]">
+      <div className="px-[108px] mb-[100px] ">
         <div className="md:flex  pt-[70px]">
           <div className="md:w-[50%] ls:w-[100%] sm:text-center md:text-left sm:flex-col sm:justify-center md:justify-normal ">
             <h1 className="font-Emilo ls:text-[48px] sm:text-[40px] text-primary font-bold pb-[9px]">
