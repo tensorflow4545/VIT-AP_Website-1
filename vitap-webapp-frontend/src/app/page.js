@@ -30,8 +30,8 @@ const fetchdata = async () => {
 };
 
 const Home = async () => {
-const data = await fetchdata();
-const url = data.data[0].attributes.image.data.attributes.url
+// const data = await fetchdata();
+// const url = data.data[0].attributes.image.data.attributes.url
 // console.log(`The Image URL is Here ${url}`)
   return (
     <>

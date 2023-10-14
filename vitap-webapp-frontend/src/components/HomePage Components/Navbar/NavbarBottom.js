@@ -8,23 +8,38 @@ import image3 from "../../../assets/images/Homepage Images/navbar-images/3.png";
 import image4 from "../../../assets/images/Homepage Images/navbar-images/4.png";
 import image5 from "../../../assets/images/Homepage Images/navbar-images/5.png";
 import "./navbar.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { RxHamburgerMenu } from "react-icons/rx";
 const NavbarBottom = () => {
-  const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
+  const [isNavOpen, setIsNavOpen] = useState(false);
   const [navbar, setNavbar] = useState(false);
-  const [logo, setlogo] = useState(false);
-  const changeBackground = () => {
-    if (scrollY >= 1020) {
-      setNavbar(true);
-      setlogo(true);
-    } else {
-      setNavbar(false);
-      setlogo(false);
+  const [logo, setLogo] = useState(false);
+
+  useEffect(() => {
+    const changeBackground = () => {
+      if (typeof window !== "undefined") {
+        if (window.scrollY >= 1020) {
+          setNavbar(true);
+          setLogo(true);
+        } else {
+          setNavbar(false);
+          setLogo(false);
+        }
+      }
+    };
+
+    if (typeof window !== "undefined") {
+      window.addEventListener('scroll', changeBackground);
     }
-  };
-  window.addEventListener("scroll", changeBackground);
+
+    // Cleanup the event listener when the component is unmounted
+    return () => {
+      if (typeof window !== "undefined") {
+        window.removeEventListener('scroll', changeBackground);
+      }
+    };
+  }, [])
   return (
     <>
       <div className="sticky top-0 z-30 sm:hidden md:block ">
