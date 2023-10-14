@@ -1,0 +1,151 @@
+body{
+  overflow-x: hidden;
+}
+.placements{
+  width:100%;
+  height:960px;
+  padding-left: 20px;
+  padding-top: 120px;
+  
+}
+.numberheader{
+color: #1B1C1E;
+font-family: Emilio Test;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
+padding-left: 120px;
+padding-bottom: 13px;
+}
+.numbertext{
+color: rgba(27, 28, 30, 0.80);
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 654px;
+padding-left: 106px;
+padding-bottom: 58px;
+}
+.figures{
+text-align: center;
+padding-left: 120px;
+padding-bottom: 90px;
+}
+.figures1{
+  text-align: center;
+  padding-bottom: 90px;
+}
+.statnumber{
+  color: #5C0E14;
+  font-family: Emilio Test;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  width: 300px;
+  
+}
+.statdescription{
+  color: rgba(27, 28, 30, 0.60);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width:150px;
+  
+}
+.slider{
+  width: 100%;
+  white-space: nowrap;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  
+}
+.slider{
+position: relative;
+margin: auto;
+display: grid;
+}
+.slide-track{
+  display:flex;
+  position: relative;
+  overflow: hidden;
+}
+.slide{
+  position: absolute;
+  animation: 10s r infinite linear;
+  width: 500px;
+}
+.slide1{
+  animation: 10s r infinite linear;
+  animation-delay: 10s;
+  width:500px;
+}
+.slide2{
+  animation: 10s r infinite linear;
+  animation-delay: 20s;
+  width:500px;
+}
+.slide3{
+  animation: 10s r infinite linear;
+  animation-delay: 30s;
+  width:500px;
+}
+.slide4{
+  animation: 10s r infinite linear;
+  animation-delay: 40s;
+  width:500px;
+}
+.slide5{
+  animation: 10s r infinite linear;
+  animation-delay: 50s;
+  width:500px;
+}
+.img{
+width: 100%;
+grid-area: 1/1;
+object-fit: cover;
+width: 604px;
+height: 800px;
+flex-shrink: 0;
+filter: brightness(40%);
+background: linear-gradient(white,black);
+}
+@keyframes r {
+  from{
+       transform: translateX(0);
+  }
+  to{
+      transform: translateX(-100%);
+  }
+}
+.imgheading{
+  position: absolute;
+  color: rgba(253, 254, 255, 0.50);
+  font-family: Emilio Test;
+  font-size: 121.864px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  bottom: 40px;
+  padding-left: 15px;
+}
+.imgtext{
+  position: absolute;
+  color: #FDFEFF;
+  font-family: Emilio Test;
+  font-size: 20.945px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 127.5%; /* 26.705px */
+  letter-spacing: -0.209px;
+  bottom: 30px;
+  padding-left: 25px;
+}
