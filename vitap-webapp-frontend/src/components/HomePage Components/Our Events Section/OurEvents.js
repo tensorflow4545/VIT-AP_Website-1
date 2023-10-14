@@ -36,6 +36,7 @@ const OurEvents = () => {
                 date={event.date}
                 index={event.id}
                 title={event.title}
+                key={event.id}
               />
             ))}
           </div>
