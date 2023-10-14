@@ -6,7 +6,7 @@ const Card = ({imgUrl, date, index, title}) => {
   return (
     <div
       key={index}
-      className="max-w-[380px] relative rounded-lg overflow-hidden"
+      className="max-w-[380px] relative rounded-lg overflow-hidden w-[400px] h-[350px] "
     >
       <Image
         src={imgUrl}
@@ -16,10 +16,10 @@ const Card = ({imgUrl, date, index, title}) => {
         className="object-cover rounded-lg relative hover:scale-110 transition-all duration-500 ease-in overflow-hidden"
       />
       <div className="absolute bottom-0 flex justify-between items-center gap-5 text-[20px] font-semibold text-white max-ls:text-[14px]">
-        <h1 className="flex-2 max-w-[250px] text-left p-[20px] max-ls:p-[10px] text-white">
+        {/* <h1 className="flex-2 max-w-[250px] text-left p-[20px] max-ls:p-[10px] ">
           {title}
-        </h1>
-        <h1 className={`flex-1 bg-[#5C0E14] max-w-[150px] p-[20px] text-center max-ls:p-[10px]`}>
+        </h1> */}
+        <h1 className={`flex-1 bg-[#5C0E14] max-w-[150px] p-[20px] text-right max-ls:p-[10px]`}>
           {date}
         </h1>
       </div>

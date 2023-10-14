@@ -34,19 +34,19 @@ export const researchNumbers = [
 export const eventsMain = [
   {
     id: 1,
-    imgUrl: "/eventImages/event_image1.jpeg",
+    imgUrl: "/eventImages/1.jpg",
     title: "VTAPP Internation Tech Fest by VIT-AP",
     date: "19th Sept",
   },
   {
     id: 2,
-    imgUrl: "/eventImages/event_image1.jpeg",
+    imgUrl: "/eventImages/2.png",
     title: "VTAPP Internation Tech Fest by VIT-AP",
     date: "19th Sept",
   },
   {
     id: 3,
-    imgUrl: "/eventImages/event_image1.jpeg",
+    imgUrl: "/eventImages/3.jpeg",
     title: "VTAPP Internation Tech Fest by VIT-AP",
     date: "19th Sept",
   },
