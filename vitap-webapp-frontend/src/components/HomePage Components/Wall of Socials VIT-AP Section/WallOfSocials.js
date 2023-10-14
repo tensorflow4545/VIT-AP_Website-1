@@ -1,19 +1,18 @@
-"use client"
 import React from "react";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { SocialIcon } from "react-social-icons";
-import insta from "../../../assets/images/socialIcons/insta.png";
-import twitter from "../../../assets/images/socialIcons/twitter.png";
-import linkin from "../../../assets/images/socialIcons/linkedin.png";
-import fb from "../../../assets/images/socialIcons/fb.png";
-import yt from "../../../assets/images/socialIcons/yt.png";
-import img1 from "../../../assets/images/socialImages/Img1.png";
-import img2 from "../../../assets/images/socialImages/Img2.png";
-import img3 from "../../../assets/images/socialImages/Img3.png";
-import logo from "../../../assets/images/socialImages/vitapLogo.png";
+import insta from "../assets/socialIcons/insta.png";
+import twitter from "../assets/socialIcons/twitter.png";
+import linkin from "../assets/socialIcons/linkedin.png";
+import fb from "../assets/socialIcons/fb.png";
+import yt from "../assets/socialIcons/yt.png";
+import img1 from "../assets/socialImages/Img1.png";
+import img2 from "../assets/socialImages/Img2.png";
+import img3 from "../assets/socialImages/Img3.png";
+import logo from "../assets/socialImages/vitapLogo.png";
 
-const WallOfSocials = () => {
+const Socials = () => {
   const containerRef = useRef(null);
   const [isHovered, setHovered] = useState(false);
 
@@ -38,15 +37,15 @@ const WallOfSocials = () => {
   }, []);
   return (
     <>
-      <div className="bg-[#FDFEFF] flex h-[960px]">
+      <div className="bg-[#FDFEFF] flex h-screen">
         <div>
-          <p className="mt-[178px] ml-[108px] text-[#5C0E14] text-[27px] font-Emilo font-bold">
+          <p className="mt-[10px] ml-[108px] text-[#5C0E14] text-[27px] font-Emilo font-bold">
             <i>Stay Connected</i>
           </p>
-          <p className="mt-[16px] ml-[108px] w-[293px] text-[50px] text-[#1B1C1E] font-Emilo font-bold">
+          <p className="mt-[16px] ml-[108px] w-[293px] text-[45px] text-[#1B1C1E] font-Emilo font-bold">
             The Wall of Socials from VIT-AP
           </p>
-          <p className="mt-[38px] ml-[108px] font-Montserrant text-[#0F0F0F] text-[24px]">
+          <p className="mt-[30px] ml-[108px] font-Montserrant text-[#0F0F0F] text-[24px]">
             Follow us on our socials
           </p>
           <div className="w-[300px] h-[44px] ml-[108px] mt-[28px] flex">
@@ -236,4 +235,4 @@ const WallOfSocials = () => {
   );
 };
 
-export default WallOfSocials;
+export default Socials;
