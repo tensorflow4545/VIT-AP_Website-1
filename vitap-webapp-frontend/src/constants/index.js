@@ -9,7 +9,7 @@ export const researchInnovation = [
   },
   {
     id: 3,
-    imgUrl: "/researchImages/research_image3.jpeg",
+    imgUrl: "/researchImages/1.png",
   },
 ];
 
