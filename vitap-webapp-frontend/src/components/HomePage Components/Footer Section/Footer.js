@@ -1,6 +1,7 @@
 import { AiFillLinkedin,AiFillYoutube,AiFillTwitterCircle} from 'react-icons/ai'
 import {BiLogoInstagramAlt,BiLogoFacebookCircle} from 'react-icons/bi'
 import { BsArrowUpRight} from 'react-icons/bs';
+import "./footer.css"
 import Image from 'next/image';
 export default function Footer(){
     
@@ -15,16 +16,17 @@ export default function Footer(){
              <div class="flex flex-row">
                <div class="part1">
                 <p class="heading">Quick Links</p>
-                <ul class="list">
-                    <li class="listitem">Academics</li>
-                    <li class="listitem">Programs Offered</li>   
-                    <li class="listitem">Careers</li>
-                    <li class="listitem">Gallery</li>
-                    <li class="listitem">Time of Service</li>
-                    <li class="listitem">Privacy Policy</li>
+                <ul>
+                    <li>Academics</li>
+                    <li>Programs Offered</li>   
+                    <li>Careers</li>
+                    <li>Gallery</li>
+                    <li>Time of Service</li>
+                    <li>Privacy Policy</li>
                 </ul>
                 </div>
                 <div class="part2">
+
                 <p class="heading">VIT Connect</p>
                 <ul class="list">
                     <li class="listitem">V-TOP Login</li>
@@ -43,12 +45,14 @@ export default function Footer(){
                     <li class="listitem">Newsletter</li>
                     <li class="listitem">Press Media</li>
                     <li class="listitem">Governance</li>
+
                 </ul>
                 </div>
                
                 </div>
                 <div class="flex flex-row">
                <div class="part1">
+
                 <p class="heading">Research</p>
                 <ul class="list">
                     <li class="listitem">Centres</li>
