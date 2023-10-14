@@ -124,7 +124,7 @@ const ProgrammesOffered = () => {
 
             {programmesOffered.map((program) =>
               program.field === active ? (
-                <h1 className="py-[19px] max-w-[432px] max-lx:py-[16px] text-[#51060D] text-[14px] max-lx:text-[15px] font-semibold capitalize border border-l-0 border-t-0 border-r-0 border-b-gray-500">
+                <h1 key={program.id}  className="py-[19px] max-w-[432px] max-lx:py-[16px] text-[#51060D] text-[14px] max-lx:text-[15px] font-semibold capitalize border border-l-0 border-t-0 border-r-0 border-b-gray-500">
                   {program.title}
                 </h1>
               ) : (
