@@ -10,9 +10,11 @@ const OurEvents = () => {
 
   return (
     <>
+
       <div className="flex flex-col min-h-[800px] max-xxl:min-h-[1100px] max-md:min-h-[1200px] max-lx:min-h-[1300px]">
         <div className="w-full bg-backgroundRed h-[420px] px-[110px] max-md:px-[40px]  max-ls:px-[30px] py-2">
           <div className="flex justify-between items-center mt-[20px]">
+
             <h1 className="text-[#51060D] text-[48px] font-bold max-lx:text-[32px]">
               Our Events
             </h1>

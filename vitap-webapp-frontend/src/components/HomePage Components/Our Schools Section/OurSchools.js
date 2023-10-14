@@ -26,8 +26,8 @@ const OurSchools = async () => {
   return (
     <>
       <div className="flex-col">
-        <div className="w-full bg-[#E6CFCF] h-[472px] pl-[108px] pr-[114px]  ">
-          <h1 className="font-Emilo font-bold text-primary text-[48px] pt-[80px]">
+        <div className="w-full bg-[#E6CFCF] h-[450px] pl-[108px] pr-[114px]  ">
+          <h1 className="font-Emilo font-bold text-primary text-[48px] pt-[40px]">
             Our Schools
           </h1>
           <h1 className="font-Montserrant text-[18px] text-secondary w-full">
@@ -43,12 +43,10 @@ const OurSchools = async () => {
               <Card />
               <Card />
             </div>
-
             <div className="flex-row flex mt-[35px] pl-[161px]">
               <Card />
               <Card />
               <Card />
-
             </div>
    
           </div>

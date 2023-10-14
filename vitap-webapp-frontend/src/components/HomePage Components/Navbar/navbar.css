@@ -1,0 +1,17 @@
+.navbar.active {
+    background-color: #ffffff ;
+    color: #650010;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.249);
+}
+
+.logo{
+    content:url("../../../assets/images/logos/vitaplogo.png");
+}
+
+.logo.active{
+    content:url("../../../assets/images/logos/vitaplogored.png");
+    width: 190px;
+}
