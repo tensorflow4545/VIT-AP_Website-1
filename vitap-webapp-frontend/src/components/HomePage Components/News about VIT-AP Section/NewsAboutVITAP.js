@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import news2 from "../assets/newsPhotos/3rd Annual Convocation - 2023.jpg";
-import news1 from "../assets/newsPhotos/aimusic.png";
-import news3 from "../assets/newsPhotos/basketball.png";
-import news4 from "../assets/newsPhotos/nationn.png";
-import circle from "../assets/newsPhotos/circle.png";
-import arrow from "../assets/newsPhotos/Vector.png";
+import news2 from "../../../assets/images/newsPhotos/1.png";
+import news1 from "../../../assets/images/newsPhotos/2.jpg";
+import news3 from "../../../assets/images/newsPhotos/basketball.png";
+// import news4 from "../../../assets/images/newsPhotos/4.jpeg";
+import circle from "../../../assets/images/newsPhotos/aimusic.png";
+import arrow from "../../../assets/images/newsPhotos/Vector.png";
 
 const News = () => {
   return (
@@ -23,7 +23,7 @@ const News = () => {
         <div className="flex ml-[240px] mt-[20px]">
           <div className="w-[320px] h-[450px] bg-white ml-[24px] border-b border-gray-300 hover:shadow-2xl hover:border-gray-500">
             <Image
-              src={news1}
+              src={news2}
               width={392}
               height={311}
               className="top-[223px] left-[108px]"
