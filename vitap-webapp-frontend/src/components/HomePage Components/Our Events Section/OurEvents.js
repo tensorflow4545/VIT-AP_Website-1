@@ -10,9 +10,11 @@ const OurEvents = () => {
 
   return (
     <>
-      <div className="flex flex-col min-h-[800px] max-xxl:min-h-[1100px] max-md:min-h-[1200px] max-lx:min-h-[1300px] mt-[100px]">
-        <div className="w-full bg-backgroundRed h-[420px] px-[110px] max-md:px-[40px]  max-ls:px-[30px] py-2 pt-[60px]">
-          <div className="flex justify-between items-center">
+
+      <div className="flex flex-col min-h-[800px] max-xxl:min-h-[1100px] max-md:min-h-[1200px] max-lx:min-h-[1300px]">
+        <div className="w-full bg-backgroundRed h-[420px] px-[110px] max-md:px-[40px]  max-ls:px-[30px] py-2">
+          <div className="flex justify-between items-center mt-[20px]">
+
             <h1 className="text-[#51060D] text-[48px] font-bold max-lx:text-[32px]">
               Our Events
             </h1>
@@ -25,9 +27,9 @@ const OurEvents = () => {
           </div>
           <h1 className="font-Montserrant text-[18px] text-secondary max-w-[787px] pt-3">
             Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
-            consectetur.
+            consectetur.Lorem ipsum dolor sit amet consectetur.
           </h1>
-          <div className="flex gap-5 max-ls:gap-4 justify-center items-center mt-[38px] max-ls:flex-col flex-wrap">
+          <div className="flex gap-5 max-ls:gap-4 justify-center items-center mt-[40px] max-ls:flex-col flex-wrap">
             {eventsMain.map((event) => (
               <Card
                 imgUrl={event.imgUrl}
