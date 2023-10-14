@@ -1,4 +1,4 @@
-"use client" ; 
+"use client";
 import Image from "next/image";
 import logo from "../../../assets/images/logos/vitaplogo.png";
 import image0 from "../../../assets/images/Homepage Images/navbar-images/0.png";
@@ -7,21 +7,38 @@ import image2 from "../../../assets/images/Homepage Images/navbar-images/2.png";
 import image3 from "../../../assets/images/Homepage Images/navbar-images/3.png";
 import image4 from "../../../assets/images/Homepage Images/navbar-images/4.png";
 import image5 from "../../../assets/images/Homepage Images/navbar-images/5.png";
+import "./navbar.css";
 import { useState } from "react";
 
 import { RxHamburgerMenu } from "react-icons/rx";
 const NavbarBottom = () => {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
+  const [navbar, setNavbar] = useState(false);
+  const [logo, setlogo] = useState(false);
+  const changeBackground = () => {
+    if (scrollY >= 1020) {
+      setNavbar(true);
+      setlogo(true);
+    } else {
+      setNavbar(false);
+      setlogo(false);
+    }
+  };
+  window.addEventListener("scroll", changeBackground);
   return (
     <>
       <div className="sticky top-0 z-30 sm:hidden md:block ">
-        {" "}
+        {/* {"bg-opacity-50 "} */}
         {/* Increased z-index to 30 */}
-        <div className="bg-gray-900 shadow-sm w-full h-[94px] bg-opacity-50 absolute md:flex font-Montserrant font-medium text-white text-[16px]">
+        <div
+          className={`bg-gray-900 ${
+            navbar ? "navbar active" : "navbar"
+          }  w-full h-[94px] shadow-xl absolute md:flex font-Montserrant font-medium text-white text-[16px]`}
+        >
           <ul className="flex flex-row space-x-[31px] items-center pl-[33px] w-full justify-between pr-[76px]">
             <li>
               <a>
-                <Image src={logo} />
+                <Image src={logo} className={logo ? "logo active" : "logo"} />
               </a>
             </li>
             <li className="group hover:cursor-pointer">
@@ -35,7 +52,7 @@ const NavbarBottom = () => {
                         <Image src={image0} />
                       </li>
                       <li className="absolute left-[600px] invisible top-[20px] peer-hover/vision:visible">
-                        <Image src={image0} />
+                        <Image src={image0} />x
                       </li>
                       <li className="peer/leadership">Leadership</li>
                       <li className="absolute left-[600px] invisible top-[20px] peer-hover/leadership:visible">
@@ -165,10 +182,7 @@ const NavbarBottom = () => {
         <div
           className="absolute top-0 right-0 px-8 py-8"
           onClick={() => setIsNavOpen(false)}
-        >
-          
-
-        </div>
+        ></div>
       </div>
       <style>{`
       .hideMenuNav {

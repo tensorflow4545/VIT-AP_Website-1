@@ -1,43 +1,54 @@
 import Image from "next/image";
-// import aboutimage from "../../../assets/images/Homepage Images/about.png";
+import aboutimage from "../../../assets/images/Homepage Images/about.png";
 import config from "@/config";
-import axios from 'axios';
+import axios from "axios";
+import Announcement from "./Announcement.js";
 
-const fetchannouncements = async () => {
-  try {
-    const response = await axios.get(`${config.api}/api/announcements`, {
-      headers: {
-        Authorization: `Bearer ${process.env.API_TOKEN}`,
-      },
-    });
+// const announcementsContent = [
+//   {date: "13.09.2023", title: "VITREE January 2024 - Apply Now" , link: "https://vitap.ac.in/vitree-january-2024/"},
+//   {date: "13.09.2023", title: "VITREE January 2024 - Apply Now" , link: "https://vitap.ac.in/vitree-january-2024/"},
+//   {date: "13.09.2023", title: "VITREE January 2024 - Apply Now" , link: "https://vitap.ac.in/vitree-january-2024/"},
+//   {date: "13.09.2023", title: "VITREE January 2024 - Apply Now" , link: "https://vitap.ac.in/vitree-january-2024/"},
+//   {date: "13.09.2023", title: "VITREE January 2024 - Apply Now" , link: "https://vitap.ac.in/vitree-january-2024/"},
 
-    return response.data;
-  } catch (error) {
-    console.error('Error fetching data:', error);
-    throw error; // Rethrow the error for handling at a higher level
-  }
-};
+// ]
 
-const fetchaboutImage = async () =>{
+// const fetchannouncements = async () => {
+//   try {
+//     const response = await axios.get(`${config.api}/api/announcements`, {
+//       headers: {
+//         Authorization: `Bearer ${process.env.API_TOKEN}`,
+//       },
+//     });
 
-    const response = await axios.get(`${config.api}/api/aboutus-image?populate=*`, {
-      headers: {
-        Authorization: `Bearer ${process.env.API_TOKEN}`,
-      },
-    });
+//     return response.data;
+//   } catch (error) {
+//     console.error("Error fetching data:", error);
+//     throw error; // Rethrow the error for handling at a higher level
+//   }
+// };
 
-    return response.data;
-}
+// const fetchaboutImage = async () => {
+//   const response = await axios.get(
+//     `${config.api}/api/aboutus-image?populate=*`,
+//     {
+//       headers: {
+//         Authorization: `Bearer ${process.env.API_TOKEN}`,
+//       },
+//     }
+//   );
+
+//   return response.data;
+// };
 const About = async () => {
-
-
-  const announcementdata = await fetchannouncements();
-  const announcements = announcementdata.data;
+  // const announcementdata = await fetchannouncements();
+  // const announcements = announcementdata.data;
   // console.log(announcements);
 
-  const data1 = await fetchaboutImage();
-  const aboutimage = data1.data.attributes.image.data.attributes.url
-  console.log(aboutimage)
+  // const data1 = await fetchaboutImage();
+  // const aboutimage = data1.data.attributes.image.data.attributes.url;
+  // console.log(aboutimage);
+
   return (
     <>
       <div className="px-[108px] mb-[100px] ">
@@ -47,14 +58,33 @@ const About = async () => {
               About VIT-AP
             </h1>
             <div className="sm:justify-center md:justify-normal sm:hidden ls:flex w-full object-cover">
-              <Image src={`${config.api}${aboutimage}`} width={600} height={295} />
+              {/* <Image
+                src={`${config.api}${aboutimage}`}
+                width={600}
+                height={100}
+              /> */}
+              <Image 
+              src={aboutimage}                
+                width={600}
+                height={100}
+                
+                />
             </div>
-            <h1 className="font-Montserrant font-medium text-[22px] mt-[35px] leading-7">
-              VIT-AP University is one of India's Best Top Emerging
-              <br /> Universities
-            </h1>
+            <div className="w-[95%]">
+              <h1 className="font-Montserrant font-[680px] text-[17px] text-left mt-[18px] leading-7">
+                With a history of 37 years of innovation in educational and
+                research domain, VIT has been a forerunner in delivering quality
+                education. Consistently ranked among the top educational
+                institutes in the country, the VIT group of institutions have
+                had a proud tradition of pursuing knowledge and excellence. In
+                keeping with this tradition, the leadership at VIT-AP resonates
+                a dynamic blend of academic initiative and industry partnership
+                with a vision of creating one of the finest academic
+                destinations in the world.
+              </h1>
+            </div>
 
-            <div className="ls:flex sm:flex-col ls:mt-[40px] ls:ml-[40px] md:mt-[58.5px] md:ml-[80.5px] ls:justify-center ls:text-center">
+            {/* <div className="ls:flex sm:flex-col ls:mt-[40px] ls:ml-[40px] md:mt-[58.5px] md:ml-[80.5px] ls:justify-center ls:text-center">
               <div className="ls:flex flex-row space-x-[180px] ls:justify-center">
                 <div className="flex-col text-center">
                   <h1 className="text-[46px] text-primary font-bold">1100+</h1>
@@ -85,7 +115,7 @@ const About = async () => {
                   </h1>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Anouncements section  */}
@@ -96,20 +126,28 @@ const About = async () => {
             </div>
 
             <h1 className="text-[24px] text-primary font-Montserrant font-bold ls:text-center md:text-left">
-              OUR ANNOUNCEMENTS
+              ANNOUNCEMENTS
             </h1>
             <div className="flex-col space-y-[25px] mt-[42px] ">
-              {announcements.map((announcement) => {
+
+
+            <Announcement date="2nd  July,  23" title="VITREE January 2024 - Apply Now" link="https://vitap.ac.in/vitree-january-2024/"/>
+            <Announcement date="17th September, 23" title="3rd Annual Convocation " link="https://vitap.ac.in/3rd-annual-convocation-2023/"/>
+            <Announcement date="2nd September, 23" title="360 Campus Tour" link="https://campustour.vitap.ac.in/index04.html"/>
+            <Announcement date="10th May, 23" title="New Curriculum" link="https://vitap.ac.in/new-curriculum-ay-2021-2022/"/>
+
+
+
+              {/* {announcements.map((announcement) => {
                 return (
                   <>
-                  <div>
-                    
-                  </div>
                     <h1 className="font-semibold text-[14px] font-Montserrant ">
                       {announcement.attributes.date}
                     </h1>
                     <h1 className="font-bold text-secondary font-Montserrant text-[20px]">
-                      <a href={announcement.attributes.link} target ="#">{announcement.attributes.title}</a>
+                      <a href={announcement.attributes.link} target="#">
+                        {announcement.attributes.title}
+                      </a>
                     </h1>
                     <hr
                       style={{
@@ -120,7 +158,7 @@ const About = async () => {
                     />
                   </>
                 );
-              })}
+              })} */}
             </div>
           </div>
         </div>

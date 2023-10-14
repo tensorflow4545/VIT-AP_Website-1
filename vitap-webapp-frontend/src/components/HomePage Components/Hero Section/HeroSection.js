@@ -4,23 +4,23 @@ import headerimage2 from "../../../assets/images/Homepage Images/HeaderImage2.pn
 import { BsArrowRight } from "react-icons/bs";
 import config from "@/config";
 
-const fetchdata = async () => {
-  const reqOptions = {
-    headers: {
-      Authorization: `Bearer ${process.env.API_TOKEN}`,
-    },
-  };
+// const fetchdata = async () => {
+//   const reqOptions = {
+//     headers: {
+//       Authorization: `Bearer ${process.env.API_TOKEN}`,
+//     },
+//   };
 
-  const response = await fetch(
-    `${config.api}/api/homepage-heromedias?populate=*`,
-    reqOptions
-  );
-  const data = await response.json();
-  return data;
-};
+//   const response = await fetch(
+//     `${config.api}/api/homepage-heromedias?populate=*`,
+//     reqOptions
+//   );
+//   const data = await response.json();
+//   return data;
+// };
 
 const HeroSection = async () => {
-  const data = await fetchdata();
+  // const data = await fetchdata();
 
   // console.log( media)
   // console.log(typeof media)
