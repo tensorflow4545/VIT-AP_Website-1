@@ -1,11 +1,12 @@
 import Image from 'next/image';
 export default function placements(){
     return(
-        <>
-            <div class="placements">
-               <div class="flex flex-row">
+        <> 
+            {/* Desktop view */}
+            <div class="placements sm:flex hidden">
+               <div class="lg:flex md:flex flex-row">
                 <div class="basis-1/2">
-                <div class="numbers">
+                <div class="numbers pr-40">
                      <h1 class="numberheader" >Number at Glance</h1>
                      <p class="numbertext">Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                      Lorem ipsum dolor sit amet consectetur.</p>
@@ -52,7 +53,7 @@ export default function placements(){
                     </div>
                 </div>
                       <div class="basis-1/2">
-                          <div class="slider">
+                      <div class="slider">
                           <div class="slid-track flex">
 
                               <div class="slide">
@@ -80,16 +81,11 @@ export default function placements(){
                               <div class="imgheading">10+</div>
                               <div class="imgtext">We have 10+ Undergraduate Programes</div>
                               </div>
-                              {/* <div class="slide"><Image class="img" src="/uni1.jpeg" width="500" height="400"></Image></div>
-                              <div class="slide"><Image class="img" src="/uni1.jpeg" width="500" height="400"></Image></div>
-                              <div class="slide"><Image class="img" src="/uni1.jpeg" width="500" height="400"></Image></div>
-                              <div class="slide"><Image class="img" src="/uni1.jpeg" width="500" height="400"></Image></div> */}
                            </div>
-                              
+                            </div>  
                               </div>
                       </div>
-                </div>
-            </div>
+                    </div>
         </>
     )
 }
