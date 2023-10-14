@@ -6,6 +6,7 @@
     padding-right:110px;
 }
 .footer1{
+    padding-top: 15px;
    padding-bottom: 20px;
    width:594px;
    height:467px;
@@ -16,11 +17,11 @@
  text-align: right;
 }
 .part1{
-    padding-right: 45px;
+    padding-right: 30px;
     padding-bottom: 47px;
 }
 .part2{
-    padding-right: 45px;
+    padding-right: 30px;
     padding-bottom: 47px;
 }
 .part3{
@@ -99,9 +100,13 @@
     flex-shrink: 0;
 }
 .credit{
+    
     display: flex;
     height: 204px;
-    padding: 19px 108px 18px 108px;
+    padding-top: 19px ;
+    padding-right: 30px;
+    padding-bottom: 18px;
+    padding-left:108px;
     gap: 490px;
     background-color: #741D26;
 }
