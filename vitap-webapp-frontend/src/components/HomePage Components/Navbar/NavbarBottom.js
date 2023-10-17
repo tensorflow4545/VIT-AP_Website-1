@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import logo from "../../../assets/images/logos/vitaplogo.png";
 import image0 from "../../../assets/images/Homepage Images/navbar-images/0.png";
 import image1 from "../../../assets/images/Homepage Images/navbar-images/1.png";
 import image2 from "../../../assets/images/Homepage Images/navbar-images/2.png";
@@ -77,26 +76,41 @@ const NavbarBottom = () => {
                 <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]">
                   <div className="w-full h-full">
                     <ol className="flex-row font-[400] text-[24px]  pt-[82px] pl-[110px] space-y-[40px]">
-                      <li className="peer/vision underline w-[200px]">Vision & Mission</li>
-                      <li className="absolute left-[600px]  top-[20px] ">
-                        <Image src={image0} />
+
+                      <li className=" custom-list-item   w-[195px]">
+                        <h1>Vision & Mission</h1>
                       </li>
-                      <li className="absolute left-[600px] invisible top-[20px] peer-hover/vision:visible">
-                        <Image src={image1} />
+
+
+                      
+                      <li className="absolute left-[600px]  top-[20px]  ">
+                        <Image src={image0}  />
                       </li>
-                      <li className="peer/leadership w-[200px]">Leadership</li>
+
+                      <li className="peer/leadership custom-list-item w-[130px]">
+                        <h1 className="w-full h-full">Leadership</h1>
+                      </li>
+
+                      <li className="peer/Governance custom-list-item w-[140px]">
+                        Governance
+                      </li>
                       <li className="absolute left-[600px] invisible top-[20px] peer-hover/leadership:visible">
                         <Image src={image2} />
                       </li>
-                      <li className="peer/Governance w-[200px]">Governance</li>
+
+                      <li className="peer/contactus custom-list-item w-[50px]">
+                        FAQ
+                      </li>
                       <li className="absolute left-[600px] invisible top-[20px] peer-hover/Governance:visible">
                         <Image src={image3} />
                       </li>
-                      <li className="peer/contactus w-[200px]">contact us</li>
+
+                      <li className="peer/faq custom-list-item w-[130px]">
+                        Contact us
+                      </li>
                       <li className="absolute left-[600px] invisible top-[20px] peer-hover/contactus:visible">
                         <Image src={image4} />
                       </li>
-                      <li className="peer/faq w-[200px]">FAQ</li>
                       <li className="absolute left-[600px] invisible top-[20px] peer-hover/faq:visible">
                         <Image src={image5} />
                       </li>
@@ -134,42 +148,55 @@ const NavbarBottom = () => {
 
             <li
               className={`group hover:cursor-pointer ${
-                activeNavItem === "Career Development Center" ? "active-nav-item" : ""
+                activeNavItem === "Career Development Center"
+                  ? "active-nav-item"
+                  : ""
               }`}
-              onMouseEnter={() => handleDropdownEnter("Career Development Center")}
+              onMouseEnter={() =>
+                handleDropdownEnter("Career Development Center")
+              }
               onMouseLeave={handleDropdownLeave}
             >
               <a className="custom-underline ">Career Development Center</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
-                <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]">
+              <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]">
                   <div className="w-full h-full">
                     <ol className="flex-row font-[400] text-[24px]  pt-[82px] pl-[110px] space-y-[40px]">
-                      <li className="peer/vision w-[200px]">Vision & Mission</li>
-                      <li className="absolute left-[600px]  top-[20px] ">
-                        <Image src={image0} />
+
+                      <li className=" custom-list-item   w-[195px]">
+                        <h1>Vision & Mission</h1>
                       </li>
-                      <li className="absolute left-[600px] invisible top-[20px] peer-hover/vision:visible">
-                        <Image src={image1} />
+
+
+                      
+                      <li className="absolute left-[600px]  top-[20px]  ">
+                        <Image src={image0}  />
                       </li>
-                      <li className="peer/leadership w-[200px]">
-                        <a className=" ">Leadership</a>
+
+                      <li className="peer/leadership custom-list-item w-[130px]">
+                        <h1 className="w-full h-full">Leadership</h1>
+                      </li>
+
+                      <li className="peer/Governance custom-list-item w-[140px]">
+                        Governance
                       </li>
                       <li className="absolute left-[600px] invisible top-[20px] peer-hover/leadership:visible">
                         <Image src={image2} />
                       </li>
-                      <li className="peer/Governance w-[200px]">
-                        <a className="">Governance</a>
+
+                      <li className="peer/contactus custom-list-item w-[50px]">
+                        FAQ
                       </li>
                       <li className="absolute left-[600px] invisible top-[20px] peer-hover/Governance:visible">
                         <Image src={image3} />
                       </li>
-                      <li className="peer/contactus w-[200px]">
-                        <a className="">Contact Us</a>
+
+                      <li className="peer/faq custom-list-item w-[130px]">
+                        Contact us
                       </li>
                       <li className="absolute left-[600px] invisible top-[20px] peer-hover/contactus:visible">
                         <Image src={image4} />
                       </li>
-                      <li className="peer/faq">FAQ</li>
                       <li className="absolute left-[600px] invisible top-[20px] peer-hover/faq:visible">
                         <Image src={image5} />
                       </li>

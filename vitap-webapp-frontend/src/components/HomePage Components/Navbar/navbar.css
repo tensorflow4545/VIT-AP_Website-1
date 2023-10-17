@@ -66,3 +66,32 @@
   }
 
   
+
+/*                                                                   */
+
+.custom-list-item {
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 2px;
+  }
+  
+  .custom-list-item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 6px;
+    background-color: #650010;
+    transition: width 0.5s ease;
+  }
+  
+  .custom-list-item:hover::before {
+    width: 100%;
+  }
+  
+  .custom-list-item.active::before {
+    width: 100%;
+  }
+  
+
