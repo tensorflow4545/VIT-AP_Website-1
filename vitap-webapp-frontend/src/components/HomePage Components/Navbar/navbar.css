@@ -55,3 +55,14 @@
     justify-content: space-evenly;
     align-items: center;
   }
+
+  .custom-underline:hover::before,
+  .underline-active::before {
+    width: 100%;
+  }
+
+  .active-nav-item .custom-underline::before {
+    width: 100%;
+  }
+
+  

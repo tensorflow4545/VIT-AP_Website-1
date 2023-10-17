@@ -30,16 +30,24 @@ const NavbarBottom = () => {
     };
 
     if (typeof window !== "undefined") {
-      window.addEventListener('scroll', changeBackground);
+      window.addEventListener("scroll", changeBackground);
     }
 
     // Cleanup the event listener when the component is unmounted
     return () => {
       if (typeof window !== "undefined") {
-        window.removeEventListener('scroll', changeBackground);
+        window.removeEventListener("scroll", changeBackground);
       }
     };
-  }, [])
+  }, []);
+  const [activeNavItem, setActiveNavItem] = useState(null);
+  const handleDropdownEnter = (navItem) => {
+    setActiveNavItem(navItem);
+  };
+
+  const handleDropdownLeave = () => {
+    setActiveNavItem(null);
+  };
   return (
     <>
       <div className="sticky top-0 z-30 sm:hidden md:block ">
@@ -56,37 +64,39 @@ const NavbarBottom = () => {
                 <Image src={logo} className={logo ? "logo active" : "logo"} />
               </a>
             </li>
-            <li className="group hover:cursor-pointer">
-              <a className="custom-underline " >About</a>
 
+            <li
+              className={`group hover:cursor-pointer ${
+                activeNavItem === "about" ? "active-nav-item" : ""
+              }`}
+              onMouseEnter={() => handleDropdownEnter("about")}
+              onMouseLeave={handleDropdownLeave}
+            >
+              <a className="custom-underline">About</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
                 <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]">
                   <div className="w-full h-full">
                     <ol className="flex-row font-[400] text-[24px]  pt-[82px] pl-[110px] space-y-[40px]">
-                      <li className="peer/vision">Vision & Mission</li>
+                      <li className="peer/vision underline w-[200px]">Vision & Mission</li>
                       <li className="absolute left-[600px]  top-[20px] ">
                         <Image src={image0} />
                       </li>
                       <li className="absolute left-[600px] invisible top-[20px] peer-hover/vision:visible">
-                        <Image src={image0} />
-                      </li>
-                      <li className="peer/leadership">Leadership</li>
-                      <li className="absolute left-[600px] invisible top-[20px] peer-hover/leadership:visible">
                         <Image src={image1} />
                       </li>
-                      <li className="peer/Governance">Governance</li>
-                      <li className="absolute left-[600px] invisible top-[20px] peer-hover/Governance:visible">
+                      <li className="peer/leadership w-[200px]">Leadership</li>
+                      <li className="absolute left-[600px] invisible top-[20px] peer-hover/leadership:visible">
                         <Image src={image2} />
                       </li>
-                      <li className="peer/contactus">contact us</li>
-                      <li className="absolute left-[600px] invisible top-[20px] peer-hover/contactus:visible">
+                      <li className="peer/Governance w-[200px]">Governance</li>
+                      <li className="absolute left-[600px] invisible top-[20px] peer-hover/Governance:visible">
                         <Image src={image3} />
                       </li>
-                      <li className="peer/reach">How to reach VIT-AP</li>
-                      <li className="absolute left-[600px] invisible top-[20px] peer-hover/reach:visible">
+                      <li className="peer/contactus w-[200px]">contact us</li>
+                      <li className="absolute left-[600px] invisible top-[20px] peer-hover/contactus:visible">
                         <Image src={image4} />
                       </li>
-                      <li className="peer/faq">FAQ</li>
+                      <li className="peer/faq w-[200px]">FAQ</li>
                       <li className="absolute left-[600px] invisible top-[20px] peer-hover/faq:visible">
                         <Image src={image5} />
                       </li>
@@ -94,51 +104,69 @@ const NavbarBottom = () => {
                   </div>
                 </div>
               </div>
-
-
             </li>
-            <li className="group hover:cursor-pointer">
+
+            <li
+              className={`group hover:cursor-pointer ${
+                activeNavItem === "admissions" ? "active-nav-item" : ""
+              }`}
+              onMouseEnter={() => handleDropdownEnter("admissions")}
+              onMouseLeave={handleDropdownLeave}
+            >
               <a className="custom-underline ">Admissions</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
                 <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]"></div>
               </div>
             </li>
-            <li className="group hover:cursor-pointer">
+
+            <li
+              className={`group hover:cursor-pointer ${
+                activeNavItem === "Academics" ? "active-nav-item" : ""
+              }`}
+              onMouseEnter={() => handleDropdownEnter("Academics")}
+              onMouseLeave={handleDropdownLeave}
+            >
               <a className="custom-underline ">Academics</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
                 <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]"></div>
               </div>
             </li>
-            <li className="group hover:cursor-pointer">
+
+            <li
+              className={`group hover:cursor-pointer ${
+                activeNavItem === "Career Development Center" ? "active-nav-item" : ""
+              }`}
+              onMouseEnter={() => handleDropdownEnter("Career Development Center")}
+              onMouseLeave={handleDropdownLeave}
+            >
               <a className="custom-underline ">Career Development Center</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
                 <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]">
                   <div className="w-full h-full">
                     <ol className="flex-row font-[400] text-[24px]  pt-[82px] pl-[110px] space-y-[40px]">
-                      <li className="peer/vision">Vision & Mission</li>
+                      <li className="peer/vision w-[200px]">Vision & Mission</li>
                       <li className="absolute left-[600px]  top-[20px] ">
                         <Image src={image0} />
                       </li>
                       <li className="absolute left-[600px] invisible top-[20px] peer-hover/vision:visible">
-                        <Image src={image0} />
-                      </li>
-                      <li className="peer/leadership">
-                        <a className=" ">Leadership</a></li>
-                      <li className="absolute left-[600px] invisible top-[20px] peer-hover/leadership:visible">
                         <Image src={image1} />
                       </li>
-                      <li className="peer/Governance">
-                        <a className="">Governance</a></li>
-                      <li className="absolute left-[600px] invisible top-[20px] peer-hover/Governance:visible">
+                      <li className="peer/leadership w-[200px]">
+                        <a className=" ">Leadership</a>
+                      </li>
+                      <li className="absolute left-[600px] invisible top-[20px] peer-hover/leadership:visible">
                         <Image src={image2} />
                       </li>
-                      <li className="peer/contactus">
-                        <a className="">Contact Us</a></li>
-                      <li className="absolute left-[600px] invisible top-[20px] peer-hover/contactus:visible">
+                      <li className="peer/Governance w-[200px]">
+                        <a className="">Governance</a>
+                      </li>
+                      <li className="absolute left-[600px] invisible top-[20px] peer-hover/Governance:visible">
                         <Image src={image3} />
                       </li>
-                      <li className="peer/reach">How to reach VIT-AP</li>
-                      <li className="absolute left-[600px] invisible top-[20px] peer-hover/reach:visible">
+                      <li className="peer/contactus w-[200px]">
+                        <a className="">Contact Us</a>
+                      </li>
+                      <li className="absolute left-[600px] invisible top-[20px] peer-hover/contactus:visible">
                         <Image src={image4} />
                       </li>
                       <li className="peer/faq">FAQ</li>
@@ -150,20 +178,41 @@ const NavbarBottom = () => {
                 </div>
               </div>
             </li>
-            <li className="group hover:cursor-pointer">
-              <a>Facilities</a>
+
+            <li
+              className={`group hover:cursor-pointer ${
+                activeNavItem === "Facilities" ? "active-nav-item" : ""
+              }`}
+              onMouseEnter={() => handleDropdownEnter("Facilities")}
+              onMouseLeave={handleDropdownLeave}
+            >
+              <a className="custom-underline ">Facilities</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
                 <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]"></div>
               </div>
             </li>
-            <li className="group hover:cursor-pointer">
-              <a>Campus Life</a>
+
+            <li
+              className={`group hover:cursor-pointer ${
+                activeNavItem === "Campus Life" ? "active-nav-item" : ""
+              }`}
+              onMouseEnter={() => handleDropdownEnter("Campus Life")}
+              onMouseLeave={handleDropdownLeave}
+            >
+              <a className="custom-underline ">Campus Life</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
                 <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]"></div>
               </div>
             </li>
-            <li className="group hover:cursor-pointer">
-              <a>Research</a>
+
+            <li
+              className={`group hover:cursor-pointer ${
+                activeNavItem === "Research" ? "active-nav-item" : ""
+              }`}
+              onMouseEnter={() => handleDropdownEnter("Research")}
+              onMouseLeave={handleDropdownLeave}
+            >
+              <a className="custom-underline">Research</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
                 <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]"></div>
               </div>
@@ -204,7 +253,6 @@ const NavbarBottom = () => {
           onClick={() => setIsNavOpen(false)}
         ></div>
       </div>
-     
     </>
   );
 };
