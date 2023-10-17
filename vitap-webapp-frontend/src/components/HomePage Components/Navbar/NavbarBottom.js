@@ -67,7 +67,7 @@ const NavbarBottom = () => {
                         <Image src={image0} />
                       </li>
                       <li className="absolute left-[600px] invisible top-[20px] peer-hover/vision:visible">
-                        <Image src={image0} />x
+                        <Image src={image0} />
                       </li>
                       <li className="peer/leadership">Leadership</li>
                       <li className="absolute left-[600px] invisible top-[20px] peer-hover/leadership:visible">
