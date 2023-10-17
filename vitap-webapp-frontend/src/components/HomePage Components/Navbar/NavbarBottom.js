@@ -50,18 +50,19 @@ const NavbarBottom = () => {
             navbar ? "navbar active" : "navbar"
           }  w-full h-[94px] shadow-xl absolute md:flex font-Montserrant font-medium text-white text-[16px]`}
         >
-          <ul className="flex flex-row space-x-[31px] items-center pl-[33px] w-full justify-between pr-[76px]">
+          <ul className="flex flex-row  items-center pl-[33px] w-full justify-between pr-[76px]">
             <li>
               <a>
                 <Image src={logo} className={logo ? "logo active" : "logo"} />
               </a>
             </li>
             <li className="group hover:cursor-pointer">
-              <a>About</a>
+              <a className="custom-underline " >About</a>
+
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
                 <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]">
                   <div className="w-full h-full">
-                    <ol className="flex-row font-[400] text-[24px] uppercase pt-[82px] pl-[110px] space-y-[40px]">
+                    <ol className="flex-row font-[400] text-[24px]  pt-[82px] pl-[110px] space-y-[40px]">
                       <li className="peer/vision">Vision & Mission</li>
                       <li className="absolute left-[600px]  top-[20px] ">
                         <Image src={image0} />
@@ -93,25 +94,27 @@ const NavbarBottom = () => {
                   </div>
                 </div>
               </div>
+
+
             </li>
             <li className="group hover:cursor-pointer">
-              <a>Admissions</a>
+              <a className="custom-underline ">Admissions</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
                 <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]"></div>
               </div>
             </li>
             <li className="group hover:cursor-pointer">
-              <a>Academics</a>
+              <a className="custom-underline ">Academics</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
                 <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]"></div>
               </div>
             </li>
             <li className="group hover:cursor-pointer">
-              <a>Career Development Center</a>
+              <a className="custom-underline ">Career Development Center</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
                 <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]">
                   <div className="w-full h-full">
-                    <ol className="flex-row font-[400] text-[24px] uppercase pt-[82px] pl-[110px] space-y-[40px]">
+                    <ol className="flex-row font-[400] text-[24px]  pt-[82px] pl-[110px] space-y-[40px]">
                       <li className="peer/vision">Vision & Mission</li>
                       <li className="absolute left-[600px]  top-[20px] ">
                         <Image src={image0} />
@@ -119,15 +122,18 @@ const NavbarBottom = () => {
                       <li className="absolute left-[600px] invisible top-[20px] peer-hover/vision:visible">
                         <Image src={image0} />
                       </li>
-                      <li className="peer/leadership">Leadership</li>
+                      <li className="peer/leadership">
+                        <a className=" ">Leadership</a></li>
                       <li className="absolute left-[600px] invisible top-[20px] peer-hover/leadership:visible">
                         <Image src={image1} />
                       </li>
-                      <li className="peer/Governance">Governance</li>
+                      <li className="peer/Governance">
+                        <a className="">Governance</a></li>
                       <li className="absolute left-[600px] invisible top-[20px] peer-hover/Governance:visible">
                         <Image src={image2} />
                       </li>
-                      <li className="peer/contactus">contact us</li>
+                      <li className="peer/contactus">
+                        <a className="">Contact Us</a></li>
                       <li className="absolute left-[600px] invisible top-[20px] peer-hover/contactus:visible">
                         <Image src={image3} />
                       </li>
@@ -167,7 +173,6 @@ const NavbarBottom = () => {
       </div>
 
       <div className="sticky top-0 z-30 ls:block md:hidden">
-        {" "}
         {/* Increased z-index to 30 */}
         <div className="bg-gray-900 shadow-sm w-full h-[85px] bg-opacity-50 absolute sm:flex  text-white text-[16px]">
           <ul className="flex flex-row space-x-[31px] items-center pl-[33px] w-full justify-between pr-[76px]">
@@ -199,25 +204,7 @@ const NavbarBottom = () => {
           onClick={() => setIsNavOpen(false)}
         ></div>
       </div>
-      <style>{`
-      .hideMenuNav {
-        display: none;
-      }
-      .showMenuNav {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background: white;
-        z-index: 10;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-      }
-    `}</style>
+     
     </>
   );
 };
