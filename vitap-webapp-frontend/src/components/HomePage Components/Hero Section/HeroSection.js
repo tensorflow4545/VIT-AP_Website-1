@@ -51,7 +51,7 @@ const HeroSection = async () => {
 </div> */}
 
       <div className="w-full  ls:h-auto object-cover">
-        <Image className="w-full" src={headerimage2} />
+        <Image className="w-full" src={headerimage2}/>
       </div>
     </>
   );
