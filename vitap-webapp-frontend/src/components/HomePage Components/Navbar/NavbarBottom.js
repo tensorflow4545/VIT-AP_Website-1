@@ -80,9 +80,9 @@ const NavbarBottom = () => {
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
                 <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]">
                   <div className="w-full h-full">
-                  <span className="w-[6px] h-[450px] bg-primary opacity-40 rounded-lg absolute left-[430px] top-[45px]"></span>
+                  <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[430px] top-[45px]"></span>
 
-                    <ol className="flex-row font-[400] text-[24px]  pt-[82px] pl-[110px] space-y-[40px]">
+                    <ol className="flex-row font-[400] text-[20px]  pt-[82px] pl-[110px] space-y-[29px]">
                       <li className=" custom-list-item   w-[195px]">
                         <h1>Vision & Mission</h1>
                       </li>
@@ -134,7 +134,7 @@ const NavbarBottom = () => {
               <a className="custom-underline ">Admissions</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
                 <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px] flex-row flex">
-                  <ol className="flex-row font-[400] text-[24px]  pt-[82px] pl-[110px] space-y-[30px]">
+                  <ol className="flex-row font-[400] text-[20px]  pt-[82px] pl-[110px] space-y-[29px]">
                     <li
                       className={`hover:cursor-pointer  w-[155px] ${underline}`}
                       onMouseEnter={() => {
@@ -159,7 +159,7 @@ const NavbarBottom = () => {
                     <li>Enquiry</li>
                   </ol>
                   <ol
-                    className={` ${""}   flex-row font-[400] text-[24px]  pt-[82px] pl-[110px] space-y-[40px] absolute left-[350px]`}
+                    className={` ${""}   flex-row font-[400] text-[20px]  pt-[82px] pl-[110px] space-y-[29px] absolute left-[350px]`}
                   >
                     {Programmes.map((Program) => {
                       return <li> {Program} </li>;
@@ -180,7 +180,7 @@ const NavbarBottom = () => {
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
                 <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]">
                 <div className="w-full h-full flex flex-row ">
-                    <ol className="flex-row font-[400] text-[24px]  pt-[61px] pl-[83px] space-y-[10px]">
+                    <ol className="flex-row font-[400] text-[20px]  pt-[61px] pl-[83px] space-y-[29px]">
                       <li className="font-bold underline decoration-black underline-offset-[2px]">
                         Schools
                       </li>
@@ -192,8 +192,8 @@ const NavbarBottom = () => {
                       <li>School of Law (VSL)</li>
                       <li>School of Business (VSB)</li>
                     </ol>
-                    <span className="w-[6px] h-[500px] bg-primary opacity-40 rounded-lg absolute right-[700px] top-[25px]"></span>
-                    <ol className="flex-row font-[400] text-[24px]  pt-[61px] pl-[200px] space-y-[10px]">
+                    <span className="w-[6px] h-[500px] bg-primary opacity-20 rounded-lg absolute right-[800px] top-[25px]"></span>
+                    <ol className="flex-row font-[400] text-[20px]  pt-[61px] pl-[200px] space-y-[19px]">
                       <li>Academic Regulations</li>
                       <li>Academic Council</li> <li>Faculty</li> <li>Academic Calender</li>
                       <li>International Collabration</li>
@@ -224,10 +224,10 @@ const NavbarBottom = () => {
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
                 <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]">
                   <div className="w-full h-full">
-                  <span className="w-[6px] h-[450px] bg-primary opacity-40 rounded-lg absolute left-[430px] top-[45px]"></span>
+                  <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[430px] top-[45px]"></span>
 
-                    <ol className="flex-row font-[400] text-[24px]  pt-[82px] pl-[110px] space-y-[20px]">
-                      <li className=" custom-list-item   w-[115px]">
+                    <ol className="flex-row font-[400] text-[20px]  pt-[82px] pl-[110px] space-y-[29px]">
+                      <li className=" custom-list-item   w-[100px]">
                         Overview
                       </li>
 
@@ -235,42 +235,42 @@ const NavbarBottom = () => {
                         <Image src={image0} />
                       </li>
 
-                      <li className="peer/leadership custom-list-item w-[250px]">
+                      <li className="peer/leadership custom-list-item w-[200px]">
                         Super Dream Offers
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/leadership:visible">
                         <Image src={image2} />
                       </li>
 
-                      <li className="peer/Governance custom-list-item w-[160px]">
+                      <li className="peer/Governance custom-list-item w-[135px]">
                         Dream offers
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/Governance:visible">
                         <Image src={image3} />
                       </li>
 
-                      <li className="peer/contactus custom-list-item w-[140px]">
+                      <li className="peer/contactus custom-list-item w-[120px]">
                         Internships
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/contactus:visible">
                         <Image src={image4} />
                       </li>
 
-                      <li className="peer/faq custom-list-item w-[290px]">
+                      <li className="peer/faq custom-list-item w-[240px]">
                         Industrial Collaboration
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/faq:visible">
                         <Image src={image5} />
                       </li>
 
-                      <li className="peer/cdc custom-list-item w-[135px]">
+                      <li className="peer/cdc custom-list-item w-[115px]">
                         CDC Office
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/cdc:visible">
                         <Image src={image5} />
                       </li>
 
-                      <li className="peer/Statistics custom-list-item w-[115px]">
+                      <li className="peer/Statistics custom-list-item w-[95px]">
                         Statistics
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/Statistics:visible">
@@ -293,7 +293,7 @@ const NavbarBottom = () => {
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
                 <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]">
                   <div className="w-full h-full flex flex-row ">
-                    <ol className="flex-row font-[400] text-[24px]  pt-[32px] pl-[110px] space-y-[20px]">
+                    <ol className="flex-row font-[400] text-[20px]  pt-[32px] pl-[110px] space-y-[29px]">
                       <li className="font-bold underline decoration-black underline-offset-[2px]">
                         Life @ VIT-AP
                       </li>
@@ -302,8 +302,8 @@ const NavbarBottom = () => {
                       <li>Gallery</li>
                       <li>360 Campus Tour</li>
                     </ol>
-                    <span className="w-[6px] h-[500px] bg-primary opacity-40 rounded-lg absolute left-[400px] top-[25px]"></span>
-                    <ol className="flex-row font-[400] text-[24px]  pt-[32px] pl-[200px] space-y-[15px]">
+                    <span className="w-[6px] h-[500px] bg-primary opacity-20 rounded-lg absolute left-[400px] top-[25px]"></span>
+                    <ol className="flex-row font-[400] text-[20px]  pt-[32px] pl-[200px] space-y-[15px]">
                       <li className="font-bold underline decoration-black underline-offset-[2px]">
                         Facilities
                       </li>
@@ -315,8 +315,8 @@ const NavbarBottom = () => {
                       <li>Guest House</li>
                       <li>Facilities to employees</li>
                     </ol>
-                    <span className="w-[6px] h-[500px] bg-primary opacity-40 rounded-lg absolute right-[630px] top-[25px]"></span>
-                    <ol className="flex-row font-[400] text-[24px]  pt-[32px] pl-[160px] space-y-[15px]">
+                    <span className="w-[6px] h-[500px] bg-primary opacity-20 rounded-lg absolute right-[700px] top-[25px]"></span>
+                    <ol className="flex-row font-[400] text-[20px]  pt-[32px] pl-[160px] space-y-[29px]">
                       <li className="font-bold underline decoration-black underline-offset-[2px]">
                       Committees
                       </li>
