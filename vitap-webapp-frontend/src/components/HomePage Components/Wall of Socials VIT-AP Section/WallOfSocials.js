@@ -15,7 +15,6 @@ import img1 from "@/assets/images/socialImages/Img1.png";
 import img2 from "@/assets/images/socialImages/Img2.png";
 import img3 from "@/assets/images/socialImages/Img3.png";
 import logo from "@/assets/images/socialImages/vitapLogo.png";
-import insta from "@assets/images/socialIcons/insta.png";
 
 
 
