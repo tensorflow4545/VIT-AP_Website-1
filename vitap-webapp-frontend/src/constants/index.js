@@ -61,55 +61,70 @@ export const programmesOffered = [
   {
     id: 2,
     title:
-      "B.Tech in Computer Science and Engineering Specialization in AI and ML",
+      "B.Tech in Computer Science and Engineering with Specilization in Business System (In collabration with TCS)",
     field: "undergraduate",
   },
   {
     id: 3,
-    title:
-      "B.Tech in Computer Science and Engineering Specialization in Data Analytics",
+    title: "B.Tech in Electronics and Computer Engineering",
     field: "undergraduate",
   },
   {
     id: 4,
-    title:
-      "B.Tech in Computer Science and Engineering Specialization in Network and Security",
+    title: "B.Tech in Mechanical Engineering",
     field: "undergraduate",
   },
   {
     id: 5,
-    title:
-      "B.Tech in Computer Science and Engineering Specialization in Network and Security",
+    title: "B.Com (Finance)",
     field: "undergraduate",
   },
   {
     id: 6,
-    title:
-      "B.Tech in Computer Science and Engineering Specialization in Network and Security",
+    title: "BBA",
     field: "undergraduate",
   },
   {
     id: 7,
-    title:
-      "B.Tech in Computer Science and Engineering Specialization in Network and Security",
-    field: "undergraduate",
+    title: "Integrated M.Tech CSE in Collaboration with Virtusa",
+    field: "integrated",
   },
   {
     id: 8,
-    title:
-      "B.Tech in Computer Science and Engineering Specialization in Network and Security",
-    field: "undergraduate",
-  },
-  {
-    id: 9,
-    title:
-      "B.Tech in Computer Science and Engineering Specialization in Network and Security",
-    field: "undergraduate",
-  },
-  {
-    id: 9,
-    title:
-      "B.Tech in Computer Science and Engineering Specialization in Network and Security",
+    title: "Integrated M.Tech Software Engineering",
     field: "integrated",
+  },
+  {
+    id: 9,
+    title:
+      "B.Sc, M.Sc - Data Science in Collaboration with Binghamton University, USA & QpiAI, India Pvt.Ltd",
+    field: "doctorial",
+  },
+  {
+    id: 10,
+    title: "B.A & M.A Public Services",
+    field: "doctorial",
+  },
+  {
+    id: 11,
+    title: "M.Tech VLSI",
+    field: "postgraduate",
+  },
+  {
+    id: 12,
+    title:
+      "M.Sc - Data Science in Collaboration with Binghamton University, USA & QpiAI, India Pvt.Ltd",
+    field: "postgraduate",
+  },
+  {
+    id: 13,
+    title:
+      "M.Sc - Physics in Collaboration with NoPo Nanotech Pvt.Ltd & QpiAI, India Pvt.Ltd",
+    field: "postgraduate",
+  },
+  {
+    id: 14,
+    title: "M.Sc Chemistry in collaboration with Mitsui kinzoku Components India (MKCI)",
+    field: "postgraduate",
   },
 ];

@@ -1,11 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import news2 from "../../../assets/images/newsPhotos/1.png";
-import news1 from "../../../assets/images/newsPhotos/2.jpg";
-import news3 from "../../../assets/images/newsPhotos/basketball.png";
-// import news4 from "../../../assets/images/newsPhotos/4.jpeg";
-import circle from "../../../assets/images/newsPhotos/aimusic.png";
-import arrow from "../../../assets/images/newsPhotos/Vector.png";
+
+import news2 from "@/assets/images/newsPhotos/3rd Annual Convocation - 2023.jpg";
+import news1 from "@/assets/images/newsPhotos/aimusic.png";
+import news3 from "@/assets/images/newsPhotos/basketball.png";
+import news4 from "@/assets/images/newsPhotos/nationn.png";
+import circle from "@/assets/images/newsPhotos/circle.png";
+import arrow from "@/assets/images/newsPhotos/Vector.png";
+
 
 const News = () => {
   return (

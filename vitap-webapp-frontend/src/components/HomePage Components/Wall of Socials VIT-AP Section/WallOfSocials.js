@@ -1,17 +1,23 @@
-"use client"
+
+"use client";
+
 import React from "react";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import insta from "@/assets/images/socialIcons/insta.png"
 import { SocialIcon } from "react-social-icons";
-import insta from "../../../assets/images/socialIcons/insta.png";
-import twitter from "../../../assets/images/socialIcons/twitter.png";
-import linkin from "../../../assets/images/socialIcons/linkedin.png";
-import fb from "../../../assets/images/socialIcons/fb.png";
-import yt from "../../../assets/images/socialIcons/yt.png";
-import img1 from "../../../assets/images/socialImages/Img1.png";
-import img2 from "../../../assets/images/socialImages/Img2.png";
-import img3 from "../../../assets/images/socialImages/Img3.png";
-import logo from "../../../assets/images/socialImages/vitapLogo.png";
+
+import twitter from "@/assets/images/socialIcons/twitter.png";
+import linkin from "@/assets/images/socialIcons/linkedin.png";
+import fb from "@/assets/images/socialIcons/fb.png";
+import yt from "@/assets/images/socialIcons/yt.png";
+import img1 from "@/assets/images/socialImages/Img1.png";
+import img2 from "@/assets/images/socialImages/Img2.png";
+import img3 from "@/assets/images/socialImages/Img3.png";
+import logo from "@/assets/images/socialImages/vitapLogo.png";
+import insta from "@assets/images/socialIcons/insta.png";
+
+
 
 const Socials = () => {
   const containerRef = useRef(null);
