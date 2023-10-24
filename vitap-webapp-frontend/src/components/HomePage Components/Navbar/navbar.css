@@ -84,7 +84,7 @@
     height: 6px;
     background-color: #650010;
     transition: width 0.5s ease;
-  }
+  } 
   
   .custom-list-item:hover::before {
     width: 100%;
@@ -95,3 +95,6 @@
   }
   
 
+
+
+  
