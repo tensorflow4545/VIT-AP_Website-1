@@ -3,10 +3,10 @@ import NavbarBottom from "@/components/HomePage Components/Navbar/NavbarBottom";
 import NavbarUpper from "@/components/HomePage Components/Navbar/NavbarUpper";
 import HeroSection from "@/components/HomePage Components/Hero Section/HeroSection";
 import ResearchInnovation from "@/components/HomePage Components/Research and Innovation Section/ResearchInnovation";
-// import OurEvents from "@/components/HomePage Components/Our Events Section/OurEvents";
+import OurEvents from "@/components/HomePage Components/Our Events Section/OurEvents";
 import About from "@/components/HomePage Components/About VIT-AP Section/About";
 import OurSchools from "@/components/HomePage Components/Our Schools Section/OurSchools";
-// import ProgrammesOffered from "@/components/HomePage Components/Programmes Offered Section/ProgrammesOffered";
+import ProgrammesOffered from "@/components/HomePage Components/Programmes Offered Section/ProgrammesOffered";
 
 import config from "@/config";
 import Image from "next/image";
@@ -41,8 +41,8 @@ const Home = async () => {
       <HeroSection /> 
       <About />
       <OurSchools />
-      {/* <ProgrammesOffered />  */}
-      {/* <OurEvents />  */}
+      <ProgrammesOffered /> 
+      <OurEvents /> 
       <ResearchInnovation />
       <LifeAtVITAP/>
       <NewsAboutVITAP/>
