@@ -16,6 +16,9 @@ jobs:
       - name: Install NPM dependencies
         run: npm install
         working-directory: ./vitap-webapp-frontend
+      - name: Install PM2
+        run: npm install pm2 -g
+        working-directory: ./vitap-webapp-frontend
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -23,5 +26,5 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET }}
           aws-region: ap-south-1
       - name: Deploy Next.js app
-        run: npm run dev
+        run: pm2 start npm --name "vitap-webapp-frontend" -- start
         working-directory: ./vitap-webapp-frontend
