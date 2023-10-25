@@ -64,6 +64,7 @@ const About = async () => {
                 height={100}
               /> */}
               <Image 
+              alt="A descriptive text here"
               src={aboutimage}                
                 width={600}
                 height={100}
@@ -71,7 +72,7 @@ const About = async () => {
                 />
             </div>
             <div className="w-[95%]">
-              <h1 className="font-Montserrant font-[680px] text-[17px] text-left mt-[18px] leading-7">
+              <h1 className="font-Montserrant font-[680px] text-[17px] text-left mt-[35px] leading-7">
                 With a history of 37 years of innovation in educational and
                 research domain, VIT has been a forerunner in delivering quality
                 education. Consistently ranked among the top educational

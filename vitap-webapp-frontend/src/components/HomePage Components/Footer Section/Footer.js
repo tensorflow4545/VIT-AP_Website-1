@@ -17,12 +17,11 @@ export default function Footer(){
                <div class="part1">
                 <p class="heading">Quick Links</p>
                 <ul>
-                    <li>Academics</li>
-                    <li>Programs Offered</li>   
-                    <li>Careers</li>
-                    <li>Gallery</li>
-                    <li>Time of Service</li>
-                    <li>Privacy Policy</li>
+                    <li class="listitem">Careers</li>
+                    <li class="listitem">Gallery</li>
+                    <li class="listitem">Hostel</li>
+                    <li class="listitem">Transport</li>
+                    <li class="listitem">Policies</li>
                 </ul>
                 </div>
                 <div class="part2">
@@ -39,13 +38,8 @@ export default function Footer(){
                 <div class="part3">
                 <p class="heading">Ranking & Accereditation</p>
                 <ul class="list">
-                    <li class="listitem">Rankings</li>
-                    <li class="listitem">Accreditation </li>   
-                    <li class="listitem">Leadership</li>
-                    <li class="listitem">Newsletter</li>
-                    <li class="listitem">Press Media</li>
-                    <li class="listitem">Governance</li>
-
+                      <li class="listitem">RAAC</li>
+                      <li class="listitem">NACC</li>
                 </ul>
                 </div>
                
@@ -66,22 +60,22 @@ export default function Footer(){
                 <div class="part2">
                 <p class="heading">Programs</p>
                 <ul class="list">
-                    <li class="listitem">Undergraduate</li>
-                    <li class="listitem">Postgraduate</li>   
-                    <li class="listitem">Integrated Degree</li>
-                    <li class="listitem"> Doctoral</li>
-                    <li class="listitem">International</li>
+                    <li class="listitem">Programes Offered</li>
+                    <li class="listitem">Academic Calendar</li>   
+                    <li class="listitem">Application Process</li>
+                    <li class="listitem">Fee Structure</li>
+                    <li class="listitem">Scholarship</li>
+                    <li class="listitem">IQAC</li>
                 </ul>
                 </div>
                 <div class="part3">
                 <p class="heading">Information</p>
                 <ul class="list">
-                    <li class="listitem">Public Note</li>
-                    <li class="listitem">Academic Calendar</li>   
-                    <li class="listitem">Campus Maps</li>
-                    <li class="listitem">Application Process</li>
-                    <li class="listitem">Academic Bank of Credits</li>
-                    <li class="listitem">IQAC</li>
+                    <li class="listitem">Public Note:University Act</li>
+                    <li class="listitem">Forms</li>   
+                    <li class="listitem">Directory</li>
+                    <li class="listitem">Feedback</li>
+                    <li class="listitem">Academic Bank of Credits(ABC)</li>
                 </ul>
                 </div>
                
@@ -113,7 +107,7 @@ export default function Footer(){
              <div class="credit lg:w-full md:w-max ">
              <div class="flex flex-row">
              <div class="basis">
-             <div class="pt-4 pb-5"><Image class="unilogo " src="/unilogo.png" width="240" height="100"></Image></div>
+             <div class="pt-4 pb-5"><Image alt="A descriptive text here" class="unilogo " src="/unilogo.png" width="240" height="100"></Image></div>
              <p class="copytext">© VIT-AP University</p>
              </div> 
              <div class="basis">

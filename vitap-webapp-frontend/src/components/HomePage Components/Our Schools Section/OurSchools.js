@@ -47,6 +47,7 @@ const OurSchools = async () => {
               <>
                 <div className="w-[230px] h-[190px] ml-[46px] relative">
                   <Image
+                  alt="A descriptive text here"
                     src={image1}
                     className="opacity-90"
                   />
@@ -58,6 +59,7 @@ const OurSchools = async () => {
               <>
                 <div className="w-[230px] h-[190px] ml-[46px] relative">
                   <Image
+                  alt="A descriptive text here"
                     src={image2}
                     className="opacity-90"
                   />
@@ -69,6 +71,7 @@ const OurSchools = async () => {
               <>
                 <div className="w-[230px] h-[190px] ml-[46px] relative">
                   <Image
+                  alt="A descriptive text here"
                     src={image3}
                     className="opacity-90"
                   />
@@ -80,6 +83,7 @@ const OurSchools = async () => {
               <>
                 <div className="w-[230px] h-[190px] ml-[46px] relative">
                   <Image
+                  alt="A descriptive text here"
                     src={image4}
                     className="opacity-90"
                   />
@@ -95,6 +99,7 @@ const OurSchools = async () => {
             <>
                 <div className="w-[230px] h-[190px] ml-[46px] relative">
                   <Image
+                  alt="A descriptive text here"
                     src={image5}
                     className="opacity-90"
                   />
@@ -106,6 +111,7 @@ const OurSchools = async () => {
               <>
                 <div className="w-[230px] h-[190px] ml-[46px] relative">
                   <Image
+                  alt="A descriptive text here"
                     src={image6}
                     className="opacity-90"
                   />
@@ -117,6 +123,7 @@ const OurSchools = async () => {
               <>
                 <div className="w-[230px] h-[190px] ml-[46px] relative">
                   <Image
+                  alt="A descriptive text here"
                     src={image7}
                     className="opacity-90"
                   />
