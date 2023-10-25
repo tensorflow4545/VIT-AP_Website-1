@@ -120,12 +120,15 @@ const Socials = () => {
             </p>
           </div>
         </div>
-        <div className="ml-[56px] overflow-hidden">
+
+        <div className="ml-[56px] overflow-hidden relative">
+          
           <div
             ref={containerRef}
             className={`relative ${
               isHovered ? "animate-scroll" : ""
             } infinite-scroll-content`}
+            
           >
             <div className="card1 mt-[25px] relative inline-block">
               <Image alt="A descriptive text here" src={img1} width={250.04} height={297} />
@@ -152,8 +155,9 @@ const Socials = () => {
               </div>
             </div>
           </div>
+          
         </div>
-        <div className="ml-[64.96px] overflow-hidden">
+        <div className="ml-[64.96px] overflow-hidden relative">
           <div
             ref={containerRef}
             className="infinite-scroll-content ${isHovered ? 'animate-scroll' : ''} relative"
@@ -230,6 +234,9 @@ const Socials = () => {
           </div>
         </div>
       </div>
+
+
+
       <style jsx>{`
         @keyframes scroll {
           0% {

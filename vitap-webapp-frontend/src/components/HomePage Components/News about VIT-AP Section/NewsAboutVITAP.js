@@ -22,8 +22,8 @@ const News = () => {
           <h1 className="text-[#FFFFFF] text-[25px]">See all</h1>
         </div> */}
 
-        <div className="flex ml-[240px] mt-[20px]">
-          <div className="w-[320px] h-[450px] bg-white ml-[24px] border-b border-gray-300 hover:shadow-2xl hover:border-gray-500">
+        <div className="flex justify-center mt-[20px] space-x-[80px]">
+          <div className="w-[320px]  hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] cursor-pointer  h-[450px] bg-white ml-[24px] border-b border-gray-300  hover:border-gray-500">
             <Image
             alt="A descriptive text here"
               src={news2}
@@ -47,7 +47,7 @@ const News = () => {
               </p>
             </button>
           </div>
-          <div className="w-[320px] h-[450px] bg-white ml-[35px] border-b border-gray-300 hover:shadow-2xl hover:border-gray-500">
+          <div className="w-[320px] hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] cursor-pointer  h-[450px] bg-white ml-[35px] border-b border-gray-300  hover:border-gray-500">
             <Image
             alt="A descriptive text here"
               src={news2}
@@ -71,7 +71,7 @@ const News = () => {
               </p>
             </button>
           </div>
-          <div className="w-[320px] h-[450px] bg-white ml-[35px] border-b border-gray-300 hover:shadow-2xl hover:border-gray-500">
+          <div className="w-[320px]  h-[450px] hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] cursor-pointer  bg-white ml-[35px] border-b border-gray-300  hover:border-gray-500">
             <Image
             alt="A descriptive text here"
               src={news3}
@@ -96,7 +96,7 @@ const News = () => {
             </button>
           </div>
         </div>
-        <button className="flex justify-center items-center mt-[30px] ml-[50%] border border-black pt-[5px] pl-[5px] pr-[5px] pb-[5px]">
+        <button className="flex justify-center items-center mt-[30px] ml-[50%] border hover:bg-primary hover:text-white  w-[80px] border-black pt-[5px] pl-[5px] pr-[5px] pb-[5px]">
           See all
         </button>
       </div>
