@@ -25,6 +25,7 @@ const News = () => {
         <div className="flex ml-[240px] mt-[20px]">
           <div className="w-[320px] h-[450px] bg-white ml-[24px] border-b border-gray-300 hover:shadow-2xl hover:border-gray-500">
             <Image
+            alt="A descriptive text here"
               src={news2}
               width={392}
               height={311}
@@ -37,6 +38,7 @@ const News = () => {
             <button className="flex ml-[24px] mt-[50px] rounded-full hover:bg-[#5C0E14] group">
               <div className="w-[40px] h-[40px] bg-white rounded-full group-hover:w-[190px] group-hover:h-[40px] group-hover:bg-[#5C0E14]"></div>
               <Image
+              alt="A descriptive text here"
                 src={arrow}
                 className="absolute mt-[13px] ml-[11px] group-hover:opacity-0"
               />
@@ -47,6 +49,7 @@ const News = () => {
           </div>
           <div className="w-[320px] h-[450px] bg-white ml-[35px] border-b border-gray-300 hover:shadow-2xl hover:border-gray-500">
             <Image
+            alt="A descriptive text here"
               src={news2}
               width={392}
               height={311}
@@ -59,6 +62,7 @@ const News = () => {
             <button className="flex ml-[24px] mt-[70px] rounded-full hover:bg-[#5C0E14] group">
               <div className="w-[40px] h-[40px] bg-white rounded-full group-hover:w-[190px] group-hover:h-[40px] group-hover:bg-[#5C0E14]"></div>
               <Image
+              alt="A descriptive text here"
                 src={arrow}
                 className="absolute mt-[13px] ml-[11px] group-hover:opacity-0"
               />
@@ -69,6 +73,7 @@ const News = () => {
           </div>
           <div className="w-[320px] h-[450px] bg-white ml-[35px] border-b border-gray-300 hover:shadow-2xl hover:border-gray-500">
             <Image
+            alt="A descriptive text here"
               src={news3}
               width={392}
               height={311}
@@ -81,6 +86,7 @@ const News = () => {
             <button className="flex ml-[24px] mt-[25px] rounded-full hover:bg-[#5C0E14] group">
               <div className="w-[40px] h-[40px] bg-white rounded-full group-hover:w-[190px] group-hover:h-[40px] group-hover:bg-[#5C0E14]"></div>
               <Image
+              alt="A descriptive text here"
                 src={arrow}
                 className="absolute mt-[13px] ml-[11px] group-hover:opacity-0"
               />

@@ -107,7 +107,7 @@ export default function Footer(){
              <div class="credit lg:w-full md:w-max ">
              <div class="flex flex-row">
              <div class="basis">
-             <div class="pt-4 pb-5"><Image class="unilogo " src="/unilogo.png" width="240" height="100"></Image></div>
+             <div class="pt-4 pb-5"><Image alt="A descriptive text here" class="unilogo " src="/unilogo.png" width="240" height="100"></Image></div>
              <p class="copytext">© VIT-AP University</p>
              </div> 
              <div class="basis">

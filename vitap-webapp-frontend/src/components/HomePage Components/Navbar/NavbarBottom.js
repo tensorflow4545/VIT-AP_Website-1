@@ -65,7 +65,7 @@ const NavbarBottom = () => {
           <ul className="flex flex-row  items-center pl-[33px] w-full justify-between pr-[76px]">
             <li className="mr-[100px]">
               <a>
-                <Image src={logo} className={logo ? "logo active" : "logo"} />
+                <Image alt="A descriptive text here" src={logo} className={logo ? "logo active" : "logo"} />
               </a>
             </li>
 
@@ -88,7 +88,7 @@ const NavbarBottom = () => {
                       </li>
 
                       <li className="absolute left-[600px]  top-[20px]  ">
-                        <Image src={image0} />
+                        <Image alt="A descriptive text here" src={image0} />
                       </li>
 
                       <li className="peer/leadership custom-list-item w-[130px]">
@@ -99,24 +99,24 @@ const NavbarBottom = () => {
                         Governance
                       </li>
                       <li className="absolute left-[600px] invisible top-[20px] peer-hover/leadership:visible">
-                        <Image src={image2} />
+                        <Image alt="A descriptive text here" src={image2} />
                       </li>
 
                       <li className="peer/contactus custom-list-item w-[50px]">
                         FAQ
                       </li>
                       <li className="absolute left-[600px] invisible top-[20px] peer-hover/Governance:visible">
-                        <Image src={image3} />
+                        <Image alt="A descriptive text here" src={image3} />
                       </li>
 
                       <li className="peer/faq custom-list-item w-[130px]">
                         Contact us
                       </li>
                       <li className="absolute left-[600px] invisible top-[20px] peer-hover/contactus:visible">
-                        <Image src={image4} />
+                        <Image alt="A descriptive text here" src={image4} />
                       </li>
                       <li className="absolute left-[600px] invisible top-[20px] peer-hover/faq:visible">
-                        <Image src={image5} />
+                        <Image alt="A descriptive text here" src={image5} />
                       </li>
                     </ol>
                   </div>
@@ -161,8 +161,8 @@ const NavbarBottom = () => {
                   <ol
                     className={` ${""}   flex-row font-[400] text-[20px]  pt-[82px] pl-[110px] space-y-[29px] absolute left-[350px]`}
                   >
-                    {Programmes.map((Program) => {
-                      return <li> {Program} </li>;
+                    {Programmes.map((Program, index) => {
+                      return <li key={index}> {Program} </li>;
                     })}
                   </ol>
                 </div>
@@ -232,49 +232,49 @@ const NavbarBottom = () => {
                       </li>
 
                       <li className="absolute left-[600px]  top-[40px]  ">
-                        <Image src={image0} />
+                        <Image alt="A descriptive text here" src={image0} />
                       </li>
 
                       <li className="peer/leadership custom-list-item w-[200px]">
                         Super Dream Offers
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/leadership:visible">
-                        <Image src={image2} />
+                        <Image alt="A descriptive text here" src={image2} />
                       </li>
 
                       <li className="peer/Governance custom-list-item w-[135px]">
                         Dream offers
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/Governance:visible">
-                        <Image src={image3} />
+                        <Image alt="A descriptive text here" src={image3} />
                       </li>
 
                       <li className="peer/contactus custom-list-item w-[120px]">
                         Internships
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/contactus:visible">
-                        <Image src={image4} />
+                        <Image alt="A descriptive text here" src={image4} />
                       </li>
 
                       <li className="peer/faq custom-list-item w-[240px]">
                         Industrial Collaboration
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/faq:visible">
-                        <Image src={image5} />
+                        <Image alt="A descriptive text here" src={image5} />
                       </li>
 
                       <li className="peer/cdc custom-list-item w-[115px]">
                         CDC Office
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/cdc:visible">
-                        <Image src={image5} />
+                        <Image alt="A descriptive text here" src={image5} />
                       </li>
 
                       <li className="peer/Statistics custom-list-item w-[95px]">
                         Statistics
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/Statistics:visible">
-                        <Image src={image5} />
+                        <Image alt="A descriptive text here" src={image5} />
                       </li>
                     </ol>
                   </div>
@@ -354,7 +354,7 @@ const NavbarBottom = () => {
           <ul className="flex flex-row space-x-[31px] items-center pl-[33px] w-full justify-between pr-[76px]">
             <li>
               <a>
-                <Image src={logo} />
+                <Image alt="A descriptive text here" src={logo} />
               </a>
             </li>
             <li
