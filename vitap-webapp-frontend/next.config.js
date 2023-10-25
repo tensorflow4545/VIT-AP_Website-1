@@ -1,9 +1,17 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
-  // Other Next.js configuration options...
-
-  output: 'export', 
+const nextConfig = {
+  server: {
+    // Bind to all network interfaces
+    host: '0.0.0.0',
+  },
   images: {
-    // Your image configurations here...
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: '0.0.0.0',
+      },
+    ],
   },
 };
+
+module.exports = nextConfig;
