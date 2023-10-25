@@ -23,7 +23,7 @@ jobs:
         working-directory: ./vitap-webapp-frontend
 
       - name: Build the Next.js app
-        run: npm run build
+        run: npm run dev
         working-directory: ./vitap-webapp-frontend
 
       - name: Secure Copy (SCP) to AWS EC2
