@@ -41,8 +41,8 @@ const Home = async () => {
       <HeroSection /> 
       <About />
       <OurSchools />
-      <ProgrammesOffered /> 
-      <OurEvents /> 
+      {/* <ProgrammesOffered />  */}
+      {/* <OurEvents />  */}
       <ResearchInnovation />
       <LifeAtVITAP/>
       <NewsAboutVITAP/>
