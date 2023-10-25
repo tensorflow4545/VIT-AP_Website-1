@@ -64,6 +64,7 @@ const About = async () => {
                 height={100}
               /> */}
               <Image 
+              alt="A descriptive text here"
               src={aboutimage}                
                 width={600}
                 height={100}

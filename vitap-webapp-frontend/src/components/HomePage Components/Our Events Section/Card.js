@@ -9,8 +9,10 @@ const Card = ({imgUrl, date, index, title}) => {
       className="max-w-[380px] relative rounded-lg overflow-hidden w-[400px] h-[350px] "
     >
       <Image
+      
+      key={1}
         src={imgUrl}
-        alt={index}
+        alt="A descriptive text here"
         width={400}
         height={350}
         className="object-cover rounded-lg relative hover:scale-110 transition-all duration-500 ease-in overflow-hidden"

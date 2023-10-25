@@ -1,13 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-        remotePatterns: [
-          {
-            protocol: 'http',
-            hostname: '127.0.0.1'
-          },
-        ],
-      }
-}
+  server: {
+    // Bind to all network interfaces
+    host: '0.0.0.0',
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: '0.0.0.0',
+      },
+    ],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

@@ -62,6 +62,7 @@ const Socials = () => {
                 fgColor="#000000"
               /> */}
               <Image
+              alt="A descriptive text here"
                 src={insta}
                 className="absolute w-[24px] h-[24px] ml-[10px] mt-[10px]"
               />
@@ -73,6 +74,7 @@ const Socials = () => {
           <div className="w-[300px] h-[44px] ml-[108px] mt-[28px] flex">
             <div className="w-[44px] h-[44px] rounded bg-[#DCCED0] relative">
               <Image
+              alt="A descriptive text here"
                 src={twitter}
                 className="absolute w-[24px] h-[24px] ml-[10px] mt-[10px]"
               />
@@ -84,6 +86,7 @@ const Socials = () => {
           <div className="w-[350px] h-[44px] ml-[108px] mt-[28px] flex">
             <div className="w-[44px] h-[44px] rounded bg-[#DCCED0] relative">
               <Image
+              alt="A descriptive text here"
                 src={linkin}
                 className="absolute w-[24px] h-[24px] ml-[10px] mt-[10px]"
               />
@@ -95,6 +98,7 @@ const Socials = () => {
           <div className="w-[300px] h-[44px] ml-[108px] mt-[28px] flex">
             <div className="w-[44px] h-[44px] rounded bg-[#DCCED0] relative">
               <Image
+              alt="A descriptive text here"
                 src={fb}
                 className="absolute w-[24px] h-[24px] ml-[10px] mt-[10px]"
               />
@@ -106,6 +110,7 @@ const Socials = () => {
           <div className="w-[300px] h-[44px] ml-[108px] mt-[28px] flex">
             <div className="w-[44px] h-[44px] rounded bg-[#DCCED0] relative">
               <Image
+              alt="A descriptive text here"
                 src={yt}
                 className="absolute w-[24px] h-[24px] ml-[10px] mt-[10px]"
               />
@@ -115,66 +120,70 @@ const Socials = () => {
             </p>
           </div>
         </div>
-        <div className="ml-[56px] overflow-hidden">
+
+        <div className="ml-[56px] overflow-hidden relative">
+          
           <div
             ref={containerRef}
             className={`relative ${
               isHovered ? "animate-scroll" : ""
             } infinite-scroll-content`}
+            
           >
             <div className="card1 mt-[25px] relative inline-block">
-              <Image src={img1} width={250.04} height={297} />
+              <Image alt="A descriptive text here" src={img1} width={250.04} height={297} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black">
-                <Image src={logo} className="absolute ml-[11px] mt-[257px]" />
+                <Image alt="A descriptive text here" src={logo} className="absolute ml-[11px] mt-[257px]" />
               </div>
             </div>
             <div className="card2 mt-[25px] relative inline-block">
-              <Image src={img2} width={250.04} height={297} />
+              <Image alt="A descriptive text here" src={img2} width={250.04} height={297} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black">
-                <Image src={logo} className="absolute ml-[11px] mt-[257px]" />
+                <Image alt="A descriptive text here" src={logo} className="absolute ml-[11px] mt-[257px]" />
               </div>
             </div>
             <div className="card3 mt-[25px] relative inline-block">
-              <Image src={img3} width={250.04} height={297} />
+              <Image alt="A descriptive text here" src={img3} width={250.04} height={297} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black">
-                <Image src={logo} className="absolute ml-[11px] mt-[257px]" />
+                <Image alt="A descriptive text here" src={logo} className="absolute ml-[11px] mt-[257px]" />
               </div>
             </div>
             <div className="card4 mt-[25px] relative inline-block">
-              <Image src={img1} width={250.04} height={297} />
+              <Image alt="A descriptive text here" src={img1} width={250.04} height={297} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black">
-                <Image src={logo} className="absolute ml-[11px] mt-[257px]" />
+                <Image alt="A descriptive text here" src={logo} className="absolute ml-[11px] mt-[257px]" />
               </div>
             </div>
           </div>
+          
         </div>
-        <div className="ml-[64.96px] overflow-hidden">
+        <div className="ml-[64.96px] overflow-hidden relative">
           <div
             ref={containerRef}
             className="infinite-scroll-content ${isHovered ? 'animate-scroll' : ''} relative"
           >
             <div className="card1 mt-[25px] relative inline-block">
-              <Image src={img1} width={250.04} height={297} />
+              <Image alt="A descriptive text here" src={img1} width={250.04} height={297} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black">
-                <Image src={logo} className="absolute ml-[11px] mt-[257px]" />
+                <Image alt="A descriptive text here" src={logo} className="absolute ml-[11px] mt-[257px]" />
               </div>
             </div>
             <div className="card2 mt-[25px] relative inline-block">
-              <Image src={img2} width={250.04} height={297} />
+              <Image alt="A descriptive text here" src={img2} width={250.04} height={297} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black">
-                <Image src={logo} className="absolute ml-[11px] mt-[257px]" />
+                <Image alt="A descriptive text here" src={logo} className="absolute ml-[11px] mt-[257px]" />
               </div>
             </div>
             <div className="card3 mt-[25px] relative inline-block">
-              <Image src={img3} width={250.04} height={297} />
+              <Image alt="A descriptive text here"  src={img3} width={250.04} height={297} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black">
-                <Image src={logo} className="absolute ml-[11px] mt-[257px]" />
+                <Image  alt="A descriptive text here" src={logo} className="absolute ml-[11px] mt-[257px]" />
               </div>
             </div>
             <div className="card4 mt-[25px] relative inline-block">
-              <Image src={img1} width={250.04} height={297} />
+              <Image alt="A descriptive text here" src={img1} width={250.04} height={297} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black">
-                <Image src={logo} className="absolute ml-[11px] mt-[257px]" />
+                <Image alt="A descriptive text here" src={logo} className="absolute ml-[11px] mt-[257px]" />
               </div>
             </div>
           </div>
@@ -185,10 +194,11 @@ const Socials = () => {
             className="infinite-scroll-content ${isHovered ? 'animate-scroll' : ''} relative"
           >
             <div className="card1 mt-[25px] relative inline-block group">
-              <Image src={img1} width={250.04} height={297} />
+              <Image alt="A descriptive text here" src={img1} width={250.04} height={297} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black group-hover:opacity-70">
-                <Image src={logo} className="absolute ml-[11px] mt-[257px]" />
+                <Image alt="A descriptive text here" src={logo} className="absolute ml-[11px] mt-[257px]" />
                 <Image
+                alt="A descriptive text here"
                   src={insta}
                   width={25}
                   height={25}
@@ -204,26 +214,29 @@ const Socials = () => {
               </div>
             </div>
             <div className="card2 mt-[25px] relative inline-block">
-              <Image src={img2} width={250.04} height={297} />
+              <Image alt="A descriptive text here" src={img2} width={250.04} height={297} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black">
-                <Image src={logo} className="absolute ml-[11px] mt-[257px]" />
+                <Image alt="A descriptive text here" src={logo} className="absolute ml-[11px] mt-[257px]" />
               </div>
             </div>
             <div className="card3 mt-[25px] relative inline-block">
-              <Image src={img3} width={250.04} height={297} />
+              <Image alt="A descriptive text here" src={img3} width={250.04} height={297} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black">
-                <Image src={logo} className="absolute ml-[11px] mt-[257px]" />
+                <Image alt="A descriptive text here" src={logo} className="absolute ml-[11px] mt-[257px]" />
               </div>
             </div>
             <div className="card4 mt-[25px] relative inline-block">
-              <Image src={img1} width={250.04} height={297} />
+              <Image alt="A descriptive text here" src={img1} width={250.04} height={297} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black">
-                <Image src={logo} className="absolute ml-[11px] mt-[257px]" />
+                <Image alt="A descriptive text here" src={logo} className="absolute ml-[11px] mt-[257px]" />
               </div>
             </div>
           </div>
         </div>
       </div>
+
+
+
       <style jsx>{`
         @keyframes scroll {
           0% {

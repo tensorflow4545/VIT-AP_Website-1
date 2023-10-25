@@ -15,54 +15,63 @@ const Life = () => {
     <>
       <div className="flex flex-col h-screen bg-[#E8E8E8] relative">
         <Image
+        alt="A descriptive text here"
           src={exp1}
           width={250}
           height={200}
           className="absolute top-3 left-[50px]"
         />
         <Image
+        alt="A descriptive text here"
           src={exp2}
           width={184}
           height={147}
           className="absolute top-0 left-[490px]"
         />
         <Image
+        alt="A descriptive text here"
           src={exp3}
           width={250}
           height={200}
           className="absolute top-0 left-[820px]"
         />
         <Image
+        alt="A descriptive text here"
           src={exp4}
           width={250}
           height={180}
           className="absolute top-[40px] right-[30px]"
         />
         <Image
+        alt="A descriptive text here"
           src={exp5}
           width={320}
           height={220}
           className="absolute left-[15px] top-[240px]"
         />
         <Image
+        alt="A descriptive text here"
           src={exp6}
           width={316}
           height={200}
           className="absolute top-[300px] right-[20px]"
         />
         <Image
+        alt="A descriptive text here"
           src={exp7}
           width={272}
           height={200}
           className="absolute left-[70px] top-[500px]"
         />
         <Image
+        alt="A descriptive text here"
           src={exp8}
           width={280}
           height={202}
           className="absolute bottom-0 right-[590px] top-[534px]"
         />
         <Image
+        alt="A descriptive text here"
           src={exp9}
           width={280}
           height={202}
