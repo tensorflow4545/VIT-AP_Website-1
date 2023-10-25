@@ -25,7 +25,7 @@
     padding-bottom: 47px;
 }
 .part3{
-    
+    width: max-content;
     padding-bottom: 47px;
 }
 .list{
@@ -38,6 +38,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
+    width: max-content;
     line-height: 150%; /* 24px */
     padding-bottom: 1.5px;
 }
