@@ -1,0 +1,32 @@
+name: Deploy Next.js App to AWS
+
+on:
+  push:
+    branches:
+      - main # Change this to your main branch name
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./vitap-webapp-frontend
+
+      - name: Build the Next.js app
+        run: npm run dev
+        working-directory: ./vitap-webapp-frontend
+
+      - name: Configure AWS credentials
+        run: aws configure set aws_access_key_id ${{ secrets.AWS_KEY }} && aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET }} && aws configure set region ${{ secrets.AWS_REGION }}
+
+# Note: You'll need to replace the secrets with your actual values in your GitHub repository settings.
