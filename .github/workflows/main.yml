@@ -1,4 +1,4 @@
-name: Deploy Next.js App to AWS
+name: Deploy Next.js App to AWS EC2
 
 on:
   push:
@@ -26,7 +26,12 @@ jobs:
         run: npm run dev
         working-directory: ./vitap-webapp-frontend
 
-      - name: Configure AWS credentials
-        run: aws configure set aws_access_key_id ${{ secrets.AWS_KEY }} && aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET }} && aws configure set region ${{ secrets.AWS_REGION }}
+      - name: Secure Copy (SCP) to AWS EC2
+        run: |
+          scp -i ${{ secrets.SSH_PRIVATE_KEY_PATH }} -o StrictHostKeyChecking=no -r ./out/* ${{ secrets.SSH_USERNAME }}@${{ secrets.EC2_INSTANCE_IP }}:~/app/
+        env:
+          SSH_PRIVATE_KEY_PATH: ${{ secrets.SSH_PRIVATE_KEY_PATH }}
+          SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
+          EC2_INSTANCE_IP: ${{ secrets.EC2_INSTANCE_IP }}
 
-# Note: You'll need to replace the secrets with your actual values in your GitHub repository settings.
+# Note: Replace placeholders with your actual values in your GitHub repository settings.
