@@ -23,5 +23,5 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET }}
           aws-region: ap-south-1
       - name: Deploy Next.js app
-        run: npm run dev
+        run: npm run dev -- -H 0.0.0.0
         working-directory: ./vitap-webapp-frontend
