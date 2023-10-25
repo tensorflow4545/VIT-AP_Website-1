@@ -1,18 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  target: 'serverless',
-  server: {
-    // Bind to all network interfaces
-    host: '0.0.0.0',
-  },
+module.exports = {
+  // Other Next.js configuration options...
+
+  target: 'serverless', // Set the deployment target to serverless
+
   images: {
-    remotePatterns: [
-      {
-        protocol: 'http',
-        hostname: '0.0.0.0',
-      },
-    ],
+    // Your image configurations here...
   },
 };
-
-module.exports = nextConfig;
