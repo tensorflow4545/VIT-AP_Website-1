@@ -16,9 +16,6 @@ jobs:
       - name: Install NPM dependencies
         run: npm install
         working-directory: ./vitap-webapp-frontend
-      - name: Install Serverless
-        run: npm install serverless@3.36.0
-        working-directory: ./vitap-webapp-frontend
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -26,7 +23,5 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET }}
           aws-region: ap-south-1
       - name: Deploy Next.js app
-        env:
-           SLS_INTERACTIVE_SETUP_ENABLE: 1
-        run: npx serverless deploy
+        run: npm run dev
         working-directory: ./vitap-webapp-frontend
