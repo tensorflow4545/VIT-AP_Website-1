@@ -96,9 +96,11 @@ const News = () => {
             </button>
           </div>
         </div>
-        <button className="flex justify-center items-center mt-[30px] ml-[50%] border hover:bg-primary hover:text-white  w-[80px] border-black pt-[5px] pl-[5px] pr-[5px] pb-[5px]">
-          See all
-        </button>
+        <div className="flex items-center justify-center mt-[30px]">
+          <button className="border border-black pt-[5px] pl-[5px] pr-[5px] pb-[5px]">
+            See all
+          </button>
+        </div>
       </div>
     </>
   );
