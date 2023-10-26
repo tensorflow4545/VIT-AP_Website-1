@@ -1,9 +1,9 @@
 name: CI
 on:
   push:
-    branches: [ master ]
+    branches: [ AWS-Build-Branch ]
   pull_request:
-    branches: [ master ]
+    branches: [ AWS-Build-Branch ]
   workflow_dispatch:
 jobs:
   build:
