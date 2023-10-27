@@ -2,14 +2,12 @@ import Card from "./Card.js";
 import config from "@/config";
 import Image from "next/image";
 
-import image1 from "../../../assets/images/Homepage Images/Schools/School of Computer Science and Engineering (SCOPE).jpg";
 import image2 from "../../../assets/images/Homepage Images/Schools/School of Electronics Engineering (SENSE).jpg";
 import image3 from "../../../assets/images/Homepage Images/Schools/School of Advanced Science (SAS).jpg";
 import image4 from "../../../assets/images/Homepage Images/Schools/School of Business (VSB).jpg";
 import image5 from "../../../assets/images/Homepage Images/Schools/School of Law (VSL).jpg";
 import image6 from "../../../assets/images/Homepage Images/Schools/School of Mechanical Engineering (SMEC).jpg";
 import image7 from "../../../assets/images/Homepage Images/Schools/School of Social Sciences and Humanities (VISH).jpg";
-
 
 const fetchdata = async () => {
   const reqOptions = {
@@ -43,95 +41,49 @@ const OurSchools = async () => {
             projects amongst these departments.
           </h1>
           <div className="relative top-[36px] flex flex-col">
-            <div className="flex-row flex ">
-              <>
-                <div className="w-[230px] h-[190px] ml-[46px] relative">
-                  <Image
-                  alt="A descriptive text here"
-                    src={image1}
-                    className="opacity-90"
-                  />
-                  {/* <div className="absolute top-[220px] text-white font-Emilo text-[20px] px-[14px] font-semibold ">
-          <h1 className="leading-[26px]">School of Computer science</h1>
-        </div> */}
-                </div>
-              </>
-              <>
-                <div className="w-[230px] h-[190px] ml-[46px] relative">
-                  <Image
-                  alt="A descriptive text here"
-                    src={image2}
-                    className="opacity-90"
-                  />
-                  {/* <div className="absolute top-[220px] text-white font-Emilo text-[20px] px-[14px] font-semibold ">
-          <h1 className="leading-[26px]">School of Computer science</h1>
-        </div> */}
-                </div>
-              </>
-              <>
-                <div className="w-[230px] h-[190px] ml-[46px] relative">
-                  <Image
-                  alt="A descriptive text here"
-                    src={image3}
-                    className="opacity-90"
-                  />
-                  {/* <div className="absolute top-[220px] text-white font-Emilo text-[20px] px-[14px] font-semibold ">
-          <h1 className="leading-[26px]">School of Computer science</h1>
-        </div> */}
-                </div>
-              </>
-              <>
-                <div className="w-[230px] h-[190px] ml-[46px] relative">
-                  <Image
-                  alt="A descriptive text here"
-                    src={image4}
-                    className="opacity-90"
-                  />
-                  {/* <div className="absolute top-[220px] text-white font-Emilo text-[20px] px-[14px] font-semibold ">
-          <h1 className="leading-[26px]">School of Computer science</h1>
-        </div> */}
-                </div>
-              </>
-              
-            </div>
-
-            <div className="flex-row flex mt-[220px] pl-[161px]">
-            <>
-                <div className="w-[230px] h-[190px] ml-[46px] relative">
-                  <Image
-                  alt="A descriptive text here"
-                    src={image5}
-                    className="opacity-90"
-                  />
-                  {/* <div className="absolute top-[220px] text-white font-Emilo text-[20px] px-[14px] font-semibold ">
-          <h1 className="leading-[26px]">School of Computer science</h1>
-        </div> */}
-                </div>
-              </>
-              <>
-                <div className="w-[230px] h-[190px] ml-[46px] relative">
-                  <Image
-                  alt="A descriptive text here"
-                    src={image6}
-                    className="opacity-90"
-                  />
-                  {/* <div className="absolute top-[220px] text-white font-Emilo text-[20px] px-[14px] font-semibold ">
-          <h1 className="leading-[26px]">School of Computer science</h1>
-        </div> */}
-                </div>
-              </>
-              <>
-                <div className="w-[230px] h-[190px] ml-[46px] relative">
-                  <Image
-                  alt="A descriptive text here"
-                    src={image7}
-                    className="opacity-90"
-                  />
-                  {/* <div className="absolute top-[220px] text-white font-Emilo text-[20px] px-[14px] font-semibold ">
-          <h1 className="leading-[26px]">School of Computer science</h1>
-        </div> */}
-                </div>
-              </>
+            <div class="container grid grid-cols-3 gap-2 mx-auto">
+              <Card
+                imgsrc="/vitap-webapp-frontend/public/SAS.jpg"
+                title="sample image"
+              />
+              <div class="w-full rounded">
+                <img
+                  src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
+                  alt="image"
+                />
+              </div>
+              <div class="w-full rounded">
+                <Image
+                  src="/vitap-webapp-frontend/public/SAS.jpg"
+                  height={200}
+                  width={200}
+                  alt="image"
+                />
+              </div>
+              <div class="w-full rounded">
+                <img
+                  src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
+                  alt="image"
+                />
+              </div>
+              <div class="w-full rounded">
+                <img
+                  src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
+                  alt="image"
+                />
+              </div>
+              <div class="w-full rounded">
+                <img
+                  src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
+                  alt="image"
+                />
+              </div>
+              <div class="w-full rounded">
+                <img
+                  src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
+                  alt="image"
+                />
+              </div>
             </div>
           </div>
         </div>

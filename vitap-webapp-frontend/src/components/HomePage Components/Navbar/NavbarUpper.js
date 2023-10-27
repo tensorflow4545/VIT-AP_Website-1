@@ -31,7 +31,7 @@ const NavbarUpper = () => {
 
   return (
     <>
-      <div className="z-auto w-full h-[60px] text-white bg-primary md:flex ls:flex sm:hidden justify-between items-center px-[37px]">
+      <div className="z-auto w-full h-[50px] text-white bg-primary md:flex ls:flex sm:hidden justify-between items-center px-[37px]">
         <div className="flex  h-[20px] md:space-x-[10px] ls:space-x-[20px] text-[14px] items-center ">
           {/* {navlinks.map((item) =>{
               return(
