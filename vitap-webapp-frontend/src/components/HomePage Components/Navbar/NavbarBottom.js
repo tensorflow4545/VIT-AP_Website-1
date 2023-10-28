@@ -62,7 +62,7 @@ const NavbarBottom = () => {
         <div
           className={`bg-gray-900 ${
             navbar ? "navbar active" : "navbar"
-            }  w-full h-[94px] shadow-xl absolute md:flex font-Montserrant font-medium text-white text-[20px]`}
+            }  w-full h-[74px] shadow-xl absolute md:flex font-Montserrant font-medium text-white text-[20px]`}
         >
           <ul className="flex flex-row  items-center pl-[33px] w-full justify-between pr-[76px]">
             <li className="mr-[100px]">
