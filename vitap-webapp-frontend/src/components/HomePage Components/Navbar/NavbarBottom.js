@@ -386,32 +386,32 @@ const NavbarBottom = () => {
               <a className="custom-underline">Research</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
                 <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]">
-                  <ol className="flex-row font-[400] text-[20px]  pt-[82px] pl-[110px] space-y-[29px]">
-                    <li>Academic Reasearch</li>
-                    <li>URE Project</li>
-                    <li className="peer/coe custom-list-item w-[fit-content]">Center of Excellence</li>
-                    <li className="absolute left-[500px] invisible top-[20px] peer-hover/coe:visible">
-                      <ol className="flex-row font-[400] text-[20px] pt-[20px] space-y-[29px]">
-                        <li>AI & Robotics</li>
-                        <li>Cyber-Security</li>
-                        <li>Internet of Things</li>
-                        <li>Blockchain</li>
-                      </ol>
-                    </li>
-                    <li className="peer/iiec custom-list-item w-[fit-content]">IIEC</li>
-                    <li className="absolute left-[500px] invisible top-[20px] peer-hover/iiec:visible">
-                      <ol className="flex-row font-[400] text-[20px] pt-[20px] space-y-[29px]">
-                        <li>V-Launch</li>
-                        <li>RGEMS</li>
-                        <li>SpoRIC</li>
-                        <li>Patents</li>
-                        <li>Incubatees</li>
-                        <li>E- Magazine</li>
-                      </ol>
-                    </li>
-                    <li>VITBIF</li>
-                  </ol>
-                  <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[20%] top-[45px]"></span>
+                <ol className="flex-row font-[400] text-[20px]  pt-[82px] pl-[110px] space-y-[29px]">
+                  <li>Academic Reasearch</li>
+                  <li>URE Project</li>
+                  <li className="peer/coe custom-list-item w-[fit-content]">Center of Excellence</li>
+                  <li className="absolute left-[500px] invisible top-[20px] peer-hover/coe:visible">
+                    <ol className="flex-row font-[400] text-[20px] pt-[20px] space-y-[29px]">
+                      <li>AI & Robotics</li>
+                      <li>Cyber-Security</li>
+                      <li>Internet of Things</li>
+                      <li>Blockchain</li>
+                    </ol>
+                  </li>
+                  <li className="peer/iiec custom-list-item w-[fit-content]">IIEC</li>
+                  <li className="absolute left-[500px] invisible top-[20px] peer-hover/iiec:visible">
+                    <ol className="flex-row font-[400] text-[20px] pt-[20px] space-y-[29px]">
+                      <li>V-Launch</li>
+                      <li>RGEMS</li>
+                      <li>SpoRIC</li>
+                      <li>Patents</li>
+                      <li>Incubatees</li>
+                      <li>E- magazine</li>
+                    </ol>
+                  </li>
+                  <li>VITBIF</li>
+                </ol>
+                <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[20%] top-[45px]"></span>
                 </div>
               </div>
             </li>
