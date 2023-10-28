@@ -239,7 +239,7 @@ const NavbarBottom = () => {
                       <li>School of Law (VSL)</li>
                       <li>School of Business (VSB)</li>
                     </ol>
-                    <span className="w-[6px] h-[500px] bg-primary opacity-20 rounded-lg absolute right-[68%] top-[25px]"></span>
+                    <span className="w-[6px] h-[500px] bg-primary opacity-20 rounded-lg absolute right-[65%] top-[25px]"></span>
                     <ol className="flex-row font-[400] text-[20px]  pt-[61px] pl-[200px] space-y-[19px]">
                       <li>Academic Regulations</li>
                       <li>Academic Council</li> <li>Faculty</li> <li>Academic Calender</li>
@@ -360,7 +360,7 @@ const NavbarBottom = () => {
                       <li>Guest House</li>
                       <li>Facilities to employees</li>
                     </ol>
-                    <span className="w-[6px] h-[500px] bg-primary opacity-20 rounded-lg absolute right-[65%] top-[25px]"></span>
+                    <span className="w-[6px] h-[500px] bg-primary opacity-20 rounded-lg absolute right-[60%] top-[25px]"></span>
                     <ol className="flex-row font-[400] text-[20px]  pt-[32px] pl-[160px] space-y-[29px]">
                       <li className="font-bold underline decoration-black underline-offset-[2px]">
                         Committees

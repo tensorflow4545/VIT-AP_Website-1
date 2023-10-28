@@ -40,10 +40,6 @@ export default function placements(){
                       <div class="container basis-1/2">
                       <div class="slider"></div>  
                       </div>
-                      
-
-                      </div>
-                    </div>
         </>
     )
 }
