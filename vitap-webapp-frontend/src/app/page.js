@@ -47,7 +47,7 @@ const Home = async () => {
       <LifeAtVITAP/>
       <NewsAboutVITAP/>
       <WallOfSocials/>
-      {/* <NumberAtGlance/> */}
+      <NumberAtGlance/>
       <Footer/>
     </>
   );

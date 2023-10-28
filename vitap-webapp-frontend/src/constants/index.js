@@ -128,3 +128,25 @@ export const programmesOffered = [
     field: "postgraduate",
   },
 ];
+
+
+export const Schools = [
+  {
+    id: 1,
+    imgUrl: "/assets/images/Homepage Images/Schools/SAS.jpg",
+    title: "VTAPP Internation Tech Fest by VIT-AP",
+    date: "19th Sept",
+  },
+  {
+    id: 2,
+    imgUrl: "/assets/images/Homepage Images/Schools/",
+    title: "VTAPP Internation Tech Fest by VIT-AP",
+    date: "19th Sept",
+  },
+  {
+    id: 3,
+    imgUrl: "/eventImages/3.jpeg",
+    title: "VTAPP Internation Tech Fest by VIT-AP",
+    date: "19th Sept",
+  },
+];
