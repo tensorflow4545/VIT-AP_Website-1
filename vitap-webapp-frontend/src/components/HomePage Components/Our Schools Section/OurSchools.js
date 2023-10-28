@@ -2,13 +2,17 @@ import Card from "./Card.js";
 import config from "@/config";
 import Image from "next/image";
 
-import image2 from "../../../assets/images/Homepage Images/Schools/School of Electronics Engineering (SENSE).jpg";
-import image3 from "../../../assets/images/Homepage Images/Schools/School of Advanced Science (SAS).jpg";
-import image4 from "../../../assets/images/Homepage Images/Schools/School of Business (VSB).jpg";
-import image5 from "../../../assets/images/Homepage Images/Schools/School of Law (VSL).jpg";
-import image6 from "../../../assets/images/Homepage Images/Schools/School of Mechanical Engineering (SMEC).jpg";
-import image7 from "../../../assets/images/Homepage Images/Schools/School of Social Sciences and Humanities (VISH).jpg";
+import Schools from "@/constants/index.js";
+import image1 from "../../../assets/images/Homepage Images/Schools/SAS.jpg";
+import image2 from "../../../assets/images/Homepage Images/Schools/SENSE.jpg";
+import image3 from "../../../assets/images/Homepage Images/Schools/SCOPE.jpg";
+import image4 from "../../../assets/images/Homepage Images/Schools/VSL.jpg";
+import image5 from "../../../assets/images/Homepage Images/Schools/SMEC.jpg";
+import image6 from "../../../assets/images/Homepage Images/Schools/VISH.jpg";
+import image7 from "../../../assets/images/Homepage Images/Schools/VSB.jpg";
 
+
+import { BsArrowRightShort } from "react-icons/bs";
 const fetchdata = async () => {
   const reqOptions = {
     headers: {
@@ -40,52 +44,112 @@ const OurSchools = async () => {
             that encourages students to participate in exciting research
             projects amongst these departments.
           </h1>
-          <div className="relative top-[36px] flex flex-col">
-            <div class="container grid grid-cols-3 gap-2 mx-auto">
-              <Card
-                imgsrc="/vitap-webapp-frontend/public/SAS.jpg"
-                title="sample image"
-              />
-              <div class="w-full rounded">
-                <img
-                  src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                  alt="image"
-                />
-              </div>
-              <div class="w-full rounded">
+            <div class="grid grid-cols-4 justify-center mt-5">
+              <div className="w-[270px] h-[290px] ml-[46px] relative">
+              <div className="absolute w-[270px] h-[270px] bg-black">
+                </div>
                 <Image
-                  src="/vitap-webapp-frontend/public/SAS.jpg"
-                  height={200}
-                  width={200}
-                  alt="image"
+                  src={image1}
+                  className="opacity-60"
+                  width={270}
+                  height={290}
                 />
+                <div className="absolute top-[190px] text-white  px-[14px] font-semibold flex-col ">
+                  <h1 className="leading-[23px] font-Emilo text-[20px]">School of Advanced Sciences</h1>
+                  <h1 className="font-Montserrant text-[13px] font-medium flex items-center">Explore Now <span><BsArrowRightShort size={23}/></span></h1>
+                </div>
               </div>
-              <div class="w-full rounded">
-                <img
-                  src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                  alt="image"
+              <div className="w-[270px] h-[290px] ml-[46px] relative">
+              <div className="absolute w-[270px] h-[270px] bg-black">
+                </div>
+                <Image
+                  src={image2}
+                  className="opacity-60"
+                  width={270}
+                  height={290}
                 />
+                <div className="absolute top-[190px] text-white  px-[14px] font-semibold flex-col">
+                  <h1 className="leading-[23px] font-Emilo text-[20px] ">School of Electical and Electronics Engineering</h1>
+                  <h1 className="font-Montserrant text-[13px] font-medium flex items-center">Explore Now <span><BsArrowRightShort size={23}/></span></h1>
+
+                </div>
               </div>
-              <div class="w-full rounded">
-                <img
-                  src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                  alt="image"
+              <div className="w-[270px] h-[290px] ml-[46px] relative">
+                <div className="absolute w-[270px] h-[270px] bg-black">
+                </div>
+                <Image
+                  src={image3}
+                  className="opacity-60"
+                  width={270}
+                  height={290}
                 />
+                <div className="absolute top-[185px] text-white  px-[14px] font-semibold flex-col ">
+                  <h1 className="leading-[26px] font-Emilo text-[20px]">School of Computer Science and Engineering</h1>
+                    <h1 className="font-Montserrant text-[13px] font-medium flex items-center">Explore Now <span><BsArrowRightShort size={23}/></span></h1>
+
+                </div>
               </div>
-              <div class="w-full rounded">
-                <img
-                  src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                  alt="image"
+              <div className="w-[270px] h-[290px] ml-[46px] relative">
+              <div className="absolute w-[270px] h-[270px] bg-black">
+                </div>
+                <Image
+                  src={image4}
+                  className="opacity-60"
+                  width={270}
+                  height={290}
                 />
+                <div className="absolute top-[200px] text-white  px-[14px] font-semibold flex flex-col ">
+                  <h1 className="leading-[26px] font-Emilo text-[20px]">VIT School of Law</h1>
+                  <h1 className="font-Montserrant text-[13px] font-medium flex items-center">Explore Now <span><BsArrowRightShort size={23}/></span></h1>
+                </div>
               </div>
-              <div class="w-full rounded">
-                <img
-                  src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                  alt="image"
+              
+              <div className="w-[270px] h-[290px] ml-[46px] relative">
+                <div className="absolute w-[270px] h-[270px] bg-black">
+                </div>
+                <Image
+                  src={image5}
+                  className="opacity-60"
+                  width={270}
+                  height={290}
                 />
+                <div className="absolute top-[190px] text-white  px-[14px] font-semibold flex-col">
+                  <h1 className="leading-[23px] font-Emilo text-[20px]">School of Mechanical Engineering</h1>
+                  <h1 className="font-Montserrant text-[13px] font-medium flex items-center">Explore Now <span><BsArrowRightShort size={23}/></span></h1>
+
+                </div>
+              </div>
+              <div className="w-[270px] h-[290px] ml-[46px] relative">
+                <div className="absolute w-[270px] h-[270px] bg-black">
+                </div>
+                <Image
+                  src={image6}
+                  className="opacity-60"
+                  width={270}
+                  height={290}
+                />
+                <div className="absolute top-[190px] text-white f px-[14px] font-semibold flex-col">
+                  <h1 className="leading-[26px] font-Emilo text-[20px]">School of Social Science and Humanities</h1>
+                  <h1 className="font-Montserrant text-[13px] font-medium flex items-center">Explore Now <span><BsArrowRightShort size={23}/></span></h1>
+
+                </div>
+              </div>
+              <div className="w-[270px] h-[290px] ml-[46px] relative">
+                <div className="absolute w-[270px] h-[270px] bg-black">
+                </div>
+                <Image
+                  src={image7}
+                  className="opacity-60"
+                  width={270}
+                  height={290}
+                />
+                <div className="absolute top-[200px] text-white   px-[14px] font-semibold flex-col ">
+                  <h1 className="leading-[26px] text-[20px]  font-Emilo">School of Buisiness</h1>
+                  <h1 className="font-Montserrant text-[13px] font-medium flex items-center">Explore Now <span><BsArrowRightShort size={23}/></span></h1>
+
+                </div>
               </div>
             </div>
-          </div>
         </div>
         <div className="w-full bg-white h-[472px] pl-[108px] pr-[114px]"></div>
       </div>
