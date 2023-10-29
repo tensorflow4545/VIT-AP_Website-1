@@ -123,20 +123,20 @@ const About = async () => {
 
           <div className="md:w-[50%] sm:w-[100%] md:pl-[67px] ls:mt-[100px] md:mt-[15px] md:block ls:flex-col ls:justify-center  relative">
             <div className="top-[-40px] right-5 absolute">
-              <h1>View More</h1>
+              <button className="custom-list-item w-[fit-content]" onClick="#"><h1>View More</h1></button>
             </div>
 
             <h1 className="text-[24px] text-primary font-Montserrant font-bold ls:text-center md:text-left">
               ANNOUNCEMENTS
             </h1>
-            <div className="flex-col space-y-[25px] mt-[42px] ">
+            <div className="flex-col space-y-[20px] mt-[20px] ">
 
 
             <Announcement date="2nd  July,  23" title="VITREE January 2024 - Apply Now" link="https://vitap.ac.in/vitree-january-2024/"/>
             <Announcement date="17th September, 23" title="3rd Annual Convocation " link="https://vitap.ac.in/3rd-annual-convocation-2023/"/>
             <Announcement date="2nd September, 23" title="360 Campus Tour" link="https://campustour.vitap.ac.in/index04.html"/>
             <Announcement date="10th May, 23" title="New Curriculum" link="https://vitap.ac.in/new-curriculum-ay-2021-2022/"/>
-
+            <Announcement date="28th March, 23" title="Academic Bank of Credits" link="https://vitap.ac.in/new-curriculum-ay-2021-2022/"/>
 
 
               {/* {announcements.map((announcement) => {

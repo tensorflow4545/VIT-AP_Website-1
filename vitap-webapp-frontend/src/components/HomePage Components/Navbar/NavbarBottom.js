@@ -60,8 +60,7 @@ const NavbarBottom = () => {
         {/* {"bg-opacity-50 "} */}
         {/* Increased z-index to 30 */}
         <div
-          className={`bg-gray-900 ${
-            navbar ? "navbar active" : "navbar"
+          className={`bg-gray-900 ${navbar ? "navbar active" : "navbar"
             }  w-full h-[74px] shadow-xl absolute md:flex font-Montserrant font-medium text-white text-[20px]`}
         >
           <ul className="flex flex-row  items-center pl-[33px] w-full justify-between pr-[76px]">
@@ -153,15 +152,15 @@ const NavbarBottom = () => {
                     >
                       Programmes
                     </li>
-                    <li>Application Process</li>
+                    <li className="custom-list-item w-[fit-content]">Application Process</li>
 
-                    <li>Fees & Scholarship</li>
-                    <li>STARS</li>
-                    <li>Affidivit</li>
-                    <li>Videos</li>
-                    <li>Enquiry</li>
+                    <li className="custom-list-item w-[fit-content]">Fees & Scholarship</li>
+                    <li className="custom-list-item w-[fit-content]">STARS</li>
+                    <li className="custom-list-item w-[fit-content]">Affidivit</li>
+                    <li className="custom-list-item w-[fit-content]">Videos</li>
+                    <li className="custom-list-item w-[fit-content]">Enquiry</li>
                   </ol>
-                  <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[20%] top-[45px]"></span>
+                  <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[400px] top-[45px]"></span>
                   <ol
                     className={` ${""}   flex-row font-[400] text-[20px]  pt-[82px] pl-[110px] space-y-[29px] absolute left-[350px] `}
                   >
@@ -169,10 +168,10 @@ const NavbarBottom = () => {
                       return <li key={index} className="custom-list-item w-[fit-content]" onMouseEnter={() => { setProgramme(Program) }}> {Program} </li>;
                     })}
                   </ol>
-                  <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[40%] top-[45px]"></span>
+                  <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[750px] top-[45px]"></span>
                   {Programme === "Undergraduate" ? (
                     <div className="flex">
-                      <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[650px] space-y-[29px]">
+                      <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[550px] space-y-[29px]">
                         <lh className="font-bold underline decoration-[#000000] underline-offset-8 decoration-[6px] text-[24px]">Engineering</lh>
                         <li>B.Tech CSE</li>
                         <li>B.Tech CSBS</li>
@@ -186,25 +185,25 @@ const NavbarBottom = () => {
                       </ol>
                     </div>
                   ) : Programme === "Dual Degree" ? (
-                    <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[650px] space-y-[29px]">
+                    <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[550px] space-y-[29px]">
                       <li>BA - MA</li>
                       <li>B.Sc - M.Sc</li>
                     </ol>) : Programme === "Integrated" ? (
-                      <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[650px] space-y-[29px]">
+                      <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[550px] space-y-[29px]">
                         <li>M. Tech CSE in Collaboration with Virtusa</li>
                         <li>M. Tech Software Engineering</li>
                         <li>BA. LL.B (Hons.)</li>
                         <li>BBA. LL.B (Hons.)</li>
                       </ol>
                     ) : Programme === "Postgraduate" ? (
-                      <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[650px] space-y-[29px]">
+                      <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[550px] space-y-[29px]">
                         <li>M. Tech VLSI</li>
                         <li>M.Sc. Data Science</li>
                         <li>M. Sc. Physics</li>
                         <li>M. Sc. Chemistry</li>
                       </ol>
                     ) : Programme === "Ph. D" ? (
-                      <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[650px] space-y-[29px]">
+                      <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[550px] space-y-[29px]">
                         <li>School of Computer Science and Engineering</li>
                         <li>School of Electronics Engineering</li>
                         <li>School of Mechanical Engineering</li>
@@ -232,24 +231,26 @@ const NavbarBottom = () => {
                       <li className="font-bold underline decoration-black underline-offset-[2px]">
                         Schools
                       </li>
-                      <li>School of Computer Science and Engineering (SCOPE)</li>
-                      <li>School of Electronics Engineering (SENSE)</li>
-                      <li>School of Mechanical Engineering (SMEC)</li>
-                      <li>School of Advanced Sciences (SAS)</li>
-                      <li>School of Social Sciences and Humanities (VISH)</li>
-                      <li>School of Law (VSL)</li>
-                      <li>School of Business (VSB)</li>
+                      <li className="custom-list-item w-[fit-content]">School of Computer Science and Engineering (SCOPE)</li>
+                      <li className="custom-list-item w-[fit-content]">School of Electronics Engineering (SENSE)</li>
+                      <li className="custom-list-item w-[fit-content]">School of Mechanical Engineering (SMEC)</li>
+                      <li className="custom-list-item w-[fit-content]">School of Advanced Sciences (SAS)</li>
+                      <li className="custom-list-item w-[fit-content]">School of Social Sciences and Humanities (VISH)</li>
+                      <li className="custom-list-item w-[fit-content]">School of Law (VSL)</li>
+                      <li className="custom-list-item w-[fit-content]">School of Business (VSB)</li>
                     </ol>
-                    <span className="w-[6px] h-[500px] bg-primary opacity-20 rounded-lg absolute right-[68%] top-[25px]"></span>
+                    <span className="w-[6px] h-[500px] bg-primary opacity-20 rounded-lg absolute left-[700px] top-[25px]"></span>
                     <ol className="flex-row font-[400] text-[20px]  pt-[61px] pl-[200px] space-y-[19px]">
-                      <li>Academic Regulations</li>
-                      <li>Academic Council</li> <li>Faculty</li> <li>Academic Calender</li>
-                      <li>International Collabration</li>
-                      <li>Engineering Clinic </li>
-                      <li>Value Added Courses</li>
-                      <li>Centre of Examination</li>
-                      <li>Fully Flexible Credit System (FFCS)</li>
-                      <li>Design your own degree (DYOD) </li>
+                      <li className="custom-list-item w-[fit-content]">Academic Regulations</li>
+                      <li className="custom-list-item w-[fit-content]">Academic Council</li>
+                      <li className="custom-list-item w-[fit-content]">Faculty</li> 
+                      <li className="custom-list-item w-[fit-content]">Academic Calender</li>
+                      <li className="custom-list-item w-[fit-content]">International Collabration</li>
+                      <li className="custom-list-item w-[fit-content]">Engineering Clinic </li>
+                      <li className="custom-list-item w-[fit-content]">Value Added Courses</li>
+                      <li className="custom-list-item w-[fit-content]">Centre of Examination</li>
+                      <li className="custom-list-item w-[fit-content]">Fully Flexible Credit System (FFCS)</li>
+                      <li className="custom-list-item w-[fit-content]">Design your own degree (DYOD) </li>
                     </ol>
 
                   </div>
@@ -343,34 +344,38 @@ const NavbarBottom = () => {
                       <li className="font-bold underline decoration-black underline-offset-[2px]">
                         Life @ VIT-AP
                       </li>
-                      <li>Clubs & Chapters</li>
-                      <li>Celebrations</li> <li>Cafeteria</li> <li>Sports</li>
-                      <li>Gallery</li>
-                      <li>360 Campus Tour</li>
+                      <li className="custom-list-item w-[fit-content]">Clubs & Chapters</li>
+                      <li className="custom-list-item w-[fit-content]">Celebrations</li> 
+                      <li className="custom-list-item w-[fit-content]">Cafeteria</li> 
+                      <li className="custom-list-item w-[fit-content]">Sports</li>
+                      <li className="custom-list-item w-[fit-content]">Gallery</li>
+                      <li className="custom-list-item w-[fit-content]">360 Campus Tour</li>
                     </ol>
                     <span className="w-[6px] h-[500px] bg-primary opacity-20 rounded-lg absolute left-[400px] top-[25px]"></span>
                     <ol className="flex-row font-[400] text-[20px]  pt-[32px] pl-[200px] space-y-[15px]">
                       <li className="font-bold underline decoration-black underline-offset-[2px]">
                         Facilities
                       </li>
-                      <li>Infrastructure</li>
-                      <li>Hostels</li> <li>Libraries</li> <li>Labs</li>
-                      <li>Labs</li>
-                      <li>Bank and ATM</li>
-                      <li>Transport</li>
-                      <li>Guest House</li>
-                      <li>Facilities to employees</li>
+                      <li className="custom-list-item w-[fit-content]">Infrastructure</li>
+                      <li className="custom-list-item w-[fit-content]">Hostels</li> 
+                      <li className="custom-list-item w-[fit-content]">Libraries</li> 
+                      <li className="custom-list-item w-[fit-content]">Labs</li>
+                      <li className="custom-list-item w-[fit-content]">Labs</li>
+                      <li className="custom-list-item w-[fit-content]">Bank and ATM</li>
+                      <li className="custom-list-item w-[fit-content]">Transport</li>
+                      <li className="custom-list-item w-[fit-content]">Guest House</li>
+                      <li className="custom-list-item w-[fit-content]">Facilities to employees</li>
                     </ol>
-                    <span className="w-[6px] h-[500px] bg-primary opacity-20 rounded-lg absolute right-[65%] top-[25px]"></span>
+                    <span className="w-[6px] h-[500px] bg-primary opacity-20 rounded-lg absolute left-[800px] top-[25px]"></span>
                     <ol className="flex-row font-[400] text-[20px]  pt-[32px] pl-[160px] space-y-[29px]">
                       <li className="font-bold underline decoration-black underline-offset-[2px]">
                         Committees
                       </li>
-                      <li>V-CHANCE</li>
-                      <li>Anti - Ragging Commitee</li>
-                      <li>Internal Complaints committee</li>
-                      <li>University disciplinary committee</li>
-                      <li>Grievances Redressal Commitee</li>
+                      <li className="custom-list-item w-[fit-content]">V-CHANCE</li>
+                      <li className="custom-list-item w-[fit-content]">Anti - Ragging Commitee</li>
+                      <li className="custom-list-item w-[fit-content]">Internal Complaints committee</li>
+                      <li className="custom-list-item w-[fit-content]">University disciplinary committee</li>
+                      <li className="custom-list-item w-[fit-content]">Grievances Redressal Commitee</li>
 
                     </ol>
                   </div>
@@ -388,8 +393,8 @@ const NavbarBottom = () => {
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
                 <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]">
                 <ol className="flex-row font-[400] text-[20px]  pt-[82px] pl-[110px] space-y-[29px]">
-                  <li>Academic Reasearch</li>
-                  <li>URE Project</li>
+                  <li className="custom-list-item w-[fit-content]">Academic Reasearch</li>
+                  <li className="custom-list-item w-[fit-content]">URE Project</li>
                   <li className="peer/coe custom-list-item w-[fit-content]">Center of Excellence</li>
                   <li className="absolute left-[500px] invisible top-[20px] peer-hover/coe:visible">
                     <ol className="flex-row font-[400] text-[20px] pt-[20px] space-y-[29px]">
@@ -410,9 +415,9 @@ const NavbarBottom = () => {
                       <li>E- magazine</li>
                     </ol>
                   </li>
-                  <li>VITBIF</li>
+                  <li className="custom-list-item w-[fit-content]">VITBIF</li>
                 </ol>
-                <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[20%] top-[45px]"></span>
+                <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[400px] top-[45px]"></span>
                 </div>
               </div>
             </li>
