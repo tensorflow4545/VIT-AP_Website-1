@@ -52,7 +52,7 @@ const NavbarBottom = () => {
   const [Programmes, setProgrammes] = useState([]);
   const [Programme, setProgramme] = useState(null);
   const [underline, setunderline] = useState("");
-  const [visible, setVisible] = useState(false);
+  const [research, setResearch] = useState(null);
 
   return (
     <>
@@ -165,7 +165,9 @@ const NavbarBottom = () => {
                     className={` ${""}   flex-row font-[400] text-[20px]  pt-[82px] pl-[110px] space-y-[29px] absolute left-[350px] `}
                   >
                     {Programmes.map((Program, index) => {
-                      return <li key={index} className="custom-list-item w-[fit-content]" onMouseEnter={() => { setProgramme(Program) }}> {Program} </li>;
+                      return <li key={index} className={`custom-list-item w-[fit-content] ${
+                        Programme === Program ? "custom-underline decoration-[#650010] underline-offset-8 decoration-[6px]" : ""
+                      }`} onMouseEnter={() => { setProgramme(Program) }}> {Program} </li>;
                     })}
                   </ol>
                   <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[750px] top-[45px]"></span>
@@ -173,44 +175,44 @@ const NavbarBottom = () => {
                     <div className="flex">
                       <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[550px] space-y-[29px]">
                         <lh className="font-bold underline decoration-[#000000] underline-offset-8 decoration-[6px] text-[24px]">Engineering</lh>
-                        <li>B.Tech CSE</li>
-                        <li>B.Tech CSBS</li>
-                        <li>B.Tech ECE</li>
-                        <li>B.Tech Mechanical</li>
+                        <li className="custom-list-item w-[fit-content]">B.Tech CSE</li>
+                        <li className="custom-list-item w-[fit-content]">B.Tech CSBS</li>
+                        <li className="custom-list-item w-[fit-content]">B.Tech ECE</li>
+                        <li className="custom-list-item w-[fit-content]">B.Tech Mechanical</li>
                       </ol>
                       <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[110px] space-y-[29px]">
                         <lh className="font-bold underline decoration-[#000000] underline-offset-8 decoration-[6px] text-[24px]">Management</lh>
-                        <li>BBA</li>
-                        <li>B.Com</li>
+                        <li className="custom-list-item w-[fit-content]">BBA</li>
+                        <li className="custom-list-item w-[fit-content]">B.Com</li>
                       </ol>
                     </div>
                   ) : Programme === "Dual Degree" ? (
                     <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[550px] space-y-[29px]">
-                      <li>BA - MA</li>
-                      <li>B.Sc - M.Sc</li>
+                      <li className="custom-list-item w-[fit-content]">BA - MA</li>
+                      <li className="custom-list-item w-[fit-content]">B.Sc - M.Sc</li>
                     </ol>) : Programme === "Integrated" ? (
                       <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[550px] space-y-[29px]">
-                        <li>M. Tech CSE in Collaboration with Virtusa</li>
-                        <li>M. Tech Software Engineering</li>
-                        <li>BA. LL.B (Hons.)</li>
-                        <li>BBA. LL.B (Hons.)</li>
+                        <li className="custom-list-item w-[fit-content]">M. Tech CSE in Collaboration with Virtusa</li>
+                        <li className="custom-list-item w-[fit-content]">M. Tech Software Engineering</li>
+                        <li className="custom-list-item w-[fit-content]">BA. LL.B (Hons.)</li>
+                        <li className="custom-list-item w-[fit-content]">BBA. LL.B (Hons.)</li>
                       </ol>
                     ) : Programme === "Postgraduate" ? (
                       <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[550px] space-y-[29px]">
-                        <li>M. Tech VLSI</li>
-                        <li>M.Sc. Data Science</li>
-                        <li>M. Sc. Physics</li>
-                        <li>M. Sc. Chemistry</li>
+                        <li className="custom-list-item w-[fit-content]">M. Tech VLSI</li>
+                        <li className="custom-list-item w-[fit-content]">M.Sc. Data Science</li>
+                        <li className="custom-list-item w-[fit-content]">M. Sc. Physics</li>
+                        <li className="custom-list-item w-[fit-content]">M. Sc. Chemistry</li>
                       </ol>
                     ) : Programme === "Ph. D" ? (
                       <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[550px] space-y-[29px]">
-                        <li>School of Computer Science and Engineering</li>
-                        <li>School of Electronics Engineering</li>
-                        <li>School of Mechanical Engineering</li>
-                        <li>School of Advanced Sciences</li>
-                        <li>School of Social Science and Humanities</li>
-                        <li>School of Law</li>
-                        <li>School of Business</li>
+                        <li className="custom-list-item w-[fit-content]">School of Computer Science and Engineering</li>
+                        <li className="custom-list-item w-[fit-content]">School of Electronics Engineering</li>
+                        <li className="custom-list-item w-[fit-content]">School of Mechanical Engineering</li>
+                        <li className="custom-list-item w-[fit-content]">School of Advanced Sciences</li>
+                        <li className="custom-list-item w-[fit-content]">School of Social Science and Humanities</li>
+                        <li className="custom-list-item w-[fit-content]">School of Law</li>
+                        <li className="custom-list-item w-[fit-content]">School of Business</li>
                       </ol>
                     ) : null}
                 </div>
@@ -391,33 +393,38 @@ const NavbarBottom = () => {
             >
               <a className="custom-underline">Research</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
-                <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]">
-                <ol className="flex-row font-[400] text-[20px]  pt-[82px] pl-[110px] space-y-[29px]">
+                <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px] flex-row flex">
+
+                  <ol className="flex-row font-[400] text-[20px]  pt-[82px] pl-[110px] space-y-[29px]">
                   <li className="custom-list-item w-[fit-content]">Academic Reasearch</li>
                   <li className="custom-list-item w-[fit-content]">URE Project</li>
-                  <li className="peer/coe custom-list-item w-[fit-content]">Center of Excellence</li>
-                  <li className="absolute left-[500px] invisible top-[20px] peer-hover/coe:visible">
-                    <ol className="flex-row font-[400] text-[20px] pt-[20px] space-y-[29px]">
-                      <li>AI & Robotics</li>
-                      <li>Cyber-Security</li>
-                      <li>Internet of Things</li>
-                      <li>Blockchain</li>
-                    </ol>
-                  </li>
-                  <li className="peer/iiec custom-list-item w-[fit-content]">IIEC</li>
-                  <li className="absolute left-[500px] invisible top-[20px] peer-hover/iiec:visible">
-                    <ol className="flex-row font-[400] text-[20px] pt-[20px] space-y-[29px]">
-                      <li>V-Launch</li>
-                      <li>RGEMS</li>
-                      <li>SpoRIC</li>
-                      <li>Patents</li>
-                      <li>Incubatees</li>
-                      <li>E- magazine</li>
-                    </ol>
-                  </li>
+                  <li className={`custom-list-item w-[fit-content] ${
+                        research === "coe" ? "custom-underline decoration-[#650010] underline-offset-8 decoration-[6px]" : ""
+                      }`} onMouseEnter={() => {setResearch("coe")}}>Center of Excellence</li>
+                  <li className={`custom-list-item w-[fit-content] ${
+                        research === "iiec" ? "custom-underline decoration-[#650010] underline-offset-8 decoration-[6px]" : ""
+                      }`} onMouseEnter={() => {setResearch("iiec")}}>IIEC</li>
                   <li className="custom-list-item w-[fit-content]">VITBIF</li>
                 </ol>
                 <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[400px] top-[45px]"></span>
+                { research === "iiec" ? (
+                  <div className="flex">
+                    <ol className="flex-row font-[400] text-[20px]  pt-[82px] pl-[110px] space-y-[29px] absolute left-[350px]">
+                      <li className="custom-list-item w-[fit-content]">V-Launch</li>
+                      <li className="custom-list-item w-[fit-content]">RGEMS</li>
+                      <li className="custom-list-item w-[fit-content]">SpoRIC</li>
+                      <li className="custom-list-item w-[fit-content]">Patents</li>
+                      <li className="custom-list-item w-[fit-content]">Incubatees</li>
+                      <li className="custom-list-item w-[fit-content]">E- magazine</li>
+                    </ol> </div>): research==="coe" ? (
+                      <div className="flex">
+                      <ol className="flex-row font-[400] text-[20px]  pt-[82px] pl-[110px] space-y-[29px] absolute left-[350px]">
+                        <li className="custom-list-item w-[fit-content]">AI & Robotics</li>
+                        <li className="custom-list-item w-[fit-content]">Cyber-Security</li>
+                        <li className="custom-list-item w-[fit-content]">Internet of Things</li>
+                        <li className="custom-list-item w-[fit-content]">Blockchain</li>
+                      </ol></div>
+                    ):null}
                 </div>
               </div>
             </li>
