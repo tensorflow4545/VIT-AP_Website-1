@@ -71,7 +71,7 @@ const About = async () => {
                 height={100}; web-share
 
               /> */}
-              <iframe width={650} height={335} src="https://www.youtube.com/embed/Bx3tAXPJThM?si=3j6CacZA7uFGU6zb" title="About VIT-AP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-inpicture; web-share" allowfullscreen></iframe>
+              <iframe width={600} height={335} src="https://www.youtube.com/embed/Bx3tAXPJThM?si=3j6CacZA7uFGU6zb" title="About VIT-AP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-inpicture; web-share" allowfullscreen></iframe>
             </div>
             <div className="w-[95%]">
               <h1 className="font-Montserrant font-[680px] text-[17px] text-left mt-[35px] leading-7">
