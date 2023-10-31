@@ -33,7 +33,7 @@ const OurSchools = async () => {
 
   return (
     <>
-      <div className="flex-col mb-[130px]">
+      <div className="flex-col mb-[400px]">
         <div className="w-full bg-[#E6CFCF] h-[450px] pl-[108px] pr-[114px]  ">
           <h1 className="font-Emilo font-bold text-primary text-[48px] pt-[40px]">
             Our Schools
@@ -44,7 +44,7 @@ const OurSchools = async () => {
             that encourages students to participate in exciting research
             projects amongst these departments.
           </h1>
-            <div class="grid grid-cols-4 justify-center mt-5">
+            <div class="grid grid-cols-4 justify-center mt-5 items-center">
               <div className="w-[270px] h-[290px] ml-[46px] relative">
               <div className="absolute w-[270px] h-[270px] bg-black">
                 </div>
@@ -104,7 +104,7 @@ const OurSchools = async () => {
                 </div>
               </div>
               
-              <div className="w-[270px] h-[290px] ml-[46px] relative">
+              <div className="w-[270px] h-[290px] ml-[150px] relative">
                 <div className="absolute w-[270px] h-[270px] bg-black">
                 </div>
                 <Image
@@ -119,7 +119,7 @@ const OurSchools = async () => {
 
                 </div>
               </div>
-              <div className="w-[270px] h-[290px] ml-[46px] relative">
+              <div className="w-[270px] h-[290px] ml-[150px] relative">
                 <div className="absolute w-[270px] h-[270px] bg-black">
                 </div>
                 <Image
@@ -134,7 +134,7 @@ const OurSchools = async () => {
 
                 </div>
               </div>
-              <div className="w-[270px] h-[290px] ml-[46px] relative">
+              <div className="w-[270px] h-[290px] ml-[150px] relative">
                 <div className="absolute w-[270px] h-[270px] bg-black">
                 </div>
                 <Image
@@ -151,7 +151,6 @@ const OurSchools = async () => {
               </div>
             </div>
         </div>
-        <div className="w-full bg-white h-[472px] pl-[108px] pr-[114px]"></div>
       </div>
     </>
   );
