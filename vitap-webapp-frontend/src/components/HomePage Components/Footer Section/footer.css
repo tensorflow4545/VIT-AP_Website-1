@@ -3,12 +3,12 @@
     height: 555px;
     padding:60px;
     padding-left:110px;
-    padding-right:70px;
+    padding-right:110px;
 }
 .footer1{
     padding-top: 15px;
    padding-bottom: 20px;
-   width: 600px;
+   width:594px;
    height:467px;
   
 }
@@ -26,7 +26,6 @@
 }
 .part3{
     width: max-content;
-    padding-right: 30px;
     padding-bottom: 47px;
 }
 .list{
@@ -34,18 +33,14 @@
     height:136px;
 }
 .listitem{
-    color: #36454f;
+    color: #000;
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 50;
+    font-weight: 300;
     width: max-content;
-    line-height: 133%;
-    padding-bottom: 5px;
-}
-.listitem:hover{
-    color:#741D26;
-    font-weight: bold;
+    line-height: 150%; /* 24px */
+    padding-bottom: 1.5px;
 }
 .heading{
     color: #600912;
@@ -101,14 +96,14 @@
     padding-right: 5px;
 }
 .unilogo{
-    width: 150px;
+    width: 241px;
     height: 100px;
     flex-shrink: 0;
 }
 .credit{
     
     display: flex;
-    height: 160px;
+    height: 204px;
     padding-top: 19px ;
     padding-right: 30px;
     padding-bottom: 18px;
@@ -119,7 +114,7 @@
 .copytext{
     color: #FFF;
 font-family: Montserrat;
-font-size: 14px;
+font-size: 18px;
 font-style: normal;
 font-weight: 500;
 line-height: 150%; /* 27px */
@@ -133,14 +128,14 @@ line-height: 150%; /* 27px */
     line-height: normal;
     letter-spacing: 0.6px;
     align-self: flex-start;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 .link{
-    padding-top: 10px;
+    padding-top: 30px;
 }
 .creditlink{
-    color: rgba(255, 255, 255, 0.80);
-    font-family: Montagu Slab;
+    color: #FFF;
+font-family: Montserrat;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;

@@ -3,6 +3,7 @@ import aboutimage from "../../../assets/images/Homepage Images/about.png";
 import config from "@/config";
 import axios from "axios";
 import Announcement from "./Announcement.js";
+import { Content } from "next/font/google";
 
 // const announcementsContent = [
 //   {date: "13.09.2023", title: "VITREE January 2024 - Apply Now" , link: "https://vitap.ac.in/vitree-january-2024/"},
@@ -63,13 +64,14 @@ const About = async () => {
                 width={600}
                 height={100}
               /> */}
-              <Image
+              {/* <Image
                 alt="A descriptive text here"
                 src={aboutimage}
                 width={600}
-                height={100}
+                height={100}; web-share
 
-              />
+              /> */}
+              <iframe width={650} height={335} src="https://www.youtube.com/embed/Bx3tAXPJThM?si=3j6CacZA7uFGU6zb" title="About VIT-AP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-inpicture; web-share" allowfullscreen></iframe>
             </div>
             <div className="w-[95%]">
               <h1 className="font-Montserrant font-[680px] text-[17px] text-left mt-[35px] leading-7">

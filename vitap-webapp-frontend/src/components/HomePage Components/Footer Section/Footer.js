@@ -1,7 +1,7 @@
 import { AiFillLinkedin,AiFillYoutube,AiFillTwitterCircle} from 'react-icons/ai'
 import {BiLogoInstagramAlt,BiLogoFacebookCircle} from 'react-icons/bi'
-import {FiArrowUpRight} from 'react-icons/fi'
 import { BsArrowUpRight} from 'react-icons/bs';
+import "./footer.css"
 import Image from 'next/image';
 export default function Footer(){
     
@@ -16,7 +16,7 @@ export default function Footer(){
              <div class="flex flex-row">
                <div class="part1">
                 <p class="heading">Quick Links</p>
-                <ul class="list">   
+                <ul>
                     <li class="listitem">Careers</li>
                     <li class="listitem">Gallery</li>
                     <li class="listitem">Hostel</li>
@@ -25,6 +25,7 @@ export default function Footer(){
                 </ul>
                 </div>
                 <div class="part2">
+
                 <p class="heading">VIT Connect</p>
                 <ul class="list">
                     <li class="listitem">V-TOP Login</li>
@@ -37,14 +38,15 @@ export default function Footer(){
                 <div class="part3">
                 <p class="heading">Ranking & Accereditation</p>
                 <ul class="list">
-                    <li class="listitem">RAAC</li>
-                    <li class="listitem">NACC</li>   
+                      <li class="listitem">RAAC</li>
+                      <li class="listitem">NACC</li>
                 </ul>
                 </div>
                
                 </div>
                 <div class="flex flex-row">
                <div class="part1">
+
                 <p class="heading">Research</p>
                 <ul class="list">
                     <li class="listitem">Centres</li>
@@ -56,7 +58,7 @@ export default function Footer(){
                 </ul>
                 </div>
                 <div class="part2">
-                <p class="heading">Academics</p>
+                <p class="heading">Programs</p>
                 <ul class="list">
                     <li class="listitem">Programes Offered</li>
                     <li class="listitem">Academic Calendar</li>   
@@ -94,7 +96,7 @@ export default function Footer(){
                   </div>
                   <div class="flex flex-row"> 
                   <a href="https://www.google.com/maps/search/vit+ap+university/@16.4943189,80.4961346,17z/data=!3m1!4b1?entry=ttu" class="reach" >HOW TO REACH VIT-AP</a>
-                  <a href="https://www.google.com/maps/search/vit+ap+university/@16.4943189,80.4961346,17z/data=!3m1!4b1?entry=ttu"><FiArrowUpRight size={30}/></a>
+                  <a href="https://www.google.com/maps/search/vit+ap+university/@16.4943189,80.4961346,17z/data=!3m1!4b1?entry=ttu"><BsArrowUpRight size={20}/></a>
                   </div>
                   
              </div>
@@ -105,8 +107,8 @@ export default function Footer(){
              <div class="credit lg:w-full md:w-max ">
              <div class="flex flex-row">
              <div class="basis">
-             <div><Image class="unilogo " src="/unilogo.png" width="100" height="50"></Image></div>
-             <p class="copytext pl-4">© VIT-AP University</p>
+             <div class="pt-4 pb-5"><Image alt="A descriptive text here" class="unilogo " src="/unilogo.png" width="240" height="100"></Image></div>
+             <p class="copytext">© VIT-AP University</p>
              </div> 
              <div class="basis">
                  <div class="link pl-5">
@@ -123,8 +125,8 @@ export default function Footer(){
                         <a class="creditlink">Non- Discrimination</a>
                         <a class="creditlink">Accessibility</a>
                   </div>
-                    <div class="credittext pl-8">
-                        <p class="pt-5">Crafted with Passion at VIT-AP University by Website Team︎</p>
+                    <div class="credittext">
+                        <p >Crafted with Passion at VIT-AP University by Website Team︎</p>
                     </div>
               </div>
                     <div class="basis">
