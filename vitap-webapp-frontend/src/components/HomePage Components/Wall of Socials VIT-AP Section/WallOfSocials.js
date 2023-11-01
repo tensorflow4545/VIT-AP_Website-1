@@ -1,15 +1,15 @@
 import React from "react";
 import Image from "next/image";
 import { SocialIcon } from "react-social-icons";
-import insta from "../../assets/images/socialIcons/insta.png";
-import twitter from "../../assets/images/socialIcons/logo-black.png";
-import linkin from "../../assets/images/socialIcons/linkedin.png";
-import fb from "../../assets/images/socialIcons/fb.png";
-import yt from "../../assets/images/socialIcons/yt.png";
-import img1 from "../../assets/images/socialImages/Img 1.png";
-import img2 from "../../assets/images/socialImages/Img 2.png";
-import img3 from "../../assets/images/socialImages/Img 3.png";
-import logo from "../../assets/images/socialImages/vitapLogo.png";
+import insta from "../../../assets/images/socialIcons/insta.png";
+import twitter from "../../../assets/images/socialIcons/twitter.png";
+import linkin from "../../../assets/images/socialIcons/linkedin.png";
+import fb from "../../../assets/images/socialIcons/fb.png";
+import yt from "../../../assets/images/socialIcons/yt.png";
+import img1 from "../../../assets/images/socialImages/Img 1.png";
+import img2 from "../../../assets/images/socialImages/Img 2.png";
+import img3 from "../../../assets/images/socialImages/Img 3.png";
+import logo from "../../../assets/images/socialImages/vitapLogo.png";
 
 const Socials = () => {
   return (
