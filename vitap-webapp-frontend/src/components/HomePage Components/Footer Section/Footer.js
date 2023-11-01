@@ -3,7 +3,9 @@ import {BiLogoInstagramAlt,BiLogoFacebookCircle} from 'react-icons/bi'
 import {FiArrowUpRight} from 'react-icons/fi'
 import { BsArrowUpRight} from 'react-icons/bs';
 import Image from 'next/image';
+import "./footer.css"
 export default function Footer(){
+
     
     return(
         <>  
