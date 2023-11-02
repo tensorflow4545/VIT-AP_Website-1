@@ -42,7 +42,7 @@ const OurEvents = () => {
             <div className="flex flex-row gap-2 items-center justify-center relative  transition-all duration-300 ease-in">
             <div className="Rectangle91 w-[32px] h-[30px] left-[80px] top-[-3px] absolute bg-[#5C0E14] opacity-20 transition-transform hover:left-[-10px] hover:w-[125px]"></div>
               <h1 className="mr-4 text-[#5C0E14]">See All</h1>
-              <hr className=" h-[2px] w-[36px] font-medium bg-[#5C0E14] max-lx:w-[28px]" />
+              <hr className=" h-[3px] w-[36px] font-medium bg-[#5C0E14] max-lx:w-[28px]" />
             </div>
           </div>
           <h1 className="font-Montserrant text-[18px] text-secondary max-w-[787px] pt-3">
@@ -62,7 +62,7 @@ const OurEvents = () => {
           </div>
           <div className="flex flex-wrap items-center justify-center gap-5 mt-[50px] max-lx:flex-col max-lx:text-[12px]">
             <div className="max-w-[370px] min-h-[125px] flex gap-4">
-              <div className="flex flex-1 items-center leading-[1.5rem] justify-center text-center h-[65px] rounded-sm w-[65px] p-[15px] bg-[#5C0E14] text-white text-[20px]">
+              <div className="flex flex-1 items-center leading-[1.5rem] justify-center text-center h-[65px] rounded-sm w-[65px] p-[15px] bg-[#5C0E14] text-primary text-[20px]">
                 <h1>04 Apr</h1>
               </div>
               <div className="flex-2 w-full">
