@@ -56,7 +56,7 @@ const About = () => {
     <>
       <div className="px-[108px] mb-[100px] ">
         <div className="md:flex  pt-[70px]">
-          <div className="md:w-[50%] ls:w-[100%] sm:text-center md:text-left sm:flex-col sm:justify-center md:justify-normal ">
+          <div className="md:w-[50%]  sm:text-center md:text-left sm:flex-col sm:justify-center md:justify-normal ">
             <h1 className="font-Emilo ls:text-[48px] sm:text-[40px] text-primary font-bold pb-[9px]">
               About VIT-AP
             </h1>
@@ -133,7 +133,7 @@ const About = () => {
 
           {/* Anouncements section  */}
 
-          <div className="md:w-[50%]  sm:w-[100%] md:pl-[67px] ls:mt-[100px] md:mt-[15px] md:block ls:flex-col ls:justify-center  relative">
+          <div className="md:w-[50%]  sm:w-[100%] md:pl-[67px]  md:mt-[15px] md:block ls:flex-col ls:justify-center  relative">
             
             <motion.div
               initial={{ left: "[80px]", width: "[32px]" }}
@@ -145,7 +145,7 @@ const About = () => {
               <div className="Arrow w-[50px] border-2 border-solid border-[#5C0E14]"></div>
             </motion.div>
 
-            <h1 className="text-[24px] text-primary font-Montserrant font-bold ls:text-center md:text-left">
+            <h1 className="text-[24px] text-primary font-Montserrant font-bold  md:text-left">
               ANNOUNCEMENTS
             </h1>
             <div className="flex-col space-y-[20px] mt-[20px] ">

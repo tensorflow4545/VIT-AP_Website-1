@@ -18,7 +18,7 @@ const NavbarBottom = () => {
   useEffect(() => {
     const changeBackground = () => {
       if (typeof window !== "undefined") {
-        if (window.scrollY >= 380) {
+        if (window.scrollY >= 260) {
           setNavbar(true);
           setLogo(true);
         } else {
@@ -432,8 +432,7 @@ const NavbarBottom = () => {
         </div>
       </div>
 
-      <div className="sticky top-0 z-30 ls:block md:hidden">
-        {/* Increased z-index to 30 */}
+      {/* <div className="sticky top-0 z-30 ls:block sm:hidden">
         <div className="bg-gray-900 shadow-sm w-full h-[85px] bg-opacity-50 absolute sm:flex  text-white text-[16px]">
           <ul className="flex flex-row space-x-[31px] items-center pl-[33px] w-full justify-between pr-[76px]">
             <li>
@@ -447,16 +446,16 @@ const NavbarBottom = () => {
             >
               <RxHamburgerMenu size={30} />
             </li>
-            {/* <li><a>About</a></li>
+            <li><a>About</a></li>
             <li><a>Admissions</a></li>
             <li><a>Academics</a></li>
             <li><a>Career Development Center</a></li>
             <li><a>Facilities</a></li>
             <li><a>Campus Life</a></li>
-            <li><a>Research</a></li> */}
+            <li><a>Research</a></li>
           </ul>
         </div>
-      </div>
+      </div> */}
 
       <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
         <div

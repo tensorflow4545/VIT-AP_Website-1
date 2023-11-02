@@ -1,8 +1,12 @@
+"use client";
 import Image from "next/image";
 // import headerimage from "../../../assets/images/Homepage Images/HeaderImage.png";
 import headerimage2 from "../../../assets/images/Homepage Images/HeaderImage2.png";
 import { BsArrowRight } from "react-icons/bs";
 import config from "@/config";
+import { Carousel } from "@material-tailwind/react";
+
+// import { Carousel } from "@material-tailwind/react";
 
 // const fetchdata = async () => {
 //   const reqOptions = {
@@ -19,7 +23,7 @@ import config from "@/config";
 //   return data;
 // };
 
-const HeroSection = async () => {
+const HeroSection = () => {
   // const data = await fetchdata();
 
   // console.log( media)
@@ -27,6 +31,26 @@ const HeroSection = async () => {
 
   return (
     <>
+      <Carousel className=" h-[710px]">
+        <img
+          src="../../../assets/images/Homepage Images/HeaderImage2.png"
+          alt="image 1"
+          className="h-full w-full object-cover"
+        />
+      
+        <img
+          src="../../../assets/images/Homepage Images/navbar-images/1.png"
+          alt="image 2"
+          className="h-full w-full object-cover"
+        />
+        <img
+          src="../../../assets/images/Homepage Images/about.png"
+          alt="image 3"
+          className="h-full w-full object-cover"
+        />
+      </Carousel>
+
+
       <div className="z-0 absolute ls:top-[240px] md:top-[352px] ls:left-[108px] sm:left-[150px] text-white font-Emilo font-semibold ls:w-[500px] md:w-[800px] sm:top-[200px]  ls:block sm:flex-col ls:text-left sm:text-center">
         <h1 className="md:leading-[100px] sm:leading-10 ls:leading-[60px] sm:text-[35px] ls:text-[50px] md:text-[78px] ">
           Welcome to <br /> VIT-AP University
@@ -51,7 +75,11 @@ const HeroSection = async () => {
 </div> */}
 
       <div className="w-full  ls:h-auto object-cover">
-        <Image alt="A descriptive text here" className="w-full" src={headerimage2}/>
+        {/* <Image
+          alt="A descriptive text here"
+          className="w-full"
+          src={headerimage2}
+        /> */}
       </div>
     </>
   );

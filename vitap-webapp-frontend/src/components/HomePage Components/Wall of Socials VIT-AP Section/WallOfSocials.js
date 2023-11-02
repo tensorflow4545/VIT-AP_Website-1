@@ -10,6 +10,9 @@ import img1 from "../../../assets/images/socialImages/Img 1.png";
 import img2 from "../../../assets/images/socialImages/Img 2.png";
 import img3 from "../../../assets/images/socialImages/Img 3.png";
 import logo from "../../../assets/images/socialImages/vitapLogo.png";
+import { FaXTwitter } from "react-icons/fa6";
+
+
 
 const Socials = () => {
   return (
@@ -38,10 +41,7 @@ const Socials = () => {
           </div>
           <div className="w-[300px] h-[44px] ml-[108px] mt-[22px] flex">
             <div className="w-[40px] h-[40px] rounded bg-[#DCCED0] relative">
-              <Image
-                src={twitter}
-                className="absolute w-[22px] h-[22px] ml-[9px] mt-[9px]"
-              />
+              <FaXTwitter className="absolute w-[22px] h-[22px] ml-[9px] mt-[9px]"/>
             </div>
             <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px]">
               Tweet with us on X
