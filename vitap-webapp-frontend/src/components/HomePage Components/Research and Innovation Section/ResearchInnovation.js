@@ -46,7 +46,7 @@ const ResearchInnovation = () => {
           </p>
         </div>
         <div className="relative">
-          <div className="flex justify-center  gap-[24px] mt-[53px] max-lx:flex-col flex-wrap max-xl:justify-center max-lx:items-center">
+          <div className="flex object-cover justify-center  gap-[24px] mt-[53px] max-lx:flex-col flex-wrap max-xl:justify-center max-lx:items-center">
             {researchInnovation.map((research) => (
               <Image
                 key={research.id}

@@ -11,6 +11,7 @@ import img2 from "../../../assets/images/socialImages/Img 2.png";
 import img3 from "../../../assets/images/socialImages/Img 3.png";
 import logo from "../../../assets/images/socialImages/vitapLogo.png";
 import { FaXTwitter } from "react-icons/fa6";
+import Link from "next/link";
 
 
 
@@ -30,29 +31,38 @@ const Socials = () => {
           </p>
           <div className="w-[300px] h-[44px] ml-[108px] mt-[22px] flex">
             <div className="w-[40px] h-[40px] rounded bg-[#DCCED0] relative">
+              <Link href="https://www.instagram.com/vitap.university/?hl=en">
               <Image
                 src={insta}
                 className="absolute w-[22px] h-[22px] ml-[9px] mt-[9px]"
               />
+              </Link>
+
             </div>
             <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px]">
               Follow us on Instagram
             </p>
           </div>
           <div className="w-[300px] h-[44px] ml-[108px] mt-[22px] flex">
+            <Link href="https://twitter.com/VITAPuniversity?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
             <div className="w-[40px] h-[40px] rounded bg-[#DCCED0] relative">
               <FaXTwitter className="absolute w-[22px] h-[22px] ml-[9px] mt-[9px]"/>
             </div>
+            </Link>
+
             <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px]">
               Tweet with us on X
             </p>
           </div>
           <div className="w-[350px] h-[44px] ml-[108px] mt-[22px] flex">
             <div className="w-[40px] h-[40px] rounded bg-[#DCCED0] relative">
+              <Link href="https://www.linkedin.com/school/vitap-university/?originalSubdomain=in">
               <Image
                 src={linkin}
                 className="absolute w-[22px] h-[22px] ml-[9px] mt-[9px]"
               />
+              </Link>
+
             </div>
             <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px]">
               Grow with us on LinkedIn
@@ -60,10 +70,13 @@ const Socials = () => {
           </div>
           <div className="w-[300px] h-[44px] ml-[108px] mt-[22px] flex">
             <div className="w-[40px] h-[40px] rounded bg-[#DCCED0] relative">
+              <Link href="https://www.facebook.com/vitap.university/">
               <Image
                 src={fb}
                 className="absolute w-[22px] h-[22px] ml-[9px] mt-[9px]"
               />
+              </Link>
+
             </div>
             <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px]">
               Like us on Facebook
@@ -71,10 +84,12 @@ const Socials = () => {
           </div>
           <div className="w-[300px] h-[44px] ml-[108px] mt-[22px] flex">
             <div className="w-[40px] h-[40px] rounded bg-[#DCCED0] relative">
-              <Image
+        <Link href="https://www.youtube.com/c/VITAP">
+        <Image
                 src={yt}
                 className="absolute w-[22px] h-[22px] ml-[9px] mt-[9px]"
               />
+        </Link>
             </div>
             <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px]">
               Watch us on Youtube
