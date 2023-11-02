@@ -15,6 +15,7 @@ import NewsAboutVITAP from "@/components/HomePage Components/News about VIT-AP S
 import WallOfSocials from "@/components/HomePage Components/Wall of Socials VIT-AP Section/WallOfSocials";
 import NumberAtGlance from "@/components/HomePage Components/Number at a Glance Section/NumberAtGlance";
 import Footer from "@/components/HomePage Components/Footer Section/Footer";
+import Component from "@/components/HomePage Components/Footer Section/Component";
 
 const fetchdata = async () => {
   const reqOptions = {
@@ -48,6 +49,7 @@ const Home = async () => {
       <NewsAboutVITAP/>
       <WallOfSocials/>
       <NumberAtGlance/>
+      <Component/>
       <Footer/>
     </>
   );
