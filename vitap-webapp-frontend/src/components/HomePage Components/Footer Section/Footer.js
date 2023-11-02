@@ -121,7 +121,7 @@ export default function Footer() {
                 <Image
                   class="unilogo "
                   src="/unilogo.png"
-                  width="600"
+                  width="200"
                   height="250"
                   className="object-cover w-[150px] h-[50px]"
                 ></Image>

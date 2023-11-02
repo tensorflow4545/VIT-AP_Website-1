@@ -13,8 +13,8 @@ const ProgrammesOffered = () => {
         style={{ backgroundImage: `url("/programsbackground3.png")` }}
         className="max-w-[1560px] w-full h-full bg-center mx-auto"
       >
-        <div className="w-full mx-auto flex max-h-[860] pr-[40px] max-lx:pr-[20px] pt-[40px] text-white max-ls:hidden">
-          <div className=" p-[110px] max-lx:p-[60px] flex flex-col flex-[60%] ">
+        <div className="w-full mx-auto flex max-h-[750px] pr-[40px] max-lx:pr-[20px] text-white max-ls:hidden">
+          <div className=" p-[110px] max-lx:p-[60px] flex flex-col flex-[60%] pt-[60px]">
             <h1 className="text-white text-[40px] max-lx:text-[32px] font-bold">
               Programmes Offered
             </h1>
@@ -24,7 +24,7 @@ const ProgrammesOffered = () => {
               latest technologies with relevant practice through lab and
               projects for building problem-solving skills
             </p>
-            <div className="flex flex-col my-[70px] justify-center items-center text-center gap-10">
+            <div className="flex flex-col my-[20px] justify-center items-center text-center gap-10">
               <h1
                 className={`text-[18px] max-lx:text-[14px] py-[19px] px-[23px] ${
                   active === "undergraduate" ? "border border-zinc-200" : ""
@@ -59,8 +59,8 @@ const ProgrammesOffered = () => {
               </h1>
             </div>
           </div>
-          <div className="flex flex-col border border-zinc-200 flex-[50%] bg-[#E6CFCF] min-h-[750px] overflow-auto my-auto z-10 relative max-w-[680px] scrollbar-thin scrollbar-thumb-red-900 scrollbar-track-gray-400">
-            <div className="min-h-[1500px]w-full absolute pl-[75px] max-lx:pl-[40px] pt-[55px] max-lx:pt-[30px] ">
+          <div className="flex flex-col  flex-[50%] bg-[#E6CFCF] min-h-[650px] overflow-auto my-auto z-10 relative max-w-[680px] scrollbar-thin scrollbar-thumb-red-900 scrollbar-track-gray-400">
+            <div className="min-h-[1500px]w-full absolute pl-[75px] max-lx:pl-[40px] pt-[55px] max-lx:pt-[30px]">
               <h3 className="text-[16px] max-lx:text-[14px] font-semibold text-gray-500 uppercase">
                 Engineering
               </h3>
@@ -78,7 +78,7 @@ const ProgrammesOffered = () => {
                 )
               )}
             </div>
-            <div className="absolute bottom-10 right-10 bg-white p-4 rounded-xl">
+            <div className="absolute bottom-10 right-10 bg-white p-4 rounded-xl hidden">
               <BiSolidDownArrow className="text-black text-[20px]" />
             </div>
           </div>
