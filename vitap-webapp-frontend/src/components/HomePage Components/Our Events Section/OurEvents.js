@@ -35,15 +35,14 @@ const OurEvents = () => {
     <>
       <div className="flex flex-col mt-[100px] min-h-[800px] max-xxl:min-h-[1100px] max-md:min-h-[1300px] max-lx:min-h-[1600px] max-ls:hidden ">
         <div className="w-full bg-backgroundRed h-[420px] px-[110px] max-md:px-[40px]  max-ls:px-[30px] py-2">
-          <div className="flex justify-between items-center mt-[20px]">
+          <div className="flex justify-between items-center mt-[20px] cursor-pointer">
             <h1 className="text-[#51060D] text-[48px] font-bold max-lx:text-[32px]">
               Our Events
             </h1>
-            <div className="flex flex-row gap-2 items-center justify-center hover:bg-white transition-all duration-300 ease-in">
-              <h1 className="text-[#5C0E14] text-[18px] font-semibold max-lx:text-[15px]">
-                See all
-              </h1>
-              <hr className=" h-[2px] w-[36px] bg-[#5C0E14] max-lx:w-[28px]" />
+            <div className="flex flex-row gap-2 items-center justify-center relative  transition-all duration-300 ease-in">
+            <div className="Rectangle91 w-[32px] h-[30px] left-[80px] top-[-3px] absolute bg-[#5C0E14] opacity-20 transition-transform hover:left-[-10px] hover:w-[125px]"></div>
+              <h1 className="mr-4 text-[#5C0E14]">See All</h1>
+              <hr className=" h-[2px] w-[36px] font-medium bg-[#5C0E14] max-lx:w-[28px]" />
             </div>
           </div>
           <h1 className="font-Montserrant text-[18px] text-secondary max-w-[787px] pt-3">

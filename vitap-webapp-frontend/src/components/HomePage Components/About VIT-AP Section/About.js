@@ -1,9 +1,11 @@
+"use client";
 import Image from "next/image";
 import aboutimage from "../../../assets/images/Homepage Images/about.png";
 import config from "@/config";
 import axios from "axios";
 import Announcement from "./Announcement.js";
 import { Content } from "next/font/google";
+import { motion } from "framer-motion";
 
 // const announcementsContent = [
 //   {date: "13.09.2023", title: "VITREE January 2024 - Apply Now" , link: "https://vitap.ac.in/vitree-january-2024/"},
@@ -41,7 +43,7 @@ import { Content } from "next/font/google";
 
 //   return response.data;
 // };
-const About = async () => {
+const About = () => {
   // const announcementdata = await fetchannouncements();
   // const announcements = announcementdata.data;
   // console.log(announcements);
@@ -71,7 +73,15 @@ const About = async () => {
                 height={100}; web-share
 
               /> */}
-              <iframe width={650} height={335} src="https://www.youtube.com/embed/Bx3tAXPJThM?si=3j6CacZA7uFGU6zb" title="About VIT-AP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-inpicture; web-share" allowfullscreen></iframe>
+              <iframe
+                width={600}
+                height={335}
+                src="https://www.youtube.com/embed/Bx3tAXPJThM?si=3j6CacZA7uFGU6zb"
+                title="About VIT-AP"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-inpicture; web-share"
+                allowfullscreen
+              ></iframe>
             </div>
             <div className="w-[95%]">
               <h1 className="font-Montserrant font-[680px] text-[17px] text-left mt-[35px] leading-7">
@@ -123,25 +133,47 @@ const About = async () => {
 
           {/* Anouncements section  */}
 
-          <div className="md:w-[50%] sm:w-[100%] md:pl-[67px] ls:mt-[100px] md:mt-[15px] md:block ls:flex-col ls:justify-center  relative">
-            <div className="top-[-40px] right-5 absolute flex items-center">
-            <div class="Rectangle91 w-[32px] h-[30px] left-[80px] top-[0px] absolute bg-[#5C0E14] opacity-20 transition-transform hover:left-[-10px] hover:w-[125px]"></div> 
+          <div className="md:w-[50%]  sm:w-[100%] md:pl-[67px] ls:mt-[100px] md:mt-[15px] md:block ls:flex-col ls:justify-center  relative">
+            
+            <motion.div
+              initial={{ left: "[80px]", width: "[32px]" }}
+              whileHover={{ left: "[-20px]", width: "[125px]" }}
+              className="top-[-7px] z-999  right-5 absolute hover:cursor-pointer flex items-center"
+            >
+              <div className="Rectangle91 w-[32px] h-[30px] left-[80px] top-[-3px] absolute bg-[#5C0E14] opacity-20 transition-transform hover:left-[-10px] hover:w-[125px]"></div>
               <h1 className="mr-4 text-[#5C0E14]">View More</h1>
-              <div className="Arrow w-[50px] border-2 border-solid border-[#5C0E14] "></div>
-            </div>
+              <div className="Arrow w-[50px] border-2 border-solid border-[#5C0E14]"></div>
+            </motion.div>
 
             <h1 className="text-[24px] text-primary font-Montserrant font-bold ls:text-center md:text-left">
               ANNOUNCEMENTS
             </h1>
             <div className="flex-col space-y-[20px] mt-[20px] ">
-
-
-              <Announcement date="2nd  July,  23" title="VITREE January 2024 - Apply Now" link="https://vitap.ac.in/vitree-january-2024/" />
-              <Announcement date="17th September, 23" title="3rd Annual Convocation " link="https://vitap.ac.in/3rd-annual-convocation-2023/" />
-              <Announcement date="2nd September, 23" title="360 Campus Tour" link="https://campustour.vitap.ac.in/index04.html" />
-              <Announcement date="10th May, 23" title="New Curriculum" link="https://vitap.ac.in/new-curriculum-ay-2021-2022/" />
-              <Announcement date="28th March, 23" title="Academic Bank of Credits" link="https://vitap.ac.in/new-curriculum-ay-2021-2022/" />
-
+              <Announcement
+                date="2nd  July,  23"
+                title="VITREE January 2024 - Apply Now"
+                link="https://vitap.ac.in/vitree-january-2024/"
+              />
+              <Announcement
+                date="17th September, 23"
+                title="3rd Annual Convocation "
+                link="https://vitap.ac.in/3rd-annual-convocation-2023/"
+              />
+              <Announcement
+                date="2nd September, 23"
+                title="360 Campus Tour"
+                link="https://campustour.vitap.ac.in/index04.html"
+              />
+              <Announcement
+                date="10th May, 23"
+                title="New Curriculum"
+                link="https://vitap.ac.in/new-curriculum-ay-2021-2022/"
+              />
+              <Announcement
+                date="28th March, 23"
+                title="Academic Bank of Credits"
+                link="https://vitap.ac.in/new-curriculum-ay-2021-2022/"
+              />
 
               {/* {announcements.map((announcement) => {
                 return (
