@@ -147,8 +147,11 @@ font-weight: 400;
 line-height: 18px; /* 112.5% */
 padding-left: 13px;
 }
+
 .icons{
+    width: 100%;
     display: flex;
+    justify-content: flex-end;
     align-items: flex-start;
     gap: 27.625px;
 }

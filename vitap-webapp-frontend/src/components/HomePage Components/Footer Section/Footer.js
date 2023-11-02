@@ -8,6 +8,8 @@ import { FiArrowUpRight } from "react-icons/fi";
 import { BsArrowUpRight } from "react-icons/bs";
 import Image from "next/image";
 import "./footer.css";
+import { FaXTwitter } from "react-icons/fa6";
+
 export default function Footer() {
   return (
     <>
@@ -115,11 +117,10 @@ export default function Footer() {
         </div>
 
         <div class="credit lg:w-full md:w-max ">
-          <div class="flex flex-row">
+          <div class="flex flex-row w-full">
             <div class="basis mt-2 mr-3 pr-2">
               <div className="mt-[10px] mr-[10px]">
                 <Image
-                  class="unilogo "
                   src="/unilogo.png"
                   width="200"
                   height="250"
@@ -149,8 +150,9 @@ export default function Footer() {
                 </p>
               </div>
             </div>
+            
             <div class="basis">
-              <div class="icons pt-5">
+              <div class="icons pt-5 pl-[230px] flex w-full">
                 <a
                   href="https://www.instagram.com/vitap.university/?hl=en"
                   class="socialicon"
@@ -176,7 +178,8 @@ export default function Footer() {
                   href="https://twitter.com/VITAPuniversity?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
                   class="socialicon"
                 >
-                  <AiFillTwitterCircle size={30} />
+                
+                  <FaXTwitter size={24}/>
                 </a>
               </div>
             </div>

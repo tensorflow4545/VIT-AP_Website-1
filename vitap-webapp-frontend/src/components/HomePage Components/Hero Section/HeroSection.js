@@ -31,7 +31,7 @@ const HeroSection = () => {
 
   return (
     <>
-      <Carousel className=" h-[710px]">
+      <Carousel className=" h-screen">
         <img
           src="../../../assets/images/Homepage Images/HeaderImage2.png"
           alt="image 1"
@@ -39,12 +39,12 @@ const HeroSection = () => {
         />
       
         <img
-          src="../../../assets/images/Homepage Images/navbar-images/1.png"
+          src="../../../assets/images/Homepage Images/HeaderImage2.png"
           alt="image 2"
           className="h-full w-full object-cover"
         />
         <img
-          src="../../../assets/images/Homepage Images/about.png"
+          src="../../../assets/images/Homepage Images/HeaderImage2.png"
           alt="image 3"
           className="h-full w-full object-cover"
         />

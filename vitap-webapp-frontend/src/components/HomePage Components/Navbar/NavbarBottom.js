@@ -174,14 +174,14 @@ const NavbarBottom = () => {
                   {Programme === "Undergraduate" ? (
                     <div className="flex">
                       <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[550px] space-y-[29px]">
-                        <lh className="font-bold underline decoration-[#000000] underline-offset-8 decoration-[6px] text-[24px]">Engineering</lh>
+                        <lh className="font-bold underline decoration-[#000000] underline-offset-8 decoration-[6px] text-[20px]">Engineering</lh>
                         <li className="custom-list-item w-[fit-content]">B.Tech CSE</li>
                         <li className="custom-list-item w-[fit-content]">B.Tech CSBS</li>
                         <li className="custom-list-item w-[fit-content]">B.Tech ECE</li>
                         <li className="custom-list-item w-[fit-content]">B.Tech Mechanical</li>
                       </ol>
                       <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[110px] space-y-[29px]">
-                        <lh className="font-bold underline decoration-[#000000] underline-offset-8 decoration-[6px] text-[24px]">Management</lh>
+                        <lh className="font-bold underline decoration-[#000000] underline-offset-8 decoration-[6px] text-[20px]">Management</lh>
                         <li className="custom-list-item w-[fit-content]">BBA</li>
                         <li className="custom-list-item w-[fit-content]">B.Com</li>
                       </ol>
