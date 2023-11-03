@@ -18,7 +18,7 @@ const NavbarBottom = () => {
   useEffect(() => {
     const changeBackground = () => {
       if (typeof window !== "undefined") {
-        if (window.scrollY >= 1020) {
+        if (window.scrollY >= 260) {
           setNavbar(true);
           setLogo(true);
         } else {
@@ -174,14 +174,14 @@ const NavbarBottom = () => {
                   {Programme === "Undergraduate" ? (
                     <div className="flex">
                       <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[550px] space-y-[29px]">
-                        <lh className="font-bold underline decoration-[#000000] underline-offset-8 decoration-[6px] text-[24px]">Engineering</lh>
+                        <lh className="font-bold underline decoration-[#000000] underline-offset-8 decoration-[6px] text-[20px]">Engineering</lh>
                         <li className="custom-list-item w-[fit-content]">B.Tech CSE</li>
                         <li className="custom-list-item w-[fit-content]">B.Tech CSBS</li>
                         <li className="custom-list-item w-[fit-content]">B.Tech ECE</li>
                         <li className="custom-list-item w-[fit-content]">B.Tech Mechanical</li>
                       </ol>
                       <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[110px] space-y-[29px]">
-                        <lh className="font-bold underline decoration-[#000000] underline-offset-8 decoration-[6px] text-[24px]">Management</lh>
+                        <lh className="font-bold underline decoration-[#000000] underline-offset-8 decoration-[6px] text-[20px]">Management</lh>
                         <li className="custom-list-item w-[fit-content]">BBA</li>
                         <li className="custom-list-item w-[fit-content]">B.Com</li>
                       </ol>
@@ -362,14 +362,14 @@ const NavbarBottom = () => {
                       <li className="custom-list-item w-[fit-content]">Hostels</li> 
                       <li className="custom-list-item w-[fit-content]">Libraries</li> 
                       <li className="custom-list-item w-[fit-content]">Labs</li>
-                      <li className="custom-list-item w-[fit-content]">Labs</li>
                       <li className="custom-list-item w-[fit-content]">Bank and ATM</li>
                       <li className="custom-list-item w-[fit-content]">Transport</li>
+                      <li className="custom-list-item w-[fit-content]">Health Center</li>
                       <li className="custom-list-item w-[fit-content]">Guest House</li>
                       <li className="custom-list-item w-[fit-content]">Facilities to employees</li>
                     </ol>
                     <span className="w-[6px] h-[500px] bg-primary opacity-20 rounded-lg absolute left-[800px] top-[25px]"></span>
-                    <ol className="flex-row font-[400] text-[20px]  pt-[32px] pl-[160px] space-y-[29px]">
+                    <ol className="flex-row font-[400] text-[20px]  pt-[32px] pl-[200px] space-y-[15px]">
                       <li className="font-bold underline decoration-black underline-offset-[2px]">
                         Committees
                       </li>
@@ -432,8 +432,7 @@ const NavbarBottom = () => {
         </div>
       </div>
 
-      <div className="sticky top-0 z-30 ls:block md:hidden">
-        {/* Increased z-index to 30 */}
+      {/* <div className="sticky top-0 z-30 ls:block sm:hidden">
         <div className="bg-gray-900 shadow-sm w-full h-[85px] bg-opacity-50 absolute sm:flex  text-white text-[16px]">
           <ul className="flex flex-row space-x-[31px] items-center pl-[33px] w-full justify-between pr-[76px]">
             <li>
@@ -447,16 +446,16 @@ const NavbarBottom = () => {
             >
               <RxHamburgerMenu size={30} />
             </li>
-            {/* <li><a>About</a></li>
+            <li><a>About</a></li>
             <li><a>Admissions</a></li>
             <li><a>Academics</a></li>
             <li><a>Career Development Center</a></li>
             <li><a>Facilities</a></li>
             <li><a>Campus Life</a></li>
-            <li><a>Research</a></li> */}
+            <li><a>Research</a></li>
           </ul>
         </div>
-      </div>
+      </div> */}
 
       <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
         <div

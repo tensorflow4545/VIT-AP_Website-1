@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import "./placements.css"
 export default function placements(){
     return(
         <> 
