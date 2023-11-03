@@ -26,7 +26,7 @@ export const researchNumbers = [
     },
     {
         id: 3,
-        number: "1.5Cr",
+        number: 1.5,
         name: "Sponsored Budget"
     }
 ]
@@ -126,5 +126,89 @@ export const programmesOffered = [
     id: 14,
     title: "M.Sc Chemistry in collaboration with Mitsui kinzoku Components India (MKCI)",
     field: "postgraduate",
+  },
+];
+
+export const announcements = [
+  {
+    id: 1,
+    content:
+      "Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
+  },
+  {
+    id: 2,
+    content: "CSI Meet'n Greet'23",
+  },
+  {
+    id: 3,
+    content: "3rd Annual Convocation",
+  },
+  {
+    id: 4,
+    content:
+      "Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
+  },
+  {
+    id: 5,
+    content: "CSI Meet'n Greet'23",
+  },
+  {
+    id: 6,
+    content: "3rd Annual Convocation",
+  },
+  {
+    id: 7,
+    content:
+      "Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
+  },
+  {
+    id: 8,
+    content: "CSI Meet'n Greet'23",
+  },
+  {
+    id: 9,
+    content: "3rd Annual Convocation",
+  },
+  {
+    id: 10,
+    content:
+      "Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
+  },
+  {
+    id: 11,
+    content: "CSI Meet'n Greet'23",
+  },
+  {
+    id: 12,
+    content: "3rd Annual Convocation",
+  },
+];
+
+export const announcements2 = [
+  {
+    id: 1,
+    content:
+      "Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
+  },
+  {
+    id: 2,
+    content: "CSI Meet'n Greet'23",
+  },
+  {
+    id: 3,
+    content: "3rd Annual Convocation",
+  },
+  {
+    id: 4,
+    content:
+      "Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
+  },
+  {
+    id: 5,
+    content: "CSI Meet'n Greet'23",
+  },
+  {
+    id: 6,
+    content: "3rd Annual Convocation",
   },
 ];

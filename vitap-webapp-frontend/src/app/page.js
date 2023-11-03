@@ -41,14 +41,15 @@ const Home = async () => {
       <HeroSection /> 
       <About />
       <OurSchools />
-      <ProgrammesOffered /> 
-      <OurEvents /> 
+      <ProgrammesOffered />
+      <OurEvents />
       <ResearchInnovation />
-      {/* <LifeAtVITAP/>
+      <LifeAtVITAP/>
       <NewsAboutVITAP/>
       <WallOfSocials/>
       <NumberAtGlance/>
-      <Footer/> */}
+      <Footer/>
+      
     </>
   );
 }
