@@ -39,17 +39,18 @@ const Home = async () => {
       {/* <Image src={`${config.api}${data.data[0].attributes.image.data.attributes.url}`} width={400} height={100}/> */}
       <NavbarUpper />
       <NavbarBottom />
-      <HeroSection /> 
+      <HeroSection />
       <About />
       <OurSchools />
       <ProgrammesOffered />
       <OurEvents />
       <ResearchInnovation />
-      <LifeAtVITAP/>
-      <NewsAboutVITAP/>
-      <WallOfSocials/>
-      <NumberAtGlance/>
-      <Footer/> 
+      <LifeAtVITAP />
+      <NewsAboutVITAP />
+      <WallOfSocials />
+      <NumberAtGlance />
+      <Component />
+      <Footer />
     </>
   );
 }
