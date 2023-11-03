@@ -1,6 +1,14 @@
+"use client";
 import { Tb360View } from "react-icons/tb";
 import { FiSearch } from "react-icons/fi";
 import config from "@/config";
+import { motion, spring } from "framer-motion";
+import { useState } from "react";
+import "./NavbarUpper.css";
+
+const navlinks = [
+  
+];
 // import axios from 'axios';
 
 // const fetchNavlinks = async () => {
@@ -18,15 +26,17 @@ import config from "@/config";
 //   }
 // };
 
-const NavbarUpper = async () => {
+const NavbarUpper = () => {
   // const navlinksdata = await fetchNavlinks();
   // const navlinks = navlinksdata.data;
   // console.log(navlinks);
 
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
-      <div className="z-auto w-full h-[60px] text-white bg-primary md:flex ls:flex sm:hidden justify-between items-center px-[37px]">
-        <ul className="flex  h-[20px] md:space-x-[10px] ls:space-x-[20px] text-[14px] items-center ">
+      <div className="z-auto w-full h-[45px] text-white bg-primary md:flex ls:flex sm:hidden justify-between items-center px-[37px]">
+        <div className="flex  h-[20px] md:space-x-[10px] ls:space-x-[20px] text-[14px] items-center ">
           {/* {navlinks.map((item) =>{
               return(
                 <>
@@ -35,7 +45,10 @@ const NavbarUpper = async () => {
               )
             })}
             <li>AP</li> */}
-          <li className=" item">
+          <motion.div className="flex items-center hover:cursor-pointer space-x-3" onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+              >
             <svg
               width="20"
               height="20"
@@ -48,9 +61,9 @@ const NavbarUpper = async () => {
                 fill="#DDDDDD"
               />
             </svg>
-          </li>
-          <li className="text-[18px]">CAMPUS</li>
-          <li>
+
+            <h1  className="text-[18px]">CAMPUS</h1>
+
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="5"
@@ -65,16 +78,40 @@ const NavbarUpper = async () => {
                 fill="white"
               />
             </svg>
-          </li>
-        </ul>
+
+            {isOpen && (
+                <motion.ol
+                  className="space-x-[20px] flex"
+                  initial={{ opacity: 0, x: -100 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ type: spring }}
+                >
+                  <li className="ml-[10px]">VITAP</li>
+                  <li className="ml-[10px]"><a href="https://vit.ac.in/">Vellore</a></li>
+                  <li className="ml-[10px]"><a href="https://chennai.vit.ac.in/">Chennai</a></li>
+                  <li className="ml-[10px]"><a href="https://vitbhopal.ac.in/">Bhopal</a></li>
+                  <li className="ml-[10px]"><a href="https://vitbangalore.in/">Banglore</a></li>
+                </motion.ol>
+              )}
+
+
+          </motion.div>
+       
+         
+          
+        </div>
         {/* <div className=" h-[20px] space-x-[31px] text-[14px]">
 
           </div> */}
 
-        <ul className="flex h-[20px] md:space-x-[31px] ls:space-x-[20px]  text-[14px] ">
+        <ul className="flex font-Montserrant h-[20px] md:space-x-[31px] ls:space-x-[20px]  text-[18px] ">
           <li>
-            <a>How to reach VIT-AP</a>
+            <a>Alumini</a>
           </li>
+          <li>
+            <a>VIT-AP Advantages</a>
+          </li>
+
           <li>
             <a>
               <FiSearch size={20} />

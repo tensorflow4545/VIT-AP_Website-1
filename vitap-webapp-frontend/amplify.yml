@@ -1,0 +1,34 @@
+```jsx
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - cd vitap-webapp-frontend
+        - npm install
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: /vitap-webapp-frontend
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+
+backend:
+  phases:
+    build:
+      commands:
+        - cd vitap-webapp-backend-strapi
+        - npm install
+        - npm run build
+  artifacts:
+    baseDirectory: /vitap-webapp-backend-strapi
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+```
