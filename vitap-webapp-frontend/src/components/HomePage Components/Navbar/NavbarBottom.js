@@ -6,6 +6,7 @@ import image2 from "../../../assets/images/Homepage Images/navbar-images/2.png";
 import image3 from "../../../assets/images/Homepage Images/navbar-images/3.png";
 import image4 from "../../../assets/images/Homepage Images/navbar-images/4.png";
 import image5 from "../../../assets/images/Homepage Images/navbar-images/5.png";
+import image6 from "../../../assets/images/Homepage Images/navbar-images/6.png";
 import "./navbar.css";
 import { useState, useEffect } from "react";
 
@@ -50,9 +51,28 @@ const NavbarBottom = () => {
   };
 
   const [Programmes, setProgrammes] = useState([]);
-  const [Programme, setProgramme] = useState(null);
-  const [underline, setunderline] = useState("");
+  const [Programme, setProgramme] = useState("Undergraduate");
+  const [underline, setunderline] = useState("custom-underline decoration-[#650010] underline-offset-8 decoration-[6px] ");
   const [research, setResearch] = useState(null);
+
+  useEffect(() => {
+    if (Programme === 'Undergraduate') {
+      setProgrammes([
+        'Undergraduate',
+        'Dual Degree',
+        'Integrated',
+        'Postgraduate',
+        'Ph. D',
+      ]);
+    }
+  }, [Programme]);
+
+  useEffect(() => {
+    if (underline === 'custom-underline decoration-[#650010] underline-offset-8 decoration-[6px] ') {
+      setProgramme("Undergraduate");
+    }
+  }, [underline]);
+  
 
   return (
     <>
@@ -130,7 +150,7 @@ const NavbarBottom = () => {
               onMouseEnter={() => handleDropdownEnter("admissions")}
               onMouseLeave={() => {
                 handleDropdownLeave();
-                setProgramme(null);
+                setProgramme("Undergraduate");
               }}
             >
               <a className="custom-underline ">Admissions</a>
@@ -140,6 +160,7 @@ const NavbarBottom = () => {
                   <ol className="flex-row font-[400] text-[20px]  pt-[82px] pl-[110px] space-y-[29px]">
                     <li
                       className={` hover:cursor-pointer  w-[fit-content] ${underline}`}
+                      
                       onMouseEnter={() => {
                         setProgrammes([
                           "Undergraduate",
@@ -155,15 +176,33 @@ const NavbarBottom = () => {
                     >
                       Programmes
                     </li>
-                    <li className="custom-list-item w-[fit-content]">Application Process</li>
-
-                    <li className="custom-list-item w-[fit-content]">Fees & Scholarship</li>
-                    <li className="custom-list-item w-[fit-content]">STARS</li>
-                    <li className="custom-list-item w-[fit-content]">Affidivit</li>
-                    <li className="custom-list-item w-[fit-content]">Videos</li>
-                    <li className="custom-list-item w-[fit-content]">Enquiry</li>
+                    <li className="peer/ap custom-list-item w-[fit-content]"  onMouseEnter={() => {setProgrammes([]); setProgramme(null); setunderline("")}} onMouseLeave={()=> {setProgramme("Undergraduate")}}>Application Process</li>
+                    <li className="absolute left-[500px] invisible top-[20px] peer-hover/ap:visible">
+                    <Image alt="A descriptive text here" src={image0} />
+                    </li>
+                    <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => {setProgrammes([]); setProgramme(null); setunderline("")}} onMouseLeave={()=> {setProgramme("Undergraduate")}}>Fees & Scholarship</li>
+                    <li className="absolute left-[500px] invisible top-[20px] peer-hover/fas:visible">
+                    <Image alt="A descriptive text here" src={image1} />
+                    </li>
+                    <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => {setProgrammes([]); setProgramme(null); setunderline("")}} onMouseLeave={()=> {setProgramme("Undergraduate")}}>STARS</li>
+                    <li className="absolute left-[500px] invisible top-[20px] peer-hover/fas:visible">
+                    <Image alt="A descriptive text here" src={image2} />
+                    </li>
+                    <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => {setProgrammes([]); setProgramme(null); setunderline("")}} onMouseLeave={()=> {setProgramme("Undergraduate")}}>Affidivit</li>
+                    <li className="absolute left-[500px] invisible top-[20px] peer-hover/fas:visible">
+                    <Image alt="A descriptive text here" src={image3} />
+                    </li>
+                    <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => {setProgrammes([]); setProgramme(null); setunderline("")}} onMouseLeave={()=> {setProgramme("Undergraduate")}}>Videos</li>
+                    <li className="absolute left-[500px] invisible top-[20px] peer-hover/fas:visible">
+                    <Image alt="A descriptive text here" src={image4} />
+                    </li>
+                    <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => {setProgrammes([]); setProgramme(null); setunderline("")}} onMouseLeave={()=> {setProgramme("Undergraduate")}}>Enquiry</li>
+                    <li className="absolute left-[500px] invisible top-[20px] peer-hover/fas:visible">
+                    <Image alt="A descriptive text here" src={image5} />
+                    </li>
                   </ol>
                   <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[400px] top-[45px]"></span>
+                  
                   <ol
                     className={` ${""}   flex-row font-[400] text-[20px]  pt-[82px] pl-[110px] space-y-[29px] absolute left-[350px] `}
                   >
@@ -172,7 +211,8 @@ const NavbarBottom = () => {
                         }`} onMouseEnter={() => { setProgramme(Program) }}> {Program} </li>;
                     })}
                   </ol>
-                  <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[750px] top-[45px]"></span>
+                  {Programme === "Undergraduate" || Programme === "Dual Degree" || Programme === "Integrated" || Programme === "Postgraduate" || Programme === "Ph. D" ? (
+                  <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[750px] top-[45px]"></span>):null}
                   {Programme === "Undergraduate" ? (
                     <div className="flex">
                       <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[550px] space-y-[29px]">
@@ -391,20 +431,32 @@ const NavbarBottom = () => {
               className={`group hover:cursor-pointer ${activeNavItem === "Research" ? "active-nav-item" : ""
                 }`}
               onMouseEnter={() => handleDropdownEnter("Research")}
-              onMouseLeave={handleDropdownLeave}
+              onMouseLeave={() => {
+                handleDropdownLeave();
+                setResearch("ar");
+              }}
             >
               <a className="custom-underline">Research</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
                 <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px] flex-row flex">
 
                   <ol className="flex-row font-[400] text-[20px]  pt-[82px] pl-[110px] space-y-[29px]">
-                    <li className="custom-list-item w-[fit-content]">Academic Reasearch</li>
-                    <li className="custom-list-item w-[fit-content]">URE Project</li>
+                    <li className="custom-list-item w-[fit-content]" onMouseEnter={()=>{setResearch("ar")}}>Academic Reasearch</li>
+                    
+                    <li className="custom-list-item w-[fit-content]" onMouseEnter={()=>{setResearch("ure")}}>URE Project</li>
+                    
                     <li className={`custom-list-item w-[fit-content] ${research === "coe" ? "custom-underline decoration-[#650010] underline-offset-8 decoration-[6px]" : ""
                       }`} onMouseEnter={() => { setResearch("coe") }}>Center of Excellence</li>
                     <li className={`custom-list-item w-[fit-content] ${research === "iiec" ? "custom-underline decoration-[#650010] underline-offset-8 decoration-[6px]" : ""
                       }`} onMouseEnter={() => { setResearch("iiec") }}>IIEC</li>
-                    <li className="custom-list-item w-[fit-content]">VITBIF</li>
+                    <li className="custom-list-item w-[fit-content]" onMouseEnter={()=>{setResearch("vitbif")}}>VITBIF</li>
+                    {research === "ar" ? (<li className="absolute left-[500px] top-[20px] visible">
+                    <Image alt="A descriptive text here" src={image0} />
+                    </li>): research === "ure" ? (<li className="absolute left-[500px] top-[20px] visible">
+                    <Image alt="A descriptive text here" src={image1} />
+                    </li>): research === "vitbif" ? (<li className="absolute left-[500px] top-[20px] visible">
+                    <Image alt="A descriptive text here" src={image2} />
+                    </li>):null}
                   </ol>
                   <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[400px] top-[45px]"></span>
                   {research === "iiec" ? (
