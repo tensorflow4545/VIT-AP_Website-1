@@ -37,16 +37,16 @@ const ResearchInnovation = () => {
     <>
       <div className="max-w-[1440px] mt-[100px] min-h-[800px]  mx-auto pt-[56px] px-[55px] flex flex-col max-xl:px-[25px] max-xl:pr-[20px] max-md:mt-[70px] max-ls:hidden">
         <div className="flex flex-col justify-start items-start gap-5">
-          <h1 className="text-[#51060D] text-[48px] font-bold max-lx:text-[32px] max-ls:text-[26px]">
+          <h1 className="text-[#51060D] font-Emilo text-[48px] font-bold max-lx:text-[32px] max-ls:text-[26px]">
             Research and Innovation
           </h1>
-          <p className="text-[18px] font-normal ">
+          <p className="text-[18px] font-Montserrant font-normal ">
             We indulge in driving discoveries vital to our world, our health,
             and our intellectual life.
           </p>
         </div>
         <div className="relative">
-          <div className="flex justify-center  gap-[24px] mt-[53px] max-lx:flex-col flex-wrap max-xl:justify-center max-lx:items-center">
+          <div className="flex justify-center object-cover gap-[24px] mt-[53px] max-lx:flex-col flex-wrap max-xl:justify-center max-lx:items-center">
             {researchInnovation.map((research) => (
               <Image
                 key={research.id}
