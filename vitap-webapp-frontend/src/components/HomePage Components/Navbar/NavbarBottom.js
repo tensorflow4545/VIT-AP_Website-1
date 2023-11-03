@@ -362,14 +362,14 @@ const NavbarBottom = () => {
                       <li className="custom-list-item w-[fit-content]">Hostels</li> 
                       <li className="custom-list-item w-[fit-content]">Libraries</li> 
                       <li className="custom-list-item w-[fit-content]">Labs</li>
-                      <li className="custom-list-item w-[fit-content]">Labs</li>
                       <li className="custom-list-item w-[fit-content]">Bank and ATM</li>
                       <li className="custom-list-item w-[fit-content]">Transport</li>
+                      <li className="custom-list-item w-[fit-content]">Health Center</li>
                       <li className="custom-list-item w-[fit-content]">Guest House</li>
                       <li className="custom-list-item w-[fit-content]">Facilities to employees</li>
                     </ol>
                     <span className="w-[6px] h-[500px] bg-primary opacity-20 rounded-lg absolute left-[800px] top-[25px]"></span>
-                    <ol className="flex-row font-[400] text-[20px]  pt-[32px] pl-[160px] space-y-[29px]">
+                    <ol className="flex-row font-[400] text-[20px]  pt-[32px] pl-[200px] space-y-[15px]">
                       <li className="font-bold underline decoration-black underline-offset-[2px]">
                         Committees
                       </li>
