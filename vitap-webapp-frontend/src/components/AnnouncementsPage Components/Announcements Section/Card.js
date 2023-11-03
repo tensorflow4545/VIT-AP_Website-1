@@ -1,6 +1,4 @@
-"use client";
-
-import React, { useState } from 'react'
+import React from 'react'
 
 const Card = ({ key, content }) => {
   return (
@@ -9,7 +7,7 @@ const Card = ({ key, content }) => {
       <div className="absolute w-[97%] h-[96%] border border-gray-400 ml-[5px] flex flex-col justify-center items-start text-start">
         <div className='p-[25px]'>
           <h1 className='text-[#000] text-[15px] font-bold mb-1'>
-            {content}
+            Hello
           </h1>
           <div className='bg-gray-400 w-[15px] h-[12px]'></div>
         </div>

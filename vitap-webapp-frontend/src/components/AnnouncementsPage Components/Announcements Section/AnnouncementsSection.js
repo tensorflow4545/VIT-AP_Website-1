@@ -2,8 +2,8 @@
 
 import React, { useEffect, useState } from 'react'
 import Card from './Card';
-import { announcements, announcements2 } from '@/constants';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
+import { announcements, announcements2 } from '@/constants/index'
 
 const AnnouncementsSection = () => {
 

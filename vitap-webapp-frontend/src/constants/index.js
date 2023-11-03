@@ -128,3 +128,69 @@ export const programmesOffered = [
     field: "postgraduate",
   },
 ];
+
+export const announcements = [
+  {
+    id: 1,
+    content: "Hello",
+  },
+  {
+    id: 2,
+    content: "Hello",
+  },
+  {
+    id: 3,
+    content: "Hello",
+  },
+  {
+    id: 4,
+    content: "Hello",
+  },
+  {
+    id: 5,
+    content: "Hello",
+  },
+  {
+    id: 6,
+    content: "Hello",
+  },
+  {
+    id: 7,
+    content: "Hello",
+  },
+  {
+    id: 8,
+    content: "Hello",
+  },
+  {
+    id: 9,
+    content: "Hello",
+  },
+  {
+    id: 10,
+    content: "Hello",
+  },
+  {
+    id: 11,
+    content: "Hello",
+  },
+  {
+    id: 12,
+    content: "Hello",
+  },
+];
+
+export const announcements2 = [
+  {
+    id: 1,
+    content: "Hii"
+  },
+  {
+    id: 2,
+    content: "Hii"
+  },
+  {
+    id: 3,
+    content: "Hii"
+  }
+]
