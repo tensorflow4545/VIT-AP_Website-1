@@ -117,7 +117,7 @@ const ResearchInnovation = () => {
         <div className="min-h-[40vh] my-7 rounded-xl overflow-hidden relative">
           <div
             style={{
-              backgroundImage: url(${researchInnovation[currentIndex].imgUrl}),
+              backgroundImage: `url(${researchInnovation[currentIndex].imgUrl})`,
             }}
             className="w-full h-full rounded-xl bg-center bg-cover duration-500 overflow-hidden absolute -z-10"
           >
