@@ -3,20 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "deploy": "npm run build &&  wsl rsync --exclude=.git -azP . ubuntu@13.200.50.162:/home/ubuntu/apps/vit-ap",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@material-tailwind/react": "^2.1.4",
     "axios": "^1.5.1",
     "dotenv": "^16.3.1",
     "framer-motion": "^10.16.4",
-    "next": "^13.5.6",
+    "next": "^14.0.0",
     "react": "^18",
+    "react-countup": "^6.4.2",
     "react-dom": "^18",
     "react-icons": "^4.11.0",
+    "react-player": "^2.13.0",
+    "react-scroll-trigger": "^0.6.14",
     "react-slick": "^0.29.0",
     "react-social-icons": "^6.4.0"
   },
