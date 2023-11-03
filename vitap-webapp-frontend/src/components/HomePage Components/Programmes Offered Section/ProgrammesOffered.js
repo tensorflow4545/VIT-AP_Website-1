@@ -13,9 +13,9 @@ const ProgrammesOffered = () => {
         style={{ backgroundImage: `url("/programsbackground3.png")` }}
         className="max-w-[1560px] w-full h-full bg-center mx-auto"
       >
-        <div className="w-full mx-auto flex max-h-[860] pr-[40px] max-lx:pr-[20px] pt-[40px] text-white max-ls:hidden">
-          <div className=" p-[110px] max-lx:p-[60px] flex flex-col flex-[60%] ">
-            <h1 className="text-white text-[40px] max-lx:text-[32px] font-bold">
+        <div className="w-full mx-auto flex max-h-[750px] pr-[40px] max-lx:pr-[20px] pt-[20px] text-white max-ls:hidden">
+          <div className=" p-[110px] max-lx:p-[60px] flex flex-col flex-[60%] pt-[60px]">
+            <h1 className="text-white text-[40px] max-lx:text-[32px] font-medium font-Emilo">
               Programmes Offered
             </h1>
             <p className="my-[15px] text-[18px] max-lx:text-[16px] font-Montserrant">
@@ -59,7 +59,7 @@ const ProgrammesOffered = () => {
               </h1>
             </div>
           </div>
-          <div className="flex flex-col border border-zinc-200 flex-[50%] bg-[#E6CFCF] min-h-[750px] overflow-auto my-auto z-10 relative max-w-[680px] scrollbar-thin scrollbar-thumb-red-900 scrollbar-track-gray-400">
+          <div className="font-Montserrant lex flex-col border border-zinc-200 flex-[50%] bg-[#E6CFCF] min-h-[650px] overflow-auto my-auto z-10 relative max-w-[680px] scrollbar-thin scrollbar-thumb-red-900 scrollbar-track-gray-400">
             <div className="min-h-[1500px]w-full absolute pl-[75px] max-lx:pl-[40px] pt-[55px] max-lx:pt-[30px] ">
               <h3 className="text-[16px] max-lx:text-[14px] font-semibold text-gray-500 uppercase">
                 Engineering
