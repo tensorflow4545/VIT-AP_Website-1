@@ -145,7 +145,7 @@ export default function Footer() {
                 <a class="creditlink">Accessibility</a>
               </div>
               <div class="credittext pl-8">
-                <p class="pt-5">
+                <p class="pt-5 w-[700px]">
                   Crafted with Passion at VIT-AP University by Website Team︎
                 </p>
               </div>
