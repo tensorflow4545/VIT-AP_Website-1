@@ -86,11 +86,10 @@ const NavbarUpper = () => {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ type: spring }}
                 >
-                  <li className="ml-[10px]">VITAP</li>
-                  <li className="ml-[10px]"><a href="https://vit.ac.in/">Vellore</a></li>
-                  <li className="ml-[10px]"><a href="https://chennai.vit.ac.in/">Chennai</a></li>
-                  <li className="ml-[10px]"><a href="https://vitbhopal.ac.in/">Bhopal</a></li>
-                  <li className="ml-[10px]"><a href="https://vitbangalore.in/">Banglore</a></li>
+                  <li className="ml-[10px]"><a href="https://vit.ac.in/" target="_blank">VELLORE</a></li>
+                  <li className="ml-[10px]"><a href="https://chennai.vit.ac.in/" target="_blank">CHENNAI</a></li>
+                  <li className="ml-[10px]"><a href="https://vitbhopal.ac.in/" target="_blank">BHOPAL</a></li>
+                  <li className="ml-[10px]"><a href="https://vitbangalore.in/" target="_blank">BANGLORE</a></li>
                 </motion.ol>
               )}
 

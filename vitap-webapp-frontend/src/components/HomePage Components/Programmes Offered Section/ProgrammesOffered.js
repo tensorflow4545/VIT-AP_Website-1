@@ -26,33 +26,29 @@ const ProgrammesOffered = () => {
             </p>
             <div className="flex flex-col my-[20px] justify-center items-center text-center gap-10">
               <h1
-                className={`font-Montserrant text-[18px] max-lx:text-[14px] py-[19px] px-[23px] ${
-                  active === "undergraduate" ? "border border-zinc-200" : ""
-                } cursor-pointer w-full first-letter`}
+                className={`font-Montserrant text-[18px] max-lx:text-[14px] py-[19px] px-[23px] ${active === "undergraduate" ? "border border-zinc-200" : ""
+                  } cursor-pointer w-full first-letter`}
                 onClick={() => setActive("undergraduate")}
               >
                 Undergraduate
               </h1>
               <h1
-                className={`font-Montserrant text-[18px] max-lx:text-[14px] py-[19px] px-[23px] ${
-                  active === "integrated" ? "border border-zinc-200" : ""
-                } cursor-pointer w-full first-letter`}
+                className={`font-Montserrant text-[18px] max-lx:text-[14px] py-[19px] px-[23px] ${active === "integrated" ? "border border-zinc-200" : ""
+                  } cursor-pointer w-full first-letter`}
                 onClick={() => setActive("integrated")}
               >
                 Integrated
               </h1>
               <h1
-                className={`font-Montserrant text-[18px] max-lx:text-[14px] py-[19px] px-[23px] ${
-                  active === "postgraduate" ? "border border-zinc-200" : ""
-                } cursor-pointer w-full first-letter`}
+                className={`font-Montserrant text-[18px] max-lx:text-[14px] py-[19px] px-[23px] ${active === "postgraduate" ? "border border-zinc-200" : ""
+                  } cursor-pointer w-full first-letter`}
                 onClick={() => setActive("postgraduate")}
               >
                 Postgraduate
               </h1>
               <h1
-                className={`font-Montserrant text-[18px] max-lx:text-[14px] py-[19px] px-[23px] ${
-                  active === "doctorial" ? "border border-zinc-200" : ""
-                } cursor-pointer w-full first-letter`}
+                className={`font-Montserrant text-[18px] max-lx:text-[14px] py-[19px] px-[23px] ${active === "doctorial" ? "border border-zinc-200" : ""
+                  } cursor-pointer w-full first-letter`}
                 onClick={() => setActive("doctorial")}
               >
                 Doctorial
@@ -69,9 +65,10 @@ const ProgrammesOffered = () => {
                 program.field === active ? (
                   <h1
                     key={program.id}
-                    className="py-[19px] max-w-[432px] font-Emilo max-lx:py-[16px] text-[#51060D] text-[20px] max-lx:text-[15px] font-[500] capitalize border border-l-0 border-t-0 border-r-0 border-b-gray-500"
+                    className="py-[19px] max-w-[432px] font-Emilo max-lx:py-[16px] text-[#51060D] text-[20px] max-lx:text-[15px] font-[500] capitalize border border-l-0 border-t-0 border-r-0 border-b-gray-500 hover:font-bold"
                   >
-                    {program.title}
+                    <a href="#">
+                    {program.title}</a>
                   </h1>
                 ) : (
                   ""
@@ -98,33 +95,29 @@ const ProgrammesOffered = () => {
         <div>
           <ul className="flex gap-5 my-[40px] justify-center items-center flex-wrap">
             <li
-              className={`py-[10px] px-[10px] ${
-                active === "undergraduate" ? "border border-zinc-200" : ""
-              }`}
+              className={`py-[10px] px-[10px] ${active === "undergraduate" ? "border border-zinc-200" : ""
+                }`}
               onClick={() => setActive("undergraduate")}
             >
               Undergraduate
             </li>
             <li
-              className={`py-[10px] px-[10px] ${
-                active === "integrated" ? "border border-zinc-200" : ""
-              }`}
+              className={`py-[10px] px-[10px] ${active === "integrated" ? "border border-zinc-200" : ""
+                }`}
               onClick={() => setActive("integrated")}
             >
               Integrated
             </li>
             <li
-              className={`py-[10px] px-[10px] ${
-                active === "postgraduate" ? "border border-zinc-200" : ""
-              }`}
+              className={`py-[10px] px-[10px] ${active === "postgraduate" ? "border border-zinc-200" : ""
+                }`}
               onClick={() => setActive("postgraduate")}
             >
               Post Graduate
             </li>
             <li
-              className={`py-[10px] px-[10px] ${
-                active === "doctorial" ? "border border-zinc-200" : ""
-              }`}
+              className={`py-[10px] px-[10px] ${active === "doctorial" ? "border border-zinc-200" : ""
+                }`}
               onClick={() => setActive("doctorial")}
             >
               Doctorial
@@ -140,11 +133,8 @@ const ProgrammesOffered = () => {
 
             {programmesOffered.map((program) =>
               program.field === active ? (
-                <h1
-                  key={program.id}
-                  className="py-[19px] max-w-[432px] max-lx:py-[16px] text-[#51060D] text-[14px] max-lx:text-[15px] font-semibold capitalize border border-l-0 border-t-0 border-r-0 border-b-gray-500"
-                >
-                  {program.title}
+                <h1 className="py-4 max-w-[432px] text-#51060D text-14 max-lx:text-15 font-semibold capitalize border border-l-0 border-t-0 border-r-0 border-b-gray-500 hover:text-bold">
+                  <a href="#">{program.title}</a>
                 </h1>
               ) : (
                 ""
