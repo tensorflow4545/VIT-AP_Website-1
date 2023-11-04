@@ -19,7 +19,7 @@ const NavbarBottom = () => {
   useEffect(() => {
     const changeBackground = () => {
       if (typeof window !== "undefined") {
-        if (window.scrollY >= 210) {
+        if (window.scrollY >= 260) {
           setNavbar(true);
           setLogo(true);
         } else {
@@ -102,7 +102,7 @@ const NavbarBottom = () => {
                   <div className="w-full h-full">
                     <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[430px] top-[45px]"></span>
 
-                    <ol className="flex-row font-[400] text-[20px]  pt-[82px] pl-[110px] space-y-[29px]">
+                    <ol className="flex-row font-[400] text-[20px] h-full pt-[82px] pl-[110px] space-y-[29px]">
                       <li className=" custom-list-item   w-[fit-content]">
                         <h1>Vision & Mission</h1>
                       </li>
@@ -177,27 +177,27 @@ const NavbarBottom = () => {
                       Programmes
                     </li>
                     <li className="peer/ap custom-list-item w-[fit-content]"  onMouseEnter={() => {setProgrammes([]); setProgramme(null); setunderline("")}} onMouseLeave={()=> {setProgramme("Undergraduate")}}>Application Process</li>
-                    <li className="absolute left-[500px] invisible top-[20px] peer-hover/ap:visible">
-                    <Image alt="A descriptive text here" src={image0} />
+                    <li className="absolute left-[600px] invisible top-[20px] peer-hover/ap:visible">
+                    <Image alt="A descriptive text here h-full" src={image0} />
                     </li>
                     <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => {setProgrammes([]); setProgramme(null); setunderline("")}} onMouseLeave={()=> {setProgramme("Undergraduate")}}>Fees & Scholarship</li>
-                    <li className="absolute left-[500px] invisible top-[20px] peer-hover/fas:visible">
+                    <li className="absolute left-[600px] invisible top-[20px] peer-hover/fas:visible">
                     <Image alt="A descriptive text here" src={image1} />
                     </li>
                     <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => {setProgrammes([]); setProgramme(null); setunderline("")}} onMouseLeave={()=> {setProgramme("Undergraduate")}}>STARS</li>
-                    <li className="absolute left-[500px] invisible top-[20px] peer-hover/fas:visible">
+                    <li className="absolute left-[600px] invisible top-[20px] peer-hover/fas:visible">
                     <Image alt="A descriptive text here" src={image2} />
                     </li>
                     <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => {setProgrammes([]); setProgramme(null); setunderline("")}} onMouseLeave={()=> {setProgramme("Undergraduate")}}>Affidivit</li>
-                    <li className="absolute left-[500px] invisible top-[20px] peer-hover/fas:visible">
+                    <li className="absolute left-[600px] invisible top-[20px] peer-hover/fas:visible">
                     <Image alt="A descriptive text here" src={image3} />
                     </li>
                     <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => {setProgrammes([]); setProgramme(null); setunderline("")}} onMouseLeave={()=> {setProgramme("Undergraduate")}}>Videos</li>
-                    <li className="absolute left-[500px] invisible top-[20px] peer-hover/fas:visible">
+                    <li className="absolute left-[600px] invisible top-[20px] peer-hover/fas:visible">
                     <Image alt="A descriptive text here" src={image4} />
                     </li>
                     <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => {setProgrammes([]); setProgramme(null); setunderline("")}} onMouseLeave={()=> {setProgramme("Undergraduate")}}>Enquiry</li>
-                    <li className="absolute left-[500px] invisible top-[20px] peer-hover/fas:visible">
+                    <li className="absolute left-[600px] invisible top-[20px] peer-hover/fas:visible">
                     <Image alt="A descriptive text here" src={image5} />
                     </li>
                   </ol>
@@ -450,11 +450,11 @@ const NavbarBottom = () => {
                     <li className={`custom-list-item w-[fit-content] ${research === "iiec" ? "custom-underline decoration-[#650010] underline-offset-8 decoration-[6px]" : ""
                       }`} onMouseEnter={() => { setResearch("iiec") }}>IIEC</li>
                     <li className="custom-list-item w-[fit-content]" onMouseEnter={()=>{setResearch("vitbif")}}>VITBIF</li>
-                    {research === "ar" ? (<li className="absolute left-[500px] top-[20px] visible">
+                    {research === "ar" ? (<li className="absolute left-[600px] top-[20px] visible">
                     <Image alt="A descriptive text here" src={image0} />
-                    </li>): research === "ure" ? (<li className="absolute left-[500px] top-[20px] visible">
+                    </li>): research === "ure" ? (<li className="absolute left-[600px] top-[20px] visible">
                     <Image alt="A descriptive text here" src={image1} />
-                    </li>): research === "vitbif" ? (<li className="absolute left-[500px] top-[20px] visible">
+                    </li>): research === "vitbif" ? (<li className="absolute left-[600px] top-[20px] visible">
                     <Image alt="A descriptive text here" src={image2} />
                     </li>):null}
                   </ol>
@@ -465,7 +465,7 @@ const NavbarBottom = () => {
                         <li className="custom-list-item w-[fit-content]">V-Launch</li>
                         <li className="custom-list-item w-[fit-content]">RGEMS</li>
                         <li className="custom-list-item w-[fit-content]">SpoRIC</li>
-                        <li className="custom-list-item w-[fit-content]">Patents</li>
+                        <li className="custom-list-item w-[fit-content]">IPR Cell</li>
                         <li className="custom-list-item w-[fit-content]">Incubatees</li>
                         <li className="custom-list-item w-[fit-content]">E- magazine</li>
                       </ol> </div>) : research === "coe" ? (

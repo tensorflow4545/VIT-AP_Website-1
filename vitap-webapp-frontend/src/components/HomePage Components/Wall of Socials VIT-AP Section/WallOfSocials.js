@@ -30,33 +30,33 @@ const Socials = () => {
             Follow us on our socials
           </p>
           <div className="w-[300px] h-[44px] ml-[108px] mt-[22px] flex">
-            <div className="w-[40px] h-[40px] rounded bg-[#DCCED0] relative hover:bg-primary ">
-              <Link href="https://www.instagram.com/vitap.university/?hl=en">
+            <div className="peer/insta w-[40px] h-[40px] rounded bg-[#DCCED0] relative hover:bg-primary hover:bg-opacity-50">
+              <Link href="https://www.instagram.com/vitap.university/?hl=en" target="_blank">
               <Image
                 src={insta}
-                className="absolute w-[22px] h-[22px] ml-[9px] mt-[9px] hover:bg-white"
+                className="absolute w-[22px] h-[22px] ml-[9px] mt-[9px]"
               />
               </Link>
 
             </div>
-            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px]">
-              Follow us on Instagram
+            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px] peer-hover/insta:font-bold duration-300 hover:font-bold">
+              <a href="https://www.instagram.com/vitap.university/?hl=en" target="_blank">Follow us on Instagram</a>
             </p>
           </div>
           <div className="w-[300px] h-[44px] ml-[108px] mt-[22px] flex">
-            <Link href="https://twitter.com/VITAPuniversity?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
-            <div className="w-[40px] h-[40px] rounded bg-[#DCCED0] relative">
+            <Link href="https://twitter.com/VITAPuniversity?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+            <div className="peer/twitter w-[40px] h-[40px] rounded bg-[#DCCED0] relative hover:bg-primary hover:bg-opacity-50">
               <FaXTwitter className="absolute w-[22px] h-[22px] ml-[9px] mt-[9px]"/>
             </div>
             </Link>
 
-            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px]">
-              Tweet with us on X
+            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px] peer-hover/twitter:font-bold duration-300 hover:font-bold">
+            <a href="https://twitter.com/VITAPuniversity?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Tweet with us on X</a>
             </p>
           </div>
           <div className="w-[350px] h-[44px] ml-[108px] mt-[22px] flex">
-            <div className="w-[40px] h-[40px] rounded bg-[#DCCED0] relative">
-              <Link href="https://www.linkedin.com/school/vitap-university/?originalSubdomain=in">
+            <div className="peer/lkdn w-[40px] h-[40px] rounded bg-[#DCCED0] relative hover:bg-primary hover:bg-opacity-50">
+              <Link href="https://www.linkedin.com/school/vitap-university/?originalSubdomain=in" target="_blank">
               <Image
                 src={linkin}
                 className="absolute w-[22px] h-[22px] ml-[9px] mt-[9px]"
@@ -64,13 +64,13 @@ const Socials = () => {
               </Link>
 
             </div>
-            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px]">
-              Grow with us on LinkedIn
+            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px] peer-hover/lkdn:font-bold duration-300 hover:font-bold">
+            <a href="https://www.linkedin.com/school/vitap-university/?originalSubdomain=in" target="_blank">Grow with us on LinkedIn</a>
             </p>
           </div>
           <div className="w-[300px] h-[44px] ml-[108px] mt-[22px] flex">
-            <div className="w-[40px] h-[40px] rounded bg-[#DCCED0] relative">
-              <Link href="https://www.facebook.com/vitap.university/">
+            <div className="peer/fb w-[40px] h-[40px] rounded bg-[#DCCED0] relative hover:bg-primary hover:bg-opacity-50">
+              <Link href="https://www.facebook.com/vitap.university/" target="_blank">
               <Image
                 src={fb}
                 className="absolute w-[22px] h-[22px] ml-[9px] mt-[9px]"
@@ -78,21 +78,21 @@ const Socials = () => {
               </Link>
 
             </div>
-            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px]">
-              Like us on Facebook
+            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px] peer-hover/fb:font-bold duration-300 hover:font-bold">
+              <a href="https://www.facebook.com/vitap.university/" target="_blank">Like us on Facebook</a>
             </p>
           </div>
           <div className="w-[300px] h-[44px] ml-[108px] mt-[22px] flex">
-            <div className="w-[40px] h-[40px] rounded bg-[#DCCED0] relative">
-        <Link href="https://www.youtube.com/c/VITAP">
+            <div className="peer/yt w-[40px] h-[40px] rounded bg-[#DCCED0] relative hover:bg-primary hover:bg-opacity-50">
+        <Link href="https://www.youtube.com/c/VITAP" target="_blank">
         <Image
                 src={yt}
                 className="absolute w-[22px] h-[22px] ml-[9px] mt-[9px]"
               />
         </Link>
             </div>
-            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px]">
-              Watch us on Youtube
+            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px] peer-hover/yt:font-bold duration-300 hover:font-bold">
+              <a href="https://www.youtube.com/c/VITAP" target="_blank">Watch us on Youtube </a>
             </p>
           </div>
         </div>
@@ -106,7 +106,7 @@ const Socials = () => {
                   url="www.instagram.com"
                   bgColor="rgba(0,0,0,0)"
                   fgColor="#FFFFFF"
-                  className="opacity-0 ml-[40%] items-center justify-center absolute transform mt-[60px] duration-300 group-hover:opacity-100"
+                  className="opacity-0 ml-[40%] items-center justify-center absolute transform mt-[30px] duration-300 group-hover:opacity-100"
                 />
                 <p className="text-[#FFFFFF] text-center opacity-0 absolute transform ml-[7px] mr-[7px] text-[14px] transition-opacity duration-300 group-hover:opacity-100">
                   It was a pleasure to have our students, from all over india
@@ -125,7 +125,7 @@ const Socials = () => {
                   url="www.instagram.com"
                   bgColor="rgba(0,0,0,0)"
                   fgColor="#FFFFFF"
-                  className="opacity-0 ml-[40%] items-center justify-center absolute transform mt-[60px] duration-300 group-hover:opacity-100"
+                  className="opacity-0 ml-[40%] items-center justify-center absolute transform mt-[30px] duration-300 group-hover:opacity-100"
                 />
                 <p className="text-[#FFFFFF] text-center opacity-0 absolute transform ml-[7px] mr-[7px] text-[14px] transition-opacity duration-300 group-hover:opacity-100">
                   It was a pleasure to have our students, from all over india
@@ -144,7 +144,7 @@ const Socials = () => {
                   url="www.instagram.com"
                   bgColor="rgba(0,0,0,0)"
                   fgColor="#FFFFFF"
-                  className="opacity-0 ml-[40%] items-center justify-center absolute transform mt-[60px] duration-300 group-hover:opacity-100"
+                  className="opacity-0 ml-[40%] items-center justify-center absolute transform mt-[30px] duration-300 group-hover:opacity-100"
                 />
                 <p className="text-[#FFFFFF] text-center opacity-0 absolute transform ml-[7px] mr-[7px] text-[14px] transition-opacity duration-300 group-hover:opacity-100">
                   It was a pleasure to have our students, from all over india
@@ -167,7 +167,7 @@ const Socials = () => {
                   url="www.instagram.com"
                   bgColor="rgba(0,0,0,0)"
                   fgColor="#FFFFFF"
-                  className="opacity-0 ml-[40%] items-center justify-center absolute transform mt-[60px] duration-300 group-hover:opacity-100"
+                  className="opacity-0 ml-[40%] items-center justify-center absolute transform mt-[30px] duration-300 group-hover:opacity-100"
                 />
                 <p className="text-[#FFFFFF] text-center opacity-0 absolute transform ml-[7px] mr-[7px] text-[14px] transition-opacity duration-300 group-hover:opacity-100">
                   It was a pleasure to have our students, from all over india
@@ -186,7 +186,7 @@ const Socials = () => {
                   url="www.instagram.com"
                   bgColor="rgba(0,0,0,0)"
                   fgColor="#FFFFFF"
-                  className="opacity-0 ml-[40%] items-center justify-center absolute transform mt-[60px] duration-300 group-hover:opacity-100"
+                  className="opacity-0 ml-[40%] items-center justify-center absolute transform mt-[30px] duration-300 group-hover:opacity-100"
                 />
                 <p className="text-[#FFFFFF] text-center opacity-0 absolute transform ml-[7px] mr-[7px] text-[14px] transition-opacity duration-300 group-hover:opacity-100">
                   It was a pleasure to have our students, from all over india
@@ -205,7 +205,7 @@ const Socials = () => {
                   url="www.instagram.com"
                   bgColor="rgba(0,0,0,0)"
                   fgColor="#FFFFFF"
-                  className="opacity-0 ml-[40%] items-center justify-center absolute transform mt-[20px] duration-300 group-hover:opacity-100"
+                  className="opacity-0 ml-[40%] items-center justify-center absolute transform mt-[30px] duration-300 group-hover:opacity-100"
                 />
                 <p className="text-[#FFFFFF] text-center opacity-0 absolute transform ml-[7px] mr-[7px] text-[14px] transition-opacity duration-300 group-hover:opacity-100">
                   It was a pleasure to have our students, from all over india
@@ -228,7 +228,7 @@ const Socials = () => {
                   url="www.instagram.com"
                   bgColor="rgba(0,0,0,0)"
                   fgColor="#FFFFFF"
-                  className="opacity-0 ml-[40%] items-center justify-center absolute transform mt-[60px] duration-300 group-hover:opacity-100"
+                  className="opacity-0 ml-[40%] items-center justify-center absolute transform mt-[30px] duration-300 group-hover:opacity-100"
                 />
                 <p className="text-[#FFFFFF] text-center opacity-0 absolute transform ml-[7px] mr-[7px] text-[14px] transition-opacity duration-300 group-hover:opacity-100">
                   It was a pleasure to have our students, from all over india
@@ -247,7 +247,7 @@ const Socials = () => {
                   url="www.instagram.com"
                   bgColor="rgba(0,0,0,0)"
                   fgColor="#FFFFFF"
-                  className="opacity-0 ml-[40%] items-center justify-center absolute transform mt-[60px] duration-300 group-hover:opacity-100"
+                  className="opacity-0 ml-[40%] items-center justify-center absolute transform mt-[30px] duration-300 group-hover:opacity-100"
                 />
                 <p className="text-[#FFFFFF] text-center opacity-0 absolute transform ml-[7px] mr-[7px] text-[14px] transition-opacity duration-300 group-hover:opacity-100">
                   It was a pleasure to have our students, from all over india
@@ -266,7 +266,7 @@ const Socials = () => {
                   url="www.instagram.com"
                   bgColor="rgba(0,0,0,0)"
                   fgColor="#FFFFFF"
-                  className="opacity-0 ml-[40%] items-center justify-center absolute transform mt-[60px] duration-300 group-hover:opacity-100"
+                  className="opacity-0 ml-[40%] items-center justify-center absolute transform mt-[30px] duration-300 group-hover:opacity-100"
                 />
                 <p className="text-[#FFFFFF] text-center opacity-0 absolute transform ml-[7px] mr-[7px] text-[14px] transition-opacity duration-300 group-hover:opacity-100 ">
                   It was a pleasure to have our students, from all over india
