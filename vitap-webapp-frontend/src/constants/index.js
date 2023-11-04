@@ -26,7 +26,7 @@ export const researchNumbers = [
     },
     {
         id: 3,
-        number: "1.5Cr",
+        number: 1.5,
         name: "Sponsored Budget"
     }
 ]
@@ -129,24 +129,68 @@ export const programmesOffered = [
   },
 ];
 
-
-export const Schools = [
+export const announcements = [
   {
     id: 1,
-    imgUrl: "/assets/images/Homepage Images/Schools/SAS.jpg",
-    title: "VTAPP Internation Tech Fest by VIT-AP",
-    date: "19th Sept",
+    content: "Hello",
   },
   {
     id: 2,
-    imgUrl: "/assets/images/Homepage Images/Schools/",
-    title: "VTAPP Internation Tech Fest by VIT-AP",
-    date: "19th Sept",
+    content: "Hello",
   },
   {
     id: 3,
-    imgUrl: "/eventImages/3.jpeg",
-    title: "VTAPP Internation Tech Fest by VIT-AP",
-    date: "19th Sept",
+    content: "Hello",
+  },
+  {
+    id: 4,
+    content: "Hello",
+  },
+  {
+    id: 5,
+    content: "Hello",
+  },
+  {
+    id: 6,
+    content: "Hello",
+  },
+  {
+    id: 7,
+    content: "Hello",
+  },
+  {
+    id: 8,
+    content: "Hello",
+  },
+  {
+    id: 9,
+    content: "Hello",
+  },
+  {
+    id: 10,
+    content: "Hello",
+  },
+  {
+    id: 11,
+    content: "Hello",
+  },
+  {
+    id: 12,
+    content: "Hello",
   },
 ];
+
+export const announcements2 = [
+  {
+    id: 1,
+    content: "Hii"
+  },
+  {
+    id: 2,
+    content: "Hii"
+  },
+  {
+    id: 3,
+    content: "Hii"
+  }
+]
