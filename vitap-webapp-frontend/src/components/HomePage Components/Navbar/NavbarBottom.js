@@ -19,7 +19,7 @@ const NavbarBottom = () => {
   useEffect(() => {
     const changeBackground = () => {
       if (typeof window !== "undefined") {
-        if (window.scrollY >= 260) {
+        if (window.scrollY >= 210) {
           setNavbar(true);
           setLogo(true);
         } else {
