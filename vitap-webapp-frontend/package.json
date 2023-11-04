@@ -5,9 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
+    "start": "next start"  },
   "dependencies": {
     "@material-tailwind/react": "^2.1.4",
     "axios": "^1.5.1",
