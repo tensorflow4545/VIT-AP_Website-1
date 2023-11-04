@@ -58,9 +58,9 @@ const HeroSection = () => {
         <h1 className="md:text-[20px] sm:text-[10px] ls:text-[15px] font-Montserrant">
           APPLY KNOWLEDGE, IMPROVE LIFE
         </h1>
-        <button className="md:w-[201px] md:mt-[25px] sm:mt-3 ls:mt-10 md:h-[54px] sm:w-[160px] sm:h-[34px] bg-primary ls:text-[15px] md:text-[14px] rounded-full font-Montserrant text-white ">
-          <div className="flex justify-center items-center space-x-[12px]">
-            <div>Contact Us</div> <BsArrowRight />
+        <button className="md:w-[201px] md:mt-[25px] sm:mt-3 ls:mt-10 md:h-[54px] sm:w-[160px] sm:h-[34px] bg-primary ls:text-[15px] md:text-[14px] rounded-full font-Montserrant text-white hover:opacity-80">
+          <div className="flex justify-center items-center space-x-[12px] ">
+            <div>CONTACT US</div> <BsArrowRight />
           </div>
         </button>
       </div>

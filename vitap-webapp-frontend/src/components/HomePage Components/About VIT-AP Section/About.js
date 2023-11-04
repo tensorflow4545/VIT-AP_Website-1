@@ -138,7 +138,7 @@ const About = () => {
             <motion.div
               initial={{ left: "[80px]", width: "[32px]" }}
               whileHover={{ left: "[-20px]", width: "[125px]" }}
-              className="top-[-7px] z-30  right-5 absolute hover:cursor-pointer flex items-center"
+              className="top-[-7px] z-999  right-5 absolute hover:cursor-pointer flex items-center"
             >
               <div className="Rectangle91 w-[32px] h-[30px] left-[80px] top-[-3px] absolute bg-[#5C0E14] opacity-20 transition-transform hover:left-[-10px] hover:w-[125px]"></div>
               <h1 className="mr-4 text-[#5C0E14]">View More</h1>

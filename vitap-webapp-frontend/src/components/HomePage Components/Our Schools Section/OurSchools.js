@@ -125,7 +125,7 @@ const OurSchools = async () => {
               </div>
             </div>
 
-            <div className="w-[270px] h-[290px] ml-[170px] relative group">
+            <div className="w-[270px] h-[290px] ml-[150px] relative group">
               <div className="absolute w-[270px] h-[270px] bg-black"></div>
               <Image
                 src={image5}
@@ -145,7 +145,7 @@ const OurSchools = async () => {
                 </h1>
               </div>
             </div>
-            <div className="w-[270px] h-[290px] ml-[170px] relative group">
+            <div className="w-[270px] h-[290px] ml-[150px] relative group">
               <div className="absolute w-[270px] h-[270px] bg-black"></div>
               <Image
                 src={image6}
@@ -165,7 +165,7 @@ const OurSchools = async () => {
                 </h1>
               </div>
             </div>
-            <div className="w-[270px] h-[290px] ml-[170px] relative group">
+            <div className="w-[270px] h-[290px] ml-[150px] relative group">
               <div className="absolute w-[270px] h-[270px] bg-black"></div>
               <Image
                 src={image7}

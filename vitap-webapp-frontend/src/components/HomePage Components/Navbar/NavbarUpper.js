@@ -62,7 +62,7 @@ const NavbarUpper = () => {
               />
             </svg>
 
-            <h1  className="text-[18px]">CAMPUS</h1>
+            <h1  className="text-[18px]">CAMPUSES</h1>
 
             <svg
               xmlns="http://www.w3.org/2000/svg"
