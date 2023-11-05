@@ -20,14 +20,14 @@ module.exports = withMT({
         Inter: "'Inter', sans-serif",
       },
       screens: {
-        sm: "640px",
-        ls: "880px",
-        lx: "1220px",
-        md: "1224px",
-        lg: "1280px",
-        xl: "1440px",
-        xxl: "1536px",
-        "2xl": "1920px",
+        sm: "20px",
+        ls: "640px",
+        lx: "880px",
+        md: "1220px",
+        lg: "1224px",
+        xl: "1280px",
+        xxl: "1440px",
+        "2xl": "1536px",
       },
       colors: {
         primary: "#650010", // maroon
