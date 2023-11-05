@@ -13,6 +13,7 @@
   
 }
 .footer2{
+    padding-right: 25px;
  padding-top: 20px;
  text-align: right;
 }
@@ -110,7 +111,7 @@
     display: flex;
     height: 160px;
     padding-top: 19px ;
-    padding-right: 30px;
+    padding-right: 90px;
     padding-bottom: 18px;
     padding-left:108px;
     gap: 490px;
@@ -147,17 +148,19 @@ font-weight: 400;
 line-height: 18px; /* 112.5% */
 padding-left: 13px;
 }
-
 .icons{
-    width: 100%;
+    width: 500px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
     gap: 27.625px;
 }
 .socialicon{
-    width: 25.5px;
-    height: 25.5px;
+    border-radius: 5px;
     flex-shrink: 0;
     color:#FFF
+}
+.socialicon:hover{
+    transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 2px black;
 }
