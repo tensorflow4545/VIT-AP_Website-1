@@ -7,7 +7,7 @@ import {
   import { FiArrowUpRight } from "react-icons/fi";
   import { BsArrowUpRight } from "react-icons/bs";
   import Image from "next/image";
-  import "./footer.css";
+  import "../style/footer.css";
   import { FaXTwitter } from "react-icons/fa6";
   
   export default function Footer() {
@@ -144,7 +144,7 @@ import {
                   <a class="creditlink">Non- Discrimination</a>
                   <a class="creditlink">Accessibility</a>
                 </div>
-                <div class="credittext pl-8">
+                <div class="credittext pr-[50px] pl-8">
                   <p class="pt-5">
                     Crafted with Passion at VIT-AP University by Website Team︎
                   </p>
@@ -152,7 +152,7 @@ import {
               </div>
               
               <div class="basis">
-                <div class="icons pt-5 pl-[100px] flex w-full">
+                <div class="icons pt-5 flex w-full">
                   <a
                     href="https://www.instagram.com/vitap.university/?hl=en"
                     class="socialicon"
