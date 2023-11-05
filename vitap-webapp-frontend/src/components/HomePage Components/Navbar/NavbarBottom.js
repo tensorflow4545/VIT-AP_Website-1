@@ -82,7 +82,7 @@ const NavbarBottom = () => {
         {/* Increased z-index to 30 */}
         <div
           className={`bg-gray-900 ${navbar ? "navbar active" : "navbar"
-            }  w-full h-[74px] shadow-xl absolute md:flex font-Montserrant font-medium text-white text-[20px]`}
+            }  w-full h-[74px] shadow-xl absolute md:flex font-Montserrat font-medium text-white text-[20px]`}
         >
           <ul className="flex flex-row  items-center pl-[33px] w-full justify-between pr-[76px]">
             <li className="mr-[100px]">
@@ -99,7 +99,7 @@ const NavbarBottom = () => {
             >
               <a className="custom-underline">About</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
-                <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]">
+                <div className="bg-white w-full text-black font-Montserrat h-full relative top-[20px]">
                   <div className="w-full h-full">
                     <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[430px] top-[45px]"></span>
 
@@ -156,7 +156,7 @@ const NavbarBottom = () => {
             >
               <a className="custom-underline ">Admissions</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
-                <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px] flex-row flex">
+                <div className="bg-white w-full text-black font-Montserrat h-full relative top-[20px] flex-row flex">
 
                   <ol className="flex-row font-[400] text-[20px]  pt-[82px] pl-[110px] space-y-[29px]">
                     <li
@@ -270,7 +270,7 @@ const NavbarBottom = () => {
             >
               <a className="custom-underline ">Academics</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
-                <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]">
+                <div className="bg-white w-full text-black font-Montserrat h-full relative top-[20px]">
                   <div className="w-full h-full flex flex-row ">
                     <ol className="flex-row font-[400] text-[20px]  pt-[61px] pl-[83px] space-y-[29px]">
                       <li className="font-bold underline decoration-black underline-offset-[2px]">
@@ -315,7 +315,7 @@ const NavbarBottom = () => {
             >
               <a className="custom-underline ">Career Development Center</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
-                <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]">
+                <div className="bg-white w-full text-black font-Montserrat h-full relative top-[20px]">
                   <div className="w-full h-full">
                     <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[430px] top-[45px]"></span>
 
@@ -383,7 +383,7 @@ const NavbarBottom = () => {
             >
               <a className="custom-underline ">Campus Life</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
-                <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]">
+                <div className="bg-white w-full text-black font-Montserrat h-full relative top-[20px]">
                   <div className="w-full h-full flex flex-row ">
                     <ol className="flex-row font-[400] text-[20px]  pt-[32px] pl-[110px] space-y-[29px]">
                       <li className="font-bold underline decoration-black underline-offset-[2px]">
@@ -439,7 +439,7 @@ const NavbarBottom = () => {
             >
               <a className="custom-underline">Research</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
-                <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px] flex-row flex">
+                <div className="bg-white w-full text-black font-Montserrat h-full relative top-[20px] flex-row flex">
 
                   <ol className="flex-row font-[400] text-[20px]  pt-[82px] pl-[110px] space-y-[29px]">
                     <li className="custom-list-item w-[fit-content]" onMouseEnter={()=>{setResearch("ar")}}>Academic Reasearch</li>

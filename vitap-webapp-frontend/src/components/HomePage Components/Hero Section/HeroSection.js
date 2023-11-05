@@ -60,8 +60,8 @@ const HeroSection = () => {
         />
       </Carousel>
 
-      <div className="z-0 absolute ls:top-[240px] md:top-[352px] ls:left-[108px] sm:left-[150px] text-white font-Emilo font-semibold ls:w-[500px] md:w-[800px] sm:top-[200px]  ls:block sm:flex-col ls:text-left sm:text-center">
-        <h1 className="md:leading-[100px] sm:leading-10 ls:leading-[60px] sm:text-[35px] ls:text-[50px] md:text-[78px] ">
+      <div className="z-0 absolute ls:top-[240px] md:top-[352px] ls:left-[108px] sm:left-[150px] text-white  font-semibold ls:w-[500px] md:w-[800px] sm:top-[200px]  ls:block sm:flex-col ls:text-left sm:text-center">
+        <h1 className="md:leading-[100px] font-Emilio sm:leading-10 ls:leading-[60px] sm:text-[35px] ls:text-[50px] md:text-[78px] ">
           Welcome to <br /> VIT-AP University
         </h1>
         <h1 className="md:text-[20px] sm:text-[10px] ls:text-[15px] font-Montserrant">
