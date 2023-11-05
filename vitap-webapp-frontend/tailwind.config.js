@@ -14,28 +14,37 @@ module.exports = withMT({
       //     'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       // },
       fontFamily: {
-        // libre :  "'Libre Baskerville', serif",
-        Emilo: "'Emilio Test', serif",
-        Montserrant: "'Montserrat', sans-serif",
+        // libre: "'Libre Baskerville', serif",
+        Emilio: "'Emilio Test', serif",
+        Montserrat: "'Montserrat', sans-serif",
         Inter: "'Inter', sans-serif",
       },
       screens: {
-        sm: "20px",
-        ls: "640px",
-        lx: "880px",
-        md: "1220px",
-        lg: "1224px",
-        xl: "1280px",
-        xxl: "1440px",
-        "2xl": "1536px",
+        sm: "640px",
+        ls: "880px",
+        lx: "1220px",
+        md: "1224px",
+        lg: "1280px",
+        xl: "1440px",
+        xxl: "1536px",
+        "2xl": "1920px",
       },
       colors: {
-        primary: "#650010", //maroon
+        primary: "#650010", // maroon
         backgroundRed: "rgba(92, 14, 20, 0.20)",
         secondary: "#1B1C1E",
       },
     },
   },
 
-  plugins: [require("tailwind-scrollbar")],
+  plugins: [
+    require("tailwind-scrollbar"),
+    function ({ addBase, addUtilities }) {
+      addUtilities({
+        ".section:hover > h3": {
+          color: "#5C0E14",
+        },
+      });
+    },
+  ],
 });
