@@ -7,7 +7,6 @@ import image3 from "../../../assets/images/Homepage Images/navbar-images/3.png";
 import image4 from "../../../assets/images/Homepage Images/navbar-images/4.png";
 import image5 from "../../../assets/images/Homepage Images/navbar-images/5.png";
 import image6 from "../../../assets/images/Homepage Images/navbar-images/6.png";
-
 import "./navbar.css";
 import { useState, useEffect } from "react";
 
@@ -20,7 +19,7 @@ const NavbarBottom = () => {
   useEffect(() => {
     const changeBackground = () => {
       if (typeof window !== "undefined") {
-        if (window.scrollY >= 180) {
+        if (window.scrollY >= 260) {
           setNavbar(true);
           setLogo(true);
         } else {
@@ -82,12 +81,12 @@ const NavbarBottom = () => {
         {/* Increased z-index to 30 */}
         <div
           className={`bg-gray-900 ${navbar ? "navbar active" : "navbar"
-            }  w-full h-[74px] shadow-xl absolute md:flex font-Montserrat font-medium text-white text-[20px]`}
+            }  w-full h-[74px] shadow-xl absolute md:flex font-Montserrant font-medium text-white text-[20px]`}
         >
           <ul className="flex flex-row  items-center pl-[33px] w-full justify-between pr-[76px]">
             <li className="mr-[100px]">
-              <a>
-                <Image alt="A descriptive text here" src={logo} className={logo ? "logo active" : "logo"} />
+              <a href="#">
+                <Image alt="A descriptive text here" src={logo} className={logo ? "logo active" : "logo"} href="#"/>
               </a>
             </li>
 
@@ -99,16 +98,16 @@ const NavbarBottom = () => {
             >
               <a className="custom-underline">About</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
-                <div className="bg-white w-full text-black font-Montserrat h-full relative top-[20px]">
+                <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px] ">
                   <div className="w-full h-full">
                     <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[430px] top-[45px]"></span>
 
-                    <ol className="flex-row font-[400] text-[20px] h-full pt-[82px] pl-[110px] space-y-[29px]">
+                    <ol className="flex-row font-[400] text-[20px] h-full pt-[60px] pl-[110px] space-y-[19px]">
                       <li className=" custom-list-item   w-[fit-content]">
                         <h1>Vision & Mission</h1>
                       </li>
 
-                      <li className="absolute left-[600px]  top-[20px]  ">
+                      <li className="absolute left-[600px]  top-[40px]  ">
                         <Image alt="A descriptive text here" src={image0} />
                       </li>
 
@@ -119,24 +118,24 @@ const NavbarBottom = () => {
                       <li className="peer/Governance custom-list-item w-[fit-content]">
                         Governance
                       </li>
-                      <li className="absolute left-[600px] invisible top-[20px] peer-hover/leadership:visible">
+                      <li className="absolute left-[600px] invisible top-[40px] peer-hover/leadership:visible">
                         <Image alt="A descriptive text here" src={image2} />
                       </li>
 
                       <li className="peer/contactus custom-list-item w-[fit-content]">
                         FAQ
                       </li>
-                      <li className="absolute left-[600px] invisible top-[20px] peer-hover/Governance:visible">
+                      <li className="absolute left-[600px] invisible top-[40px] peer-hover/Governance:visible">
                         <Image alt="A descriptive text here" src={image3} />
                       </li>
 
                       <li className="peer/faq custom-list-item w-[fit-content]">
                         Contact us
                       </li>
-                      <li className="absolute left-[600px] invisible top-[20px] peer-hover/contactus:visible">
+                      <li className="absolute left-[600px] invisible top-[40px] peer-hover/contactus:visible">
                         <Image alt="A descriptive text here" src={image4} />
                       </li>
-                      <li className="absolute left-[600px] invisible top-[20px] peer-hover/faq:visible">
+                      <li className="absolute left-[600px] invisible top-[40px] peer-hover/faq:visible">
                         <Image alt="A descriptive text here" src={image5} />
                       </li>
                     </ol>
@@ -156,9 +155,9 @@ const NavbarBottom = () => {
             >
               <a className="custom-underline ">Admissions</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
-                <div className="bg-white w-full text-black font-Montserrat h-full relative top-[20px] flex-row flex">
+                <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px] flex-row flex">
 
-                  <ol className="flex-row font-[400] text-[20px]  pt-[82px] pl-[110px] space-y-[29px]">
+                  <ol className="flex-row font-[400] text-[20px]  pt-[60px] pl-[110px] space-y-[19px]">
                     <li
                       className={` hover:cursor-pointer  w-[fit-content] ${underline}`}
                       
@@ -205,7 +204,7 @@ const NavbarBottom = () => {
                   <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[400px] top-[45px]"></span>
                   
                   <ol
-                    className={` ${""}   flex-row font-[400] text-[20px]  pt-[82px] pl-[110px] space-y-[29px] absolute left-[350px] `}
+                    className={` ${""}   flex-row font-[400] text-[20px]  pt-[60px] pl-[110px] space-y-[19px] absolute left-[350px] `}
                   >
                     {Programmes.map((Program, index) => {
                       return <li key={index} className={`custom-list-item w-[fit-content] ${Programme === Program ? "custom-underline decoration-[#650010] underline-offset-8 decoration-[6px]" : ""
@@ -216,39 +215,39 @@ const NavbarBottom = () => {
                   <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[750px] top-[45px]"></span>):null}
                   {Programme === "Undergraduate" ? (
                     <div className="flex">
-                      <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[550px] space-y-[29px]">
+                      <ol className="flex-row font-[400] text-[20px] pt-[60px] pl-[550px] space-y-[19px]">
                         <lh className="font-bold underline decoration-[#000000] underline-offset-8 decoration-[6px] text-[20px]">Engineering</lh>
                         <li className="custom-list-item w-[fit-content]">B.Tech CSE</li>
                         <li className="custom-list-item w-[fit-content]">B.Tech CSBS</li>
                         <li className="custom-list-item w-[fit-content]">B.Tech ECE</li>
                         <li className="custom-list-item w-[fit-content]">B.Tech Mechanical</li>
                       </ol>
-                      <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[110px] space-y-[29px]">
+                      <ol className="flex-row font-[400] text-[20px] pt-[60px] pl-[110px] space-y-[19px]">
                         <lh className="font-bold underline decoration-[#000000] underline-offset-8 decoration-[6px] text-[20px]">Management</lh>
                         <li className="custom-list-item w-[fit-content]">BBA</li>
                         <li className="custom-list-item w-[fit-content]">B.Com</li>
                       </ol>
                     </div>
                   ) : Programme === "Dual Degree" ? (
-                    <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[550px] space-y-[29px]">
+                    <ol className="flex-row font-[400] text-[20px] pt-[60px] pl-[550px] space-y-[19px]">
                       <li className="custom-list-item w-[fit-content]">BA - MA</li>
                       <li className="custom-list-item w-[fit-content]">B.Sc - M.Sc</li>
                     </ol>) : Programme === "Integrated" ? (
-                      <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[550px] space-y-[29px]">
+                      <ol className="flex-row font-[400] text-[20px] pt-[60px] pl-[550px] space-y-[19px]">
                         <li className="custom-list-item w-[fit-content]">M. Tech CSE in Collaboration with Virtusa</li>
                         <li className="custom-list-item w-[fit-content]">M. Tech Software Engineering</li>
                         <li className="custom-list-item w-[fit-content]">BA. LL.B (Hons.)</li>
                         <li className="custom-list-item w-[fit-content]">BBA. LL.B (Hons.)</li>
                       </ol>
                     ) : Programme === "Postgraduate" ? (
-                      <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[550px] space-y-[29px]">
+                      <ol className="flex-row font-[400] text-[20px] pt-[60px] pl-[550px] space-y-[19px]">
                         <li className="custom-list-item w-[fit-content]">M. Tech VLSI</li>
                         <li className="custom-list-item w-[fit-content]">M.Sc. Data Science</li>
                         <li className="custom-list-item w-[fit-content]">M. Sc. Physics</li>
                         <li className="custom-list-item w-[fit-content]">M. Sc. Chemistry</li>
                       </ol>
                     ) : Programme === "Ph. D" ? (
-                      <ol className="flex-row font-[400] text-[20px] pt-[82px] pl-[550px] space-y-[29px]">
+                      <ol className="flex-row font-[400] text-[20px] pt-[60px] pl-[550px] space-y-[19px]">
                         <li className="custom-list-item w-[fit-content]">School of Computer Science and Engineering</li>
                         <li className="custom-list-item w-[fit-content]">School of Electronics Engineering</li>
                         <li className="custom-list-item w-[fit-content]">School of Mechanical Engineering</li>
@@ -270,9 +269,9 @@ const NavbarBottom = () => {
             >
               <a className="custom-underline ">Academics</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
-                <div className="bg-white w-full text-black font-Montserrat h-full relative top-[20px]">
+                <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]">
                   <div className="w-full h-full flex flex-row ">
-                    <ol className="flex-row font-[400] text-[20px]  pt-[61px] pl-[83px] space-y-[29px]">
+                    <ol className="flex-row font-[400] text-[20px]  pt-[61px] pl-[83px] space-y-[19px]">
                       <li className="font-bold underline decoration-black underline-offset-[2px]">
                         Schools
                       </li>
@@ -284,7 +283,7 @@ const NavbarBottom = () => {
                       <li className="custom-list-item w-[fit-content]">School of Law (VSL)</li>
                       <li className="custom-list-item w-[fit-content]">School of Business (VSB)</li>
                     </ol>
-                    <span className="w-[6px] h-[500px] bg-primary opacity-20 rounded-lg absolute left-[700px] top-[25px]"></span>
+                    <span className="w-[6px] h-[500px] bg-primary opacity-20 rounded-lg absolute left-[700px] top-[55px]"></span>
                     <ol className="flex-row font-[400] text-[20px]  pt-[61px] pl-[200px] space-y-[19px]">
                       <li className="custom-list-item w-[fit-content]">Academic Regulations</li>
                       <li className="custom-list-item w-[fit-content]">Academic Council</li>
@@ -315,11 +314,11 @@ const NavbarBottom = () => {
             >
               <a className="custom-underline ">Career Development Center</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
-                <div className="bg-white w-full text-black font-Montserrat h-full relative top-[20px]">
+                <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]">
                   <div className="w-full h-full">
-                    <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[430px] top-[45px]"></span>
+                    <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[430px] top-[40px]"></span>
 
-                    <ol className="flex-row font-[400] text-[20px]  pt-[82px] pl-[110px] space-y-[29px]">
+                    <ol className="flex-row font-[400] text-[20px]  pt-[60px] pl-[110px] space-y-[19px]">
                       <li className=" custom-list-item   w-[100px]">
                         Overview
                       </li>
@@ -383,9 +382,9 @@ const NavbarBottom = () => {
             >
               <a className="custom-underline ">Campus Life</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
-                <div className="bg-white w-full text-black font-Montserrat h-full relative top-[20px]">
+                <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]">
                   <div className="w-full h-full flex flex-row ">
-                    <ol className="flex-row font-[400] text-[20px]  pt-[32px] pl-[110px] space-y-[29px]">
+                    <ol className="flex-row font-[400] text-[20px]  pt-[40px] pl-[110px] space-y-[15px]">
                       <li className="font-bold underline decoration-black underline-offset-[2px]">
                         Life @ VIT-AP
                       </li>
@@ -397,7 +396,7 @@ const NavbarBottom = () => {
                       <li className="custom-list-item w-[fit-content]">360 Campus Tour</li>
                     </ol>
                     <span className="w-[6px] h-[500px] bg-primary opacity-20 rounded-lg absolute left-[400px] top-[25px]"></span>
-                    <ol className="flex-row font-[400] text-[20px]  pt-[32px] pl-[200px] space-y-[15px]">
+                    <ol className="flex-row font-[400] text-[20px]  pt-[40px] pl-[200px] space-y-[15px]">
                       <li className="font-bold underline decoration-black underline-offset-[2px]">
                         Facilities
                       </li>
@@ -412,7 +411,7 @@ const NavbarBottom = () => {
                       <li className="custom-list-item w-[fit-content]">Facilities to employees</li>
                     </ol>
                     <span className="w-[6px] h-[500px] bg-primary opacity-20 rounded-lg absolute left-[800px] top-[25px]"></span>
-                    <ol className="flex-row font-[400] text-[20px]  pt-[32px] pl-[200px] space-y-[15px]">
+                    <ol className="flex-row font-[400] text-[20px]  pt-[40px] pl-[200px] space-y-[15px]">
                       <li className="font-bold underline decoration-black underline-offset-[2px]">
                         Committees
                       </li>
@@ -438,10 +437,10 @@ const NavbarBottom = () => {
               }}
             >
               <a className="custom-underline">Research</a>
-              <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
-                <div className="bg-white w-full text-black font-Montserrat h-full relative top-[20px] flex-row flex">
+              <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[40px] box-content  right-0 z-30">
+                <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px] flex-row flex">
 
-                  <ol className="flex-row font-[400] text-[20px]  pt-[82px] pl-[110px] space-y-[29px]">
+                  <ol className="flex-row font-[400] text-[20px]  pt-[60px] pl-[110px] space-y-[19px]">
                     <li className="custom-list-item w-[fit-content]" onMouseEnter={()=>{setResearch("ar")}}>Academic Reasearch</li>
                     
                     <li className="custom-list-item w-[fit-content]" onMouseEnter={()=>{setResearch("ure")}}>URE Project</li>
@@ -451,18 +450,18 @@ const NavbarBottom = () => {
                     <li className={`custom-list-item w-[fit-content] ${research === "iiec" ? "custom-underline decoration-[#650010] underline-offset-8 decoration-[6px]" : ""
                       }`} onMouseEnter={() => { setResearch("iiec") }}>IIEC</li>
                     <li className="custom-list-item w-[fit-content]" onMouseEnter={()=>{setResearch("vitbif")}}>VITBIF</li>
-                    {research === "ar" ? (<li className="absolute left-[600px] top-[20px] visible">
+                    {research === "ar" ? (<li className="absolute left-[600px] top-[60px] visible">
                     <Image alt="A descriptive text here" src={image0} />
-                    </li>): research === "ure" ? (<li className="absolute left-[600px] top-[20px] visible">
+                    </li>): research === "ure" ? (<li className="absolute left-[600px] top-[60px] visible">
                     <Image alt="A descriptive text here" src={image1} />
-                    </li>): research === "vitbif" ? (<li className="absolute left-[600px] top-[20px] visible">
+                    </li>): research === "vitbif" ? (<li className="absolute left-[600px] top-[60px] visible">
                     <Image alt="A descriptive text here" src={image2} />
                     </li>):null}
                   </ol>
-                  <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[400px] top-[45px]"></span>
+                  <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[400px] top-[60px]"></span>
                   {research === "iiec" ? (
                     <div className="flex">
-                      <ol className="flex-row font-[400] text-[20px]  pt-[82px] pl-[110px] space-y-[29px] absolute left-[350px]">
+                      <ol className="flex-row font-[400] text-[20px]  pt-[60px] pl-[110px] space-y-[19px] absolute left-[350px]">
                         <li className="custom-list-item w-[fit-content]">V-Launch</li>
                         <li className="custom-list-item w-[fit-content]">RGEMS</li>
                         <li className="custom-list-item w-[fit-content]">SpoRIC</li>
@@ -471,7 +470,7 @@ const NavbarBottom = () => {
                         <li className="custom-list-item w-[fit-content]">E- magazine</li>
                       </ol> </div>) : research === "coe" ? (
                         <div className="flex">
-                          <ol className="flex-row font-[400] text-[20px]  pt-[82px] pl-[110px] space-y-[29px] absolute left-[350px]">
+                          <ol className="flex-row font-[400] text-[20px]  pt-[60px] pl-[110px] space-y-[19px] absolute left-[350px]">
                             <li className="custom-list-item w-[fit-content]">AI & Robotics</li>
                             <li className="custom-list-item w-[fit-content]">Cyber-Security</li>
                             <li className="custom-list-item w-[fit-content]">Internet of Things</li>
