@@ -7,6 +7,7 @@ import image3 from "../../../assets/images/Homepage Images/navbar-images/3.png";
 import image4 from "../../../assets/images/Homepage Images/navbar-images/4.png";
 import image5 from "../../../assets/images/Homepage Images/navbar-images/5.png";
 import image6 from "../../../assets/images/Homepage Images/navbar-images/6.png";
+
 import "./navbar.css";
 import { useState, useEffect } from "react";
 
@@ -19,7 +20,7 @@ const NavbarBottom = () => {
   useEffect(() => {
     const changeBackground = () => {
       if (typeof window !== "undefined") {
-        if (window.scrollY >= 260) {
+        if (window.scrollY >= 180) {
           setNavbar(true);
           setLogo(true);
         } else {

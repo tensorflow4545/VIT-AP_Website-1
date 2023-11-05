@@ -5,6 +5,7 @@ import headerimage2 from "../../../assets/images/Homepage Images/HeaderImage2.pn
 import { BsArrowRight } from "react-icons/bs";
 import config from "@/config";
 import { Carousel } from "@material-tailwind/react";
+import Video from "./Video";
 
 // import { Carousel } from "@material-tailwind/react";
 
@@ -32,12 +33,21 @@ const HeroSection = () => {
   return (
     <>
       <Carousel className=" h-screen">
+
+        <div className="w-full h-full object-cover relative ">
+          <div className="absolute w-full h-full bg-black opacity-70 bg-gradient-to-b from-blue-gray-900 to-blue-gray-800"></div>
+        <video autoPlay loop className="h-full w-full object-cover">
+          <source src="/intro.mp4" />
+        </video>
+        </div>
+
         <img
           src="../../../assets/images/Homepage Images/HeaderImage2.png"
           alt="image 1"
           className="h-full w-full object-cover"
         />
-      
+
+
         <img
           src="../../../assets/images/Homepage Images/HeaderImage2.png"
           alt="image 2"
@@ -49,7 +59,6 @@ const HeroSection = () => {
           className="h-full w-full object-cover"
         />
       </Carousel>
-
 
       <div className="z-0 absolute ls:top-[240px] md:top-[352px] ls:left-[108px] sm:left-[150px] text-white font-Emilo font-semibold ls:w-[500px] md:w-[800px] sm:top-[200px]  ls:block sm:flex-col ls:text-left sm:text-center">
         <h1 className="md:leading-[100px] sm:leading-10 ls:leading-[60px] sm:text-[35px] ls:text-[50px] md:text-[78px] ">
