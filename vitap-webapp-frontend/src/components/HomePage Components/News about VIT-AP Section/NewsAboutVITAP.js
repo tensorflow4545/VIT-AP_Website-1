@@ -11,7 +11,7 @@ import arrow from "@/assets/images/newsPhotos/Vector.png";
 
 const News = () => {
   return (
-    <>
+<>
       <div className="bg-white h-screen">
       <div className="flex items-center justify-between">
   <h2 className="text-[#51060D] font-Emilo text-[60px] mt-[50px] ml-[100px] mb-[10px] text-left">
@@ -29,11 +29,10 @@ const News = () => {
           <h1 className="text-[#FFFFFF] text-[25px]">See all</h1>
         </div> */}
 
-          <div className="flex ml-[240px] mt-[20px]">
+        <div className="flex ml-[240px] mt-[20px]">
           <div className="w-[320px] h-[450px] bg-white ml-[24px] border-b shadow-2xl border-gray-800 section">
             <Image
-              alt="A descriptive text here"
-              src={news2}
+              src={news1}
               width={392}
               height={311}
               className="top-[223px] left-[108px]"
@@ -54,6 +53,8 @@ const News = () => {
               </p>
             </button>
           </div>
+          <div className="w-[320px] h-[450px] bg-white ml-[35px] border-b shadow-2xl border-gray-800 section">
+            <Image
           <div className="w-[320px] h-[450px] bg-white ml-[35px] border-b shadow-2xl border-gray-800 section">           
             <Image
               alt="A descriptive text here"
@@ -78,7 +79,7 @@ const News = () => {
               </p>
             </button>
           </div>
-          <div className="w-[320px]  h-[450px] hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] cursor-pointer  bg-white ml-[35px] border-b border-gray-300  hover:border-gray-500">
+          <div className="w-[320px] h-[450px] bg-white ml-[35px] border-b shadow-2xl border-gray-800 section">
             <Image
               alt="A descriptive text here"
               src={news3}
