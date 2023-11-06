@@ -20,18 +20,18 @@ import ConvocationSection from "@/components/AnnouncementsPage Components/Convoc
 import PageSection from "@/components/AnnouncementsPage Components/Announcements Section/PageSection";
 import AnnouncementsSection from "@/components/AnnouncementsPage Components/Announcements Section/AnnouncementsSection";
 
-const fetchdata = async () => {
-  const reqOptions = {
-    headers: {
-      Authorization: `Bearer ${process.env.API_TOKEN}`
-    }
-  };
+// const fetchdata = async () => {
+//   const reqOptions = {
+//     headers: {
+//       Authorization: `Bearer ${process.env.API_TOKEN}`
+//     }
+//   };
 
-    const response = await fetch(`${config.api}/api/posts?populate=*`, reqOptions);
-    const data = await response.json();
-    return data;
+//     const response = await fetch(`${config.api}/api/posts?populate=*`, reqOptions);
+//     const data = await response.json();
+//     return data;
 
-};
+// };
 
 const Home = async () => {
 // const data = await fetchdata();

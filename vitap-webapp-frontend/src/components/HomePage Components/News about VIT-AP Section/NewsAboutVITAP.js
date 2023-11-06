@@ -52,6 +52,7 @@ const News = () => {
               </p>
             </button>
           </div>
+
           <div className="w-[320px] h-[450px] bg-white ml-[35px] border-b shadow-2xl border-gray-800 section">
             <Image
               src={news2}
@@ -63,7 +64,7 @@ const News = () => {
               3rd Annual Convocation - 2023
             </h3>
             <p className="ml-[24px] mt-[21px]">Date: 27.09.2023</p>
-            <button className="flex ml-[24px] mt-[70px] rounded-full hover:bg-[#5C0E14] group">
+            <button className="flex ml-[24px] mt-[50px] rounded-full hover:bg-[#5C0E14] group">
               <div className="w-[40px] h-[40px] bg-white rounded-full group-hover:w-[190px] group-hover:h-[40px] group-hover:bg-[#5C0E14]"></div>
               <Image
                 src={arrow}
@@ -85,7 +86,7 @@ const News = () => {
               VIT-AP Men's Basketball team wins gold medal
             </h3>
             <p className="ml-[24px] mt-[21px]">Date: 09.09.2023</p>
-            <button className="flex ml-[24px] mt-[25px] rounded-full hover:bg-[#5C0E14] group">
+            <button className="flex ml-[24px] mt-[30px] rounded-full hover:bg-[#5C0E14] group">
               <div className="w-[40px] h-[40px] bg-white rounded-full group-hover:w-[190px] group-hover:h-[40px] group-hover:bg-[#5C0E14]"></div>
               <Image
                 src={arrow}

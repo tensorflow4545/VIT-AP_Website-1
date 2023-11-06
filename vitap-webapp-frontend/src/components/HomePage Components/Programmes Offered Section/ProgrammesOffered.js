@@ -29,6 +29,7 @@ const ProgrammesOffered = () => {
                 className={`font-Montserrant lx:text-[18px] text-[14px] py-[19px] md:px-[23px] ${
                   active === "undergraduate" ? "border border-zinc-200" : ""
                 } cursor-pointer w-full first-letter`}
+
                 onClick={() => setActive("undergraduate")}
               >
                 Undergraduate
@@ -63,15 +64,16 @@ const ProgrammesOffered = () => {
             <div className="min-h-[1500px]w-full absolute md:pl-[75px] pl-[35px] max-lx:pl-[40px] pt-[55px] max-lx:pt-[30px] ">
               <h3 className="text-[16px] max-lx:text-[14px] font-semibold text-gray-500 uppercase">
                 Engineering
-              </h3>
+              </h3> */}
 
               {programmesOffered.map((program) =>
                 program.field === active ? (
                   <h1
                     key={program.id}
-                    className="py-[19px] max-w-[432px] font-Emilo max-lx:py-[16px] text-[#51060D] text-[20px] max-lx:text-[15px] font-[500] capitalize border border-l-0 border-t-0 border-r-0 border-b-gray-500"
+                    className="py-[19px] max-w-[432px] font-Emilo max-lx:py-[16px] text-[#51060D] text-[20px] max-lx:text-[15px] font-[500] capitalize border border-l-0 border-t-0 border-r-0 border-b-gray-500 hover:font-bold"
                   >
-                    {program.title}
+                    <a href="#">
+                    {program.title}</a>
                   </h1>
                 ) : (
                   ""
@@ -98,33 +100,29 @@ const ProgrammesOffered = () => {
         <div>
           <ul className="flex gap-5 my-[40px] justify-center items-center flex-wrap">
             <li
-              className={`py-[10px] px-[10px] ${
-                active === "undergraduate" ? "border border-zinc-200" : ""
-              }`}
+              className={`py-[10px] px-[10px] ${active === "undergraduate" ? "border border-zinc-200" : ""
+                }`}
               onClick={() => setActive("undergraduate")}
             >
               Undergraduate
             </li>
             <li
-              className={`py-[10px] px-[10px] ${
-                active === "integrated" ? "border border-zinc-200" : ""
-              }`}
+              className={`py-[10px] px-[10px] ${active === "integrated" ? "border border-zinc-200" : ""
+                }`}
               onClick={() => setActive("integrated")}
             >
               Integrated
             </li>
             <li
-              className={`py-[10px] px-[10px] ${
-                active === "postgraduate" ? "border border-zinc-200" : ""
-              }`}
+              className={`py-[10px] px-[10px] ${active === "postgraduate" ? "border border-zinc-200" : ""
+                }`}
               onClick={() => setActive("postgraduate")}
             >
               Post Graduate
             </li>
             <li
-              className={`py-[10px] px-[10px] ${
-                active === "doctorial" ? "border border-zinc-200" : ""
-              }`}
+              className={`py-[10px] px-[10px] ${active === "doctorial" ? "border border-zinc-200" : ""
+                }`}
               onClick={() => setActive("doctorial")}
             >
               Doctorial
@@ -135,16 +133,14 @@ const ProgrammesOffered = () => {
         <div className="flex flex-col flex-[50%] bg-[#E6CFCF] min-h-[750px] overflow-auto my-auto z-10 relative max-w-[680px] scrollbar-thin scrollbar-thumb-red-900 scrollbar-track-gray-400">
           <div className="max-h-[1500px] h-full w-full absolute pl-[35px] max-lx:pl-[40px] pt-[55px] max-lx:pt-[30px] ">
             <h3 className="text-[16px] max-lx:text-[14px] font-semibold text-gray-500 uppercase">
-              Engineering
-            </h3>
 
-            {programmesOffered.map((program) =>
+              Engineering
+            </h3> */}
+
+            {programmesOffered.map((program,index) =>
               program.field === active ? (
-                <h1
-                  key={program.id}
-                  className="py-[19px] max-w-[432px] max-lx:py-[16px] text-[#51060D] text-[14px] max-lx:text-[15px] font-semibold capitalize border border-l-0 border-t-0 border-r-0 border-b-gray-500"
-                >
-                  {program.title}
+                <h1 key={index} className="py-4 max-w-[432px] text-#51060D text-14 max-lx:text-15 font-semibold capitalize border border-l-0 border-t-0 border-r-0 border-b-gray-500 hover:text-bold">
+                  <a href="#">{program.title}</a>
                 </h1>
               ) : (
                 ""

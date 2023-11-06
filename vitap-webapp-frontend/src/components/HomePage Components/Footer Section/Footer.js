@@ -8,7 +8,6 @@ import {
   import { BsArrowUpRight } from "react-icons/bs";
   import Image from "next/image";
   import "./footer.css";
-
   import { FaXTwitter } from "react-icons/fa6";
   
   export default function Footer() {
@@ -116,7 +115,7 @@ import {
               </div>
             </div>
           </div>
-  
+
           <div className="credit lg:w-full md:w-max ">
             <div className="flex w-full">
               <div className="basis mt-2 mr-3 pr-2">
