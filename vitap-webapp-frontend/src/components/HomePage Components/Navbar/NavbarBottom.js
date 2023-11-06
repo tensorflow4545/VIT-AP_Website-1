@@ -81,7 +81,7 @@ const NavbarBottom = () => {
         {/* Increased z-index to 30 */}
         <div
           className={`bg-gray-900 ${navbar ? "navbar active" : "navbar"
-            }  w-full h-[74px] shadow-xl absolute md:flex font-Montserrant font-medium text-white text-[20px]`}
+            }  w-full h-[74px] shadow-xl absolute md:flex font-Montserrat font-medium text-white text-[20px]`}
         >
           <ul className="flex flex-row  items-center pl-[33px] w-full justify-between pr-[76px]">
             <li className="mr-[100px]">
@@ -98,7 +98,7 @@ const NavbarBottom = () => {
             >
               <a className="custom-underline">About</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
-                <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px] ">
+                <div className="bg-white w-full text-black font-Montserrat h-full relative top-[20px] ">
                   <div className="w-full h-full">
                     <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[430px] top-[45px]"></span>
 
