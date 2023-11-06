@@ -55,19 +55,19 @@ const ConvocationSection = () => {
         </div>
       </div>
       <div className="w-[100%] min-h-[400px] h-[100%] py-[40px] px-[50px] flex justify-center items-center gap-5 flex-wrap max-md:px-[20px] max-lx:px-[0px]">
-        <div className='overflow-hidden'>
+        <div className=''>
           <Card url={"./convocards/card1.jpeg"} title={"Schedule"} />
         </div>
-        <div className='overflow-hidden'>
+        <div className=''>
           <Card url={"./convocards/card2.jpeg"} title={"Videos"} />
         </div>
-        <div className='overflow-hidden'>
+        <div className=''>
           <Card url={"./convocards/card3.jpeg"} title={"Ranklist"} />
         </div>
-        <div className='overflow-hidden'>
+        <div className=''>
           <Card url={"./convocards/card4.jpeg"} title={"Instructions"} />
         </div>
-        <div className='overflow-hidden'>
+        <div className=''>
           <Card url={"./convocards/card5.jpeg"} title={"Photos"} />
         </div>
       </div>

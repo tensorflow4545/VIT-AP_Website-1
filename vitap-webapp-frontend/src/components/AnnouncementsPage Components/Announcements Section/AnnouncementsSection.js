@@ -4,6 +4,8 @@ import React, { useEffect, useState } from 'react'
 import Card from './Card';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { announcements, announcements2 } from '@/constants/index'
+import Link from 'next/link';
+import PageSection from './PageSection';
 
 const AnnouncementsSection = () => {
 
@@ -41,9 +43,9 @@ const AnnouncementsSection = () => {
         </h1>
       </div>
 
-      <div className="my-[50px] max-w-[1560px] w-full flex flex-wrap gap-5 justify-center items-center">
+      <div className="my-[50px] max-w-[1560px] w-full flex flex-wrap gap-5 justify-center items-center ">
         {data?.map((announcement) => (
-          <Card key={announcement.id} content={announcement.content} />
+            <Card key={announcement.id} content={announcement.content} />
         ))}
       </div>
 
