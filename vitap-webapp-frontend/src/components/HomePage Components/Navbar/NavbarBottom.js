@@ -170,7 +170,7 @@ const NavbarBottom = () => {
                           "Ph. D",
                         ]);
                         setunderline(
-                          "custom-list-item decoration-[#650010] underline-offset-8 decoration-[6px] "
+                          "custom-underline decoration-[#650010] underline-offset-8 decoration-[6px] "
                         );
                       }}
                     >
