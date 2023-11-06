@@ -2,18 +2,12 @@ module.exports = {
   experimental: {
     staticTracing: true,
   },
-};
-const nextConfig = {
+  images: {
+    unoptimized: true,
+  },
   output: 'export',
- 
-  // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
+  // Optional configurations can be added here
   // trailingSlash: true,
- 
-  // Optional: Prevent automatic `/me` -> `/me/`, instead preserve `href`
   // skipTrailingSlashRedirect: true,
- 
-  // Optional: Change the output directory `out` -> `dist`
   // distDir: 'dist',
-}
- 
-module.exports = nextConfig
+};
