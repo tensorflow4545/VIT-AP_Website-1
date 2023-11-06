@@ -5,6 +5,10 @@ import config from "@/config";
 import { motion, spring } from "framer-motion";
 import { useState } from "react";
 import "./NavbarUpper.css";
+
+const navlinks = [
+  
+];
 // import axios from 'axios';
 
 // const fetchNavlinks = async () => {
@@ -31,7 +35,7 @@ const NavbarUpper = () => {
 
   return (
     <>
-      <div className="z-auto w-full h-[60px] text-white bg-primary md:flex ls:flex sm:hidden justify-between items-center px-[37px]">
+      <div className="z-auto w-full h-[45px] text-white bg-primary md:flex ls:flex sm:hidden justify-between items-center px-[37px]">
         <div className="flex  h-[20px] md:space-x-[10px] ls:space-x-[20px] text-[14px] items-center ">
           {/* {navlinks.map((item) =>{
               return(
@@ -58,7 +62,7 @@ const NavbarUpper = () => {
               />
             </svg>
 
-            <h1  className="text-[18px]">CAMPUS</h1>
+            <h1  className="text-[18px]">CAMPUSES</h1>
 
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -82,11 +86,10 @@ const NavbarUpper = () => {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ type: spring }}
                 >
-                  <li className="ml-[10px]">AP</li>
-                  <li className="ml-[10px]">Vellore</li>
-                  <li className="ml-[10px]">Chennai</li>
-                  <li className="ml-[10px]">Bhopal</li>
-                  <li className="ml-[10px]">Banglore</li>
+                  <li className="ml-[10px]"><a href="https://vit.ac.in/" target="_blank">VELLORE</a></li>
+                  <li className="ml-[10px]"><a href="https://chennai.vit.ac.in/" target="_blank">CHENNAI</a></li>
+                  <li className="ml-[10px]"><a href="https://vitbhopal.ac.in/" target="_blank">BHOPAL</a></li>
+                  <li className="ml-[10px]"><a href="https://vitbangalore.in/" target="_blank">BANGLORE</a></li>
                 </motion.ol>
               )}
 

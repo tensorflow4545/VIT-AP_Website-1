@@ -13,11 +13,18 @@ const News = () => {
   return (
 <>
       <div className="bg-white h-screen">
-        <div className="flex justify-center items-center">
-          <h2 className="text-[#51060D] font-Emilo text-[60px] w-[550px] mt-[50px] text-center \">
-            News about VIT-AP
-          </h2>
-        </div>
+      <div className="flex items-center justify-between">
+  <h2 className="text-[#51060D] font-Emilo text-[60px] mt-[50px] ml-[100px] mb-[10px] text-left">
+    News about VIT-AP
+  </h2>
+  <div className="flex items-center justify-center mr-[50px] mt-10">
+  <div class="Rectangle91 w-[50px] h-[30px] absolute bg-[#5C0E14] opacity-20 transition-transform hover:right-[90px] hover:w-[125px] "></div>
+    <h1 className="text-[#5C0E14]">View More &nbsp;</h1>
+  <div class="Arrow w-[50px] border-2 border-solid border-[#5C0E14]"></div>
+</div>
+
+</div>
+
         {/* <div className="flex justify-end pt-[80px] ml-[674px]">
           <h1 className="text-[#FFFFFF] text-[25px]">See all</h1>
         </div> */}
@@ -37,6 +44,7 @@ const News = () => {
             <button className="flex ml-[24px] mt-[50px] rounded-full hover:bg-[#5C0E14] group">
               <div className="w-[40px] h-[40px] bg-white rounded-full group-hover:w-[190px] group-hover:h-[40px] group-hover:bg-[#5C0E14]"></div>
               <Image
+                alt="A descriptive text here"
                 src={arrow}
                 className="absolute mt-[13px] ml-[11px] group-hover:opacity-0"
               />
@@ -47,6 +55,9 @@ const News = () => {
           </div>
           <div className="w-[320px] h-[450px] bg-white ml-[35px] border-b shadow-2xl border-gray-800 section">
             <Image
+          <div className="w-[320px] h-[450px] bg-white ml-[35px] border-b shadow-2xl border-gray-800 section">           
+            <Image
+              alt="A descriptive text here"
               src={news2}
               width={392}
               height={311}
@@ -56,9 +67,10 @@ const News = () => {
               3rd Annual Convocation - 2023
             </h3>
             <p className="ml-[24px] mt-[21px]">Date: 27.09.2023</p>
-            <button className="flex ml-[24px] mt-[70px] rounded-full hover:bg-[#5C0E14] group">
+            <button className="flex ml-[24px] mt-[50px] rounded-full hover:bg-[#5C0E14] group">
               <div className="w-[40px] h-[40px] bg-white rounded-full group-hover:w-[190px] group-hover:h-[40px] group-hover:bg-[#5C0E14]"></div>
               <Image
+                alt="A descriptive text here"
                 src={arrow}
                 className="absolute mt-[13px] ml-[11px] group-hover:opacity-0"
               />
@@ -69,6 +81,7 @@ const News = () => {
           </div>
           <div className="w-[320px] h-[450px] bg-white ml-[35px] border-b shadow-2xl border-gray-800 section">
             <Image
+              alt="A descriptive text here"
               src={news3}
               width={392}
               height={311}
@@ -78,9 +91,10 @@ const News = () => {
               VIT-AP Men's Basketball team wins gold medal
             </h3>
             <p className="ml-[24px] mt-[21px]">Date: 09.09.2023</p>
-            <button className="flex ml-[24px] mt-[25px] rounded-full hover:bg-[#5C0E14] group">
+            <button className="flex ml-[24px] mt-[30px] rounded-full hover:bg-[#5C0E14] group">
               <div className="w-[40px] h-[40px] bg-white rounded-full group-hover:w-[190px] group-hover:h-[40px] group-hover:bg-[#5C0E14]"></div>
               <Image
+                alt="A descriptive text here"
                 src={arrow}
                 className="absolute mt-[13px] ml-[11px] group-hover:opacity-0"
               />

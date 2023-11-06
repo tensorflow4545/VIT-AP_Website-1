@@ -2,21 +2,23 @@ import React from "react";
 import Image from "next/image";
 import { SocialIcon } from "react-social-icons";
 import Link from "next/link";
-import insta from "../../assets/images/socialIcons/insta.png";
-import twitter from "../../assets/images/socialIcons/logo-black.png";
-import linkin from "../../assets/images/socialIcons/linkedin.png";
-import fb from "../../assets/images/socialIcons/fb.png";
-import yt from "../../assets/images/socialIcons/yt.png";
-import image1 from "../../assets/images/socialImages/image 1.jpg";
-import image2 from "../../assets/images/socialImages/image 2.jpg";
-import image3 from "../../assets/images/socialImages/image 3.jpg";
-import image4 from "../../assets/images/socialImages/image 4.jpg";
-import image5 from "../../assets/images/socialImages/image 5.jpg";
-import image6 from "../../assets/images/socialImages/image 6.jpg";
-import image7 from "../../assets/images/socialImages/image 7.jpg";
-import image8 from "../../assets/images/socialImages/image 8.jpg";
-import image9 from "../../assets/images/socialImages/image 9.jpg";
-import logo from "../../assets/images/socialImages/vitapLogo.png";
+import insta from "../../../assets/images/socialIcons/insta.png";
+import twitter from "../../../assets/images/socialIcons/logo-black.png";
+import linkin from "../../../assets/images/socialIcons/linkedin.png";
+import fb from "../../../assets/images/socialIcons/fb.png";
+import yt from "../../../assets/images/socialIcons/yt.png";
+import image1 from "../../../assets/images/socialImages/image 1.jpg";
+import image2 from "../../../assets/images/socialImages/image 2.jpg";
+import image3 from "../../../assets/images/socialImages/image 3.jpg";
+import image4 from "../../../assets/images/socialImages/image 4.jpg";
+import image5 from "../../../assets/images/socialImages/image 5.jpg";
+import image6 from "../../../assets/images/socialImages/image 6.jpg";
+import image7 from "../../../assets/images/socialImages/image 7.jpg";
+import image8 from "../../../assets/images/socialImages/image 8.jpg";
+import image9 from "../../../assets/images/socialImages/image 9.jpg";
+import logo from "../../../assets/images/socialImages/vitapLogo.png";
+import { FaXTwitter } from "react-icons/fa6";
+
 
 const Socials = () => {
   return (
@@ -95,6 +97,7 @@ const Socials = () => {
             </div>
             <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px]">
               Watch us on Youtube
+
             </p>
           </div>
         </div>
@@ -147,6 +150,7 @@ const Socials = () => {
                   bgColor="rgba(0,0,0,0)"
                   fgColor="#FFFFFF"
                   className="opacity-0 ml-[40%] items-center justify-center absolute transform mt-[60px] duration-300 group-hover:opacity-100"
+
                 />
                 <p className="text-[#FFFFFF] text-center opacity-0 absolute transform ml-[7px] mr-[7px] text-[14px] transition-opacity duration-300 group-hover:opacity-100">
                   It was a pleasure to have our students, from all over india
@@ -202,12 +206,14 @@ const Socials = () => {
             <div className="card3 relative inline-block group">
               <Image src={image6} width={233} height={233} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900">
+
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
                   url="www.instagram.com"
                   bgColor="rgba(0,0,0,0)"
                   fgColor="#FFFFFF"
                   className="opacity-0 ml-[40%] items-center justify-center absolute transform mt-[20px] duration-300 group-hover:opacity-100"
+
                 />
                 <p className="text-[#FFFFFF] text-center opacity-0 absolute transform ml-[7px] mr-[7px] text-[14px] transition-opacity duration-300 group-hover:opacity-100">
                   It was a pleasure to have our students, from all over india
@@ -225,6 +231,7 @@ const Socials = () => {
             <div className="card1 relative inline-block group">
               <Image src={image7} width={233} height={233} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:opacity-70">
+
                 <Image src={logo} className="absolute ml-[5px] mt-[200px]" />
                 <SocialIcon
                   url="www.instagram.com"

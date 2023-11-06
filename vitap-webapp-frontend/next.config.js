@@ -1,17 +1,13 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  server: {
-    // Bind to all network interfaces
-    host: '0.0.0.0',
+module.exports = {
+  experimental: {
+    staticTracing: true,
   },
   images: {
-    remotePatterns: [
-      {
-        protocol: 'http',
-        hostname: '0.0.0.0',
-      },
-    ],
+    unoptimized: true,
   },
+  output: 'export',
+  // Optional configurations can be added here
+  // trailingSlash: true,
+  // skipTrailingSlashRedirect: true,
+  // distDir: 'dist',
 };
-
-module.exports = nextConfig;
