@@ -6,8 +6,8 @@ const Carousel = ({ slides }) => {
     <>
       <div className=" overflow-hidden relative">
         <div className="flex h-[760px]">
-          {slides.map((s) => {
-            return <img src={s} />;
+          {slides.map((s,index) => {
+            return <img key={index} src={s} alt={`Slide ${index}`/>;
           })}
         </div>
 
