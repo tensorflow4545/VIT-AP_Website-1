@@ -12,7 +12,7 @@ const News = () => {
   return (
     <div className="bg-white h-screen">
       <div className="flex items-center justify-between">
-        <h2 className="text-[#51060D] font-Emilo text-[60px] mt-[50px] ml-[100px] mb-[10px] text-left">
+        <h2 className="text-[#51060D] font-Emilio text-[60px] mt-[50px] ml-[100px] mb-[10px] text-left">
           News about VIT-AP
         </h2>
         <div className="flex items-center justify-center mr-[50px] mt-10">
@@ -30,7 +30,7 @@ const News = () => {
             height={311}
             className="top-[223px] left-[108px]"
           />
-          <h3 className="text-[#1B1C1E] font-Emilo font-bold ml-[24px] mt-[21px] text-[20px]">
+          <h3 className="text-[#1B1C1E] font-Emilio font-bold ml-[24px] mt-[21px] text-[20px]">
             First-ever AI musical concert held at VIT-AP University
           </h3>
           <p className="ml-[24px] mt-[21px]">Date: 04.10.2023</p>
@@ -53,7 +53,7 @@ const News = () => {
             height={311}
             className="top-[223px] left-[108px]"
           />
-          <h3 className="text-[#1B1C1E] font-Emilo font-bold ml-[24px] mt-[21px] text-[20px]">
+          <h3 className="text-[#1B1C1E] font-Emilio font-bold ml-[24px] mt-[21px] text-[20px]">
             3rd Annual Convocation - 2023
           </h3>
           <p className="ml-[24px] mt-[21px]">Date: 27.09.2023</p>
@@ -76,7 +76,7 @@ const News = () => {
             height={311}
             className="top-[223px] left-[108px]"
           />
-          <h3 className="text-[#1B1C1E] font-Emilo font-bold ml-[24px] mt-[21px] text-[20px]">
+          <h3 className="text-[#1B1C1E] font-Emilio font-bold ml-[24px] mt-[21px] text-[20px]">
             VIT-AP Men's Basketball team wins gold medal
           </h3>
           <p className="ml-[24px] mt-[21px]">Date: 09.09.2023</p>

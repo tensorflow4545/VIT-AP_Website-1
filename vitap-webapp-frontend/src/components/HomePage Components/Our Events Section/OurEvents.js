@@ -38,7 +38,7 @@ const OurEvents = () => {
         <div className="w-full bg-backgroundRed h-[420px] px-[110px] max-md:px-[40px]  max-ls:px-[30px] py-2">
 
           <div className="flex justify-between items-center mt-[20px] cursor-pointer">
-            <h1 className="text-[#51060D] font-Emilo text-[48px] font-bold max-lx:text-[32px]">
+            <h1 className="text-[#51060D] font-Emilio text-[48px] font-bold max-lx:text-[32px]">
               Our Events
             </h1>
             <div className="flex flex-row gap-2 items-center justify-center relative  transition-all duration-300 ease-in">
@@ -47,7 +47,7 @@ const OurEvents = () => {
               <hr className=" h-[3px] w-[36px] font-medium bg-[#5C0E14] max-lx:w-[28px]" />
             </div>
           </div>
-          <h1 className="font-Montserrant text-[18px] text-secondary max-w-[787px] pt-3">
+          <h1 className="font-Montserrat text-[18px] text-secondary max-w-[787px] pt-3">
             Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
             consectetur.Lorem ipsum dolor sit amet consectetur.
           </h1>
