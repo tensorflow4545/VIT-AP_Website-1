@@ -1,0 +1,20 @@
+h1{
+    position: relative;
+    letter-spacing: 0.5px;
+    padding: 0 10px 0px 0px;
+}
+
+h1:after{
+    content: "";
+    position: absolute;
+    background-color: gray;
+    height: 7px;
+    width: 20%;
+    left: 0;
+    bottom: -7px;
+    transition: 0.3s;
+}
+
+h1:hover:after{
+    width: 100%;
+}

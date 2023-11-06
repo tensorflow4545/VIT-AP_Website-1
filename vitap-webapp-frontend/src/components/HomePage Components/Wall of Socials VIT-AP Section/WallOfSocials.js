@@ -16,8 +16,12 @@ import image6 from "../../../assets/images/socialImages/image 6.jpg";
 import image7 from "../../../assets/images/socialImages/image 7.jpg";
 import image8 from "../../../assets/images/socialImages/image 8.jpg";
 import image9 from "../../../assets/images/socialImages/image 9.jpg";
+import img1 from "../../../assets/images/socialImages/Img 1.png";
+import img2 from "../../../assets/images/socialImages/Img 2.png";
+import img3 from "../../../assets/images/socialImages/Img 3.png";
 import logo from "../../../assets/images/socialImages/vitapLogo.png";
 import { FaXTwitter } from "react-icons/fa6";
+
 
 
 const Socials = () => {

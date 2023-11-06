@@ -35,18 +35,18 @@ const ResearchInnovation = () => {
 
   return (
     <>
-      <div className="max-w-[1440px] mt-[100px] min-h-[800px]  mx-auto pt-[56px] px-[55px] flex flex-col max-xl:px-[25px] max-xl:pr-[20px] max-md:mt-[70px] max-ls:hidden">
+      <div className="max-w-[1440px] mt-[100px] min-h-[800px]  mx-auto pt-[56px] px-[55px] hidden flex-col max-xl:px-[25px] max-xl:pr-[20px] max-md:mt-[70px] ls:flex">
         <div className="flex flex-col justify-start items-start gap-5">
           <h1 className="text-[#51060D] font-Emilo text-[48px] font-bold max-lx:text-[32px] max-ls:text-[26px]">
             Research and Innovation
           </h1>
-          <p className="text-[18px] font-Montserrant   font-normal ">
+          <p className="text-[18px] font-Montserrant font-normal ">
             We indulge in driving discoveries vital to our world, our health,
             and our intellectual life.
           </p>
         </div>
         <div className="relative">
-          <div className="flex object-cover justify-center  gap-[24px] mt-[53px] max-lx:flex-col flex-wrap max-xl:justify-center max-lx:items-center">
+          <div className="flex justify-center object-cover gap-[24px] mt-[53px] max-lx:flex-col flex-wrap max-xl:justify-center max-lx:items-center">
             {researchInnovation.map((research) => (
               <Image
                 key={research.id}
@@ -71,7 +71,7 @@ const ResearchInnovation = () => {
           onEnter={() => setCounterOn(true)}
           onExit={() => setCounterOn(false)}
         >
-          <div className="flex max-ls:flex-col max-ls:justify-center max-ls:items-center flex-wrap max-w-[1100px] w-[100%] min-h-[240px] justify-between mt-[30px] max-ls:gap-1 ml-[120px] max-lg:ml-[70px] max-lg:max-w-[940px] max-md:ml-[40px]">
+          <div className="flex max-ls:flex-col max-ls:justify-center max-ls:items-center flex-wrap max-w-[1100px] w-[100%] min-h-[240px] justify-between mt-[30px] max-ls:gap-1 md:ml-[120px] lg:ml-[70px] max-lg:max-w-[940px] max-md:ml-[40px]">
             {researchNumbers.map((item) => (
               <div key={item.id} className="flex-start">
                 <h1 className="text-[#5C0E14] text-[48px] max-lx:text-[38px] max-ls:text-[32px] font-bold">
