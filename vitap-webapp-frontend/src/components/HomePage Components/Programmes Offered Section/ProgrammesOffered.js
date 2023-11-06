@@ -131,9 +131,9 @@ const ProgrammesOffered = () => {
               Engineering
             </h3> */}
 
-            {programmesOffered.map((program) =>
+            {programmesOffered.map((program,index) =>
               program.field === active ? (
-                <h1 className="py-4 max-w-[432px] text-#51060D text-14 max-lx:text-15 font-semibold capitalize border border-l-0 border-t-0 border-r-0 border-b-gray-500 hover:text-bold">
+                <h1 key={index} className="py-4 max-w-[432px] text-#51060D text-14 max-lx:text-15 font-semibold capitalize border border-l-0 border-t-0 border-r-0 border-b-gray-500 hover:text-bold">
                   <a href="#">{program.title}</a>
                 </h1>
               ) : (
