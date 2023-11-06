@@ -5,9 +5,9 @@ const Carousel = ({ slides }) => {
   return (
     <div className="overflow-hidden relative">
       <div className="flex h-[760px]">
-        {slides.map((s, index) => (
-          <img key={index} src={s} alt={`Slide ${index}`} />
-        )}
+        {slides.map((s, index) => {
+          return <img key={index} src={s} alt={`Slide ${index}`} />;
+        })}
       </div>
       <div className="absolute top-[220px]">
         <button>
