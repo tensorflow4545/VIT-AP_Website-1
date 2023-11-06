@@ -194,3 +194,30 @@ export const announcements2 = [
     content: "Hii"
   }
 ]
+
+export const acheivements = [
+  {
+    id: 1,
+    date: "11 Sep2023",
+    heading:
+      "50,000 seed Balls aerially dispersed In Vijayawada District, Andhra Pradesh in Collaboration with Indian Navy",
+    description:
+      "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur.",
+  },
+  {
+    id: 1,
+    date: "12 Sep2023",
+    heading:
+      "50,000 seed Balls aerially dispersed In Vijayawada District, Andhra Pradesh in Collaboration with Indian Navy",
+    description:
+      "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur.",
+  },
+  {
+    id: 2,
+    date: "13 Sep2023",
+    heading:
+      "50,000 seed Balls aerially dispersed In Vijayawada District, Andhra Pradesh in Collaboration with Indian Navy",
+    description:
+      "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur.",
+  },
+];
