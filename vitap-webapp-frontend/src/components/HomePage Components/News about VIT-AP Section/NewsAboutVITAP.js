@@ -11,7 +11,7 @@ import arrow from "@/assets/images/newsPhotos/Vector.png";
 
 const News = () => {
   return (
-    <>
+<>
       <div className="bg-white h-screen">
         <div className="flex justify-center items-center">
           <h2 className="text-[#51060D] font-Emilo text-[60px] w-[550px] mt-[50px] text-center \">
@@ -22,11 +22,10 @@ const News = () => {
           <h1 className="text-[#FFFFFF] text-[25px]">See all</h1>
         </div> */}
 
-        <div className="flex justify-center mt-[20px] space-x-[80px]">
-          <div className="w-[320px]  hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] cursor-pointer  h-[450px] bg-white ml-[24px] border-b border-gray-300  hover:border-gray-500">
+        <div className="flex ml-[240px] mt-[20px]">
+          <div className="w-[320px] h-[450px] bg-white ml-[24px] border-b shadow-2xl border-gray-800 section">
             <Image
-            alt="A descriptive text here"
-              src={news2}
+              src={news1}
               width={392}
               height={311}
               className="top-[223px] left-[108px]"
@@ -38,7 +37,6 @@ const News = () => {
             <button className="flex ml-[24px] mt-[50px] rounded-full hover:bg-[#5C0E14] group">
               <div className="w-[40px] h-[40px] bg-white rounded-full group-hover:w-[190px] group-hover:h-[40px] group-hover:bg-[#5C0E14]"></div>
               <Image
-              alt="A descriptive text here"
                 src={arrow}
                 className="absolute mt-[13px] ml-[11px] group-hover:opacity-0"
               />
@@ -47,9 +45,8 @@ const News = () => {
               </p>
             </button>
           </div>
-          <div className="w-[320px] hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] cursor-pointer  h-[450px] bg-white ml-[35px] border-b border-gray-300  hover:border-gray-500">
+          <div className="w-[320px] h-[450px] bg-white ml-[35px] border-b shadow-2xl border-gray-800 section">
             <Image
-            alt="A descriptive text here"
               src={news2}
               width={392}
               height={311}
@@ -62,7 +59,6 @@ const News = () => {
             <button className="flex ml-[24px] mt-[70px] rounded-full hover:bg-[#5C0E14] group">
               <div className="w-[40px] h-[40px] bg-white rounded-full group-hover:w-[190px] group-hover:h-[40px] group-hover:bg-[#5C0E14]"></div>
               <Image
-              alt="A descriptive text here"
                 src={arrow}
                 className="absolute mt-[13px] ml-[11px] group-hover:opacity-0"
               />
@@ -71,9 +67,8 @@ const News = () => {
               </p>
             </button>
           </div>
-          <div className="w-[320px]  h-[450px] hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] cursor-pointer  bg-white ml-[35px] border-b border-gray-300  hover:border-gray-500">
+          <div className="w-[320px] h-[450px] bg-white ml-[35px] border-b shadow-2xl border-gray-800 section">
             <Image
-            alt="A descriptive text here"
               src={news3}
               width={392}
               height={311}
@@ -86,7 +81,6 @@ const News = () => {
             <button className="flex ml-[24px] mt-[25px] rounded-full hover:bg-[#5C0E14] group">
               <div className="w-[40px] h-[40px] bg-white rounded-full group-hover:w-[190px] group-hover:h-[40px] group-hover:bg-[#5C0E14]"></div>
               <Image
-              alt="A descriptive text here"
                 src={arrow}
                 className="absolute mt-[13px] ml-[11px] group-hover:opacity-0"
               />
@@ -95,11 +89,6 @@ const News = () => {
               </p>
             </button>
           </div>
-        </div>
-        <div className="flex items-center justify-center mt-[30px]">
-          <button className="border border-black pt-[5px] pl-[5px] pr-[5px] pb-[5px]">
-            See all
-          </button>
         </div>
       </div>
     </>
