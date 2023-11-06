@@ -1,0 +1,262 @@
+[33mcommit 0d6bb3da179810a04d13b86d2fd802d32eeeaa27[m[33m ([m[1;36mHEAD -> [m[1;32maws-build-branch[m[33m, [m[1;31morigin/aws-build-branch[m[33m)[m
+Merge: b1c051b efb5a87
+Author: Mohith705 <mohith.21bce7511@vitapstudent.ac.in>
+Date:   Tue Nov 7 00:20:38 2023 +0530
+
+    Merge branch 'aws-build-branch' of https://github.com/srivardhan113/VIT-AP_Website-1 into aws-build-branch
+
+[33mcommit b1c051bede7afa86769f6ddb16aef03552e59646[m[33m ([m[1;31morigin/dev-mohit[m[33m)[m
+Author: Mohith705 <mohith.21bce7511@vitapstudent.ac.in>
+Date:   Tue Nov 7 00:18:03 2023 +0530
+
+    final changes
+
+[33mcommit efb5a8733d02784d562b5120df52f07ed74d101b[m
+Author: kartik kumar <gtgkartik@gmail.com>
+Date:   Mon Nov 6 23:54:11 2023 +0530
+
+    Some chnages fixed
+
+[33mcommit ec5e3270002f63611c69025f006b1a6e87030ec7[m
+Author: Anshul Ojha <128066014+tensorflow4545@users.noreply.github.com>
+Date:   Mon Nov 6 23:22:10 2023 +0530
+
+    Update footer.css
+
+[33mcommit c67c4df20a4457a737cb79eccf81d24056e31934[m
+Author: Anshul Ojha <128066014+tensorflow4545@users.noreply.github.com>
+Date:   Mon Nov 6 23:20:55 2023 +0530
+
+    Update Footer.js
+
+[33mcommit 02693f1766f615128d722a3b3522d147823d2602[m
+Merge: bde65f9 317d38f
+Author: kartik kumar <gtgkartik@gmail.com>
+Date:   Mon Nov 6 22:55:35 2023 +0530
+
+    Merge pull request #83 from srivardhan113/dev-mohit
+    
+    first two pages are done
+
+[33mcommit 317d38f44a9cbd14b29dd64bf9e479263ba3b142[m
+Author: Mohith705 <mohith.21bce7511@vitapstudent.ac.in>
+Date:   Mon Nov 6 20:27:52 2023 +0530
+
+    first two pages are done
+
+[33mcommit bde65f91bf5bfd130258570d0137644232b2d1bb[m
+Author: Allenki Akshay <111362177+allenkiakshay@users.noreply.github.com>
+Date:   Mon Nov 6 01:38:28 2023 +0530
+
+    Update Footer.js
+
+[33mcommit 5d18a2a335f46b502cdfa97e21b7b9209e0d255e[m
+Author: Anshul Ojha <128066014+tensorflow4545@users.noreply.github.com>
+Date:   Mon Nov 6 01:35:11 2023 +0530
+
+    Update footer.css
+
+[33mcommit 5ff8d072e6926036d852f94a5b6808d28c96715b[m
+Author: Anshul Ojha <128066014+tensorflow4545@users.noreply.github.com>
+Date:   Mon Nov 6 01:34:28 2023 +0530
+
+    Update Footer.js
+
+[33mcommit 82ab2d1d267440f38e8f1d56a549c8115a90322a[m
+Author: Allenki Akshay <111362177+allenkiakshay@users.noreply.github.com>
+Date:   Sat Nov 4 17:00:18 2023 +0530
+
+    Update Footer.js
+
+[33mcommit a8ff00073a7e25e83d146d18f2d9baf762c74c5f[m
+Merge: c4a413e b768c0b
+Author: Allenki Akshay <111362177+allenkiakshay@users.noreply.github.com>
+Date:   Sat Nov 4 16:56:09 2023 +0530
+
+    Merge pull request #77 from srivardhan113/dev-mohit
+    
+    Dev mohit
+
+[33mcommit c4a413e443041c0e7ba028064f1578c31f36daab[m
+Author: Aditi Shaw <89793631+aditishaw2417@users.noreply.github.com>
+Date:   Sat Nov 4 12:59:24 2023 +0530
+
+    completed wall of socials page
+
+[33mcommit 9918187123d95369505ec480b8c5dc19161a20be[m
+Author: Aditi Shaw <89793631+aditishaw2417@users.noreply.github.com>
+Date:   Sat Nov 4 12:57:34 2023 +0530
+
+    completed news page
+
+[33mcommit 75e2f13335ea47d5766f35052d700aee10d9c0cf[m
+Author: Aditi Shaw <89793631+aditishaw2417@users.noreply.github.com>
+Date:   Sat Nov 4 12:41:22 2023 +0530
+
+    life at vitap page completed
+
+[33mcommit 36ad9bf3fb242540e3f82e7ff603108c6f4e6eba[m
+Author: Aditi Shaw <89793631+aditishaw2417@users.noreply.github.com>
+Date:   Sat Nov 4 12:40:05 2023 +0530
+
+    added social page images
+
+[33mcommit 129ad8f4e1668a79e02c33d2f00a23411c8cd43b[m
+Merge: 11c5718 99fec04
+Author: Anshul Ojha <128066014+tensorflow4545@users.noreply.github.com>
+Date:   Fri Nov 3 20:54:32 2023 +0530
+
+    Merge pull request #78 from srivardhan113/dev-anshul
+    
+    Dev anshul
+
+[33mcommit 99fec041ade81b997a2cc86a4d05c80c986af3b7[m[33m ([m[1;31morigin/dev-anshul[m[33m)[m
+Author: Anshul Ojha <128066014+tensorflow4545@users.noreply.github.com>
+Date:   Fri Nov 3 20:52:37 2023 +0530
+
+    Update Footer.js
+
+[33mcommit b768c0b8cb6aa2d5c60de8717483c4468e6113e7[m
+Author: Mohith705 <mohith.21bce7511@vitapstudent.ac.in>
+Date:   Fri Nov 3 18:38:18 2023 +0530
+
+    packages changing
+
+[33mcommit 4051956a0ab7db5ee4d7016a7867f6d1f3b76023[m
+Author: Mohith705 <mohith.21bce7511@vitapstudent.ac.in>
+Date:   Fri Nov 3 18:07:57 2023 +0530
+
+    add data in constants
+
+[33mcommit 931a6ae9535f8a678c4edb9dd854273ac7147230[m
+Author: Mohith705 <mohith.21bce7511@vitapstudent.ac.in>
+Date:   Fri Nov 3 17:47:43 2023 +0530
+
+    changes
+
+[33mcommit f75e4c54ccd7a11b695d16d4884dc9d95a49a530[m
+Author: Mohith705 <mohith.21bce7511@vitapstudent.ac.in>
+Date:   Fri Nov 3 17:14:29 2023 +0530
+
+    done
+
+[33mcommit b65d4565e6b3c3bbf672d587c054f758edb1a1db[m
+Author: Mohith705 <mohith.21bce7511@vitapstudent.ac.in>
+Date:   Fri Nov 3 13:10:17 2023 +0530
+
+    offered
+
+[33mcommit 858d01da38fed9bc4f78d86d63c61fad3979e390[m
+Author: Mohith705 <mohith.21bce7511@vitapstudent.ac.in>
+Date:   Fri Nov 3 13:07:42 2023 +0530
+
+    programs offered changes
+
+[33mcommit 60590c224142c1e970bf4d1be4e74f1d578ecc56[m
+Author: Mohith705 <mohith.21bce7511@vitapstudent.ac.in>
+Date:   Fri Nov 3 12:58:50 2023 +0530
+
+    final changes
+
+[33mcommit 03b0391ad36d0ab30c2f2e1b69183a575470fa29[m
+Author: Mohith705 <mohith.21bce7511@vitapstudent.ac.in>
+Date:   Fri Nov 3 12:55:24 2023 +0530
+
+    changes done from master and few components
+
+[33mcommit 3bde3c63eb2b64257eab04debf1099e28e298fc5[m
+Author: Mohith705 <mohith.21bce7511@vitapstudent.ac.in>
+Date:   Fri Nov 3 12:39:15 2023 +0530
+
+    merge done with master
+
+[33mcommit 16d8a6b5ede3a941e43410a21bbbcc52be795bbe[m
+Merge: c8a3275 11c5718
+Author: Mohith705 <mohith.21bce7511@vitapstudent.ac.in>
+Date:   Fri Nov 3 12:37:25 2023 +0530
+
+    Merge branch 'master' into dev-mohit
+
+[33mcommit c8a32754ce9c76d2414e085c72367ff41d52f9a5[m
+Author: Mohith705 <mohith.21bce7511@vitapstudent.ac.in>
+Date:   Fri Nov 3 12:26:21 2023 +0530
+
+    announcements components
+
+[33mcommit 2f4d38a8c84273b53c1848d6e756f0c37d01154d[m
+Author: Mohith705 <mohith.21bce7511@vitapstudent.ac.in>
+Date:   Fri Nov 3 12:25:00 2023 +0530
+
+    school page components
+
+[33mcommit 750352f107aaea55af6008f7194d3b0208d1a299[m
+Author: Mohith705 <mohith.21bce7511@vitapstudent.ac.in>
+Date:   Fri Nov 3 12:19:13 2023 +0530
+
+    few changes in some components
+
+[33mcommit 57eb7096801dbda883b3f06c073594d1178a7f38[m
+Merge: 438fc62 11c5718
+Author: Allenki Akshay <111362177+allenkiakshay@users.noreply.github.com>
+Date:   Fri Nov 3 11:43:26 2023 +0530
+
+    Merge pull request #72 from srivardhan113/master
+    
+    update dev-anshul
+
+[33mcommit 11c5718e5e93d52a0355144def4819ecf91c441e[m
+Author: kartik kumar <gtgkartik@gmail.com>
+Date:   Fri Nov 3 11:06:00 2023 +0530
+
+    footer fixed
+
+[33mcommit 3a953ba5cd5c880c441daa6591b2e91610adf6b8[m
+Author: kartik kumar <gtgkartik@gmail.com>
+Date:   Fri Nov 3 11:01:07 2023 +0530
+
+    fonts fixed in three sections
+
+[33mcommit c4fef1a8a85047355f3464375826006d57c5595c[m
+Author: Allenki Akshay <111362177+allenkiakshay@users.noreply.github.com>
+Date:   Fri Nov 3 10:58:42 2023 +0530
+
+    navbar bottom update
+
+[33mcommit 728ef987348d14ac37e5c0c7d2b9e03277951a01[m
+Author: kartik kumar <gtgkartik@gmail.com>
+Date:   Fri Nov 3 01:24:51 2023 +0530
+
+    final changes made
+
+[33mcommit 3b5edd07caa9613fc45552fd47248bc309a83b56[m
+Author: kartik kumar <gtgkartik@gmail.com>
+Date:   Fri Nov 3 01:14:28 2023 +0530
+
+    changes made to website
+
+[33mcommit 51b31318b333d2746e864ea771337614529e84f1[m
+Merge: 53e1681 48a7ae5
+Author: kartik kumar <gtgkartik@gmail.com>
+Date:   Thu Nov 2 13:29:51 2023 +0530
+
+    Merge pull request #69 from srivardhan113/AWS-Build-Branch
+    
+    added a new component just above the footer
+
+[33mcommit 48a7ae53f7125c16a9de2b598f877fc11ddfe0c8[m
+Author: kartik kumar <gtgkartik@gmail.com>
+Date:   Thu Nov 2 13:29:23 2023 +0530
+
+    added a new component just above the footer
+
+[33mcommit 53e168187f2333b57946c2ab81e6542caa4a977a[m
+Merge: bba0237 4d91b49
+Author: kartik kumar <gtgkartik@gmail.com>
+Date:   Thu Nov 2 13:04:02 2023 +0530
+
+    Merge pull request #68 from srivardhan113/AWS-Build-Branch
+    
+    added carousel from material tailwind and made minor changes
+
+[33mcommit 4d91b4935a489c878f1bf935ccc5ce5ba0980923[m
+Author: kartik kumar <

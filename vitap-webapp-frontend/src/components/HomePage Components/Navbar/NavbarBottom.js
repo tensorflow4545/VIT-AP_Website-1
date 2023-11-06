@@ -65,7 +65,7 @@ const NavbarBottom = () => {
         >
           <ul className="flex flex-row  items-center pl-[33px] w-full justify-between pr-[76px]">
             <li className="mr-[100px]">
-              <a>
+              <a href="/">
                 <Image alt="A descriptive text here" src={logo} className={logo ? "logo active" : "logo"} />
               </a>
             </li>
