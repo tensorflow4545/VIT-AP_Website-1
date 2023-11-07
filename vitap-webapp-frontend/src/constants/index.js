@@ -132,68 +132,73 @@ export const programmesOffered = [
 export const announcements = [
   {
     id: 1,
-    content: "Hello",
+    content:
+      "Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
   },
   {
     id: 2,
-    content: "Hello",
+    content:
+      "Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
   },
   {
     id: 3,
-    content: "Hello",
+    content:
+      "Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
   },
   {
     id: 4,
-    content: "Hello",
+    content: "3rd Annual Convocation",
   },
   {
     id: 5,
-    content: "Hello",
+    content: "3rd Annual Convocation",
   },
   {
     id: 6,
-    content: "Hello",
+    content: "3rd Annual Convocation",
   },
   {
     id: 7,
-    content: "Hello",
+    content:
+      "Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
   },
   {
     id: 8,
-    content: "Hello",
+    content: "3rd Annual Convocation",
   },
   {
     id: 9,
-    content: "Hello",
+    content: "CSI Meet'n Greet 23",
   },
   {
     id: 10,
-    content: "Hello",
+    content: "CSI Meet'n Greet 23",
   },
   {
     id: 11,
-    content: "Hello",
+    content: "CSI Meet'n Greet 23",
   },
   {
     id: 12,
-    content: "Hello",
+    content: "CSI Meet'n Greet 23",
   },
 ];
 
 export const announcements2 = [
   {
     id: 1,
-    content: "Hii"
+    content: "CSI Meet'n Greet 23",
   },
   {
     id: 2,
-    content: "Hii"
+    content:
+      "Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
   },
   {
     id: 3,
-    content: "Hii"
-  }
-]
+    content: "3rd Annual Convocation",
+  },
+];
 
 export const acheivements = [
   {

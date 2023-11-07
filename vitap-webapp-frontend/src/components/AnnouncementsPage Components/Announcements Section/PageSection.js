@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const PageSection = () => {
     return (
-      <div className="max-w-[1560px] w-[100%] max-h-[1300px] h-[100%] mx-auto">
+      <div className="max-w-[1560px] w-[100%] max-h-[1300px] h-[100%] mx-auto font-Emilo">
         <div
           style={{ backgroundImage: `url("/announcements.png")` }}
           className="relative max-w-[1560px] w-full h-[300px] bg-center mx-auto flex items-center justify-center"
@@ -18,7 +18,7 @@ const PageSection = () => {
           style={{ backgroundImage: 'url("/wave3.png")' }}
         >
           <Image src={"/announcementphoto.png"} width={400} height={300} />
-          <h1 className='text-[32px] font-bold text-white font-Emilo'>
+          <h1 className='text-[28px] font-bold text-white font-Emilo'>
             Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs,
             and 3D Printing
           </h1>
