@@ -34,10 +34,10 @@ const OurSchools = async () => {
     <>
       <div className="flex-col mb-[400px]">
         <div className="w-full bg-[#E6CFCF] h-[450px] pl-[108px] pr-[114px]  ">
-          <h1 className="font-Emilo font-bold text-primary text-[48px] pt-[40px]">
+          <h1 className="font-Emilio font-bold text-primary text-[48px] pt-[40px]">
             Our Schools
           </h1>
-          <h1 className="font-Montserrant text-[18px] text-secondary w-full">
+          <h1 className="font-Montserrat text-[18px] text-secondary w-full">
             At VIT-AP the entire teaching-learning process is concentrated
             around six schools. A research center is also part of the schools,
             that encourages students to participate in exciting research
@@ -53,10 +53,10 @@ const OurSchools = async () => {
                 height={290}
               />
               <div className="absolute top-[190px] text-white  px-[14px] font-semibold flex-col ">
-                <h1 className="leading-[23px] font-Emilo text-[20px]">
+                <h1 className="leading-[23px] font-Emilio text-[20px]">
                   School of Advanced Sciences
                 </h1>
-                <h1 className="font-Montserrant text-[13px] font-medium flex items-center">
+                <h1 className="font-Montserrat text-[13px] font-medium flex items-center">
                   Explore Now{" "}
                   <span>
                     <BsArrowRightShort size={23} />
@@ -73,10 +73,10 @@ const OurSchools = async () => {
                 height={290}
               />
               <div className="absolute top-[190px] text-white  px-[14px] font-semibold flex-col">
-                <h1 className="leading-[23px] font-Emilo text-[20px] ">
+                <h1 className="leading-[23px] font-Emilio text-[20px] ">
                   School of Electical and Electronics Engineering
                 </h1>
-                <h1 className="font-Montserrant text-[13px] font-medium flex items-center">
+                <h1 className="font-Montserrat text-[13px] font-medium flex items-center">
                   Explore Now{" "}
                   <span>
                     <BsArrowRightShort size={23} />
@@ -93,10 +93,10 @@ const OurSchools = async () => {
                 height={290}
               />
               <div className="absolute top-[185px] text-white  px-[14px] font-semibold flex-col ">
-                <h1 className="leading-[26px] font-Emilo text-[20px]">
+                <h1 className="leading-[26px] font-Emilio text-[20px]">
                   School of Computer Science and Engineering
                 </h1>
-                <h1 className="font-Montserrant text-[13px] font-medium flex items-center">
+                <h1 className="font-Montserrat text-[13px] font-medium flex items-center">
                   Explore Now{" "}
                   <span>
                     <BsArrowRightShort size={23} />
@@ -113,10 +113,10 @@ const OurSchools = async () => {
                 height={290}
               />
               <div className="absolute top-[200px] text-white  px-[14px] font-semibold flex flex-col ">
-                <h1 className="leading-[26px] font-Emilo text-[20px]">
+                <h1 className="leading-[26px] font-Emilio text-[20px]">
                   VIT School of Law
                 </h1>
-                <h1 className="font-Montserrant text-[13px] font-medium flex items-center">
+                <h1 className="font-Montserrat text-[13px] font-medium flex items-center">
                   Explore Now{" "}
                   <span>
                     <BsArrowRightShort size={23} />
@@ -134,10 +134,10 @@ const OurSchools = async () => {
                 height={290}
               />
               <div className="absolute top-[190px] text-white  px-[14px] font-semibold flex-col">
-                <h1 className="leading-[23px] font-Emilo text-[20px]">
+                <h1 className="leading-[23px] font-Emilio text-[20px]">
                   School of Mechanical Engineering
                 </h1>
-                <h1 className="font-Montserrant text-[13px] font-medium flex items-center">
+                <h1 className="font-Montserrat text-[13px] font-medium flex items-center">
                   Explore Now{" "}
                   <span>
                     <BsArrowRightShort size={23} />
@@ -154,10 +154,10 @@ const OurSchools = async () => {
                 height={290}
               />
               <div className="absolute top-[190px] text-white f px-[14px] font-semibold flex-col">
-                <h1 className="leading-[26px] font-Emilo text-[20px]">
+                <h1 className="leading-[26px] font-Emilio text-[20px]">
                   School of Social Science and Humanities
                 </h1>
-                <h1 className="font-Montserrant text-[13px] font-medium flex items-center">
+                <h1 className="font-Montserrat text-[13px] font-medium flex items-center">
                   Explore Now{" "}
                   <span>
                     <BsArrowRightShort size={23} />
@@ -174,10 +174,10 @@ const OurSchools = async () => {
                 height={290}
               />
               <div className="absolute top-[200px] text-white px-[14px] font-semibold flex-col ">
-                <h1 className="leading-[26px] text-[20px] font-Emilo">
+                <h1 className="leading-[26px] text-[20px] font-Emilio">
                   School of Business
                 </h1>
-                <h1 className="font-Montserrant text-[13px] font-medium flex items-center">
+                <h1 className="font-Montserrat text-[13px] font-medium flex items-center">
                   Explore Now{" "}
                   <span>
                     <BsArrowRightShort size={23} />
