@@ -5,6 +5,7 @@ import headerimage2 from "../../../assets/images/Homepage Images/HeaderImage2.pn
 import { BsArrowRight } from "react-icons/bs";
 import config from "@/config";
 import { Carousel } from "@material-tailwind/react";
+import { headerimage3 } from "../../../assets/images/Homepage Images/1.JPG";
 
 // import { Carousel } from "@material-tailwind/react";
 
@@ -32,12 +33,11 @@ const HeroSection = () => {
   return (
     <>
       <Carousel className=" h-screen">
-
         <div className="w-full h-full object-cover relative ">
           <div className="absolute w-full h-full bg-black opacity-70 bg-gradient-to-b from-blue-gray-900 to-blue-gray-800"></div>
-        <video autoPlay loop className="h-full w-full object-cover">
-          <source src="/intro.mp4" />
-        </video>
+          <video autoPlay loop className="h-full w-full object-cover">
+            <source src="/intro.mp4" />
+          </video>
         </div>
 
         <img
@@ -46,15 +46,23 @@ const HeroSection = () => {
           className="h-full w-full object-cover"
         />
 
-
         <img
-          src="../../../assets/images/Homepage Images/HeaderImage2.png"
+          src="../../../assets/images/Homepage Images/HeaderImage.png"
           alt="image 2"
           className="h-full w-full object-cover"
         />
+
+        <div className="h-full w-full object-cover">
+          <img
+            src="../../../assets/images/Homepage Images/1.png"
+            alt="image 3"
+            className="h-full w-full object-cover"
+          />
+        </div>
+
         <img
-          src="../../../assets/images/Homepage Images/HeaderImage2.png"
-          alt="image 3"
+          src="../../../assets/images/Homepage Images/1.png"
+          alt="image 4"
           className="h-full w-full object-cover"
         />
       </Carousel>

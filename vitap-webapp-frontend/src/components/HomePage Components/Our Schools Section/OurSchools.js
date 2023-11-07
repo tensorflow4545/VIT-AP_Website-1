@@ -105,10 +105,10 @@ const OurSchools = async () => {
               </div>
             </div>
             <div className="w-[270px] h-[290px] ml-[46px] relative group">
-              <div className="absolute w-[270px] h-[270px] bg-black"></div>
+              <div className="absolute w-[270px] h-[270px] bg-gradient-to-b  from-[#0000005a] to-black opacity-80"></div>
               <Image
                 src={image4}
-                className="opacity-60 transition-transform transform scale-100 group-hover:scale-105"
+                className="opacity-70 transition-transform transform scale-100 group-hover:scale-105"
                 width={270}
                 height={290}
               />
