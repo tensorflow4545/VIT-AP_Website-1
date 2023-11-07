@@ -29,13 +29,13 @@ const Socials = () => {
     <>
       <div className="bg-[#FDFEFF] flex h-screen">
         <div>
-          <p className="mt-[40px] ml-[108px] text-[#5C0E14] text-[22px] font-Emilo font-bold">
+          <p className="mt-[40px] ml-[108px] text-[#5C0E14] text-[22px] font-Emilio font-bold">
             <i>Stay Connected</i>
           </p>
-          <p className="mt-[16px] ml-[108px] w-[293px] text-[40px] text-[#1B1C1E] font-Emilo font-bold">
+          <p className="mt-[16px] ml-[108px] w-[293px] text-[40px] text-[#1B1C1E] font-Emilio font-bold">
             The Wall of Socials from VIT-AP
           </p>
-          <p className="mt-[30px] ml-[108px] font-Montserrant text-[#0F0F0F] text-[21px]">
+          <p className="mt-[30px] ml-[108px] font-Montserrat text-[#0F0F0F] text-[21px]">
             Follow us on our socials
           </p>
           <div className="w-[300px] h-[44px] ml-[108px] mt-[22px] flex">
@@ -47,7 +47,7 @@ const Socials = () => {
                 />
               </Link>
             </div>
-            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px]">
+            <p className="text-[#1B1C1E] font-Montserrat text-[20px] ml-[13px] mt-[4px]">
               Follow us on Instagram
             </p>
           </div>
@@ -60,7 +60,7 @@ const Socials = () => {
                 />
               </Link>
             </div>
-            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px]">
+            <p className="text-[#1B1C1E] font-Montserrat text-[20px] ml-[13px] mt-[4px]">
               Tweet with us on X
             </p>
           </div>
@@ -73,7 +73,7 @@ const Socials = () => {
                 />
               </Link>
             </div>
-            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px]">
+            <p className="text-[#1B1C1E] font-Montserrat text-[20px] ml-[13px] mt-[4px]">
               Grow with us on LinkedIn
             </p>
           </div>
@@ -86,7 +86,7 @@ const Socials = () => {
                 />
               </Link>
             </div>
-            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px]">
+            <p className="text-[#1B1C1E] font-Montserrat text-[20px] ml-[13px] mt-[4px]">
               Like us on Facebook
             </p>
           </div>
@@ -99,7 +99,7 @@ const Socials = () => {
                 />
               </Link>
             </div>
-            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px]">
+            <p className="text-[#1B1C1E] font-Montserrat text-[20px] ml-[13px] mt-[4px]">
               Watch us on Youtube
 
             </p>
