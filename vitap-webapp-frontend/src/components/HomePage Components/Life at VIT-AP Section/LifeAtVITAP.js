@@ -68,10 +68,10 @@ const Life = () => {
           height={202}
           className="absolute bottom-[10px] right-[10%]"
         />
-        <h4 className="mt-[210px] text-[24px] text-center items-center relative text-[#5C0E14] font-Emilo font-bold">
+        <h4 className="mt-[210px] text-[24px] text-center items-center relative text-[#5C0E14] font-Emilio font-bold">
           <i>Explore our campus</i>
         </h4>
-        <h1 className="text-[80px] mt-[5px] text-center items-center relative font-Emilo font-bold">
+        <h1 className="text-[80px] mt-[5px] text-center items-center relative font-Emilio font-bold">
           Life @ VIT-AP
         </h1>
         <p className="w-[616px] h-[54px] text-center mt-3">
