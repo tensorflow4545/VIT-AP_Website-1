@@ -1,10 +1,10 @@
-/* h1{
+.tags{
     position: relative;
     letter-spacing: 0.5px;
     padding: 0 10px 0px 0px;
 }
 
-h1:after{
+.tags:after{
     content: "";
     position: absolute;
     background-color: gray;
@@ -15,6 +15,6 @@ h1:after{
     transition: 0.3s;
 }
 
-h1:hover:after{
+.tags:hover:after{
     width: 100%;
 } */
