@@ -14,9 +14,9 @@ module.exports = withMT({
       //     'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       // },
       fontFamily: {
-        // libre :  "'Libre Baskerville', serif",
-        Emilo: "'Emilio Test', serif",
-        Montserrant: "'Montserrat', sans-serif",
+        // libre: "'Libre Baskerville', serif",
+        Emilio: "'Emilio Test', serif",
+        Montserrat: "'Montserrat', sans-serif",
         Inter: "'Inter', sans-serif",
       },
       screens: {
@@ -30,12 +30,21 @@ module.exports = withMT({
         "2xl": "1536px",
       },
       colors: {
-        primary: "#650010", //maroon
+        primary: "#650010", // maroon
         backgroundRed: "rgba(92, 14, 20, 0.20)",
         secondary: "#1B1C1E",
       },
     },
   },
 
-  plugins: [require("tailwind-scrollbar")],
+  plugins: [
+    require("tailwind-scrollbar"),
+    function ({ addBase, addUtilities }) {
+      addUtilities({
+        ".section:hover > h3": {
+          color: "#5C0E14",
+        },
+      });
+    },
+  ],
 });
