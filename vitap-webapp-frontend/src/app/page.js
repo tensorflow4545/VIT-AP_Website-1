@@ -16,9 +16,6 @@ import WallOfSocials from "@/components/HomePage Components/Wall of Socials VIT-
 import NumberAtGlance from "@/components/HomePage Components/Number at a Glance Section/NumberAtGlance";
 import Footer from "@/components/HomePage Components/Footer Section/Footer";
 import Component from "@/components/HomePage Components/Footer Section/Component";
-import ConvocationSection from "@/components/AnnouncementsPage Components/Convocation Section/ConvocationSection";
-import PageSection from "@/components/AnnouncementsPage Components/Announcements Section/PageSection";
-import AnnouncementsSection from "@/components/AnnouncementsPage Components/Announcements Section/AnnouncementsSection";
 
 // const fetchdata = async () => {
 //   const reqOptions = {
@@ -53,7 +50,9 @@ const Home = async () => {
       <WallOfSocials />
       <NumberAtGlance />
       <Component />
-      <Footer />
+      <Footer /> 
+
+      <AnnouncementsSection />
       {/* <PageSection /> */}
       {/* <ConvocationSection /> */}
     </>
