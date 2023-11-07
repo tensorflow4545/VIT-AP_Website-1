@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import Datetime from "react-datetime";
 import "react-datetime/css/react-datetime.css";
 import Image from "next/image";
-import banner from "../../assets/images/Events/banner2.png";
-import card from "../../assets/images/Events/card.png";
+import banner from "@/assets/images/Events/banner2.png";
+import card from "@/assets/images/Events/card.png";
 import Link from "next/link";
 import Card from "./Card";
 //import "react-datepicker/dist/react-datepicker.css";
@@ -28,7 +28,9 @@ const Events = () => {
               transform: "translate(-50%, -50%)",
             }}
           >
-            <p className="text-white text-4xl font-bold">Events</p>
+            <p className="text-white text-4xl font-bold font-Emilo text-[61px]">
+              Events
+            </p>
           </div>
         </div>
         <div className="flex flex-row relative">
@@ -40,7 +42,7 @@ const Events = () => {
               className="rounded-top"
             />
             <Link href="/Card">
-              <button className="w-[250px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b">
+              <button className="w-[250px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px]">
                 V-Launch Pad
               </button>
             </Link>
@@ -53,7 +55,7 @@ const Events = () => {
               className="rounded-top"
             />
             <Link href="/Card">
-              <button className="w-[250px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b">
+              <button className="w-[250px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px]">
                 V-Launch Pad
               </button>
             </Link>
@@ -66,7 +68,7 @@ const Events = () => {
               className="rounded-top"
             />
             <Link href="/Card">
-              <button className="w-[250px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b">
+              <button className="w-[250px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px]">
                 V-Launch Pad
               </button>
             </Link>
@@ -79,7 +81,7 @@ const Events = () => {
               className="rounded-top"
             />
             <Link href="/Card">
-              <button className="w-[250px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b">
+              <button className="w-[250px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px]">
                 V-Launch Pad
               </button>
             </Link>
@@ -100,24 +102,24 @@ const Events = () => {
               }}
               className="flex flex-col rounded items-center border border-black shadow-2xl mt-[20px]"
             >
-              <p className="text-center mt-[20px] font-extrabold">
+              <p className="text-center mt-[20px] font-extrabold font-Inter">
                 Upcoming Events
               </p>
               <hr className="w-[230px] mt-4" />
-              <h5 className="font-bold mt-3">V-Launch Pad</h5>
-              <p>18th Oct, 4pm</p>
+              <h5 className="font-bold mt-3 font-Inter">V-Launch Pad</h5>
+              <p className="font-Inter">18th Oct, 4pm</p>
+              <hr className="w-[230px] mt-4" />
+              <h5 className="font-bold mt-3 font-Inter">V-Launch Pad</h5>
+              <p className="font-Inter">18th Oct, 4pm</p>
+              <hr className="w-[230px] mt-4" />
+              <h5 className="font-bold mt-3 font-Inter">V-Launch Pad</h5>
+              <p className="font-Inter">18th Oct, 4pm</p>
               <hr className="w-[230px] mt-4" />
               <h5 className="font-bold mt-3">V-Launch Pad</h5>
-              <p>18th Oct, 4pm</p>
+              <p className="font-Inter">18th Oct, 4pm</p>
               <hr className="w-[230px] mt-4" />
-              <h5 className="font-bold mt-3">V-Launch Pad</h5>
-              <p>18th Oct, 4pm</p>
-              <hr className="w-[230px] mt-4" />
-              <h5 className="font-bold mt-3">V-Launch Pad</h5>
-              <p>18th Oct, 4pm</p>
-              <hr className="w-[230px] mt-4" />
-              <h5 className="font-bold mt-3">V-Launch Pad</h5>
-              <p>18th Oct, 4pm</p>
+              <h5 className="font-bold mt-3 font-Inter">V-Launch Pad</h5>
+              <p className="font-Inter">18th Oct, 4pm</p>
             </div>
           </div>
         </div>
@@ -126,16 +128,16 @@ const Events = () => {
             <button>&larr;</button>
           </div>
           <div className="rounded w-[40px] h-[40px] bg-[#E6CFCF] hover:text-[#FFFFFF] hover:bg-[#5C0E14]">
-            <button className="mt-[8px] ml-[15px]">1</button>
+            <button className="mt-[8px] ml-[15px] font-Inter">1</button>
           </div>
           <div className="rounded w-[40px] h-[40px] bg-[#E6CFCF] hover:text-[#FFFFFF] hover:bg-[#5C0E14] ml-3">
-            <button className="mt-[8px] ml-[15px]">2</button>
+            <button className="mt-[8px] ml-[15px] font-Inter">2</button>
           </div>
           <div className="rounded w-[40px] h-[40px] bg-[#E6CFCF] hover:text-[#FFFFFF] hover:bg-[#5C0E14] ml-3">
-            <button className="mt-[8px] ml-[15px]">3</button>
+            <button className="mt-[8px] ml-[15px] font-Inter">3</button>
           </div>
           <div className="rounded w-[40px] h-[40px] bg-[#E6CFCF] hover:text-[#FFFFFF] hover:bg-[#5C0E14] ml-3">
-            <button className="mt-[8px] ml-[15px]">4</button>
+            <button className="mt-[8px] ml-[15px] font-Inter">4</button>
           </div>
           <div className="mt-[5px] ml-3">
             <button>&rarr;</button>
@@ -147,4 +149,3 @@ const Events = () => {
 };
 
 export default Events;
-
