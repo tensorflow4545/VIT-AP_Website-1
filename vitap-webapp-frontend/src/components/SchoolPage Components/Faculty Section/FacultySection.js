@@ -3,7 +3,7 @@ import React from 'react'
 
 const FacultySection = () => {
   return (
-    <div className="max-w-[1340px] mx-auto w-full h-[820px] flex justify-between px-[120px] pt-[50px] pb-[10px] ls:gap-[20px] md:gap-[0px] max-md:px-[80px] max-lx:px-[60px]">
+    <div className="max-w-[1340px] mx-auto w-full h-[820px] flex justify-between px-[120px] pt-[50px] pb-[10px] ls:gap-[20px] md:gap-[0px] max-md:px-[80px] max-lx:px-[60px] font-Emilo">
       <div className="flex-1  flex flex-col">
         <div className="mt-[20px]">
           <h1 className="text-[#5C0E14] text-[36px] font-bold mb-[10px] max-md:text-[32px]">

@@ -30,7 +30,7 @@ const AcheivementsSection = () => {
         style={{ backgroundImage: `url("/acheivementsbg.png")` }}
         className="max-w-[1560px] w-full h-full bg-center mx-auto "
       >
-        <div className="max-w-[1440px] mx-auto w-full h-[100vh] px-[120px] pt-[60px] pb-[30px] flex justify-center items-center bg-center">
+        <div className="max-w-[1440px] mx-auto w-full h-[100vh] px-[120px] pt-[60px] pb-[30px] flex justify-center items-center bg-center font-Emilo">
           <div className="flex flex-col justify-between ">
             <div className="">
               <h1 className="text-[white] text-[36px] font-bold">

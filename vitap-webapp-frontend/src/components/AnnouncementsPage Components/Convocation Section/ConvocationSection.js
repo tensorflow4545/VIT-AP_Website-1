@@ -24,7 +24,7 @@ const ConvocationSection = () => {
         </div>
       </div>
       <div className="w-[100%] min-h-[70px] h-[100%] bg-[#650010] ">
-        <div className="max-w-[1440px] mx-auto pl-[50px] text-white">
+        <div className="max-w-[1440px] mx-auto pl-[50px] text-white font-Emilo">
           <h1 className="text-[36px] font-bold">
             3<sup>rd</sup> Annual Convocation
           </h1>
