@@ -64,7 +64,7 @@ const ProgrammesOffered = () => {
             <div className="min-h-[1500px]w-full absolute md:pl-[75px] pl-[35px] max-lx:pl-[40px] pt-[55px] max-lx:pt-[30px] ">
               <h3 className="text-[16px] max-lx:text-[14px] font-semibold text-gray-500 uppercase">
                 Engineering
-              </h3> */}
+              </h3> 
 
               {programmesOffered.map((program) =>
                 program.field === active ? (
@@ -135,7 +135,7 @@ const ProgrammesOffered = () => {
             <h3 className="text-[16px] max-lx:text-[14px] font-semibold text-gray-500 uppercase">
 
               Engineering
-            </h3> */}
+            </h3> 
 
             {programmesOffered.map((program,index) =>
               program.field === active ? (
