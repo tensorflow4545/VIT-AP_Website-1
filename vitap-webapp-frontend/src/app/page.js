@@ -20,18 +20,18 @@ import ConvocationSection from "@/components/AnnouncementsPage Components/Convoc
 import PageSection from "@/components/AnnouncementsPage Components/Announcements Section/PageSection";
 import AnnouncementsSection from "@/components/AnnouncementsPage Components/Announcements Section/AnnouncementsSection";
 
-const fetchdata = async () => {
-  const reqOptions = {
-    headers: {
-      Authorization: `Bearer ${process.env.API_TOKEN}`
-    }
-  };
+// const fetchdata = async () => {
+//   const reqOptions = {
+//     headers: {
+//       Authorization: `Bearer ${process.env.API_TOKEN}`
+//     }
+//   };
 
-    const response = await fetch(`${config.api}/api/posts?populate=*`, reqOptions);
-    const data = await response.json();
-    return data;
+//     const response = await fetch(`${config.api}/api/posts?populate=*`, reqOptions);
+//     const data = await response.json();
+//     return data;
 
-};
+// };
 
 const Home = async () => {
 // const data = await fetchdata();
@@ -40,7 +40,7 @@ const Home = async () => {
   return (
     <>
       {/* <Image src={`${config.api}${data.data[0].attributes.image.data.attributes.url}`} width={400} height={100}/> */}
-      {/* <NavbarUpper />
+      <NavbarUpper />
       <NavbarBottom />
       <HeroSection />
       <About />
@@ -53,9 +53,7 @@ const Home = async () => {
       <WallOfSocials />
       <NumberAtGlance />
       <Component />
-      <Footer /> */}
-
-      <AnnouncementsSection />
+      <Footer />
       {/* <PageSection /> */}
       {/* <ConvocationSection /> */}
     </>

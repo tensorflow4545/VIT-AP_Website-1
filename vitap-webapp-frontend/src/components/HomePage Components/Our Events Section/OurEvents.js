@@ -33,8 +33,10 @@ const OurEvents = () => {
 
   return (
     <>
+
       <div className="flex-col mt-[0px] hidden min-h-[800px] ls:flex ">
         <div className="w-full bg-backgroundRed h-[420px] px-[110px] max-md:px-[40px]  max-ls:px-[30px] py-2">
+
           <div className="flex justify-between items-center mt-[20px] cursor-pointer">
             <h1 className="text-[#51060D] font-Emilo text-[48px] font-bold max-lx:text-[32px]">
               Our Events
