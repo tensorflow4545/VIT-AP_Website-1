@@ -26,7 +26,7 @@ export const researchNumbers = [
     },
     {
         id: 3,
-        number: "1.5Cr",
+        number: 1.5,
         name: "Sponsored Budget"
     }
 ]
@@ -129,24 +129,100 @@ export const programmesOffered = [
   },
 ];
 
-
-export const Schools = [
+export const announcements = [
   {
     id: 1,
-    imgUrl: "/assets/images/Homepage Images/Schools/SAS.jpg",
-    title: "VTAPP Internation Tech Fest by VIT-AP",
-    date: "19th Sept",
+    content:
+      "Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
   },
   {
     id: 2,
-    imgUrl: "/assets/images/Homepage Images/Schools/",
-    title: "VTAPP Internation Tech Fest by VIT-AP",
-    date: "19th Sept",
+    content:
+      "Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
   },
   {
     id: 3,
-    imgUrl: "/eventImages/3.jpeg",
-    title: "VTAPP Internation Tech Fest by VIT-AP",
-    date: "19th Sept",
+    content:
+      "Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
+  },
+  {
+    id: 4,
+    content: "3rd Annual Convocation",
+  },
+  {
+    id: 5,
+    content: "3rd Annual Convocation",
+  },
+  {
+    id: 6,
+    content: "3rd Annual Convocation",
+  },
+  {
+    id: 7,
+    content:
+      "Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
+  },
+  {
+    id: 8,
+    content: "3rd Annual Convocation",
+  },
+  {
+    id: 9,
+    content: "CSI Meet'n Greet 23",
+  },
+  {
+    id: 10,
+    content: "CSI Meet'n Greet 23",
+  },
+  {
+    id: 11,
+    content: "CSI Meet'n Greet 23",
+  },
+  {
+    id: 12,
+    content: "CSI Meet'n Greet 23",
+  },
+];
+
+export const announcements2 = [
+  {
+    id: 1,
+    content: "CSI Meet'n Greet 23",
+  },
+  {
+    id: 2,
+    content:
+      "Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
+  },
+  {
+    id: 3,
+    content: "3rd Annual Convocation",
+  },
+];
+
+export const acheivements = [
+  {
+    id: 1,
+    date: "11 Sep2023",
+    heading:
+      "50,000 seed Balls aerially dispersed In Vijayawada District, Andhra Pradesh in Collaboration with Indian Navy",
+    description:
+      "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur.",
+  },
+  {
+    id: 1,
+    date: "12 Sep2023",
+    heading:
+      "50,000 seed Balls aerially dispersed In Vijayawada District, Andhra Pradesh in Collaboration with Indian Navy",
+    description:
+      "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur.",
+  },
+  {
+    id: 2,
+    date: "13 Sep2023",
+    heading:
+      "50,000 seed Balls aerially dispersed In Vijayawada District, Andhra Pradesh in Collaboration with Indian Navy",
+    description:
+      "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur.",
   },
 ];
