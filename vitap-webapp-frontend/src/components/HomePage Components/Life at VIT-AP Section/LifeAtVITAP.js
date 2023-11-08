@@ -1,14 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import exp1 from "../../../assets/images/explorePhotos/explore1.png";
-import exp2 from "../../../assets/images/explorePhotos/explore2.png";
-import exp3 from "../../../assets/images/explorePhotos/explore3.png";
-import exp4 from "../../../assets/images/explorePhotos/explore4.png";
-import exp5 from "../../../assets/images/explorePhotos/explore5.png";
-import exp6 from "../../../assets/images/explorePhotos/explore6.png";
-import exp7 from "../../../assets/images/explorePhotos/explore7.png";
-import exp8 from "../../../assets/images/explorePhotos/explore8.png";
-import exp9 from "../../../assets/images/explorePhotos/explore9.png";
+import exp1 from "@/assets/images/explorePhotos/explore1.png";
+import exp2 from "@/assets/images/explorePhotos/explore2.png";
+import exp3 from "@/assets/images/explorePhotos/explore3.png";
+import exp4 from "@/assets/images/explorePhotos/explore4.png";
+import exp5 from "@/assets/images/explorePhotos/explore5.png";
+import exp6 from "@/assets/images/explorePhotos/explore6.png";
+import exp7 from "@/assets/images/explorePhotos/explore7.png";
+import exp8 from "@/assets/images/explorePhotos/explore8.png";
+import exp9 from "@/assets/images/explorePhotos/explore9.png";
+
 
 const Life = () => {
   return (
@@ -68,10 +69,10 @@ const Life = () => {
           height={202}
           className="absolute bottom-[10px] right-[10%]"
         />
-        <h4 className="mt-[210px] text-[24px] text-center items-center relative text-[#5C0E14] font-Emilio font-bold">
+        <h4 className="mt-[210px] text-[24px] text-center items-center relative text-[#5C0E14] font-Emilo font-bold">
           <i>Explore our campus</i>
         </h4>
-        <h1 className="text-[80px] mt-[5px] text-center items-center relative font-Emilio font-bold">
+        <h1 className="text-[80px] mt-[5px] text-center items-center relative font-Emilo font-bold">
           Life @ VIT-AP
         </h1>
         <p className="w-[616px] h-[54px] text-center mt-3">
