@@ -55,19 +55,19 @@ const Life = () => {
           src={exp7}
           width={272}
           height={200}
-          className="absolute left-[10%] bottom-[10px]"
+          className="absolute left-[10%] bottom-[9%]"
         />
         <Image
           src={exp8}
           width={280}
           height={202}
-          className="absolute bottom-0 left-[41%]"
+          className="absolute bottom-[9%] left-[41%]"
         />
         <Image
           src={exp9}
           width={280}
           height={202}
-          className="absolute bottom-[10px] right-[10%]"
+          className="absolute bottom-[9%] right-[10%]"
         />
         <h4 className="mt-[210px] text-[24px] text-center items-center relative text-[#5C0E14] font-Emilo font-bold">
           <i>Explore our campus</i>

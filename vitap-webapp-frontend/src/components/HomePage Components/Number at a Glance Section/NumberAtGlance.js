@@ -9,7 +9,7 @@ export default function placements(){
                 <div class="basis-1/2">
                 <div class="numbers pr-40">
                      <h1 class="numberheader" >Number at Glance</h1>
-                     <p class="numbertext">Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                     <p class="numbertext text-justify">Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                      Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
                 <div class="stats">
