@@ -50,7 +50,11 @@ const Home = async () => {
       <WallOfSocials />
       <NumberAtGlance />
       <Component />
-      <Footer />
+      <Footer /> 
+
+      <AnnouncementsSection />
+      {/* <PageSection /> */}
+      {/* <ConvocationSection /> */}
     </>
   );
 }

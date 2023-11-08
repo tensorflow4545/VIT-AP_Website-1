@@ -6,6 +6,7 @@ import Card from './Card';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 import Image from 'next/image';
 import { RxDotFilled } from 'react-icons/rx';
+import Link from 'next/link';
 
 const OurEvents = () => {
 
@@ -41,10 +42,10 @@ const OurEvents = () => {
             <h1 className="text-[#51060D] font-Emilio text-[48px] font-bold max-lx:text-[32px]">
               Our Events
             </h1>
-            <div className="flex flex-row gap-2 items-center justify-center relative  transition-all duration-300 ease-in">
-              <div className="Rectangle91 w-[32px] h-[30px] left-[80px] top-[-3px] absolute bg-[#5C0E14] opacity-20 transition-transform hover:left-[-10px] hover:w-[125px]"></div>
-              <h1 className="mr-4 text-[#5C0E14]">See All</h1>
-              <hr className=" h-[3px] w-[36px] font-medium bg-[#5C0E14] max-lx:w-[28px]" />
+            <div className="flex flex-row items-center justify-center relative  transition-all duration-300 ease-in group">
+              <div className="Rectangle91 w-[32px] h-[30px] left-[40px] top-[-3px] absolute bg-[#5C0E14] opacity-20 transition-transform group-hover:left-[-10px] group-hover:w-[90px] group-hover:transition-all group-hover:duration-300 group-hover:ease-in-out "></div>
+              <Link href={"/"} className="mr-2 text-[#5C0E14] font-bold">See All</Link>
+              <hr className=" h-[4px] w-[36px] font-bold bg-[#5C0E14] max-lx:w-[28px]" />
             </div>
           </div>
           <h1 className="font-Montserrat text-[18px] text-secondary max-w-[787px] pt-3">

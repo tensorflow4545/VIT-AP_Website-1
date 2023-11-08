@@ -226,3 +226,125 @@ export const acheivements = [
       "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur.",
   },
 ];
+
+export const professors = [
+  {
+    id: 1,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 2,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 3,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 4,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 5,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 6,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 7,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 8,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 9,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 10,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 11,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 12,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 13,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 14,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 15,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 16,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 17,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+]

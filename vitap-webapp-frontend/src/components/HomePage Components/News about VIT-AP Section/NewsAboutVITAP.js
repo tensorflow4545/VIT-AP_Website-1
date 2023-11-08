@@ -10,6 +10,25 @@ import arrow from "@/assets/images/newsPhotos/Vector.png";
 
 const News = () => {
   return (
+<<<<<<< HEAD
+    <>
+      <div className="bg-white h-screen">
+        <div className="flex items-center justify-between">
+          <h2 className="text-[#51060D] font-Emilo text-[60px] mt-[50px] ml-[100px] mb-[10px] text-left">
+            News about VIT-AP
+          </h2>
+          <div className="flex items-center justify-center mr-[50px] mt-10 group">
+            <div class="Rectangle91 w-[50px] h-[30px] absolute bg-[#5C0E14] opacity-20 transition-transform group-hover:right-[90px] group-hover:w-[125px] group-hover:transition-all group-hover:duration-300"></div>
+            <h1 className="text-[#5C0E14]">View More &nbsp;</h1>
+            <div class="Arrow w-[50px] border-2 border-solid border-[#5C0E14]"></div>
+          </div>
+
+        </div>
+
+        {/* <div className="flex justify-end pt-[80px] ml-[674px]">
+          <h1 className="text-[#FFFFFF] text-[25px]">See all</h1>
+        </div> */}
+=======
     <div className="bg-white h-screen">
       <div className="flex items-center justify-between">
         <h2 className="text-[#51060D] font-Emilio text-[60px] mt-[50px] ml-[100px] mb-[10px] text-left">
@@ -21,6 +40,7 @@ const News = () => {
           <div className="Arrow w-[50px] border-2 border-solid border-[#5C0E14]"></div>
         </div>
       </div>
+>>>>>>> bb81486f8b94d9c089ada71ba0a9328cae34a1ad
 
       <div className="flex ml-[240px] mt-[20px]">
         <div className="w-[320px] h-[450px] bg-white ml-[24px] border-b shadow-2xl border-gray-800 section">
