@@ -38,7 +38,7 @@ const Socials = () => {
           <p className="mt-[30px] ml-[108px] font-Montserrat text-[#0F0F0F] text-[21px]">
             Follow us on our socials
           </p>
-          <div className="w-[300px] h-[44px] ml-[108px] mt-[22px] flex">
+          <div className="w-[300px] h-[44px] ml-[108px] mt-[22px] flex transition-transform transform hover:scale-105">
             <div className="w-[40px] h-[40px] rounded bg-[#DCCED0] relative">
               <Link href="https://www.instagram.com/vitap.university/?hl=en">
                 <Image
@@ -51,7 +51,7 @@ const Socials = () => {
               Follow us on Instagram
             </p>
           </div>
-          <div className="w-[300px] h-[44px] ml-[108px] mt-[22px] flex">
+          <div className="w-[300px] h-[44px] ml-[108px] mt-[22px] flex transition-transform transform hover:scale-105">
             <div className="w-[40px] h-[40px] rounded bg-[#DCCED0] relative">
               <Link href="https://twitter.com/VITAPuniversity?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
                 <Image
@@ -64,7 +64,7 @@ const Socials = () => {
               Tweet with us on X
             </p>
           </div>
-          <div className="w-[350px] h-[44px] ml-[108px] mt-[22px] flex">
+          <div className="w-[350px] h-[44px] ml-[108px] mt-[22px] flex transition-transform transform hover:scale-105">
             <div className="w-[40px] h-[40px] rounded bg-[#DCCED0] relative">
               <Link href="https://www.linkedin.com/school/vitap-university/?originalSubdomain=in">
                 <Image
@@ -77,7 +77,7 @@ const Socials = () => {
               Grow with us on LinkedIn
             </p>
           </div>
-          <div className="w-[300px] h-[44px] ml-[108px] mt-[22px] flex">
+          <div className="w-[300px] h-[44px] ml-[108px] mt-[22px] flex transition-transform transform hover:scale-105">
             <div className="w-[40px] h-[40px] rounded bg-[#DCCED0] relative">
               <Link href="https://www.facebook.com/vitap.university/">
                 <Image
@@ -90,7 +90,7 @@ const Socials = () => {
               Like us on Facebook
             </p>
           </div>
-          <div className="w-[300px] h-[44px] ml-[108px] mt-[22px] flex">
+          <div className="w-[300px] h-[44px] ml-[108px] mt-[22px] flex transition-transform transform hover:scale-105">
             <div className="w-[40px] h-[40px] rounded bg-[#DCCED0] relative">
               <Link href="https://www.youtube.com/c/VITAP">
                 <Image
