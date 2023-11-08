@@ -30,10 +30,11 @@ const News = () => {
             height={311}
             className="top-[223px] left-[108px]"
           />
+                    <p className="ml-[24px] mt-[21px]">Date: 04.10.2023</p>
+
           <h3 className="text-[#1B1C1E] font-Emilio font-bold ml-[24px] mt-[21px] text-[20px]">
             First-ever AI musical concert held at VIT-AP University
           </h3>
-          <p className="ml-[24px] mt-[21px]">Date: 04.10.2023</p>
           <button className="flex ml-[24px] mt-[50px] rounded-full hover:bg-[#5C0E14] group">
             <div className="w-[40px] h-[40px] bg-white rounded-full group-hover:w-[190px] group-hover:h-[40px] group-hover:bg-[#5C0E14]"></div>
             <Image
@@ -53,10 +54,11 @@ const News = () => {
             height={311}
             className="top-[223px] left-[108px]"
           />
+                    <p className="ml-[24px] mt-[21px]">Date: 27.09.2023</p>
+
           <h3 className="text-[#1B1C1E] font-Emilio font-bold ml-[24px] mt-[21px] text-[20px]">
             3rd Annual Convocation - 2023
           </h3>
-          <p className="ml-[24px] mt-[21px]">Date: 27.09.2023</p>
           <button className="flex ml-[24px] mt-[50px] rounded-full hover-bg-[#5C0E14] group">
             <div className="w-[40px] h-[40px] bg-white rounded-full group-hover:w-[190px] group-hover:h-[40px] group-hover:bg-[#5C0E14]"></div>
             <Image
@@ -76,10 +78,11 @@ const News = () => {
             height={311}
             className="top-[223px] left-[108px]"
           />
+                    <p className="ml-[24px] mt-[21px]">Date: 09.09.2023</p>
+
           <h3 className="text-[#1B1C1E] font-Emilio font-bold ml-[24px] mt-[21px] text-[20px]">
             VIT-AP Men's Basketball team wins gold medal
           </h3>
-          <p className="ml-[24px] mt-[21px]">Date: 09.09.2023</p>
           <button className="flex ml-[24px] mt-[30px] rounded-full hover-bg-[#5C0E14] group">
             <div className="w-[40px] h-[40px] bg-white rounded-full group-hover:w-[190px] group-hover:h-[40px] group-hover:bg-[#5C0E14]"></div>
             <Image
