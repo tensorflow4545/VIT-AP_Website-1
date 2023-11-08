@@ -12,7 +12,7 @@ const News = () => {
   return (
     <div className="bg-white h-screen">
       <div className="flex items-center justify-between">
-        <h2 className="text-[#51060D] font-Emilio text-[60px] mt-[50px] ml-[100px] mb-[10px] text-left">
+        <h2 className="text-[#51060D] font-Emilio font-bold text-[48px] mt-[50px] ml-[100px] mb-[10px] text-left">
           News about VIT-AP
         </h2>
         <div className="flex items-center justify-center mr-[50px] mt-10">

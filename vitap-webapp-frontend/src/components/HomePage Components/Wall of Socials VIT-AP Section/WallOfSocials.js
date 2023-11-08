@@ -20,7 +20,7 @@ const Socials = () => {
     <>
       <div className="bg-[#FDFEFF] flex h-screen">
         <div>
-          <p className="mt-[40px] ml-[108px] text-[#5C0E14] text-[22px] font-Emilo font-bold">
+          <p className="mt-[40px] ml-[108px] text-[#5C0E14] text-[22px] font-Emilio font-bold">
             <i>Stay Connected</i>
           </p>
           <p className="mt-[16px] ml-[108px] w-[293px] text-[40px] text-[#1B1C1E] font-Emilo font-bold">
@@ -39,7 +39,7 @@ const Socials = () => {
               </Link>
 
             </div>
-            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px] group-hover:font-bold duration-300 group-hover:font-bold">
+            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px] group-hover:font-bold duration-300 group-hover:font-bold group-hover:text-primary">
               <a href="https://www.instagram.com/vitap.university/?hl=en" target="_blank">Follow us on Instagram</a>
             </p>
           </div>
@@ -50,7 +50,7 @@ const Socials = () => {
             </div>
             </Link>
 
-            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px] group-hover:font-bold duration-300 group-hover:font-bold">
+            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px] group-hover:font-bold duration-300 group-hover:font-bold group-hover:text-primary">
             <a href="https://twitter.com/VITAPuniversity?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Tweet with us on X</a>
             </p>
           </div>
@@ -64,7 +64,7 @@ const Socials = () => {
               </Link>
 
             </div>
-            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px] group-hover:font-bold duration-300 group-hover:font-bold">
+            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px] group-hover:font-bold duration-300 group-hover:font-bold group-hover:text-primary">
             <a href="https://www.linkedin.com/school/vitap-university/?originalSubdomain=in" target="_blank">Grow with us on LinkedIn</a>
             </p>
           </div>
@@ -78,7 +78,7 @@ const Socials = () => {
               </Link>
 
             </div>
-            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px] group-hover:font-bold duration-300 group-hover:font-bold">
+            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px] group-hover:font-bold duration-300 group-hover:font-bold group-hover:text-primary">
               <a href="https://www.facebook.com/vitap.university/" target="_blank">Like us on Facebook</a>
             </p>
           </div>
@@ -91,7 +91,7 @@ const Socials = () => {
               />
         </Link>
             </div>
-            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px] group-hover:font-bold duration-300 group-hover:font-bold">
+            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px] group-hover:font-bold duration-300 group-hover:font-bold group-hover:text-primary">
               <a href="https://www.youtube.com/c/VITAP" target="_blank">Watch us on Youtube </a>
             </p>
           </div>

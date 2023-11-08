@@ -140,8 +140,6 @@ import {
                   <a className="creditlink">Terms of Use</a>
                   <a className="creditlink">Copyright</a>
                   <a className="creditlink">Trademarks</a>
-                  <a className="creditlink">Non- Discrimination</a>
-                  <a className="creditlink">Accessibility</a>
                 </div>
               </div>
               
