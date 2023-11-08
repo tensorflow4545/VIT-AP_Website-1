@@ -1,5 +1,6 @@
 git pull
 cd vitap-webapp-frontend
+npm install
 npm run build
 ln -S out ~/Vitiebot/static
 cd ..
