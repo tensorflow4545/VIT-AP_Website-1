@@ -17,18 +17,18 @@ import NumberAtGlance from "@/components/HomePage Components/Number at a Glance 
 import Footer from "@/components/HomePage Components/Footer Section/Footer";
 import Component from "@/components/HomePage Components/Footer Section/Component";
 
-const fetchdata = async () => {
-  const reqOptions = {
-    headers: {
-      Authorization: `Bearer ${process.env.API_TOKEN}`
-    }
-  };
+// const fetchdata = async () => {
+//   const reqOptions = {
+//     headers: {
+//       Authorization: `Bearer ${process.env.API_TOKEN}`
+//     }
+//   };
 
-    const response = await fetch(`${config.api}/api/posts?populate=*`, reqOptions);
-    const data = await response.json();
-    return data;
+//     const response = await fetch(`${config.api}/api/posts?populate=*`, reqOptions);
+//     const data = await response.json();
+//     return data;
 
-};
+// };
 
 const Home = async () => {
 // const data = await fetchdata();
@@ -39,18 +39,18 @@ const Home = async () => {
       {/* <Image src={`${config.api}${data.data[0].attributes.image.data.attributes.url}`} width={400} height={100}/> */}
       <NavbarUpper />
       <NavbarBottom />
-      <HeroSection /> 
+      <HeroSection />
       <About />
       <OurSchools />
-      <ProgrammesOffered /> 
-      <OurEvents /> 
+      <ProgrammesOffered />
+      <OurEvents />
       <ResearchInnovation />
-      <LifeAtVITAP/>
-      <NewsAboutVITAP/>
-      <WallOfSocials/>
-      <NumberAtGlance/>
-      <Component/>
-      <Footer/>
+      <LifeAtVITAP />
+      <NewsAboutVITAP />
+      <WallOfSocials />
+      <NumberAtGlance />
+      <Component />
+      <Footer />
     </>
   );
 }
