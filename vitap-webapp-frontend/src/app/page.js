@@ -17,18 +17,18 @@ import NumberAtGlance from "@/components/HomePage Components/Number at a Glance 
 import Footer from "@/components/HomePage Components/Footer Section/Footer";
 import Component from "@/components/HomePage Components/Footer Section/Component";
 
-const fetchdata = async () => {
-  const reqOptions = {
-    headers: {
-      Authorization: `Bearer ${process.env.API_TOKEN}`
-    }
-  };
+// const fetchdata = async () => {
+//   const reqOptions = {
+//     headers: {
+//       Authorization: `Bearer ${process.env.API_TOKEN}`
+//     }
+//   };
 
-    const response = await fetch(`${config.api}/api/posts?populate=*`, reqOptions);
-    const data = await response.json();
-    return data;
+//     const response = await fetch(`${config.api}/api/posts?populate=*`, reqOptions);
+//     const data = await response.json();
+//     return data;
 
-};
+// };
 
 const Home = async () => {
 // const data = await fetchdata();
@@ -50,8 +50,11 @@ const Home = async () => {
       <WallOfSocials />
       <NumberAtGlance />
       <Component />
-      <Footer />
+      <Footer /> 
 
+      <AnnouncementsSection />
+      {/* <PageSection /> */}
+      {/* <ConvocationSection /> */}
     </>
   );
 }
