@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 // import headerimage from "../../../assets/images/Homepage Images/HeaderImage.png";
-import headerimage2 from "../../../assets/images/Homepage Images/HeaderImage2.png";
+import headerimage2 from "../../../assets/images/Homepage Images/headerimage1280-720.png";
 import { BsArrowRight } from "react-icons/bs";
 import config from "@/config";
 import { Carousel } from "@material-tailwind/react";
@@ -31,30 +31,35 @@ const HeroSection = () => {
 
   return (
     <>
-      <Carousel className=" h-screen">
-
+      <Carousel className=" h-screen w-full">
         <div className="w-full h-full object-cover relative ">
           <div className="absolute w-full h-full bg-black opacity-70 bg-gradient-to-b from-blue-gray-900 to-blue-gray-800"></div>
-        <video autoPlay loop className="h-full w-full object-cover">
-          <source src="/intro.mp4" />
-        </video>
+          <video autoPlay loop className="h-full w-full object-cover">
+            <source src="/intro.mp4" />
+          </video>
         </div>
 
         <img
-          src="../../../assets/images/Homepage Images/HeaderImage2.png"
+          src="/acheivements1.jpeg"
           alt="image 1"
           className="h-full w-full object-cover"
         />
 
-
         <img
-          src="../../../assets/images/Homepage Images/HeaderImage2.png"
+          src="/headerimage1280-720.png"
           alt="image 2"
           className="h-full w-full object-cover"
         />
+
         <img
-          src="../../../assets/images/Homepage Images/HeaderImage2.png"
+          src="/convocation.jpeg"
           alt="image 3"
+          className="h-full w-full object-cover"
+        />
+
+        <img
+          src="/image.png"
+          alt="image 1"
           className="h-full w-full object-cover"
         />
       </Carousel>
