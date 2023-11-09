@@ -1,14 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import exp1 from "../../../assets/images/explorePhotos/explore1.png";
-import exp2 from "../../../assets/images/explorePhotos/explore2.png";
-import exp3 from "../../../assets/images/explorePhotos/explore3.png";
-import exp4 from "../../../assets/images/explorePhotos/explore4.png";
-import exp5 from "../../../assets/images/explorePhotos/explore5.png";
-import exp6 from "../../../assets/images/explorePhotos/explore6.png";
-import exp7 from "../../../assets/images/explorePhotos/explore7.png";
-import exp8 from "../../../assets/images/explorePhotos/explore8.png";
-import exp9 from "../../../assets/images/explorePhotos/explore9.png";
+import exp1 from "@/assets/images/explorePhotos/explore1.png";
+import exp2 from "@/assets/images/explorePhotos/explore2.png";
+import exp3 from "@/assets/images/explorePhotos/explore3.png";
+import exp4 from "@/assets/images/explorePhotos/explore4.png";
+import exp5 from "@/assets/images/explorePhotos/explore5.png";
+import exp6 from "@/assets/images/explorePhotos/explore6.png";
+import exp7 from "@/assets/images/explorePhotos/explore7.png";
+import exp8 from "@/assets/images/explorePhotos/explore8.png";
+import exp9 from "@/assets/images/explorePhotos/explore9.png";
+
 
 const Life = () => {
   return (
@@ -54,19 +55,19 @@ const Life = () => {
           src={exp7}
           width={272}
           height={200}
-          className="absolute left-[10%] bottom-[10px]"
+          className="absolute left-[10%] bottom-[9%]"
         />
         <Image
           src={exp8}
           width={280}
           height={202}
-          className="absolute bottom-0 left-[41%]"
+          className="absolute bottom-[9%] left-[41%]"
         />
         <Image
           src={exp9}
           width={280}
           height={202}
-          className="absolute bottom-[10px] right-[10%]"
+          className="absolute bottom-[9%] right-[10%]"
         />
         <h4 className="mt-[210px] text-[24px] text-center items-center relative text-[#5C0E14] font-Emilo font-bold">
           <i>Explore our campus</i>

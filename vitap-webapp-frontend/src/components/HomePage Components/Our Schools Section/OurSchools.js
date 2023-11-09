@@ -74,7 +74,7 @@ const OurSchools = async () => {
               />
               <div className="absolute top-[190px] text-white  px-[14px] font-semibold flex-col">
                 <h1 className="leading-[23px] font-Emilio text-[20px] ">
-                  School of Electical and Electronics Engineering
+                  School of Electronics Engineering
                 </h1>
                 <h1 className="font-Montserrat text-[13px] font-medium flex items-center">
                   Explore Now{" "}
@@ -114,7 +114,7 @@ const OurSchools = async () => {
               />
               <div className="absolute top-[200px] text-white  px-[14px] font-semibold flex flex-col ">
                 <h1 className="leading-[26px] font-Emilio text-[20px]">
-                  VIT School of Law
+                  School of Law
                 </h1>
                 <h1 className="font-Montserrat text-[13px] font-medium flex items-center">
                   Explore Now{" "}

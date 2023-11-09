@@ -35,7 +35,7 @@ const NavbarUpper = () => {
 
   return (
     <>
-      <div className="z-auto w-full h-[45px] text-white bg-primary md:flex ls:flex sm:hidden justify-between items-center px-[37px]">
+      <div className="z-auto w-full h-[40px] text-white bg-primary md:flex ls:flex sm:hidden justify-between items-center px-[37px]">
         <div className="flex  h-[20px] md:space-x-[10px] ls:space-x-[20px] text-[14px] items-center ">
           {/* {navlinks.map((item) =>{
               return(
@@ -62,7 +62,7 @@ const NavbarUpper = () => {
               />
             </svg>
 
-            <h1  className="text-[18px]">CAMPUSES</h1>
+            <h1  className="text-[16px]">CAMPUSES</h1>
 
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +103,7 @@ const NavbarUpper = () => {
 
           </div> */}
 
-        <ul className="flex font-Montserrant h-[20px] md:space-x-[31px] ls:space-x-[20px]  text-[18px] ">
+        <ul className="flex font-Montserrant h-[20px] md:space-x-[31px] ls:space-x-[20px]  text-[16px] ">
           <li>
             <a>Alumini</a>
           </li>
