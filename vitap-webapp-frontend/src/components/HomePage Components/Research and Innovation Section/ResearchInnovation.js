@@ -71,7 +71,8 @@ const ResearchInnovation = () => {
           onEnter={() => setCounterOn(true)}
           onExit={() => setCounterOn(false)}
         >
-          <div className="flex max-ls:flex-col max-ls:justify-center max-ls:items-center flex-wrap max-w-[1100px] w-[100%] min-h-[240px] justify-between mt-[30px] max-ls:gap-1 md:ml-[120px] lg:ml-[70px] max-lg:max-w-[940px] max-md:ml-[40px]">
+          <div className=" max-w-[1000px] mx-auto">
+          <div className="flex max-ls:flex-col max-ls:justify-center max-ls:items-center flex-wrap  w-[100%] min-h-[240px] justify-between mt-[30px] max-ls:gap-1 md:ml-[120px] lg:ml-[0px] max-lg:max-w-[920px] max-md:ml-[0px]">
             {researchNumbers.map((item) => (
               <div key={item.id} className="flex-start">
                 <h1 className="text-[#5C0E14] text-[48px] max-lx:text-[38px] max-ls:text-[32px] font-bold">
@@ -91,6 +92,7 @@ const ResearchInnovation = () => {
                 </p>
               </div>
             ))}
+          </div>
           </div>
         </ScrollTrigger>
       </div>
