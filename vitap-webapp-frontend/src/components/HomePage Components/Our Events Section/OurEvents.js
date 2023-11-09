@@ -40,7 +40,7 @@ const OurEvents = () => {
 
           <div className="flex justify-between items-center mt-[20px] cursor-pointer">
             <h1 className="text-[#51060D] font-Emilio text-[48px] font-bold max-lx:text-[32px]">
-              Our Events
+              Events and Happenings
             </h1>
             {/* <div className="flex flex-row gap-2 items-center justify-center relative  transition-all duration-300 ease-in">
               <div className="Rectangle91 w-[32px] h-[30px] left-[80px] top-[-3px] absolute bg-[#5C0E14] opacity-20 transition-transform hover:left-[-10px] hover:w-[125px]"></div>

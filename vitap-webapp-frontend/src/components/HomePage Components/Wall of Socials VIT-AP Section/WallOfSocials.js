@@ -6,9 +6,15 @@ import twitter from "../../../assets/images/socialIcons/twitter.png";
 import linkin from "../../../assets/images/socialIcons/linkedin.png";
 import fb from "../../../assets/images/socialIcons/fb.png";
 import yt from "../../../assets/images/socialIcons/yt.png";
-import img1 from "../../../assets/images/socialImages/Img 1.png";
-import img2 from "../../../assets/images/socialImages/Img 2.png";
-import img3 from "../../../assets/images/socialImages/Img 3.png";
+import img1 from "../../../assets/images/socialImages/image 1.jpg";
+import img2 from "../../../assets/images/socialImages/image 2.jpg";
+import img3 from "../../../assets/images/socialImages/image 3.jpg";
+import img4 from "../../../assets/images/socialImages/image 4.jpg";
+import img5 from "../../../assets/images/socialImages/image 5.jpg";
+import img6 from "../../../assets/images/socialImages/image 6.jpg";
+import img7 from "../../../assets/images/socialImages/image 7.jpg";
+import img8 from "../../../assets/images/socialImages/image 8.jpg";
+import img9 from "../../../assets/images/socialImages/image 9.jpg";
 import logo from "../../../assets/images/socialImages/vitapLogo.png";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
@@ -160,7 +166,7 @@ const Socials = () => {
         <div className="ml-[64.96px] overflow-hidden">
           <div className="relative">
             <div className="card1 mt-[55px] relative inline-block group">
-              <Image src={img1} width={233} height={233} />
+              <Image src={img4} width={233} height={233} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 hover:bg-black group-hover:bg-opacity-80">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
@@ -179,7 +185,7 @@ const Socials = () => {
               </div>
             </div>
             <div className="card2 relative inline-block group">
-              <Image src={img2} width={233} height={233} />
+              <Image src={img5} width={233} height={233} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 hover:bg-black group-hover:bg-opacity-80">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
@@ -198,7 +204,7 @@ const Socials = () => {
               </div>
             </div>
             <div className="card3 relative inline-block group">
-              <Image src={img3} width={233} height={233} />
+              <Image src={img6} width={233} height={233} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 hover:bg-black group-hover:bg-opacity-80">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
@@ -221,7 +227,7 @@ const Socials = () => {
         <div className="ml-[64.96px] overflow-hidden">
           <div className="relative">
             <div className="card1 relative inline-block group">
-              <Image src={img1} width={233} height={233} />
+              <Image src={img7} width={233} height={233} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900  hover:bg-black group-hover:bg-opacity-80">
                 <Image src={logo} className="absolute ml-[5px] mt-[200px]" />
                 <SocialIcon
@@ -240,7 +246,7 @@ const Socials = () => {
               </div>
             </div>
             <div className="card2 relative inline-block group">
-              <Image src={img2} width={233} height={233} />
+              <Image src={img8} width={233} height={233} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900  hover:bg-black group-hover:bg-opacity-80">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
@@ -259,7 +265,7 @@ const Socials = () => {
               </div>
             </div>
             <div className="card3 relative inline-block group ">
-              <Image src={img3} width={233} height={233} />
+              <Image src={img9} width={233} height={233} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 hover:bg-black group-hover:bg-opacity-80">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon

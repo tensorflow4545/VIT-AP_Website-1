@@ -67,7 +67,7 @@ const Life = () => {
           src={exp9}
           width={280}
           height={202}
-          className="absolute bottom-[9%] right-[10%]"
+          className="absolute top-[9%] right-[10%]"
         />
         <h4 className="mt-[210px] text-[24px] text-center items-center relative text-[#5C0E14] font-Emilo font-bold">
           <i>Explore our campus</i>

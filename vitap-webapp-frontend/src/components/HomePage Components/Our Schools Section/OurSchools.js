@@ -38,10 +38,7 @@ const OurSchools = async () => {
             Our Schools
           </h1>
           <h1 className="font-Montserrat text-[18px] text-secondary w-full">
-            At VIT-AP the entire teaching-learning process is concentrated
-            around six schools. A research center is also part of the schools,
-            that encourages students to participate in exciting research
-            projects amongst these departments.
+            At VIT-AP the entire teaching-learning process is concentrated around seven schools for preparing students to make meaningful contributions to society as engaged citizens and leaders in a complex world.
           </h1>
           <div class="grid grid-cols-4 justify-center mt-5 items-center">
             <div className="w-[270px] h-[290px] ml-[46px] relative group">

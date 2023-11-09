@@ -36,14 +36,14 @@ const ProgrammesOffered = () => {
               </h1>
               <h1
                 className={`font-Montserrat lx:text-[20px] text-[16px] py-[19px] md:px-[23px] ${
-                  active === "integrated" ? "border border-zinc-200" : ""
+                  active === "Dual Degree" ? "border border-zinc-200" : ""
                 } cursor-pointer w-full first-letter`}
-                onClick={() => setActive("integrated")}
+                onClick={() => setActive("Dual Degree")}
               >
-                Integrated
+                Dual Degree
               </h1>
               <h1
-                className={`font-Montserrat lx:text-[18px] text-[14px] py-[19px] md:px-[23px] ${
+                className={`font-Montserrat lx:text-[18px] text-[16px] py-[19px] md:px-[23px] ${
                   active === "postgraduate" ? "border border-zinc-200" : ""
                 } cursor-pointer w-full first-letter`}
                 onClick={() => setActive("postgraduate")}
@@ -51,7 +51,7 @@ const ProgrammesOffered = () => {
                 Postgraduate
               </h1>
               <h1
-                className={`font-Montserrat lx:text-[18px] text-[14px] py-[19px] md:px-[23px] ${
+                className={`font-Montserrat lx:text-[18px] text-[16px] py-[19px] md:px-[23px] ${
                   active === "doctorial" ? "border border-zinc-200" : ""
                 } cursor-pointer w-full first-letter`}
                 onClick={() => setActive("doctorial")}
@@ -107,11 +107,11 @@ const ProgrammesOffered = () => {
               Undergraduate
             </li>
             <li
-              className={`py-[10px] px-[10px] ${active === "integrated" ? "border border-zinc-200" : ""
+              className={`py-[10px] px-[10px] ${active === "Dual Degree" ? "border border-zinc-200" : ""
                 }`}
-              onClick={() => setActive("integrated")}
+              onClick={() => setActive("Dual Degree")}
             >
-              Integrated
+              Dual Degree
             </li>
             <li
               className={`py-[10px] px-[10px] ${active === "postgraduate" ? "border border-zinc-200" : ""
