@@ -1,4 +1,4 @@
-git pull
+printf "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\n" | git pull
 cd vitap-webapp-frontend
 npm install
 npm run build
