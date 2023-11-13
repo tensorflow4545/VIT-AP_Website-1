@@ -35,22 +35,26 @@ const HeroSection = () => {
       <Carousel className=" h-screen w-full">
         <div className="w-full h-full object-cover relative ">
           <div className="absolute w-full h-full bg-black opacity-70 bg-gradient-to-b from-blue-gray-900 to-blue-gray-800"></div>
-          <video autoPlay loop className="h-full w-full object-cover">
+          <video autoPlay muted loop className="h-full w-full object-cover">
             <source src="/intro.mp4" />
           </video>
         </div>
+        <div className="w-full h-full object-cover relative ">
+          <div className="absolute w-full h-full bg-black opacity-40 bg-gradient-to-b from-blue-gray-900 to-blue-gray-800"></div>
+          <img
+            src="/acheivements1.jpeg"
+            alt="image 1"
+            className="h-full w-full object-cover"
+          />
+        </div>
 
-        <img
-          src="/acheivements1.jpeg"
-          alt="image 1"
-          className="h-full w-full object-cover"
-        />
-
-        <img
-          src="/headerimage1280-720.png"
-          alt="image 2"
-          className="h-full w-full object-cover"
-        />
+        <div className="w-full h-full object-cover relative ">
+          <img
+            src="/headerimage1280-720.png"
+            alt="image 2"
+            className="h-full w-full object-cover"
+          />
+        </div>
 
         <img
           src="/convocation.jpeg"
@@ -59,7 +63,7 @@ const HeroSection = () => {
         />
 
         <img
-          src="/image.png"
+          src="/pic1.jpg"
           alt="image 1"
           className="h-full w-full object-cover"
         />
