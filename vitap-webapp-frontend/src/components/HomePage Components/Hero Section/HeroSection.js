@@ -5,6 +5,7 @@ import headerimage2 from "../../../assets/images/Homepage Images/headerimage1280
 import { BsArrowRight } from "react-icons/bs";
 import config from "@/config";
 import { Carousel } from "@material-tailwind/react";
+import { headerimage3 } from "../../../assets/images/Homepage Images/1.JPG";
 
 // import { Carousel } from "@material-tailwind/react";
 
