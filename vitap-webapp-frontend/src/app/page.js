@@ -16,9 +16,6 @@ import WallOfSocials from "@/components/HomePage Components/Wall of Socials VIT-
 import NumberAtGlance from "@/components/HomePage Components/Number at a Glance Section/NumberAtGlance";
 import Footer from "@/components/HomePage Components/Footer Section/Footer";
 import Component from "@/components/HomePage Components/Footer Section/Component";
-import FacultySection from "@/components/SchoolPage Components/Faculty Section/FacultySection";
-import AcheivementsSection from "@/components/SchoolPage Components/Acheivements Section/AcheivementsSection";
-import FacultyPage from "@/components/FacultyPage Components/FacultyPage Section/FacultyPage";
 
 // const fetchdata = async () => {
 //   const reqOptions = {
@@ -54,12 +51,6 @@ const Home = async () => {
       <NumberAtGlance />
       <Component />
       <Footer /> 
-
-      {/* <FacultySection /> */}
-      {/* <AcheivementsSection /> */}
-
-      {/* <FacultyPage /> */}
-      
     </>
   );
 }

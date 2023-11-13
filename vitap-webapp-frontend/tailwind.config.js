@@ -32,6 +32,7 @@ module.exports = withMT({
       colors: {
         primary: "#650010", // maroon
         backgroundRed: "rgba(92, 14, 20, 0.20)",
+        backgroundRed2: "rgba(249, 198, 203, 0.25)",
         secondary: "#1B1C1E",
       },
     },
