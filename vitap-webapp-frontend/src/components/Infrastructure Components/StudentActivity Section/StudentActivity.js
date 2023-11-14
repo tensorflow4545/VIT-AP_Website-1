@@ -3,7 +3,7 @@ import React from 'react'
 
 const StudentActivity = () => {
     return (
-        <div className="max-w-[1560px] w-[100%] h-[60vh] mx-auto">
+        <div className="max-w-[1560px] w-[100%] h-[500px] mx-auto">
             <div className='max-w-[1200px] m-auto h-full pt-[20px] flex gap-4 justify-center items-center '>
                 <div className='flex-1 max-h-[500px] my-auto'>
                     <h1 className='text-[42px] font-Emilio text-[#000] capitalize pb-3'>Student Activity Center</h1>

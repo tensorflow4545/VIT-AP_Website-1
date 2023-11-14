@@ -5,6 +5,7 @@ import AcademicBlock1 from "@/components/Infrastructure Components/AcademicBlock
 import AcademicBlock2 from "@/components/Infrastructure Components/AcademicBlock2 Section/AcademicBlock2";
 import AcademicBlocks from "@/components/Infrastructure Components/AcademicBlocks Section/AcademicBlocks";
 import CentralBlock from "@/components/Infrastructure Components/CentralBlock Section/CentralBlock";
+import Facilities from "@/components/Infrastructure Components/Facilities Section/Facilities";
 import StudentActivity from "@/components/Infrastructure Components/StudentActivity Section/StudentActivity";
 
 
@@ -18,6 +19,7 @@ const InfrastructurePage = () => {
             <CentralBlock />
             <AcademicBlock2 />
             <StudentActivity />
+            <Facilities />
             <Footer />
         </>
     );
