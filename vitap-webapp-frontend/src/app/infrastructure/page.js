@@ -12,15 +12,15 @@ import StudentActivity from "@/components/Infrastructure Components/StudentActiv
 const InfrastructurePage = () => {
     return (
         <>
-            {/* <NavbarUpper />
-            <NavbarBottom /> */}
+            <NavbarUpper />
+            <NavbarBottom />
             <AcademicBlocks />
             <AcademicBlock1 />
             <CentralBlock />
             <AcademicBlock2 />
             <StudentActivity />
             <Facilities />
-            {/* <Footer /> */}
+            <Footer />
         </>
     );
 }
