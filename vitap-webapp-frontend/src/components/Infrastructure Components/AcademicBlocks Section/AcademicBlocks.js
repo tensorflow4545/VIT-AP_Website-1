@@ -4,7 +4,7 @@ import React from 'react'
 const AcademicBlocks = () => {
     return (
         <div className="max-w-[1560px] w-[100%] max-h-[600px] h-[100%] mx-auto">   
-            <div className='flex flex-col gap-4 max-w-[1200px] mx-auto h-[calc(100vh-100px)] mt-10'>
+            <div className='flex flex-col gap-4 max-w-[1200px] md:mx-auto h-[calc(100vh-100px)] mt-10 mx-[30px]'>
                 <div className='flex flex-col text-center gap-2 pt-[30px]'>
                     <h1 className='text-[42px] font-Emilio text-[#000] capitalize px-[15px]'>Academic Blocks</h1>
                     <p className='max-w-[1000px] mx-auto font-Montserrat text-[16px] font-normal px-[15px]'>Well-planned, aesthetically appealing and well - ventilated comprehensive infrastructure is the striking feature of VIT-AP.</p>
