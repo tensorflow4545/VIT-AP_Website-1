@@ -3,7 +3,7 @@ import React from 'react'
 
 const CentralBlock = () => {
     return (
-        <div className="max-w-[1560px] w-[100%] h-[100vh] mx-auto">
+        <div className="max-w-[1560px] w-[100%] h-[700px] mx-auto">
             <div className='flex flex-col gap-4 max-w-[1200px] mx-auto h-[calc(100vh-100px)] mt-10'>
                 <div className='flex flex-col text-center gap-2 pt-[30px]'>
                     <h1 className='text-[42px] font-Emilio text-[#000] capitalize px-[15px]'>Central Block</h1>

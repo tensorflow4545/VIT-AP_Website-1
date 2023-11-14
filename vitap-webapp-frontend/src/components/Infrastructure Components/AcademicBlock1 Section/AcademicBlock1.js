@@ -3,7 +3,7 @@ import React from 'react'
 
 const AcademicBlock1 = () => {
     return (
-        <div className="max-w-[1560px] w-[100%] h-[60vh] mx-auto bg-backgroundRed2 mt-10 -z-10">
+        <div className="max-w-[1560px] w-[100%] max-h-[600px] h-[100%] py-[30px] mx-auto bg-backgroundRed2 mt-10 flex justify-center items-center">
             <div className="flex justify-between items-center gap-4 max-w-[1200px] mx-auto h-[calc(60vh-60px)]">
                 <div className='flex-1 flex-col gap-2 '>
                     <h1 className='text-[42px] font-Emilio text-[#000] capitalize px-[15px]'>Academic Block-1</h1>
