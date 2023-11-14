@@ -4,8 +4,10 @@ import NavbarUpper from "@/components/HomePage Components/Navbar/NavbarUpper";
 import AcademicBlock1 from "@/components/Infrastructure Components/AcademicBlock1 Section/AcademicBlock1";
 import AcademicBlock2 from "@/components/Infrastructure Components/AcademicBlock2 Section/AcademicBlock2";
 import AcademicBlocks from "@/components/Infrastructure Components/AcademicBlocks Section/AcademicBlocks";
+import Banner from "@/components/Infrastructure Components/Banner Section/Banner";
 import CentralBlock from "@/components/Infrastructure Components/CentralBlock Section/CentralBlock";
 import Facilities from "@/components/Infrastructure Components/Facilities Section/Facilities";
+import Header from "@/components/Infrastructure Components/Header Section/Header";
 import StudentActivity from "@/components/Infrastructure Components/StudentActivity Section/StudentActivity";
 
 
@@ -14,6 +16,8 @@ const InfrastructurePage = () => {
         <>
             <NavbarUpper />
             <NavbarBottom />
+            <Header />
+            <Banner />
             <AcademicBlocks />
             <AcademicBlock1 />
             <CentralBlock />

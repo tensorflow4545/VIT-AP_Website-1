@@ -9,7 +9,7 @@ const ConvocationSection = () => {
         style={{ backgroundImage: `url("./convocation.jpeg")` }}
         className="w-[100%] h-[400px] bg-center bg-cover relative"
       >
-        <div class="curve">
+        <div className="curve">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
