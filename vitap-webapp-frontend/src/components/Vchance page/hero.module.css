@@ -1,0 +1,10 @@
+.welcome{
+  background-image: url('../../assets/Vchance/hero.png');
+  background-size: 1440px 400px;
+  background-repeat: no-repeat;
+}
+.vlogo{
+  background-image: url('../../assets/Vchance/vlogo.png');
+  background-size: 560px 300px;
+  background-repeat: no-repeat;
+}
