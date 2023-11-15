@@ -86,47 +86,92 @@ export const programmesOffered = [
   },
   {
     id: 7,
-    title: "Integrated M.Tech CSE in Collaboration with Virtusa",
-    field: "integrated",
+    title: "B.Sc, M.Sc - Data Science in Collaboration with Binghamton University, USA & QpiAI, India Pvt.Ltd",
+    field: "Dual Degree",
   },
   {
     id: 8,
-    title: "Integrated M.Tech Software Engineering",
-    field: "integrated",
+    title: "B.A & M.A Public Services",
+    field: "Dual Degree",
   },
   {
     id: 9,
-    title:
-      "B.Sc, M.Sc - Data Science in Collaboration with Binghamton University, USA & QpiAI, India Pvt.Ltd",
-    field: "doctorial",
+    title: "Integrated M.Tech CSE in Collaboration with Virtusa",
+    field: "postgraduate",
   },
   {
     id: 10,
-    title: "B.A & M.A Public Services",
+    title: "Integrated M.Tech Software Engineering",
+    field: "postgraduate",
+  },
+  // {
+  //   id: 11,
+  //   title:
+  //     "B.Sc, M.Sc - Data Science in Collaboration with Binghamton University, USA & QpiAI, India Pvt.Ltd",
+  //   field: "doctorial",
+  // },
+  // {
+  //   id: 12,
+  //   title: "B.A & M.A Public Services",
+  //   field: "doctorial",
+  // },
+  {
+    id: 11,
+    title: "Computer Science and Engineering",
     field: "doctorial",
   },
   {
-    id: 11,
+    id: 12,
+    title: "Electronics Engineering",
+    field: "doctorial",
+  },
+  {
+    id: 13,
     title: "M.Tech VLSI",
     field: "postgraduate",
   },
   {
-    id: 12,
+    id: 14,
     title:
       "M.Sc - Data Science in Collaboration with Binghamton University, USA & QpiAI, India Pvt.Ltd",
     field: "postgraduate",
   },
   {
-    id: 13,
+    id: 15,
     title:
       "M.Sc - Physics in Collaboration with NoPo Nanotech Pvt.Ltd & QpiAI, India Pvt.Ltd",
     field: "postgraduate",
   },
   {
-    id: 14,
+    id: 16,
     title: "M.Sc Chemistry in collaboration with Mitsui kinzoku Components India (MKCI)",
     field: "postgraduate",
   },
+  {
+    id: 17,
+    title: "Mechanical Engineering",
+    field: "doctorial",
+  },
+  {
+    id: 18,
+    title: "Advanced Sciences",
+    field: "doctorial",
+  },
+  {
+    id: 19,
+    title: "Social Science and Humanities",
+    field: "doctorial",
+  },
+  {
+    id: 20,
+    title: "Law",
+    field: "doctorial",
+  },
+  {
+    id: 21,
+    title: "Business",
+    field: "doctorial",
+  }
 ];
 
 export const announcements = [

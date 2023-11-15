@@ -4,10 +4,10 @@ import NavbarBottom from "@/components/HomePage Components/Navbar/NavbarBottom";
 
 const ConvocationPage = () => {
     return ( 
-        <>
-        <NavbarBottom/>
-        <ConvocationSection/>
-        <Footer/>
+        <>  
+            <NavbarBottom/>
+            <ConvocationSection/>
+            <Footer/>
         </>
      );
 }
