@@ -1,0 +1,31 @@
+import Image from 'next/image'
+import React from 'react'
+
+const LibBanner = () => {
+    return (
+        <div className='max-w-[1560px] w-[100%] min-h-[500px] h-[100%]'>
+            <div className='relative'>
+                {/* <svg xmlns="http://www.w3.org/2000/svg"  fill="none" className='max-w-[1560px] w-[100%] min-h-[328px] h-[100%]'>
+                    <path d="M0 1V0H1440V1V328C751.5 68.5 908 328 0 1Z" fill="#F9C6CB" />
+                </svg> */}
+
+                <div className='flex max-w-[1560px] w-[100%] min-h-[500px] h-[100%] absolute top-0 left-0 px-[50px] md:px-[100px] py-[40px] gap-3 md:gap-5'>
+                    <div className='flex-1 flex flex-col justify-center items-start'>
+                        <h1 className='text-[46px] font-Emilio text-[#650010] font-bold'>About Library</h1>
+                        <p className='text-[16px] font-Montserrat text-[#000]'>The VIT-AP University library a technology driven, user centric, innovative platform for the academic community which with the motto “Apply Knowledge and Improve life”. It maintains a perfect balance in providing priority to both traditional and modern concepts of library. The Library is well equipped with modem facilities and resources consisting of CDROMs, DVD-ROM, online databases, micro-documents, video cassettes, books, journals, etc. It has fully developed Digital Library equipped with necessary modern facilities in order to provide various digital mode Library services. It has rich collection of reference books, textbooks and research journals in electronic as well as in print form in the field of engineering, basic science and humanities, management, law and allied subjects. </p>
+                    </div>
+                    <div className='flex-1 flex justify-center items-center'>
+                        <div className='max-w-[430px] w-[100%] max-h-[360px] h-[100%] relative'>
+                            <Image fill src={"/libbanner.jpeg"} alt='libbanner' className='z-10'/>
+                            <div className='absolute -top-10 -right-10 w-full h-full bg-[#650010]'></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    )
+}
+
+export default LibBanner
