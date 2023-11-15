@@ -42,31 +42,38 @@ const HeroSection = () => {
         <div className="w-full h-full object-cover relative ">
           <div className="absolute w-full h-full bg-black opacity-40 bg-gradient-to-b from-blue-gray-900 to-blue-gray-800"></div>
           <img
-            src="/acheivements1.jpeg"
-            alt="image 1"
+            src="/pic1.jpg"
+            alt="pic1"
             className="h-full w-full object-cover"
           />
         </div>
 
         <div className="w-full h-full object-cover relative ">
+          <div className="absolute w-full h-full bg-black opacity-40 bg-gradient-to-b from-blue-gray-900 to-blue-gray-800"></div>
           <img
-            src="/headerimage1280-720.png"
-            alt="image 2"
+            src="/pic2.jpg"
+            alt="pic2"
             className="h-full w-full object-cover"
           />
         </div>
 
-        <img
-          src="/convocation.jpeg"
-          alt="image 3"
-          className="h-full w-full object-cover"
-        />
+        <div className="w-full h-full object-cover relative ">
+          <div className="absolute w-full h-full bg-black opacity-40 bg-gradient-to-b from-blue-gray-900 to-blue-gray-800"></div>
+          <img
+            src="/pic3.jpg"
+            alt="pic3"
+            className="h-full w-full object-cover"
+          />
+        </div>
 
-        <img
-          src="/pic1.jpg"
-          alt="image 1"
-          className="h-full w-full object-cover"
-        />
+        <div className="w-full h-full object-cover relative ">
+          <div className="absolute w-full h-full bg-black opacity-40 bg-gradient-to-b from-blue-gray-900 to-blue-gray-800"></div>
+          <img
+            src="/acheivements1.jpeg"
+            alt="image 1"
+            className="h-full w-full object-cover"
+          />
+        </div>
       </Carousel>
 
       <div className="z-0 absolute ls:top-[240px] md:top-[352px] ls:left-[108px] sm:left-[150px] text-white  font-semibold ls:w-[700px] md:w-[800px] sm:top-[200px]  ls:block sm:flex-col ls:text-left sm:text-center">
