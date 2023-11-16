@@ -1,25 +1,29 @@
-'use client';
+"use client";
 import React, { useState } from "react";
-//import DatePicker from "react-datepicker";
-import Datetime from "react-datetime";
+import { useRouter } from "next/router";
+import { DateRange } from "react-date-range";
 import "react-datetime/css/react-datetime.css";
 import Image from "next/image";
-import banner from "@/assets/images/Events/banner2.png";
-import card from "@/assets/images/Events/card.png";
+import banner from "../../assets/images/Events/banner2.png";
+import card from "../../assets/images/Events/card.png";
 import Link from "next/link";
 import Card from "./Card";
-//import "react-datepicker/dist/react-datepicker.css";
+import "react-date-range/dist/styles.css";
+import "react-date-range/dist/theme/default.css";
 
 const Events = () => {
-  const [selectedDate, setSelectedDate] = useState(new Date());
-  const handleDateChange = (date) => {
-    setSelectedDate(date);
-  };
+  const [selectedDate, setSelectedDate] = useState([
+    {
+      startDate: new Date(),
+      endDate: null,
+      key: "selection",
+    },
+  ]);
   return (
     <>
-      <div className="h-screen">
-        <div className="relative bg-black">
-          <Image src={banner} className="max-w-full h-auto mx-auto" />
+      <div>
+        <div className="relative">
+          <Image src={banner} className="w-full" />
           <div
             style={{
               position: "absolute",
@@ -33,65 +37,152 @@ const Events = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-row relative">
-          <div className="mt-[80px] ml-[30px]">
-            <Image
-              src={card}
-              width={250}
-              height={250}
-              className="rounded-top"
-            />
-            <Link href="/Card">
-              <button className="w-[250px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px]">
-                V-Launch Pad
-              </button>
-            </Link>
+        <div className="flex flex-row">
+          <div className="w-[1171px]">
+            <div className="flex">
+              <div className="mt-[60px] ml-[150px] w-[270px] h-[300px] shadow-xl">
+                <Image
+                  src={card}
+                  width={270}
+                  height={270}
+                  className="rounded-top"
+                />
+                <Link href="/Card">
+                  <button className="w-[270px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px] hover:bg-[#7A1820]">
+                    V-Launch Pad
+                  </button>
+                </Link>
+              </div>
+              <div className="mt-[60px] ml-[30px] w-[270px] h-[300px] shadow-xl">
+                <Image
+                  src={card}
+                  width={270}
+                  height={270}
+                  className="rounded-top"
+                />
+                <Link href="/Card">
+                  <button className="w-[270px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px] hover:bg-[#7A1820]">
+                    V-Launch Pad
+                  </button>
+                </Link>
+              </div>
+              <div className="mt-[60px] ml-[30px] w-[270px] h-[300px] shadow-xl">
+                <Image
+                  src={card}
+                  width={270}
+                  height={270}
+                  className="rounded-top"
+                />
+                <Link href="/Card">
+                  <button className="w-[270px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px] hover:bg-[#7A1820]">
+                    V-Launch Pad
+                  </button>
+                </Link>
+              </div>
+            </div>
+            <div className="flex">
+              <div className="mt-[60px] ml-[150px] w-[270px] h-[300px] shadow-xl">
+                <Image
+                  src={card}
+                  width={270}
+                  height={270}
+                  className="rounded-top"
+                />
+                <Link href="/Card">
+                  <button className="w-[270px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px] hover:bg-[#7A1820]">
+                    V-Launch Pad
+                  </button>
+                </Link>
+              </div>
+              <div className="mt-[60px] ml-[30px] w-[270px] h-[300px] shadow-xl">
+                <Image
+                  src={card}
+                  width={270}
+                  height={270}
+                  className="rounded-top"
+                />
+                <Link href="/Card">
+                  <button className="w-[270px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px] hover:bg-[#7A1820]">
+                    V-Launch Pad
+                  </button>
+                </Link>
+              </div>
+              <div className="mt-[60px] ml-[30px] w-[270px] h-[300px] shadow-xl">
+                <Image
+                  src={card}
+                  width={270}
+                  height={270}
+                  className="rounded-top"
+                />
+                <Link href="/Card">
+                  <button className="w-[270px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px] hover:bg-[#7A1820]">
+                    V-Launch Pad
+                  </button>
+                </Link>
+              </div>
+            </div>
+            <div className="flex">
+              <div className="mt-[60px] ml-[30px] w-[270px] h-[300px] shadow-xl">
+                <Image
+                  src={card}
+                  width={270}
+                  height={270}
+                  className="rounded-top"
+                />
+                <Link href="/Card">
+                  <button className="w-[270px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px] hover:bg-[#7A1820]">
+                    V-Launch Pad
+                  </button>
+                </Link>
+              </div>
+              <div className="mt-[60px] ml-[30px] w-[270px] h-[300px] shadow-xl">
+                <Image
+                  src={card}
+                  width={270}
+                  height={270}
+                  className="rounded-top"
+                />
+                <Link href="/Card">
+                  <button className="w-[270px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px] hover:bg-[#7A1820]">
+                    V-Launch Pad
+                  </button>
+                </Link>
+              </div>
+              <div className="mt-[60px] ml-[30px] w-[270px] h-[300px] shadow-xl">
+                <Image
+                  src={card}
+                  width={270}
+                  height={270}
+                  className="rounded-top"
+                />
+                <Link href="/Card">
+                  <button className="w-[270px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px] hover:bg-[#7A1820]">
+                    V-Launch Pad
+                  </button>
+                </Link>
+              </div>
+              <div className="mt-[60px] ml-[30px] w-[270px] h-[300px] shadow-xl">
+                <Image
+                  src={card}
+                  width={270}
+                  height={270}
+                  className="rounded-top"
+                />
+                <Link href="/Card">
+                  <button className="w-[270px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px] hover:bg-[#7A1820]">
+                    V-Launch Pad
+                  </button>
+                </Link>
+              </div>
+            </div>
           </div>
-          <div className="mt-[80px] ml-[30px] group">
-            <Image
-              src={card}
-              width={250}
-              height={250}
-              className="rounded-top"
-            />
-            <Link href="/Card">
-              <button className="w-[250px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px]">
-                V-Launch Pad
-              </button>
-            </Link>
-          </div>
-          <div className="mt-[80px] ml-[30px]">
-            <Image
-              src={card}
-              width={250}
-              height={250}
-              className="rounded-top"
-            />
-            <Link href="/Card">
-              <button className="w-[250px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px]">
-                V-Launch Pad
-              </button>
-            </Link>
-          </div>
-          <div className="mt-[80px] ml-[30px]">
-            <Image
-              src={card}
-              width={250}
-              height={250}
-              className="rounded-top"
-            />
-            <Link href="/Card">
-              <button className="w-[250px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px]">
-                V-Launch Pad
-              </button>
-            </Link>
-          </div>
-          <div className="ml-[80px]">
+          <div className="mt-[40px]">
             <div>
-              <Datetime
-                value={new Date()}
-                input={true}
-                className="w-60 border rounded py-3 px-2 text-gray-darker shadow-lg mt-[30px]"
+              <DateRange
+                editableDateInputs={true}
+                onChange={(item) => setSelectedDate([item.selection])}
+                moveRangeOnFirstSelection={false}
+                ranges={selectedDate}
               />
             </div>
             <div
@@ -123,7 +214,7 @@ const Events = () => {
             </div>
           </div>
         </div>
-        <div className="flex ml-[40%]">
+        <div className="flex ml-[40%] mt-[30px]">
           <div className="mt-[5px] mr-3">
             <button>&larr;</button>
           </div>
@@ -141,6 +232,17 @@ const Events = () => {
           </div>
           <div className="mt-[5px] ml-3">
             <button>&rarr;</button>
+          </div>
+        </div>
+        <div className="w-screen mt-[93px] h-[248px] bg-[#741D26] flex">
+          <div className="w-[760px] mt-[75px] ml-[313px]">
+            <p className="text-[26px] text-[#FDFEFF] font-Emilo">
+              “ Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit
+              amet consectetur ”
+            </p>
+            <p className="text-[20px] text-white font-Montserrant float-right">
+              -Jagdish Mudiganti
+            </p>
           </div>
         </div>
       </div>
