@@ -5,12 +5,12 @@ const LibBanner = () => {
     return (
         <div className='max-w-[1560px] w-[100%] min-h-[500px] h-[100%]'>
             <div className='relative'>
-                {/* <svg xmlns="http://www.w3.org/2000/svg"  fill="none" className='max-w-[1560px] w-[100%] min-h-[328px] h-[100%]'>
-                    <path d="M0 1V0H1440V1V328C751.5 68.5 908 328 0 1Z" fill="#F9C6CB" />
-                </svg> */}
-                <div className='max-w-[1560px] w-[100%] min-h-[328px] h-[100%]' style={{ backgroundImage: 'url("/libbackground.svg")'}} >
+                <svg xmlns="http://www.w3.org/2000/svg" width="1560" height="328" viewBox="0 0 1560 328" fill="none">
+                    <path d="M0 1V0H1560V1V328C814.126 68.5 983.666 328 0 1Z" fill="#FFF3F4" />
+                </svg>
+                {/* <div className='max-w-[1560px] w-[100%] min-h-[328px] h-[100%]' style={{ backgroundImage: 'url("/libbackground.svg")'}} >
 
-                </div>
+                </div> */}
 
                 <div className='flex max-w-[1560px] w-[100%] min-h-[500px] h-[100%] absolute top-0 left-0 px-[50px] md:px-[100px] py-[40px] gap-3 md:gap-5'>
                     <div className='flex-1 flex flex-col justify-center items-start'>
