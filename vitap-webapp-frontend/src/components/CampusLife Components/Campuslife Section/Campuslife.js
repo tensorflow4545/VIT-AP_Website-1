@@ -16,7 +16,7 @@ const Campuslife = () => {
                 <div className='flex-1 relative max-w-[700px] w-[100%] overflow-hidden group'>
                     <Image src={"/campuslife1.png"} alt='campuslife1' fill className='group-hover:scale-110 transition-all duration-500 ease-in-out'/>
                     <div className='absolute bottom-10 left-10 text-black'>
-                        <h1 className='text-[#650010] font-Emilio text-[32px] font-semibold'>Sports</h1>
+                        <h1 className='text-[#fff] font-Emilio text-[32px] font-semibold'>Sports</h1>
                         <p className='text-[#fff] text-[24px] font-Emilio transition-all duration-300 ease-in-out cursor-pointer'>Explore More</p>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ const Campuslife = () => {
                 <div className='flex-1 relative max-w-[700px] w-[100%] overflow-hidden group'>
                     <Image src={"/campushostels.png"} alt='campuslife1' fill className='group-hover:scale-110 transition-all duration-500 ease-in-out' />
                     <div className='absolute bottom-10 left-10 text-black'>
-                        <h1 className='text-[#650010] font-Emilio text-[32px] font-semibold'>Hostel</h1>
+                        <h1 className='text-[#fff] font-Emilio text-[32px] font-semibold'>Hostel</h1>
                         <p className='text-[#fff] text-[24px] font-Emilio transition-all duration-300 ease-in-out cursor-pointer'>Explore More</p>
                     </div>
                 </div>
