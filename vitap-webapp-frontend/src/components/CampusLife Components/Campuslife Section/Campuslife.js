@@ -12,7 +12,7 @@ const Campuslife = () => {
                     <path d="M0 0H1440V1C1385.28 4.68271 222.281 83.472 0 227V0Z" fill="rgba(249, 198, 203, 0.25)" />
                 </svg>
             </div>
-            <div className='flex max-w-[1560px] w-[100%] min-h-[450px] gap-4 h-[100%] relative md:px-[100px] px-[50px] -mt-[200px] border-r-8 border-r-[#650010] '>
+            <div className='flex max-w-[1560px] w-[100%] min-h-[450px] gap-4 h-[100%] relative md:px-[100px] px-[50px] -mt-[220px] border-r-8 border-r-[#650010] '>
                 <div className='flex-1 relative max-w-[700px] w-[100%] overflow-hidden group'>
                     <Image src={"/campuslife1.png"} alt='campuslife1' fill className='group-hover:scale-110 transition-all duration-500 ease-in-out'/>
                     <div className='absolute bottom-10 left-10 text-black'>
@@ -63,6 +63,13 @@ const Campuslife = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className='max-w-[1560px] w-[100%] ml-[100px] -mt-[250px]'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="227" viewBox="0 0 1440 227" fill="none">
+                    <path d="M1440 227L0 227V226C54.7194 222.317 1217.72 143.528 1440 0V227Z" fill="rgba(249, 198, 203, 0.25)" />
+                </svg>
+            </div>
+            <div className='max-w-[1560px] w-[100%] min-h-[100px] h-[100%] bg-backgroundRed2 md:px-[100px] px-[50px] flex justify-start items-center'>
             </div>
         </div>
     )
