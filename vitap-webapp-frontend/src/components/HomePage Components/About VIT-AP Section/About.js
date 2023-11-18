@@ -55,8 +55,8 @@ const About = () => {
 
   return (
     <>
-      <div className="px-[108px] mb-[100px] ">
-        <div className="md:flex  pt-[70px]">
+      <div className="lx:px-[108px] sm:px-[40px] mb-[100px] ">
+        <div className="md:flex  ls:pt-[70px] sm:pt-[50px]">
           <div className="md:w-[50%]  sm:text-center md:text-left sm:flex-col sm:justify-center md:justify-normal ">
             <h1 className="font-Emilio ls:text-[48px] sm:text-[40px] text-primary font-bold pb-[9px]">
               About VIT-AP
@@ -74,15 +74,17 @@ const About = () => {
                 height={100}; web-share
 
               /> */}
+              <div className="ls:w-[600px] ls:h-[335px] sm:h-[200px]">
               <iframe
-                width={600}
-                height={335}
+                className="w-full h-full"
                 src="https://www.youtube.com/embed/Bx3tAXPJThM?si=3j6CacZA7uFGU6zb"
                 title="About VIT-AP"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-inpicture; web-share"
                 allowfullscreen
               ></iframe>
+              </div>
+
             </div>
             <div className="w-[95%]">
               <h1 className="font-Montserrant font-[680px] text-justify text-[18px] text-left mt-[35px] leading-7">
@@ -97,44 +99,11 @@ const About = () => {
                 destinations in the world.
               </h1>
             </div>
-
-            {/* <div className="ls:flex sm:flex-col ls:mt-[40px] ls:ml-[40px] md:mt-[58.5px] md:ml-[80.5px] ls:justify-center ls:text-center">
-              <div className="ls:flex flex-row space-x-[180px] ls:justify-center">
-                <div className="flex-col text-center">
-                  <h1 className="text-[46px] text-primary font-bold">1100+</h1>
-                  <h1 className="text-[20px] font-Inter text-primary">
-                    Students
-                  </h1>
-                </div>
-
-                <div className="ls:flex flex-col text-center">
-                  <h1 className="text-[46px] text-primary font-bold">8</h1>
-                  <h1 className="text-[20px] font-Inter text-primary">
-                    Schools
-                  </h1>
-                </div>
-              </div>
-
-              <div className="ls:flex flex-row space-x-[180px] mt-[60px] ls:justify-center">
-                <div className="flex-col text-center">
-                  <h1 className="text-[46px] text-primary font-bold">100+</h1>
-                  <h1 className="text-[20px] font-Inter text-primary">
-                    Faculty
-                  </h1>
-                </div>
-                <div className="flex-col text-center">
-                  <h1 className="text-[46px] text-primary font-bold">100+</h1>
-                  <h1 className="text-[20px] font-Inter text-primary">
-                    Publications
-                  </h1>
-                </div>
-              </div>
-            </div> */}
           </div>
 
           {/* Anouncements section  */}
 
-          <div className="md:w-[50%]  sm:w-[100%] md:pl-[67px]  md:mt-[15px] md:block ls:flex-col ls:justify-center  relative">
+          <div className="md:w-[50%]  sm:w-[100%] md:pl-[67px]  md:mt-[15px] ls:mt-[50px] sm:mt-[50px] md:block ls:flex-col ls:justify-center  relative">
             
             <motion.div
               initial={{ left: "[80px]", width: "[32px]" }}
