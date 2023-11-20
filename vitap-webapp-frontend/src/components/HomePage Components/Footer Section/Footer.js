@@ -188,6 +188,289 @@ import {
            </div>
            </div>
         </div>
+
+         {/* Mobile View */}
+        <div class="sm:hidden flex relative">
+        <div class="w-full h-max">
+           
+           {/* uni logo */}
+           <div class={`w-full h-max overflow-hidden flex justify-center pt-[30px] pb-[20px]`}>
+            <div class={`w-[145px] h-[44px]`}>
+              <Image width={145} height={44} src="/unilogom.png" alt="Uni Image" class="text-center"></Image>
+            </div>
+           </div>
+
+           {/* flex */}
+           <div class="flex flex-row justify-center">
+           <div class="basis">
+           <div >
+            <p class="text-red-900 text-[15px] font-bold">Apply Now</p>
+           </div>
+           </div>
+           <div class="basis pt-[5px] px-[40px]">
+           <div class="w-[5px] h-[5px] bg-red-900 rounded">
+               
+           </div>
+           </div>
+           <div class="basis">
+           <div>
+           <p class="text-red-900 text-[15px] font-bold">Maps</p>
+           </div>
+           </div>
+           <div class="basis pt-[5px] px-[20px]">
+           <div class="w-[5px] h-[5px] bg-red-900 rounded">
+               
+           </div>
+           </div>
+           <div class="basis">
+           <div>
+           <p class="text-red-900 text-[15px] font-bold">Outreach</p>
+           </div>
+           </div>
+           </div>
+          
+          {/* Social icons */}
+          {/* flex */}
+          <div class="flex flex-row w-full h-[20px] justify-center py-[17px]">
+          <div class="basis pr-[10px]">
+          <a
+                    href="https://www.instagram.com/vitap.university/?hl=en"
+                    
+                  >
+                    <BiLogoInstagramAlt class="bg-purple-300" size={30} />
+                  </a>
+          </div>
+          <div class="basis pr-[10px]">
+          <a
+                    href="https://www.linkedin.com/school/vitap-university/?originalSubdomain=in"
+                
+                  >
+                    <AiFillLinkedin class="bg-purple-300" size={30} />
+                  </a>
+          </div>
+          <div class="basis pr-[10px]">
+          <a
+                    href="https://www.facebook.com/vitap.university/"
+                    
+                  >
+                    <BiLogoFacebookCircle class="bg-purple-300"  size={29} />
+                  </a>
+          </div>
+          <div class="basis pr-[10px]">
+          <a href="https://www.youtube.com/c/VITAP" >
+                    <AiFillYoutube class="bg-purple-300"  size={30} />
+                  </a>
+          </div>
+          <div class="basis">
+          <a
+                    href="https://twitter.com/VITAPuniversity?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                  
+                  >
+                  
+                    <FaXTwitter class="bg-purple-300" size={29}/>
+                  </a>
+          </div>
+          </div>
+
+          <div class="w-full text-center pt-[20px]"><p class="text-red-900 text-[15px] font-bold pt-[30px] pb-[20px]">Quick Links</p></div>         
+           {/* flex */}
+           <div class="flex flex-row w-full justify-center">
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">Careers  </p>
+           </div>
+           <div class="basis pt-[9px] px-[10px]">
+            <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+           </div>
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">Gallery</p>
+           </div>
+           <div class="basis pt-[9px] px-[10px]">
+            <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+           </div>
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">Hostels</p>
+           </div>
+           <div class="basis pt-[9px] px-[10px]">
+            <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+           </div>
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">Transport</p>
+           </div>
+           <div class="basis pt-[9px] px-[10px]">
+            <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+           </div>
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">Policies</p>
+           </div>
+           </div>
+
+           {/* Vit Connect */}
+           <div class="w-full text-center pt-[20px]"><p class="text-red-900 text-[15px] font-bold pt-[30px] pb-[20px]">VIT Connect</p></div>         
+           {/* flex */}
+           <div class="flex flex-row w-full justify-center">
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">VTOP Login</p>
+           </div>
+           <div class="basis pt-[9px] px-[10px]">
+            <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+           </div>
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">Mail</p>
+           </div>
+           <div class="basis pt-[9px] px-[10px]">
+            <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+           </div>
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">Alumni</p>
+           </div>
+           <div class="basis pt-[9px] px-[10px]">
+            <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+           </div>
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">Contact Us</p>
+           </div>
+           </div>
+
+           {/* Ranking */}
+           <div>
+           <div class="w-full text-center pt-[20px]"><p class="text-red-900 text-[15px] font-bold pt-[30px] pb-[20px]">Ranking & Accereditation</p></div>         
+           {/* flex */}
+           <div class="flex flex-row w-full justify-center">
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">RAAC</p>
+           </div>
+           <div class="basis pt-[9px] px-[10px]">
+            <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+           </div>
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">NAAC</p>
+           </div>
+           </div>
+           </div>
+
+           {/* Research */}
+           <div>
+           <div class="w-full text-center pt-[20px]"><p class="text-red-900 text-[15px] font-bold pt-[30px] pb-[20px]">Research</p></div>
+           {/* flex */}
+           <div class="flex flex-row w-full pb-[7px] justify-center">
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">Centers  </p>
+           </div>
+           <div class="basis pt-[9px] px-[10px]">
+            <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+           </div>
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">Google Scholar</p>
+           </div>
+           <div class="basis pt-[9px] px-[10px]">
+            <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+           </div>
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">Scopus</p>
+           </div>
+           <div class="basis pt-[9px] px-[10px]">
+            <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+           </div>
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">Patents</p>
+           </div>
+           </div>
+           {/* flex */}
+           <div class="flex flex-row w-full justify-center">
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">Projects</p>
+           </div>
+           <div class="basis pt-[9px] px-[10px]">
+            <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+           </div>
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">Publications</p>
+           </div>
+           </div>
+           </div>
+
+            {/* Program */}
+            <div>
+           <div class="w-full text-center pt-[20px]"><p class="text-red-900 text-[15px] font-bold pt-[30px] pb-[20px]">Programs</p></div>
+           {/* flex */}
+           <div class="flex flex-row w-full pb-[7px] justify-center">
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">Programs Offered</p>
+           </div>
+           <div class="basis pt-[9px] px-[10px]">
+            <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+           </div>
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">Academic Calender</p>
+           </div>
+           <div class="basis pt-[9px] px-[10px]">
+            <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+           </div>
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">Application Process</p>
+           </div>
+           </div>
+           {/* flex */}
+           <div class="flex flex-row w-full justify-center">
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">Scholarship</p>
+           </div>
+           <div class="basis pt-[9px] px-[10px]">
+            <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+           </div>
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">Fee Structure</p>
+           </div>
+           <div class="basis pt-[9px] px-[10px]">
+            <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+           </div>
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">IQAC</p>
+           </div>
+           </div>
+           </div>
+
+           {/* Information */}
+           <div class="pb-[20px]">
+           <div class="w-full text-center pt-[20px]"><p class="text-red-900 text-[15px] font-bold pt-[30px] pb-[20px]">Information</p></div>
+            {/* flex */}
+            <div class="flex flex-row w-full pb-[7px] justify-center">
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">Public Note: University Act</p>
+           </div>
+           <div class="basis pt-[9px] px-[10px]">
+            <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+           </div>
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">Forms</p>
+           </div>
+           <div class="basis pt-[9px] px-[10px]">
+            <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+           </div>
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">Directory</p>
+           </div>
+           </div>
+           {/* flex */}
+           <div class="flex flex-row w-full justify-center">
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">Feedback</p>
+           </div>
+           <div class="basis pt-[9px] px-[10px]">
+            <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+           </div>
+           <div class="basis">
+            <p class="text-[14px] text-gray-500 text-montserrat">Academic Bank of Credit (ABC)</p>
+           </div>
+           </div>
+           </div>
+
+           {/* Credit Section */}
+           <div class="w-full h-[51px] bg-red-900">
+            <p class="text-white items-center text-center text-[18px] font-semibold text-emilio py-[10px]">Crafted With Passion At VIT-AP University</p>
+           </div>
+          </div>
+        </div>
       </>
     );
   }
