@@ -4,7 +4,7 @@ export default function video(){
     return (
         <>
           <div class="w-full h-max bg-white justify-center item-center pt-[40px] px-[35px]">
-            <div class={`w-full flex justify-center item-center ${style.video}`}><div class="w-[880px] h-[400px]">
+            <div class={`w-full flex justify-center item-center`}><div class="w-[880px] h-[400px]">
             <iframe 
            width="853"  // Adjust the width and height as needed
            height="479"
