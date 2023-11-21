@@ -4,12 +4,12 @@ import Card from './Card';
 
 const ConvocationSection = () => {
   return (
-    <div className="max-w-[1560px] w-[100%] min-h-[100vh] h-[100%] mx-auto">
+    <div className="max-w-[1560px] w-[100%] min-h-[900px] h-[100%] mx-auto">
       <div
         style={{ backgroundImage: `url("./convocation.jpeg")` }}
         className="w-[100%] h-[400px] bg-center bg-cover relative"
       >
-        <div class="curve">
+        <div className="curve">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
