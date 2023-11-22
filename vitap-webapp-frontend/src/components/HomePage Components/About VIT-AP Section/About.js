@@ -58,7 +58,7 @@ const About = () => {
       <div className="px-[108px] mb-[100px] ">
         <div className="md:flex  pt-[70px]">
           <div className="md:w-[50%]  sm:text-center md:text-left sm:flex-col sm:justify-center md:justify-normal ">  
-            <h1 className="font-Emilo ls:text-[48px] sm:text-[40px] text-primary font-bold pb-[9px]">
+            <h1 className="font-Emilio ls:text-[48px] sm:text-[40px] text-primary font-bold pb-[9px]">
               About VIT-AP
             </h1>
             <div className="sm:justify-center md:justify-normal sm:hidden ls:flex w-full object-cover">
@@ -85,7 +85,7 @@ const About = () => {
               ></iframe>
             </div>
             <div className="w-[95%]">
-              <h1 className="font-Montserrant font-[680px] text-[17px] text-left mt-[35px] leading-7">
+              <h1 className="font-Montserrant font-[680px] text-justify text-[18px] text-left mt-[35px] leading-7">
                 With a history of 37 years of innovation in educational and
                 research domain, VIT has been a forerunner in delivering quality
                 education. Consistently ranked among the top educational

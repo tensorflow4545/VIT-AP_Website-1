@@ -5,7 +5,7 @@ module.exports = {
   images: {
     unoptimized: true,
   },
-  output: 'export',
+  //output: 'export',
   // Optional configurations can be added here
   // trailingSlash: true,
   // skipTrailingSlashRedirect: true,

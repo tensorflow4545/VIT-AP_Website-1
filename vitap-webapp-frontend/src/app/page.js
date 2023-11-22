@@ -51,6 +51,8 @@ const Home = async () => {
       <NumberAtGlance />
       <Component />
       <Footer /> 
+      {/* <PageSection /> */}
+      {/* <ConvocationSection /> */}
     </>
   );
 }

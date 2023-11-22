@@ -1,0 +1,15 @@
+.img1{
+    background-image: url(../../../assets/hostelPage/gallary1.jpeg);
+    background-size: 180px 190px;
+    background-repeat: no-repeat;
+}
+.img2{
+    background-image: url(../../../assets/hostelPage/gallary3.jpeg);
+    background-size: 180px 325px;
+    background-repeat: no-repeat;
+}
+.img3{
+    background-image: url(../../../assets/hostelPage/gallary3.jpeg);
+    background-size: 180px 190px;
+    background-repeat: no-repeat;
+}
