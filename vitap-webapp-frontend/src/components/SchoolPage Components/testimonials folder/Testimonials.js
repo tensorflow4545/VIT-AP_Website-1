@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../assets/images/testimonials/img2.png";
+import img from "../../../assets/images/testimonials/img2.png";
 import Image from "next/image";
 
 const Testimonials = () => {
