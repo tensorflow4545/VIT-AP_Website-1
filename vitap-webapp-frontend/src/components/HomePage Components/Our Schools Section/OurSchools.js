@@ -1,6 +1,8 @@
+"use client";
 import Card from "./Card.js";
 import config from "@/config";
 import Image from "next/image";
+import React, { useState } from "react";
 
 import Schools from "@/constants/index.js";
 import image1 from "../../../assets/images/Homepage Images/Schools/SAS.jpg";
@@ -10,7 +12,36 @@ import image4 from "../../../assets/images/Homepage Images/Schools/VSL.jpg";
 import image5 from "../../../assets/images/Homepage Images/Schools/SMEC.jpg";
 import image6 from "../../../assets/images/Homepage Images/Schools/VISH.jpg";
 import image7 from "../../../assets/images/Homepage Images/Schools/VSB.jpg";
-
+const dataa = [
+  {
+    id: 1,
+    imageSrc: "../../../assets/images/Homepage Images/Schools/SAS.jpg",
+    title: "School of Advanced Sciences",
+    description: "Lorem ipsum dolor sit amet consectetur.Lorem",
+    link: "/computer-science",
+  },
+  {
+    id: 2,
+    imageSrc: "../../../assets/images/Homepage Images/Schools/SENSE.jpg",
+    title: "School of Electronics Engineering",
+    description: "Lorem ipsum dolor sit amet consectetur.Lorem",
+    link: "/computer-science",
+  },
+  {
+    id: 3,
+    imageSrc: "/path-to-your-image-1.jpg",
+    title: "School of Computer Science & Engineering",
+    description: "Lorem ipsum dolor sit amet consectetur.Lorem",
+    link: "/computer-science",
+  },
+  {
+    id: 4,
+    imageSrc: "/path-to-your-image-1.jpg",
+    title: "School of Law",
+    description: "Lorem ipsum dolor sit amet consectetur.Lorem",
+    link: "/computer-science",
+  },
+];
 const data = {
   image1: {
     src: "../../../assets/images/Homepage Images/Schools/SAS.jpg",
@@ -54,12 +85,27 @@ const fetchdata = async () => {
   const data = await response.json();
   return data;
 };
+const PaginationItem = ({ number, isActive, onClick }) => (
+  <button
+    className={`px-2 py-1 ${isActive ? "text-red-500" : "text-gray-500"}`}
+    onClick={onClick}
+  >
+    {number}
+  </button>
+);
 
-const OurSchools = async () => {
+const OurSchools = () => {
   // const data = await fetchdata();
 
   // console.log( data.data)
   // console.log(typeof data)
+  const [activePage, setActivePage] = useState(1);
+
+  const handleChangePage = (pageNumber) => {
+    setActivePage(pageNumber);
+  };
+
+  const activeData = dataa.find((item) => item.id === activePage);
 
   return (
     <>
@@ -75,9 +121,38 @@ const OurSchools = async () => {
             complex world.
           </h1>
           <div className="lx:hidden sm:block">
-            <div className="bg-[#E6CFCF] w-[106px] h-[150px] mt-[30px] relative">
-              <div className="w-[106px] h-[80px] absolute top-[35px] left-[50px]">
-                <Image src={data.image1.src} layout="fill" objectFit="cover" />
+            <div className="container mx-auto p-4">
+              <div className="flex gap-4 mb-4 relative">
+                <div className="w-[40px] h-[400px]">
+                  <Image
+                    src={activeData.imageSrc}
+                    alt={activeData.title}
+                    className=" h-auto"
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </div>
+
+                <div>
+                  <h2 className="text-2xl font-bold">{activeData.title}</h2>
+                  <p>{activeData.description}</p>
+                  <a
+                    href={activeData.link}
+                    className="text-blue-600 hover:text-blue-800"
+                  >
+                    Explore Now →
+                  </a>
+                </div>
+              </div>
+              <div className="flex justify-center items-center space-x-2">
+                {dataa.map((item) => (
+                  <PaginationItem
+                    key={item.id}
+                    number={item.id}
+                    isActive={item.id === activePage}
+                    onClick={() => handleChangePage(item.id)}
+                  />
+                ))}
               </div>
             </div>
           </div>
