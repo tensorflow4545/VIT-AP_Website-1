@@ -1,5 +1,5 @@
 import CampusBanner from '@/components/CampusLife Components/CampusBanner Section/CampusBanner'
-import CampusGallery from '@/components/CampusLife Components/CampusGallery Section/CampusGallery'
+// import CampusGallery from '@/components/CampusLife Components/CampusGallery Section/CampusGallery'
 import CampusHeader from '@/components/CampusLife Components/CampusHeader Section/CampusHeader'
 import Campuslife from '@/components/CampusLife Components/Campuslife Section/Campuslife'
 import Component from '@/components/HomePage Components/Footer Section/Component'
@@ -16,7 +16,6 @@ const page = () => {
             <CampusHeader />
             <CampusBanner />
             <Campuslife />
-            <CampusGallery />
             <Component />
             <Footer />
         </div>
