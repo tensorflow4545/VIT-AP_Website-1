@@ -6,7 +6,7 @@ import news3 from "@/assets/images/newsPhotos/basketball.png";
 import news4 from "@/assets/images/newsPhotos/nationn.png";
 import circle from "@/assets/images/newsPhotos/circle.png";
 import arrow from "@/assets/images/newsPhotos/Vector.png";
-import styles from "../../styles/News.module.css";
+import styles from "../../../styles/News.module.css";
 
 const News = () => {
   return (
