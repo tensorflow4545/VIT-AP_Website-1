@@ -1,5 +1,4 @@
 import ReactPlayer from 'react-player'
-import style from "./video.module.css";
 export default function video(){
     return (
         <>
