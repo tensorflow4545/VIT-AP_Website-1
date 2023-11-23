@@ -5,6 +5,7 @@ import Guestheader from '@/components/GuestHouse Components/GuestHouseheader Sec
 import GuestPolicies from '@/components/GuestHouse Components/GuestPolicies Section/GuestPolicies'
 import GuestReservation from '@/components/GuestHouse Components/GuestReservations Section/GuestReservation'
 import GuestTable from '@/components/GuestHouse Components/GuestTable Section/GuestTable'
+import GuestTourism from '@/components/GuestHouse Components/GuestTourism Section/GuestTourism'
 import GuestTravel from '@/components/GuestHouse Components/GuestTravel Section/GuestTravel'
 import Component from '@/components/HomePage Components/Footer Section/Component'
 import Footer from '@/components/HomePage Components/Footer Section/Footer'
@@ -25,6 +26,7 @@ const page = () => {
             <GuestReservation />
             <GuestPolicies />
             <GuestTravel />
+            <GuestTourism />
             <Component />
             <Footer />
         </div>
