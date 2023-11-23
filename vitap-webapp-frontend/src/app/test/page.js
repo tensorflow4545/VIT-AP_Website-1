@@ -1,79 +1,45 @@
-"use client"
-import { useState } from 'react';
+import Head from 'next/head';
+import Image from 'next/image';
 
-const data = [
-  {
-    id: 1,
-    imageSrc: '../../../assets/images/Homepage Images/Schools/SAS.jpg',
-    title: 'School of Advanced Sciences',
-    description: 'Lorem ipsum dolor sit amet consectetur.Lorem',
-    link: '/computer-science'
-  },
-  {
-    id: 2,
-    imageSrc: '/path-to-your-image-1.jpg',
-    title: 'School of Electronics Engineering',
-    description: 'Lorem ipsum dolor sit amet consectetur.Lorem',
-    link: '/computer-science'
-  },
-  {
-    id: 3,
-    imageSrc: '/path-to-your-image-1.jpg',
-    title: 'School of Computer Science & Engineering',
-    description: 'Lorem ipsum dolor sit amet consectetur.Lorem',
-    link: '/computer-science'
-  },
-  {
-    id: 4,
-    imageSrc: '/path-to-your-image-1.jpg',
-    title: 'School of Law',
-    description: 'Lorem ipsum dolor sit amet consectetur.Lorem',
-    link: '/computer-science'
-  },
-];
-
-const PaginationItem = ({ number, isActive, onClick }) => (
-  <button
-    className={`px-2 py-1 ${isActive ? 'text-red-500' : 'text-gray-500'}`}
-    onClick={onClick}
-  >
-    {number}
-  </button>
-);
-
-const MainPage = () => {
-  const [activePage, setActivePage] = useState(1);
-
-  const handleChangePage = (pageNumber) => {
-    setActivePage(pageNumber);
-  };
-
-  const activeData = data.find((item) => item.id === activePage);
-
+export default function Home() {
   return (
-    <div className="container mx-auto p-4">
-      <div className="flex gap-4 mb-4">
-        <img src={activeData.imageSrc} alt={activeData.title} className="w-48 h-auto" />
-        <div>
-          <h2 className="text-2xl font-bold">{activeData.title}</h2>
-          <p>{activeData.description}</p>
-          <a href={activeData.link} className="text-blue-600 hover:text-blue-800">
-            Explore Now →
-          </a>
-        </div>
+    <div className="flex flex-col lg:flex-row">
+      <Head>
+        <title>About School</title>
+      </Head>
+
+      {/* Text section */}
+      <div className="flex-1 px-6 py-8 bg-white text-gray-800">
+        <h1 className="text-3xl font-semibold mb-4">About School</h1>
+        <p className="text-base mb-4">
+          The Department of Computer Science and Engineering was established in 2017. It has become the School of Computer Science and Engineering (SCOPE) in January 2019. At present, the School is headed by Dr. CH. Pradeep Reddy. The School has qualified and committed faculty members who offer impressive instruction in a variety of modes, exploring experiential learning approaches and new pedagogical methods in order to provide proper learning to students. The school provides the necessary infrastructure, hardware, and software to support the faculty for their continuous learning and research.
+        </p>
       </div>
-      <div className="flex justify-center items-center space-x-2">
-        {data.map((item) => (
-          <PaginationItem
-            key={item.id}
-            number={item.id}
-            isActive={item.id === activePage}
-            onClick={() => handleChangePage(item.id)}
+
+      {/* Image section */}
+      <div className="flex-1">
+        {/* The image for larger screens, shown next to the text */}
+        <div className="hidden lg:block relative w-full h-64 lg:h-auto">
+          {/* Replace '/your-image-path.jpg' with the path to your actual image */}
+          <Image
+            src="/schools/image.jpg"
+            layout="fill"
+            objectFit="cover"
+            alt="Computer Science Lab"
           />
-        ))}
+        </div>
+        {/* The image for smaller screens, shown below the text */}
+        <div className="lg:hidden mt-4 relative w-full h-64">
+          {/* Replace '/your-image-path.jpg' with the path to your actual image */}
+          <Image
+            src="/schools/image.jpg"
+            layout="responsive"
+            width={100}
+            height={50} // The aspect ratio 100:50 can be adjusted based on your actual image
+            alt="Computer Science Lab"
+          />
+        </div>
       </div>
     </div>
   );
-};
-
-export default MainPage;
+}

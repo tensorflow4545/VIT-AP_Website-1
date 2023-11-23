@@ -7,12 +7,18 @@ import FacultySection from "@/components/SchoolPage Components/Faculty Section/F
 import ContactSection from "@/components/SchoolPage Components/Contact Section/contact";
 import GallerySection from "@/components/SchoolPage Components/Gallary Section/gallary";
 import Mous from "@/components/SchoolPage Components/Mous/Mous";
+import Header from "@/components/SchoolPage Components/Header Section/Header";
+import AboutUs from "@/components/SchoolPage Components/AboutUs Section/AboutUs";
+import AnnouncementsPage from "@/components/SchoolPage Components/Announcements Section/Announcements";
 
 const SchoolsPage = () => {
     return ( 
         <>
             <NavbarUpper/>
             <NavbarBottom/>
+            <Header/>
+            <AboutUs/>
+            <AnnouncementsPage/>
             <Programoffered/>
             <FacultySection/>
             <AcheivementsSection/>
