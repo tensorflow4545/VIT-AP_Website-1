@@ -120,8 +120,4 @@ import React from "react";
     
     )
 }
-<<<<<<< HEAD:vitap-webapp-frontend/src/components/SchoolPage Components/Program Offered Section/programoffered.js
 export default Programoffered;
-=======
-export default programoffered;
->>>>>>> c1e7af99cfdcba794c04bcb9955c2b082791a7bb:vitap-webapp-frontend/src/components/SchoolPage Components/Program Offered Section/Programoffered.js
