@@ -9,7 +9,7 @@ export default function statistics(){
                   <div class="flex flex-row pl-[108px] pt-[100px]">
                     
                     {/* basis */}
-                    <div class="basis-1/5">
+                    <div class="basis-1/5 relative flex-shrink-0 w-1/5 transform -skew-x-12">
                       <div class="w-[200px] h-[290px]"><Image width={240} height={290} src="/SuperDream.png" alt="Image"></Image></div>
                       <div class="w-[200px] h-[50px] bg-red-900">
                         <p class="text-[18px] text-emilio text-white pl-[16px]">Super dream offer</p>
@@ -18,7 +18,7 @@ export default function statistics(){
                     </div>
 
                     {/* basis */}
-                    <div class="basis-1/5">
+                    <div class="basis-1/5 relative flex-shrink-0 w-1/5 transform -skew-x-12">
                       <div class="w-[200px] h-[290px]"><Image width={240} height={290} src="/SuperDream.png" alt="Image"></Image></div>
                       <div class="w-[200px] h-[50px] bg-red-900">
                       <p class="text-[18px] text-emilio text-white pl-[16px]">Dream offer</p>
@@ -27,7 +27,7 @@ export default function statistics(){
                     </div>
 
                     {/* basis */}
-                    <div class="basis-1/5">
+                    <div class="basis-1/5 relative flex-shrink-0 w-1/5 transform -skew-x-12">
                       <div class="w-[200px] h-[290px]"><Image width={240} height={290} src="/SuperDream.png" alt="Image"></Image></div>
                       <div class="w-[200px] h-[50px] bg-red-900">
                       <p class="text-[18px] text-emilio text-white pl-[16px]">Internship</p>
@@ -36,7 +36,7 @@ export default function statistics(){
                     </div>
 
                     {/* basis */}
-                    <div class="basis-1/5">
+                    <div class="basis-1/5 relative flex-shrink-0 w-1/5 transform -skew-x-12">
                       <div class="w-[200px] h-[290px]"><Image width={240} height={290} src="/SuperDream.png" alt="Image"></Image></div>
                       <div class="w-[200px] h-[50px] bg-red-900">
                       <p class="text-[18px] text-emilio text-white pl-[16px]">Statistics</p>
@@ -45,7 +45,7 @@ export default function statistics(){
                     </div>
 
                     {/* basis */}
-                    <div class="basis-1/5">
+                    <div class="basis-1/5 relative flex-shrink-0 w-1/5 transform -skew-x-12">
                       <div class="w-[200px] h-[290px]"><Image width={240} height={290} src="/SuperDream.png" alt="Image"></Image></div>
                       <div class="w-[200px] h-[50px] bg-red-900">
                       <p class="text-[18px] text-emilio text-white pl-[16px]">C.D.C Office</p>
