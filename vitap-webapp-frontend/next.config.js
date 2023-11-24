@@ -1,6 +1,6 @@
 module.exports = {
   experimental: {
-    staticTracing: true,
+    // staticTracing: true,
   },
   images: {
     unoptimized: true,
