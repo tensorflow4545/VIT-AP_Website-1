@@ -10,6 +10,7 @@ import Mous from "@/components/SchoolPage Components/Mous/Mous";
 import Header from "@/components/SchoolPage Components/Header Section/Header";
 import AboutUs from "@/components/SchoolPage Components/AboutUs Section/AboutUs";
 import AnnouncementsPage from "@/components/SchoolPage Components/Announcements Section/Announcements";
+import FotterComponent from "@/components/HomePage Components/Footer Section/Component"
 
 const SchoolsPage = () => {
     return ( 
@@ -25,6 +26,7 @@ const SchoolsPage = () => {
             <Mous/>
             <GallerySection/>
             <ContactSection/>
+            <FotterComponent/>
             <Footer/>
         </>
      );
