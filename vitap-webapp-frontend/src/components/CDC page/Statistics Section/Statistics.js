@@ -1,5 +1,5 @@
 import Image from "next/image";
-export default function statistics(){
+export default function Statistics(){
     return(
         <>
             <div class="w-full h-[550px] bg-white pr-[120px]">
