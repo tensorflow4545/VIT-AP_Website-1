@@ -20,8 +20,6 @@ const Guestbanner = () => {
                     </div>
                 </div>
             </div>
-
-
         </div>
     )
 }
