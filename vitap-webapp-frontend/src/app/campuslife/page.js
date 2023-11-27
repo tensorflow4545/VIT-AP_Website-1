@@ -20,6 +20,8 @@ const page = () => {
             <CampusGallery />
             <Component />
             <Footer />
+
+            
         </div>
     )
 }
