@@ -5,7 +5,7 @@ services:
       context: ./vitap-webapp-frontend
       dockerfile: Dockerfile
     ports:
-      - "8080:8080"
+      - "3000:8088"
 
   strapi:
     container_name: strapi
