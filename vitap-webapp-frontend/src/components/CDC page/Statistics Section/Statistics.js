@@ -1,65 +1,29 @@
-import Image from "next/image";
-export default function Statistics(){
-    return(
-        <>
-            <div class="w-full h-[550px] bg-white pr-[120px]">
-               <div class="w-full h-[275px]">
-                  
-                  {/* flex */}
-                  <div class="flex flex-row pl-[108px] pt-[100px]">
-                    
-                    {/* basis */}
-                    <div class="basis-1/5 relative flex-shrink-0 w-1/5 transform -skew-x-12">
-                      <div class="w-[200px] h-[290px]"><Image width={240} height={290} src="/SuperDream.png" alt="Image"></Image></div>
-                      <div class="w-[200px] h-[50px] bg-red-900">
-                        <p class="text-[18px] text-emilio text-white pl-[16px]">Super dream offer</p>
-                        <p class="text-[11px] text-montserrat  text-white pl-[17px]">Explore Now</p>
-                      </div>
-                    </div>
+import React from 'react'
+import Card from './Card'
 
-                    {/* basis */}
-                    <div class="basis-1/5 relative flex-shrink-0 w-1/5 transform -skew-x-12">
-                      <div class="w-[200px] h-[290px]"><Image width={240} height={290} src="/SuperDream.png" alt="Image"></Image></div>
-                      <div class="w-[200px] h-[50px] bg-red-900">
-                      <p class="text-[18px] text-emilio text-white pl-[16px]">Dream offer</p>
-                      <p class="text-[11px] text-montserrat  text-white pl-[17px]">Explore Now</p>
-                      </div>
-                    </div>
-
-                    {/* basis */}
-                    <div class="basis-1/5 relative flex-shrink-0 w-1/5 transform -skew-x-12">
-                      <div class="w-[200px] h-[290px]"><Image width={240} height={290} src="/SuperDream.png" alt="Image"></Image></div>
-                      <div class="w-[200px] h-[50px] bg-red-900">
-                      <p class="text-[18px] text-emilio text-white pl-[16px]">Internship</p>
-                      <p class="text-[11px] text-montserrat  text-white pl-[17px]">Explore Now</p>
-                      </div>
-                    </div>
-
-                    {/* basis */}
-                    <div class="basis-1/5 relative flex-shrink-0 w-1/5 transform -skew-x-12">
-                      <div class="w-[200px] h-[290px]"><Image width={240} height={290} src="/SuperDream.png" alt="Image"></Image></div>
-                      <div class="w-[200px] h-[50px] bg-red-900">
-                      <p class="text-[18px] text-emilio text-white pl-[16px]">Statistics</p>
-                      <p class="text-[11px] text-montserrat  text-white pl-[17px]">Explore Now</p>
-                      </div>
-                    </div>
-
-                    {/* basis */}
-                    <div class="basis-1/5 relative flex-shrink-0 w-1/5 transform -skew-x-12">
-                      <div class="w-[200px] h-[290px]"><Image width={240} height={290} src="/SuperDream.png" alt="Image"></Image></div>
-                      <div class="w-[200px] h-[50px] bg-red-900">
-                      <p class="text-[18px] text-emilio text-white pl-[16px]">C.D.C Office</p>
-                      <p class="text-[11px] text-montserrat  text-white pl-[17px]">Explore Now</p>
-                      </div>
-                    </div>
-
-                  </div>
-
-               </div>
-               <div class="w-full h-[275px] bg-fuchsia-200">
-
-               </div>
-            </div>
-        </>
-    )
+const Statistics = () => {
+  return (
+    <div className='max-w-[1560px] w-[100%]'>
+      <div className="w-[100%] min-h-[400px] h-[100%] py-[40px] px-[50px] grid grid-cols-5 justify-center items-center gap-5 max-md:px-[20px] max-lx:px-[0px] ">
+        <div className=''>
+          <Card url={"./convocards/card1.jpeg"} title={"Schedule"} />
+        </div>
+        <div className=''>
+          <Card url={"./convocards/card2.jpeg"} title={"Videos"} />
+        </div>
+        <div className=''>
+          <Card url={"./convocards/card3.jpeg"} title={"Ranklist"} />
+        </div>
+        <div className=''>
+          <Card url={"./convocards/card4.jpeg"} title={"Instructions"} />
+        </div>
+        <div className=''>
+          <Card url={"./convocards/card5.jpeg"} title={"Photos"} />
+        </div>
+      </div>
+      <div className="min-h-[200px] w-[100%] bg-red-100 mt-[-150px] -z-20"></div>
+    </div>
+  )
 }
+
+export default Statistics

@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import react,{useState} from "react";
-export default function info(){
+export default function Info(){
     const [active, setActive] = useState("/CDC.png");
     return(
         <>
