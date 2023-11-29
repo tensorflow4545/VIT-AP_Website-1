@@ -23,7 +23,7 @@ const FacultyPage = () => {
     };
 
     return (
-        <div className="max-w-[1560px] w-[100%] max-h-[1300px] h-[100%] mx-auto">
+        <div className="max-w-[1560px] w-[100%] min-h-[1300px] h-[100%] mx-auto">
             <div
                 style={{ backgroundImage: `url("/facultybg.jpeg")` }}
                 className="relative max-w-[1560px] w-full h-[300px] bg-cover bg-no-repeat bg-center mx-auto flex items-center justify-center"
