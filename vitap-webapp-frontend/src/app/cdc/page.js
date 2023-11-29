@@ -21,7 +21,7 @@ const page = () => {
             <Hero />
             <Video />
             <Package />
-            {/* <Info /> */}
+            <Info />
             <Statistics />
             <Conclusion />
             <Component />
