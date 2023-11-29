@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Image from "next/image";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import Link from 'next/link';
 export default function Package() {
   const imglink = [
     "/microsoft.png", "/microsoft.png", "/hero.jpeg", "/hero.jpeg", "/microsoft.png", "/microsoft.png", "/microsoft.png"
@@ -23,7 +24,7 @@ export default function Package() {
 
   return (
     <>
-      <div class="w-full  h-[830px] bg-white">
+      <div class="w-full min-h-[800px] h-[100%] bg-white">
 
         <div class="w-full h-[420px] bg-fuchsia-100 px-[108px] pt-[66px]">
           <p class="text-emilio text-red-950 text-[48px] text-extrabold">High Salary Packages</p>
@@ -33,15 +34,42 @@ export default function Package() {
           <div class="flex flex-row overflow-hidden">
 
             <div class="basis pt-[50px] pr-[20px]">
-              <div class="w-[360px] h-[247px] bg-white"><Image width={390} height={246} alt="Company Image" src={imglink[Index]}></Image></div>
+              <div class="w-[360px] h-[247px] bg-white relative group transition-all duration-300 ease-in-out">
+                <Image width={390} height={250} alt="Company Image" src={imglink[Index]}></Image>
+                <div className='absolute w-full h-0 top-0 left-0 bg-[#650010] opacity-50 group-hover:h-full flex flex-col justify-between items-start'>
+                  <div className='m-5 hidden group-hover:flex border-2 border-white'>
+                    <div className='w-[320px] h-[207px] flex items-center justify-center'>
+                      <h1 className='text-white text-[26px] font-semibold'>44 Lakhs CTC</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="basis pt-[50px] pr-[20px]">
-              <div class="w-[360px] h-[247px] bg-white"><Image width={390} height={246} alt="Company Image" src={imglink[Index + 1]}></Image></div>
+              <div class="w-[360px] h-[247px] bg-white relative group transition-all duration-300 ease-in-out">
+                <Image width={390} height={250} alt="Company Image" src={imglink[Index + 1]}></Image>
+                <div className='absolute w-full h-0 top-0 left-0 bg-[#650010] opacity-50 group-hover:h-full flex flex-col justify-between items-start'>
+                  <div className='m-5 hidden group-hover:flex border-2 border-white'>
+                    <div className='w-[320px] h-[207px] flex items-center justify-center'>
+                      <h1 className='text-white text-[26px] font-semibold'>44 Lakhs CTC</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="basis pt-[50px] pr-[20px]">
-              <div class="w-[360px] h-[247px] bg-white"><Image width={390} height={246} alt="Company Image" src={imglink[Index + 2]}></Image></div>
+              <div class="w-[360px] h-[247px] bg-white relative group transition-all duration-300 ease-in-out">
+                <Image width={390} height={250} alt="Company Image" src={imglink[Index + 2]}></Image>
+                <div className='absolute w-full h-0 top-0 left-0 bg-[#650010] opacity-50 group-hover:h-full flex flex-col justify-between items-start'>
+                  <div className='m-5 hidden group-hover:flex border-2 border-white'>
+                    <div className='w-[320px] h-[207px] flex items-center justify-center'>
+                      <h1 className='text-white text-[26px] font-semibold'>44 Lakhs CTC</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
           </div>

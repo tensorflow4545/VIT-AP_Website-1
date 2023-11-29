@@ -20,7 +20,7 @@ const page = () => {
             <CDCHeader />
             <Hero />
             <Video />
-            {/* <Package /> */}
+            <Package />
             {/* <Info /> */}
             <Statistics />
             <Conclusion />
