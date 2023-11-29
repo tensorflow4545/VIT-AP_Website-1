@@ -1,5 +1,6 @@
 import Guestabout from '@/components/GuestHouse Components/GuestAbout Section/Guestabout'
 import GuestFacilities from '@/components/GuestHouse Components/GuestFacilities Section/GuestFacilities'
+import GuestGallery from '@/components/GuestHouse Components/GuestGallery Section/GuestGallery'
 import Guestbanner from '@/components/GuestHouse Components/GuestHousebanner Section/Guestbanner'
 import Guestheader from '@/components/GuestHouse Components/GuestHouseheader Section/Guestheader'
 import GuestPolicies from '@/components/GuestHouse Components/GuestPolicies Section/GuestPolicies'
@@ -21,6 +22,7 @@ const page = () => {
             <Guestheader />
             <Guestbanner />
             <Guestabout />
+            <GuestGallery />
             <GuestTable />
             <GuestFacilities />
             <GuestReservation />
