@@ -22,10 +22,12 @@ const News = () => {
         {/* <div className="flex justify-end pt-[80px] ml-[674px]">
           <h1 className="text-[#FFFFFF] text-[25px]">See all</h1>
         </div> */}
-
-        <div className={`${styles.cardcontainer} flex ml-[240px] mt-[20px]`}>
+        <div className="h-[288px] bg-[#741D26] mt-[280px]"></div>
+        <div
+          className={`${styles.cardcontainer} flex ml-[240px] mt-[-540px] border w-[1086px] h-[480px] absolute`}
+        >
           <div
-            className={`${styles.card1} w-[320px] h-[450px] bg-white ml-[24px] border-b shadow-2xl border-gray-800 section transition-transform transform hover:scale-105`}
+            className={`${styles.card1} w-[320px] h-[450px] bg-white ml-[24px] border-b shadow-2xl border-gray-800 section transition-transform transform hover:scale-105 mt-[15px]`}
           >
             <Image
               src={news1}
@@ -59,7 +61,7 @@ const News = () => {
             </button>
           </div>
           <div
-            className={`${styles.card2} w-[320px] h-[450px] bg-white ml-[35px] border-b shadow-2xl border-gray-800 section transition-transform transform hover:scale-105`}
+            className={`${styles.card2} w-[320px] h-[450px] bg-white ml-[35px] border-b shadow-2xl border-gray-800 section transition-transform transform hover:scale-105 mt-[15px]`}
           >
             <Image
               src={news2}
@@ -91,7 +93,7 @@ const News = () => {
             </button>
           </div>
           <div
-            className={`${styles.card3} w-[320px] h-[450px] bg-white ml-[35px] border-b shadow-2xl border-gray-800 section transition-transform transform hover:scale-105`}
+            className={`${styles.card3} w-[320px] h-[450px] bg-white ml-[35px] border-b shadow-2xl border-gray-800 section transition-transform transform hover:scale-105 mt-[15px]`}
           >
             <Image
               src={news3}
