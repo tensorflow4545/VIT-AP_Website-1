@@ -617,3 +617,14 @@ export const guestTravel = [
     info: "✧ Guntur railway station (station code:GNT) is an Indian Railways station in Guntur of Andhra Pradesh. It is situated on the Krishna Canal–Guntur section of Guntur railway division in the South central railway zone. It’s 32 Km from VIT-AP Campus."
   },
 ]
+
+export const superdreamImages = [
+  {
+    id: 1,
+    imgUrl: "/package.png"
+  },
+  {
+    id: 2,
+    imgUrl: "/super-dream-offer 1.png"
+  }
+]

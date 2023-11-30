@@ -10,8 +10,8 @@ const SchoolsPage = () => {
         <>
             <NavbarUpper/>
             <NavbarBottom/>
-            <AcheivementsSection/>
             <FacultySection/>
+            <AcheivementsSection/>
             <Footer/>
         </>
      );
