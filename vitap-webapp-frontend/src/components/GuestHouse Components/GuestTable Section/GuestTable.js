@@ -3,7 +3,11 @@ import React from 'react'
 
 const GuestTable = () => {
     return (
+<<<<<<< HEAD
         <div className='max-w-screen w-[100%] min-h-[1100px] h-[100%] bg-gradient-to-b from-[#FCE3E5] to-white px-[50px] md:px-[100px] py-[80px] flex flex-col'>
+=======
+        <div className='max-w-[1560px] w-[100%] min-h-[1100px] h-[100%] bg-gradient-to-b from-[#FCE3E5] to-white px-[50px] md:px-[100px] py-[80px] mt-[30px] flex flex-col'>
+>>>>>>> aws-build-branch
             <h1 className='text-[46px] font-Emilio text-[#650010] font-bold'>Tariff for Rooms</h1>
             <div className='grid grid-rows-6 mt-[20px] max-h-[700px] h-[100%]'>
                 <div className='grid grid-cols-3 text-center bg-[#650010] text-white p-5 text-[22px] font-semibold'>

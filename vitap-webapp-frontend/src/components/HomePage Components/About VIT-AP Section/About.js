@@ -55,9 +55,11 @@ const About = () => {
 
   return (
     <>
+
       <div className="lx:px-[108px] sm:px-[40px] mb-[100px] ">
         <div className="md:flex  ls:pt-[70px] sm:pt-[50px]">
           <div className="md:w-[50%]  sm:text-center md:text-left sm:flex-col sm:justify-center md:justify-normal ">
+
             <h1 className="font-Emilio ls:text-[48px] sm:text-[40px] text-primary font-bold pb-[9px]">
               About VIT-AP
             </h1>
@@ -113,12 +115,11 @@ const About = () => {
               {/* <div className="Rectangle91 w-[32px] h-[30px] left-[80px] top-[-3px] absolute bg-[#5C0E14] opacity-20 transition-transform hover:left-[-10px] hover:w-[125px]"></div>
               <h1 className="mr-4 text-[#5C0E14]">View More</h1>
               <div className="Arrow w-[50px] border-2 border-solid border-[#5C0E14]"></div> */}
-
               <div className="flex flex-row items-center justify-center relative  transition-all duration-300 ease-in group">
-              <div className="Rectangle91 w-[32px] h-[30px] left-[40px] top-[-3px] absolute bg-[#5C0E14] opacity-20 transition-transform group-hover:left-[-10px] group-hover:w-[90px] group-hover:transition-all group-hover:duration-300 group-hover:ease-in-out "></div>
-              <Link href={"/"} className="mr-2 text-[#5C0E14] font-bold">See All</Link>
-              <hr className=" h-[4px] w-[36px] font-bold bg-[#5C0E14] max-lx:w-[28px]" />
-            </div>
+                <div className="Rectangle91 w-[32px] h-[30px] left-[80px] top-[-3px] absolute bg-[#5C0E14] opacity-20 transition-transform group-hover:left-[-10px] group-hover:w-[120px] group-hover:transition-all group-hover:duration-300 group-hover:ease-in-out "></div>
+                <Link href={"/"} className="mr-2 text-[#5C0E14] font-bold">View More</Link>
+                <hr className=" h-[4px] w-[36px] font-bold bg-[#5C0E14] max-lx:w-[28px]" />
+              </div>
             </motion.div>
 
             <h1 className="text-[24px] text-primary font-Montserrant font-bold  md:text-left">

@@ -14,21 +14,21 @@ export const researchInnovation = [
 ];
 
 export const researchNumbers = [
-    {
-        id: 1,
-        number: 1000,
-        name: "publications"
-    },
-    {
-        id: 2,
-        number: 300,
-        name: "patents"
-    },
-    {
-        id: 3,
-        number: 1.5,
-        name: "Sponsored Budget"
-    }
+  {
+    id: 1,
+    number: 1000,
+    name: "publications"
+  },
+  {
+    id: 2,
+    number: 300,
+    name: "patents"
+  },
+  {
+    id: 3,
+    number: 1.5,
+    name: "Sponsored Budget"
+  }
 ]
 
 export const eventsMain = [
@@ -272,6 +272,128 @@ export const acheivements = [
   },
 ];
 
+export const professors = [
+  {
+    id: 1,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 2,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 3,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 4,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 5,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 6,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 7,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 8,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 9,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 10,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 11,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 12,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 13,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 14,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 15,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 16,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+  {
+    id: 17,
+    name: "Dr. Ashish Kumar Dalai Kumar Dalai",
+    subname: "Dr. Ashish Kumar Dalai",
+    profession: "Assistant Professor",
+    school: "SCOPE"
+  },
+]
+
 
 export const guestFacilities = [
   {
@@ -496,3 +618,16 @@ export const guestTravel = [
     info: "✧ Guntur railway station (station code:GNT) is an Indian Railways station in Guntur of Andhra Pradesh. It is situated on the Krishna Canal–Guntur section of Guntur railway division in the South central railway zone. It’s 32 Km from VIT-AP Campus."
   },
 ]
+
+
+export const superdreamImages = [
+  {
+    id: 1,
+    imgUrl: "/package.png"
+  },
+  {
+    id: 2,
+    imgUrl: "/super-dream-offer 1.png"
+  }
+]
+

@@ -8,8 +8,13 @@
     padding-left: 108px;
     padding-right: 108px;
     padding-top: 107px;
+<<<<<<< HEAD
     background-image: url('/programback.jpeg');
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.79) 0%, rgba(0, 0, 0, 0.79) 100%),url('/programback.jpeg');
+=======
+    background-image: url('../../../public/programback.jpeg');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.79) 0%, rgba(0, 0, 0, 0.79) 100%),url('../../../public/programback.jpeg');
+>>>>>>> aws-build-branch
     background-repeat: no-repeat;   
     background-size: 1440px 600px;
 }
@@ -78,4 +83,8 @@ text-transform: capitalize;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> aws-build-branch

@@ -2,7 +2,11 @@ import React from 'react'
 
 const Guestheader = () => {
     return (
+<<<<<<< HEAD
         <div className="max-w-screen w-[100%] max-h-[300px] h-[100%] mx-auto">
+=======
+        <div className="max-w-[1560px] w-[100%] max-h-[300px] h-[100%] mx-auto">
+>>>>>>> aws-build-branch
             <div
                 style={{ backgroundImage: `url("/announcements.png")` }}
                 className="relative max-w-[1560px] w-full h-[300px] bg-center mx-auto flex items-center justify-center">
