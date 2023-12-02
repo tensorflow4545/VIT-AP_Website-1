@@ -628,3 +628,14 @@ export const superdreamImages = [
     imgUrl: "/super-dream-offer 1.png"
   }
 ]
+
+export const homeCDC = [
+  {
+    id: 1,
+    imgUrl: "/package.png"
+  },
+  {
+    id: 2,
+    imgUrl: "/super-dream-offer 1.png"
+  }
+]
