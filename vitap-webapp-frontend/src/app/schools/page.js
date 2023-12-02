@@ -27,8 +27,6 @@ const SchoolsPage = () => {
             <Mous/>
             <GallerySection/>
             <ContactSection/>
-            <FacultySection/>
-            <AcheivementsSection/>
             <Footer/>
         </>
      );
