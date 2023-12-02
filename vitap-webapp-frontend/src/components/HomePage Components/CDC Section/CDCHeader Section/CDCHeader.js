@@ -3,6 +3,9 @@
 import Image from 'next/image'
 import React, { useState } from 'react';
 import "./SuperdreamOffers.css"
+import { homeCDC } from '@/constants';
+import { MdNavigateNext } from "react-icons/md";
+import { GrFormPrevious } from "react-icons/gr";
 
 const CDCHeader = () => {
 
@@ -16,7 +19,7 @@ const CDCHeader = () => {
                 <div className='max-w-[1400px] w-[100%] min-h-[420px] h-[100%] p-5 flex '>
                     <div className='flex-1 flex justify-start items-center'>
                         <div className='max-w-[400px] min-h-[370px] h-[100%] w-[100%] relative'>
-                            <Image src={"/super-dream-offer 1.png"} alt='glance' fill className='p-7' />
+                            <Image src={homeCDC[index].imgUrl} alt='glance' fill className='p-7' />
                             <div className='absolute right-0 bottom-0 max-h-[50px] max-w-[50px] w-[100%] h-[100%] border-4 border-[#650010] border-t-0 border-l-0'></div>
                         </div>
                     </div>
@@ -28,6 +31,10 @@ const CDCHeader = () => {
             </div>
             <div className="max-w-[1560px] w-[100%] min-h-[350px] lx:min-h-[350px] h-[100%] mx-auto bg-[#FCE3E5] flex flex-col relative overflow-hidden justify-center items-center">
                 <div className='absolute max-w-[100px] lx:max-w-[150px] md:max-w-[200px] w-[100%] h-full top-0 left-16 bg-[#650010]'></div>
+                <div className='absolute bottom-8 right-32 max-w-[80px] w-[100%] max-h-[40px] h-[100%] flex justify-between items-center'>    
+                    <button className='bg-white rounded-full' onClick={() => setIndex(index-1)}><GrFormPrevious size={35}/></button>
+                    <button className='bg-white rounded-full' onClick={() => setIndex(index+1)}><MdNavigateNext size={35}/></button>
+                </div>
                 <div className='absolute max-w-[300px] w-[100%] max-h-[50px] h-[100%] right-36 top-0 bg-[#650010] text-white text-[22px] flex justify-center items-start'>
                     <button>Top Recruiters</button>
                 </div>
