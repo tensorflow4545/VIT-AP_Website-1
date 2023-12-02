@@ -1,25 +1,29 @@
-'use client';
+"use client";
 import React, { useState } from "react";
-//import DatePicker from "react-datepicker";
-import Datetime from "react-datetime";
+import { useRouter } from "next/router";
+import { DateRange } from "react-date-range";
 import "react-datetime/css/react-datetime.css";
 import Image from "next/image";
 import banner from "../../assets/images/Events/banner2.png";
 import card from "../../assets/images/Events/card.png";
 import Link from "next/link";
 import Card from "./Card";
-//import "react-datepicker/dist/react-datepicker.css";
+import "react-date-range/dist/styles.css";
+import "react-date-range/dist/theme/default.css";
 
 const Events = () => {
-  const [selectedDate, setSelectedDate] = useState(new Date());
-  const handleDateChange = (date) => {
-    setSelectedDate(date);
-  };
+  const [selectedDate, setSelectedDate] = useState([
+    {
+      startDate: new Date(),
+      endDate: null,
+      key: "selection",
+    },
+  ]);
   return (
     <>
-      <div className="h-screen">
-        <div className="relative bg-black">
-          <Image src={banner} className="max-w-full h-auto mx-auto" />
+      <div>
+        <div className="relative">
+          <Image src={banner} className="w-full" />
           <div
             style={{
               position: "absolute",
@@ -28,68 +32,157 @@ const Events = () => {
               transform: "translate(-50%, -50%)",
             }}
           >
-            <p className="text-white text-4xl font-bold">Events</p>
+            <p className="text-white text-4xl font-bold font-Emilo text-[61px]">
+              Events
+            </p>
           </div>
         </div>
-        <div className="flex flex-row relative">
-          <div className="mt-[80px] ml-[30px]">
-            <Image
-              src={card}
-              width={250}
-              height={250}
-              className="rounded-top"
-            />
-            <Link href="/Card">
-              <button className="w-[250px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b">
-                V-Launch Pad
-              </button>
-            </Link>
+        <div className="flex flex-row">
+          <div className="w-[1171px]">
+            <div className="flex">
+              <div className="mt-[60px] ml-[150px] w-[270px] h-[300px] shadow-xl">
+                <Image
+                  src={card}
+                  width={270}
+                  height={270}
+                  className="rounded-top"
+                />
+                <Link href="/Card">
+                  <button className="w-[270px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px] hover:bg-[#7A1820]">
+                    V-Launch Pad
+                  </button>
+                </Link>
+              </div>
+              <div className="mt-[60px] ml-[30px] w-[270px] h-[300px] shadow-xl">
+                <Image
+                  src={card}
+                  width={270}
+                  height={270}
+                  className="rounded-top"
+                />
+                <Link href="/Card">
+                  <button className="w-[270px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px] hover:bg-[#7A1820]">
+                    V-Launch Pad
+                  </button>
+                </Link>
+              </div>
+              <div className="mt-[60px] ml-[30px] w-[270px] h-[300px] shadow-xl">
+                <Image
+                  src={card}
+                  width={270}
+                  height={270}
+                  className="rounded-top"
+                />
+                <Link href="/Card">
+                  <button className="w-[270px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px] hover:bg-[#7A1820]">
+                    V-Launch Pad
+                  </button>
+                </Link>
+              </div>
+            </div>
+            <div className="flex">
+              <div className="mt-[60px] ml-[150px] w-[270px] h-[300px] shadow-xl">
+                <Image
+                  src={card}
+                  width={270}
+                  height={270}
+                  className="rounded-top"
+                />
+                <Link href="/Card">
+                  <button className="w-[270px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px] hover:bg-[#7A1820]">
+                    V-Launch Pad
+                  </button>
+                </Link>
+              </div>
+              <div className="mt-[60px] ml-[30px] w-[270px] h-[300px] shadow-xl">
+                <Image
+                  src={card}
+                  width={270}
+                  height={270}
+                  className="rounded-top"
+                />
+                <Link href="/Card">
+                  <button className="w-[270px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px] hover:bg-[#7A1820]">
+                    V-Launch Pad
+                  </button>
+                </Link>
+              </div>
+              <div className="mt-[60px] ml-[30px] w-[270px] h-[300px] shadow-xl">
+                <Image
+                  src={card}
+                  width={270}
+                  height={270}
+                  className="rounded-top"
+                />
+                <Link href="/Card">
+                  <button className="w-[270px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px] hover:bg-[#7A1820]">
+                    V-Launch Pad
+                  </button>
+                </Link>
+              </div>
+            </div>
+            <div className="flex">
+              {/* <div className="mt-[60px] ml-[30px] w-[270px] h-[300px] shadow-xl">
+                <Image
+                  src={card}
+                  width={270}
+                  height={270}
+                  className="rounded-top"
+                />
+                <Link href="/Card">
+                  <button className="w-[270px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px] hover:bg-[#7A1820]">
+                    V-Launch Pad
+                  </button>
+                </Link>
+              </div>
+              <div className="mt-[60px] ml-[30px] w-[270px] h-[300px] shadow-xl">
+                <Image
+                  src={card}
+                  width={270}
+                  height={270}
+                  className="rounded-top"
+                />
+                <Link href="/Card">
+                  <button className="w-[270px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px] hover:bg-[#7A1820]">
+                    V-Launch Pad
+                  </button>
+                </Link>
+              </div>
+              <div className="mt-[60px] ml-[30px] w-[270px] h-[300px] shadow-xl">
+                <Image
+                  src={card}
+                  width={270}
+                  height={270}
+                  className="rounded-top"
+                />
+                <Link href="/Card">
+                  <button className="w-[270px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px] hover:bg-[#7A1820]">
+                    V-Launch Pad
+                  </button>
+                </Link>
+              </div>
+              <div className="mt-[60px] ml-[30px] w-[270px] h-[300px] shadow-xl">
+                <Image
+                  src={card}
+                  width={270}
+                  height={270}
+                  className="rounded-top"
+                />
+                <Link href="/Card">
+                  <button className="w-[270px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px] hover:bg-[#7A1820]">
+                    V-Launch Pad
+                  </button>
+                </Link>
+              </div> */}
+            </div>
           </div>
-          <div className="mt-[80px] ml-[30px] group">
-            <Image
-              src={card}
-              width={250}
-              height={250}
-              className="rounded-top"
-            />
-            <Link href="/Card">
-              <button className="w-[250px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b">
-                V-Launch Pad
-              </button>
-            </Link>
-          </div>
-          <div className="mt-[80px] ml-[30px]">
-            <Image
-              src={card}
-              width={250}
-              height={250}
-              className="rounded-top"
-            />
-            <Link href="/Card">
-              <button className="w-[250px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b">
-                V-Launch Pad
-              </button>
-            </Link>
-          </div>
-          <div className="mt-[80px] ml-[30px]">
-            <Image
-              src={card}
-              width={250}
-              height={250}
-              className="rounded-top"
-            />
-            <Link href="/Card">
-              <button className="w-[250px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b">
-                V-Launch Pad
-              </button>
-            </Link>
-          </div>
-          <div className="ml-[80px]">
+          <div className="mt-[40px]">
             <div>
-              <Datetime
-                value={new Date()}
-                input={true}
-                className="w-60 border rounded py-3 px-2 text-gray-darker shadow-lg mt-[30px]"
+              <DateRange
+                editableDateInputs={true}
+                onChange={(item) => setSelectedDate([item.selection])}
+                moveRangeOnFirstSelection={false}
+                ranges={selectedDate}
               />
             </div>
             <div
@@ -100,42 +193,42 @@ const Events = () => {
               }}
               className="flex flex-col rounded items-center border border-black shadow-2xl mt-[20px]"
             >
-              <p className="text-center mt-[20px] font-extrabold">
+              <p className="text-center mt-[20px] font-extrabold font-Inter">
                 Upcoming Events
               </p>
               <hr className="w-[230px] mt-4" />
-              <h5 className="font-bold mt-3">V-Launch Pad</h5>
-              <p>18th Oct, 4pm</p>
+              <h5 className="font-bold mt-3 font-Inter">V-Launch Pad</h5>
+              <p className="font-Inter">18th Oct, 4pm</p>
+              <hr className="w-[230px] mt-4" />
+              <h5 className="font-bold mt-3 font-Inter">V-Launch Pad</h5>
+              <p className="font-Inter">18th Oct, 4pm</p>
+              <hr className="w-[230px] mt-4" />
+              <h5 className="font-bold mt-3 font-Inter">V-Launch Pad</h5>
+              <p className="font-Inter">18th Oct, 4pm</p>
               <hr className="w-[230px] mt-4" />
               <h5 className="font-bold mt-3">V-Launch Pad</h5>
-              <p>18th Oct, 4pm</p>
+              <p className="font-Inter">18th Oct, 4pm</p>
               <hr className="w-[230px] mt-4" />
-              <h5 className="font-bold mt-3">V-Launch Pad</h5>
-              <p>18th Oct, 4pm</p>
-              <hr className="w-[230px] mt-4" />
-              <h5 className="font-bold mt-3">V-Launch Pad</h5>
-              <p>18th Oct, 4pm</p>
-              <hr className="w-[230px] mt-4" />
-              <h5 className="font-bold mt-3">V-Launch Pad</h5>
-              <p>18th Oct, 4pm</p>
+              <h5 className="font-bold mt-3 font-Inter">V-Launch Pad</h5>
+              <p className="font-Inter">18th Oct, 4pm</p>
             </div>
           </div>
         </div>
-        <div className="flex ml-[40%]">
+        <div className="flex ml-[40%] mt-[30px]">
           <div className="mt-[5px] mr-3">
             <button>&larr;</button>
           </div>
           <div className="rounded w-[40px] h-[40px] bg-[#E6CFCF] hover:text-[#FFFFFF] hover:bg-[#5C0E14]">
-            <button className="mt-[8px] ml-[15px]">1</button>
+            <button className="mt-[8px] ml-[15px] font-Inter">1</button>
           </div>
           <div className="rounded w-[40px] h-[40px] bg-[#E6CFCF] hover:text-[#FFFFFF] hover:bg-[#5C0E14] ml-3">
-            <button className="mt-[8px] ml-[15px]">2</button>
+            <button className="mt-[8px] ml-[15px] font-Inter">2</button>
           </div>
           <div className="rounded w-[40px] h-[40px] bg-[#E6CFCF] hover:text-[#FFFFFF] hover:bg-[#5C0E14] ml-3">
-            <button className="mt-[8px] ml-[15px]">3</button>
+            <button className="mt-[8px] ml-[15px] font-Inter">3</button>
           </div>
           <div className="rounded w-[40px] h-[40px] bg-[#E6CFCF] hover:text-[#FFFFFF] hover:bg-[#5C0E14] ml-3">
-            <button className="mt-[8px] ml-[15px]">4</button>
+            <button className="mt-[8px] ml-[15px] font-Inter">4</button>
           </div>
           <div className="mt-[5px] ml-3">
             <button>&rarr;</button>
@@ -147,4 +240,3 @@ const Events = () => {
 };
 
 export default Events;
-

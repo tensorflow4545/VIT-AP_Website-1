@@ -1,0 +1,72 @@
+@media screen and (max-width: 720px) {
+    .container {
+      background-color: #e8e8e8;
+    }
+    .img1 {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+    .img2 {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 200px;
+      height: 200px;
+    }
+    .img3 {
+      position: absolute;
+      top: 750px;
+      left: 0px;
+      width: 280px;
+    }
+    .img4 {
+      position: absolute;
+      top: 750px;
+      right: 0px;
+      width: 280px;
+    }
+    .img5 {
+      position: absolute;
+      top: 280px;
+      left: 0px;
+    }
+    .img6 {
+      position: absolute;
+      top: 280px;
+      right: 0px;
+    }
+    .img7 {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      width: 290px;
+    }
+    .img8 {
+      opacity: 0;
+    }
+    .img9 {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      width: 290px;
+    }
+    .explore {
+      top: 330px;
+    }
+    .life {
+      top: 335px;
+      font-size: 30px;
+    }
+    .experience {
+      top: 340px;
+      position: relative;
+    }
+    .button {
+      width: 100px;
+      height: 40px;
+      top: 345px;
+      position: relative;
+      font-size: 13px;
+    }
+  }
