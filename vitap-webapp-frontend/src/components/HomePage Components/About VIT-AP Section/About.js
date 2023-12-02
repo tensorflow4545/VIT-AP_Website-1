@@ -112,12 +112,10 @@ const About = () => {
               whileHover={{ left: "[-20px]", width: "[125px]" }}
               className="top-[-7px] z-999  right-5 absolute hover:cursor-pointer flex items-center"
             >
-              {/* <div className="Rectangle91 w-[32px] h-[30px] left-[80px] top-[-3px] absolute bg-[#5C0E14] opacity-20 transition-transform hover:left-[-10px] hover:w-[125px]"></div>
-              <h1 className="mr-4 text-[#5C0E14]">View More</h1>
-              <div className="Arrow w-[50px] border-2 border-solid border-[#5C0E14]"></div> */}
               <div className="flex flex-row items-center justify-center relative  transition-all duration-300 ease-in group">
-                <div className="Rectangle91 w-[32px] h-[30px] left-[80px] top-[-3px] absolute bg-[#5C0E14] opacity-20 transition-transform group-hover:left-[-10px] group-hover:w-[120px] group-hover:transition-all group-hover:duration-300 group-hover:ease-in-out "></div>
-                <Link href={"/"} className="mr-2 text-[#5C0E14] font-bold">View More</Link>
+              <Link href="/announcements"><div className="Rectangle91 w-[32px] h-[30px] left-[80px] top-[-3px] absolute bg-[#5C0E14] opacity-20 transition-transform group-hover:left-[-10px] group-hover:w-[120px] group-hover:transition-all group-hover:duration-300 group-hover:ease-in-out "></div></Link>
+                View More
+                <h1  className="mr-2 text-[#5C0E14] font-bold"></h1>
                 <hr className=" h-[4px] w-[36px] font-bold bg-[#5C0E14] max-lx:w-[28px]" />
               </div>
             </motion.div>
