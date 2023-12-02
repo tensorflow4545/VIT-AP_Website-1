@@ -21,7 +21,7 @@ export default function Home() {
     <div className="bg-primary text-white p-4 ls:p-6 lx:p-8 md:p-10 lg:p-12 xl:p-14 flex flex-col justify-center min-h-[591px] font-Emilio">
       <div className="container mx-auto">
         <div className="flex flex-row items-center justify-between mb-10">
-          <h1 className=" sm:text-4xl font-bold  lx:ml-4  w-[300px] ls:text-left sm:text-center ">
+          <h1 className=" sm:text-4xl font-bold  lx:ml-4  ls:w-[300px] ls:text-left sm:text-center ">
             Announcements
           </h1>
           <div className="flex flex-row relative items-center justify-end w-[100px] transition-all duration-300 ease-in group mr-[30px] ">

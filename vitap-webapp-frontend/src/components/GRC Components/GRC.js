@@ -26,7 +26,9 @@ const GRC = () => {
           In accordance to the above the following are nominated as the members
           of the committee.
         </p>
+
         <table className="w-[1224px] ml-[10%] border mt-[15px]">
+<tbody>
           <tr className="h-[80px] text-[30px] font-Emilo text-white bg-[#5C0E14]">
             <th>Name</th>
             <th>School/Dept</th>
@@ -82,7 +84,9 @@ const GRC = () => {
             <td>SCOPE</td>
             <td>Chairman</td>
           </tr>
+          </tbody>
         </table>
+
         <p className="font-bold mt-[32px] text-[22px] font-Montserrant ml-[6%]">
           As per the UGC Regulations called as “Redress of Grievances of
           Students, 2023” defines Grievance as follows

@@ -1,14 +1,8 @@
 "use client";
 import style from "./programoffere.module.css";
-<<<<<<< HEAD
-import {useState} from "react";
-import React from "react";
-
- const Programoffered=()=>{
-=======
 import react,{useState} from "react";
  const programoffered=()=>{
->>>>>>> aws-build-branch
+
     const programmesOffered = [
         {
           id: 1,
@@ -112,11 +106,8 @@ import react,{useState} from "react";
         <div class="pt-10">
            {programmesOffered.map((program)=>{
              if(active===program.field){
-<<<<<<< HEAD
-              return <div class={`pb-3 ${style.coursecard}`} key={program.id}>
-=======
+
               return <div class={`pb-3 ${style.coursecard}`}>
->>>>>>> aws-build-branch
             <p class={`pb-3 ${style.heading}`}>{program.head}</p>
             <p class={`pb-3 ${style.text}`}>{program.title}</p>
             <hr class={style.hr}/>
@@ -129,8 +120,6 @@ import react,{useState} from "react";
     
     )
 }
-<<<<<<< HEAD
-export default Programoffered;
-=======
+
 export default programoffered;
->>>>>>> aws-build-branch
+
