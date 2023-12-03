@@ -9,7 +9,7 @@ import exp6 from "@/assets/images/explorePhotos/explore6.png";
 import exp7 from "@/assets/images/explorePhotos/explore7.png";
 import exp8 from "@/assets/images/explorePhotos/explore8.png";
 import exp9 from "@/assets/images/explorePhotos/explore9.png";
-
+import Link from "next/link";
 
 const Life = () => {
   return (
@@ -61,7 +61,7 @@ const Life = () => {
           src={exp8}
           width={280}
           height={202}
-          className="absolute bottom-[9%] left-[41%]"
+          className="absolute bottom-[0%] "
         />
         <Image
           src={exp9}
@@ -78,8 +78,12 @@ const Life = () => {
         <p className="w-[616px] h-[54px] text-center mt-3">
           Experience the vibrant heart of our campus life at Vitap University.
         </p>
-        <button className="bg-[#5C0E14] items-center text-[#FDFEFF] w-[150px] h-[58px] rounded-full hover:bg-[#7A1820]">
+
+        <button href="/campuslife" className="bg-[#5C0E14] items-center text-[#FDFEFF] w-[150px] h-[58px] rounded-full hover:bg-[#7A1820]">
+          <Link href="/campuslife">
           EXPLORE
+          
+          </Link>
         </button>
       </div>
     </>
