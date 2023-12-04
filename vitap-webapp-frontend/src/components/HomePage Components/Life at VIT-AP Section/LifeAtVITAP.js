@@ -10,7 +10,7 @@ import exp6 from "@/assets/images/explorePhotos/explore6.png";
 import exp7 from "@/assets/images/explorePhotos/explore7.png";
 import exp8 from "@/assets/images/explorePhotos/explore8.png";
 import exp9 from "@/assets/images/explorePhotos/explore9.png";
-
+import Link from "next/link";
 
 const Life = () => {
   return (
@@ -65,6 +65,7 @@ const Life = () => {
           width={280}
           height={202}
           className={`${styles.img8} absolute bottom-0 left-[41%]`}
+
         />
         <Image
           src={exp9}
@@ -90,7 +91,10 @@ const Life = () => {
         <button
           className={`${styles.button} bg-[#5C0E14] items-center text-[#FDFEFF] w-[150px] h-[58px] rounded-full hover:bg-[#7A1820]`}
         >
+
           EXPLORE
+          
+          </Link>
         </button>
       </div>
     </>
