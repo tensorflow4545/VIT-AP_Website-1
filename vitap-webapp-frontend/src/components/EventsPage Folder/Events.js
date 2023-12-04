@@ -122,19 +122,6 @@ const Events = () => {
               </div>
             </div>
             <div className="flex">
-              {/* <div className="mt-[60px] ml-[30px] w-[270px] h-[300px] shadow-xl">
-                <Image
-                  src={card}
-                  width={270}
-                  height={270}
-                  className="rounded-top"
-                />
-                <Link href="/Card">
-                  <button className="w-[270px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px] hover:bg-[#7A1820]">
-                    V-Launch Pad
-                  </button>
-                </Link>
-              </div>
               <div className="mt-[60px] ml-[30px] w-[270px] h-[300px] shadow-xl">
                 <Image
                   src={card}
@@ -173,7 +160,20 @@ const Events = () => {
                     V-Launch Pad
                   </button>
                 </Link>
-              </div> */}
+              </div>
+              <div className="mt-[60px] ml-[30px] w-[270px] h-[300px] shadow-xl">
+                <Image
+                  src={card}
+                  width={270}
+                  height={270}
+                  className="rounded-top"
+                />
+                <Link href="/Card">
+                  <button className="w-[270px] h-[60px] bg-[#5C0E14] text-[#FFFFFF] rounded-b text-[24px] hover:bg-[#7A1820]">
+                    V-Launch Pad
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
           <div className="mt-[40px]">
@@ -232,6 +232,17 @@ const Events = () => {
           </div>
           <div className="mt-[5px] ml-3">
             <button>&rarr;</button>
+          </div>
+        </div>
+        <div className="w-screen mt-[93px] h-[248px] bg-[#741D26] flex">
+          <div className="w-[760px] mt-[75px] ml-[313px]">
+            <p className="text-[26px] text-[#FDFEFF] font-Emilo">
+              “ Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit
+              amet consectetur ”
+            </p>
+            <p className="text-[20px] text-white font-Montserrant float-right">
+              -Jagdish Mudiganti
+            </p>
           </div>
         </div>
       </div>

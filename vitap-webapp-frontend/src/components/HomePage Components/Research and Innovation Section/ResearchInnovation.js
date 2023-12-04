@@ -35,7 +35,7 @@ const ResearchInnovation = () => {
 
   return (
     <>
-      <div className="max-w-[1440px] mt-[100px] min-h-[800px]  mx-auto pt-[56px] px-[55px] hidden flex-col max-xl:px-[25px] max-xl:pr-[20px] max-md:mt-[70px] ls:flex">
+      <div className="max-w-[1440px] min-h-[800px] mx-auto px-[55px] hidden flex-col max-xl:px-[25px] max-xl:pr-[20px] max-md:mt-[70px] ls:flex">
         <div className="flex flex-col justify-start items-start gap-5">
           <h1 className="text-[#51060D] font-Emilio text-[48px] font-bold max-lx:text-[32px] max-ls:text-[26px]">
             Research and Innovation
