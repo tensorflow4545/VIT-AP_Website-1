@@ -1,0 +1,17 @@
+# Stage 1: Building the code
+FROM node:latest as builder
+
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+RUN npm run build
+
+# Stage 2: Run the built code
+FROM node:alpine
+
+WORKDIR /app
+COPY --from=builder /app .
+
+EXPOSE 1337
+CMD ["npm", "start"]

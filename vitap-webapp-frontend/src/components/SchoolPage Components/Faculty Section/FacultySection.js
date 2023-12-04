@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react'
 
 const FacultySection = () => {
@@ -17,56 +18,126 @@ const FacultySection = () => {
           </button>
         </div>
 
-        <div className="flex justify-end items-end overflow-hidden mt-[75px] pr-[20px] max-w-[230px] max-h-[230px] h-full w-full relative">
+        {/* <div className="flex justify-end items-end overflow-hidden mt-[75px] pr-[20px] max-w-[230px] max-h-[230px] h-full w-full relative">
           <Image src={"/faculty1.jpeg"} alt="faculty1Img" fill={true} className='flex justify-end items-end'/>
+        </div> */}
+        <div className="flex justify-end items-end overflow-hidden mt-[75px] pr-[20px] max-w-[230px] max-h-[230px] h-full w-full relative group transition-all duration-300 ease-in-out">
+          <Image
+            src={"/faculty1.jpeg"}
+            alt="faculty1Img"
+            fill={true}
+          />
+          <div className='absolute w-full h-0 top-0 left-0 bg-[#650010] opacity-50 group-hover:h-full flex flex-col justify-between items-start'>
+            <div className='p-5 hidden group-hover:flex flex-col gap-1'>
+              <h1 className='text-white text-[18px] font-semibold'>Dr. Saroj Kumar</h1>
+              <h1 className='text-white text-[15px] font-semibold'>Associate Dean, SCOPE</h1>
+            </div>
+            <div className='p-5 hidden group-hover:flex flex-col gap-1'>
+              <Link href={"/"} className='text-white text-[18px] font-semibold'>See Profile</Link>
+            </div>
+          </div>
         </div>
       </div>
       <div className="flex-1 flex flex-col justify-center items-center">
-        <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative">
+        <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative group transition-all duration-300 ease-in-out">
           <Image
             src={"/faculty1.jpeg"}
             alt="faculty1Img"
             fill={true}
           />
+          <div className='absolute w-full h-0 top-0 left-0 bg-[#650010] opacity-50 group-hover:h-full flex flex-col justify-between items-start'>
+            <div className='p-5 hidden group-hover:flex flex-col gap-1'>
+              <h1 className='text-white text-[18px] font-semibold'>Dr. Saroj Kumar</h1>
+              <h1 className='text-white text-[15px] font-semibold'>Associate Dean, SCOPE</h1>
+            </div>
+            <div className='p-5 hidden group-hover:flex flex-col gap-1'>
+              <Link href={"/"} className='text-white text-[18px] font-semibold'>See Profile</Link>
+            </div>
+          </div>
         </div>
-        <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative">
+        <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative group transition-all duration-300 ease-in-out">
           <Image
             src={"/faculty1.jpeg"}
             alt="faculty1Img"
             fill={true}
           />
+          <div className='absolute w-full h-0 top-0 left-0 bg-[#650010] opacity-50 group-hover:h-full flex flex-col justify-between items-start'>
+            <div className='p-5 hidden group-hover:flex flex-col gap-1'>
+              <h1 className='text-white text-[18px] font-semibold'>Dr. Saroj Kumar</h1>
+              <h1 className='text-white text-[15px] font-semibold'>Associate Dean, SCOPE</h1>
+            </div>
+            <div className='p-5 hidden group-hover:flex flex-col gap-1'>
+              <Link href={"/"} className='text-white text-[18px] font-semibold'>See Profile</Link>
+            </div>
+          </div>
         </div>
-        <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative">
+        <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative group transition-all duration-300 ease-in-out">
           <Image
             src={"/faculty1.jpeg"}
             alt="faculty1Img"
             fill={true}
           />
+          <div className='absolute w-full h-0 top-0 left-0 bg-[#650010] opacity-50 group-hover:h-full flex flex-col justify-between items-start'>
+            <div className='p-5 hidden group-hover:flex flex-col gap-1'>
+              <h1 className='text-white text-[18px] font-semibold'>Dr. Saroj Kumar</h1>
+              <h1 className='text-white text-[15px] font-semibold'>Associate Dean, SCOPE</h1>
+            </div>
+            <div className='p-5 hidden group-hover:flex flex-col gap-1'>
+              <Link href={"/"} className='text-white text-[18px] font-semibold'>See Profile</Link>
+            </div>
+          </div>
         </div>
       </div>
       <div className="flex flex-col flex-1  items-center justify-center gap-[20px]">
-        <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative">
+        <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative group transition-all duration-300 ease-in-out">
           <Image
             src={"/faculty1.jpeg"}
             alt="faculty1Img"
             fill={true}
           />
+          <div className='absolute w-full h-0 top-0 left-0 bg-[#650010] opacity-50 group-hover:h-full flex flex-col justify-between items-start'>
+            <div className='p-5 hidden group-hover:flex flex-col gap-1'>
+              <h1 className='text-white text-[18px] font-semibold'>Dr. Saroj Kumar</h1>
+              <h1 className='text-white text-[15px] font-semibold'>Associate Dean, SCOPE</h1>
+            </div>
+            <div className='p-5 hidden group-hover:flex flex-col gap-1'>
+              <Link href={"/"} className='text-white text-[18px] font-semibold'>See Profile</Link>
+            </div>
+          </div>
         </div>
-        <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative">
+        <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative group transition-all duration-300 ease-in-out">
           <Image
             src={"/faculty1.jpeg"}
             alt="faculty1Img"
             fill={true}
           />
+          <div className='absolute w-full h-0 top-0 left-0 bg-[#650010] opacity-50 group-hover:h-full flex flex-col justify-between items-start'>
+            <div className='p-5 hidden group-hover:flex flex-col gap-1'>
+              <h1 className='text-white text-[18px] font-semibold'>Dr. Saroj Kumar</h1>
+              <h1 className='text-white text-[15px] font-semibold'>Associate Dean, SCOPE</h1>
+            </div>
+            <div className='p-5 hidden group-hover:flex flex-col gap-1'>
+              <Link href={"/"} className='text-white text-[18px] font-semibold'>See Profile</Link>
+            </div>
+          </div>
         </div>
       </div>
       <div className="flex flex-col justify-center items-center flex-1 ">
-        <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative">
+        <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative group transition-all duration-300 ease-in-out">
           <Image
             src={"/faculty1.jpeg"}
             alt="faculty1Img"
             fill={true}
           />
+          <div className='absolute w-full h-0 top-0 left-0 bg-[#650010] opacity-50 group-hover:h-full flex flex-col justify-between items-start'>
+            <div className='p-5 hidden group-hover:flex flex-col gap-1'>
+              <h1 className='text-white text-[18px] font-semibold'>Dr. Saroj Kumar</h1>
+              <h1 className='text-white text-[15px] font-semibold'>Associate Dean, SCOPE</h1>
+            </div>
+            <div className='p-5 hidden group-hover:flex flex-col gap-1'>
+              <Link href={"/"} className='text-white text-[18px] font-semibold'>See Profile</Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>

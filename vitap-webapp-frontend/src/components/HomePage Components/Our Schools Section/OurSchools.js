@@ -38,10 +38,7 @@ const OurSchools = async () => {
             Our Schools
           </h1>
           <h1 className="font-Montserrat text-[18px] text-secondary w-full">
-            At VIT-AP the entire teaching-learning process is concentrated
-            around six schools. A research center is also part of the schools,
-            that encourages students to participate in exciting research
-            projects amongst these departments.
+            At VIT-AP the entire teaching-learning process is concentrated around seven schools for preparing students to make meaningful contributions to society as engaged citizens and leaders in a complex world.
           </h1>
           <div class="grid grid-cols-4 justify-center mt-5 items-center">
             <div className="w-[270px] h-[290px] ml-[46px] relative group">
@@ -74,7 +71,7 @@ const OurSchools = async () => {
               />
               <div className="absolute top-[190px] text-white  px-[14px] font-semibold flex-col">
                 <h1 className="leading-[23px] font-Emilio text-[20px] ">
-                  School of Electical and Electronics Engineering
+                  School of Electronics Engineering
                 </h1>
                 <h1 className="font-Montserrat text-[13px] font-medium flex items-center">
                   Explore Now{" "}
@@ -105,16 +102,16 @@ const OurSchools = async () => {
               </div>
             </div>
             <div className="w-[270px] h-[290px] ml-[46px] relative group">
-              <div className="absolute w-[270px] h-[270px] bg-black"></div>
+              <div className="absolute w-[270px] h-[270px] bg-gradient-to-b  from-[#0000005a] to-black opacity-80"></div>
               <Image
                 src={image4}
-                className="opacity-60 transition-transform transform scale-100 group-hover:scale-105"
+                className="opacity-70 transition-transform transform scale-100 group-hover:scale-105"
                 width={270}
                 height={290}
               />
               <div className="absolute top-[200px] text-white  px-[14px] font-semibold flex flex-col ">
                 <h1 className="leading-[26px] font-Emilio text-[20px]">
-                  VIT School of Law
+                  School of Law
                 </h1>
                 <h1 className="font-Montserrat text-[13px] font-medium flex items-center">
                   Explore Now{" "}
