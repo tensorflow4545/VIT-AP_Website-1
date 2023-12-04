@@ -60,8 +60,8 @@ const ProgrammesOffered = () => {
               </h1>
             </div>
           </div>
-          <div className="font-Montserrat lex flex-col border border-zinc-200 flex-[50%] bg-[#E6CFCF] min-h-[650px] overflow-auto my-auto z-10 relative max-w-[680px] scrollbar-thin scrollbar-thumb-red-900 scrollbar-track-gray-400">
-            <div className="min-h-[1500px]w-full absolute md:pl-[75px] pl-[35px] max-lx:pl-[40px] pt-[55px] max-lx:pt-[30px] ">
+          <div className="font-Montserrat lex flex-col border border-zinc-200 flex-[50%] bg-[#E6CFCF] min-h-[550px] md:min-h-[650px] overflow-auto my-auto z-10 relative max-w-[680px] scrollbar-thin scrollbar-thumb-red-900 scrollbar-track-gray-400">
+            <div className="w-full absolute md:pl-[75px] pl-[35px] max-lx:pl-[40px] pt-[55px] max-lx:pt-[30px] ">
               {/* <h3 className="text-[16px] max-lx:text-[14px] font-semibold text-gray-500 uppercase">
                 Engineering
               </h3>  */}
