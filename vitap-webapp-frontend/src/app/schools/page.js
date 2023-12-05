@@ -12,12 +12,14 @@ import AboutUs from "@/components/SchoolPage Components/AboutUs Section/AboutUs"
 import AnnouncementsPage from "@/components/SchoolPage Components/Announcements Section/Announcements";
 import FotterComponent from "@/components/HomePage Components/Footer Section/Component"
 import Programoffered from "@/components/SchoolPage Components/Program Offered Section/Programoffered";
+import NavbarUpperPages from "@/components/HomePage Components/Navbar/NavbarUpperPages";
+import NavbarBottomPages from "@/components/HomePage Components/Navbar/NavbarBottomPages";
 
 const SchoolsPage = () => {
     return ( 
         <>
-            <NavbarUpper/>
-            <NavbarBottom/>
+            <NavbarUpperPages/>
+            <NavbarBottomPages/>
             <Header/>
             <AboutUs/>
             <AnnouncementsPage/>
