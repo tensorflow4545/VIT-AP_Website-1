@@ -20,6 +20,18 @@ const CDCOfficeBanner = () => {
                     </div>
                 </div>
             </div>
+
+            <div className='block ls:hidden w-full max-h-[700px]'>
+                <div className='flex flex-col gap-4 px-[30px] py-[20px]'>
+                    <div>
+                        <h1 className='text-[24px] font-Emilio text-[#650010] font-bold pb-5'>Career Development Center</h1>
+                        <p className='text-[14px] font-Montserrat text-[#000] pb-3'>Vellore Institute of Technology promises all its students’ placements in established MNCs. The Career Development Centre Cell of VIT, or CDC Office, offers students a variety of opportunities in placement of jobs to choose from, after their course comes to an end. The Career Development Centre plays an integral role in creating the illustrious placement record of VIT. It ensures smooth functioning of the placement activities in the campus. The centre further facilitates training activities of the students and makes sure they get placed in the best of both national and international companies.</p>
+                    </div>
+                    <div>
+                        <p className='text-[14px] font-Montserrat text-[#000] pb-3'>In 2020-21 alone, CDC has brought more than 800 companies on campus for placements. Last year, the highest offer made was 39 lakhs per year by Microsoft. Over the recent years, many reputed companies such as Intel, Ebay, Amazon, Dell, GE, Texas Instruments, Schneider Electric, DE Shaw & Co, Hitachi, HP, PayPal, Tata Motors, L&T, Dr. Reddy’s, Bosch, Deloitte, Morgan Stanley, Qualcomm, Ashok Leyland, Honda, Ford, Global Analytics, TCS, Cognizant, Accenture, Wipro and InfoSys have participated in hiring from VIT.</p>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
