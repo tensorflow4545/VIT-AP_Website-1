@@ -1,7 +1,7 @@
 export default function Conclusion() {
     return (
         <>
-            <div class="w-full h-[250px] bg-[#FFF3F4] text-[#650010] flex justify-center items-center">
+            <div class="w-full h-[250px] bg-[#FFF3F4] text-[#650010] flex justify-center items-center hidden ls:block">
                 <div class="pt-[78px] pb-[59px] px-[250px] flex flex-col justify-center items-center text-center">
                     <p class=" text-[12px] lx:text-[14px] font-semibold tetx-emilio text-center">Contact Us</p>
                     <p class=" text-[19px] lx:text-[24px] font-bold tetx-emilio text-center ">Dr. S.M.A.K. Azad</p>
