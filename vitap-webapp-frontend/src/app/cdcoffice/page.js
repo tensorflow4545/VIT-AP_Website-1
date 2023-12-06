@@ -23,10 +23,9 @@ const page = () => {
             <CDCDirectors />
             <CDCCoordinators />
             <CDCPlacements />
-            {/* <Statistics /> */}
             <CDCStatistics />
             <Component />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }
