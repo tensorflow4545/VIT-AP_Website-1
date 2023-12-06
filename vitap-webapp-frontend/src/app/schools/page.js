@@ -18,6 +18,7 @@ import NavbarBottomPages from "@/components/HomePage Components/Navbar/NavbarBot
 import Testimonials from "@/components/SchoolPage Components/testimonials folder/Testimonials";
 import ResearchInnovation from "@/components/HomePage Components/Research and Innovation Section/ResearchInnovation";
 
+import "./index.css"
 const SchoolsPage = () => {
     return ( 
         <>
@@ -29,8 +30,8 @@ const SchoolsPage = () => {
             <Programoffered/>
             <FacultySection/>
             <AcheivementsSection/>
-            <News/>
-            <ResearchInnovation/>
+            {/* <News/> */}
+            {/* <ResearchInnovation/> */}
             <Mous/>
             <Testimonials/>
             <GallerySection/>
