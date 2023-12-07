@@ -1,0 +1,18 @@
+.perspective-container {
+    perspective: 1000px;
+  }
+  
+  .image-3d {
+    transform: rotateY(20deg) rotateX(10deg);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .image-3d:hover {
+    transform: rotateY(0) rotateX(0);
+  }
+
+  @media (max-width: 768px) {
+    .image-3d {
+      transform: rotateY(0) rotateX(0);
+    }
+  }

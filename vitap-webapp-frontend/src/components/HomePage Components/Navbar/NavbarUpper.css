@@ -2,3 +2,12 @@
     background-color: green;
 }
 
+
+.logo{
+    content:url("../../../assets/images/logos/vitaplogo.png");
+}
+
+.logo.active{
+    content:url("../../../assets/images/logos/vitaplogored.png");
+    width: 190px;
+}
