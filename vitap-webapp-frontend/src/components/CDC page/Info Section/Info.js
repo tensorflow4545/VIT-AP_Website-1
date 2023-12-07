@@ -5,7 +5,7 @@ export default function Info() {
   const [active, setActive] = useState("/CDC.png");
   return (
     <>
-      <div class="w-full h- bg-white pl-[108px]">
+      <div class="w-full h- bg-white pl-[108px] hidden ls:block">
 
         {/* flex */}
         <div class="flex flex-row">

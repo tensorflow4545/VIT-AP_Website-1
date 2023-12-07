@@ -1,4 +1,5 @@
-import Statistics from '@/components/CDC page/Statistics Section/Statistics'
+
+import CDCStatistics from '@/components/CDCOfficePage Components/CDCStatistics Section/CDCStatistics'
 import SuperdreamBanner from '@/components/CDCSuperDream Components/SuperdreamBanner Section/SuperdreamBanner'
 import SuperdreamHeader from '@/components/CDCSuperDream Components/SuperdreamHeader Section/SuperdreamHeader'
 import SuperdreamOffers from '@/components/CDCSuperDream Components/SuperdreamOffers Section/SuperdreamOffers'
@@ -22,9 +23,9 @@ const page = () => {
             <SuperdreamOffers2 />
             <SuperdreamOffers />
             <SuperdreamOffers2 />
-            <Statistics />
-            <Component />
-            <Footer /> 
+            <CDCStatistics />
+            {/* <Component /> */}
+            {/* <Footer /> */}
         </div>
     )
 }

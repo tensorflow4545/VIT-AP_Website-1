@@ -4,8 +4,8 @@ import Hero from '@/components/CDC page/Hero Section/Hero'
 import Info from '@/components/CDC page/Info Section/Info'
 import Package from '@/components/CDC page/Package Section/Package'
 import ProfileCard from '@/components/CDC page/Package Section/ProfileCard'
-import Statistics from '@/components/CDC page/Statistics Section/Statistics'
 import Video from '@/components/CDC page/Video Section/Video'
+import CDCStatistics from '@/components/CDCOfficePage Components/CDCStatistics Section/CDCStatistics'
 import Component from '@/components/HomePage Components/Footer Section/Component'
 import Footer from '@/components/HomePage Components/Footer Section/Footer'
 import NavbarBottom from '@/components/HomePage Components/Navbar/NavbarBottom'
@@ -22,10 +22,10 @@ const page = () => {
             <Video />
             <Package />
             <Info />
-            <Statistics />
+            <CDCStatistics />
             <Conclusion />
             <Component />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }
