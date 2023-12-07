@@ -642,3 +642,14 @@ export const homeCDC = [
   }
 ]
 
+export const healthCare = [
+  {
+    id: 1,
+    imgUrl: "/healthcare.png"
+  },
+  {
+    id: 2,
+    imgUrl: "/package.png"
+  }
+]
+
