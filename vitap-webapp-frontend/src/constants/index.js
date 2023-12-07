@@ -394,6 +394,7 @@ export const professors = [
   },
 ]
 
+
 export const guestFacilities = [
   {
     id: 1,
@@ -618,6 +619,7 @@ export const guestTravel = [
   },
 ]
 
+
 export const superdreamImages = [
   {
     id: 1,
@@ -650,3 +652,4 @@ export const healthCare = [
     imgUrl: "/package.png"
   }
 ]
+

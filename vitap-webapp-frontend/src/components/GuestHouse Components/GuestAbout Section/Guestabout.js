@@ -2,6 +2,7 @@ import React from 'react'
 
 const Guestabout = () => {
     return (
+
         <div className='max-w-[1560px] w-[100%] min-h-[500px] h-[100%] bg-[#FCE3E5] flex justify-center items-center'>
             <div className='max-w-[1340px] w-[100%] min-h-[400px] h-[100%] flex flex-col gap-2 p-[50px] md:p-0'>
                 <h1 className='text-[46px] font-Emilio text-[#650010] font-bold'>About Us</h1>

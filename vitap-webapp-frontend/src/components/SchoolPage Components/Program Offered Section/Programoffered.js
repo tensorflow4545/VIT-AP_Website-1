@@ -2,6 +2,7 @@
 import style from "./programoffere.module.css";
 import react,{useState} from "react";
  const programoffered=()=>{
+
     const programmesOffered = [
         {
           id: 1,
@@ -105,6 +106,7 @@ import react,{useState} from "react";
         <div class="pt-10">
            {programmesOffered.map((program)=>{
              if(active===program.field){
+
               return <div class={`pb-3 ${style.coursecard}`}>
             <p class={`pb-3 ${style.heading}`}>{program.head}</p>
             <p class={`pb-3 ${style.text}`}>{program.title}</p>
@@ -118,4 +120,6 @@ import react,{useState} from "react";
     
     )
 }
+
 export default programoffered;
+

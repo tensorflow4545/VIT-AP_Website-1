@@ -3,12 +3,12 @@ import { Tb360View } from "react-icons/tb";
 import { FiSearch } from "react-icons/fi";
 import config from "@/config";
 import { motion, spring } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./NavbarUpper.css";
+import { RxHamburgerMenu } from "react-icons/rx";
+import Image from "next/image";
 
-const navlinks = [
-  
-];
+const navlinks = [];
 // import axios from 'axios';
 
 // const fetchNavlinks = async () => {
@@ -32,10 +32,30 @@ const NavbarUpper = () => {
   // console.log(navlinks);
 
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Check if the user has scrolled down more than a certain number of pixels (e.g., 50)
+      if (window.scrollY > 250) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    // Attach the scroll event listener when the component mounts
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
-      <div className="z-auto w-full h-[40px] text-white bg-primary md:flex ls:flex sm:hidden justify-between items-center px-[37px]">
+      <div className="z-auto w-full h-[40px] text-white bg-primary md:flex sm:hidden ls:flex justify-between items-center px-[37px]">
         <div className="flex  h-[20px] md:space-x-[10px] ls:space-x-[20px] text-[14px] items-center ">
           {/* {navlinks.map((item) =>{
               return(
@@ -45,10 +65,12 @@ const NavbarUpper = () => {
               )
             })}
             <li>AP</li> */}
-          <motion.div className="flex items-center hover:cursor-pointer space-x-3" onClick={() => {
-                setIsOpen(!isOpen);
-              }}
-              >
+          <motion.div
+            className="flex items-center hover:cursor-pointer space-x-3"
+            onClick={() => {
+              setIsOpen(!isOpen);
+            }}
+          >
             <svg
               width="20"
               height="20"
@@ -62,7 +84,7 @@ const NavbarUpper = () => {
               />
             </svg>
 
-            <h1  className="text-[16px]">CAMPUSES</h1>
+            <h1 className="text-[16px]">CAMPUSES</h1>
 
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -80,24 +102,35 @@ const NavbarUpper = () => {
             </svg>
 
             {isOpen && (
-                <motion.ol
-                  className="space-x-[20px] flex"
-                  initial={{ opacity: 0, x: -100 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ type: spring }}
-                >
-                  <li className="ml-[10px]"><a href="https://vit.ac.in/" target="_blank">VELLORE</a></li>
-                  <li className="ml-[10px]"><a href="https://chennai.vit.ac.in/" target="_blank">CHENNAI</a></li>
-                  <li className="ml-[10px]"><a href="https://vitbhopal.ac.in/" target="_blank">BHOPAL</a></li>
-                  <li className="ml-[10px]"><a href="https://vitbangalore.in/" target="_blank">BANGLORE</a></li>
-                </motion.ol>
-              )}
-
-
+              <motion.ol
+                className="space-x-[20px] flex"
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ type: spring }}
+              >
+                <li className="ml-[10px]">
+                  <a href="https://vit.ac.in/" target="_blank">
+                    VELLORE
+                  </a>
+                </li>
+                <li className="ml-[10px]">
+                  <a href="https://chennai.vit.ac.in/" target="_blank">
+                    CHENNAI
+                  </a>
+                </li>
+                <li className="ml-[10px]">
+                  <a href="https://vitbhopal.ac.in/" target="_blank">
+                    BHOPAL
+                  </a>
+                </li>
+                <li className="ml-[10px]">
+                  <a href="https://vitbangalore.in/" target="_blank">
+                    BANGLORE
+                  </a>
+                </li>
+              </motion.ol>
+            )}
           </motion.div>
-       
-         
-          
         </div>
         {/* <div className=" h-[20px] space-x-[31px] text-[14px]">
 
@@ -122,6 +155,27 @@ const NavbarUpper = () => {
             </a>
           </li>
         </ul>
+      </div>
+
+      <div
+        className={`w-full h-[50px] text-white ls:hidden sm:flex items-center justify-between px-8 sticky top-0 z-30 ${
+          scrolled ? "bg-white" : "bg-primary"
+        }`}
+      >
+        <div className="w-[95px] h-[32px]">
+          <img
+            src={
+              scrolled
+                ? "../../../assets/images/logos/vitaplogored.png"
+                : "../../../assets/images/logos/vitaplogo.png"
+            }
+            alt="Logo"
+            className={`logo ${scrolled ? "active" : ""}`}
+          />
+        </div>
+        <div>
+          <RxHamburgerMenu size={30} className="" color={scrolled ? "black" : ""}/>
+        </div>
       </div>
     </>
   );

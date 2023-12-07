@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import Image from "next/image";
 import image0 from "../../../assets/images/Homepage Images/navbar-images/0.png";
 import image1 from "../../../assets/images/Homepage Images/navbar-images/1.png";
@@ -312,7 +313,7 @@ const NavbarBottom = () => {
               }
               onMouseLeave={handleDropdownLeave}
             >
-              <a className="custom-underline ">Career Development Center</a>
+              <Link className="custom-underline " href="/cdc">Career Development Center</Link>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
                 <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]">
                   <div className="w-full h-full">
@@ -380,7 +381,7 @@ const NavbarBottom = () => {
               onMouseEnter={() => handleDropdownEnter("Campus Life")}
               onMouseLeave={handleDropdownLeave}
             >
-              <a className="custom-underline ">Campus Life</a>
+              <Link className="custom-underline " href="/campuslife">Campus Life</Link>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
                 <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]">
                   <div className="w-full h-full flex flex-row ">
