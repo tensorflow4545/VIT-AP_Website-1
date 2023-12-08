@@ -14,7 +14,7 @@ const News = () => {
       <div className={`${styles.container} bg-white h-screen`}>
         <div className={`${styles.head} flex justify-center items-center`}>
           <h2
-            className={`${styles.heading} text-[#51060D] font-Emilo text-[60px] w-[550px] mt-[50px] text-center`}
+            className={`${styles.heading} text-[#51060D] font-Emilo text-[60px] w-[600px] mt-[50px] text-center`}
           >
             News about VIT-AP
           </h2>
@@ -87,7 +87,9 @@ const News = () => {
                 src={arrow}
                 className={`${styles.arrow} absolute mt-[13px] ml-[11px] group-hover:opacity-0`}
               />
-              <p className="ml-[16px] mt-[9px] text-[#5C0E14] font-semibold hover:text-[#FDFEFF] group-hover:ml-[28px] group-hover:mt-[9px] group-hover:absolute">
+              <p
+                className={`${styles.explore} ml-[16px] mt-[9px] text-[#5C0E14] font-semibold hover:text-[#FDFEFF] group-hover:ml-[28px] group-hover:mt-[9px] group-hover:absolute`}
+              >
                 EXPLORE NEWS
               </p>
             </button>
