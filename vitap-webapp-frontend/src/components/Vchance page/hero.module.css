@@ -1,10 +1,20 @@
 .welcome{
   background-image: url('../../assets/Vchance/hero.png');
-  background-size: 1440px 400px;
+  background-size: auto auto;
   background-repeat: no-repeat;
 }
 .vlogo{
   background-image: url('../../assets/Vchance/vlogo.png');
   background-size: 560px 300px;
+  background-repeat: no-repeat;
+}
+.mwelcome{
+  background-image: url('../../assets/Vchance/hero.png');
+  background-size: auto 144px;
+  background-repeat: no-repeat;
+}
+.mvlogo{
+  background-image: url('../../assets/Vchance/vlogo.png');
+  background-size: 200px 107px;
   background-repeat: no-repeat;
 }
