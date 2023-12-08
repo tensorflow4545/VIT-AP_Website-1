@@ -78,7 +78,7 @@ const Life = () => {
           <i>Explore our campus</i>
         </h4>
         <h1
-          className={`${styles.life} $text-[80px] mt-[5px] text-center items-center relative font-Emilo font-bold`}
+          className={`${styles.life} text-[80px] mt-[5px] text-center items-center relative font-Emilo font-bold`}
         >
           Life @ VIT-AP
         </h1>
