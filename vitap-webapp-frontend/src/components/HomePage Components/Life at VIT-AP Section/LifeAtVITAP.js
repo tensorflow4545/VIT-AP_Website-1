@@ -93,8 +93,6 @@ const Life = () => {
         >
 
           EXPLORE
-          
-          </Link>
         </button>
       </div>
     </>

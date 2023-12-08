@@ -8,9 +8,9 @@ const Facilities = () => {
     const [index, setIndex] = useState(0);
 
     return (
-        <div className="max-w-[1560px] w-[100%] h-[700px] mx-auto bg-backgroundRed2 mt-5">
+        <div className="max-w-[1560px] w-[100%] max-h-[1200px] mx-auto bg-backgroundRed2 mt-5">
             <div className='max-w-[1350px] md:mx-auto mx-[30px] h-full pt-[50px] flex flex-col justify-center items-center'>
-                <div className='text-center text-[42px] font-Emilio text-[#650010] capitalize max-w-[600px] w-[100%] leading-10'>
+                <div className='text-center text-[24px] ls:text-[42px] font-Emilio text-[#650010] capitalize max-w-[600px] w-[100%] leading-10'>
                     <h1>World Class Ameneties and Other Facilities</h1>
                 </div>
 
@@ -39,10 +39,10 @@ const Facilities = () => {
                 </div>
 
                 <div>
-                    <div className="flex justify-between items-center gap-4 max-w-[1200px] mx-auto h-[400px]">
-                        <div className='flex-1 flex-col gap-2 '>
-                            <h1 className='text-[42px] font-Emilio text-[#000] capitalize px-[15px]'>VIT-AP Hostels</h1>
-                            <p className='mx-auto font-Montserrat text-[16px] font-normal pl-[15px] pr-[45px]'>Our hostels are strategically located within the university campus, providing easy access to academic buildings and facilities. We prioritize the safety and well-being of our students, offering 24/7 security, comfortable living spaces, and a range of amenities.</p>
+                    <div className="flex flex-col ls:flex-row justify-center items-center gap-4 max-w-[1200px] mx-auto h-[550px] ls:h-[400px] ">
+                        <div className='flex-1 flex flex-col gap-2 justify-center items-start'>
+                            <h1 className='text-[24px] ls:text-[42px] font-Emilio text-[#000] capitalize px-[15px]'>VIT-AP Hostels</h1>
+                            <p className='mx-auto font-Montserrat text-[14px] ls:text-[16px] font-normal pl-[15px] pr-[45px]'>Our hostels are strategically located within the university campus, providing easy access to academic buildings and facilities. We prioritize the safety and well-being of our students, offering 24/7 security, comfortable living spaces, and a range of amenities.</p>
                             <button className='mx-[15px] mt-3 bg-[#650010] text-white p-3 rounded-xl'>Explore More</button>
                         </div>
                         <div className='flex-1 bg-white z-10 max-w-[470px] w-[100%] max-h-[250px] h-[100%] relative rounded-lg'>
