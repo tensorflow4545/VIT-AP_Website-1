@@ -41,3 +41,49 @@
                background-size: 300px 150px;
                background-repeat: no-repeat;
               }
+
+/* mobile view */
+
+              .mdesc1{
+                background-image: url(../../assets/Vchance/vimage1.png);
+                background-size: 260px 146px;
+                background-repeat: no-repeat;
+               }
+               .mdesc11{
+                   background-image: url(../../assets/Vchance/vimage1.png);
+                   background-size: 156px 78px;
+                   background-repeat: no-repeat;
+                  }
+               
+                  .mdesc2{
+                   background-image: url(../../assets/Vchance/vimage2.png);
+                   background-size: 260px 146px;
+                   background-repeat: no-repeat;
+                  }
+                  .mdesc22{
+                      background-image: url(../../assets/Vchance/vimage2.png);
+                      background-size: 156px 78px;
+                      background-repeat: no-repeat;
+                     }
+               
+                     .mdesc3{
+                       background-image: url(../../assets/Vchance/vimage3.png);
+                       background-size: 260px 146px;
+                       background-repeat: no-repeat;
+                      }
+                      .mdesc33{
+                          background-image: url(../../assets/Vchance/vimage3.png);
+                          background-size: 156px 78px;
+                          background-repeat: no-repeat;
+                         }
+               
+                         .mdesc4{
+                           background-image: url(../../assets/Vchance/vimage4.png);
+                           background-size: 260px 146px;
+                           background-repeat: no-repeat;
+                          }
+                          .mdesc44{
+                              background-image: url(../../assets/Vchance/vimage4.png);
+                              background-size: 156px 78px;
+                              background-repeat: no-repeat;
+                             }
