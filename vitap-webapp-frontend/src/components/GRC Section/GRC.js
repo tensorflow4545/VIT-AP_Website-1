@@ -8,25 +8,34 @@ import { FiPhone } from "react-icons/fi";
 import { RxEnvelopeClosed } from "react-icons/rx";
 import { FaRegClock } from "react-icons/fa";
 import Link from "next/link";
+import styles from "../../styles/GRC.module.css";
 
 const GRC = () => {
   return (
     <>
-      <div>
-        <Image src={banner} className="w-full" />
-        <p className="text-[44px] font-Emilo text-[#650010] mt-10 ml-[27%] font-bold">
+      <div className={`${styles.container}`}>
+        <Image src={banner} className={`${styles.banner} w-full`} />
+        <p
+          className={`${styles.heading} text-[44px] font-Emilo text-[#650010] mt-10 ml-[27%] font-bold`}
+        >
           Grievance Redressal Committee (GRC)
         </p>
-        <p className="mt-[15px] w-[1224px] text-center ml-[10%] font-Montserrant">
+        <p
+          className={`${styles.ugc} mt-[15px] w-[1224px] text-center ml-[10%] font-Montserrant`}
+        >
           As per UGC regulations, the Grievance Redressal Committee and
           Ombudsman has been constituted for the purpose of redressal of
           grievances including the cases of caste based discrimination.
         </p>
-        <p className="ml-[10%] font-Montserrant font-bold mt-[30px] text-[22px]">
+        <p
+          className={`${styles.list} ml-[10%] font-Montserrant font-bold mt-[30px] text-[22px]`}
+        >
           In accordance to the above the following are nominated as the members
           of the committee.
         </p>
-        <table className="w-[1224px] ml-[10%] border mt-[15px]">
+        <table
+          className={`${styles.table} w-[1224px] ml-[10%] border mt-[15px]`}
+        >
           <tr className="h-[80px] text-[30px] font-Emilo text-white bg-[#5C0E14]">
             <th>Name</th>
             <th>School/Dept</th>
@@ -87,8 +96,10 @@ const GRC = () => {
           As per the UGC Regulations called as “Redress of Grievances of
           Students, 2023” defines Grievance as follows
         </p>
-        <div className="flex ml-[6%] mt-[36px]">
-          <div className="font-Montserrant w-[700px] text-[22px]">
+        <div className={`${styles.section1} flex ml-[6%] mt-[36px]`}>
+          <div
+            className={`${styles.paragraph1} font-Montserrant w-[700px] text-[22px]`}
+          >
             <p className="mb-[15px]">
               ✧ making admission contrary to merit determined in accordance with
               the declared admission policy of the institute;
@@ -126,9 +137,16 @@ const GRC = () => {
           </div>
           <Image src={img1} width={620} height={500} className="ml-[25px]" />
         </div>
-        <div className="flex ml-[6%] mt-[36px]">
-          <Image src={img2} width={500} height={500} />
-          <div className="font-Montserrant w-[700px] text-[22px] ml-[76px]">
+        <div className={`${styles.section2} flex ml-[6%] mt-[36px]`}>
+          <Image
+            src={img2}
+            width={500}
+            height={500}
+            className={`${styles.image}`}
+          />
+          <div
+            className={`${styles.paragraph} font-Montserrant w-[700px] text-[22px] ml-[76px]`}
+          >
             <p className="mb-[15px]">
               ✧ demand of money in excess of that specified in the declared
               admission policy or approved by the competent authority to be
@@ -162,8 +180,12 @@ const GRC = () => {
             </p>
           </div>
         </div>
-        <div className="bg-[#E6CFCF] h-[669px] mt-[70px] flex rounded-tr-3xl rounded-bl-3xl">
-          <div className="font-Montserrant text-[22px] ml-[5%]">
+        <div
+          className={`${styles.responsibility} bg-[#E6CFCF] h-[669px] mt-[70px] flex rounded-tr-3xl rounded-bl-3xl`}
+        >
+          <div
+            className={`${styles.resText} font-Montserrant text-[22px] ml-[5%]`}
+          >
             <p className="font-Emilo text-[30px] mt-[96px] font-bold mb-[15px]">
               Scope and Responsibilities of the Committee:
             </p>
@@ -207,22 +229,30 @@ const GRC = () => {
             </p>
           </div>
         </div>
-        <p className="text-[55px] mt-[96px] ml-[5%] font-Emilo">
+        <p
+          className={`${styles.reporting} text-[55px] mt-[96px] ml-[5%] font-Emilo`}
+        >
           Reporting of Cases:
         </p>
-        <p className="text-[22px] mt-[15px] ml-[5%] font-Montserrant">
+        <p
+          className={`${styles.complaint} text-[22px] mt-[15px] ml-[5%] font-Montserrant`}
+        >
           The aforementioned grievances may be reported to the Chairman of the
           committee by any means and additionally through the following email
           address grievance.redressal@vitap.ac.in{" "}
         </p>
-        <div className="w-[1016px] h-[563px] shadow-2xl mt-[36px] ml-[17%] border flex">
+        <div
+          className={`${styles.contact} w-[1016px] h-[563px] shadow-2xl mt-[36px] ml-[17%] border flex`}
+        >
           <div className="w-[440px] ml-[80px]">
-            <p className="mt-[96px] text-[67px] font-Emilo">Contact Us</p>
-            <p className="font-Montserrant text-[22px]">
+            <p className={`${styles.head1} mt-[96px] text-[67px] font-Emilo`}>
+              Contact Us
+            </p>
+            <p className={`${styles.text} font-Montserrant text-[22px]`}>
               Feel free to contact us at any time we will get back to you as
               soon as we can
             </p>
-            <form>
+            <form className={`${styles.form}`}>
               <div className="mt-[15px] font-Montserrant">
                 <label htmlFor="name">Name</label>
                 <input
@@ -254,14 +284,18 @@ const GRC = () => {
 
               <button
                 type="submit"
-                className="font-Montserrant text-white bg-[#650010] w-full h-[48px]"
+                className={`${styles.button} font-Montserrant text-white bg-[#650010] w-full h-[48px]`}
               >
                 Send
               </button>
             </form>
           </div>
-          <div className="w-[241px] bg-[#5C0E14] h-[563px] ml-[253px]"></div>
-          <div className="w-[360px] h-[369px] ml-[578px] mt-[97px] bg-[#F9C6CB] absolute rounded">
+          <div
+            className={`${styles.redbg} w-[241px] bg-[#5C0E14] h-[563px] ml-[253px]`}
+          ></div>
+          <div
+            className={`${styles.info} w-[360px] h-[369px] ml-[578px] mt-[97px] bg-[#F9C6CB] absolute rounded`}
+          >
             <p className="font-Montserrant mt-[67px] ml-[20px] font-bold text-[22px] pb-[15px]">
               Info
             </p>
@@ -284,10 +318,10 @@ const GRC = () => {
           </div>
         </div>
         <div className="w-[1224px] ml-[5%]">
-          <p className="mt-[166px] text-[55px] font-Emilo">
+          <p className={`${styles.role} mt-[166px] text-[55px] font-Emilo`}>
             Role of Ombudsperson:
           </p>
-          <p className="font-Montserrant text-[22px]">
+          <p className={`${styles.desc} font-Montserrant text-[22px]`}>
             If in case a student/ person is not convinced by the decision given
             by the committee; he/ she is at liberty to approach the ombudsman
             for further trail of hearing. The ombudsman can resolve the issue by
@@ -296,7 +330,9 @@ const GRC = () => {
             false/ frivolous appropriate action is suggested against the
             complainant.
           </p>
-          <p className="font-Montserrant text-[22px] mt-[10px]">
+          <p
+            className={`${styles.desc} font-Montserrant text-[22px] mt-[10px]`}
+          >
             The Ombudsperson for GRC is Dr. Chandini Stephens. She can be
             contacted on{" "}
             <Link
@@ -306,12 +342,16 @@ const GRC = () => {
               ombudsman.grc@vitap.ac.in
             </Link>
           </p>
-          <p className="font-Emilo text-[55px] mt-[36px]">
+          <p
+            className={`${styles.officeorder} font-Emilo text-[55px] mt-[36px]`}
+          >
             Office Order: Click Here
           </p>
         </div>
-        <div className="mt-[194px] w-screen h-[248px] bg-[#741D26] flex">
-          <div className="w-[760px] mt-[75px] ml-[313px]">
+        <div
+          className={`${styles.footer} mt-[194px] w-screen h-[248px] bg-[#741D26] flex`}
+        >
+          <div className={`${styles.end} w-[760px] mt-[75px] ml-[313px]`}>
             <p className="text-[26px] text-[#FDFEFF] font-Emilo">
               “ Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit
               amet consectetur ”
