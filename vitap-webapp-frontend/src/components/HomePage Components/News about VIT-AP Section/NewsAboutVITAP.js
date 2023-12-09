@@ -24,10 +24,14 @@ const News = () => {
         </div> */}
         <div className="h-[288px] bg-[#741D26] mt-[280px]"></div>
         <div
-          className={`${styles.cardcontainer} flex ml-[240px] mt-[-540px] border w-[1086px] h-[480px] absolute`}
+          className={`${styles.cardcontainer} flex mt-[-540px] max-w-[1150px] mx-auto justify-center items-center h-[520px] relative`}
         >
+          <div className="absolute top-0 left-0 w-[100px] h-[100px] border-[#650010] border-4 border-r-0 border-b-0 "></div>
+          <div className="absolute top-0 left-[45%] w-[100px] h-[100px] border-[#650010] border-4 border-r-0 border-b-0 border-l-0"></div>
+          <div className="absolute bottom-0 left-[45%] w-[100px] h-[100px] border-[#fff] border-4 border-t-0 border-l-0 border-r-0"></div>
+          <div className="absolute bottom-0 right-0 w-[100px] h-[100px] border-[#fff] border-4 border-l-0 border-t-0"></div>
           <div
-            className={`${styles.card1} w-[320px] h-[450px] bg-white ml-[24px] border-b shadow-2xl border-gray-800 section transition-transform transform hover:scale-105 mt-[15px]`}
+            className={`${styles.card1} max-w-[320px] h-[450px] bg-white ml-[24px] border-b shadow-2xl border-gray-800 section transition-transform transform hover:scale-105 mt-[15px]`}
           >
             <Image
               src={news1}
@@ -61,10 +65,10 @@ const News = () => {
             </button>
           </div>
           <div
-            className={`${styles.card2} w-[320px] h-[450px] bg-white ml-[35px] border-b shadow-2xl border-gray-800 section transition-transform transform hover:scale-105 mt-[15px]`}
+            className={`${styles.card2} max-w-[320px] h-[450px] bg-white ml-[24px] border-b shadow-2xl border-gray-800 section transition-transform transform hover:scale-105 mt-[15px]`}
           >
             <Image
-              src={news2}
+              src={news1}
               width={392}
               height={311}
               className={`${styles.img2} top-[223px] left-[108px]`}
@@ -78,7 +82,7 @@ const News = () => {
               Date: 27.09.2023
             </p>
             <button
-              className={`${styles.button} flex ml-[24px] mt-[70px] rounded-full hover:bg-[#5C0E14] group`}
+              className={`${styles.button} flex ml-[24px] mt-[50px] rounded-full hover:bg-[#5C0E14] group`}
             >
               <div
                 className={`${styles.circle} w-[40px] h-[40px] bg-white rounded-full group-hover:w-[190px] group-hover:h-[40px] group-hover:bg-[#5C0E14]`}
@@ -95,7 +99,7 @@ const News = () => {
             </button>
           </div>
           <div
-            className={`${styles.card3} w-[320px] h-[450px] bg-white ml-[35px] border-b shadow-2xl border-gray-800 section transition-transform transform hover:scale-105 mt-[15px]`}
+            className={`${styles.card3} max-w-[320px] h-[450px] bg-white ml-[35px] border-b shadow-2xl border-gray-800 section transition-transform transform hover:scale-105 mt-[15px]`}
           >
             <Image
               src={news3}
