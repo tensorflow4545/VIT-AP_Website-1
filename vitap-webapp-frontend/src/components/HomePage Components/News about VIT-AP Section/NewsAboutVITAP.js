@@ -14,7 +14,7 @@ const News = () => {
       <div className={`${styles.container} bg-white h-screen`}>
         <div className={`${styles.head} flex justify-center items-center`}>
           <h2
-            className={`${styles.heading} text-[#51060D] font-Emilo text-[60px] w-[600px] mt-[50px] text-center`}
+            className={`${styles.heading} text-[#51060D] font-Emilio text-[60px] w-[600px] mt-[50px] text-center`}
           >
             News about VIT-AP
           </h2>
