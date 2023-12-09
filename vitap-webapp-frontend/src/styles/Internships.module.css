@@ -1,0 +1,91 @@
+@media screen and (max-width: 720px) {
+  .container {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .banner {
+    width: 100%;
+  }
+  .head {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 30px;
+    font-size: 33px;
+  }
+  .borderdiv {
+    border: none;
+  }
+  .heading {
+    position: absolute;
+    margin-left: -80px;
+    font-size: 35px;
+  }
+  .p1 {
+    margin-left: -20px;
+    width: 600px;
+  }
+  .p2 {
+    margin-left: -20px;
+    width: 600px;
+  }
+  .p3 {
+    margin-left: -20px;
+    width: 600px;
+  }
+  .image {
+    opacity: 0;
+  }
+  .image2 {
+    opacity: 100;
+    margin-top: 30px;
+    margin-left: -20px;
+  }
+  .irInternships {
+    margin-top: 950px;
+  }
+  .sec2 {
+    margin-left: 50px;
+  }
+  .heading2 {
+    font-size: 35px;
+  }
+  .para2 {
+    width: 650px;
+  }
+  .div4 {
+    opacity: 0;
+  }
+  .div1 {
+    height: 240px;
+  }
+  .uk {
+    width: 300px;
+  }
+  .div2 {
+    opacity: 0;
+  }
+  .pinkbg {
+    margin-top: 500px;
+    height: 700px;
+  }
+  .card1 {
+    margin-top: -750px;
+    margin-left: 30px;
+  }
+  .card2 {
+    margin-left: -550px;
+    margin-top: -370px;
+  }
+  .card3 {
+    margin-top: -370px;
+    margin-left: 30px;
+  }
+  .card4 {
+    margin-left: -530px;
+  }
+  .email {
+    width: 600px;
+    margin-left: -400px;
+  }
+}
