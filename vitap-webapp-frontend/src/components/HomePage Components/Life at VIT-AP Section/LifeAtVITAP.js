@@ -91,9 +91,8 @@ const Life = () => {
         <button
           className={`${styles.button} bg-[#5C0E14] items-center text-[#FDFEFF] w-[150px] h-[58px] rounded-full hover:bg-[#7A1820]`}
         >
-        <Link href="/campuslife">
-          EXPLORE
-          
+          <Link href="/campuslife">
+            EXPLORE
           </Link>
         </button>
       </div>
