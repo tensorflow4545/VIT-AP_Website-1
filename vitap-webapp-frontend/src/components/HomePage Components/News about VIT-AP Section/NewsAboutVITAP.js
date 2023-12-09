@@ -39,14 +39,14 @@ const News = () => {
               height={311}
               className={`${styles.img1} top-[223px] left-[108px]`}
             />
+            <p className={`${styles.date} ml-[24px] mt-[21px]`}>
+              Date: 04.10.2023
+            </p>
             <h3
               className={`${styles.info} text-[#1B1C1E] font-Emilo font-bold ml-[24px] mt-[21px] text-[20px]`}
             >
               First-ever AI musical concert held at VIT-AP University
             </h3>
-            <p className={`${styles.date} ml-[24px] mt-[21px]`}>
-              Date: 04.10.2023
-            </p>
             <button
               className={`${styles.button} flex ml-[24px] mt-[50px] rounded-full hover:bg-[#5C0E14] group`}
             >
@@ -73,14 +73,14 @@ const News = () => {
               height={311}
               className={`${styles.img2} top-[223px] left-[108px]`}
             />
+            <p className={`${styles.date} ml-[24px] mt-[21px]`}>
+              Date: 27.09.2023
+            </p>
             <h3
               className={`${styles.info} text-[#1B1C1E] font-Emilo font-bold ml-[24px] mt-[21px] text-[20px]`}
             >
               3rd Annual Convocation - 2023
             </h3>
-            <p className={`${styles.date} ml-[24px] mt-[21px]`}>
-              Date: 27.09.2023
-            </p>
             <button
               className={`${styles.button} flex ml-[24px] mt-[50px] rounded-full hover:bg-[#5C0E14] group`}
             >
@@ -107,14 +107,14 @@ const News = () => {
               height={311}
               className={`${styles.img3} top-[223px] left-[108px]`}
             />
+            <p className={`${styles.date} ml-[24px] mt-[21px]`}>
+              Date: 09.09.2023
+            </p>
             <h3
               className={`${styles.info} text-[#1B1C1E] font-Emilo font-bold ml-[24px] mt-[21px] text-[20px]`}
             >
               VIT-AP Men's Basketball team wins gold medal
             </h3>
-            <p className={`${styles.date} ml-[24px] mt-[21px]`}>
-              Date: 09.09.2023
-            </p>
             <button
               className={`${styles.button} flex ml-[24px] mt-[25px] rounded-full hover:bg-[#5C0E14] group`}
             >
