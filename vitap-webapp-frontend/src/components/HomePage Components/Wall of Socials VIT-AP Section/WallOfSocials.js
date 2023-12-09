@@ -104,7 +104,7 @@ const Socials = () => {
         </div>
         <div className="ml-[56px] overflow-hidden">
           <div className="relative">
-            <div className="card1 relative inline-block group">
+            <div className="card1 relative inline-block group m-[5px]">
               <Image src={img1} width={233} height={233} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
@@ -123,7 +123,7 @@ const Socials = () => {
                 </p>
               </div>
             </div>
-            <div className="card2 relative inline-block group">
+            <div className="card2 relative inline-block group m-[5px]">
               <Image src={img2} width={233} height={233} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
@@ -142,7 +142,7 @@ const Socials = () => {
                 </p>
               </div>
             </div>
-            <div className="card3 relative inline-block group">
+            <div className="card3 relative inline-block group m-[5px]">
               <Image src={img3} width={233} height={233} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
@@ -165,7 +165,7 @@ const Socials = () => {
         </div>
         <div className="ml-[64.96px] overflow-hidden">
           <div className="relative">
-            <div className="card1 mt-[55px] relative inline-block group">
+            <div className="card1 mt-[55px] relative inline-block group m-[5px]">
               <Image src={img4} width={233} height={233} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
@@ -184,7 +184,7 @@ const Socials = () => {
                 </p>
               </div>
             </div>
-            <div className="card2 relative inline-block group">
+            <div className="card2 relative inline-block group m-[5px]">
               <Image src={img5} width={233} height={233} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
@@ -203,7 +203,7 @@ const Socials = () => {
                 </p>
               </div>
             </div>
-            <div className="card3 relative inline-block group">
+            <div className="card3 relative inline-block group m-[5px]">
               <Image src={img6} width={233} height={233} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
@@ -226,7 +226,7 @@ const Socials = () => {
         </div>
         <div className="ml-[64.96px] overflow-hidden">
           <div className="relative">
-            <div className="card1 relative inline-block group">
+            <div className="card1 relative inline-block group m-[5px]">
               <Image src={img7} width={233} height={233} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute ml-[5px] mt-[200px]" />
@@ -245,7 +245,7 @@ const Socials = () => {
                 </p>
               </div>
             </div>
-            <div className="card2 relative inline-block group">
+            <div className="card2 relative inline-block group m-[5px]">
               <Image src={img8} width={233} height={233} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
@@ -264,7 +264,7 @@ const Socials = () => {
                 </p>
               </div>
             </div>
-            <div className="card3 relative inline-block group">
+            <div className="card3 relative inline-block group m-[5px]">
               <Image src={img9} width={233} height={233} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
