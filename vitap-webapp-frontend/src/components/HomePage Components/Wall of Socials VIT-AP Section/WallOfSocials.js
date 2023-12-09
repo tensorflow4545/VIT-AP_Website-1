@@ -106,7 +106,7 @@ const Socials = () => {
           <div className="relative">
             <div className="card1 relative inline-block group">
               <Image src={img1} width={233} height={233} />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
                   url="www.instagram.com"
@@ -125,7 +125,7 @@ const Socials = () => {
             </div>
             <div className="card2 relative inline-block group">
               <Image src={img2} width={233} height={233} />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
                   url="www.instagram.com"
@@ -144,7 +144,7 @@ const Socials = () => {
             </div>
             <div className="card3 relative inline-block group">
               <Image src={img3} width={233} height={233} />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
                   url="www.instagram.com"
@@ -167,7 +167,7 @@ const Socials = () => {
           <div className="relative">
             <div className="card1 mt-[55px] relative inline-block group">
               <Image src={img4} width={233} height={233} />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
                   url="www.instagram.com"
@@ -186,7 +186,7 @@ const Socials = () => {
             </div>
             <div className="card2 relative inline-block group">
               <Image src={img5} width={233} height={233} />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
                   url="www.instagram.com"
@@ -205,7 +205,7 @@ const Socials = () => {
             </div>
             <div className="card3 relative inline-block group">
               <Image src={img6} width={233} height={233} />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
                   url="www.instagram.com"
@@ -228,7 +228,7 @@ const Socials = () => {
           <div className="relative">
             <div className="card1 relative inline-block group">
               <Image src={img7} width={233} height={233} />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:opacity-70">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute ml-[5px] mt-[200px]" />
                 <SocialIcon
                   url="www.instagram.com"
@@ -247,7 +247,7 @@ const Socials = () => {
             </div>
             <div className="card2 relative inline-block group">
               <Image src={img8} width={233} height={233} />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
                   url="www.instagram.com"
@@ -266,7 +266,7 @@ const Socials = () => {
             </div>
             <div className="card3 relative inline-block group">
               <Image src={img9} width={233} height={233} />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
                   url="www.instagram.com"
