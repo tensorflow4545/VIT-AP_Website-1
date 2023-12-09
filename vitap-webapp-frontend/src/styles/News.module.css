@@ -1,6 +1,7 @@
 @media screen and (max-width: 720px) {
   .container {
     background-color: white;
+    width: fit-content;
   }
   .head {
     left: 0px;
@@ -13,8 +14,8 @@
     width: 520px;
     height: 900px;
     position: absolute;
-    left: 80px;
     background-color: #e6cfcf;
+    left: -155px;
   }
   .card2 {
     width: 550px;
@@ -70,11 +71,14 @@
   .b1 {
     display: block;
     margin-left: 25px;
-    margin-top: 400px;
   }
   .b2 {
     display: block;
     margin-left: 640px;
-    top: 400px;
+    position: absolute;
+    margin-top: -60px;
+  }
+  .red {
+    opacity: 0;
   }
 }
