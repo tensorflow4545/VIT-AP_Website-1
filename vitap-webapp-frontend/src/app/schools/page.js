@@ -2,7 +2,6 @@ import Footer from "@/components/HomePage Components/Footer Section/Footer";
 import NavbarBottom from "@/components/HomePage Components/Navbar/NavbarBottom";
 import NavbarUpper from "@/components/HomePage Components/Navbar/NavbarUpper";
 import ProgrammesOffered from "@/components/HomePage Components/Programmes Offered Section/ProgrammesOffered";
-import News from "@/components/HomePage Components/News about VIT-AP Section/NewsAboutVITAP";
 import AcheivementsSection from "@/components/SchoolPage Components/Acheivements Section/AcheivementsSection";
 import FacultySection from "@/components/SchoolPage Components/Faculty Section/FacultySection";
 import ContactSection from "@/components/SchoolPage Components/Contact Section/contact";
@@ -17,6 +16,8 @@ import NavbarUpperPages from "@/components/HomePage Components/Navbar/NavbarUppe
 import NavbarBottomPages from "@/components/HomePage Components/Navbar/NavbarBottomPages";
 import Testimonials from "@/components/SchoolPage Components/testimonials folder/Testimonials";
 import ResearchInnovation from "@/components/HomePage Components/Research and Innovation Section/ResearchInnovation";
+import News from "@/components/SchoolPage Components/News Section/News"
+import Research from "@/components/SchoolPage Components/Research Section/Research";
 
 import "./index.css"
 const SchoolsPage = () => {
@@ -30,8 +31,8 @@ const SchoolsPage = () => {
             <Programoffered/>
             <FacultySection/>
             <AcheivementsSection/>
-            {/* <News/> */}
-            {/* <ResearchInnovation/> */}
+            <News/>
+            <Research/>
             <Mous/>
             <Testimonials/>
             <GallerySection/>

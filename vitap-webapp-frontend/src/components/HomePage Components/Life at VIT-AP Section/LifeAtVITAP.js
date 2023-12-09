@@ -74,12 +74,13 @@ const Life = () => {
           className={`${styles.img9} absolute bottom-[10px] right-[10%]`}
         />
         <h4
-          className={`${styles.explore} mt-[210px] text-[24px] text-center items-center relative text-[#5C0E14] font-Emilo font-bold`}
+          className={`${styles.explore} mt-[210px] text-[30px] text-center items-center relative text-[#5C0E14] font-Emilio font-bold`}
         >
           <i>Explore our campus</i>
         </h4>
         <h1
           className={`${styles.life} text-[80px] mt-[5px] text-center items-center relative font-Emilo font-bold`}
+
         >
           Life @ VIT-AP
         </h1>
