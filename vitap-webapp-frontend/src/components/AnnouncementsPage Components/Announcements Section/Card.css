@@ -15,6 +15,6 @@
     transition: 0.3s;
 }
 
-.tags:hover:after{
+.group:hover .tags:after {
     width: 100%;
 }

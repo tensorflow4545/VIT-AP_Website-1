@@ -6,6 +6,7 @@ import axios from "axios";
 import Announcement from "./Announcement.js";
 import { Content } from "next/font/google";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 // const announcementsContent = [
 //   {date: "13.09.2023", title: "VITREE January 2024 - Apply Now" , link: "https://vitap.ac.in/vitree-january-2024/"},
@@ -54,10 +55,12 @@ const About = () => {
 
   return (
     <>
-      <div className="px-[108px] mb-[100px] ">
-        <div className="md:flex  pt-[70px]">
+
+      <div className="lx:px-[108px] sm:px-[40px] mb-[100px] ">
+        <div className="md:flex  ls:pt-[70px] sm:pt-[50px]">
           <div className="md:w-[50%]  sm:text-center md:text-left sm:flex-col sm:justify-center md:justify-normal ">
-            <h1 className="font-Emilo ls:text-[48px] sm:text-[40px] text-primary font-bold pb-[9px]">
+
+            <h1 className="font-Emilio ls:text-[48px] sm:text-[40px] text-primary font-bold pb-[9px]">
               About VIT-AP
             </h1>
             <div className="sm:justify-center md:justify-normal sm:hidden ls:flex w-full object-cover">
@@ -73,18 +76,20 @@ const About = () => {
                 height={100}; web-share
 
               /> */}
+              <div className="ls:w-[600px] ls:h-[335px] sm:h-[200px]">
               <iframe
-                width={600}
-                height={335}
+                className="w-full h-full"
                 src="https://www.youtube.com/embed/Bx3tAXPJThM?si=3j6CacZA7uFGU6zb"
                 title="About VIT-AP"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-inpicture; web-share"
                 allowfullscreen
               ></iframe>
+              </div>
+
             </div>
             <div className="w-[95%]">
-              <h1 className="font-Montserrant font-[680px] text-[17px] text-left mt-[35px] leading-7">
+              <h1 className="font-Montserrant font-[680px] text-justify text-[18px] text-left mt-[35px] leading-7">
                 With a history of 37 years of innovation in educational and
                 research domain, VIT has been a forerunner in delivering quality
                 education. Consistently ranked among the top educational
@@ -96,53 +101,23 @@ const About = () => {
                 destinations in the world.
               </h1>
             </div>
-
-            {/* <div className="ls:flex sm:flex-col ls:mt-[40px] ls:ml-[40px] md:mt-[58.5px] md:ml-[80.5px] ls:justify-center ls:text-center">
-              <div className="ls:flex flex-row space-x-[180px] ls:justify-center">
-                <div className="flex-col text-center">
-                  <h1 className="text-[46px] text-primary font-bold">1100+</h1>
-                  <h1 className="text-[20px] font-Inter text-primary">
-                    Students
-                  </h1>
-                </div>
-
-                <div className="ls:flex flex-col text-center">
-                  <h1 className="text-[46px] text-primary font-bold">8</h1>
-                  <h1 className="text-[20px] font-Inter text-primary">
-                    Schools
-                  </h1>
-                </div>
-              </div>
-
-              <div className="ls:flex flex-row space-x-[180px] mt-[60px] ls:justify-center">
-                <div className="flex-col text-center">
-                  <h1 className="text-[46px] text-primary font-bold">100+</h1>
-                  <h1 className="text-[20px] font-Inter text-primary">
-                    Faculty
-                  </h1>
-                </div>
-                <div className="flex-col text-center">
-                  <h1 className="text-[46px] text-primary font-bold">100+</h1>
-                  <h1 className="text-[20px] font-Inter text-primary">
-                    Publications
-                  </h1>
-                </div>
-              </div>
-            </div> */}
           </div>
 
           {/* Anouncements section  */}
 
-          <div className="md:w-[50%]  sm:w-[100%] md:pl-[67px]  md:mt-[15px] md:block ls:flex-col ls:justify-center  relative">
+          <div className="md:w-[50%]  sm:w-[100%] md:pl-[67px]  md:mt-[15px] ls:mt-[50px] sm:mt-[50px] md:block ls:flex-col ls:justify-center  relative">
             
             <motion.div
               initial={{ left: "[80px]", width: "[32px]" }}
               whileHover={{ left: "[-20px]", width: "[125px]" }}
               className="top-[-7px] z-999  right-5 absolute hover:cursor-pointer flex items-center"
             >
-              <div className="Rectangle91 w-[32px] h-[30px] left-[80px] top-[-3px] absolute bg-[#5C0E14] opacity-20 transition-transform hover:left-[-10px] hover:w-[125px]"></div>
-              <h1 className="mr-4 text-[#5C0E14]">View More</h1>
-              <div className="Arrow w-[50px] border-2 border-solid border-[#5C0E14]"></div>
+              <div className="flex flex-row items-center justify-center relative  transition-all duration-300 ease-in group">
+              <Link href="/announcements"><div className="Rectangle91 w-[32px] h-[30px] left-[80px] top-[-3px] absolute bg-[#5C0E14] opacity-20 transition-transform group-hover:left-[-10px] group-hover:w-[120px] group-hover:transition-all group-hover:duration-300 group-hover:ease-in-out "></div></Link>
+                View More
+                <h1  className="mr-2 text-[#5C0E14] font-bold"></h1>
+                <hr className=" h-[4px] w-[36px] font-bold bg-[#5C0E14] max-lx:w-[28px]" />
+              </div>
             </motion.div>
 
             <h1 className="text-[24px] text-primary font-Montserrant font-bold  md:text-left">

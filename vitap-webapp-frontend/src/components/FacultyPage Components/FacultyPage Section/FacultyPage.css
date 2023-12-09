@@ -1,0 +1,94 @@
+.updated2 {
+    background-color: #600912;
+    width: 100%;
+    min-height: 300px;
+    height: 100%;
+    padding-left: 108px;
+    padding-right: 110px;
+}
+
+.updateheader {
+    padding-top: 44px;
+    color: #FFF;
+    font-family: Emilio Test;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.updatetext {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 55px;
+}
+
+.person {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.input {
+    width: 265px;
+    height: 50px;
+    flex-shrink: 0;
+    fill: #D3D3D3;
+}
+
+.input::placeholder {
+    color: rgba(0, 0, 0, 0.70);
+    font-family: Montserrat;
+    font-size: 17.417px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    padding-left: 18.87px;
+}
+
+.inputbutton {
+    width: 261px;
+    height: 50px;
+    flex-shrink: 0;
+    fill: #FFF;
+    background-color: white;
+    /* padding-right:20px; */
+}
+
+.inputbuttontext {
+    color: #000;
+    font-family: Emilio Test;
+    font-size: 17.417px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.871px;
+    text-transform: capitalize;
+    padding-left: 77px;
+    padding-right: 78px;
+}
+
+.card::after{
+    content: "";
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: whitesmoke;
+    z-index: -10;
+    transition: all;
+}
+
+.card:hover::after{
+    height: 100%;
+}

@@ -14,7 +14,7 @@ import {
     return (
       <>
         {/* DESKTOP VIEW */}
-        <div className="sm:grid hidden w-full ">
+        <div className="md:grid hidden w-screen ">
           <div className="footer  ">
             <div className="flex flex-row ">
               <div className="footer1 lg:basis-3/4 md:basis-1">
@@ -140,8 +140,6 @@ import {
                   <a className="creditlink">Terms of Use</a>
                   <a className="creditlink">Copyright</a>
                   <a className="creditlink">Trademarks</a>
-                  <a className="creditlink">Non- Discrimination</a>
-                  <a className="creditlink">Accessibility</a>
                 </div>
               </div>
               
@@ -181,7 +179,7 @@ import {
             </div>
           <div className="creditfoot flex pl-[80px] pb-[5px] pt-[20px]">
            <div className="basis">
-              <p className="copytext pl-[80px] pt-[20px]">© VIT-AP University</p>
+              <p className="copytext pl-[40px] pt-[20px]">© VIT-AP University</p>
            </div>
            <div className="basis">
            <p className="credittext">
@@ -192,7 +190,7 @@ import {
         </div>
 
          {/* Mobile View */}
-        <div class="sm:hidden flex relative">
+        <div class="md:hidden flex relative">
         <div class="w-full h-max">
            
            {/* uni logo */}

@@ -13,6 +13,9 @@ module.exports = withMT({
       //   'gradient-conic':
       //     'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       // },
+      gridTemplateRows: {
+        '10': 'repeat(10, minmax(0, 1fr))',
+      },
       fontFamily: {
         // libre: "'Libre Baskerville', serif",
         Emilio: "'Emilio Test', serif",
@@ -32,7 +35,11 @@ module.exports = withMT({
       colors: {
         primary: "#650010", // maroon
         backgroundRed: "rgba(92, 14, 20, 0.20)",
+        backgroundRed2: "rgba(249, 198, 203, 0.25)",
         secondary: "#1B1C1E",
+      },
+      borderWidth: {
+        '14': '10px',
       },
     },
   },

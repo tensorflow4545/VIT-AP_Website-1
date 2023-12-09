@@ -1,0 +1,84 @@
+@media screen and (max-width: 720px) {
+  .container {
+    background-color: white;
+    width: fit-content;
+  }
+  .head {
+    left: 0px;
+  }
+  .heading {
+    font-size: 50px;
+    left: 5px;
+  }
+  .card1 {
+    width: 520px;
+    height: 900px;
+    position: absolute;
+    background-color: #e6cfcf;
+    left: -155px;
+  }
+  .card2 {
+    width: 550px;
+    height: 900px;
+    position: absolute;
+    left: 50px;
+    background-color: #e6cfcf;
+    opacity: 0;
+  }
+  .card3 {
+    width: 550px;
+    height: 900px;
+    position: absolute;
+    left: 70px;
+    background-color: #e6cfcf;
+    opacity: 0;
+  }
+  .img1 {
+    width: 550px;
+    height: 400px;
+  }
+  .img2 {
+    width: 550px;
+    height: 400px;
+  }
+  .img3 {
+    width: 550px;
+    height: 400px;
+  }
+  .info {
+    font-size: 35px;
+    color: #650010;
+  }
+  .date {
+    font-size: 30px;
+  }
+  .circle {
+    height: 70px;
+    width: 70px;
+  }
+  .arrow {
+    width: 40px;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+  .explore {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .button {
+    margin-top: 140px;
+  }
+  .b1 {
+    display: block;
+    margin-left: 25px;
+  }
+  .b2 {
+    display: block;
+    margin-left: 640px;
+    position: absolute;
+    margin-top: -60px;
+  }
+  .red {
+    opacity: 0;
+  }
+}

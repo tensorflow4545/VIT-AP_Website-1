@@ -24,9 +24,9 @@ export default function Research(){
 
     return (
         <>
-          <div class="w-full h-[800px] bg-red-900 pl-[40px]">
+          <div class="w-full h-[800px] bg-primary pl-[40px]">
            <div class="w-full h-[800px] bg-white">
-           <p class="text-[48px] text-red-950 font-bold text-emilio pt-[68px] pl-[73px]">Research and Innovation</p>
+           <p class="font-Emilio text-[48px] text-primary font-bold text-emilio pt-[68px] pl-[73px]">Research and Innovation</p>
            
            {/* flex */}
           <div class="flex flex-row pt-[63px] pl-[80px]">
@@ -45,6 +45,7 @@ export default function Research(){
            <p class="text-[18px]  text-montserrat text-center pl-[5px]">EXPLORE MORE</p></div>
            </div>
            </div>
+
            <hr></hr>
            </div>
            

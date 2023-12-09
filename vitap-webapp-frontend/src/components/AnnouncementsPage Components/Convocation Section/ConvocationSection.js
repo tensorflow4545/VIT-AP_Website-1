@@ -4,12 +4,12 @@ import Card from './Card';
 
 const ConvocationSection = () => {
   return (
-    <div className="max-w-[1560px] w-[100%] min-h-[100vh] h-[100%] mx-auto">
+    <div className="max-w-[1560px] w-[100%] max-h-[2200px] ls:min-h-[900px] mx-auto">
       <div
         style={{ backgroundImage: `url("./convocation.jpeg")` }}
-        className="w-[100%] h-[400px] bg-center bg-cover relative"
+        className="w-[100%] h-[300px] ls:h-[400px] bg-center bg-cover relative"
       >
-        <div class="curve">
+        <div className="curve">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@ const ConvocationSection = () => {
       </div>
       <div className="w-[100%] min-h-[70px] h-[100%] bg-[#650010] ">
         <div className="max-w-[1440px] mx-auto pl-[50px] text-white font-Emilo">
-          <h1 className="text-[36px] font-bold">
+          <h1 className="text-[24px] ls:text-[36px] font-bold">
             3<sup>rd</sup> Annual Convocation
           </h1>
           <p>
@@ -38,7 +38,7 @@ const ConvocationSection = () => {
       </div>
       <div
         style={{ backgroundImage: `url("./convocation2.jpeg")` }}
-        className="relative w-[100%] min-h-[600px] bg-center bg-cover"
+        className="relative w-[100%] h-[300px] ls:min-h-[600px] bg-center bg-cover"
       >
         <div class="wave">
           <svg
@@ -54,7 +54,7 @@ const ConvocationSection = () => {
           </svg>
         </div>
       </div>
-      <div className="w-[100%] min-h-[400px] h-[100%] py-[40px] px-[50px] flex justify-center items-center gap-5 flex-wrap max-md:px-[20px] max-lx:px-[0px]">
+      <div className="w-[100%] min-h-[400px] h-[100%] py-[40px] px-[50px] grid grid-cols-2 ls:grid-cols-3 lx:grid-cols-5 justify-center items-center gap-5 max-md:px-[20px] max-lx:px-[0px] ">
         <div className=''>
           <Card url={"./convocards/card1.jpeg"} title={"Schedule"} />
         </div>

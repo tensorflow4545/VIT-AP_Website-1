@@ -56,22 +56,22 @@ font-weight: 500;
 line-height: 140.4%; /* 28.08px */    
 }
 .back1{
-    background-image: url('../../../public//gallary5.jpeg');
+    background-image: url('/gallary5.jpeg');
     background-size: 392px 361px;
     background-repeat: no-repeat;
 }
 .back2{
-    background-image: url('../../../public//gallary5.jpeg');
+    background-image: url('/gallary5.jpeg');
     background-size: 392px 361px;
     background-repeat: no-repeat;
 }
 .back3{
-    background-image: url('../../../public/gallary1.jpeg');
+    background-image: url('/gallary5.jpeg');
     background-size: 808px 361px;
     background-repeat: no-repeat;
 }
 .back4{
-    background-image: url('../../../public/gallary1.jpeg');
+    background-image: url('/gallary5.jpeg');
     background-size: 392px 361px;
     background-repeat: no-repeat;
 }
