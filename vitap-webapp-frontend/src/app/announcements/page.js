@@ -13,7 +13,7 @@ const AnnouncementsPage = () => {
             <FotterComponent/>
             <Footer/>
         </>
-     );
+    );
 }
- 
+
 export default AnnouncementsPage;
