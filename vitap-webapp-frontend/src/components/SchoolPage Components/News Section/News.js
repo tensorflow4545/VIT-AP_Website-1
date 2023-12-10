@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-
 import { motion } from "framer-motion";
 export default function News(){
   const News=[
@@ -21,8 +20,6 @@ export default function News(){
     desc:"Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur."
  }
 ];
-
-
     return(
       <>
         <div class="w-full h-[800px] bg-white">
@@ -37,7 +34,6 @@ export default function News(){
             </Link>
             <hr className=" h-[4px] w-[36px] font-bold bg-red-950 max-lx:w-[28px]" />
           </div>
-
           {/* flex */}
           <div class="flex flex-row pt-[63px]">
             
@@ -54,7 +50,9 @@ export default function News(){
                 <p class="text-[16px] text-white text-emilio font-semibold pt-[8px] px-[13px]">Oct</p>
                 <p class="text-[28px] text-white text-emilio font-semibold px-[11px]">23</p>
             </div>           
+
            </div>
+            })}
 
 
            <p class="text-[28px] text-dark font-[600px] text-emilio pt-[16px]">{news.head}</p>
@@ -62,7 +60,7 @@ export default function News(){
            <p class="text-[18px] text-red-950 font-medium text-montserrat pt-[16px]">Know More</p>
            </div>
            </div>
-            })}
+
 
           </div>
 
@@ -75,4 +73,5 @@ export default function News(){
 }
 
 export default News;
+
 

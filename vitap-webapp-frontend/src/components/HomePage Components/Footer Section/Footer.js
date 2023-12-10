@@ -119,7 +119,7 @@ import {
           <div className="credit lg:w-full md:w-max ">
             <div className="flex w-full">
               <div className="basis mt-2 mr-3 pr-2">
-                <div className="mt-[10px] mr-[10px]">
+                <div className="pl-[120px] mt-[10px] mr-[10px]">
                   <Image
                     src="/unilogo.png"
                     width="200"
@@ -143,8 +143,20 @@ import {
                 </div>
               </div>
               
-              <div className="basis">
-                <div className="icons pt-5 flex w-full">
+              
+            </div>
+            </div>
+          <div className="creditfoot flex pl-[80px] pb-[5px] pt-[20px]">
+           <div className="basis">
+              <p className="copytext pl-[40px] pt-[20px]">© VIT-AP University</p>
+           </div>
+           <div className="basis">
+           <p className="credittext">
+                    Crafted with Passion at VIT-AP University by Website Team︎
+                  </p>
+           </div>
+           <div className="basis">
+                <div className="icons pt-3 ml-[60%] flex w-full">
                   <a
                     href="https://www.instagram.com/vitap.university/?hl=en"
                     className="socialicon"
@@ -175,17 +187,6 @@ import {
                   </a>
                 </div>
               </div>
-            </div>
-            </div>
-          <div className="creditfoot flex pl-[80px] pb-[5px] pt-[20px]">
-           <div className="basis">
-              <p className="copytext pl-[40px] pt-[20px]">© VIT-AP University</p>
-           </div>
-           <div className="basis">
-           <p className="credittext">
-                    Crafted with Passion at VIT-AP University by Website Team︎
-                  </p>
-           </div>
            </div>
         </div>
 

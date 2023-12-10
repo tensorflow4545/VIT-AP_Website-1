@@ -11,7 +11,7 @@ const ProgrammesOffered = () => {
     <>
       <div
         style={{ backgroundImage: `url("/programsbackground3.png")` }}
-        className="max-w-[1560px] w-full h-full bg-center mx-auto"
+        className="max-w-screen w-full h-full bg-center mx-auto"
       >
         <div className="w-full mx-auto hidden max-h-[750px] pr-[40px] max-lx:pr-[20px] pt-[20px] text-white ls:flex">
           <div className=" p-[110px] max-lx:p-[60px] flex flex-col flex-[60%] pt-[60px]">

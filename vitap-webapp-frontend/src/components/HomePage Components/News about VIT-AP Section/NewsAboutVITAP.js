@@ -7,17 +7,23 @@ import news4 from "@/assets/images/newsPhotos/nationn.png";
 import circle from "@/assets/images/newsPhotos/circle.png";
 import arrow from "@/assets/images/newsPhotos/Vector.png";
 import styles from "../../../styles/News.module.css";
+import Link from "next/link";
 
 const News = () => {
   return (
     <>
       <div className={`${styles.container} bg-white h-screen`}>
-        <div className={`${styles.head} flex justify-center items-center`}>
+        <div className={`${styles.head} flex justify-left items-left w-screen`}>
           <h2
-            className={`${styles.heading} text-[#51060D] font-Emilio text-[60px] w-[600px] mt-[50px] text-center`}
+            className={`${styles.heading} text-[#51060D] font-Emilio text-[60px] w-[600px] mt-[50px] text-left`}
           >
             News about VIT-AP
           </h2>
+          <div className="flex flex-row items-center justify-center relative  transition-all duration-300 ease-in group top-[25px] ml-[50%]">
+            <div className="Rectangle91 w-[32px] h-[30px] left-[40px] top-[55px] absolute bg-[#5C0E14] opacity-20 transition-transform group-hover:left-[-10px] group-hover:w-[90px] group-hover:transition-all group-hover:duration-300 group-hover:ease-in-out "></div>
+            <Link href={"/"} className="mr-2 text-[#5C0E14] font-bold">See All</Link>
+            <hr className=" h-[4px] w-[36px] font-bold bg-[#5C0E14] max-lx:w-[28px]" />
+          </div>
         </div>
         {/* <div className="flex justify-end pt-[80px] ml-[674px]">
           <h1 className="text-[#FFFFFF] text-[25px]">See all</h1>
@@ -39,14 +45,14 @@ const News = () => {
               height={311}
               className={`${styles.img1} top-[223px] left-[108px]`}
             />
+            <p className={`${styles.date} ml-[24px] mt-[21px]`}>
+              Date: 04.10.2023
+            </p>
             <h3
               className={`${styles.info} text-[#1B1C1E] font-Emilo font-bold ml-[24px] mt-[21px] text-[20px]`}
             >
               First-ever AI musical concert held at VIT-AP University
             </h3>
-            <p className={`${styles.date} ml-[24px] mt-[21px]`}>
-              Date: 04.10.2023
-            </p>
             <button
               className={`${styles.button} flex ml-[24px] mt-[50px] rounded-full hover:bg-[#5C0E14] group`}
             >
@@ -73,14 +79,14 @@ const News = () => {
               height={311}
               className={`${styles.img2} top-[223px] left-[108px]`}
             />
+            <p className={`${styles.date} ml-[24px] mt-[21px]`}>
+              Date: 27.09.2023
+            </p>
             <h3
               className={`${styles.info} text-[#1B1C1E] font-Emilo font-bold ml-[24px] mt-[21px] text-[20px]`}
             >
               3rd Annual Convocation - 2023
             </h3>
-            <p className={`${styles.date} ml-[24px] mt-[21px]`}>
-              Date: 27.09.2023
-            </p>
             <button
               className={`${styles.button} flex ml-[24px] mt-[50px] rounded-full hover:bg-[#5C0E14] group`}
             >
@@ -107,14 +113,14 @@ const News = () => {
               height={311}
               className={`${styles.img3} top-[223px] left-[108px]`}
             />
+            <p className={`${styles.date} ml-[24px] mt-[21px]`}>
+              Date: 09.09.2023
+            </p>
             <h3
               className={`${styles.info} text-[#1B1C1E] font-Emilo font-bold ml-[24px] mt-[21px] text-[20px]`}
             >
               VIT-AP Men's Basketball team wins gold medal
             </h3>
-            <p className={`${styles.date} ml-[24px] mt-[21px]`}>
-              Date: 09.09.2023
-            </p>
             <button
               className={`${styles.button} flex ml-[24px] mt-[25px] rounded-full hover:bg-[#5C0E14] group`}
             >
