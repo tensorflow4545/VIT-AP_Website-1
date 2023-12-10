@@ -96,10 +96,10 @@ import react,{useState} from "react";
         
         <div class="flex flex-row pb-20">
         
-            <div class={`basis-1/4`}><button class={` ${active=="undergraduate"?"bg-red-900":"bg-white"} ${active=="undergraduate"?"text-white":"text-dark"} ${style.button}`}  onClick={() => setActive("undergraduate")}>Undergraduate</button></div>
-            <div class={`basis-1/4`}><button class={` ${active=="postgraduate"?"bg-red-900":"bg-white"} ${active=="postgraduate"?"text-white":"text-dark"} ${style.button}`} onClick={() => setActive("postgraduate")}>Postgraduate</button></div>
-            <div class={`basis-1/4`}><button class={` ${active=="integrated"?"bg-red-900":"bg-white"} ${active=="integrated"?"text-white":"text-dark"} ${style.button}`} onClick={() => setActive("integrated")}>Integrated</button></div>
-            <div class={`basis-1/4`}><button class={` ${active=="doctoral"?"bg-red-900":"bg-white"} ${active=="doctoral"?"text-white":"text-dark"} ${style.button}`} onClick={() => setActive("doctoral")}>Doctoral</button></div>
+            <div class={`basis-1/4`}><button class={` ${active=="undergraduate"?"bg-primary":"bg-white"} ${active=="undergraduate"?"text-white":"text-dark"} ${style.button}`}  onClick={() => setActive("undergraduate")}>Undergraduate</button></div>
+            <div class={`basis-1/4`}><button class={` ${active=="postgraduate"?"bg-primary":"bg-white"} ${active=="postgraduate"?"text-white":"text-dark"} ${style.button}`} onClick={() => setActive("postgraduate")}>Postgraduate</button></div>
+            <div class={`basis-1/4`}><button class={` ${active=="integrated"?"bg-primary":"bg-white"} ${active=="integrated"?"text-white":"text-dark"} ${style.button}`} onClick={() => setActive("integrated")}>Integrated</button></div>
+            <div class={`basis-1/4`}><button class={` ${active=="doctoral"?"bg-primary":"bg-white"} ${active=="doctoral"?"text-white":"text-dark"} ${style.button}`} onClick={() => setActive("doctoral")}>Doctoral</button></div>
 
         </div>
         <div class={`shadow-lg ${style.course}`}>

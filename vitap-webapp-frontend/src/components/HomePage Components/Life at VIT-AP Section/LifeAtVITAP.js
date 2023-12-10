@@ -58,20 +58,20 @@ const Life = () => {
           src={exp7}
           width={272}
           height={200}
-          className={`${styles.img7} absolute left-[10%] bottom-[10px]`}
+          className={`${styles.img7} absolute left-[10%] bottom-[50px]`}
         />
         <Image
           src={exp8}
           width={280}
           height={202}
-          className={`${styles.img8} absolute bottom-0 left-[41%]`}
+          className={`${styles.img8} absolute bottom-[10px] left-[41%]`}
 
         />
         <Image
           src={exp9}
           width={280}
           height={202}
-          className={`${styles.img9} absolute bottom-[10px] right-[10%]`}
+          className={`${styles.img9} absolute bottom-[20px] right-[10%]`}
         />
         <h4
           className={`${styles.explore} mt-[210px] text-[30px] text-center items-center relative text-[#5C0E14] font-Emilio font-bold`}
