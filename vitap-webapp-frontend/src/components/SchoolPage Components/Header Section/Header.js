@@ -21,11 +21,11 @@ const Header = () =>{
         />
 
         {/* Overlay content */}
-        <div className="relative z-10 p-8">
-          <h1 className="text-3xl text-center md:text-4xl lg:text-5xl font-[600] font-Emilio">
+        <div className="relative z-10 p-8 items-center justify-center">
+          <h1 className="text-[43px] text-center md:text-4xl lg:text-5xl font-[600] font-Emilio">
             School of Computer Science & Engineering
           </h1>
-          <p className="text-3xl font-[550] font-Emilio text-center">(SCOPE)</p>
+          <p className="text-[43px] font-[550] font-Emilio text-center">(SCOPE)</p>
         </div>
       </header>
 
