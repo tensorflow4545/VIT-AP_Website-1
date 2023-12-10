@@ -31,10 +31,10 @@ const AcheivementsSection = () => {
         className="max-w-screen w-full h-full bg-center mx-auto relative"
       >
         <div className="absolute top-[5%] left-[6%] w-fit font-Emilio">
-              <h1 className="text-[white] text-[48px] font-bold">
-                Acheivements
-              </h1>
-            </div>
+          <h1 className="text-[white] text-[48px] font-bold">
+            Acheivements
+          </h1>
+        </div>
         <div className="max-w-[1440px] mx-auto w-full h-[100vh] px-[120px] pt-[30px] pb-[30px] flex justify-center items-center bg-center font-Emilo">
           <div className="flex flex-col justify-between ">
             <div className="max-w-[500px] w-[100%] max-h-[400px] h-[100%] bg-white max-md:min-w-[450px] max-lx:min-w-[370px] shadow-2xl flex flex-col justify-center items-start p-[25px] gap-[25px] z-20">
@@ -53,7 +53,7 @@ const AcheivementsSection = () => {
                 <AiOutlineArrowLeft size={25} onClick={prevSlide} />
               </div>
               <div className="border border-red-900 p-[6px] rounded-sm cursor-pointer">
-                <AiOutlineArrowRight size={25} onClick={nextSlide}/>
+                <AiOutlineArrowRight size={25} onClick={nextSlide} />
               </div>
             </div>
           </div>

@@ -2,17 +2,17 @@
 import Image from 'next/image';
 import Head from 'next/head';
 
-const Header = () =>{
+const Header = () => {
   return (
     <div>
       {/* Header with background image */}
       <header
         className="relative text-white flex items-center justify-center"
-        style={{ height: '400px' }} 
+        style={{ height: '400px' }}
       >
         {/* Background image */}
         <Image
-          src="/schools/bg.jpg" 
+          src="/schools/bg.jpg"
           layout="fill"
           objectFit="cover"
           quality={100}

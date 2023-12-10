@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 const AboutUs = () => {
   return (
     <div className="flex flex-col md:flex-row md:px-[108px] md:py-[100px] justify-center md:justify-normal">
-      
+
 
 
       {/* Left side with text */}

@@ -26,34 +26,30 @@ const ProgrammesOffered = () => {
             </p>
             <div className="md:flex md:flex-col my-[20px] justify-center items-center text-center gap-10 grid grid-cols-2">
               <h1
-                className={`font-Montserrat lx:text-[20px] text-[16px] py-[19px] md:px-[23px] ${
-                  active === "undergraduate" ? "border border-zinc-200" : ""
-                } cursor-pointer w-full first-letter`}
+                className={`font-Montserrat lx:text-[20px] text-[16px] py-[19px] md:px-[23px] ${active === "undergraduate" ? "border border-zinc-200" : ""
+                  } cursor-pointer w-full first-letter`}
 
                 onClick={() => setActive("undergraduate")}
               >
                 Undergraduate
               </h1>
               <h1
-                className={`font-Montserrat lx:text-[20px] text-[16px] py-[19px] md:px-[23px] ${
-                  active === "Dual Degree" ? "border border-zinc-200" : ""
-                } cursor-pointer w-full first-letter`}
+                className={`font-Montserrat lx:text-[20px] text-[16px] py-[19px] md:px-[23px] ${active === "Dual Degree" ? "border border-zinc-200" : ""
+                  } cursor-pointer w-full first-letter`}
                 onClick={() => setActive("Dual Degree")}
               >
                 Dual Degree
               </h1>
               <h1
-                className={`font-Montserrat lx:text-[18px] text-[16px] py-[19px] md:px-[23px] ${
-                  active === "postgraduate" ? "border border-zinc-200" : ""
-                } cursor-pointer w-full first-letter`}
+                className={`font-Montserrat lx:text-[18px] text-[16px] py-[19px] md:px-[23px] ${active === "postgraduate" ? "border border-zinc-200" : ""
+                  } cursor-pointer w-full first-letter`}
                 onClick={() => setActive("postgraduate")}
               >
                 Postgraduate
               </h1>
               <h1
-                className={`font-Montserrat lx:text-[18px] text-[16px] py-[19px] md:px-[23px] ${
-                  active === "doctorial" ? "border border-zinc-200" : ""
-                } cursor-pointer w-full first-letter`}
+                className={`font-Montserrat lx:text-[18px] text-[16px] py-[19px] md:px-[23px] ${active === "doctorial" ? "border border-zinc-200" : ""
+                  } cursor-pointer w-full first-letter`}
                 onClick={() => setActive("doctorial")}
               >
                 Doctorial
@@ -73,7 +69,7 @@ const ProgrammesOffered = () => {
                     className="py-[19px] max-w-[432px] font-Emilio max-lx:py-[16px] text-[#51060D] text-[20px] max-lx:text-[15px] font-[500] capitalize border border-l-0 border-t-0 border-r-0 border-b-gray-500 hover:font-bold"
                   >
                     <a href="#">
-                    {program.title}</a>
+                      {program.title}</a>
                   </h1>
                 ) : (
                   ""
@@ -137,7 +133,7 @@ const ProgrammesOffered = () => {
               Engineering
             </h3>  */}
 
-            {programmesOffered.map((program,index) =>
+            {programmesOffered.map((program, index) =>
               program.field === active ? (
                 <h1 key={index} className="py-4 max-w-[432px] text-#51060D text-14 max-lx:text-15 font-semibold capitalize border border-l-0 border-t-0 border-r-0 border-b-gray-500 hover:text-bold">
                   <a href="#">{program.title}</a>

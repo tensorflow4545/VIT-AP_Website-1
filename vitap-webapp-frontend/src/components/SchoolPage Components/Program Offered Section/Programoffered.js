@@ -107,11 +107,11 @@ const programoffered = () => {
             {programmesOffered.map((program) => {
               if (active === program.field) {
 
-              return ( <div className="pb-3 pl-[78px] group group-hover:pl-[100px] transition duration-300">
-                 <div className="pb-3 text-black font-Emilio text-[20px] font-semibold">{program.head}</div>
-                 <div className="pb-3 text-black font-Emilio text-[20px] font-medium">{program.title}</div>
-              <hr className="w-[90%] h-[1px] bg-opacity-20 bg-black" />
-              </div>
+                return (<div className="pb-3 pl-[78px] group group-hover:pl-[100px] transition duration-300">
+                  <div className="pb-3 text-black font-Emilio text-[20px] font-semibold">{program.head}</div>
+                  <div className="pb-3 text-black font-Emilio text-[20px] font-medium">{program.title}</div>
+                  <hr className="w-[90%] h-[1px] bg-opacity-20 bg-black" />
+                </div>
                 )
               }
             })}
