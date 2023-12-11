@@ -176,55 +176,75 @@ export const programmesOffered = [
 export const announcements = [
   {
     id: 1,
-    content:
-      "Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
+    content:"VITEEE 2024 - Apply Now",
+    date:"1st Nov 2023",
+    link:"https://viteee.vit.ac.in/",
   },
   {
     id: 2,
-    content:
-      "Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
+    content:"2nd One Week International Workshop on Recent Trends in Optimization Techniques for Challenging Engineering Applications – SENSE",
+    link:"https://vitap.ac.in/2nd-one-week-international-workshop-on-recent-trends-in-optimization-techniques-for-challenging-engineering-applications-sense/",
+    date:"17th Nov 2023",
   },
   {
     id: 3,
-    content:
-      "Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
+    content:"NATIONAL CONFERENCE ON RECENT ADVANCES IN DATA SCIENCE",
+    link:"https://vitap.ac.in/crads-2023/",
+    date:"19th Oct 2023",
   },
   {
     id: 4,
-    content: "3rd Annual Convocation",
+    content: "5th International Conference on Advances in Distributed Computing and Machine Learning(ICADCML) - 2024",
+    link:"https://vitap.ac.in/5th-international-conference-on-advances-in-distributed-computing-and-machine-learningicadcml-2024/",
+    date:"14th July 2023",
   },
   {
     id: 5,
-    content: "3rd Annual Convocation",
+    content: "National Symposium and Workshop on Advances in Chemical Sciences and Applications - SAS",
+    link:"https://vitap.ac.in/wp-content/uploads/2023/11/NS-on-Advanced-Chemical-Sciences.pdf",
+    date:"7th Dec 2023",
   },
   {
     id: 6,
-    content: "3rd Annual Convocation",
+    content: "ATHENA 2023 - 3rd Annual International Conference - VISH",
+    link:"https://vitap.ac.in/wp-content/uploads/2023/10/ATHENA-2023.pdf",
+    date:"14th Nov 2023",
   },
   {
     id: 7,
-    content:
-      "Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
+    content:"Campus Info",
+    link:"https://vitap.ac.in/campus-info/",
+    date:"8th January 2023",
   },
   {
     id: 8,
-    content: "3rd Annual Convocation",
+    content: "VIT-AP University's Merit Scholarships for UG Non-engineering Courses",
+    link:"https://vitap.ac.in/sched_announcement/vit-ap-universitys-merit-scholarships-for-ug-non-engineering-courses-2/",
+    date:"8th Feb 2023",
   },
   {
     id: 9,
-    content: "CSI Meet'n Greet 23",
+    content: "VIT-AP University's Merit Scholarships for PG Non-engineering Courses",
+    link:"https://vitap.ac.in/sched_announcement/vit-ap-universitys-merit-scholarships-for-pg-non-engineering-courses/",
+    date:"8th Feb 2023",
   },
   {
     id: 10,
-    content: "CSI Meet'n Greet 23",
+    content: "Design Your Own Degree (DYOD®) at VIT-AP",
+    link:"https://vitap.ac.in/design-your-own-degree-at-vit-ap/",
+    date:"10th May 2023",
   },
   {
     id: 11,
-    content: "CSI Meet'n Greet 23",
+    content: "Minors or Specializations",
+    link:"https://vitap.ac.in/minors-or-specializations/",
+    date:"10th May 2023",
   },
   {
     id: 12,
-    content: "CSI Meet'n Greet 23",
+    content: "New Curriculum",
+    link:"https://vitap.ac.in/new-curriculum-ay-2021-2022/",
+    date:"10th May 2023",
   },
 ];
 
@@ -232,15 +252,20 @@ export const announcements2 = [
   {
     id: 1,
     content: "CSI Meet'n Greet 23",
+    link:"https://viteee.vit.ac.in/",
+    date:"1st Nov 2023",
   },
   {
     id: 2,
-    content:
-      "Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
+    content:"Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
+    link:"https://viteee.vit.ac.in/",
+    date:"1st Nov 2023",
   },
   {
     id: 3,
     content: "3rd Annual Convocation",
+    link:"https://viteee.vit.ac.in/",
+    date:"1st Nov 2023",
   },
 ];
 

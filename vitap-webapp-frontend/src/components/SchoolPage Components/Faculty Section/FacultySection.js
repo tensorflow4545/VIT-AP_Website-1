@@ -1,6 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
+import img7 from "@/assets/images/FacultyImages/Dr. HARI-SEETHA.jpg"
+import img6 from "@/assets/images/FacultyImages/Dr. Anil Vithalrao Turukmane - HOD Networking and Security.jpg"
+import img4 from "@/assets/images/FacultyImages/Dr. Muneeswari G - HOD Data Science and Engineering.jpg"
+import img3 from "@/assets/images/FacultyImages/Dr. Nagaraju Devarakonda - HOD Software and System Engineering.jpg"
+import img5 from "@/assets/images/FacultyImages/Dr. Reeja S R - HOD Artificial Intelligence and Machine Learning.jpg"
+import img1 from "@/assets/images/FacultyImages/Dr.-PRADEEP-REDDY - Dean.jpg"
+import img2 from "@/assets/images/FacultyImages/Mr.-SAROJ-KUMAR-PANIGRAHY - Asso.Dean.jpg"
 
 const FacultySection = () => {
   return (
@@ -23,7 +30,7 @@ const FacultySection = () => {
         </div> */}
         <div className="flex justify-end items-end overflow-hidden mt-[75px] pr-[20px] max-w-[230px] max-h-[230px] h-full w-full relative group transition-all duration-300 ease-in-out">
           <Image
-            src={"/faculty1.jpeg"}
+            src={img1}
             alt="faculty1Img"
             fill={true}
           />
@@ -41,7 +48,7 @@ const FacultySection = () => {
       <div className="flex-1 flex flex-col justify-center items-center">
         <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative group transition-all duration-300 ease-in-out">
           <Image
-            src={"/faculty1.jpeg"}
+            src={img2}
             alt="faculty1Img"
             fill={true}
           />
@@ -57,7 +64,7 @@ const FacultySection = () => {
         </div>
         <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative group transition-all duration-300 ease-in-out">
           <Image
-            src={"/faculty1.jpeg"}
+            src={img3}
             alt="faculty1Img"
             fill={true}
           />
@@ -73,7 +80,7 @@ const FacultySection = () => {
         </div>
         <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative group transition-all duration-300 ease-in-out">
           <Image
-            src={"/faculty1.jpeg"}
+            src={img4}
             alt="faculty1Img"
             fill={true}
           />
@@ -91,7 +98,7 @@ const FacultySection = () => {
       <div className="flex flex-col flex-1  items-center justify-center gap-[20px]">
         <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative group transition-all duration-300 ease-in-out">
           <Image
-            src={"/faculty1.jpeg"}
+            src={img5}
             alt="faculty1Img"
             fill={true}
           />
@@ -107,7 +114,7 @@ const FacultySection = () => {
         </div>
         <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative group transition-all duration-300 ease-in-out">
           <Image
-            src={"/faculty1.jpeg"}
+            src={img6}
             alt="faculty1Img"
             fill={true}
           />
@@ -125,7 +132,7 @@ const FacultySection = () => {
       <div className="flex flex-col justify-center items-center flex-1 ">
         <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative group transition-all duration-300 ease-in-out">
           <Image
-            src={"/faculty1.jpeg"}
+            src={img7}
             alt="faculty1Img"
             fill={true}
           />
