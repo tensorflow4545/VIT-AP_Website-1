@@ -321,7 +321,8 @@ const NavbarBottom = () => {
 
                     <ol className="flex-row font-[400] text-[20px]  pt-[60px] pl-[110px] space-y-[19px]">
                       <li className=" custom-list-item   w-[100px]">
-                        Overview
+                       <Link href="/cdc-overview">Overview</Link>
+                  
                       </li>
 
                       <li className="absolute left-[600px]  top-[40px]  ">
@@ -329,7 +330,7 @@ const NavbarBottom = () => {
                       </li>
 
                       <li className="peer/leadership custom-list-item w-[fit-content]">
-                        Super Dream Offers
+                      <Link href="/cdc-superdream">Superdream</Link>
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/leadership:visible">
                         <Image alt="A descriptive text here" src={image2} />
@@ -357,14 +358,14 @@ const NavbarBottom = () => {
                       </li>
 
                       <li className="peer/cdc custom-list-item w-[fit-content]">
-                        CDC Office
+                        <Link href="/cdc-office">CDC Office</Link>
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/cdc:visible">
                         <Image alt="A descriptive text here" src={image5} />
                       </li>
 
                       <li className="peer/Statistics custom-list-item w-[fit-content]">
-                        Statistics
+                        <Link href="/cdc-statistics">Statistics</Link>
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/Statistics:visible">
                         <Image alt="A descriptive text here" src={image5} />
