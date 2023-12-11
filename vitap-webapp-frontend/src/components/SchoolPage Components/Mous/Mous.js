@@ -1,9 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import img1 from "../../../assets/images/Mous/mou.png";
-import stanford from "../../../assets/images/Mous/stanford.png";
-import mit from "../../../assets/images/Mous/mit.png";
-import oxford from "../../../assets/images/Mous/oxford.png";
+import img1 from "@/assets/images/Mous/MoU.jpg";
+import stanford from "@/assets/images/Mous/stanford.png";
+import mit from "@/assets/images/Mous/mit.png";
+import oxford from "@/assets/images/Mous/oxford.png";
+import mou1 from "@/assets/images/Mous/Juniper.png";
+import mou2 from "@/assets/images/Mous/IDS-Blockchain-academy.png"
 
 const Mous = () => {
   return (
@@ -12,24 +14,24 @@ const Mous = () => {
         <div className="w-[100%] h-[80%] flex justify-end bg-[#FFE9EB]">
           <div className="w-1/5 flex flex-col border-l-[3px] border-l-[#FFFFFF]">
             <div className="border-b-[3px] border-b-[#FFFFFF] h-1/3 flex items-center justify-center">
-              <Image src={stanford} />
+              <Image src={mou1} />
             </div>
             <div className="border-b-[3px] border-b-[#FFFFFF] h-1/3 flex items-center justify-center">
-              <Image src={mit} />
+              <Image src={mou2} />
             </div>
             <div className="border border-b-[#FFFFFF] h-1/3 flex items-center justify-center">
-              <Image src={oxford} />
+              <Image src={mou1} />
             </div>
           </div>
           <div className="w-1/5 flex flex-col border-l-[3px] border-l-[#FFFFFF]">
             <div className="border-b-[3px] border-b-[#FFFFFF] h-1/3 flex items-center justify-center">
-              <Image src={stanford} />
+              <Image src={mou2} />
             </div>
             <div className="border-b-[3px] border-b-[#FFFFFF] h-1/3 flex items-center justify-center">
-              <Image src={oxford} />
+              <Image src={mou1} />
             </div>
             <div className="border border-b-[#FFFFFF] h-1/3 flex items-center justify-center">
-              <Image src={mit} />
+              <Image src={mou2} />
             </div>
           </div>
           <div className="flex relative w-[50%] h-[100%]">
