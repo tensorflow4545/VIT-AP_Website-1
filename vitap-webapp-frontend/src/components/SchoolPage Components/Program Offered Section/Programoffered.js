@@ -5,43 +5,34 @@ const programoffered = () => {
 
   const programmesOffered = [
     {
-      id: 1,
+      id: 0,
       head: "B.Tech CSE",
-      title: "B.Tech in Computer Science and Engineering",
+      title: "B.Tech (Computer Science and Engineering).",
       field: "undergraduate"
     },
     {
       id: 1,
       head: "B.Tech CSE",
-      title: "B.Tech in Computer Science and Engineering",
-      field: "undergraduate"
-    },
-    {
-      id: 1,
-      head: "B.Tech CSE",
-      title: "B.Tech in Computer Science and Engineering",
+      title: "B.Tech (CSE with specialization in Business Systems).",
       field: "undergraduate"
     },
     {
       id: 2,
-      head: "B.Tech CSE",
-      title:
-        "B.Tech in Computer Science and Engineering Specialization in AI and ML",
+      head: "M.Tech CSE",
+      title:"Five year integrated programme- M.Tech (Software Engineering).",
       field: "postgraduate"
     },
     {
       id: 3,
-      head: "B.Tech CSE",
-      title:
-        "B.Tech in Computer Science and Engineering Specialization in Data Analytics",
+      head: "M.Tech CSE",
+      title:"Five year integrated programme- M.Tech CSE in Collaboration with Virtusa",
       field: "postgraduate"
     },
     {
       id: 4,
       head: "B.Tech CSE",
-      title:
-        "B.Tech in Computer Science and Engineering Specialization in Network and Security",
-      field: "postgraduate"
+      title:"B.Tech in Computer Science and Engineering Specialization in Network and Security",
+      field: "doctoral"
     },
     {
       id: 5,
@@ -62,7 +53,7 @@ const programoffered = () => {
       head: "B.Tech CSE",
       title:
         "B.Tech in Computer Science and Engineering Specialization in Network and Security",
-      field: "doctoral"
+      field: "integrated"
     },
     {
       id: 8,
@@ -73,13 +64,6 @@ const programoffered = () => {
     },
     {
       id: 9,
-      head: "B.Tech CSE",
-      title:
-        "B.Tech in Computer Science and Engineering Specialization in Network and Security",
-      field: "integrated"
-    },
-    {
-      id: 10,
       head: "B.Tech CSE",
       title:
         "B.Tech in Computer Science and Engineering Specialization in Network and Security",
