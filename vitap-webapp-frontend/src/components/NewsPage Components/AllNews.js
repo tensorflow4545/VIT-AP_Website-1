@@ -53,7 +53,7 @@ const AllNews = () => {
               <p className="font-Emilo text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
                 04 Apr
               </p>
-              <p className="font-Emilo text-[25px] mt-[300px] text-center text-[#600912] font-semibold">
+              <p className="font-Emilo text-[20px] mt-[300px] text-center text-[#600912] font-semibold">
                 V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad
                 ujs hfuLaunch padV{" "}
               </p>
@@ -66,7 +66,7 @@ const AllNews = () => {
               <p className="font-Emilo text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
                 04 Apr
               </p>
-              <p className="font-Emilo text-[25px] mt-[300px] text-center text-[#600912] font-semibold">
+              <p className="font-Emilo text-[20px] mt-[300px] text-center text-[#600912] font-semibold">
                 V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad
                 ujs hfuLaunch padV{" "}
               </p>
@@ -79,7 +79,7 @@ const AllNews = () => {
               <p className="font-Emilo text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
                 04 Apr
               </p>
-              <p className="font-Emilo text-[25px] mt-[300px] text-center text-[#600912] font-semibold">
+              <p className="font-Emilo text-[20px] mt-[300px] text-center text-[#600912] font-semibold">
                 V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad
                 ujs hfuLaunch padV{" "}
               </p>
@@ -94,7 +94,7 @@ const AllNews = () => {
               <p className="font-Emilo text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
                 04 Apr
               </p>
-              <p className="font-Emilo text-[25px] mt-[300px] text-center text-[#600912] font-semibold">
+              <p className="font-Emilo text-[20px] mt-[300px] text-center text-[#600912] font-semibold">
                 V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad
                 ujs hfuLaunch padV{" "}
               </p>
@@ -107,7 +107,7 @@ const AllNews = () => {
               <p className="font-Emilo text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
                 04 Apr
               </p>
-              <p className="font-Emilo text-[25px] mt-[300px] text-center text-[#600912] font-semibold">
+              <p className="font-Emilo text-[20px] mt-[300px] text-center text-[#600912] font-semibold">
                 V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad
                 ujs hfuLaunch padV{" "}
               </p>
@@ -120,7 +120,7 @@ const AllNews = () => {
               <p className="font-Emilo text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
                 04 Apr
               </p>
-              <p className="font-Emilo text-[25px] mt-[300px] text-center text-[#600912] font-semibold">
+              <p className="font-Emilo text-[20px] mt-[300px] text-center text-[#600912] font-semibold">
                 V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad
                 ujs hfuLaunch padV{" "}
               </p>
@@ -168,7 +168,7 @@ const AllNews = () => {
               <p className="font-Emilo text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
                 04 Apr
               </p>
-              <p className="font-Emilo text-[25px] mt-[300px] text-center text-[#600912] font-semibold">
+              <p className="font-Emilo text-[20px] mt-[300px] text-center text-[#600912] font-semibold">
                 V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad
                 ujs hfuLaunch padV{" "}
               </p>
@@ -181,7 +181,7 @@ const AllNews = () => {
               <p className="font-Emilo text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
                 04 Apr
               </p>
-              <p className="font-Emilo text-[25px] mt-[300px] text-center text-[#600912] font-semibold">
+              <p className="font-Emilo text-[20px] mt-[300px] text-center text-[#600912] font-semibold">
                 V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad
                 ujs hfuLaunch padV{" "}
               </p>
@@ -194,7 +194,7 @@ const AllNews = () => {
               <p className="font-Emilo text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
                 04 Apr
               </p>
-              <p className="font-Emilo text-[25px] mt-[300px] text-center text-[#600912] font-semibold">
+              <p className="font-Emilo text-[20px] mt-[300px] text-center text-[#600912] font-semibold">
                 V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad
                 ujs hfuLaunch padV{" "}
               </p>

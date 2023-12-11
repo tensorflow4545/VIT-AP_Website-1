@@ -1,7 +1,7 @@
 @media screen and (max-width: 720px) {
   .container {
     background-color: white;
-    width: fit-content;
+    width: screen;
   }
   .head {
     left: 0px;
