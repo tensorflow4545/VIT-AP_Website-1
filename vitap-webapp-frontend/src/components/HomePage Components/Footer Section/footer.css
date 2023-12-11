@@ -131,13 +131,13 @@ line-height: 150%; /* 27px */
 .credittext{
     color: rgba(255, 255, 255, 0.80);
     font-family: Emilio Test;
-    font-size: 24px;
-    font-style: normal;
+    font-size: 18px;
+    font-style: italic;
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.6px;
     align-self: flex-start;
-    padding-top: 14px;
+    /* padding-top: 14px; */
     margin-left: 65px;
 }
 .links{

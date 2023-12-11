@@ -41,14 +41,14 @@ const ProgrammesOffered = () => {
                 Dual Degree
               </h1>
               <h1
-                className={`font-Montserrat lx:text-[18px] text-[16px] py-[19px] md:px-[23px] ${active === "postgraduate" ? "border border-zinc-200" : ""
+                className={`font-Montserrat lx:text-[20px] text-[16px] py-[19px] md:px-[23px] ${active === "postgraduate" ? "border border-zinc-200" : ""
                   } cursor-pointer w-full first-letter`}
                 onClick={() => setActive("postgraduate")}
               >
                 Postgraduate
               </h1>
               <h1
-                className={`font-Montserrat lx:text-[18px] text-[16px] py-[19px] md:px-[23px] ${active === "doctorial" ? "border border-zinc-200" : ""
+                className={`font-Montserrat lx:text-[20px] text-[16px] py-[19px] md:px-[23px] ${active === "doctorial" ? "border border-zinc-200" : ""
                   } cursor-pointer w-full first-letter`}
                 onClick={() => setActive("doctorial")}
               >

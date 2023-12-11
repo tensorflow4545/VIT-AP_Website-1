@@ -15,86 +15,86 @@ export default function Footer() {
     <>
       {/* DESKTOP VIEW */}
       <div className="md:grid hidden w-screen ">
-        <div className="footer  ">
+        <div className="w-screen h-[555px] p-[60px] pl-[110px] pr-[70px]">
           <div className="flex flex-row ">
-            <div className="footer1 lg:basis-3/4 md:basis-1">
+            <div className="pt-0 pb-[20px] w-[600px] h-[467px] lg:basis-3/4 md:basis-1">
               <div className="flex flex-row space-x-[75px]">
-                <div className="part1">
-                  <p className="heading">Quick Links</p>
-                  <ul className="list">
-                    <li className="listitem">Careers</li>
-                    <li className="listitem">Gallery</li>
-                    <li className="listitem">Hostel</li>
-                    <li className="listitem">Transport</li>
-                    <li className="listitem">Policies</li>
+                <div className="pr-[30px] pb-[47px]">
+                  <p className="text-primary font-Emilio text-[24px] font-bold leading-[133.5%] pb-[10px]">Quick Links</p>
+                  <ul className="w-[147px] h-[136px]">
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">Careers</li>
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">Gallery</li>
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">Hostel</li>
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">Transport</li>
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">Policies</li>
                   </ul>
                 </div>
-                <div className="part2">
-                  <p className="heading">VIT Connect</p>
-                  <ul className="list">
-                    <li className="listitem">V-TOP Login</li>
-                    <li className="listitem">V-TOP Parent Login </li>
-                    <li className="listitem">Mail</li>
-                    <li className="listitem">Alumni</li>
-                    <li className="listitem">Contact Us</li>
+                <div className="pr-[30px] pb-[47px]">
+                  <p className="text-primary font-Emilio text-[24px] font-bold leading-[133.5%] pb-[10px]">VIT Connect</p>
+                  <ul className="w-[147px] h-[136px]">
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">V-TOP Login</li>
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">V-TOP Parent Login </li>
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">Mail</li>
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">Alumni</li>
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">Contact Us</li>
                   </ul>
                 </div>
-                <div className="part3">
-                  <p className="heading">Ranking & Accereditation</p>
-                  <ul className="list">
-                    <li className="listitem">RAAC</li>
-                    <li className="listitem">NACC</li>
+                <div className="w-[max-content] pr-[30px] pb-[47px]">
+                  <p className="text-primary font-Emilio text-[24px] font-bold leading-[133.5%] pb-[10px]">Ranking & Accereditation</p>
+                  <ul className="w-[147px] h-[136px]">
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">RAAC</li>
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">NACC</li>
                   </ul>
                 </div>
               </div>
               <div className="flex flex-row space-x-[75px]">
-                <div className="part1">
-                  <p className="heading">Research</p>
-                  <ul className="list">
-                    <li className="listitem">Centres</li>
-                    <li className="listitem">Google Scholars</li>
-                    <li className="listitem">News</li>
-                    <li className="listitem">Patents</li>
-                    <li className="listitem">Projects</li>
-                    <li className="listitem">Publications</li>
+                <div className="pr-[30px] pb-[47px]">
+                  <p className="text-primary font-Emilio text-[24px] font-bold leading-[133.5%] pb-[10px]">Research</p>
+                  <ul className="w-[147px] h-[136px]">
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">Centres</li>
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">Google Scholars</li>
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">News</li>
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">Patents</li>
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">Projects</li>
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">Publications</li>
                   </ul>
                 </div>
-                <div className="part2">
-                  <p className="heading">Academics</p>
-                  <ul className="list">
-                    <li className="listitem">Programes Offered</li>
-                    <li className="listitem">Academic Calendar</li>
-                    <li className="listitem">Application Process</li>
-                    <li className="listitem">Fee Structure</li>
-                    <li className="listitem">Scholarship</li>
-                    <li className="listitem">IQAC</li>
+                <div className="pr-[30px] pb-[47px]">
+                  <p className="text-primary font-Emilio text-[24px] font-bold leading-[133.5%] pb-[10px]">Academics</p>
+                  <ul className="w-[147px] h-[136px]">
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">Programes Offered</li>
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">Academic Calendar</li>
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">Application Process</li>
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">Fee Structure</li>
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">Scholarship</li>
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">IQAC</li>
                   </ul>
                 </div>
-                <div className="part3">
-                  <p className="heading">Information</p>
-                  <ul className="list">
-                    <li className="listitem">Public Note:University Act</li>
-                    <li className="listitem">Forms</li>
-                    <li className="listitem">Directory</li>
-                    <li className="listitem">Feedback</li>
-                    <li className="listitem">Academic Bank of Credits(ABC)</li>
+                <div className="w-[max-content] pr-[30px] pb-[47px]">
+                  <p className="text-primary font-Emilio text-[24px] font-bold leading-[133.5%] pb-[10px]">Information</p>
+                  <ul className="w-[147px] h-[136px]">
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">Public Note:University Act</li>
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">Forms</li>
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">Directory</li>
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">Feedback</li>
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">Academic Bank of Credits(ABC)</li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div className="footer2 w-full md:w-full basis-1/4">
+            <div className="pr-[25px] pt-[20px] text-right w-full md:w-full basis-1/4">
               <div>
                 <iframe
-                  className="map"
+                  className="w-[460px] h-[202px] pb-[30px] pr-[15px]"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.6106982247265!2d80.49881150582188!3d16.495238672470556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f27d40f21c55%3A0x1490eacd54859850!2sVIT-AP%20University!5e0!3m2!1sen!2sin!4v1696503206483!5m2!1sen!2sin"
                   allowfullscreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
-              <div className="address">
-                <p className="addressheading">VIT-AP University, Amaravathi</p>
-                <div className="addresstext">
+              <div className="flex flex-col items-start gap-[18px] pb-[10px]">
+                <p className="addresstext-primary font-Emilio text-[24px] font-bold leading-[133.5%] pb-[10px]">VIT-AP University, Amaravathi</p>
+                <div className="text-black font-Montserrat text-[16px] font-light leading-[150%] text-left">
                   <p>Near Vijayawada - 522237,</p>
                   <p>AndhraPradesh.</p>
                   <p>Phone: 040-29559555</p>
@@ -104,7 +104,7 @@ export default function Footer() {
               <div className="flex flex-row">
                 <a
                   href="https://www.google.com/maps/search/vit+ap+university/@16.4943189,80.4961346,17z/data=!3m1!4b1?entry=ttu"
-                  className="reach"
+                  className="text-black font-Montserrate text-[20px] font-normal leading-[150%] underline pr-[5px]"
                 >
                   HOW TO REACH VIT-AP
                 </a>
@@ -116,7 +116,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="credit lg:w-full md:w-max ">
+        <div className="flex h-[100px] justify-center items-center bg-[#741D26] lg:w-full md:w-max ">
           <div className="flex w-full">
             <div className="basis mt-2 mr-3 pr-2">
               <div className="pl-[120px] mt-[10px] mr-[10px]">
@@ -146,17 +146,17 @@ export default function Footer() {
 
           </div>
         </div>
-        <div className="creditfoot flex pl-[80px] pb-[5px] pt-[20px]">
+        <div className="creditfoot flex pl-[80px] pb-[5px] justify-center items-center ">
           <div className="basis">
-            <p className="copytext pl-[40px] pt-[20px]">© VIT-AP University</p>
+            <p className="copytext relative right-[140px]">© VIT-AP University</p>
           </div>
           <div className="basis">
-            <p className="credittext">
+            <p className="credittext ">
               Crafted with Passion at VIT-AP University by Website Team︎
             </p>
           </div>
-          <div className="basis relative">
-            <div className="absolute icons pt-3 left-[100px] flex w-full">
+          <div className="basis">
+            <div className="relative icons left-[140px] flex w-full">
               <a
                 href="https://www.instagram.com/vitap.university/?hl=en"
                 className="socialicon"
@@ -468,7 +468,7 @@ export default function Footer() {
 
           {/* Credit Section */}
           <div class="w-full h-[51px] bg-red-900">
-            <p class="text-white items-center text-center text-[18px] font-semibold text-emilio py-[10px]">Crafted With Passion At VIT-AP University</p>
+            <p class="text-white items-center text-center text-[16px] font-semibold text-emilio py-[10px]">Crafted With Passion At VIT-AP University</p>
           </div>
         </div>
       </div>
