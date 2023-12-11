@@ -125,9 +125,9 @@ const About = () => {
             </h1>
             <div className="flex-col space-y-[20px] mt-[20px] ">
               <Announcement
-                date="2nd  July,  23"
-                title="VITREE January 2024 - Apply Now"
-                link="https://vitap.ac.in/vitree-january-2024/"
+                date="1st  Nov,  23"
+                title="VITEEE 2024 - Apply Now"
+                link="https://vitap.ac.in/viteee-2024-b-tech-admissions/"
               />
               <Announcement
                 date="17th September, 23"

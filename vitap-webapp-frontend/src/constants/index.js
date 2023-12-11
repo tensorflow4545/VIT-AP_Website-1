@@ -60,8 +60,7 @@ export const programmesOffered = [
   },
   {
     id: 2,
-    title:
-      "B.Tech in Computer Science and Engineering with Specilization in Business System (In collabration with TCS)",
+    title:"B.Tech in Computer Science and Engineering with specializations in Business System (In collaboration with TCS)",
     field: "undergraduate",
   },
   {

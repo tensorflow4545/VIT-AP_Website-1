@@ -12,14 +12,14 @@ import Link from "next/link";
 const News = () => {
   return (
     <>
-      <div className={`${styles.container} bg-white h-screen`}>
-        <div className={`${styles.head} flex justify-left items-left w-screen`}>
+      <div className={`${styles.container} bg-white h-screen w-screen`}>
+        <div className={`${styles.head} top-0 flex justify-left items-left w-screen`}>
           <h2
-            className={`${styles.heading} text-[#51060D] font-Emilio text-[60px] w-[600px] mt-[50px] text-left`}
+            className={`${styles.heading} relative left-[100px] text-[#51060D] font-Emilio font-semibold text-[60px] w-[600px] mt-[50px] text-left`}
           >
             News about VIT-AP
           </h2>
-          <div className="flex flex-row items-center justify-center relative  transition-all duration-300 ease-in group top-[25px] ml-[50%]">
+          <div className="flex flex-row items-center justify-center relative transition-all duration-300 ease-in group top-[25px] left-[50%]">
             <div className="Rectangle91 w-[32px] h-[30px] left-[40px] top-[55px] absolute bg-[#5C0E14] opacity-20 transition-transform group-hover:left-[-10px] group-hover:w-[90px] group-hover:transition-all group-hover:duration-300 group-hover:ease-in-out "></div>
             <Link href={"/"} className="mr-2 text-[#5C0E14] font-bold">See All</Link>
             <hr className=" h-[4px] w-[36px] font-bold bg-[#5C0E14] max-lx:w-[28px]" />

@@ -12,6 +12,7 @@ import image6 from "../../../assets/images/Homepage Images/Schools/VISH.jpg";
 import image7 from "../../../assets/images/Homepage Images/Schools/VSB.jpg";
 
 import { BsArrowRightShort } from "react-icons/bs";
+import Link from "next/link.js";
 const fetchdata = async () => {
   const reqOptions = {
     headers: {
@@ -42,145 +43,159 @@ const OurSchools = async () => {
           </h1>
           <div class="grid grid-cols-4 justify-center mt-5 items-center">
             <div className="w-[270px] h-[270px] m-[20px] ml-[46px] relative group overflow-hidden">
-              <div className="absolute w-[270px] h-[270px] bg-black"></div>
-              <Image
-                src={image1}
-                className="opacity-60 transition-transform transform scale-100 group-hover:scale-105"
-                width={270}
-                height={290}
-              />
-              <div className="absolute top-[190px] text-white  px-[14px] font-semibold flex-col ">
-                <h1 className="leading-[23px] font-Emilio text-[20px]">
-                  School of Advanced Sciences
-                </h1>
-                <h1 className="font-Montserrat text-[13px] font-medium flex items-center">
-                  Explore Now{" "}
-                  <span>
-                    <BsArrowRightShort size={23} />
-                  </span>
-                </h1>
-              </div>
+              <Link href={"https://vitap.ac.in/school-of-advanced-sciences/"} target="_blank">
+                <div className="absolute w-[270px] h-[270px] bg-black"></div>
+                <Image
+                  src={image1}
+                  className="opacity-60 transition-transform transform scale-100 group-hover:scale-105"
+                  width={270}
+                  height={290}
+                />
+                <div className="absolute top-[190px] text-white  px-[14px] font-semibold flex-col ">
+                  <h1 className="leading-[23px] font-Emilio text-[20px]">
+                    School of Advanced Sciences
+                  </h1>
+                  <h1 className="font-Montserrat text-[13px] font-medium flex items-center">
+                    Explore Now{" "}
+                    <span>
+                      <BsArrowRightShort size={23} />
+                    </span>
+                  </h1>
+                </div>
+              </Link>
             </div>
             <div className="w-[270px] h-[270px] ml-[46px] relative group overflow-hidden">
-              <div className="absolute w-[270px] h-[270px] bg-black"></div>
-              <Image
-                src={image2}
-                className="opacity-60 transition-transform transform scale-100 group-hover:scale-105"
-                width={270}
-                height={290}
-              />
-              <div className="absolute top-[190px] text-white  px-[14px] font-semibold flex-col">
-                <h1 className="leading-[23px] font-Emilio text-[20px] ">
-                  School of Electronics Engineering
-                </h1>
-                <h1 className="font-Montserrat text-[13px] font-medium flex items-center">
-                  Explore Now{" "}
-                  <span>
-                    <BsArrowRightShort size={23} />
-                  </span>
-                </h1>
-              </div>
+              <Link href={"https://vitap.ac.in/electronics-communication-engineering/"} target="_blank">
+                <div className="absolute w-[270px] h-[270px] bg-black"></div>
+                <Image
+                  src={image2}
+                  className="opacity-60 transition-transform transform scale-100 group-hover:scale-105"
+                  width={270}
+                  height={290}
+                />
+                <div className="absolute top-[190px] text-white  px-[14px] font-semibold flex-col">
+                  <h1 className="leading-[23px] font-Emilio text-[20px] ">
+                    School of Electronics Engineering
+                  </h1>
+                  <h1 className="font-Montserrat text-[13px] font-medium flex items-center">
+                    Explore Now{" "}
+                    <span>
+                      <BsArrowRightShort size={23} />
+                    </span>
+                  </h1>
+                </div>
+              </Link>
             </div>
             <div className="w-[270px] h-[270px] ml-[46px] relative group overflow-hidden">
-              <div className="absolute w-[270px] h-[270px] bg-black"></div>
-              <Image
-                src={image3}
-                className="opacity-60 transition-transform transform scale-100 group-hover:scale-105"
-                width={270}
-                height={290}
-              />
-              <div className="absolute top-[185px] text-white  px-[14px] font-semibold flex-col ">
-                <h1 className="leading-[26px] font-Emilio text-[20px]">
-                  School of Computer Science and Engineering
-                </h1>
-                <h1 className="font-Montserrat text-[13px] font-medium flex items-center">
-                  Explore Now{" "}
-                  <span>
-                    <BsArrowRightShort size={23} />
-                  </span>
-                </h1>
-              </div>
+              <Link href={"https://vitap.ac.in/computer-science-engineering/"} target="_blank">
+                <div className="absolute w-[270px] h-[270px] bg-black"></div>
+                <Image
+                  src={image3}
+                  className="opacity-60 transition-transform transform scale-100 group-hover:scale-105"
+                  width={270}
+                  height={290}
+                />
+                <div className="absolute top-[185px] text-white  px-[14px] font-semibold flex-col ">
+                  <h1 className="leading-[26px] font-Emilio text-[20px]">
+                    School of Computer Science and Engineering
+                  </h1>
+                  <h1 className="font-Montserrat text-[13px] font-medium flex items-center">
+                    Explore Now{" "}
+                    <span>
+                      <BsArrowRightShort size={23} />
+                    </span>
+                  </h1>
+                </div>
+              </Link>
             </div>
             <div className="w-[270px] h-[270px] ml-[46px] relative group overflow-hidden">
-              <div className="absolute w-[270px] h-[270px] bg-gradient-to-b  from-[#0000005a] to-black opacity-80"></div>
-              <Image
-                src={image4}
-                className="opacity-70 transition-transform transform scale-100 group-hover:scale-105"
-                width={270}
-                height={290}
-              />
-              <div className="absolute top-[200px] text-white  px-[14px] font-semibold flex flex-col ">
-                <h1 className="leading-[26px] font-Emilio text-[20px]">
-                  School of Law
-                </h1>
-                <h1 className="font-Montserrat text-[13px] font-medium flex items-center">
-                  Explore Now{" "}
-                  <span>
-                    <BsArrowRightShort size={23} />
-                  </span>
-                </h1>
-              </div>
+              <Link href={"https://vitap.ac.in/school-of-law/"} target="_blank">
+                <div className="absolute w-[270px] h-[270px] bg-gradient-to-b  from-[#0000005a] to-black opacity-80"></div>
+                <Image
+                  src={image4}
+                  className="opacity-70 transition-transform transform scale-100 group-hover:scale-105"
+                  width={270}
+                  height={290}
+                />
+                <div className="absolute top-[200px] text-white  px-[14px] font-semibold flex flex-col ">
+                  <h1 className="leading-[26px] font-Emilio text-[20px]">
+                    School of Law
+                  </h1>
+                  <h1 className="font-Montserrat text-[13px] font-medium flex items-center">
+                    Explore Now{" "}
+                    <span>
+                      <BsArrowRightShort size={23} />
+                    </span>
+                  </h1>
+                </div>
+              </Link>
             </div>
 
             <div className="w-[270px] h-[270px] ml-[150px] relative group overflow-hidden">
-              <div className="absolute w-[270px] h-[270px] bg-black"></div>
-              <Image
-                src={image5}
-                className="opacity-60 transition-transform transform scale-100 group-hover:scale-105"
-                width={270}
-                height={290}
-              />
-              <div className="absolute top-[190px] text-white  px-[14px] font-semibold flex-col">
-                <h1 className="leading-[23px] font-Emilio text-[20px]">
-                  School of Mechanical Engineering
-                </h1>
-                <h1 className="font-Montserrat text-[13px] font-medium flex items-center">
-                  Explore Now{" "}
-                  <span>
-                    <BsArrowRightShort size={23} />
-                  </span>
-                </h1>
-              </div>
+              <Link href={"https://vitap.ac.in/school-of-mechanical-engineering/"} target="_blank">
+                <div className="absolute w-[270px] h-[270px] bg-black"></div>
+                <Image
+                  src={image5}
+                  className="opacity-60 transition-transform transform scale-100 group-hover:scale-105"
+                  width={270}
+                  height={290}
+                />
+                <div className="absolute top-[190px] text-white  px-[14px] font-semibold flex-col">
+                  <h1 className="leading-[23px] font-Emilio text-[20px]">
+                    School of Mechanical Engineering
+                  </h1>
+                  <h1 className="font-Montserrat text-[13px] font-medium flex items-center">
+                    Explore Now{" "}
+                    <span>
+                      <BsArrowRightShort size={23} />
+                    </span>
+                  </h1>
+                </div>
+              </Link>
             </div>
             <div className="w-[270px] h-[270px] ml-[150px] relative group overflow-hidden">
-              <div className="absolute w-[270px] h-[270px] bg-black"></div>
-              <Image
-                src={image6}
-                className="opacity-60 transition-transform transform scale-100 group-hover:scale-105"
-                width={270}
-                height={290}
-              />
-              <div className="absolute top-[190px] text-white f px-[14px] font-semibold flex-col">
-                <h1 className="leading-[26px] font-Emilio text-[20px]">
-                  School of Social Science and Humanities
-                </h1>
-                <h1 className="font-Montserrat text-[13px] font-medium flex items-center">
-                  Explore Now{" "}
-                  <span>
-                    <BsArrowRightShort size={23} />
-                  </span>
-                </h1>
-              </div>
+              <Link href={"https://vitap.ac.in/social-sciences-and-humanities/"} target="_blank">
+                <div className="absolute w-[270px] h-[270px] bg-black"></div>
+                <Image
+                  src={image6}
+                  className="opacity-60 transition-transform transform scale-100 group-hover:scale-105"
+                  width={270}
+                  height={290}
+                />
+                <div className="absolute top-[190px] text-white f px-[14px] font-semibold flex-col">
+                  <h1 className="leading-[26px] font-Emilio text-[20px]">
+                    School of Social Sciences and Humanities
+                  </h1>
+                  <h1 className="font-Montserrat text-[13px] font-medium flex items-center">
+                    Explore Now{" "}
+                    <span>
+                      <BsArrowRightShort size={23} />
+                    </span>
+                  </h1>
+                </div>
+              </Link>
             </div>
             <div className="w-[270px] h-[270px] ml-[150px] relative group overflow-hidden">
-              <div className="absolute w-[270px] h-[270px] bg-black"></div>
-              <Image
-                src={image7}
-                className="opacity-60 transition-transform transform scale-100 group-hover:scale-105"
-                width={270}
-                height={290}
-              />
-              <div className="absolute top-[200px] text-white px-[14px] font-semibold flex-col ">
-                <h1 className="leading-[26px] text-[20px] font-Emilio">
-                  School of Business
-                </h1>
-                <h1 className="font-Montserrat text-[13px] font-medium flex items-center">
-                  Explore Now{" "}
-                  <span>
-                    <BsArrowRightShort size={23} />
-                  </span>
-                </h1>
-              </div>
+              <Link href={"https://vitap.ac.in/vit-ap-school-of-business/"} target="_blank">
+                <div className="absolute w-[270px] h-[270px] bg-black"></div>
+                <Image
+                  src={image7}
+                  className="opacity-60 transition-transform transform scale-100 group-hover:scale-105"
+                  width={270}
+                  height={290}
+                />
+                <div className="absolute top-[200px] text-white px-[14px] font-semibold flex-col ">
+                  <h1 className="leading-[26px] text-[20px] font-Emilio">
+                    School of Business
+                  </h1>
+                  <h1 className="font-Montserrat text-[13px] font-medium flex items-center">
+                    Explore Now{" "}
+                    <span>
+                      <BsArrowRightShort size={23} />
+                    </span>
+                  </h1>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
