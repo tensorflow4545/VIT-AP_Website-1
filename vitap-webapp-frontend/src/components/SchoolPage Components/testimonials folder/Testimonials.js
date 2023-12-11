@@ -8,17 +8,17 @@ const Testimonials = () => {
       <div className="flex flex-col items-center justify-center h-screen relative">
         <div className="bg-[#5C0E14] h-1/2 w-[100%]"></div>
         <div className="w-[90%] h-[80%] bg-[#EFEFEF] shadow-2xl text-center absolute border">
-          <p className="text-[#5C0E14] font-bold mt-[12px]">
+          <p className="text-[#5C0E14] font-bold mt-[12px] font-Emilio">
             <i>Testimonials</i>
           </p>
-          <p className="text-[#5C0E14] font-bold text-[56px] font-Emilo">
+          <p className="text-[#5C0E14] font-bold text-[56px] font-Emilio">
             What Students Say
           </p>
           <p className="text-[#1B1C1E]">
             Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
             consectetur amet consectetur.
           </p>
-          <div className="flex ml-[80px]">
+          <div className="flex ml-[80px] justify-center items-center">
             <div className="w-[350px] h-[302px] bg-[#FDFEFF] mt-[55px] ml-[36px]">
               <Image
                 src={img}
@@ -78,10 +78,10 @@ const Testimonials = () => {
             </div>
           </div>
           <div className="mt-[10px]">
-            <button className="border border-black w-[45px] h-[45px] text-[25px] text-[#5C0E14]">
+            <button className="border border-black w-[54px] h-[54px] text-[30px] text-[#5C0E14] hover:text-white hover:bg-primary">
               &lt;
             </button>
-            <button className="border border-black w-[45px] h-[45px] text-[25px] text-[#5C0E14]">
+            <button className="border border-black w-[54px] h-[54px] text-[30px] text-[#5C0E14] hover:text-white hover:bg-primary">
               &gt;
             </button>
           </div>

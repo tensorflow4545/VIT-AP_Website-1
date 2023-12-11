@@ -2,12 +2,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-export default function News(){
-  const News=[
+export default function News() {
+  const News = [
     {
-       img:"/news.png",
-       head:"Meet and Greet’23",
-       desc:"Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur."
+      img: "/news.png",
+      head: "Meet and Greet’23",
+      desc: "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur."
     },
     {
       img:"/news.png",
@@ -60,12 +60,8 @@ export default function News(){
            <p class="text-[18px] text-red-950 font-medium text-montserrat pt-[16px]">Know More</p>
            </div>
            </div>
-
-
           </div>
 
-        </div>
-        
         </div>
 
       </>
@@ -73,5 +69,4 @@ export default function News(){
 }
 
 export default News;
-
 
