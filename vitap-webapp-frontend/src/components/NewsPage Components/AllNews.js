@@ -11,12 +11,12 @@ import news from "../../assets/images/newsPhotos/allnews.png";
 import tr from "../../assets/images/newsPhotos/triangle.png";
 import info from "./NewsInfo";
 import Link from "next/link";
-import styles from "../../styles/AllNews.module.css";
+import styles from "../../styles/News.module.css";
 
 const AllNews = () => {
   return (
     <>
-      <div className={`${styles.container} bg-[#e6cfcf]`}>
+      <div className={`${styles.container} bg-[#e6cfcf] relative top-[100px]`}>
         <div
           className={`${styles.head} flex overflow-hidden h-[750px] absolute bg-[#e6cfcf]`}
         >
