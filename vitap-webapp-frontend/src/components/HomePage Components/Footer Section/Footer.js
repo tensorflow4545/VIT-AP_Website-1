@@ -185,7 +185,7 @@ export default function Footer() {
                 className="socialicon"
               >
 
-                <FaXTwitter size={24} />
+                <FaXTwitter size={30} />
               </a>
             </div>
           </div>
