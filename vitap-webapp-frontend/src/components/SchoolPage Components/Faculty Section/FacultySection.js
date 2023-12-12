@@ -20,9 +20,11 @@ const FacultySection = () => {
           <p className="pr-[10px] text-[#1E1E1E] text-[18px] font-normal mb-[25px] max-md:text-[14px]">
             Our multidisciplinary faculty are leaders in research and teaching
           </p>
+          <Link href={"/faculty"} target='_blank'>
           <button className="py-[9px] px-[7px] text-[#650010] text-[20px] font-semibold border-2 border-red-800 max-md:text-[16px]">
             Faculty Profiles
           </button>
+          </Link>
         </div>
 
         {/* <div className="flex justify-end items-end overflow-hidden mt-[75px] pr-[20px] max-w-[230px] max-h-[230px] h-full w-full relative">
