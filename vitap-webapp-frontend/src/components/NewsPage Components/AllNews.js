@@ -23,12 +23,12 @@ const AllNews = () => {
           <Image src={img1} className={`${styles.img}`} />
           <Image src={img2} className={`${styles.img}`} />
           <p
-            className={`${styles.heading} font-Emilo text-[134px] absolute font-bold text-[#5c0e14] mt-[229px] ml-[74px]`}
+            className={`${styles.heading} font-Emilio text-[96px] absolute font-bold text-[#5c0e14] mt-[229px] ml-[74px]`}
           >
             NEWS
           </p>
           <p
-            className={`${styles.heading2} font-Emilo text-[67px] text-[#5C0E14] absolute ml-[74px] mt-[380px] font-semibold`}
+            className={`${styles.heading2} font-Emilio text-[48px] text-[#5C0E14] absolute ml-[74px] mt-[380px] font-semibold`}
           >
             About VIT-AP
           </p>
@@ -67,11 +67,11 @@ const AllNews = () => {
             >
               <Image src={news} className={`${styles.newsimg} absolute`} />
               <Image src={tr} className="absolute" />
-              <p className="font-Emilo text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
+              <p className="font-Emilio text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
                 04 Apr
               </p>
               <p
-                className={`${styles.divtext} font-Emilo text-[25px] mt-[300px] text-center text-[#600912] font-semibold`}
+                className={`${styles.divtext} font-Emilio text-[20px] mt-[300px] text-center text-[#600912] font-semibold`}
               >
                 V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad
                 ujs hfuLaunch padV{" "}
@@ -84,11 +84,11 @@ const AllNews = () => {
             >
               <Image src={news} className={`${styles.newsimg} absolute`} />
               <Image src={tr} className="absolute" />
-              <p className="font-Emilo text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
+              <p className="font-Emilio text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
                 04 Apr
               </p>
               <p
-                className={`${styles.divtext} font-Emilo text-[25px] mt-[300px] text-center text-[#600912] font-semibold`}
+                className={`${styles.divtext} font-Emilio text-[20px] mt-[300px] text-center text-[#600912] font-semibold`}
               >
                 V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad
                 ujs hfuLaunch padV{" "}
@@ -101,10 +101,10 @@ const AllNews = () => {
             >
               <Image src={news} className="absolute" />
               <Image src={tr} className="absolute" />
-              <p className="font-Emilo text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
+              <p className="font-Emilio text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
                 04 Apr
               </p>
-              <p className="font-Emilo text-[25px] mt-[300px] text-center text-[#600912] font-semibold">
+              <p className="font-Emilio text-[20px] mt-[300px] text-center text-[#600912] font-semibold">
                 V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad
                 ujs hfuLaunch padV{" "}
               </p>
@@ -120,11 +120,11 @@ const AllNews = () => {
             >
               <Image src={news} className={`${styles.newsimg} absolute`} />
               <Image src={tr} className="absolute" />
-              <p className="font-Emilo text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
+              <p className="font-Emilio text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
                 04 Apr
               </p>
               <p
-                className={`${styles.divtext} font-Emilo text-[25px] mt-[300px] text-center text-[#600912] font-semibold`}
+                className={`${styles.divtext} font-Emilio text-[20px] mt-[300px] text-center text-[#600912] font-semibold`}
               >
                 V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad
                 ujs hfuLaunch padV{" "}
@@ -137,11 +137,11 @@ const AllNews = () => {
             >
               <Image src={news} className={`${styles.newsimg} absolute`} />
               <Image src={tr} className="absolute" />
-              <p className="font-Emilo text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
+              <p className="font-Emilio text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
                 04 Apr
               </p>
               <p
-                className={`${styles.divtext} font-Emilo text-[25px] mt-[300px] text-center text-[#600912] font-semibold`}
+                className={`${styles.divtext} font-Emilio text-[20px] mt-[300px] text-center text-[#600912] font-semibold`}
               >
                 V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad
                 ujs hfuLaunch padV{" "}
@@ -154,10 +154,10 @@ const AllNews = () => {
             >
               <Image src={news} className="absolute" />
               <Image src={tr} className="absolute" />
-              <p className="font-Emilo text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
+              <p className="font-Emilio text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
                 04 Apr
               </p>
-              <p className="font-Emilo text-[25px] mt-[300px] text-center text-[#600912] font-semibold">
+              <p className="font-Emilio text-[20px] mt-[300px] text-center text-[#600912] font-semibold">
                 V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad
                 ujs hfuLaunch padV{" "}
               </p>
@@ -210,11 +210,11 @@ const AllNews = () => {
             >
               <Image src={news} className={`${styles.newsimg} absolute`} />
               <Image src={tr} className="absolute" />
-              <p className="font-Emilo text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
+              <p className="font-Emilio text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
                 04 Apr
               </p>
               <p
-                className={`${styles.divtext} font-Emilo text-[25px] mt-[300px] text-center text-[#600912] font-semibold`}
+                className={`${styles.divtext} font-Emilio text-[20px] mt-[300px] text-center text-[#600912] font-semibold`}
               >
                 V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad
                 ujs hfuLaunch padV{" "}
@@ -227,11 +227,11 @@ const AllNews = () => {
             >
               <Image src={news} className={`${styles.newsimg} absolute`} />
               <Image src={tr} className="absolute" />
-              <p className="font-Emilo text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
+              <p className="font-Emilio text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
                 04 Apr
               </p>
               <p
-                className={`${styles.divtext} font-Emilo text-[25px] mt-[300px] text-center text-[#600912] font-semibold`}
+                className={`${styles.divtext} font-Emilio text-[20px] mt-[300px] text-center text-[#600912] font-semibold`}
               >
                 V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad
                 ujs hfuLaunch padV{" "}
@@ -244,10 +244,10 @@ const AllNews = () => {
             >
               <Image src={news} className="absolute" />
               <Image src={tr} className="absolute" />
-              <p className="font-Emilo text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
+              <p className="font-Emilio text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
                 04 Apr
               </p>
-              <p className="font-Emilo text-[25px] mt-[300px] text-center text-[#600912] font-semibold">
+              <p className="font-Emilio text-[20px] mt-[300px] text-center text-[#600912] font-semibold">
                 V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad
                 ujs hfuLaunch padV{" "}
               </p>

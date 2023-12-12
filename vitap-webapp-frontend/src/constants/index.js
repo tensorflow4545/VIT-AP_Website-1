@@ -642,3 +642,76 @@ export const homeCDC = [
   }
 ]
 
+export const healthCare = [
+  {
+    id: 1,
+    imgUrl: "/healthcare.png"
+  },
+  {
+    id: 2,
+    imgUrl: "/package.png"
+  }
+]
+
+export const advantagesFacilities = [
+  {
+    id: 1,
+    imgUrl: "/advantagefacility.jpeg",
+    title: "Unique Teaching Process"
+  },
+  {
+    id: 2,
+    imgUrl: "/advantagefacility2.jpeg",
+    title: "Engineering Clinics"
+  },
+  {
+    id: 3,
+    imgUrl: "/advantagefacility3.jpeg",
+    title: "Co-op & Internship"
+  },
+  {
+    id: 4,
+    imgUrl: "/advantagefacility4.jpeg",
+    title: "Sports"
+  },
+  {
+    id: 5,
+    imgUrl: "/advantagefacility5.jpeg",
+    title: "Clubs & Chapters"
+  },
+  {
+    id: 6,
+    imgUrl: "/advantagefacility6.jpeg",
+    title: "Stellar Placements"
+  },
+  {
+    id: 7,
+    imgUrl: "/advantagefacility7.jpeg",
+    title: "Internationals Programmes"
+  },
+  {
+    id: 8,
+    imgUrl: "/advantagefacility2.jpeg",
+    title: "Community Developement"
+  },
+  {
+    id: 9,
+    imgUrl: "/advantagefacility8.jpeg",
+    title: "Infrastructure & Facilities"
+  },
+  {
+    id: 10,
+    imgUrl: "/advantagefacility9.jpeg",
+    title: "Mentoring Programme"
+  },
+  {
+    id: 11,
+    imgUrl: "/advantagefacility10.jpeg",
+    title: "Qualified & Caring Faculty"
+  },
+  {
+    id: 12,
+    imgUrl: "/advantagefacility8.jpeg",
+    title: "Alumni Network"
+  },
+]

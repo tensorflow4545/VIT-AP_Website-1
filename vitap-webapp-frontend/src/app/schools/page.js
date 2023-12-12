@@ -12,21 +12,32 @@ import AboutUs from "@/components/SchoolPage Components/AboutUs Section/AboutUs"
 import AnnouncementsPage from "@/components/SchoolPage Components/Announcements Section/Announcements";
 import FotterComponent from "@/components/HomePage Components/Footer Section/Component"
 import Programoffered from "@/components/SchoolPage Components/Program Offered Section/Programoffered";
+import NavbarUpperPages from "@/components/HomePage Components/Navbar/NavbarUpperPages";
+import NavbarBottomPages from "@/components/HomePage Components/Navbar/NavbarBottomPages";
+import Testimonials from "@/components/SchoolPage Components/testimonials folder/Testimonials";
+import ResearchInnovation from "@/components/HomePage Components/Research and Innovation Section/ResearchInnovation";
+import News from "@/components/SchoolPage Components/News Section/News"
+import Research from "@/components/SchoolPage Components/Research Section/Research";
 
+import "./index.css"
 const SchoolsPage = () => {
     return ( 
         <>
-            <NavbarUpper/>
-            <NavbarBottom/>
+            <NavbarUpperPages/>
+            <NavbarBottomPages/>
             <Header/>
             <AboutUs/>
             <AnnouncementsPage/>
             <Programoffered/>
             <FacultySection/>
             <AcheivementsSection/>
+            <News/>
+            <Research/>
             <Mous/>
+            <Testimonials/>
             <GallerySection/>
             <ContactSection/>
+            <FotterComponent/>
             <Footer/>
         </>
      );

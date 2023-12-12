@@ -65,8 +65,8 @@ const OurEvents = () => {
           </div>
           <div className="grid grid-cols-3 items-start justify-center gap-5 mt-[50px] max-lx:flex-col max-lx:text-[12px]">
             <div className="ml-[13%] md:w-[370px] max-lx:w-[350px] min-h-[145px] flex gap-4">
-              <div className="flex flex-1 items-center leading-[1.5rem] justify-center text-center h-[65px] rounded-sm w-[65px] p-[15px] bg-[#5C0E14] text-white text-[20px]">
-                <h1>04 Apr</h1>
+              <div className="flex flex-1 items-center leading-[1.5rem] justify-center font-Emilio font-semi-bold text-center h-[65px] rounded-sm w-[65px] p-[15px] bg-[#5C0E14] text-white text-[18px]">
+                <h1 className='mx-[16px] my-[12px]'>04 Apr</h1>
               </div>
               <div className="flex-2 w-full">
                 <h1 className="font-bold text-[18px] hover:underline hover:underline-offset-4 ">
@@ -79,8 +79,8 @@ const OurEvents = () => {
               </div>
             </div>
             <div className="ml-[5%] md:w-[370px] max-lx:w-[350px] min-h-[145px] flex gap-5">
-              <div className="flex flex-1 items-center leading-[1.5rem] justify-center text-center h-[65px] rounded-sm w-[65px] p-[15px] bg-[#5C0E14] text-white text-[20px]">
-                <h1>04 Apr</h1>
+              <div className="flex flex-1 items-center leading-[1.5rem] justify-center font-Emilio font-semi-bold text-center h-[65px] rounded-sm w-[65px] p-[15px] bg-[#5C0E14] text-white text-[18px]">
+                <h1 className='mx-[16px] my-[12px]'>04 Apr</h1>
               </div>
               <div className="flex-2 w-full">
                 <h1 className="font-bold text-[18px] hover:underline hover:underline-offset-4">
@@ -93,8 +93,8 @@ const OurEvents = () => {
               </div>
             </div>
             <div className="md:w-[370px] max-lx:w-[350px] min-h-[145px] flex gap-5">
-              <div className="flex flex-1 items-center leading-[1.5rem] justify-center text-center h-[65px] rounded-sm w-[65px] p-[15px] bg-[#5C0E14] text-white text-[20px]">
-                <h1>04 Apr</h1>
+              <div className="flex flex-1 items-center leading-[1.5rem] justify-center font-Emilio font-semi-bold text-center h-[65px] rounded-sm w-[65px] p-[15px] bg-[#5C0E14] text-white text-[18px]">
+                <h1 className='mx-[16px] my-[12px]'>04 Apr</h1>
               </div>
               <div className="flex-2 w-full">
                 <h1 className="font-bold text-[18px] hover:underline hover:underline-offset-4">
@@ -107,8 +107,8 @@ const OurEvents = () => {
               </div>
             </div>
             <div className="ml-[13%] md:w-[370px] max-lx:w-[350px] min-h-[145px] lx:flex gap-5 hidden">
-              <div className="flex flex-1 items-center leading-[1.5rem] justify-center text-center h-[65px] rounded-sm w-[65px] p-[15px] bg-[#5C0E14] text-white text-[20px]">
-                <h1>04 Apr</h1>
+              <div className="flex flex-1 items-center leading-[1.5rem] justify-center font-Emilio font-semi-bold text-center h-[65px] rounded-sm w-[65px] p-[15px] bg-[#5C0E14] text-white text-[18px]">
+                <h1 className='mx-[16px] my-[12px]'>04 Apr</h1>
               </div>
               <div className="flex-2 w-full">
                 <h1 className="font-bold text-[18px] hover:underline hover:underline-offset-4">
@@ -121,8 +121,8 @@ const OurEvents = () => {
               </div>
             </div>
             <div className="ml-[5%] md:w-[370px] max-lx:w-[350px] min-h-[145px] lx:flex gap-5 hidden">
-              <div className="flex flex-1 items-center leading-[1.5rem] justify-center text-center h-[65px] rounded-sm w-[65px] p-[15px] bg-[#5C0E14] text-white text-[20px]">
-                <h1>04 Apr</h1>
+              <div className="flex flex-1 items-center leading-[1.5rem] justify-center font-Emilio font-semi-bold text-center h-[65px] rounded-sm w-[65px] p-[15px] bg-[#5C0E14] text-white text-[18px]">
+                <h1 className='mx-[16px] my-[12px]'>04 Apr</h1>
               </div>
               <div className="flex-2 w-full">
                 <h1 className="font-bold text-[18px] hover:underline hover:underline-offset-4">
@@ -135,8 +135,8 @@ const OurEvents = () => {
               </div>
             </div>
             <div className="md:w-[370px] max-lx:w-[350px] min-h-[145px] lx:flex gap-5 hidden">
-              <div className="flex flex-1 items-center leading-[1.5rem] justify-center text-center h-[65px] rounded-sm w-[65px] p-[15px] bg-[#5C0E14] text-white text-[20px]">
-                <h1>04 Apr</h1>
+              <div className="flex flex-1 items-center leading-[1.5rem] justify-center font-Emilio font-semi-bold text-center h-[65px] rounded-sm w-[65px] p-[15px] bg-[#5C0E14] text-white text-[18px]">
+                <h1 className='mx-[16px] my-[12px]'>04 Apr</h1>
               </div>
               <div className="flex-2 w-full">
                 <h1 className="font-bold text-[18px] hover:underline hover:underline-offset-4">

@@ -33,17 +33,17 @@ const AnnouncementsSection = () => {
   }, [active]);
 
   return (
-    <div className="max-w-[1560px] w-[100%] max-h-[1300px] h-[100%] mx-auto">
+    <div className="max-w-[1560px] w-[100%] max-h-[2900px] mx-auto">
       <div
         style={{ backgroundImage: `url("/announcements.png")` }}
         className="relative max-w-[1560px] w-full h-[300px] bg-center mx-auto flex items-center justify-center"
       >
-        <h1 className="text-white text-[45px] font-semibold text-center flex justify-center items-center">
+        <h1 className="text-white text-[24px] ls:text-[45px] font-semibold text-center flex justify-center items-center">
           Announcements
         </h1>
       </div>
 
-      <div className="my-[50px] max-w-[1560px] w-full flex flex-wrap gap-5 justify-center items-center ">
+      <div className="my-[50px] max-w-[1560px] w-full flex flex-wrap gap-5 justify-center items-center px-[30px] ls:px-0">
         {data?.map((announcement) => (
             <Card key={announcement.id} content={announcement.content} />
         ))}

@@ -14,7 +14,7 @@ export default function Footer() {
   return (
     <>
       {/* DESKTOP VIEW */}
-      <div className="sm:grid hidden w-full ">
+      <div className="md:grid hidden w-screen ">
         <div className="footer  ">
           <div className="flex flex-row ">
             <div className="footer1 lg:basis-3/4 md:basis-1">
@@ -97,6 +97,8 @@ export default function Footer() {
                 <div className="addresstext">
                   <p>Near Vijayawada - 522237,</p>
                   <p>AndhraPradesh.</p>
+                  <p>Phone: 040-29559555</p>
+                  <p>Email: adminoffice@vitap.ac.in</p>
                 </div>
               </div>
               <div className="flex flex-row">
@@ -114,10 +116,10 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="credit w-full ">
-          <div className="flex justify-start gap-10 items-center max-w-[1240px] w-[100%] mx-auto">
-            <div className="basis mt-2">
-              <div className="mt-[10px]">
+        <div className="credit lg:w-full md:w-max ">
+          <div className="flex w-full">
+            <div className="basis mt-2 mr-3 pr-2">
+              <div className="pl-[120px] mt-[10px] mr-[10px]">
                 <Image
                   src="/unilogo.png"
                   width="200"
@@ -127,34 +129,34 @@ export default function Footer() {
               </div>
             </div>
             <div className="basis links">
-              <div className="link pl-5 flex justify-center items-center">
+              <div className="link pl-5">
                 <a className="creditlink">VIT-AP Home</a>
                 <a className="creditlink">Maps & Directions</a>
                 <a className="creditlink">Search VIT-AP</a>
                 <a className="creditlink">Emergency Info</a>
               </div>
-              <div className="link pl-5">
+              <div className="link  pl-5">
                 <a className="creditlink">Privacy</a>
                 <a className="creditlink">Terms of Use</a>
                 <a className="creditlink">Copyright</a>
                 <a className="creditlink">Trademarks</a>
-                <a className="creditlink">Non-Discrimination</a>
-                <a className="creditlink">Accessibility</a>
               </div>
             </div>
+
+
           </div>
         </div>
-        <div className="creditfoot flex justify-center gap-8">
+        <div className="creditfoot flex pl-[80px] pb-[5px] pt-[20px]">
           <div className="basis">
-            <p className="copytext pt-[20px]">© VIT-AP University</p>
+            <p className="copytext pl-[40px] pt-[20px]">© VIT-AP University</p>
           </div>
           <div className="basis">
             <p className="credittext">
               Crafted with Passion at VIT-AP University by Website Team︎
             </p>
           </div>
-          <div className="basis flex justify-center items-center">
-            <div className="icons flex justify-center items-center">
+          <div className="basis relative">
+            <div className="absolute icons pt-3 left-[100px] flex w-full">
               <a
                 href="https://www.instagram.com/vitap.university/?hl=en"
                 className="socialicon"
@@ -189,7 +191,7 @@ export default function Footer() {
       </div>
 
       {/* Mobile View */}
-      <div class="ls:hidden flex relative">
+      <div class="md:hidden flex relative">
         <div class="w-full h-max">
 
           {/* uni logo */}
@@ -473,4 +475,3 @@ export default function Footer() {
     </>
   );
 }
-

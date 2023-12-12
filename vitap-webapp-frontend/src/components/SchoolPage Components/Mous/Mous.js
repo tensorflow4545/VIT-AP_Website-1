@@ -36,12 +36,12 @@ const Mous = () => {
             <Image src={img1} />
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-transparent to-[#282727] opacity-80">
               <div>
-                <h1 className="absolute font-Emilo text-[#FFFFFF] text-[60px] top-1/3 left-[36px]">
+                <h1 className="absolute font-Emilio text-[#FFFFFF] text-[45px] left-[36px] leading-[50px] top-[180px]">
                   MoU's and Collaborations
                 </h1>
               </div>
               <div className="relative w-[70%] ml-[36px] top-1/2">
-                <p className="text-[#FFFFFF]">
+                <p className="text-[#FFFFFF] font-Montserrat">
                   Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit
                   amet consectetur amet consectetur.Lorem ipsum dolor sit amet
                   consectetur.Lorem ipsum dolor sit amet consectetur amet

@@ -6,7 +6,7 @@ const Gallery = () => {
         <div className='max-w-[1560px] w-[100%] min-h-[500px] h-[100%] '>
             <div className='px-[50px] md:px-[100px] py-[50px] flex flex-col gap-4'>
                 <h1 className='text-[46px] font-Emilio text-[#650010] font-bold'>Gallery</h1>
-                <div className='flex flex-wrap gap-6 justify-center items-center'>
+                <div className='grid grid-cols-2 ls:grid-cols-3 gap-6 justify-center items-center'>
                     <div className='max-w-[290px] md:max-w-[330px] w-[100%] min-h-[220px] h-[100%] relative'>
                         <Image src={"/libgallery1.jpeg"} alt='libgallery' fill/>
                     </div>
