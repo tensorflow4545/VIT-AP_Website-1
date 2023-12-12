@@ -119,27 +119,29 @@ export default function Footer() {
         <div className="flex h-[100px] justify-center items-center bg-[#741D26] lg:w-full md:w-max ">
           <div className="flex w-full">
             <div className="basis mt-2 mr-3 pr-2">
-              <div className="pl-[120px] mt-[10px] mr-[10px]">
+              <div className="pl-[140px] mt-[10px] mr-[10px]">
                 <Image
                   src="/unilogo.png"
                   width="200"
                   height="250"
-                  className="object-cover w-[150px] h-[50px]"
+                  className="object-cover w-[190px] h-[50px]"
                 ></Image>
               </div>
             </div>
-            <div className="basis links">
-              <div className="link pl-5">
+            <div className="basis links justify-center items-center text-center relative left-[100px]">
+              <div className="link pl-7">
                 <a className="creditlink">VIT-AP Home</a>
                 <a className="creditlink">Maps & Directions</a>
                 <a className="creditlink">Search VIT-AP</a>
                 <a className="creditlink">Emergency Info</a>
               </div>
-              <div className="link  pl-5">
+              <div className="link  pl-7">
                 <a className="creditlink">Privacy</a>
                 <a className="creditlink">Terms of Use</a>
                 <a className="creditlink">Copyright</a>
                 <a className="creditlink">Trademarks</a>
+                <a className="creditlink">Non- Discrimination</a>
+                <a className="creditlink">Accessibility</a>
               </div>
             </div>
 
@@ -152,7 +154,7 @@ export default function Footer() {
           </div>
           <div className="basis">
             <p className="credittext ">
-              Crafted with Passion at VIT-AP University by Website Team︎
+              Crafted with Passion at VIT-AP University by Website Team
             </p>
           </div>
           <div className="basis">

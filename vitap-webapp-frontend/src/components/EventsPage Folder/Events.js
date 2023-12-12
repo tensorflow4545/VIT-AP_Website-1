@@ -234,17 +234,6 @@ const Events = () => {
             <button>&rarr;</button>
           </div>
         </div>
-        <div className="w-screen mt-[93px] h-[248px] bg-[#741D26] flex">
-          <div className="w-[760px] mt-[75px] ml-[313px]">
-            <p className="text-[26px] text-[#FDFEFF] font-Emilo">
-              “ Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit
-              amet consectetur ”
-            </p>
-            <p className="text-[20px] text-white font-Montserrant float-right">
-              -Jagdish Mudiganti
-            </p>
-          </div>
-        </div>
       </div>
     </>
   );
