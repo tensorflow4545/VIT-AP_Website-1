@@ -36,8 +36,8 @@ const FacultySection = () => {
           />
           <div className='absolute w-full h-0 top-0 left-0 bg-[#650010] opacity-50 group-hover:h-full flex flex-col justify-between items-start'>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
-              <h1 className='text-white text-[18px] font-semibold'>Dr. Saroj Kumar</h1>
-              <h1 className='text-white text-[15px] font-semibold'>Associate Dean, SCOPE</h1>
+              <h1 className='text-white text-[18px] font-semibold'>PRADEEP REDDY</h1>
+              <h1 className='text-white text-[15px] font-semibold'>Dean, SCOPE</h1>
             </div>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
               <Link href={"/"} className='text-white text-[18px] font-semibold'>See Profile</Link>
@@ -54,7 +54,7 @@ const FacultySection = () => {
           />
           <div className='absolute w-full h-0 top-0 left-0 bg-[#650010] opacity-50 group-hover:h-full flex flex-col justify-between items-start'>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
-              <h1 className='text-white text-[18px] font-semibold'>Dr. Saroj Kumar</h1>
+              <h1 className='text-white text-[18px] font-semibold'>Dr. SAROJ KUMAR PANIGRAHY</h1>
               <h1 className='text-white text-[15px] font-semibold'>Associate Dean, SCOPE</h1>
             </div>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
@@ -70,8 +70,8 @@ const FacultySection = () => {
           />
           <div className='absolute w-full h-0 top-0 left-0 bg-[#650010] opacity-50 group-hover:h-full flex flex-col justify-between items-start'>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
-              <h1 className='text-white text-[18px] font-semibold'>Dr. Saroj Kumar</h1>
-              <h1 className='text-white text-[15px] font-semibold'>Associate Dean, SCOPE</h1>
+              <h1 className='text-white text-[18px] font-semibold'>Dr. Nagaraju Devarakonda</h1>
+              <h1 className='text-white text-[15px] font-semibold'>HOD Software and System Engineering</h1>
             </div>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
               <Link href={"/"} className='text-white text-[18px] font-semibold'>See Profile</Link>
@@ -86,8 +86,8 @@ const FacultySection = () => {
           />
           <div className='absolute w-full h-0 top-0 left-0 bg-[#650010] opacity-50 group-hover:h-full flex flex-col justify-between items-start'>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
-              <h1 className='text-white text-[18px] font-semibold'>Dr. Saroj Kumar</h1>
-              <h1 className='text-white text-[15px] font-semibold'>Associate Dean, SCOPE</h1>
+              <h1 className='text-white text-[18px] font-semibold'>Dr. Muneeswari G</h1>
+              <h1 className='text-white text-[15px] font-semibold'>HOD Data Science and Engineerin</h1>
             </div>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
               <Link href={"/"} className='text-white text-[18px] font-semibold'>See Profile</Link>
@@ -104,8 +104,8 @@ const FacultySection = () => {
           />
           <div className='absolute w-full h-0 top-0 left-0 bg-[#650010] opacity-50 group-hover:h-full flex flex-col justify-between items-start'>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
-              <h1 className='text-white text-[18px] font-semibold'>Dr. Saroj Kumar</h1>
-              <h1 className='text-white text-[15px] font-semibold'>Associate Dean, SCOPE</h1>
+              <h1 className='text-white text-[18px] font-semibold'>Dr. Reeja S R</h1>
+              <h1 className='text-white text-[15px] font-semibold'>HOD Artificial Intelligence and Machine Learning</h1>
             </div>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
               <Link href={"/"} className='text-white text-[18px] font-semibold'>See Profile</Link>
@@ -120,8 +120,8 @@ const FacultySection = () => {
           />
           <div className='absolute w-full h-0 top-0 left-0 bg-[#650010] opacity-50 group-hover:h-full flex flex-col justify-between items-start'>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
-              <h1 className='text-white text-[18px] font-semibold'>Dr. Saroj Kumar</h1>
-              <h1 className='text-white text-[15px] font-semibold'>Associate Dean, SCOPE</h1>
+              <h1 className='text-white text-[18px] font-semibold'>Dr. Anil Vithalrao Turukmane</h1>
+              <h1 className='text-white text-[15px] font-semibold'>HOD Networking and Security</h1>
             </div>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
               <Link href={"/"} className='text-white text-[18px] font-semibold'>See Profile</Link>
@@ -138,8 +138,8 @@ const FacultySection = () => {
           />
           <div className='absolute w-full h-0 top-0 left-0 bg-[#650010] opacity-50 group-hover:h-full flex flex-col justify-between items-start'>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
-              <h1 className='text-white text-[18px] font-semibold'>Dr. Saroj Kumar</h1>
-              <h1 className='text-white text-[15px] font-semibold'>Associate Dean, SCOPE</h1>
+              <h1 className='text-white text-[18px] font-semibold'>Dr. HARI SEETHA</h1>
+              <h1 className='text-white text-[15px] font-semibold'>Faculty, SCOPE</h1>
             </div>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
               <Link href={"/"} className='text-white text-[18px] font-semibold'>See Profile</Link>
