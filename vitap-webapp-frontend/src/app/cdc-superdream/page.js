@@ -24,8 +24,8 @@ const page = () => {
             <SuperdreamOffers />
             <SuperdreamOffers2 />
             <CDCStatistics />
-            {/* <Component /> */}
-            {/* <Footer /> */}
+            <Component />
+            <Footer />
         </div>
     )
 }
