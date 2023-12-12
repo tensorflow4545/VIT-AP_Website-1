@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import "./NavbarUpper.css";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Image from "next/image";
+import Link from "next/link";
 
 const navlinks = [];
 // import axios from 'axios';
@@ -138,7 +139,7 @@ const NavbarUpper = () => {
 
         <ul className="flex font-Montserrant h-[20px] md:space-x-[31px] ls:space-x-[20px]  text-[16px] ">
           <li>
-            <a>Alumini</a>
+            <a href="https://alumni.vitap.ac.in/" target="_blank" rel="noopener noreferrer">Alumini</a>
           </li>
           <li>
             <a>VIT-AP Advantages</a>
@@ -150,7 +151,7 @@ const NavbarUpper = () => {
             </a>
           </li>
           <li>
-            <a>
+            <a href="/Campustour/index04.html" target="_blank" rel="noopener noreferrer">
               <Tb360View size={25} />
             </a>
           </li>
