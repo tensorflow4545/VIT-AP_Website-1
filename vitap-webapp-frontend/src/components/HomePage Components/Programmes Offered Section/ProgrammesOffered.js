@@ -24,7 +24,7 @@ const ProgrammesOffered = () => {
               latest technologies with relevant practice through lab and
               projects for building problem-solving skills */}
             </p>
-            <div className="md:flex md:flex-col my-[20px] justify-center items-center text-center gap-10 grid grid-cols-2">
+            <div className="md:flex md:flex-col my-[20px] justify-center items-center text-center gap-5 grid grid-cols-2">
               <h1
                 className={`font-Montserrat lx:text-[20px] text-[16px] py-[19px] md:px-[23px] ${active === "undergraduate" ? "border border-zinc-200" : ""
                   } cursor-pointer w-full first-letter`}
@@ -39,6 +39,13 @@ const ProgrammesOffered = () => {
                 onClick={() => setActive("Dual Degree")}
               >
                 Dual Degree
+              </h1>
+              <h1
+                className={`font-Montserrat lx:text-[20px] text-[16px] py-[19px] md:px-[23px] ${active === "Integrated" ? "border border-zinc-200" : ""
+                  } cursor-pointer w-full first-letter`}
+                onClick={() => setActive("Integrated")}
+              >
+                Integrated
               </h1>
               <h1
                 className={`font-Montserrat lx:text-[20px] text-[16px] py-[19px] md:px-[23px] ${active === "postgraduate" ? "border border-zinc-200" : ""
@@ -108,6 +115,13 @@ const ProgrammesOffered = () => {
               onClick={() => setActive("Dual Degree")}
             >
               Dual Degree
+            </li>
+            <li
+              className={`py-[10px] px-[10px] ${active === "Integrated" ? "border border-zinc-200" : ""
+                }`}
+              onClick={() => setActive("Integrated")}
+            >
+              Integrated
             </li>
             <li
               className={`py-[10px] px-[10px] ${active === "postgraduate" ? "border border-zinc-200" : ""
