@@ -11,7 +11,11 @@ const FacultySection = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/scope-school-faculty-sections?populate=*`);
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/scope-school-faculty-sections?populate=*`,{
+          headers: {
+            Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
+          },
+        });
 
         if (response.data && Array.isArray(response.data.data)) {
           const extractedAttributes = response.data.data.map((item) => item.attributes);

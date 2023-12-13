@@ -13,23 +13,8 @@ import image7 from "../../../assets/images/Homepage Images/Schools/VSB.jpg";
 
 import { BsArrowRightShort } from "react-icons/bs";
 import Link from "next/link.js";
-const fetchdata = async () => {
-  const reqOptions = {
-    headers: {
-      Authorization: `Bearer ${process.env.API_TOKEN}`,
-    },
-  };
-
-  const response = await fetch(`${config.api}/api/announcements/`, reqOptions);
-  const data = await response.json();
-  return data;
-};
 
 const OurSchools = async () => {
-  // const data = await fetchdata();
-
-  // console.log( data.data)
-  // console.log(typeof data)
 
   return (
     <>

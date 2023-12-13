@@ -1,11 +1,36 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { programmesOffered } from "@/constants";
 import { BiSolidDownArrow } from "react-icons/bi";
+import axios from "axios";
 
 const ProgrammesOffered = () => {
   const [active, setActive] = useState("undergraduate");
+  const [ProgrammesOffered, SetProgrammesOffered] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/home-page-programmres-offered-sections`,{
+          headers: {
+            Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
+          },
+        });
+
+        if (response.data && Array.isArray(response.data.data)) {
+          const extractedAttributes = response.data.data.map(item => item.attributes);
+          SetProgrammesOffered(extractedAttributes);
+        } else {
+          console.error('The "data" property in the API response is not an array:', response.data);
+        }
+      } catch (error) {
+        console.error('Error fetching data:', error.message);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <>
@@ -69,14 +94,15 @@ const ProgrammesOffered = () => {
                 Engineering
               </h3>  */}
 
-              {programmesOffered.map((program) =>
-                program.field === active ? (
+              {ProgrammesOffered.map((attributes, index) =>
+                attributes.Field === active ? (
                   <h1
-                    key={program.id}
+                    key={index}
                     className="py-[19px] max-w-[432px] font-Emilio max-lx:py-[16px] text-[#51060D] text-[20px] max-lx:text-[15px] font-[500] capitalize border border-l-0 border-t-0 border-r-0 border-b-gray-500 hover:font-bold"
                   >
                     <a href="#">
-                      {program.title}</a>
+                      {attributes.Title}
+                    </a>
                   </h1>
                 ) : (
                   ""

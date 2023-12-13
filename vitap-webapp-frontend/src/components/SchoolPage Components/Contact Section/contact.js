@@ -8,7 +8,11 @@ const Contact = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/school-contact-uses`).then(response => {
+            axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/school-contact-uses`,{
+                headers: {
+                  Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
+                },
+              }).then(response => {
                 const { data: [{ attributes }] } = response.data;
                 SetProfile(attributes);
             });
