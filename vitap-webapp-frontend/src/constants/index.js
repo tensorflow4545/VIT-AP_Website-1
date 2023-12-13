@@ -55,27 +55,27 @@ export const eventsMain = [
 export const programmesOffered = [
   {
     id: 1,
-    title: "B.Tech in Computer Science and Engineering",
+    title: "B.Tech. in Computer Science and Engineering",
     field: "undergraduate",
   },
   {
     id: 2,
-    title:"B.Tech in Computer Science and Engineering with specializations in Business System (In collaboration with TCS)",
+    title:"B.Tech. in Computer Science and Engineering with specializations in Business System (In collaboration with TCS)",
     field: "undergraduate",
   },
   {
     id: 3,
-    title: "B.Tech in Electronics and Computer Engineering",
+    title: "B.Tech. in Electronics and Computer Engineering",
     field: "undergraduate",
   },
   {
     id: 4,
-    title: "B.Tech in Mechanical Engineering",
+    title: "B.Tech. in Mechanical Engineering",
     field: "undergraduate",
   },
   {
     id: 5,
-    title: "B.Com (Finance)",
+    title: "B.Com. Finance",
     field: "undergraduate",
   },
   {
@@ -85,24 +85,24 @@ export const programmesOffered = [
   },
   {
     id: 7,
-    title: "B.Sc, M.Sc - Data Science in Collaboration with Binghamton University, USA & QpiAI, India Pvt.Ltd",
+    title: "B.Sc. - M.Sc.  Data Science in Collaboration with Binghamton University, USA & QpiAI, India Pvt.Ltd",
     field: "Dual Degree",
   },
   {
     id: 8,
-    title: "B.A & M.A Public Services",
+    title: "B.A. - M.A. Public Services",
     field: "Dual Degree",
   },
-  {
-    id: 9,
-    title: "Integrated M.Tech CSE in Collaboration with Virtusa",
-    field: "postgraduate",
-  },
-  {
-    id: 10,
-    title: "Integrated M.Tech Software Engineering",
-    field: "postgraduate",
-  },
+  // {
+  //   id: 9,
+  //   title: "Integrated M.Tech CSE in Collaboration with Virtusa",
+  //   field: "postgraduate",
+  // },
+  // {
+  //   id: 10,
+  //   title: "Integrated M.Tech Software Engineering",
+  //   field: "Integrated",
+  // },
   // {
   //   id: 11,
   //   title:
@@ -125,25 +125,30 @@ export const programmesOffered = [
     field: "doctorial",
   },
   {
+    id: 15,
+    title: "Electrical Engineering",
+    field: "doctorial",
+  },
+  {
     id: 13,
-    title: "M.Tech VLSI",
+    title: "M.Tech. VLSI",
     field: "postgraduate",
   },
   {
     id: 14,
     title:
-      "M.Sc - Data Science in Collaboration with Binghamton University, USA & QpiAI, India Pvt.Ltd",
+      "M.Sc. - Data Science in Collaboration with Binghamton University, USA & QpiAI, India Pvt.Ltd",
     field: "postgraduate",
   },
-  {
-    id: 15,
-    title:
-      "M.Sc - Physics in Collaboration with NoPo Nanotech Pvt.Ltd & QpiAI, India Pvt.Ltd",
-    field: "postgraduate",
-  },
+  // {
+  //   id: 15,
+  //   title:
+  //     "M.Sc - Physics in Collaboration with NoPo Nanotech Pvt.Ltd & QpiAI, India Pvt.Ltd",
+  //   field: "postgraduate",
+  // },
   {
     id: 16,
-    title: "M.Sc Chemistry in collaboration with Mitsui kinzoku Components India (MKCI)",
+    title: "M.Sc. Chemistry in collaboration with Mitsui kinzoku Components India (MKCI)",
     field: "postgraduate",
   },
   {
@@ -158,7 +163,7 @@ export const programmesOffered = [
   },
   {
     id: 19,
-    title: "Social Science and Humanities",
+    title: "Social Sciences and Humanities",
     field: "doctorial",
   },
   {
@@ -170,6 +175,26 @@ export const programmesOffered = [
     id: 21,
     title: "Business",
     field: "doctorial",
+  },
+  {
+    id: 22,
+    title: "M.Tech. Computer Science and Engineering in Collaboration with Virtusa",
+    field: "Integrated",
+  },
+  {
+    id: 23,
+    title: "M.Tech. Software Engineering",
+    field: "Integrated",
+  },
+  {
+    id: 24,
+    title: "B.A., LL.B (Hons.)",
+    field: "Integrated",
+  },
+  {
+    id: 25,
+    title: "BBA., LL.B (Hons.)",
+    field: "Integrated",
   }
 ];
 
