@@ -5,9 +5,9 @@ import Image from 'next/image'
 const AdvantageFeatures = () => {
     return (
         <div className='max-w-[1560px] w-[100%] mx-auto max-h-[7500px] py-[40px]'>
-                <h1 className='text-[42px] lx:text-[46px] font-Emilio text-[#650010] py-5 font-thin text-center'>Objectives Key Features</h1>
-            <div className='flex flex-col items-center justify-center gap-3 mx-10 '>
-                <div className='min-h-[400px] flex w-[100%] relative py-[40px]'>
+            <h1 className='text-[24px] font-bold ls:text-[42px] lx:text-[46px] font-Emilio text-[#650010] py-5 ls:font-thin text-center'>Objectives Key Features</h1>
+            <div className='ls:flex flex-col items-center justify-center gap-3 mx-10 hidden '>
+                <div className='min-h-[400px] w-[100%] relative py-[40px] flex '> 
                     <div className='basis-1/3'>
                         <div className='max-w-[550px] w-[100%] min-h-[400px] ml-[100px] md:ml-[200px] relative mt-[60px]'>
                             <Image src={"/advantagefacility.jpeg"} alt='advantage' fill />
@@ -25,7 +25,7 @@ const AdvantageFeatures = () => {
                     </div>
                 </div>
 
-                <div className='flex min-h-[400px] w-[100%] py-[40px]'>
+                <div className='min-h-[400px] w-[100%] py-[40px] flex  '>
                     <div className='basis-2/3 max-h-[400px] flex flex-col items-start justify-center border-2 border-[#655010]'>
                         <div className='px-[30px] flex'>
                             <div className='flex-1'>
@@ -43,7 +43,7 @@ const AdvantageFeatures = () => {
                     </div>
                 </div>
                 
-                <div className='min-h-[400px] flex w-[100%] relative py-[40px]'>
+                <div className='min-h-[400px] w-[100%] relative py-[40px] flex '> 
                     <div className='basis-1/3'>
                         <div className='max-w-[550px] w-[100%] min-h-[400px] ml-[100px] md:ml-[200px] relative mt-[60px]'>
                             <Image src={"/advantagefacility2.jpeg"} alt='advantage' fill />
@@ -61,7 +61,7 @@ const AdvantageFeatures = () => {
                     </div>
                 </div>
 
-                <div className='flex min-h-[400px] w-[100%] py-[40px]'>
+                <div className='min-h-[400px] w-[100%] py-[40px] flex  '>
                     <div className='basis-2/3 max-h-[400px] flex flex-col items-start justify-center border-2 border-[#655010]'>
                         <div className='px-[30px] flex'>
                             <div className='flex-1'>
@@ -79,7 +79,7 @@ const AdvantageFeatures = () => {
                     </div>
                 </div>
 
-                <div className='min-h-[400px] flex w-[100%] relative py-[40px]'>
+                <div className='min-h-[400px] w-[100%] relative py-[40px] flex '> 
                     <div className='basis-1/3'>
                         <div className='max-w-[550px] w-[100%] min-h-[400px] ml-[100px] md:ml-[200px] relative mt-[60px]'>
                             <Image src={"/advantagefacility4.jpeg"} alt='advantage' fill />
@@ -97,7 +97,7 @@ const AdvantageFeatures = () => {
                     </div>
                 </div>
 
-                <div className='flex min-h-[400px] w-[100%] py-[40px]'>
+                <div className='min-h-[400px] w-[100%] py-[40px] flex  '>
                     <div className='basis-2/3 max-h-[400px] flex flex-col items-start justify-center border-2 border-[#655010]'>
                         <div className='px-[30px] flex'>
                             <div className='flex-1'>
@@ -115,7 +115,7 @@ const AdvantageFeatures = () => {
                     </div>
                 </div>
 
-                <div className='min-h-[400px] flex w-[100%] relative py-[40px]'>
+                <div className='min-h-[400px] w-[100%] relative py-[40px] flex '> 
                     <div className='basis-1/3'>
                         <div className='max-w-[550px] w-[100%] min-h-[400px] ml-[100px] md:ml-[200px] relative mt-[60px]'>
                             <Image src={"/advantagefacility6.jpeg"} alt='advantage' fill />
@@ -133,7 +133,7 @@ const AdvantageFeatures = () => {
                     </div>
                 </div>
 
-                <div className='flex min-h-[400px] w-[100%] py-[40px]'>
+                <div className='min-h-[400px] w-[100%] py-[40px] flex  '>
                     <div className='basis-2/3 max-h-[400px] flex flex-col items-start justify-center border-2 border-[#655010]'>
                         <div className='px-[30px] flex'>
                             <div className='flex-1'>
@@ -151,7 +151,7 @@ const AdvantageFeatures = () => {
                     </div>
                 </div>
 
-                <div className='min-h-[400px] flex w-[100%] relative py-[40px]'>
+                <div className='min-h-[400px] w-[100%] relative py-[40px] flex '> 
                     <div className='basis-1/3'>
                         <div className='max-w-[550px] w-[100%] min-h-[400px] ml-[100px] md:ml-[200px] relative mt-[60px]'>
                             <Image src={"/advantagefacility9.jpeg"} alt='advantage' fill />
@@ -169,7 +169,7 @@ const AdvantageFeatures = () => {
                     </div>
                 </div>
 
-                <div className='flex min-h-[400px] w-[100%] py-[40px]'>
+                <div className='min-h-[400px] w-[100%] py-[40px] flex  '>
                     <div className='basis-2/3 max-h-[400px] flex flex-col items-start justify-center border-2 border-[#655010]'>
                         <div className='px-[30px] flex'>
                             <div className='flex-1'>
@@ -187,7 +187,7 @@ const AdvantageFeatures = () => {
                     </div>
                 </div>
 
-                <div className='min-h-[400px] flex w-[100%] relative py-[40px]'>
+                <div className='min-h-[400px] w-[100%] relative py-[40px] flex '> 
                     <div className='basis-1/3'>
                         <div className='max-w-[550px] w-[100%] min-h-[400px] ml-[100px] md:ml-[200px] relative mt-[60px]'>
                             <Image src={"/advantagefacility9.jpeg"} alt='advantage' fill />
@@ -205,7 +205,7 @@ const AdvantageFeatures = () => {
                     </div>
                 </div>
 
-                <div className='flex min-h-[400px] w-[100%] py-[40px]'>
+                <div className='min-h-[400px] w-[100%] py-[40px] flex  '>
                     <div className='basis-2/3 max-h-[400px] flex flex-col items-start justify-center border-2 border-[#655010]'>
                         <div className='px-[30px] flex'>
                             <div className='flex-1'>
@@ -223,7 +223,7 @@ const AdvantageFeatures = () => {
                     </div>
                 </div>
 
-                <div className='min-h-[400px] flex w-[100%] relative py-[40px]'>
+                <div className='min-h-[400px] w-[100%] relative py-[40px] flex '> 
                     <div className='basis-1/3'>
                         <div className='max-w-[550px] w-[100%] min-h-[400px] ml-[100px] md:ml-[200px] relative mt-[60px]'>
                             <Image src={"/advantagefacility6.jpeg"} alt='advantage' fill />
@@ -238,6 +238,38 @@ const AdvantageFeatures = () => {
                             <h1 className='text-[26px] lx:text-[32px] font-Emilio text-[#650010]'>Well-connected Alumni Network</h1>
                             <p className='text-[#000] font-Montserrat text-[18px] font-thin text-left'>Being a VITian gives you an exclusive life-long opportunity of having a friend in most countries you go to and most companies you visit, and a mentor who can help you in time of need.</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='flex flex-col items-center justify-center ls:hidden gap-5 px-[20px]'>
+                <div className='max-w-[420px] w-[100%] min-h-[500px] flex flex-col  relative'>
+                    <div className='min-h-[150px]'></div>
+                        <div className='absolute max-w-[250px] w-[100%] min-h-[180px] top-10 right-10 z-10 bg-cover bg-no-repeat bg-center' style={{ backgroundImage: 'url("/advantagefacility.jpeg")' }}></div>
+                    <div className='absolute max-w-[250px] w-[100%] min-h-[180px] top-0 right-0 border-2 border-[#650010]'></div>
+                    <div className='min-h-[350px] bg-[#FCE3E5] p-3 flex flex-col justify-end items-start'>
+                        <p className='text-[20px] font-Emilio font-thin text-[#650010]'>Unique Teaching-Learning </p>
+                        <p className='text-[16px] font-Montserrat font-thin'>With a focus on Engineering and Technology competencies, identified by industry and professional societies, the teaching learning process at VIT-AP prepares the students for the future. Based on a meticulously designed curriculum with industry and international academia feedback, the students are part of a flexible credit system where their learning is continuously assessed.</p>
+                    </div>
+                </div>
+
+                <div className='max-w-[420px] w-[100%] min-h-[440px] flex flex-col  relative'>
+                    <div className='min-h-[150px]'></div>
+                    <div className='absolute max-w-[250px] w-[100%] min-h-[180px] top-10 left-10 z-10 bg-cover bg-no-repeat bg-center' style={{ backgroundImage: 'url("/advantagefacility2.jpeg")' }}></div>
+                    <div className='absolute max-w-[250px] w-[100%] min-h-[180px] top-0 left-0 bg-[#FCE3E5]'></div>
+                    <div className='min-h-[260px] border-2 border-[#650010] p-3 flex flex-col justify-end items-start'>
+                        <p className='text-[20px] font-Emilio font-thin text-[#650010]'>Fully Flexible Credit System (FFCS® ) </p>
+                        <p className='text-[16px] font-Montserrat font-thin'>The students are offered a range of diverse courses, and provided the opportunity to select courses, timings and faculty members based on their aspirations and interests.</p>
+                    </div>
+                </div>
+
+                <div className='max-w-[420px] w-[100%] min-h-[540px] flex flex-col  relative'>
+                    <div className='min-h-[150px]'></div>
+                    <div className='absolute max-w-[250px] w-[100%] min-h-[180px] top-10 right-10 z-10 bg-cover bg-no-repeat bg-center' style={{ backgroundImage: 'url("/advantagefacility3.jpeg")' }}></div>
+                    <div className='absolute max-w-[250px] w-[100%] min-h-[180px] top-0 right-0 border-2 border-[#650010]'></div>
+                    <div className='min-h-[390px] bg-[#FCE3E5] p-3 flex flex-col justify-end items-start'>
+                        <p className='text-[20px] font-Emilio font-thin text-[#650010]'>Co-op Programmes and Internships</p>
+                        <p className='text-[16px] font-Montserrat font-thin'>We focus on practical learning, which involves the learners to apply classroom content to solve real-world problems. One of the key opportunities they are provided with is the Engineering Clinics where they put the concepts to use by creating contraptions. Students from different subject areas form their own groups, and with the help of a faculty coordinator, undertake projects where they apply knowledge gained from the classrooms.</p>
                     </div>
                 </div>
             </div>
