@@ -18,7 +18,7 @@ const page = () => {
             <AdvantagesFacilities />
             <AdvantageFeatures />
             <Component />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }
