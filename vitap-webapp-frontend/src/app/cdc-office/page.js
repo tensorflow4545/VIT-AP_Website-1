@@ -25,7 +25,7 @@ const page = () => {
             <CDCPlacements />
             <CDCStatistics />
             <Component />
-            {/* <Footer /> */}
+            <Footer />
         </div>
     )
 }

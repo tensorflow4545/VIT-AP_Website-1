@@ -158,9 +158,8 @@ const NavbarUpperPages = () => {
       </div>
 
       <div
-        className={`w-full h-[50px] text-white ls:hidden sm:flex items-center justify-between px-8 sticky top-0 z-30 ${
-          scrolled ? "bg-white" : "bg-primary"
-        }`}
+        className={`w-full h-[50px] text-white ls:hidden sm:flex items-center justify-between px-8 sticky top-0 z-30 ${scrolled ? "bg-white" : "bg-primary"
+          }`}
       >
         <div className="w-[95px] h-[32px]">
           <img
@@ -174,7 +173,7 @@ const NavbarUpperPages = () => {
           />
         </div>
         <div>
-          <RxHamburgerMenu size={30} className="" color={scrolled ? "black" : ""}/>
+          <RxHamburgerMenu size={30} className="" color={scrolled ? "black" : ""} />
         </div>
       </div>
     </>

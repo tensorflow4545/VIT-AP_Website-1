@@ -35,77 +35,78 @@ const Socials = () => {
           <p className="mt-[30px] ml-[108px] font-Montserrant text-[#0F0F0F] text-[21px]">
             Follow us on our socials
           </p>
-          <div className="w-[300px] h-[44px] ml-[108px] mt-[22px] flex transition-transform transform hover:scale-105">
-            <div className="w-[40px] h-[40px] rounded bg-[#DCCED0] relative">
-              <Link href="https://www.instagram.com/vitap.university/?hl=en">
+          <div className="w-[300px] h-[44px] ml-[108px] mt-[22px] flex group">
+            <div className="w-[40px] h-[40px] rounded bg-[#DCCED0] relative group-hover:bg-primary group-hover:bg-opacity-50">
+              <Link href="https://www.instagram.com/vitap.university/?hl=en" target="_blank">
                 <Image
                   src={insta}
                   className="absolute w-[22px] h-[22px] ml-[9px] mt-[9px]"
                 />
               </Link>
+
             </div>
-            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px]">
-              Follow us on Instagram
+            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px] group-hover:font-bold duration-300 group-hover:font-bold">
+              <a href="https://www.instagram.com/vitap.university/?hl=en" target="_blank">Follow us on Instagram</a>
             </p>
           </div>
-          <div className="w-[300px] h-[44px] ml-[108px] mt-[22px] flex transition-transform transform hover:scale-105">
-            <div className="w-[40px] h-[40px] rounded bg-[#DCCED0] relative">
-              <Link href="https://twitter.com/VITAPuniversity?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
-                <Image
-                  src={twitter}
-                  className="absolute w-[22px] h-[22px] ml-[9px] mt-[9px]"
-                />
-              </Link>
-            </div>
-            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px]">
-              Tweet with us on X
+          <div className="w-[300px] h-[44px] ml-[108px] mt-[22px] flex group">
+            <Link href="https://twitter.com/VITAPuniversity?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+              <div className="w-[40px] h-[40px] rounded bg-[#DCCED0] relative group-hover:bg-primary group-hover:bg-opacity-50">
+                <FaXTwitter className="absolute w-[22px] h-[22px] ml-[9px] mt-[9px]" />
+              </div>
+            </Link>
+
+            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px] group-hover:font-bold duration-300 group-hover:font-bold">
+              <a href="https://twitter.com/VITAPuniversity?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Tweet with us on X</a>
             </p>
           </div>
-          <div className="w-[350px] h-[44px] ml-[108px] mt-[22px] flex transition-transform transform hover:scale-105">
-            <div className="w-[40px] h-[40px] rounded bg-[#DCCED0] relative">
-              <Link href="https://www.linkedin.com/school/vitap-university/?originalSubdomain=in">
+          <div className="w-[350px] h-[44px] ml-[108px] mt-[22px] flex group">
+            <div className="w-[40px] h-[40px] rounded bg-[#DCCED0] relative group-hover:bg-primary group-hover:bg-opacity-50">
+              <Link href="https://www.linkedin.com/school/vitap-university/?originalSubdomain=in" target="_blank">
                 <Image
                   src={linkin}
                   className="absolute w-[22px] h-[22px] ml-[9px] mt-[9px]"
                 />
               </Link>
+
             </div>
-            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px]">
-              Grow with us on LinkedIn
+            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px] group-hover:font-bold duration-300 group-hover:font-bold">
+              <a href="https://www.linkedin.com/school/vitap-university/?originalSubdomain=in" target="_blank">Grow with us on LinkedIn</a>
             </p>
           </div>
-          <div className="w-[300px] h-[44px] ml-[108px] mt-[22px] flex transition-transform transform hover:scale-105">
-            <div className="w-[40px] h-[40px] rounded bg-[#DCCED0] relative">
-              <Link href="https://www.facebook.com/vitap.university/">
+          <div className="w-[300px] h-[44px] ml-[108px] mt-[22px] flex group">
+            <div className="w-[40px] h-[40px] rounded bg-[#DCCED0] relative group-hover:bg-primary group-hover:bg-opacity-50">
+              <Link href="https://www.facebook.com/vitap.university/" target="_blank">
                 <Image
                   src={fb}
                   className="absolute w-[22px] h-[22px] ml-[9px] mt-[9px]"
                 />
               </Link>
+
             </div>
-            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px]">
-              Like us on Facebook
+            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px] group-hover:font-bold duration-300 group-hover:font-bold">
+              <a href="https://www.facebook.com/vitap.university/" target="_blank">Like us on Facebook</a>
             </p>
           </div>
-          <div className="w-[300px] h-[44px] ml-[108px] mt-[22px] flex transition-transform transform hover:scale-105">
-            <div className="w-[40px] h-[40px] rounded bg-[#DCCED0] relative">
-              <Link href="https://www.youtube.com/c/VITAP">
+          <div className="w-[300px] h-[44px] ml-[108px] mt-[22px] flex group">
+            <div className="w-[40px] h-[40px] rounded bg-[#DCCED0] relative group-hover:bg-primary group-hover:bg-opacity-50">
+              <Link href="https://www.youtube.com/c/VITAP" target="_blank">
                 <Image
                   src={yt}
                   className="absolute w-[22px] h-[22px] ml-[9px] mt-[9px]"
                 />
               </Link>
             </div>
-            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px]">
-              Watch us on Youtube
+            <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px] group-hover:font-bold duration-300 group-hover:font-bold">
+              <a href="https://www.youtube.com/c/VITAP" target="_blank">Watch us on Youtube </a>
             </p>
           </div>
         </div>
         <div className="ml-[56px] overflow-hidden">
           <div className="relative">
-            <div className="card1 relative inline-block group">
+            <div className="card1 relative inline-block group m-[5px]">
               <Image src={img1} width={233} height={233} />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
                   url="www.instagram.com"
@@ -122,9 +123,9 @@ const Socials = () => {
                 </p>
               </div>
             </div>
-            <div className="card2 relative inline-block group">
+            <div className="card2 relative inline-block group m-[5px]">
               <Image src={img2} width={233} height={233} />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
                   url="www.instagram.com"
@@ -141,9 +142,9 @@ const Socials = () => {
                 </p>
               </div>
             </div>
-            <div className="card3 relative inline-block group">
+            <div className="card3 relative inline-block group m-[5px]">
               <Image src={img3} width={233} height={233} />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
                   url="www.instagram.com"
@@ -164,9 +165,9 @@ const Socials = () => {
         </div>
         <div className="ml-[64.96px] overflow-hidden">
           <div className="relative">
-            <div className="card1 mt-[55px] relative inline-block group">
+            <div className="card1 mt-[55px] relative inline-block group m-[5px]">
               <Image src={img4} width={233} height={233} />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
                   url="www.instagram.com"
@@ -183,9 +184,9 @@ const Socials = () => {
                 </p>
               </div>
             </div>
-            <div className="card2 relative inline-block group">
+            <div className="card2 relative inline-block group m-[5px]">
               <Image src={img5} width={233} height={233} />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
                   url="www.instagram.com"
@@ -202,9 +203,9 @@ const Socials = () => {
                 </p>
               </div>
             </div>
-            <div className="card3 relative inline-block group">
+            <div className="card3 relative inline-block group m-[5px]">
               <Image src={img6} width={233} height={233} />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
                   url="www.instagram.com"
@@ -225,9 +226,9 @@ const Socials = () => {
         </div>
         <div className="ml-[64.96px] overflow-hidden">
           <div className="relative">
-            <div className="card1 relative inline-block group">
+            <div className="card1 relative inline-block group m-[5px]">
               <Image src={img7} width={233} height={233} />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:opacity-70">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute ml-[5px] mt-[200px]" />
                 <SocialIcon
                   url="www.instagram.com"
@@ -244,9 +245,9 @@ const Socials = () => {
                 </p>
               </div>
             </div>
-            <div className="card2 relative inline-block group">
+            <div className="card2 relative inline-block group m-[5px]">
               <Image src={img8} width={233} height={233} />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
                   url="www.instagram.com"
@@ -263,9 +264,9 @@ const Socials = () => {
                 </p>
               </div>
             </div>
-            <div className="card3 relative inline-block group">
+            <div className="card3 relative inline-block group m-[5px]">
               <Image src={img9} width={233} height={233} />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:bg-primary group-hover:bg-opacity-50">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
                   url="www.instagram.com"

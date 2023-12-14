@@ -41,7 +41,7 @@ const OurSchools = async () => {
             At VIT-AP the entire teaching-learning process is concentrated around seven schools for preparing students to make meaningful contributions to society as engaged citizens and leaders in a complex world.
           </h1>
           <div class="grid grid-cols-4 justify-center mt-5 items-center">
-            <div className="w-[270px] h-[290px] ml-[46px] relative group">
+            <div className="w-[270px] h-[270px] m-[20px] ml-[46px] relative group overflow-hidden">
               <div className="absolute w-[270px] h-[270px] bg-black"></div>
               <Image
                 src={image1}
@@ -61,7 +61,7 @@ const OurSchools = async () => {
                 </h1>
               </div>
             </div>
-            <div className="w-[270px] h-[290px] ml-[46px] relative group">
+            <div className="w-[270px] h-[270px] ml-[46px] relative group overflow-hidden">
               <div className="absolute w-[270px] h-[270px] bg-black"></div>
               <Image
                 src={image2}
@@ -81,7 +81,7 @@ const OurSchools = async () => {
                 </h1>
               </div>
             </div>
-            <div className="w-[270px] h-[290px] ml-[46px] relative group">
+            <div className="w-[270px] h-[270px] ml-[46px] relative group overflow-hidden">
               <div className="absolute w-[270px] h-[270px] bg-black"></div>
               <Image
                 src={image3}
@@ -101,7 +101,7 @@ const OurSchools = async () => {
                 </h1>
               </div>
             </div>
-            <div className="w-[270px] h-[290px] ml-[46px] relative group">
+            <div className="w-[270px] h-[270px] ml-[46px] relative group overflow-hidden">
               <div className="absolute w-[270px] h-[270px] bg-gradient-to-b  from-[#0000005a] to-black opacity-80"></div>
               <Image
                 src={image4}
@@ -122,7 +122,7 @@ const OurSchools = async () => {
               </div>
             </div>
 
-            <div className="w-[270px] h-[290px] ml-[150px] relative group">
+            <div className="w-[270px] h-[270px] ml-[150px] relative group overflow-hidden">
               <div className="absolute w-[270px] h-[270px] bg-black"></div>
               <Image
                 src={image5}
@@ -142,7 +142,7 @@ const OurSchools = async () => {
                 </h1>
               </div>
             </div>
-            <div className="w-[270px] h-[290px] ml-[150px] relative group">
+            <div className="w-[270px] h-[270px] ml-[150px] relative group overflow-hidden">
               <div className="absolute w-[270px] h-[270px] bg-black"></div>
               <Image
                 src={image6}
@@ -162,7 +162,7 @@ const OurSchools = async () => {
                 </h1>
               </div>
             </div>
-            <div className="w-[270px] h-[290px] ml-[150px] relative group">
+            <div className="w-[270px] h-[270px] ml-[150px] relative group overflow-hidden">
               <div className="absolute w-[270px] h-[270px] bg-black"></div>
               <Image
                 src={image7}

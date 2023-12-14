@@ -74,7 +74,7 @@ const NavbarBottomPages = () => {
       setProgramme("Undergraduate");
     }
   }, [underline]);
-  
+
 
   return (
     <>
@@ -162,7 +162,7 @@ const NavbarBottomPages = () => {
                   <ol className="flex-row font-[400] text-[20px]  pt-[60px] pl-[110px] space-y-[19px]">
                     <li
                       className={` hover:cursor-pointer  w-[fit-content] ${underline}`}
-                      
+
                       onMouseEnter={() => {
                         setProgrammes([
                           "Undergraduate",
@@ -178,33 +178,33 @@ const NavbarBottomPages = () => {
                     >
                       Programmes
                     </li>
-                    <li className="peer/ap custom-list-item w-[fit-content]"  onMouseEnter={() => {setProgrammes([]); setProgramme(null); setunderline("")}} onMouseLeave={()=> {setProgramme("Undergraduate")}}>Application Process</li>
+                    <li className="peer/ap custom-list-item w-[fit-content]" onMouseEnter={() => { setProgrammes([]); setProgramme(null); setunderline("") }} onMouseLeave={() => { setProgramme("Undergraduate") }}>Application Process</li>
                     <li className="absolute left-[600px] invisible top-[20px] peer-hover/ap:visible">
-                    <Image alt="A descriptive text here h-full" src={image0} />
+                      <Image alt="A descriptive text here h-full" src={image0} />
                     </li>
-                    <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => {setProgrammes([]); setProgramme(null); setunderline("")}} onMouseLeave={()=> {setProgramme("Undergraduate")}}>Fees & Scholarship</li>
+                    <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => { setProgrammes([]); setProgramme(null); setunderline("") }} onMouseLeave={() => { setProgramme("Undergraduate") }}>Fees & Scholarship</li>
                     <li className="absolute left-[600px] invisible top-[20px] peer-hover/fas:visible">
-                    <Image alt="A descriptive text here" src={image1} />
+                      <Image alt="A descriptive text here" src={image1} />
                     </li>
-                    <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => {setProgrammes([]); setProgramme(null); setunderline("")}} onMouseLeave={()=> {setProgramme("Undergraduate")}}>STARS</li>
+                    <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => { setProgrammes([]); setProgramme(null); setunderline("") }} onMouseLeave={() => { setProgramme("Undergraduate") }}>STARS</li>
                     <li className="absolute left-[600px] invisible top-[20px] peer-hover/fas:visible">
-                    <Image alt="A descriptive text here" src={image2} />
+                      <Image alt="A descriptive text here" src={image2} />
                     </li>
-                    <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => {setProgrammes([]); setProgramme(null); setunderline("")}} onMouseLeave={()=> {setProgramme("Undergraduate")}}>Affidivit</li>
+                    <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => { setProgrammes([]); setProgramme(null); setunderline("") }} onMouseLeave={() => { setProgramme("Undergraduate") }}>Affidivit</li>
                     <li className="absolute left-[600px] invisible top-[20px] peer-hover/fas:visible">
-                    <Image alt="A descriptive text here" src={image3} />
+                      <Image alt="A descriptive text here" src={image3} />
                     </li>
-                    <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => {setProgrammes([]); setProgramme(null); setunderline("")}} onMouseLeave={()=> {setProgramme("Undergraduate")}}>Videos</li>
+                    <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => { setProgrammes([]); setProgramme(null); setunderline("") }} onMouseLeave={() => { setProgramme("Undergraduate") }}>Videos</li>
                     <li className="absolute left-[600px] invisible top-[20px] peer-hover/fas:visible">
-                    <Image alt="A descriptive text here" src={image4} />
+                      <Image alt="A descriptive text here" src={image4} />
                     </li>
-                    <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => {setProgrammes([]); setProgramme(null); setunderline("")}} onMouseLeave={()=> {setProgramme("Undergraduate")}}>Enquiry</li>
+                    <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => { setProgrammes([]); setProgramme(null); setunderline("") }} onMouseLeave={() => { setProgramme("Undergraduate") }}>Enquiry</li>
                     <li className="absolute left-[600px] invisible top-[20px] peer-hover/fas:visible">
-                    <Image alt="A descriptive text here" src={image5} />
+                      <Image alt="A descriptive text here" src={image5} />
                     </li>
                   </ol>
                   <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[400px] top-[45px]"></span>
-                  
+
                   <ol
                     className={` ${""}   flex-row font-[400] text-[20px]  pt-[60px] pl-[110px] space-y-[19px] absolute left-[350px] `}
                   >
@@ -214,7 +214,7 @@ const NavbarBottomPages = () => {
                     })}
                   </ol>
                   {Programme === "Undergraduate" || Programme === "Dual Degree" || Programme === "Integrated" || Programme === "Postgraduate" || Programme === "Ph. D" ? (
-                  <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[750px] top-[45px]"></span>):null}
+                    <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[750px] top-[45px]"></span>) : null}
                   {Programme === "Undergraduate" ? (
                     <div className="flex">
                       <ol className="flex-row font-[400] text-[20px] pt-[60px] pl-[550px] space-y-[19px]">
@@ -443,22 +443,22 @@ const NavbarBottomPages = () => {
                 <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px] flex-row flex">
 
                   <ol className="flex-row font-[400] text-[20px]  pt-[60px] pl-[110px] space-y-[19px]">
-                    <li className="custom-list-item w-[fit-content]" onMouseEnter={()=>{setResearch("ar")}}>Academic Reasearch</li>
-                    
-                    <li className="custom-list-item w-[fit-content]" onMouseEnter={()=>{setResearch("ure")}}>URE Project</li>
-                    
+                    <li className="custom-list-item w-[fit-content]" onMouseEnter={() => { setResearch("ar") }}>Academic Reasearch</li>
+
+                    <li className="custom-list-item w-[fit-content]" onMouseEnter={() => { setResearch("ure") }}>URE Project</li>
+
                     <li className={`custom-list-item w-[fit-content] ${research === "coe" ? "custom-underline decoration-[#650010] underline-offset-8 decoration-[6px]" : ""
                       }`} onMouseEnter={() => { setResearch("coe") }}>Center of Excellence</li>
                     <li className={`custom-list-item w-[fit-content] ${research === "iiec" ? "custom-underline decoration-[#650010] underline-offset-8 decoration-[6px]" : ""
                       }`} onMouseEnter={() => { setResearch("iiec") }}>IIEC</li>
-                    <li className="custom-list-item w-[fit-content]" onMouseEnter={()=>{setResearch("vitbif")}}>VITBIF</li>
+                    <li className="custom-list-item w-[fit-content]" onMouseEnter={() => { setResearch("vitbif") }}>VITBIF</li>
                     {research === "ar" ? (<li className="absolute left-[600px] top-[50px] visible">
-                    <Image alt="A descriptive text here" src={image0} />
-                    </li>): research === "ure" ? (<li className="absolute left-[600px] top-[50px] visible">
-                    <Image alt="A descriptive text here" src={image1} />
-                    </li>): research === "vitbif" ? (<li className="absolute left-[600px] top-[50px] visible">
-                    <Image alt="A descriptive text here" src={image2} />
-                    </li>):null}
+                      <Image alt="A descriptive text here" src={image0} />
+                    </li>) : research === "ure" ? (<li className="absolute left-[600px] top-[50px] visible">
+                      <Image alt="A descriptive text here" src={image1} />
+                    </li>) : research === "vitbif" ? (<li className="absolute left-[600px] top-[50px] visible">
+                      <Image alt="A descriptive text here" src={image2} />
+                    </li>) : null}
                   </ol>
                   <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[400px] top-[60px]"></span>
                   {research === "iiec" ? (
@@ -484,7 +484,7 @@ const NavbarBottomPages = () => {
             </li>
           </ul>
         </div>
-        <NavbarBottomItem/>
+        <NavbarBottomItem />
       </div>
 
       {/* <div className="sticky top-0 z-30 ls:block sm:hidden">

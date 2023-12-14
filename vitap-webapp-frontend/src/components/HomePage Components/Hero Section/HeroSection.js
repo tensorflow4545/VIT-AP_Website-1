@@ -32,8 +32,8 @@ const HeroSection = () => {
 
   return (
     <>
-     <CarouselComp/>
-     <HeaderText/>
+      <CarouselComp />
+      <HeaderText />
 
       {/* <div className="w-full  ls:h-auto object-cover">
           

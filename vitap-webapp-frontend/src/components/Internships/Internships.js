@@ -7,28 +7,40 @@ import sd from "../../assets/images/Internships/superdream.png";
 import dr from "../../assets/images/Internships/dream.png";
 import st from "../../assets/images/Internships/statistics.png";
 import cdc from "../../assets/images/Internships/cdcoffice.png";
+import styles from "../../styles/Internships.module.css";
 
-const Internships = ({ url, title }) => {
+const Internships = () => {
   return (
     <>
-      <div>
-        <div className="relative">
+      <div className={`${styles.container}`}>
+        <div className={`${styles.banner} relative`}>
           <Image src={banner} className="w-[100%]" />
           <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900 to-gray-900 opacity-50"></div>
           <div className="absolute inset-0">
-            <p className="absolute font-Emilo text-white opacity-100 font-bold text-[44px] mt-[274px] ml-[34px]">
+            <p
+              className={`${styles.head} absolute font-Emilo text-white opacity-100 font-bold text-[44px] mt-[274px] ml-[34px]`}
+            >
               Internships
             </p>
             <div className="absolute w-[327px] h-[2px] bg-white mt-[333px] ml-[34px]"></div>
           </div>
         </div>
         <div className="relative ml-[84px]">
-          <div className="w-[1134px] h-[704px] border border-[#650010] mt-[101px] relative">
-            <p className="absolute top-[-50px] left-[54px] text-[62px] text-[#5C0E14] bg-white font-bold font-Emilo">
+          <div
+            className={`${styles.borderdiv} w-[1134px] h-[704px] border border-[#650010] mt-[101px] relative`}
+          >
+            <p
+              className={`${styles.heading} absolute top-[-50px] left-[54px] text-[62px] text-[#5C0E14] bg-white font-bold font-Emilo`}
+            >
               VIT-AP Internships
             </p>
-            <Image src={vit} className="absolute ml-[866px] mt-[56px]" />
-            <p className="w-[798px] text-[20px] font-Montserrant ml-[54px] mt-[56px]">
+            <Image
+              src={vit}
+              className={`${styles.image} absolute ml-[866px] mt-[56px]`}
+            />
+            <p
+              className={`${styles.p1} w-[798px] text-[20px] font-Montserrant ml-[54px] mt-[56px]`}
+            >
               VIT-AP has numerous internship programs where students can learn
               about professional fields and get first-hand experience of the
               work environment even before they reach the actual placements. We
@@ -37,7 +49,9 @@ const Internships = ({ url, title }) => {
               the globe that enable our students to gain the experience required
               for their respective job area while being interns.
             </p>
-            <p className="w-[798px] text-[20px] font-Montserrant ml-[54px] mt-[24px]">
+            <p
+              className={`${styles.p2} w-[798px] text-[20px] font-Montserrant ml-[54px] mt-[24px]`}
+            >
               To boost the placement opportunities VIT-AP has the final semester
               as the Cooperative Education Programme (co-op). Co-op provides
               students the opportunity to explore and refine their potential
@@ -48,7 +62,9 @@ const Internships = ({ url, title }) => {
               the professional world. This co-op makes them strong contenders
               ready for their job role.
             </p>
-            <p className="w-[798px] text-[20px] font-Montserrant ml-[54px] mt-[24px]">
+            <p
+              className={`${styles.p3} w-[798px] text-[20px] font-Montserrant ml-[54px] mt-[24px]`}
+            >
               Internships for students of VIT-AP made its way when our first
               batch of students completed their first academic year. Most of our
               students went in for internships during the summer break of 2018.
@@ -59,14 +75,23 @@ const Internships = ({ url, title }) => {
               Since then, we have almost all of our students’ doing internships
               in MNCs.
             </p>
+            <Image
+              src={vit}
+              width={600}
+              className={`${styles.image2} opacity-0`}
+            />
           </div>
         </div>
-        <div className="h-[1250px] bg-[#F3F4F8] border mt-[70px]">
-          <div className="ml-[109px]">
-            <p className="text-[62px] text-[#5C0E14] font-Emilo font-bold mt-[96px]">
+        <div
+          className={`${styles.irInternships} h-[1250px] bg-[#F3F4F8] border mt-[70px]`}
+        >
+          <div className={`${styles.sec2} ml-[109px]`}>
+            <p
+              className={`${styles.heading2} text-[62px] text-[#5C0E14] font-Emilo font-bold mt-[96px]`}
+            >
               International Relations
             </p>
-            <p className="text-[22px] font-Emilo w-[1250px]">
+            <p className={`${styles.para2} text-[22px] font-Emilo w-[1250px]`}>
               Career Development Centre has been instrumental in providing
               international internships and placement offers. They have placed
               at an average of 10 students every year in leading MNC’s at USA,
@@ -74,51 +99,37 @@ const Internships = ({ url, title }) => {
               Nigeria and Italy.
             </p>
             <div className="flex mt-[34px]">
-              <div className="w-[288px] h-[268px] bg-[#FDFEFF] border items-center justify-center">
+              <div
+                className={`${styles.div1} w-[288px] h-[268px] bg-[#FDFEFF] border items-center justify-center`}
+              >
+                <Image src={ir} className="ml-[8px]" />
+                <p
+                  className={`${styles.uk} font-Emilo mt-[15px] ml-[55px] text-[26px]`}
+                >
+                  United Kingdom
+                </p>
+              </div>
+              <div
+                className={`${styles.div1} w-[288px] h-[268px] bg-[#FDFEFF] border items-center justify-center ml-[33px]`}
+              >
+                <Image src={ir} className="ml-[8px]" />
+                <p
+                  className={`${styles.uk} font-Emilo mt-[15px] ml-[55px] text-[26px]`}
+                >
+                  United Kingdom
+                </p>
+              </div>
+              <div
+                className={`${styles.div4} w-[288px] h-[268px] bg-[#FDFEFF] border items-center justify-center ml-[33px]`}
+              >
                 <Image src={ir} className="ml-[8px]" />
                 <p className="font-Emilo mt-[15px] ml-[55px] text-[26px]">
                   United Kingdom
                 </p>
               </div>
-              <div className="w-[288px] h-[268px] bg-[#FDFEFF] border items-center justify-center ml-[33px]">
-                <Image src={ir} className="ml-[8px]" />
-                <p className="font-Emilo mt-[15px] ml-[55px] text-[26px]">
-                  United Kingdom
-                </p>
-              </div>
-              <div className="w-[288px] h-[268px] bg-[#FDFEFF] border items-center justify-center ml-[33px]">
-                <Image src={ir} className="ml-[8px]" />
-                <p className="font-Emilo mt-[15px] ml-[55px] text-[26px]">
-                  United Kingdom
-                </p>
-              </div>
-              <div className="w-[288px] h-[268px] bg-[#FDFEFF] border items-center justify-center ml-[33px]">
-                <Image src={ir} className="ml-[8px]" />
-                <p className="font-Emilo mt-[15px] ml-[55px] text-[26px]">
-                  United Kingdom
-                </p>
-              </div>
-            </div>
-            <div className="flex mt-[34px]">
-              <div className="w-[288px] h-[268px] bg-[#FDFEFF] border items-center justify-center">
-                <Image src={ir} className="ml-[8px]" />
-                <p className="font-Emilo mt-[15px] ml-[55px] text-[26px]">
-                  United Kingdom
-                </p>
-              </div>
-              <div className="w-[288px] h-[268px] bg-[#FDFEFF] border items-center justify-center ml-[33px]">
-                <Image src={ir} className="ml-[8px]" />
-                <p className="font-Emilo mt-[15px] ml-[55px] text-[26px]">
-                  United Kingdom
-                </p>
-              </div>
-              <div className="w-[288px] h-[268px] bg-[#FDFEFF] border items-center justify-center ml-[33px]">
-                <Image src={ir} className="ml-[8px]" />
-                <p className="font-Emilo mt-[15px] ml-[55px] text-[26px]">
-                  United Kingdom
-                </p>
-              </div>
-              <div className="w-[288px] h-[268px] bg-[#FDFEFF] border items-center justify-center ml-[33px]">
+              <div
+                className={`${styles.div4} w-[288px] h-[268px] bg-[#FDFEFF] border items-center justify-center ml-[33px]`}
+              >
                 <Image src={ir} className="ml-[8px]" />
                 <p className="font-Emilo mt-[15px] ml-[55px] text-[26px]">
                   United Kingdom
@@ -128,23 +139,65 @@ const Internships = ({ url, title }) => {
             <div className="flex mt-[34px]">
               <div className="w-[288px] h-[268px] bg-[#FDFEFF] border items-center justify-center">
                 <Image src={ir} className="ml-[8px]" />
-                <p className="font-Emilo mt-[15px] ml-[55px] text-[26px]">
+                <p
+                  className={`${styles.uk} font-Emilo mt-[15px] ml-[55px] text-[26px]`}
+                >
                   United Kingdom
                 </p>
               </div>
               <div className="w-[288px] h-[268px] bg-[#FDFEFF] border items-center justify-center ml-[33px]">
                 <Image src={ir} className="ml-[8px]" />
-                <p className="font-Emilo mt-[15px] ml-[55px] text-[26px]">
+                <p
+                  className={`${styles.uk} font-Emilo mt-[15px] ml-[55px] text-[26px]`}
+                >
                   United Kingdom
                 </p>
               </div>
-              <div className="w-[288px] h-[268px] bg-[#FDFEFF] border items-center justify-center ml-[33px]">
+              <div
+                className={`${styles.div4} w-[288px] h-[268px] bg-[#FDFEFF] border items-center justify-center ml-[33px]`}
+              >
                 <Image src={ir} className="ml-[8px]" />
                 <p className="font-Emilo mt-[15px] ml-[55px] text-[26px]">
                   United Kingdom
                 </p>
               </div>
+              <div
+                className={`${styles.div4} w-[288px] h-[268px] bg-[#FDFEFF] border items-center justify-center ml-[33px]`}
+              >
+                <Image src={ir} className="ml-[8px]" />
+                <p className="font-Emilo mt-[15px] ml-[55px] text-[26px]">
+                  United Kingdom
+                </p>
+              </div>
+            </div>
+            <div className="flex mt-[34px]">
+              <div className="w-[288px] h-[268px] bg-[#FDFEFF] border items-center justify-center">
+                <Image src={ir} className="ml-[8px]" />
+                <p
+                  className={`${styles.uk} font-Emilo mt-[15px] ml-[55px] text-[26px]`}
+                >
+                  United Kingdom
+                </p>
+              </div>
               <div className="w-[288px] h-[268px] bg-[#FDFEFF] border items-center justify-center ml-[33px]">
+                <Image src={ir} className="ml-[8px]" />
+                <p
+                  className={`${styles.uk} font-Emilo mt-[15px] ml-[55px] text-[26px]`}
+                >
+                  United Kingdom
+                </p>
+              </div>
+              <div
+                className={`${styles.div4} w-[288px] h-[268px] bg-[#FDFEFF] border items-center justify-center ml-[33px]`}
+              >
+                <Image src={ir} className="ml-[8px]" />
+                <p className="font-Emilo mt-[15px] ml-[55px] text-[26px]">
+                  United Kingdom
+                </p>
+              </div>
+              <div
+                className={`${styles.div4} w-[288px] h-[268px] bg-[#FDFEFF] border items-center justify-center ml-[33px]`}
+              >
                 <Image src={ir} className="ml-[8px]" />
                 <p className="font-Emilo mt-[15px] ml-[55px] text-[26px]">
                   United Kingdom
@@ -154,9 +207,13 @@ const Internships = ({ url, title }) => {
           </div>
         </div>
         <div className="relative">
-          <div className="h-[227px] mt-[289px] bg-[#E6CFCF]"></div>
+          <div
+            className={`${styles.pinkbg} h-[227px] mt-[289px] bg-[#E6CFCF]`}
+          ></div>
           <div className="flex ml-[10%] absolute mt-[-420px]">
-            <div className="w-[240px] h-[350px] transform bg-gray-300 border -skew-x-6">
+            <div
+              className={`${styles.card1} w-[240px] h-[350px] transform bg-gray-300 border -skew-x-6`}
+            >
               <Image src={sd} />
               <div className="absolute bottom-0 w-[100%] min-h-[75px] group-hover:bg-[#fff] group-hover:text-[#650010] bg-[#650010] text-white pl-6 pt-3">
                 <h1 className="text-[17px] font-bold">Overview</h1>
@@ -165,7 +222,9 @@ const Internships = ({ url, title }) => {
                 </p>
               </div>
             </div>
-            <div className="w-[240px] h-[350px] transform bg-gray-300 border -skew-x-6 ml-[10px]">
+            <div
+              className={`${styles.card1} w-[240px] h-[350px] transform bg-gray-300 border -skew-x-6 ml-[10px]`}
+            >
               <Image src={sd} />
               <div className="absolute bottom-0 w-[100%] min-h-[75px] group-hover:bg-[#fff] group-hover:text-[#650010] bg-[#650010] text-white pl-6 pt-3">
                 <h1 className="text-[17px] font-bold">Super Dream Offer</h1>
@@ -174,7 +233,9 @@ const Internships = ({ url, title }) => {
                 </p>
               </div>
             </div>
-            <div className="w-[240px] h-[350px] transform bg-gray-300 border -skew-x-6 ml-[10px]">
+            <div
+              className={`${styles.card2} w-[240px] h-[350px] transform bg-gray-300 border -skew-x-6 ml-[10px]`}
+            >
               <Image src={dr} />
               <div className="absolute bottom-0 w-[100%] min-h-[75px] group-hover:bg-[#fff] group-hover:text-[#650010] bg-[#650010] text-white pl-6 pt-3">
                 <h1 className="text-[17px] font-bold">Dream Offer</h1>
@@ -183,7 +244,9 @@ const Internships = ({ url, title }) => {
                 </p>
               </div>
             </div>
-            <div className="w-[240px] h-[350px] transform bg-gray-300 border -skew-x-6 ml-[10px]">
+            <div
+              className={`${styles.card3} w-[240px] h-[350px] transform bg-gray-300 border -skew-x-6 ml-[10px]`}
+            >
               <Image src={st} />
               <div className="absolute bottom-0 w-[100%] min-h-[75px] group-hover:bg-[#fff] group-hover:text-[#650010] bg-[#650010] text-white pl-6 pt-3">
                 <h1 className="text-[17px] font-bold">Statistics</h1>
@@ -192,7 +255,9 @@ const Internships = ({ url, title }) => {
                 </p>
               </div>
             </div>
-            <div className="w-[240px] h-[350px] transform bg-gray-300 border -skew-x-6 ml-[10px]">
+            <div
+              className={`${styles.card4} w-[240px] h-[350px] transform bg-gray-300 border -skew-x-6 ml-[10px]`}
+            >
               <Image src={cdc} />
               <div className="absolute bottom-0 w-[100%] min-h-[75px] group-hover:bg-[#fff] group-hover:text-[#650010] bg-[#650010] text-white pl-6 pt-3">
                 <h1 className="text-[17px] font-bold">C.D.C Office</h1>
@@ -218,7 +283,9 @@ const Internships = ({ url, title }) => {
               VIT-AP University, Beside AP Secretariat, Near Vijayawada, 522
               237, Andhra Pradesh
             </p>
-            <p class="text-[16px] lx:text-[19px] font-[400px]  text-right">
+            <p
+              class={`${styles.email} text-[16px] lx:text-[19px] font-[400px] text-right`}
+            >
               Email : placement@vitap.ac.in
             </p>
           </div>

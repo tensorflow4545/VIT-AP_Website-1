@@ -2,14 +2,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-export default function News(){
-  const News=[
+export default function News() {
+  const News = [
     {
-       img:"/news.png",
-       head:"Meet and Greet’23",
-       desc:"Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur."
+      img: "/news.png",
+      head: "Meet and Greet’23",
+      desc: "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur."
     },
     {
+
       img:"/news.png",
       head:"Meet and Greet’23",
       desc:"Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur."
@@ -20,10 +21,11 @@ export default function News(){
     desc:"Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur."
  }
 ];
-    return(
-      <>
-        <div class="w-full h-[800px] bg-white">
-        
+  
+  return (
+    <>
+      <div class="w-full h-[800px] bg-white">
+
         <div class="w-full h-[400px] bg-red-100 pt-[66px] px-[108px]">
         <div className="flex flex-row items-center justify-between mb-10">
           <h1 className=" sm:text-4xl font-bold  lx:ml-4  ls:w-[300px] ls:text-left sm:text-center ">
@@ -36,6 +38,7 @@ export default function News(){
             </Link>
             <hr className=" h-[4px] w-[36px] font-bold bg-red-950 max-lx:w-[28px]" />
           </div>
+
         </div>
           {/* flex */}
           <div class="flex flex-row pt-[63px]">
@@ -63,10 +66,10 @@ export default function News(){
 
           </div>
 
-        </div>
-        
-        </div>
+                  </div>
+
 
       </>
     )
 }
+
