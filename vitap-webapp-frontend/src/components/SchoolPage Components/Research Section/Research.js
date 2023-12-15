@@ -52,15 +52,8 @@ export default function Research() {
               </div>
             })}
           </div>
-<<<<<<< HEAD
-
         </div>
       </div>
-
-=======
-        </div>
-      </div>
->>>>>>> master
     </>
   )
 }
