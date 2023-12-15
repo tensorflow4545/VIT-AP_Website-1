@@ -6,7 +6,7 @@ import twitter from "../../../assets/images/socialIcons/twitter.png";
 import linkin from "../../../assets/images/socialIcons/linkedin.png";
 import fb from "../../../assets/images/socialIcons/fb.png";
 import yt from "../../../assets/images/socialIcons/yt.png";
-import img1 from "../../../assets/images/socialImages/image 1.jpg";
+import img1 from "@/assets/images/socialImages/image 1.jpg";
 import img2 from "../../../assets/images/socialImages/image 2.jpg";
 import img3 from "../../../assets/images/socialImages/image 3.jpg";
 import img4 from "../../../assets/images/socialImages/image 4.jpg";
@@ -142,7 +142,7 @@ const Socials = () => {
         <div className={`${styles.group1} ml-[56px] overflow-hidden`}>
           <div className={`${styles.images1} relative`}>
             <div className="card1 relative inline-block group">
-              <Image src={image1} width={233} height={233} />
+              <Image src={img1} width={233} height={233} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
@@ -161,7 +161,7 @@ const Socials = () => {
               </div>
             </div>
             <div className={`${styles.card2} relative inline-block group`}>
-              <Image src={image2} width={233} height={233} />
+              <Image src={img2} width={233} height={233} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
@@ -180,7 +180,7 @@ const Socials = () => {
               </div>
             </div>
             <div className={`${styles.card3} relative inline-block group`}>
-              <Image src={image3} width={233} height={233} />
+              <Image src={img3} width={233} height={233} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
@@ -203,7 +203,7 @@ const Socials = () => {
         <div className={`${styles.group2} ml-[64.96px] overflow-hidden`}>
           <div className="relative">
             <div className="card1 mt-[55px] relative inline-block group">
-              <Image src={image4} width={233} height={233} />
+              <Image src={img4} width={233} height={233} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
@@ -222,7 +222,7 @@ const Socials = () => {
               </div>
             </div>
             <div className="card2 relative inline-block group">
-              <Image src={image5} width={233} height={233} />
+              <Image src={img5} width={233} height={233} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
@@ -241,7 +241,7 @@ const Socials = () => {
               </div>
             </div>
             <div className={`${styles.card3} relative inline-block group`}>
-              <Image src={image6} width={233} height={233} />
+              <Image src={img6} width={233} height={233} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
@@ -264,7 +264,7 @@ const Socials = () => {
         <div className={`${styles.group3} ml-[64.96px] overflow-hidden`}>
           <div className="relative">
             <div className="card1 relative inline-block group">
-              <Image src={image7} width={233} height={233} />
+              <Image src={img7} width={233} height={233} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900 group-hover:opacity-70">
                 <Image src={logo} className="absolute ml-[5px] mt-[200px]" />
                 <SocialIcon
@@ -283,7 +283,7 @@ const Socials = () => {
               </div>
             </div>
             <div className="card2 relative inline-block group">
-              <Image src={image8} width={233} height={233} />
+              <Image src={img8} width={233} height={233} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
@@ -302,7 +302,7 @@ const Socials = () => {
               </div>
             </div>
             <div className="card3 relative inline-block group">
-              <Image src={image9} width={233} height={233} />
+              <Image src={img9} width={233} height={233} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900">
                 <Image src={logo} className="absolute mt-[200px] ml-[5px]" />
                 <SocialIcon
