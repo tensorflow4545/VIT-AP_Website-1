@@ -63,7 +63,7 @@ const NavbarBottom = () => {
         'Dual Degree',
         'Integrated',
         'Postgraduate',
-        'Ph. D',
+        'Ph.D.',
       ]);
     }
   }, [Programme]);
@@ -168,7 +168,7 @@ const NavbarBottom = () => {
                           "Dual Degree",
                           "Integrated",
                           "Postgraduate",
-                          "Ph. D",
+                          "Ph.D.",
                         ]);
                         setunderline(
                           "custom-underline decoration-[#650010] underline-offset-8 decoration-[6px] "
@@ -212,50 +212,51 @@ const NavbarBottom = () => {
                         }`} onMouseEnter={() => { setProgramme(Program) }}> {Program} </li>;
                     })}
                   </ol>
-                  {Programme === "Undergraduate" || Programme === "Dual Degree" || Programme === "Integrated" || Programme === "Postgraduate" || Programme === "Ph. D" ? (
+                  {Programme === "Undergraduate" || Programme === "Dual Degree" || Programme === "Integrated" || Programme === "Postgraduate" || Programme === "Ph.D." ? (
                     <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[750px] top-[45px]"></span>) : null}
                   {Programme === "Undergraduate" ? (
                     <div className="flex">
                       <ol className="flex-row font-[400] text-[20px] pt-[60px] pl-[550px] space-y-[19px]">
-                        <lh className="font-bold underline decoration-[#000000] underline-offset-8 decoration-[6px] text-[20px]">Engineering</lh>
-                        <li className="custom-list-item w-[fit-content]">B.Tech CSE</li>
-                        <li className="custom-list-item w-[fit-content]">B.Tech CSBS</li>
-                        <li className="custom-list-item w-[fit-content]">B.Tech ECE</li>
-                        <li className="custom-list-item w-[fit-content]">B.Tech Mechanical</li>
+                        <lh className="underline decoration-primary underline-offset-8 decoration-[6px] text-[20px]">Engineering</lh>
+                        <li className="custom-list-item w-[fit-content]">B.Tech. CSE</li>
+                        <li className="custom-list-item w-[fit-content]">B.Tech. CSBS</li>
+                        <li className="custom-list-item w-[fit-content]">B.Tech. ECE</li>
+                        <li className="custom-list-item w-[fit-content]">B.Tech. Mechanical</li>
                       </ol>
                       <ol className="flex-row font-[400] text-[20px] pt-[60px] pl-[110px] space-y-[19px]">
-                        <lh className="font-bold underline decoration-[#000000] underline-offset-8 decoration-[6px] text-[20px]">Management</lh>
+                        <lh className="underline decoration-primary underline-offset-8 decoration-[6px] text-[20px]">Management</lh>
                         <li className="custom-list-item w-[fit-content]">BBA</li>
-                        <li className="custom-list-item w-[fit-content]">B.Com</li>
+                        <li className="custom-list-item w-[fit-content]">B.Com. Finance</li>
                       </ol>
                     </div>
                   ) : Programme === "Dual Degree" ? (
                     <ol className="flex-row font-[400] text-[20px] pt-[60px] pl-[550px] space-y-[19px]">
-                      <li className="custom-list-item w-[fit-content]">BA - MA</li>
-                      <li className="custom-list-item w-[fit-content]">B.Sc - M.Sc</li>
+                      <li className="custom-list-item w-[fit-content]">B.A. - M.A. Public Services</li>
+                      <li className="custom-list-item w-[fit-content]">B.Sc. - M.Sc. Data Science</li>
                     </ol>) : Programme === "Integrated" ? (
                       <ol className="flex-row font-[400] text-[20px] pt-[60px] pl-[550px] space-y-[19px]">
-                        <li className="custom-list-item w-[fit-content]">M. Tech CSE in Collaboration with Virtusa</li>
-                        <li className="custom-list-item w-[fit-content]">M. Tech Software Engineering</li>
-                        <li className="custom-list-item w-[fit-content]">BA. LL.B (Hons.)</li>
-                        <li className="custom-list-item w-[fit-content]">BBA. LL.B (Hons.)</li>
+                        <li className="custom-list-item w-[fit-content]">M.Tech. CSE</li>
+                        <li className="custom-list-item w-[fit-content]">M.Tech. Software Engineering</li>
+                        <li className="custom-list-item w-[fit-content]">B.A., LL.B. (Hons.)</li>
+                        <li className="custom-list-item w-[fit-content]">BBA., LL.B. (Hons.)</li>
                       </ol>
                     ) : Programme === "Postgraduate" ? (
                       <ol className="flex-row font-[400] text-[20px] pt-[60px] pl-[550px] space-y-[19px]">
-                        <li className="custom-list-item w-[fit-content]">M. Tech VLSI</li>
+                        <li className="custom-list-item w-[fit-content]">M.Tech. VLSI Design</li>
                         <li className="custom-list-item w-[fit-content]">M.Sc. Data Science</li>
-                        <li className="custom-list-item w-[fit-content]">M. Sc. Physics</li>
-                        <li className="custom-list-item w-[fit-content]">M. Sc. Chemistry</li>
+                        <li className="custom-list-item w-[fit-content]">M.Sc. Chemistry</li>
+                        {/* <li className="custom-list-item w-[fit-content]">M.Sc. Chemistry</li> */}
                       </ol>
-                    ) : Programme === "Ph. D" ? (
+                    ) : Programme === "Ph.D." ? (
                       <ol className="flex-row font-[400] text-[20px] pt-[60px] pl-[550px] space-y-[19px]">
-                        <li className="custom-list-item w-[fit-content]">School of Computer Science and Engineering</li>
-                        <li className="custom-list-item w-[fit-content]">School of Electronics Engineering</li>
-                        <li className="custom-list-item w-[fit-content]">School of Mechanical Engineering</li>
-                        <li className="custom-list-item w-[fit-content]">School of Advanced Sciences</li>
-                        <li className="custom-list-item w-[fit-content]">School of Social Science and Humanities</li>
-                        <li className="custom-list-item w-[fit-content]">School of Law</li>
-                        <li className="custom-list-item w-[fit-content]">School of Business</li>
+                        <li className="custom-list-item w-[fit-content]">Computer Science and Engineering</li>
+                        <li className="custom-list-item w-[fit-content]">Electronics Engineering</li>
+                        <li className="custom-list-item w-[fit-content]">Electrical Engineering</li>
+                        <li className="custom-list-item w-[fit-content]">Mechanical Engineering</li>
+                        <li className="custom-list-item w-[fit-content]">Advanced Sciences</li>
+                        <li className="custom-list-item w-[fit-content]">Social Sciences and Humanities</li>
+                        <li className="custom-list-item w-[fit-content]">Law</li>
+                        <li className="custom-list-item w-[fit-content]">Business</li>
                       </ol>
                     ) : null}
                 </div>
@@ -321,7 +322,8 @@ const NavbarBottom = () => {
 
                     <ol className="flex-row font-[400] text-[20px]  pt-[60px] pl-[110px] space-y-[19px]">
                       <li className=" custom-list-item   w-[100px]">
-                        Overview
+                       <Link href="/cdc-overview">Overview</Link>
+                  
                       </li>
 
                       <li className="absolute left-[600px]  top-[40px]  ">
@@ -329,7 +331,7 @@ const NavbarBottom = () => {
                       </li>
 
                       <li className="peer/leadership custom-list-item w-[fit-content]">
-                        Super Dream Offers
+                      <Link href="/cdc-superdream">Superdream</Link>
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/leadership:visible">
                         <Image alt="A descriptive text here" src={image2} />
@@ -357,14 +359,14 @@ const NavbarBottom = () => {
                       </li>
 
                       <li className="peer/cdc custom-list-item w-[fit-content]">
-                        CDC Office
+                        <Link href="/cdc-office">CDC Office</Link>
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/cdc:visible">
                         <Image alt="A descriptive text here" src={image5} />
                       </li>
 
                       <li className="peer/Statistics custom-list-item w-[fit-content]">
-                        Statistics
+                        <Link href="/cdc-statistics">Statistics</Link>
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/Statistics:visible">
                         <Image alt="A descriptive text here" src={image5} />

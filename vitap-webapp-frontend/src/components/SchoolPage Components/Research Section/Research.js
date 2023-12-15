@@ -46,19 +46,10 @@ export default function Research() {
                     <p class="text-[18px]  text-montserrat text-center pl-[5px]">EXPLORE MORE</p></div>
                 </div>
               </div>
-
-
-                <hr></hr>
-              </div>
-
             })}
-
-
           </div>
-
         </div>
       </div>
-
     </>
   )
 }

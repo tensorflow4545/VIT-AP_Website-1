@@ -1,11 +1,36 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { programmesOffered } from "@/constants";
 import { BiSolidDownArrow } from "react-icons/bi";
+import axios from "axios";
 
 const ProgrammesOffered = () => {
   const [active, setActive] = useState("undergraduate");
+  const [ProgrammesOffered, SetProgrammesOffered] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/home-page-programmres-offered-sections`,{
+          headers: {
+            Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
+          },
+        });
+
+        if (response.data && Array.isArray(response.data.data)) {
+          const extractedAttributes = response.data.data.map(item => item.attributes);
+          SetProgrammesOffered(extractedAttributes);
+        } else {
+          console.error('The "data" property in the API response is not an array:', response.data);
+        }
+      } catch (error) {
+        console.error('Error fetching data:', error.message);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <>
@@ -24,7 +49,7 @@ const ProgrammesOffered = () => {
               latest technologies with relevant practice through lab and
               projects for building problem-solving skills */}
             </p>
-            <div className="md:flex md:flex-col my-[20px] justify-center items-center text-center gap-10 grid grid-cols-2">
+            <div className="md:flex md:flex-col my-[20px] justify-center items-center text-center gap-5 grid grid-cols-2">
               <h1
                 className={`font-Montserrat lx:text-[20px] text-[16px] py-[19px] md:px-[23px] ${active === "undergraduate" ? "border border-zinc-200" : ""
                   } cursor-pointer w-full first-letter`}
@@ -41,14 +66,21 @@ const ProgrammesOffered = () => {
                 Dual Degree
               </h1>
               <h1
-                className={`font-Montserrat lx:text-[18px] text-[16px] py-[19px] md:px-[23px] ${active === "postgraduate" ? "border border-zinc-200" : ""
+                className={`font-Montserrat lx:text-[20px] text-[16px] py-[19px] md:px-[23px] ${active === "Integrated" ? "border border-zinc-200" : ""
+                  } cursor-pointer w-full first-letter`}
+                onClick={() => setActive("Integrated")}
+              >
+                Integrated
+              </h1>
+              <h1
+                className={`font-Montserrat lx:text-[20px] text-[16px] py-[19px] md:px-[23px] ${active === "postgraduate" ? "border border-zinc-200" : ""
                   } cursor-pointer w-full first-letter`}
                 onClick={() => setActive("postgraduate")}
               >
                 Postgraduate
               </h1>
               <h1
-                className={`font-Montserrat lx:text-[18px] text-[16px] py-[19px] md:px-[23px] ${active === "doctorial" ? "border border-zinc-200" : ""
+                className={`font-Montserrat lx:text-[20px] text-[16px] py-[19px] md:px-[23px] ${active === "doctorial" ? "border border-zinc-200" : ""
                   } cursor-pointer w-full first-letter`}
                 onClick={() => setActive("doctorial")}
               >
@@ -62,14 +94,15 @@ const ProgrammesOffered = () => {
                 Engineering
               </h3>  */}
 
-              {programmesOffered.map((program) =>
-                program.field === active ? (
+              {ProgrammesOffered.map((attributes, index) =>
+                attributes.Field === active ? (
                   <h1
-                    key={program.id}
+                    key={index}
                     className="py-[19px] max-w-[432px] font-Emilio max-lx:py-[16px] text-[#51060D] text-[20px] max-lx:text-[15px] font-[500] capitalize border border-l-0 border-t-0 border-r-0 border-b-gray-500 hover:font-bold"
                   >
                     <a href="#">
-                      {program.title}</a>
+                      {attributes.Title}
+                    </a>
                   </h1>
                 ) : (
                   ""
@@ -108,6 +141,13 @@ const ProgrammesOffered = () => {
               onClick={() => setActive("Dual Degree")}
             >
               Dual Degree
+            </li>
+            <li
+              className={`py-[10px] px-[10px] ${active === "Integrated" ? "border border-zinc-200" : ""
+                }`}
+              onClick={() => setActive("Integrated")}
+            >
+              Integrated
             </li>
             <li
               className={`py-[10px] px-[10px] ${active === "postgraduate" ? "border border-zinc-200" : ""
