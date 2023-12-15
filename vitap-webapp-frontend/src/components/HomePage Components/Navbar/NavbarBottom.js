@@ -338,7 +338,7 @@ const NavbarBottom = () => {
                       </li>
 
                       <li className="peer/Governance custom-list-item w-[fit-content]">
-                        Dream offers
+                        <Link href="cdc-dream">Dream offers</Link>
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/Governance:visible">
                         <Image alt="A descriptive text here" src={image3} />
