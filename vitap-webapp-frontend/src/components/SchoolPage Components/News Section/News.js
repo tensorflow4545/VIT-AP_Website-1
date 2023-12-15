@@ -2,24 +2,51 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useState,useEffect } from "react";
+import axios from "axios";
+
 export default function News() {
-  const News = [
-    {
-      img: "/news.png",
-      head: "Meet and Greet’23",
-      desc: "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur."
-    },
-    {
-      img: "/news.png",
-      head: "Meet and Greet’23",
-      desc: "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur."
-    },
-    {
-      img: "/news.png",
-      head: "Meet and Greet’23",
-      desc: "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur."
-    }
-  ];
+  // const News = [
+  //   {
+  //     img: "/news.png",
+  //     head: "Meet and Greet’23",
+  //     desc: "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur."
+  //   }, 
+  //   {
+  //     img: "/news.png",
+  //     head: "Meet and Greet’23",
+  //     desc: "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur."
+  //   },
+  //   {
+  //     img: "/news.png",
+  //     head: "Meet and Greet’23",
+  //     desc: "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur."
+  //   }
+  // ];
+  const [News, setNews] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/events-datas?populate=*`,{
+            headers: {
+              Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
+            },
+          });
+        if (response.data && Array.isArray(response.data.data)) {
+          const extractedAttributes = response.data.data.map((item) => item.attributes);
+          setNews(extractedAttributes);
+        } else {
+          console.error('The "data" property in the API response is not an array:', response.data);
+        }
+      } catch (error) {
+        console.error('Error fetching data:', error.message);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <>
       <div class="w-full h-[800px] bg-white">
@@ -46,16 +73,16 @@ export default function News() {
 
                 <div className="basis w-[350px] h-[450px] bg-white rounded-sm mr-[24px] trasnition duration-1000 hover:-translate-y-5 ">
                   <Link href={"/"}>
-                    <div className="w-[350px] h-[241px] relative">
-                      <Image className="absolute z-0" width={350} height={241} src={news.img} alt="Event Image"></Image>
-                      <div className="w-[53px] h-[72px] bg-red-900 absolute z-10 right-5 top-7 rounded-md">
-                        <p className="text-[16px] text-white text-emilio font-semibold pt-[8px] px-[13px]">Oct</p>
-                        <p className="text-[28px] text-white text-emilio font-semibold px-[11px]">23</p>
+                    <div className="w-[350px] h-[241px] relative overflow-hidden">
+                      <Image className="absolute z-0" width={350} height={241} src={`${process.env.NEXT_PUBLIC_API_URL}${news?.Image.data[0].attributes.url}`} alt={news?.Image.data[0].attributes.alternativeText || 'Alt Text'}></Image>
+                      <div className="w-[53px] h-[72px] bg-red-900 absolute z-10 right-5 top-7 rounded-md text-center justify-center items-center">
+                        <p className="text-[16px] text-white text-emilio font-semibold pt-[8px] px-[11px] text-center">{news.Date}</p>
+                        {/* <p className="text-[28px] text-white text-emilio font-semibold px-[11px]">23</p> */}
                       </div>
                     </div>
 
-                    <p className="text-[28px] text-dark font-[600px] font-Emilio pt-[16px]">{news.head}</p>
-                    <p className="text-[18px] text-zinc-400 text-montserrat font-[400px] pt-[9px]">{news.desc}</p>
+                    <p className="text-[28px] w-[350px] h-[100px] text-dark font-[600px] font-Emilio pt-[16px] overflow-hidden text-ellipsis">{news.Title}</p>
+                    <p className="text-[18px] w-[350px] h-[90px] text-zinc-400 text-montserrat font-[400px] pt-[9px] overflow-hidden text-ellipsis">{news.Description}</p>
                     <p className="text-[18px] text-red-950 font-medium text-montserrat pt-[16px]">Know More</p>
                   </Link>
                 </div>

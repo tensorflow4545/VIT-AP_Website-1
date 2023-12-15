@@ -142,7 +142,7 @@ const NavbarBottom = () => {
                     </ol>
                   </div>
                 </div>
-              </div>
+                Programmes</div>
             </li>
 
             <li
@@ -160,7 +160,7 @@ const NavbarBottom = () => {
 
                   <ol className="flex-row font-[400] text-[20px]  pt-[60px] pl-[110px] space-y-[19px]">
                     <li
-                      className={` hover:cursor-pointer  w-[fit-content] ${underline}`}
+                      className={` hover:cursor-pointer custom-list-item w-[fit-content] ${underline}`}
 
                       onMouseEnter={() => {
                         setProgrammes([
