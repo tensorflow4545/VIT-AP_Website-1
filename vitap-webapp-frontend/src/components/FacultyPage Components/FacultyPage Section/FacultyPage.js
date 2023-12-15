@@ -5,6 +5,7 @@ import { AiOutlineArrowLeft, AiOutlineArrowRight, AiOutlineSearch } from 'react-
 import "./FacultyPage.css"
 import Link from 'next/link';
 import { professors } from '@/constants';
+import Image from 'next/image';
 
 const FacultyPage = () => {
 
@@ -33,26 +34,26 @@ const FacultyPage = () => {
                 </h1>
             </div>
 
-            <div className='grid grid-cols-2 max-w-[1440px] mx-auto gap-5 text-center py-[70px] text-[#650010]'>
-                <div className={`border border-[#650010] py-5 font-Montserrant text-[20px] mx-5 rounded-xl hover:bg-[#650010] hover:text-white transition-all duration-300 ${active === 0 ? 'bg-[#650010] text-white' : 'bg-white'} cursor-pointer`} onClick={() => setActive(0)}>
+            <div className='grid grid-cols-4 max-w-[1440px] mx-auto gap-3 text-center p-[30px] text-[#650010] bg-[#F3F4F8] my-10'>
+                <div className={`py-5 font-Montserrant text-[20px] hover:bg-[#650010] hover:text-white transition-all duration-300 ${active === 0 ? 'bg-[#650010] text-white' : 'bg-[#F3F4F8]'} cursor-pointer`} onClick={() => setActive(0)}>
                     School of Computer Science and Engineering (SCOPE) 
                 </div>
-                <div className={`border border-[#650010] py-5 font-Montserrant text-[20px] mx-5 rounded-xl hover:bg-[#650010] hover:text-white transition-all duration-300 ${active === 1 ? 'bg-[#650010] text-white' : 'bg-white'} cursor-pointer`} onClick={() => setActive(1)}>
+                <div className={`py-5 font-Montserrant text-[20px] hover:bg-[#650010] hover:text-white transition-all duration-300 ${active === 1 ? 'bg-[#650010] text-white' : 'bg-[#F3F4F8]'} cursor-pointer`} onClick={() => setActive(1)}>
                     School of Electronics Engineering   
                 </div>
-                <div className={`border border-[#650010] py-5 font-Montserrant text-[20px] mx-5 rounded-xl hover:bg-[#650010] hover:text-white transition-all duration-300 ${active === 2 ? 'bg-[#650010] text-white' : 'bg-white'} cursor-pointer`} onClick={() => setActive(2)}>
+                <div className={`py-5 font-Montserrant text-[20px] hover:bg-[#650010] hover:text-white transition-all duration-300 ${active === 2 ? 'bg-[#650010] text-white' : 'bg-[#F3F4F8]'} cursor-pointer`} onClick={() => setActive(2)}>
                     School of Mechanical Engineering (SMEC)  
                 </div>
-                <div className={`border border-[#650010] py-5 font-Montserrant text-[20px] mx-5 rounded-xl hover:bg-[#650010] hover:text-white transition-all duration-300 ${active === 3 ? 'bg-[#650010] text-white' : 'bg-white'} cursor-pointer`} onClick={() => setActive(3)}>
+                <div className={`py-5 font-Montserrant text-[20px] hover:bg-[#650010] hover:text-white transition-all duration-300 ${active === 3 ? 'bg-[#650010] text-white' : 'bg-[#F3F4F8]'} cursor-pointer`} onClick={() => setActive(3)}>
                     School of Advanced Science (SAS)  
                 </div>
-                <div className={`border border-[#650010] py-5 font-Montserrant text-[20px] mx-5 rounded-xl hover:bg-[#650010] hover:text-white transition-all duration-300 ${active === 4 ? 'bg-[#650010] text-white' : 'bg-white'} cursor-pointer`} onClick={() => setActive(4)}>
+                <div className={`py-5 font-Montserrant text-[20px] hover:bg-[#650010] hover:text-white transition-all duration-300 ${active === 4 ? 'bg-[#650010] text-white' : 'bg-[#F3F4F8]'} cursor-pointer`} onClick={() => setActive(4)}>
                     School of Business (VSB)  
                 </div>
-                <div className={`border border-[#650010] py-5 font-Montserrant text-[20px] mx-5 rounded-xl hover:bg-[#650010] hover:text-white transition-all duration-300 ${active === 5 ? 'bg-[#650010] text-white' : 'bg-white'} cursor-pointer`} onClick={() => setActive(5)}>
+                <div className={`py-5 font-Montserrant text-[20px] hover:bg-[#650010] hover:text-white transition-all duration-300 ${active === 5 ? 'bg-[#650010] text-white' : 'bg-[#F3F4F8]'} cursor-pointer`} onClick={() => setActive(5)}>
                     School of Law (VSL)  
                 </div>
-                <div className={`border border-[#650010] py-5 font-Montserrant text-[20px] mx-5 rounded-xl hover:bg-[#650010] hover:text-white transition-all duration-300 ${active === 6 ? 'bg-[#650010] text-white' : 'bg-white'} cursor-pointer`} onClick={() => setActive(6)}>
+                <div className={`py-5 font-Montserrant text-[20px] hover:bg-[#650010] hover:text-white transition-all duration-300 ${active === 6 ? 'bg-[#650010] text-white' : 'bg-[#F3F4F8]'} cursor-pointer`} onClick={() => setActive(6)}>
                     School of Social Science and Humanities (VISH)  
                 </div>
             </div>
@@ -65,7 +66,7 @@ const FacultyPage = () => {
             </div>
 
             <div className='grid md:grid-cols-5 max-w-[1250px] md:mx-auto items-center justify-center grid-cols-4 gap-5 mx-[30px]'>
-                {
+                {/* {
                     professors.slice(0, 15).map((professor) => (
                         <div key={professor.id} className='border border-black ml-[15px] max-w-[210px] min-h-[250px] w-[100%] h-[100%] relative overflow-hidden font-Emilo cursor-pointer group'>
                             <div style={{ backgroundImage: `url(/professor.png)` }} className='bg-no-repeat bg-right bg-contain w-full absolute bottom-[70px] right-0 pt-[10px] pl-[15px] tracking-normal font-semibold text-left flex flex-col justify-center items-start space-y-0 min-h-[170px] group-hover:bottom-[60px] group-hover:-right-2 transition-all duration-300 ease-in-out group'>
@@ -88,10 +89,23 @@ const FacultyPage = () => {
                             </div>
                         </div>
                     ))
+                } */}
+
+                {
+                    professors.slice(0, 15).map((professor) => (
+                        <div key={professor.id} className='border border-black ml-[15px] max-w-[210px] min-h-[250px] w-[100%] h-[100%] relative overflow-hidden font-Emilo cursor-pointer group hover:shadow-2xl'>
+                            <div className='max-w-[210px] w-[100%] min-h-[180px] relative overflow-hidden'>
+                                <Image src={"/facultyimg.png"} alt='faculty' fill className='' />
+                            </div>
+                            <div className='absolute w-full bottom-0 left-0 h-[70px] bg-[#650010] group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-red-700 transition-all duration-300 flex justify-center items-center'>
+                                <h1 className='font-semibold text-center text-white font-Emilo text-[16px]'>{professor.name}</h1>
+                            </div>
+                        </div>
+                    ))
                 }
+
                 
-                {/*
-                <div className='border border-black ml-[15px] max-w-[210px] min-h-[250px] w-[100%] h-[100%] relative overflow-hidden font-Emilo cursor-pointer group'>
+                {/* <div className='border border-black ml-[15px] max-w-[210px] min-h-[250px] w-[100%] h-[100%] relative overflow-hidden font-Emilo cursor-pointer group'>
                     <div style={{ backgroundImage: `url(/professor.png)` }} className='bg-no-repeat bg-right bg-contain w-full absolute bottom-[70px] right-0 pt-[10px] pl-[15px] tracking-normal font-semibold text-left flex flex-col justify-center items-start space-y-0 min-h-[170px] group-hover:bottom-[60px] group-hover:-right-2 transition-all duration-300 ease-in-out group'>
                         <h1 className='pl-[20px] text-[35px] text-[#650010] -rotate-90 leading-7 group-hover:hidden'>E</h1>
                         <h1 className='pl-[20px] text-[35px] text-[#650010] -rotate-90 leading-7 group-hover:hidden'>P</h1>

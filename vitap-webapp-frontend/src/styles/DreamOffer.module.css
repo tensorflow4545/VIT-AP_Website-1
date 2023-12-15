@@ -1,0 +1,87 @@
+@media screen and (max-width: 720px) {
+  .container {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+  }
+  .head {
+    font-size: 35px;
+    width: 400px;
+    margin-top: 100px;
+  }
+  .line {
+    margin-top: 150px;
+  }
+  .heading {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: 15px;
+  }
+  .div1 {
+    width: 680px;
+    margin-left: 20px;
+    height: 900px;
+  }
+  .paragraph {
+    margin-left: 15px;
+    margin-top: 115px;
+  }
+  .img {
+    margin-top: -20px;
+    margin-left: 35px;
+    width: 650px;
+  }
+  .image {
+    width: 650px;
+  }
+  .info1 {
+    margin-top: 420px;
+  }
+  .h1 {
+    font-size: 40px;
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+  .infodiv {
+    margin-left: -170px;
+    width: 890px;
+    height: 700px;
+    margin-top: 70px;
+  }
+  .redbg {
+    height: 700px;
+  }
+  .img2 {
+    opacity: 0;
+  }
+  .img3 {
+    margin-left: 300px;
+  }
+  .img4 {
+    margin-left: 760px;
+  }
+  .buttons {
+    margin-left: 292px;
+    margin-top: -110px;
+  }
+  .pinkbg {
+    margin-top: 500px;
+    height: 700px;
+  }
+  .card1 {
+    margin-top: -700px;
+    margin-left: 30px;
+  }
+  .card2 {
+    margin-left: -550px;
+    margin-top: -320px;
+  }
+  .card3 {
+    margin-top: -320px;
+    margin-left: 30px;
+  }
+  .card4 {
+    margin-left: -530px;
+    margin-top: 50px;
+  }
+}
