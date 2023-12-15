@@ -6,29 +6,12 @@ import { useState,useEffect } from "react";
 import axios from "axios";
 
 export default function News() {
-  // const News = [
-  //   {
-  //     img: "/news.png",
-  //     head: "Meet and Greet’23",
-  //     desc: "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur."
-  //   }, 
-  //   {
-  //     img: "/news.png",
-  //     head: "Meet and Greet’23",
-  //     desc: "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur."
-  //   },
-  //   {
-  //     img: "/news.png",
-  //     head: "Meet and Greet’23",
-  //     desc: "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur."
-  //   }
-  // ];
   const [News, setNews] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/events-datas?populate=*`,{
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/events-datas?populate=*&sort=id:desc`,{
             headers: {
               Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
             },
@@ -67,7 +50,8 @@ export default function News() {
           {/* flex */}
           <div className="flex flex-row pt-[63px] justify-center items-center">
 
-            {News.map((news) => {
+            {News.slice(0,3).map((news) => {
+              if (news.Department === "SCOPE") {
               return <div>
                 {/* card */}
 
@@ -87,6 +71,7 @@ export default function News() {
                   </Link>
                 </div>
               </div>
+              }
             })}
 
 

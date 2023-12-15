@@ -207,27 +207,27 @@ export default function Footer() {
           <div class="flex flex-row justify-center">
             <div class="basis">
               <div >
-                <p class="text-red-900 text-[15px] font-bold">Apply Now</p>
+                <p class="text-primary text-[15px] font-Emilio font-bold">Apply Now</p>
               </div>
             </div>
             <div class="basis pt-[5px] px-[40px]">
-              <div class="w-[5px] h-[5px] bg-red-900 rounded">
+              <div class="w-[5px] h-[5px] bg-primary rounded">
 
               </div>
             </div>
             <div class="basis">
               <div>
-                <p class="text-red-900 text-[15px] font-bold">Maps</p>
+                <p class="text-primary text-[15px] font-Emilio font-bold">Maps</p>
               </div>
             </div>
             <div class="basis pt-[5px] px-[20px]">
-              <div class="w-[5px] h-[5px] bg-red-900 rounded">
+              <div class="w-[5px] h-[5px] bg-primary rounded">
 
               </div>
             </div>
             <div class="basis">
               <div>
-                <p class="text-red-900 text-[15px] font-bold">Outreach</p>
+                <p class="text-primary text-[15px] font-Emilio font-bold">Outreach</p>
               </div>
             </div>
           </div>
@@ -240,7 +240,7 @@ export default function Footer() {
                 href="https://www.instagram.com/vitap.university/?hl=en"
 
               >
-                <BiLogoInstagramAlt class="bg-purple-300" size={30} />
+                <BiLogoInstagramAlt class="bg-[#DCCED0]" size={30} />
               </a>
             </div>
             <div class="basis pr-[10px]">
@@ -248,7 +248,7 @@ export default function Footer() {
                 href="https://www.linkedin.com/school/vitap-university/?originalSubdomain=in"
 
               >
-                <AiFillLinkedin class="bg-purple-300" size={30} />
+                <AiFillLinkedin class="bg-[#DCCED0]" size={30} />
               </a>
             </div>
             <div class="basis pr-[10px]">
@@ -256,12 +256,12 @@ export default function Footer() {
                 href="https://www.facebook.com/vitap.university/"
 
               >
-                <BiLogoFacebookCircle class="bg-purple-300" size={29} />
+                <BiLogoFacebookCircle class="bg-[#DCCED0]" size={29} />
               </a>
             </div>
             <div class="basis pr-[10px]">
               <a href="https://www.youtube.com/c/VITAP" >
-                <AiFillYoutube class="bg-purple-300" size={30} />
+                <AiFillYoutube class="bg-[#DCCED0]" size={30} />
               </a>
             </div>
             <div class="basis">
@@ -270,207 +270,211 @@ export default function Footer() {
 
               >
 
-                <FaXTwitter class="bg-purple-300" size={29} />
+                <FaXTwitter class="bg-[#DCCED0]" size={29} />
               </a>
             </div>
           </div>
 
-          <div class="w-full text-center pt-[20px]"><p class="text-red-900 text-[15px] font-bold pt-[30px] pb-[20px]">Quick Links</p></div>
+          <div class="w-full text-center pt-[20px]"><p class="text-primary text-[15px] font-Emilio font-bold pt-[30px] pb-[20px]">Quick Links</p></div>
           {/* flex */}
           <div class="flex flex-row w-full justify-center">
             <div class="basis">
-              <p class="text-[14px] text-gray-500 text-montserrat">Careers  </p>
+              <p class="text-[14px] text-gray-500 font-Montserrat">Careers  </p>
             </div>
             <div class="basis pt-[9px] px-[10px]">
-              <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+              <div class="w-[5px] h-[5px] bg-black rounded "></div>
             </div>
             <div class="basis">
-              <p class="text-[14px] text-gray-500 text-montserrat">Gallery</p>
+              <p class="text-[14px] text-gray-500 font-Montserrat">Gallery</p>
             </div>
             <div class="basis pt-[9px] px-[10px]">
-              <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+              <div class="w-[5px] h-[5px] bg-black rounded "></div>
             </div>
             <div class="basis">
-              <p class="text-[14px] text-gray-500 text-montserrat">Hostels</p>
+              <p class="text-[14px] text-gray-500 font-Montserrat">Hostels</p>
             </div>
             <div class="basis pt-[9px] px-[10px]">
-              <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+              <div class="w-[5px] h-[5px] bg-black rounded "></div>
             </div>
             <div class="basis">
-              <p class="text-[14px] text-gray-500 text-montserrat">Transport</p>
+              <p class="text-[14px] text-gray-500 font-Montserrat">Transport</p>
             </div>
             <div class="basis pt-[9px] px-[10px]">
-              <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+              <div class="w-[5px] h-[5px] bg-black rounded "></div>
             </div>
             <div class="basis">
-              <p class="text-[14px] text-gray-500 text-montserrat">Policies</p>
+              <p class="text-[14px] text-gray-500 font-Montserrat">Policies</p>
             </div>
           </div>
+          <div className="relative w-screen h-[2px] bg-primary top-[30px] bg-opacity-10"></div>
 
           {/* Vit Connect */}
-          <div class="w-full text-center pt-[20px]"><p class="text-red-900 text-[15px] font-bold pt-[30px] pb-[20px]">VIT Connect</p></div>
+          <div class="w-full text-center pt-[20px]"><p class="text-primary text-[15px] font-Emilio font-bold pt-[30px] pb-[20px]">VIT Connect</p></div>
           {/* flex */}
           <div class="flex flex-row w-full justify-center">
             <div class="basis">
-              <p class="text-[14px] text-gray-500 text-montserrat">VTOP Login</p>
+              <p class="text-[14px] text-gray-500 font-Montserrat">VTOP Login</p>
             </div>
             <div class="basis pt-[9px] px-[10px]">
-              <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+              <div class="w-[5px] h-[5px] bg-black rounded "></div>
             </div>
             <div class="basis">
-              <p class="text-[14px] text-gray-500 text-montserrat">Mail</p>
+              <p class="text-[14px] text-gray-500 font-Montserrat">Mail</p>
             </div>
             <div class="basis pt-[9px] px-[10px]">
-              <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+              <div class="w-[5px] h-[5px] bg-black rounded "></div>
             </div>
             <div class="basis">
-              <p class="text-[14px] text-gray-500 text-montserrat">Alumni</p>
+              <p class="text-[14px] text-gray-500 font-Montserrat">Alumni</p>
             </div>
             <div class="basis pt-[9px] px-[10px]">
-              <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+              <div class="w-[5px] h-[5px] bg-black rounded "></div>
             </div>
             <div class="basis">
-              <p class="text-[14px] text-gray-500 text-montserrat">Contact Us</p>
+              <p class="text-[14px] text-gray-500 font-Montserrat">Contact Us</p>
             </div>
           </div>
+          <div className="relative w-screen h-[2px] bg-primary top-[30px] bg-opacity-10"></div>
 
           {/* Ranking */}
           <div>
-            <div class="w-full text-center pt-[20px]"><p class="text-red-900 text-[15px] font-bold pt-[30px] pb-[20px]">Ranking & Accereditation</p></div>
+            <div class="w-full text-center pt-[20px]"><p class="text-primary text-[15px] font-Emilio font-bold pt-[30px] pb-[20px]">Ranking & Accereditation</p></div>
             {/* flex */}
             <div class="flex flex-row w-full justify-center">
               <div class="basis">
-                <p class="text-[14px] text-gray-500 text-montserrat">RAAC</p>
+                <p class="text-[14px] text-gray-500 font-Montserrat">RAAC</p>
               </div>
               <div class="basis pt-[9px] px-[10px]">
-                <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+                <div class="w-[5px] h-[5px] bg-black rounded "></div>
               </div>
               <div class="basis">
-                <p class="text-[14px] text-gray-500 text-montserrat">NAAC</p>
+                <p class="text-[14px] text-gray-500 font-Montserrat">NAAC</p>
               </div>
             </div>
           </div>
-
+          <div className="relative w-screen h-[2px] bg-primary top-[30px] bg-opacity-10"></div>
           {/* Research */}
           <div>
-            <div class="w-full text-center pt-[20px]"><p class="text-red-900 text-[15px] font-bold pt-[30px] pb-[20px]">Research</p></div>
+            <div class="w-full text-center pt-[20px]"><p class="text-primary text-[15px] font-Emilio font-bold pt-[30px] pb-[20px]">Research</p></div>
             {/* flex */}
             <div class="flex flex-row w-full pb-[7px] justify-center">
               <div class="basis">
-                <p class="text-[14px] text-gray-500 text-montserrat">Centers  </p>
+                <p class="text-[14px] text-gray-500 font-Montserrat">Centers  </p>
               </div>
               <div class="basis pt-[9px] px-[10px]">
-                <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+                <div class="w-[5px] h-[5px] bg-black rounded "></div>
               </div>
               <div class="basis">
-                <p class="text-[14px] text-gray-500 text-montserrat">Google Scholar</p>
+                <p class="text-[14px] text-gray-500 font-Montserrat">Google Scholar</p>
               </div>
               <div class="basis pt-[9px] px-[10px]">
-                <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+                <div class="w-[5px] h-[5px] bg-black rounded "></div>
               </div>
               <div class="basis">
-                <p class="text-[14px] text-gray-500 text-montserrat">Scopus</p>
+                <p class="text-[14px] text-gray-500 font-Montserrat">Scopus</p>
               </div>
               <div class="basis pt-[9px] px-[10px]">
-                <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+                <div class="w-[5px] h-[5px] bg-black rounded "></div>
               </div>
               <div class="basis">
-                <p class="text-[14px] text-gray-500 text-montserrat">Patents</p>
+                <p class="text-[14px] text-gray-500 font-Montserrat">Patents</p>
               </div>
             </div>
+            <div className="relative w-screen h-[2px] bg-primary top-[40px] bg-opacity-10"></div>
             {/* flex */}
             <div class="flex flex-row w-full justify-center">
               <div class="basis">
-                <p class="text-[14px] text-gray-500 text-montserrat">Projects</p>
+                <p class="text-[14px] text-gray-500 font-Montserrat">Projects</p>
               </div>
               <div class="basis pt-[9px] px-[10px]">
-                <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+                <div class="w-[5px] h-[5px] bg-black rounded "></div>
               </div>
               <div class="basis">
-                <p class="text-[14px] text-gray-500 text-montserrat">Publications</p>
+                <p class="text-[14px] text-gray-500 font-Montserrat">Publications</p>
               </div>
             </div>
           </div>
 
           {/* Program */}
           <div>
-            <div class="w-full text-center pt-[20px]"><p class="text-red-900 text-[15px] font-bold pt-[30px] pb-[20px]">Programs</p></div>
+            <div class="w-full text-center pt-[20px]"><p class="text-primary text-[15px] font-Emilio font-bold pt-[30px] pb-[20px]">Programs</p></div>
             {/* flex */}
-            <div class="flex flex-row w-full pb-[7px] justify-center">
+            <div class="flex flex-row w-screen pb-[7px] justify-center">
               <div class="basis">
-                <p class="text-[14px] text-gray-500 text-montserrat">Programs Offered</p>
+                <p class="text-[14px] text-gray-500 font-Montserrat">Programs Offered</p>
               </div>
               <div class="basis pt-[9px] px-[10px]">
-                <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+                <div class="w-[5px] h-[5px] bg-black rounded "></div>
               </div>
               <div class="basis">
-                <p class="text-[14px] text-gray-500 text-montserrat">Academic Calender</p>
+                <p class="text-[14px] text-gray-500 font-Montserrat">Academic Calender</p>
               </div>
               <div class="basis pt-[9px] px-[10px]">
-                <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+                <div class="w-[5px] h-[5px] bg-black rounded "></div>
               </div>
               <div class="basis">
-                <p class="text-[14px] text-gray-500 text-montserrat">Application Process</p>
+                <p class="text-[14px] text-gray-500 font-Montserrat">Application Process</p>
               </div>
             </div>
+            <div className="relative w-screen h-[2px] bg-primary top-[40px] bg-opacity-10"></div>
             {/* flex */}
             <div class="flex flex-row w-full justify-center">
               <div class="basis">
-                <p class="text-[14px] text-gray-500 text-montserrat">Scholarship</p>
+                <p class="text-[14px] text-gray-500 font-Montserrat">Scholarship</p>
               </div>
               <div class="basis pt-[9px] px-[10px]">
-                <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+                <div class="w-[5px] h-[5px] bg-black rounded "></div>
               </div>
               <div class="basis">
-                <p class="text-[14px] text-gray-500 text-montserrat">Fee Structure</p>
+                <p class="text-[14px] text-gray-500 font-Montserrat">Fee Structure</p>
               </div>
               <div class="basis pt-[9px] px-[10px]">
-                <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+                <div class="w-[5px] h-[5px] bg-black rounded "></div>
               </div>
               <div class="basis">
-                <p class="text-[14px] text-gray-500 text-montserrat">IQAC</p>
+                <p class="text-[14px] text-gray-500 font-Montserrat">IQAC</p>
               </div>
             </div>
           </div>
 
           {/* Information */}
           <div class="pb-[20px]">
-            <div class="w-full text-center pt-[20px]"><p class="text-red-900 text-[15px] font-bold pt-[30px] pb-[20px]">Information</p></div>
+            <div class="w-full text-center pt-[20px]"><p class="text-primary text-[15px] font-Emilio font-bold pt-[30px] pb-[20px]">Information</p></div>
             {/* flex */}
             <div class="flex flex-row w-full pb-[7px] justify-center">
               <div class="basis">
-                <p class="text-[14px] text-gray-500 text-montserrat">Public Note: University Act</p>
+                <p class="text-[14px] text-gray-500 font-Montserrat">Public Note: University Act</p>
               </div>
               <div class="basis pt-[9px] px-[10px]">
-                <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+                <div class="w-[5px] h-[5px] bg-black rounded "></div>
               </div>
               <div class="basis">
-                <p class="text-[14px] text-gray-500 text-montserrat">Forms</p>
+                <p class="text-[14px] text-gray-500 font-Montserrat">Forms</p>
               </div>
               <div class="basis pt-[9px] px-[10px]">
-                <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+                <div class="w-[5px] h-[5px] bg-black rounded "></div>
               </div>
               <div class="basis">
-                <p class="text-[14px] text-gray-500 text-montserrat">Directory</p>
+                <p class="text-[14px] text-gray-500 font-Montserrat">Directory</p>
               </div>
             </div>
             {/* flex */}
             <div class="flex flex-row w-full justify-center">
               <div class="basis">
-                <p class="text-[14px] text-gray-500 text-montserrat">Feedback</p>
+                <p class="text-[14px] text-gray-500 font-Montserrat">Feedback</p>
               </div>
               <div class="basis pt-[9px] px-[10px]">
-                <div class="w-[5px] h-[5px] bg-slate-900 rounded "></div>
+                <div class="w-[5px] h-[5px] bg-black rounded "></div>
               </div>
               <div class="basis">
-                <p class="text-[14px] text-gray-500 text-montserrat">Academic Bank of Credit (ABC)</p>
+                <p class="text-[14px] text-gray-500 font-Montserrat">Academic Bank of Credit (ABC)</p>
               </div>
             </div>
           </div>
 
           {/* Credit Section */}
-          <div class="w-full h-[51px] bg-red-900">
-            <p class="text-white items-center text-center text-[16px] font-semibold text-emilio py-[10px]">Crafted With Passion At VIT-AP University</p>
+          <div class="w-full h-[51px] bg-primary">
+            <p class="text-white items-center text-center text-[16px] font-semibold font-Emilio py-[10px]">Crafted With Passion At VIT-AP University</p>
           </div>
         </div>
       </div>
