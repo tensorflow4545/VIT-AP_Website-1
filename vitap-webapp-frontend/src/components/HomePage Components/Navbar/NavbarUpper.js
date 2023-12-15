@@ -142,7 +142,7 @@ const NavbarUpper = () => {
             <a href="https://alumni.vitap.ac.in/" target="_blank" rel="noopener noreferrer">Alumini</a>
           </li>
           <li>
-            <a>VIT-AP Advantages</a>
+            <a href="/advantages" target="_blank">VIT-AP Advantages</a>
           </li>
 
           <li>
