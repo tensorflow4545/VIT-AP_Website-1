@@ -345,7 +345,7 @@ const NavbarBottom = () => {
                       </li>
 
                       <li className="peer/contactus custom-list-item w-[fit-content]">
-                        Internships
+                        <Link href="/internships">Internships</Link>
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/contactus:visible">
                         <Image alt="A descriptive text here" src={image4} />
