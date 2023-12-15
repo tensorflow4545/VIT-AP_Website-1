@@ -7,26 +7,37 @@ import sd from "../../assets/images/Dream Offers/superdream.png";
 import dr from "../../assets/images/Dream Offers/dream.png";
 import st from "../../assets/images/Dream Offers/statistics.png";
 import cdc from "../../assets/images/Dream Offers/cdcoffice.png";
+import styles from "../../styles/DreamOffer.module.css";
 
 const DreamOffer = () => {
   return (
     <>
       <div>
-        <div className="relative">
+        <div className={`${styles.container} relative`}>
           <Image src={banner} className="w-[100%]" />
           <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900 to-gray-900 opacity-50"></div>
           <div className="absolute inset-0">
-            <p className="absolute font-Emilo text-white opacity-100 font-bold text-[44px] mt-[205px] ml-[34px] w-[139px]">
+            <p
+              className={`${styles.head} absolute font-Emilo text-white opacity-100 font-bold text-[44px] mt-[205px] ml-[34px] w-[139px]`}
+            >
               Dream Offer
             </p>
-            <div className="absolute w-[327px] h-[2px] bg-white mt-[333px] ml-[34px]"></div>
+            <div
+              className={`${styles.line} absolute w-[327px] h-[2px] bg-white mt-[333px] ml-[34px]`}
+            ></div>
           </div>
         </div>
-        <div className="w-[1332px] h-[745px] bg-[#FCE3E5] ml-[7%] flex">
-          <p className="text-[58px] text-[#51060D] font-Emilo font-semibold mt-[95px] ml-[54px] absolute">
+        <div
+          className={`${styles.div1} w-[1332px] h-[745px] bg-[#FCE3E5] ml-[7%] flex`}
+        >
+          <p
+            className={`${styles.heading} text-[58px] text-[#51060D] font-Emilo font-semibold mt-[95px] ml-[54px] absolute`}
+          >
             Dream Offer
           </p>
-          <div className="w-[1189px] ml-[54px] mt-[173px] font-Montserrant text-[18px]">
+          <div
+            className={`${styles.paragraph} w-[1189px] ml-[54px] mt-[173px] font-Montserrant text-[18px]`}
+          >
             <p>
               In Dream placement offer, 3836 students are presented with offers
               with Cost of Company (CTC) of 5.5 Lakhs and above per annum. More
@@ -69,33 +80,45 @@ const DreamOffer = () => {
             </p>
           </div>
         </div>
-        <div className="mt-[-100px] ml-[230px]">
+        <div className={`${styles.img} mt-[-100px] ml-[230px]`}>
           <Image
             src={s5}
             width={1080}
             height={581}
-            className="absolute border"
+            className={`${styles.image} absolute border`}
           />
         </div>
-        <div className="mt-[671px]">
+        <div className={`${styles.info1} mt-[671px]`}>
           <div className="bg-[#F3F4F8] h-[751px] border">
-            <div className="w-[35px] h-[751px] absolute bg-[#741D26]"></div>
-            <p className="ml-[108px] text-[#51060D] font-Emilo font-bold mt-[80px] text-[58px]">
+            <div
+              className={`${styles.redbg} w-[35px] h-[751px] absolute bg-[#741D26]`}
+            ></div>
+            <p
+              className={`${styles.h1} ml-[108px] text-[#51060D] font-Emilo font-bold mt-[80px] text-[58px]`}
+            >
               Student Grabs Dream Offers till 2024
             </p>
-            <div className="absolute w-[1429px] h-[447px] flex overflow-hidden ml-[85px] mt-[36px]">
+            <div
+              className={`${styles.infodiv} absolute w-[1429px] h-[447px] flex overflow-hidden ml-[85px] mt-[36px]`}
+            >
               <Image src={img} className="absolute mt-[79px]" />
-              <Image src={img} className="absolute mt-[79px] ml-[369px]" />
+              <Image
+                src={img}
+                className={`${styles.img2} absolute mt-[79px] ml-[369px]`}
+              />
               <Image
                 src={img}
                 width={447}
                 height={447}
-                className="absolute ml-[738px]"
+                className={`${styles.img3} absolute ml-[738px]`}
               />
-              <Image src={img} className="absolute mt-[79px] ml-[1265px]" />
+              <Image
+                src={img}
+                className={`${styles.img4} absolute mt-[79px] ml-[1265px]`}
+              />
             </div>
           </div>
-          <div className="mt-[-60px] flex ml-[1000px]">
+          <div className={`${styles.buttons} mt-[-60px] flex ml-[1000px]`}>
             <button className="rounded-full bg-white border h-[40px] w-[40px] absolute">
               &lt;
             </button>
@@ -104,25 +127,37 @@ const DreamOffer = () => {
             </button>
           </div>
         </div>
-        <div className="mt-[60px]">
+        <div className={`${styles.info2} mt-[60px]`}>
           <div className="h-[751px] border">
-            <div className="w-[35px] h-[751px] absolute bg-[#741D26] right-0"></div>
-            <p className="ml-[108px] text-[#51060D] font-Emilo font-bold mt-[80px] text-[58px]">
+            <div
+              className={`${styles.redbg} w-[35px] h-[751px] absolute bg-[#741D26] right-0`}
+            ></div>
+            <p
+              className={`${styles.h1} ml-[108px] text-[#51060D] font-Emilo font-bold mt-[80px] text-[58px]`}
+            >
               Student Grabs Dream Offers till 2023
             </p>
-            <div className="absolute w-[1429px] h-[447px] flex overflow-hidden ml-[85px] mt-[36px]">
+            <div
+              className={`${styles.infodiv} absolute w-[1429px] h-[447px] flex overflow-hidden ml-[85px] mt-[36px]`}
+            >
               <Image src={img} className="absolute mt-[79px]" />
-              <Image src={img} className="absolute mt-[79px] ml-[369px]" />
+              <Image
+                src={img}
+                className={`${styles.img2} absolute mt-[79px] ml-[369px]`}
+              />
               <Image
                 src={img}
                 width={447}
                 height={447}
-                className="absolute ml-[738px]"
+                className={`${styles.img3} absolute ml-[738px]`}
               />
-              <Image src={img} className="absolute mt-[79px] ml-[1265px]" />
+              <Image
+                src={img}
+                className={`${styles.img4} absolute mt-[79px] ml-[1265px]`}
+              />
             </div>
           </div>
-          <div className="mt-[-60px] flex ml-[1000px]">
+          <div className={`${styles.buttons} mt-[-60px] flex ml-[1000px]`}>
             <button className="rounded-full bg-white border h-[40px] w-[40px] absolute">
               &lt;
             </button>
@@ -133,23 +168,35 @@ const DreamOffer = () => {
         </div>
         <div className="mt-[60px]">
           <div className="bg-[#F3F4F8] h-[751px] border">
-            <div className="w-[35px] h-[751px] absolute bg-[#741D26]"></div>
-            <p className="ml-[108px] text-[#51060D] font-Emilo font-bold mt-[80px] text-[58px]">
+            <div
+              className={`${styles.redbg} w-[35px] h-[751px] absolute bg-[#741D26]`}
+            ></div>
+            <p
+              className={`${styles.h1} ml-[108px] text-[#51060D] font-Emilo font-bold mt-[80px] text-[58px]`}
+            >
               Student Grabs Dream Offers till 2022
             </p>
-            <div className="absolute w-[1429px] h-[447px] flex overflow-hidden ml-[85px] mt-[36px]">
+            <div
+              className={`${styles.infodiv} absolute w-[1429px] h-[447px] flex overflow-hidden ml-[85px] mt-[36px]`}
+            >
               <Image src={img} className="absolute mt-[79px]" />
-              <Image src={img} className="absolute mt-[79px] ml-[369px]" />
+              <Image
+                src={img}
+                className={`${styles.img2} absolute mt-[79px] ml-[369px]`}
+              />
               <Image
                 src={img}
                 width={447}
                 height={447}
-                className="absolute ml-[738px]"
+                className={`${styles.img3} absolute ml-[738px]`}
               />
-              <Image src={img} className="absolute mt-[79px] ml-[1265px]" />
+              <Image
+                src={img}
+                className={`${styles.img4} absolute mt-[79px] ml-[1265px]`}
+              />
             </div>
           </div>
-          <div className="mt-[-60px] flex ml-[1000px]">
+          <div className={`${styles.buttons} mt-[-60px] flex ml-[1000px]`}>
             <button className="rounded-full bg-white border h-[40px] w-[40px] absolute">
               &lt;
             </button>
@@ -158,10 +205,14 @@ const DreamOffer = () => {
             </button>
           </div>
         </div>
-        <div className="relative ">
-          <div className="h-[227px] mt-[289px] bg-[#E6CFCF]"></div>
+        <div className={`${styles.last} relative`}>
+          <div
+            className={`${styles.pinkbg} h-[227px] mt-[289px] bg-[#E6CFCF]`}
+          ></div>
           <div className="flex ml-[10%] absolute mt-[-420px]">
-            <div className="w-[240px] h-[350px] transform bg-gray-300 border -skew-x-6">
+            <div
+              className={`${styles.card1} w-[240px] h-[350px] transform bg-gray-300 border -skew-x-6`}
+            >
               <Image src={sd} />
               <div className="absolute bottom-0 w-[100%] min-h-[75px] group-hover:bg-[#fff] group-hover:text-[#650010] bg-[#650010] text-white pl-6 pt-3">
                 <h1 className="text-[17px] font-bold">Overview</h1>
@@ -170,7 +221,9 @@ const DreamOffer = () => {
                 </p>
               </div>
             </div>
-            <div className="w-[240px] h-[350px] transform bg-gray-300 border -skew-x-6 ml-[10px]">
+            <div
+              className={`${styles.card1} w-[240px] h-[350px] transform bg-gray-300 border -skew-x-6 ml-[10px]`}
+            >
               <Image src={sd} />
               <div className="absolute bottom-0 w-[100%] min-h-[75px] group-hover:bg-[#fff] group-hover:text-[#650010] bg-[#650010] text-white pl-6 pt-3">
                 <h1 className="text-[17px] font-bold">Super Dream Offer</h1>
@@ -179,7 +232,9 @@ const DreamOffer = () => {
                 </p>
               </div>
             </div>
-            <div className="w-[240px] h-[350px] transform bg-gray-300 border -skew-x-6 ml-[10px]">
+            <div
+              className={`${styles.card2} w-[240px] h-[350px] transform bg-gray-300 border -skew-x-6 ml-[10px]`}
+            >
               <Image src={dr} />
               <div className="absolute bottom-0 w-[100%] min-h-[75px] group-hover:bg-[#fff] group-hover:text-[#650010] bg-[#650010] text-white pl-6 pt-3">
                 <h1 className="text-[17px] font-bold">Dream Offer</h1>
@@ -188,7 +243,9 @@ const DreamOffer = () => {
                 </p>
               </div>
             </div>
-            <div className="w-[240px] h-[350px] transform bg-gray-300 border -skew-x-6 ml-[10px]">
+            <div
+              className={`${styles.card3} w-[240px] h-[350px] transform bg-gray-300 border -skew-x-6 ml-[10px]`}
+            >
               <Image src={st} />
               <div className="absolute bottom-0 w-[100%] min-h-[75px] group-hover:bg-[#fff] group-hover:text-[#650010] bg-[#650010] text-white pl-6 pt-3">
                 <h1 className="text-[17px] font-bold">Statistics</h1>
@@ -197,7 +254,9 @@ const DreamOffer = () => {
                 </p>
               </div>
             </div>
-            <div className="w-[240px] h-[350px] transform bg-gray-300 border -skew-x-6 ml-[10px]">
+            <div
+              className={`${styles.card4} w-[240px] h-[350px] transform bg-gray-300 border -skew-x-6 ml-[10px]`}
+            >
               <Image src={cdc} />
               <div className="absolute bottom-0 w-[100%] min-h-[75px] group-hover:bg-[#fff] group-hover:text-[#650010] bg-[#650010] text-white pl-6 pt-3">
                 <h1 className="text-[17px] font-bold">C.D.C Office</h1>
