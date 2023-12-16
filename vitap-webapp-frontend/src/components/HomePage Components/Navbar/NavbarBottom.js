@@ -142,7 +142,7 @@ const NavbarBottom = () => {
                     </ol>
                   </div>
                 </div>
-              </div>
+                Programmes</div>
             </li>
 
             <li
@@ -160,7 +160,7 @@ const NavbarBottom = () => {
 
                   <ol className="flex-row font-[400] text-[20px]  pt-[60px] pl-[110px] space-y-[19px]">
                     <li
-                      className={` hover:cursor-pointer  w-[fit-content] ${underline}`}
+                      className={` hover:cursor-pointer custom-list-item w-[fit-content] ${underline}`}
 
                       onMouseEnter={() => {
                         setProgrammes([
@@ -338,14 +338,14 @@ const NavbarBottom = () => {
                       </li>
 
                       <li className="peer/Governance custom-list-item w-[fit-content]">
-                        Dream offers
+                        <Link href="cdc-dream">Dream offers</Link>
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/Governance:visible">
                         <Image alt="A descriptive text here" src={image3} />
                       </li>
 
                       <li className="peer/contactus custom-list-item w-[fit-content]">
-                        Internships
+                        <Link href="/internships">Internships</Link>
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/contactus:visible">
                         <Image alt="A descriptive text here" src={image4} />
