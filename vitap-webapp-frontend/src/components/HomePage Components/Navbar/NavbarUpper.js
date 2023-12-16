@@ -139,7 +139,7 @@ const NavbarUpper = () => {
 
         <ul className="flex font-Montserrant h-[20px] md:space-x-[31px] ls:space-x-[20px]  text-[16px] ">
           <li>
-            <a href="https://alumni.vitap.ac.in/" target="_blank" rel="noopener noreferrer">Alumini</a>
+            <a href="https://alumni.vitap.ac.in/" target="_blank" rel="noopener noreferrer">Alumni</a>
           </li>
           <li>
             <a href="/advantages" target="_blank">VIT-AP Advantages</a>
