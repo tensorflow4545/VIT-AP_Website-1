@@ -17,7 +17,7 @@ const News = () => {
           <h2
             className={`${styles.heading} relative left-[100px] text-[#51060D] font-Emilio font-semibold text-[48px] w-[600px] mt-[50px] text-left`}
           >
-            News about VIT-AP
+            News
           </h2>
           <div className="flex flex-row items-center justify-center relative transition-all duration-300 ease-in group top-[25px] left-[50%]">
             <div className="Rectangle91 w-[32px] h-[30px] left-[40px] top-[45px] absolute bg-[#5C0E14] opacity-20 transition-transform group-hover:left-[-10px] group-hover:w-[90px] group-hover:transition-all group-hover:duration-300 group-hover:ease-in-out "></div>

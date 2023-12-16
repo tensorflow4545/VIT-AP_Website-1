@@ -43,7 +43,7 @@ export default function Footer() {
                   <p className="text-primary font-Emilio text-[24px] font-bold leading-[133.5%] pb-[10px]">Ranking & Accereditation</p>
                   <ul className="w-[147px] h-[136px]">
                     <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">RAAC</li>
-                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">NACC</li>
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">NAAC</li>
                   </ul>
                 </div>
               </div>
@@ -93,10 +93,10 @@ export default function Footer() {
                 ></iframe>
               </div>
               <div className="flex flex-col items-start gap-[18px] pb-[10px]">
-                <p className="addresstext-primary font-Emilio text-[24px] font-bold leading-[133.5%] pb-[10px]">VIT-AP University, Amaravathi</p>
+                <p className="addresstext-primary font-Emilio text-[24px] font-bold leading-[133.5%] pb-[10px]">VIT-AP University, Amaravati</p>
                 <div className="text-black font-Montserrat text-[16px] font-light leading-[150%] text-left">
-                  <p>Near Vijayawada - 522237,</p>
-                  <p>AndhraPradesh.</p>
+                  <p>Near Vijayawada - 522241,</p>
+                  <p>Andhra Pradesh.</p>
                   <p>Phone: 040-29559555</p>
                   <p>Email: adminoffice@vitap.ac.in</p>
                 </div>
@@ -140,7 +140,7 @@ export default function Footer() {
                 <a className="creditlink">Terms of Use</a>
                 <a className="creditlink">Copyright</a>
                 <a className="creditlink">Trademarks</a>
-                <a className="creditlink">Non- Discrimination</a>
+                <a className="creditlink">Non-Discrimination</a>
                 <a className="creditlink">Accessibility</a>
               </div>
             </div>
@@ -338,7 +338,7 @@ export default function Footer() {
 
           {/* Ranking */}
           <div>
-            <div class="w-full text-center pt-[20px]"><p class="text-primary text-[15px] font-Emilio font-bold pt-[30px] pb-[20px]">Ranking & Accereditation</p></div>
+            <div class="w-full text-center pt-[20px]"><p class="text-primary text-[15px] font-Emilio font-bold pt-[30px] pb-[20px]">Ranking & Accreditation</p></div>
             {/* flex */}
             <div class="flex flex-row w-full justify-center">
               <div class="basis">
@@ -443,7 +443,7 @@ export default function Footer() {
             {/* flex */}
             <div class="flex flex-row w-full pb-[7px] justify-center">
               <div class="basis">
-                <p class="text-[14px] text-gray-500 font-Montserrat">Public Note: University Act</p>
+                <p class="text-[14px] text-gray-500 font-Montserrat">Public Note: &nbsp; University Act</p>
               </div>
               <div class="basis pt-[9px] px-[10px]">
                 <div class="w-[5px] h-[5px] bg-black rounded "></div>

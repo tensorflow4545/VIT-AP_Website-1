@@ -57,7 +57,7 @@ const Socials = () => {
             </Link>
 
             <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px] group-hover:font-bold duration-300 group-hover:font-bold">
-              <a href="https://twitter.com/VITAPuniversity?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Tweet with us on X</a>
+              <a href="https://twitter.com/VITAPuniversity?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Tweet us on X</a>
             </p>
           </div>
           <div className="w-[350px] h-[44px] ml-[108px] mt-[22px] flex group">
@@ -98,7 +98,7 @@ const Socials = () => {
               </Link>
             </div>
             <p className="text-[#1B1C1E] font-Montserrant text-[20px] ml-[13px] mt-[4px] group-hover:font-bold duration-300 group-hover:font-bold">
-              <a href="https://www.youtube.com/c/VITAP" target="_blank">Watch us on Youtube </a>
+              <a href="https://www.youtube.com/c/VITAP" target="_blank">Watch us on YouTube </a>
             </p>
           </div>
         </div>

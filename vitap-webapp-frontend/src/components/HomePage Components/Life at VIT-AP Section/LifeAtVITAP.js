@@ -87,7 +87,7 @@ const Life = () => {
         <p
           className={`${styles.experience} w-[616px] h-[54px] text-center mt-3`}
         >
-          Experience the vibrant heart of our campus life at Vitap University.
+          Experience the vibrant heart of our campus life at VIT-AP University.
         </p>
         <button
           className={`${styles.button} bg-[#5C0E14] items-center text-[#FDFEFF] w-[150px] h-[58px] rounded-full hover:bg-[#7A1820]`}
