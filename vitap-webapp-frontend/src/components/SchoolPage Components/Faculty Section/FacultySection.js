@@ -56,7 +56,7 @@ const FacultySection = () => {
             src={`${process.env.NEXT_PUBLIC_API_URL}${profiles[0]?.Image.data[0].attributes.url}`}
             alt="faculty1Img"
             fill={true}
-          />
+          ></Image>
           <div className='absolute w-full h-0 top-0 left-0 bg-[#650010] opacity-50 group-hover:h-full flex flex-col justify-between items-start'>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
               <h1 className='text-white text-[18px] font-semibold'>{profiles[0]?.Name}</h1>
