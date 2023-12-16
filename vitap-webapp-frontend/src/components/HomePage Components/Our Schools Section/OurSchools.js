@@ -26,7 +26,12 @@ const OurSchools = async () => {
           <h1 className="font-Montserrat text-[18px] text-secondary w-full">
             At VIT-AP the entire teaching-learning process is concentrated around seven schools for preparing students to make meaningful contributions to society as engaged citizens and leaders in a complex world.
           </h1>
-          <div class="grid grid-cols-4 justify-center mt-5 items-center">
+
+          <div className="ls:hidden lx:hidden sm:flex "> 
+              <div className="bg-[#E6CFCF] w-[106px] h-[150px]"> hi</div>
+          </div>
+
+          <div class="hidden md:grid grid-cols-4 justify-center mt-5 items-center">
             <div className="w-[270px] h-[270px] m-[20px] ml-[46px] relative group overflow-hidden">
               <Link href={"https://vitap.ac.in/school-of-advanced-sciences/"} target="_blank">
                 <div className="absolute w-[270px] h-[270px] bg-black"></div>
