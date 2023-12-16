@@ -53,7 +53,7 @@ const FacultySection = () => {
         </div> */}
         <div className="flex justify-end items-end overflow-hidden mt-[75px] pr-[20px] max-w-[230px] max-h-[230px] h-full w-full relative group transition-all duration-300 ease-in-out">
           <Image
-            src={`${process.env.NEXT_PUBLIC_API_URL}${profiles[0]?.Image.data[0].attributes.url}`}
+            // src={`${process.env.NEXT_PUBLIC_API_URL}${profiles[0]?.Image.data[0].attributes.url}`}
             alt="faculty1Img"
             fill={true}
           />
@@ -71,7 +71,7 @@ const FacultySection = () => {
       <div className="flex-1 flex flex-col justify-center items-center">
         <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative group transition-all duration-300 ease-in-out">
           <Image
-            src={`${process.env.NEXT_PUBLIC_API_URL}${profiles[1]?.Image.data[0].attributes.url}`}
+            // src={`${process.env.NEXT_PUBLIC_API_URL}${profiles[1]?.Image.data[0].attributes.url}`}
             alt="faculty1Img"
             fill={true}
           />
@@ -87,7 +87,7 @@ const FacultySection = () => {
         </div>
         <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative group transition-all duration-300 ease-in-out">
           <Image
-            src={`${process.env.NEXT_PUBLIC_API_URL}${profiles[2]?.Image.data[0].attributes.url}`}
+            // src={`${process.env.NEXT_PUBLIC_API_URL}${profiles[2]?.Image.data[0].attributes.url}`}
             alt="faculty1Img"
             fill={true}
           />
@@ -103,7 +103,7 @@ const FacultySection = () => {
         </div>
         <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative group transition-all duration-300 ease-in-out">
           <Image
-            src={`${process.env.NEXT_PUBLIC_API_URL}${profiles[3]?.Image.data[0].attributes.url}`}
+            // src={`${process.env.NEXT_PUBLIC_API_URL}${profiles[3]?.Image.data[0].attributes.url}`}
             alt="faculty1Img"
             fill={true}
           />
@@ -121,7 +121,7 @@ const FacultySection = () => {
       <div className="flex flex-col flex-1  items-center justify-center gap-[20px]">
         <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative group transition-all duration-300 ease-in-out">
           <Image
-            src={`${process.env.NEXT_PUBLIC_API_URL}${profiles[4]?.Image.data[0].attributes.url}`}
+            // src={`${process.env.NEXT_PUBLIC_API_URL}${profiles[4]?.Image.data[0].attributes.url}`}
             alt="faculty1Img"
             fill={true}
           />
@@ -137,7 +137,7 @@ const FacultySection = () => {
         </div>
         <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative group transition-all duration-300 ease-in-out">
           <Image
-            src={`${process.env.NEXT_PUBLIC_API_URL}${profiles[5]?.Image.data[0].attributes.url}`}
+            // src={`${process.env.NEXT_PUBLIC_API_URL}${profiles[5]?.Image.data[0].attributes.url}`}
             alt="faculty1Img"
             fill={true}
           />
@@ -155,7 +155,7 @@ const FacultySection = () => {
       <div className="flex flex-col justify-center items-center flex-1 ">
         <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative group transition-all duration-300 ease-in-out">
           <Image
-            src={`${process.env.NEXT_PUBLIC_API_URL}${profiles[6]?.Image.data[0].attributes.url}`}
+            // src={`${process.env.NEXT_PUBLIC_API_URL}${profiles[6]?.Image.data[0].attributes.url}`}
             alt="faculty1Img"
             fill={true}
           />
