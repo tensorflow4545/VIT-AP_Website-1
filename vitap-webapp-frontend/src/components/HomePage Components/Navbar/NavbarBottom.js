@@ -396,8 +396,7 @@ const NavbarBottom = () => {
                       <li className="custom-list-item w-[fit-content]">Cafeteria</li>
                       <li className="custom-list-item w-[fit-content]">Sports</li>
                       <li className="custom-list-item w-[fit-content]">Gallery</li>
-                      <Link href={"/Campustour/index04.html"}>
-                      <li className="custom-list-item w-[fit-content]">360 Campus Tour</li></Link>
+                      <li className="custom-list-item w-[fit-content]"><a href="/Campustour/index04.html" target="_blank">360 Campus Tour</a></li>
                     </ol>
                     <span className="w-[6px] h-[500px] bg-primary opacity-20 rounded-lg absolute left-[400px] top-[25px]"></span>
                     <ol className="flex-row font-[400] text-[20px]  pt-[40px] pl-[200px] space-y-[15px]">
