@@ -268,8 +268,88 @@ const AdvantageFeatures = () => {
                     <div className='absolute max-w-[250px] w-[100%] min-h-[180px] top-10 right-10 z-10 bg-cover bg-no-repeat bg-center' style={{ backgroundImage: 'url("/advantagefacility3.jpeg")' }}></div>
                     <div className='absolute max-w-[250px] w-[100%] min-h-[180px] top-0 right-0 border-2 border-[#650010]'></div>
                     <div className='min-h-[390px] bg-[#FCE3E5] p-3 flex flex-col justify-end items-start'>
-                        <p className='text-[20px] font-Emilio font-thin text-[#650010]'>Co-op Programmes and Internships</p>
+                        <p className='text-[20px] font-Emilio font-thin text-[#650010]'>Engineering Clinics</p>
                         <p className='text-[16px] font-Montserrat font-thin'>We focus on practical learning, which involves the learners to apply classroom content to solve real-world problems. One of the key opportunities they are provided with is the Engineering Clinics where they put the concepts to use by creating contraptions. Students from different subject areas form their own groups, and with the help of a faculty coordinator, undertake projects where they apply knowledge gained from the classrooms.</p>
+                    </div>
+                </div>
+
+                <div className='max-w-[420px] w-[100%] max-h-[740px] flex flex-col  relative'>
+                    <div className='min-h-[150px]'></div>
+                    <div className='absolute max-w-[250px] w-[100%] min-h-[180px] top-10 left-10 z-10 bg-cover bg-no-repeat bg-center' style={{ backgroundImage: 'url("/advantagefacility6.jpeg")' }}></div>
+                    <div className='absolute max-w-[250px] w-[100%] min-h-[180px] top-0 left-0 bg-[#FCE3E5]'></div>
+                    <div className='min-h-[260px] pt-[100px] border-2 border-[#650010] p-3 flex flex-col justify-end items-start'>
+                        <p className='text-[20px] font-Emilio font-thin text-[#650010]'>Co-op Programmes and Internships </p>
+                        <p className='text-[16px] font-Montserrat font-thin'>Even before the students step out into the real world, we ensure they are industry -ready through our mandatory internships which are carried out as part of the programmes. The aim is to provide industrial exposure at an early stage in order to acquire a better understanding of the industry expectations.</p>
+                    </div>
+                </div>
+
+                <div className='max-w-[420px] w-[100%] max-h-[640px] flex flex-col  relative'>
+                    <div className='min-h-[150px]'></div>
+                    <div className='absolute max-w-[250px] w-[100%] min-h-[180px] top-10 right-10 z-10 bg-cover bg-no-repeat bg-center' style={{ backgroundImage: 'url("/advantagefacility4.jpeg")' }}></div>
+                    <div className='absolute max-w-[250px] w-[100%] min-h-[180px] top-0 right-0 border-2 border-[#650010]'></div>
+                    <div className='min-h-[390px] pt-[100px] bg-[#FCE3E5] p-3 flex flex-col justify-end items-start'>
+                        <p className='text-[20px] font-Emilio font-thin text-[#650010]'>Sports</p>
+                        <p className='text-[16px] font-Montserrat font-thin'>At VIT-AP, we believe that sound mental and good physical health are crucial for holistic development. With a strong emphasis on recreation of students, VIT-AP students, faculty and staff are provided facilities which keeps them active, spirited, involved, and healthy. Several intramural sports events are organised where students compete in cricket, badminton, volleyball, chess etc. Apart from intramural sports, different colleges and universities also participate in our in-house Sports and Cultural fest VITopia.</p>
+                    </div>
+                </div>
+
+                <div className='max-w-[420px] w-[100%] max-h-[740px] flex flex-col  relative'>
+                    <div className='min-h-[150px]'></div>
+                    <div className='absolute max-w-[250px] w-[100%] min-h-[180px] top-10 left-10 z-10 bg-cover bg-no-repeat bg-center' style={{ backgroundImage: 'url("/advantagefacility6.jpeg")' }}></div>
+                    <div className='absolute max-w-[250px] w-[100%] min-h-[180px] top-0 left-0 bg-[#FCE3E5]'></div>
+                    <div className='min-h-[260px] pt-[100px] border-2 border-[#650010] p-3 flex flex-col justify-end items-start'>
+                        <p className='text-[20px] font-Emilio font-thin text-[#650010]'>Co-op Programmes and Internships </p>
+                        <p className='text-[16px] font-Montserrat font-thin'>Even before the students step out into the real world, we ensure they are industry -ready through our mandatory internships which are carried out as part of the programmes. The aim is to provide industrial exposure at an early stage in order to acquire a better understanding of the industry expectations.</p>
+                    </div>
+                </div>
+
+                <div className='max-w-[420px] w-[100%] max-h-[640px] flex flex-col  relative'>
+                    <div className='min-h-[150px]'></div>
+                    <div className='absolute max-w-[250px] w-[100%] min-h-[180px] top-10 right-10 z-10 bg-cover bg-no-repeat bg-center' style={{ backgroundImage: 'url("/advantagefacility4.jpeg")' }}></div>
+                    <div className='absolute max-w-[250px] w-[100%] min-h-[180px] top-0 right-0 border-2 border-[#650010]'></div>
+                    <div className='min-h-[390px] pt-[100px] bg-[#FCE3E5] p-3 flex flex-col justify-end items-start'>
+                        <p className='text-[20px] font-Emilio font-thin text-[#650010]'>Sports</p>
+                        <p className='text-[16px] font-Montserrat font-thin'>At VIT-AP, we believe that sound mental and good physical health are crucial for holistic development. With a strong emphasis on recreation of students, VIT-AP students, faculty and staff are provided facilities which keeps them active, spirited, involved, and healthy. Several intramural sports events are organised where students compete in cricket, badminton, volleyball, chess etc. Apart from intramural sports, different colleges and universities also participate in our in-house Sports and Cultural fest VITopia.</p>
+                    </div>
+                </div>
+
+                <div className='max-w-[420px] w-[100%] max-h-[740px] flex flex-col  relative'>
+                    <div className='min-h-[150px]'></div>
+                    <div className='absolute max-w-[250px] w-[100%] min-h-[180px] top-10 left-10 z-10 bg-cover bg-no-repeat bg-center' style={{ backgroundImage: 'url("/advantagefacility6.jpeg")' }}></div>
+                    <div className='absolute max-w-[250px] w-[100%] min-h-[180px] top-0 left-0 bg-[#FCE3E5]'></div>
+                    <div className='min-h-[260px] pt-[100px] border-2 border-[#650010] p-3 flex flex-col justify-end items-start'>
+                        <p className='text-[20px] font-Emilio font-thin text-[#650010]'>Co-op Programmes and Internships </p>
+                        <p className='text-[16px] font-Montserrat font-thin'>Even before the students step out into the real world, we ensure they are industry -ready through our mandatory internships which are carried out as part of the programmes. The aim is to provide industrial exposure at an early stage in order to acquire a better understanding of the industry expectations.</p>
+                    </div>
+                </div>
+
+                <div className='max-w-[420px] w-[100%] max-h-[640px] flex flex-col  relative'>
+                    <div className='min-h-[150px]'></div>
+                    <div className='absolute max-w-[250px] w-[100%] min-h-[180px] top-10 right-10 z-10 bg-cover bg-no-repeat bg-center' style={{ backgroundImage: 'url("/advantagefacility4.jpeg")' }}></div>
+                    <div className='absolute max-w-[250px] w-[100%] min-h-[180px] top-0 right-0 border-2 border-[#650010]'></div>
+                    <div className='min-h-[390px] pt-[100px] bg-[#FCE3E5] p-3 flex flex-col justify-end items-start'>
+                        <p className='text-[20px] font-Emilio font-thin text-[#650010]'>Sports</p>
+                        <p className='text-[16px] font-Montserrat font-thin'>At VIT-AP, we believe that sound mental and good physical health are crucial for holistic development. With a strong emphasis on recreation of students, VIT-AP students, faculty and staff are provided facilities which keeps them active, spirited, involved, and healthy. Several intramural sports events are organised where students compete in cricket, badminton, volleyball, chess etc. Apart from intramural sports, different colleges and universities also participate in our in-house Sports and Cultural fest VITopia.</p>
+                    </div>
+                </div>
+
+                <div className='max-w-[420px] w-[100%] max-h-[740px] flex flex-col  relative'>
+                    <div className='min-h-[150px]'></div>
+                    <div className='absolute max-w-[250px] w-[100%] min-h-[180px] top-10 left-10 z-10 bg-cover bg-no-repeat bg-center' style={{ backgroundImage: 'url("/advantagefacility6.jpeg")' }}></div>
+                    <div className='absolute max-w-[250px] w-[100%] min-h-[180px] top-0 left-0 bg-[#FCE3E5]'></div>
+                    <div className='min-h-[260px] pt-[100px] border-2 border-[#650010] p-3 flex flex-col justify-end items-start'>
+                        <p className='text-[20px] font-Emilio font-thin text-[#650010]'>Co-op Programmes and Internships </p>
+                        <p className='text-[16px] font-Montserrat font-thin'>Even before the students step out into the real world, we ensure they are industry -ready through our mandatory internships which are carried out as part of the programmes. The aim is to provide industrial exposure at an early stage in order to acquire a better understanding of the industry expectations.</p>
+                    </div>
+                </div>
+
+                <div className='max-w-[420px] w-[100%] max-h-[640px] flex flex-col  relative'>
+                    <div className='min-h-[150px]'></div>
+                    <div className='absolute max-w-[250px] w-[100%] min-h-[180px] top-10 right-10 z-10 bg-cover bg-no-repeat bg-center' style={{ backgroundImage: 'url("/advantagefacility4.jpeg")' }}></div>
+                    <div className='absolute max-w-[250px] w-[100%] min-h-[180px] top-0 right-0 border-2 border-[#650010]'></div>
+                    <div className='min-h-[390px] pt-[100px] bg-[#FCE3E5] p-3 flex flex-col justify-end items-start'>
+                        <p className='text-[20px] font-Emilio font-thin text-[#650010]'>Sports</p>
+                        <p className='text-[16px] font-Montserrat font-thin'>At VIT-AP, we believe that sound mental and good physical health are crucial for holistic development. With a strong emphasis on recreation of students, VIT-AP students, faculty and staff are provided facilities which keeps them active, spirited, involved, and healthy. Several intramural sports events are organised where students compete in cricket, badminton, volleyball, chess etc. Apart from intramural sports, different colleges and universities also participate in our in-house Sports and Cultural fest VITopia.</p>
                     </div>
                 </div>
             </div>
