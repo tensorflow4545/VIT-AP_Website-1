@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .hero{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/cdcimages/hero.png);;
     background-size: cover;
@@ -7,4 +8,15 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/cdcimages/hero.png);;
     background-size: cover;
     background-repeat: no-repeat;
+=======
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/cdcimages/hero.png);;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mhero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/cdcimages/hero.png);;
+    background-size: cover;
+    background-repeat: no-repeat;
+>>>>>>> 50200700b9973ffcc5c2874fc565ebc048466bc5
 }
