@@ -16,7 +16,7 @@ const AboutUs = () => {
         <h1 className="text-[48px] font-[700] mb-4 text-primary font-Emilio">
           About School
         </h1>
-        <p className=" font-Montserrat text-[20px] font-[420] max-w-[600px]">
+        <p className=" font-Montserrat text-[20px] font-[420] max-w-[600px] text-justify">
           The Department of Computer Science and Engineering was established in
           2017. It has become the School of Computer Science and Engineering
           (SCOPE) in January 2019. At present, the School is headed by Dr. CH.

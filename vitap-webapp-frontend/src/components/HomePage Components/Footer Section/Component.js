@@ -1,7 +1,7 @@
 const Component = () => {
     return (
         <>
-            <div className="w-full f bg-primary h-[204px] mt-10 flex flex-col items-center justify-center text-white leading-10">
+            <div className="w-full f bg-primary h-[204px] mt-10 flex flex-col items-center justify-center text-white leading-10 relative">
                 <div>
                     <h1 className="flex font-Emilio text-[28px]">
                         “ INDIA should lead the world. VIT should lead India ”
