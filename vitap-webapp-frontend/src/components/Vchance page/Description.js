@@ -1,6 +1,6 @@
 import style from './description.module.css';
 
-export default function description(){
+export default function Description(){
     return(
         <>
 
@@ -155,4 +155,4 @@ export default function description(){
             </div>
         </>
     )
-}
+};

@@ -1,0 +1,99 @@
+@media screen and (max-width: 720px) {
+  .container {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    background: #fff5f5;
+  }
+  .stay {
+    opacity: 0;
+  }
+  .sentence {
+    margin-top: 24px;
+    margin-left: 23px;
+    width: 600px;
+  }
+  .followus {
+    opacity: 0;
+  }
+  .follow {
+    opacity: 100;
+    font-size: 30px;
+    color: #650010;
+    font-family: Emilo;
+    font-weight: bold;
+    margin-left: -100px;
+    width: 200px;
+  }
+  .instaText {
+    opacity: 0;
+  }
+  .twitterText {
+    opacity: 0;
+  }
+  .facebookText {
+    opacity: 0;
+  }
+  .linkedinText {
+    opacity: 0;
+  }
+  .ytText {
+    opacity: 0;
+  }
+  .icons {
+    display: flex;
+    margin-left: 150px;
+  }
+  .icons2 {
+    margin-left: 132px;
+    position: absolute;
+    margin-top: -5px;
+  }
+  .icons3 {
+    margin-left: 200px;
+    position: absolute;
+    margin-top: -5px;
+  }
+  .icons4 {
+    margin-left: 258px;
+    position: absolute;
+    margin-top: -5px;
+  }
+  .icons5 {
+    margin-left: 316px;
+    position: absolute;
+    margin-top: -5px;
+  }
+  .icons6 {
+    margin-left: 374px;
+    position: absolute;
+    margin-top: -5px;
+  }
+  .group2 {
+    opacity: 0;
+  }
+  .group3 {
+    opacity: 0;
+  }
+  .card3 {
+    opacity: 0;
+  }
+  .group1 {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 120px;
+  }
+  .card2 {
+    margin-left: 20px;
+  }
+  .b1 {
+    opacity: 100%;
+    margin-left: 30px;
+    margin-top: 400px;
+  }
+  .b2 {
+    opacity: 100%;
+    margin-left: 630px;
+    margin-top: 400px;
+  }
+}

@@ -50,15 +50,10 @@ export default function Research() {
 
                 <hr></hr>
               </div>
-
             })}
-
-
           </div>
-
         </div>
       </div>
-
     </>
   )
 }

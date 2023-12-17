@@ -45,7 +45,7 @@ const AnnouncementsSection = () => {
 
       <div className="my-[50px] max-w-[1560px] w-full flex flex-wrap gap-5 justify-center items-center px-[30px] ls:px-0">
         {data?.map((announcement) => (
-            <Card key={announcement.id} content={announcement.content} />
+            <Card key={announcement.id} content={announcement.content} link={announcement.link}/>
         ))}
       </div>
 
