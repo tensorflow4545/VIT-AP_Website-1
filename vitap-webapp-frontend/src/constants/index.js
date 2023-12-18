@@ -683,11 +683,7 @@ export const superdreamImages = [
 export const homeCDC = [
   {
     id: 1,
-    imgUrl: "/package.png"
-  },
-  {
-    id: 2,
-    imgUrl: "/super-dream-offer 1.png"
+    imgUrl: "/PAT-5th-Aug23.jpg"
   }
 ]
 

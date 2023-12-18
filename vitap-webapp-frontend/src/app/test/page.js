@@ -51,7 +51,7 @@
 //   useEffect(() => {
 //     const fetchData = async () => {
 //       try {
-//         const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/events-datas?populate=*`,{
+//         const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/home-page-cdc-scroll-images?populate=*`,{
 //             headers: {
 //               Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
 //             },
@@ -70,12 +70,18 @@
 //     fetchData();
 //   }, []);
 
+//   console.log(profiles[0]?.Image.data.attributes.url);
+
 //   return (
 //     <div>
 //       {/* {profiles.map((profile, index) => ( */}
 //         <div>
-//           <p>Name: {profiles[0]?.Name}</p>
-//           <img src={`${process.env.NEXT_PUBLIC_API_URL}${profiles[0]?.Image.data[0].attributes.url}`} alt={profiles[0]?.Image.data[0].attributes.alternativeText || 'Alt Text'} />
+//           {/* <p>Name: {profiles[0]?.Name}</p> */}
+          
+//           {/* <img src={`${process.env.NEXT_PUBLIC_API_URL}${profiles[0]?.Image.data[0].attributes.url}`} alt={profiles[0]?.Image.data[0].attributes.alternativeText || 'Alt Text'} /> */}
+//           {profiles.map((profile, index) => (
+//     <img key={index} src={`${process.env.NEXT_PUBLIC_API_URL}${profile?.Image.data.attributes.url}`} alt="Profile Image" />
+// ))}
 //         </div>
 //       {/* ))} */}
 //     </div>
@@ -83,41 +89,4 @@
 // };
 
 // export default Contact;
-
-"use client";
-import React, { useState, useEffect } from 'react';
-
-const ImageCarousel = () => {
-  const images = [
-    'image1.jpg',
-    'image2.jpg',
-    // Add all your image URLs here
-  ];
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      // Update the current index to the next image
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Set the interval time in milliseconds (e.g., 3000 for 3 seconds)
-
-    return () => {
-      // Clear the interval when the component is unmounted
-      clearInterval(intervalId);
-    };
-  }, [currentIndex, images.length]);
-
-  return (
-    <div>
-      <img
-        src={images[currentIndex]}
-        alt={`Image ${currentIndex + 1}`}
-        style={{ maxWidth: '100%', maxHeight: '100%' }}
-      />
-    </div>
-  );
-};
-
-export default ImageCarousel;
 
