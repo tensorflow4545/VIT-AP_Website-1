@@ -4,14 +4,14 @@ import NavbarBottom from "@/components/HomePage Components/Navbar/NavbarBottom";
 import NavbarUpper from "@/components/HomePage Components/Navbar/NavbarUpper";
 
 const CDCDream = () => {
-    return ( 
+    return (
         <>
-        <NavbarUpper/>
-        <NavbarBottom/>
-            <DreamOffer/>
-            <Footer/>
+            <NavbarUpper />
+            <NavbarBottom />
+            <DreamOffer />
+            <Footer />
         </>
-     );
+    );
 }
- 
+
 export default CDCDream;

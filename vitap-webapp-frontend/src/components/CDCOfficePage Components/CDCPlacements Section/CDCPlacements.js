@@ -4,7 +4,7 @@ import React from 'react'
 const CDCPlacements = () => {
     return (
         <>
-            <div className='max-w-[1560px] w-[100%] min-h-[450px] lx:min-h-[500px] h-[100%] hidden ls:block'>
+            <div className='max-w-[1560px] mt-[50px] w-[100%] px-[40px] min-h-[450px] lx:min-h-[500px] h-[100%] hidden ls:block'>
                 <div className='relative'>
                     <div className='flex max-w-[1560px] w-[100%] min-h-[450px] lx:min-h-[500px] h-[100%] absolute top-0 left-0 ls:px-[50px] md:px-[100px] px-[30px] py-[20px] ls:py-[40px] gap-3 md:gap-5 flex-col'>
                         <div className='flex flex-col justify-center items-start'>
