@@ -31,26 +31,26 @@ export default function Chairman(){
                <p className="text-[32px] text-black font-medium text-emilio pt-[15px]">The UDC comprises of following members:</p>
                <p className="text-[24px] font-semibold text-black pt-[24px] pb-[10px]">Chairman & Co-Chairman</p>
                
-               <div classNameName='grid grid-cols-2 lg:grid lg:grid-cols-3 justify-center items-center gap-5 text-center'>
-                            <div classNameName='shadow-xl bg-white max-w-[300px] w-[100%] '>
-                                <Image src={"/udc.png"} width={300} height={220} alt='faculty' classNameName='p-3' />
+               <div className='grid grid-cols-2 lg:grid lg:grid-cols-3 justify-center items-center gap-5 text-center'>
+                            <div className='shadow-xl bg-white max-w-[300px] w-[100%] '>
+                                <Image src={"/udc.png"} width={300} height={220} alt='faculty' className='p-3' />
                                 <div>
-                                    <h1 classNameName='text-[14px] lg:text-[24px] text-[#650010] font-semibold'>Dr. Banerji Chakka</h1>
-                                    <h1 classNameName='text-[14px] lg:text-[16px] text-[#650010] font-semibold pb-3'>VSL</h1>
+                                    <h1 className='text-[14px] lg:text-[24px] text-[#650010] font-semibold'>Dr. Banerji Chakka</h1>
+                                    <h1 className='text-[14px] lg:text-[16px] text-[#650010] font-semibold pb-3'>VSL</h1>
                                 </div>
                             </div>
-                            <div classNameName=' shadow-xl bg-white max-w-[300px] w-[100%]'>
-                                <Image src={"/udc.png"} width={300} height={220} alt='faculty' classNameName='p-3' />
+                            <div className=' shadow-xl bg-white max-w-[300px] w-[100%]'>
+                                <Image src={"/udc.png"} width={300} height={220} alt='faculty' className='p-3' />
                                 <div>
-                                    <h1 classNameName='text-[14px] lg:text-[24px] text-[#650010] font-semibold'>Dr. R Thahiya Afzal</h1>
-                                    <h1 classNameName='text-[14px] lg:text-[16px] text-[#650010] font-semibold pb-3'>VISH</h1>
+                                    <h1 className='text-[14px] lg:text-[24px] text-[#650010] font-semibold'>Dr. R Thahiya Afzal</h1>
+                                    <h1 className='text-[14px] lg:text-[16px] text-[#650010] font-semibold pb-3'>VISH</h1>
                                 </div>
                             </div>
-                            <div classNameName=' shadow-xl bg-white max-w-[300px] w-[100%]'>
-                                <Image src={"/udc.png"} width={300} height={220} alt='faculty' classNameName='p-3' />
+                            <div className=' shadow-xl bg-white max-w-[300px] w-[100%]'>
+                                <Image src={"/udc.png"} width={300} height={220} alt='faculty' className='p-3' />
                                 <div>
-                                    <h1 classNameName='text-[14px] lg:text-[24px] text-[#650010] font-semibold'>Dr. B Srinivasa Rao</h1>
-                                    <h1 classNameName='text-[14px] lg:text-[16px] text-[#650010] font-semibold pb-3'>SCOPE</h1>
+                                    <h1 className='text-[14px] lg:text-[24px] text-[#650010] font-semibold'>Dr. B Srinivasa Rao</h1>
+                                    <h1 className='text-[14px] lg:text-[16px] text-[#650010] font-semibold pb-3'>SCOPE</h1>
                                 </div>
                             </div>
                         </div>
@@ -66,26 +66,26 @@ export default function Chairman(){
                <p className="text-[18px] text-black font-medium text-emilio pt-[15px]">The UDC comprises of following members:</p>
                <p className="text-[20px] font-semibold text-black pt-[24px] pb-[10px]">Chairman & Co-Chairman</p>
                
-               <div classNameName='grid grid-cols-2 justify-center items-center gap-5 text-center'>
-                            <div classNameName='shadow-xl bg-white max-w-[300px] w-[100%] '>
-                                <Image src={"/udc.png"} width={300} height={220} alt='faculty' classNameName='p-3' />
+               <div className='grid grid-cols-2 justify-center items-center gap-5 text-center'>
+                            <div className='shadow-xl bg-white max-w-[300px] w-[100%] '>
+                                <Image src={"/udc.png"} width={300} height={220} alt='faculty' className='p-3' />
                                 <div>
-                                    <h1 classNameName='text-[14px] lg:text-[24px] text-[#650010] font-semibold'>Dr. Banerji Chakka</h1>
-                                    <h1 classNameName='text-[14px] lg:text-[16px] text-[#650010] font-semibold pb-3'>VSL</h1>
+                                    <h1 className='text-[14px] lg:text-[24px] text-[#650010] font-semibold'>Dr. Banerji Chakka</h1>
+                                    <h1 className='text-[14px] lg:text-[16px] text-[#650010] font-semibold pb-3'>VSL</h1>
                                 </div>
                             </div>
-                            <div classNameName=' shadow-xl bg-white max-w-[300px] w-[100%]'>
-                                <Image src={"/udc.png"} width={300} height={220} alt='faculty' classNameName='p-3' />
+                            <div className=' shadow-xl bg-white max-w-[300px] w-[100%]'>
+                                <Image src={"/udc.png"} width={300} height={220} alt='faculty' className='p-3' />
                                 <div>
-                                    <h1 classNameName='text-[14px] lg:text-[24px] text-[#650010] font-semibold'>Dr. R Thahiya Afzal</h1>
-                                    <h1 classNameName='text-[14px] lg:text-[16px] text-[#650010] font-semibold pb-3'>VISH</h1>
+                                    <h1 className='text-[14px] lg:text-[24px] text-[#650010] font-semibold'>Dr. R Thahiya Afzal</h1>
+                                    <h1 className='text-[14px] lg:text-[16px] text-[#650010] font-semibold pb-3'>VISH</h1>
                                 </div>
                             </div>
-                            <div classNameName=' shadow-xl bg-white max-w-[300px] w-[100%]'>
-                                <Image src={"/udc.png"} width={300} height={220} alt='faculty' classNameName='p-3' />
+                            <div className=' shadow-xl bg-white max-w-[300px] w-[100%]'>
+                                <Image src={"/udc.png"} width={300} height={220} alt='faculty' className='p-3' />
                                 <div>
-                                    <h1 classNameName='text-[14px] lg:text-[24px] text-[#650010] font-semibold'>Dr. B Srinivasa Rao</h1>
-                                    <h1 classNameName='text-[14px] lg:text-[16px] text-[#650010] font-semibold pb-3'>SCOPE</h1>
+                                    <h1 className='text-[14px] lg:text-[24px] text-[#650010] font-semibold'>Dr. B Srinivasa Rao</h1>
+                                    <h1 className='text-[14px] lg:text-[16px] text-[#650010] font-semibold pb-3'>SCOPE</h1>
                                 </div>
                             </div>
                         </div>
@@ -127,26 +127,26 @@ export default function Chairman(){
                <p className="text-[32px] text-black font-medium text-emilio pt-[15px]">The UDC comprises of following members:</p>
                <p className="text-[24px] font-semibold text-black pt-[24px] pb-[10px]">Chairman & Co-Chairman</p>
                
-               <div classNameName='grid grid-cols-2 lg:grid lg:grid-cols-3 justify-center items-center gap-5 text-center'>
-                            <div classNameName='shadow-xl bg-white max-w-[300px] w-[100%] '>
-                                <Image src={"/udc.png"} width={300} height={220} alt='faculty' classNameName='p-3' />
+               <div className='grid grid-cols-2 lg:grid lg:grid-cols-3 justify-center items-center gap-5 text-center'>
+                            <div className='shadow-xl bg-white max-w-[300px] w-[100%] '>
+                                <Image src={"/udc.png"} width={300} height={220} alt='faculty' className='p-3' />
                                 <div>
-                                    <h1 classNameName='text-[14px] lg:text-[24px] text-[#650010] font-semibold'>Dr. Banerji Chakka</h1>
-                                    <h1 classNameName='text-[14px] lg:text-[16px] text-[#650010] font-semibold pb-3'>VSL</h1>
+                                    <h1 className='text-[14px] lg:text-[24px] text-[#650010] font-semibold'>Dr. Banerji Chakka</h1>
+                                    <h1 className='text-[14px] lg:text-[16px] text-[#650010] font-semibold pb-3'>VSL</h1>
                                 </div>
                             </div>
-                            <div classNameName=' shadow-xl bg-white max-w-[300px] w-[100%]'>
-                                <Image src={"/udc.png"} width={300} height={220} alt='faculty' classNameName='p-3' />
+                            <div className=' shadow-xl bg-white max-w-[300px] w-[100%]'>
+                                <Image src={"/udc.png"} width={300} height={220} alt='faculty' className='p-3' />
                                 <div>
-                                    <h1 classNameName='text-[14px] lg:text-[24px] text-[#650010] font-semibold'>Dr. R Thahiya Afzal</h1>
-                                    <h1 classNameName='text-[14px] lg:text-[16px] text-[#650010] font-semibold pb-3'>VISH</h1>
+                                    <h1 className='text-[14px] lg:text-[24px] text-[#650010] font-semibold'>Dr. R Thahiya Afzal</h1>
+                                    <h1 className='text-[14px] lg:text-[16px] text-[#650010] font-semibold pb-3'>VISH</h1>
                                 </div>
                             </div>
-                            <div classNameName=' shadow-xl bg-white max-w-[300px] w-[100%]'>
-                                <Image src={"/udc.png"} width={300} height={220} alt='faculty' classNameName='p-3' />
+                            <div className=' shadow-xl bg-white max-w-[300px] w-[100%]'>
+                                <Image src={"/udc.png"} width={300} height={220} alt='faculty' className='p-3' />
                                 <div>
-                                    <h1 classNameName='text-[14px] lg:text-[24px] text-[#650010] font-semibold'>Dr. B Srinivasa Rao</h1>
-                                    <h1 classNameName='text-[14px] lg:text-[16px] text-[#650010] font-semibold pb-3'>SCOPE</h1>
+                                    <h1 className='text-[14px] lg:text-[24px] text-[#650010] font-semibold'>Dr. B Srinivasa Rao</h1>
+                                    <h1 className='text-[14px] lg:text-[16px] text-[#650010] font-semibold pb-3'>SCOPE</h1>
                                 </div>
                             </div>
                         </div>
@@ -162,26 +162,26 @@ export default function Chairman(){
                <p className="text-[18px] text-black font-medium text-emilio pt-[15px]">The UDC comprises of following members:</p>
                <p className="text-[20px] font-semibold text-black pt-[24px] pb-[10px]">Chairman & Co-Chairman</p>
                
-               <div classNameName='grid grid-cols-2 justify-center items-center gap-5 text-center'>
-                            <div classNameName='shadow-xl bg-white max-w-[300px] w-[100%] '>
-                                <Image src={"/udc.png"} width={300} height={220} alt='faculty' classNameName='p-3' />
+               <div className='grid grid-cols-2 justify-center items-center gap-5 text-center'>
+                            <div className='shadow-xl bg-white max-w-[300px] w-[100%] '>
+                                <Image src={"/udc.png"} width={300} height={220} alt='faculty' className='p-3' />
                                 <div>
-                                    <h1 classNameName='text-[14px] lg:text-[24px] text-[#650010] font-semibold'>Dr. Banerji Chakka</h1>
-                                    <h1 classNameName='text-[14px] lg:text-[16px] text-[#650010] font-semibold pb-3'>VSL</h1>
+                                    <h1 className='text-[14px] lg:text-[24px] text-[#650010] font-semibold'>Dr. Banerji Chakka</h1>
+                                    <h1 className='text-[14px] lg:text-[16px] text-[#650010] font-semibold pb-3'>VSL</h1>
                                 </div>
                             </div>
-                            <div classNameName=' shadow-xl bg-white max-w-[300px] w-[100%]'>
-                                <Image src={"/udc.png"} width={300} height={220} alt='faculty' classNameName='p-3' />
+                            <div className=' shadow-xl bg-white max-w-[300px] w-[100%]'>
+                                <Image src={"/udc.png"} width={300} height={220} alt='faculty' className='p-3' />
                                 <div>
-                                    <h1 classNameName='text-[14px] lg:text-[24px] text-[#650010] font-semibold'>Dr. R Thahiya Afzal</h1>
-                                    <h1 classNameName='text-[14px] lg:text-[16px] text-[#650010] font-semibold pb-3'>VISH</h1>
+                                    <h1 className='text-[14px] lg:text-[24px] text-[#650010] font-semibold'>Dr. R Thahiya Afzal</h1>
+                                    <h1 className='text-[14px] lg:text-[16px] text-[#650010] font-semibold pb-3'>VISH</h1>
                                 </div>
                             </div>
-                            <div classNameName=' shadow-xl bg-white max-w-[300px] w-[100%]'>
-                                <Image src={"/udc.png"} width={300} height={220} alt='faculty' classNameName='p-3' />
+                            <div className=' shadow-xl bg-white max-w-[300px] w-[100%]'>
+                                <Image src={"/udc.png"} width={300} height={220} alt='faculty' className='p-3' />
                                 <div>
-                                    <h1 classNameName='text-[14px] lg:text-[24px] text-[#650010] font-semibold'>Dr. B Srinivasa Rao</h1>
-                                    <h1 classNameName='text-[14px] lg:text-[16px] text-[#650010] font-semibold pb-3'>SCOPE</h1>
+                                    <h1 className='text-[14px] lg:text-[24px] text-[#650010] font-semibold'>Dr. B Srinivasa Rao</h1>
+                                    <h1 className='text-[14px] lg:text-[16px] text-[#650010] font-semibold pb-3'>SCOPE</h1>
                                 </div>
                             </div>
                         </div>
