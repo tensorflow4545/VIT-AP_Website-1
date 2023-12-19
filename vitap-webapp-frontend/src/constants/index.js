@@ -1,15 +1,15 @@
 export const researchInnovation = [
   {
     id: 1,
-    imgUrl: "/researchImages/research_image1.jpeg",
+    imgUrl: "/researchImages/11.png",
   },
   {
     id: 2,
-    imgUrl: "/researchImages/research_image2.jpeg",
+    imgUrl: "/researchImages/2.png",
   },
   {
     id: 3,
-    imgUrl: "/researchImages/1.png",
+    imgUrl: "/researchImages/n.png",
   },
 ];
 

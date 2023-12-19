@@ -83,7 +83,7 @@ const About = () => {
             >
               <div className="flex flex-row items-center justify-center relative  transition-all duration-300 ease-in group">
                 <Link href="/announcements"><div className="Rectangle91 w-[32px] h-[30px] left-[45px] top-[-3px] absolute bg-[#5C0E14] opacity-20 transition-transform group-hover:left-[-10px] group-hover:w-[85px] group-hover:transition-all group-hover:duration-300 group-hover:ease-in-out "></div></Link>
-                <div className="font-bold">See All</div>
+                <div className="font-bold text-primary">See All</div>
                 <h1 className="mr-2 text-[#5C0E14] font-bold"></h1>
                 <hr className=" h-[4px] w-[36px] font-bold bg-[#5C0E14] max-lx:w-[28px]" />
               </div>
