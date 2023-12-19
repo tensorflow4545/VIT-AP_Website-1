@@ -685,7 +685,7 @@ export const advantagesFacilities = [
   },
   {
     id: 2,
-    imgUrl: "/advantagefacility2.jpeg",
+    imgUrl: "/advantages/ecs494400.png",
     title: "Engineering Clinics"
   },
   {
@@ -695,12 +695,12 @@ export const advantagesFacilities = [
   },
   {
     id: 4,
-    imgUrl: "/advantagefacility4.jpeg",
+    imgUrl: "/advantages/sports 494400.png",
     title: "Sports"
   },
   {
     id: 5,
-    imgUrl: "/advantagefacility5.jpeg",
+    imgUrl: "/advantages/clubs and chapters494400.png",
     title: "Clubs & Chapters"
   },
   {
@@ -710,12 +710,12 @@ export const advantagesFacilities = [
   },
   {
     id: 7,
-    imgUrl: "/advantagefacility7.jpeg",
+    imgUrl: "/advantages/international_progrmmas290180.png",
     title: "Internationals Programmes"
   },
   {
     id: 8,
-    imgUrl: "/advantagefacility2.jpeg",
+    imgUrl: "/advantages/community 494400.png",
     title: "Community Developement"
   },
   {
@@ -725,17 +725,17 @@ export const advantagesFacilities = [
   },
   {
     id: 10,
-    imgUrl: "/advantagefacility9.jpeg",
+    imgUrl: "/advantages/mentorship494400.png",
     title: "Mentoring Programme"
   },
   {
     id: 11,
-    imgUrl: "/advantagefacility10.jpeg",
+    imgUrl: "/advantages/qualified290180.png",
     title: "Qualified & Caring Faculty"
   },
   {
     id: 12,
-    imgUrl: "/advantagefacility8.jpeg",
+    imgUrl: "/advantages/alumini494400.png",
     title: "Alumni Network"
   },
 ]
