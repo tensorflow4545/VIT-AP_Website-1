@@ -37,7 +37,7 @@ const AdvantageFeatures = () => {
                     </div>
                     <div className='basis-1/3'>
                         <div className='max-w-[550px] w-[100%] min-h-[400px] -ml-[150px] lx:-ml-[250px] relative mt-[60px]'>
-                            <Image src={"/advantagefacility6.jpeg"} alt='advantage' fill />
+                            <Image src={"/advantages/ffcs494400.png"} alt='advantage' fill />
                             <div className='absolute w-full h-full top-10 right-10 bg-[#FCE3E5] -z-10'></div>
                         </div>
                     </div>
@@ -46,7 +46,7 @@ const AdvantageFeatures = () => {
                 <div className='min-h-[400px] w-[100%] relative py-[40px] flex '> 
                     <div className='basis-1/3'>
                         <div className='max-w-[550px] w-[100%] min-h-[400px] ml-[100px] md:ml-[200px] relative mt-[60px]'>
-                            <Image src={"/advantagefacility2.jpeg"} alt='advantage' fill />
+                            <Image src={"/advantages/ecs494400.png"} alt='advantage' fill />
                             <div className='absolute w-full h-full top-10 left-10 border-2 border-[#650010] -z-10'>
 
                             </div>
@@ -82,7 +82,7 @@ const AdvantageFeatures = () => {
                 <div className='min-h-[400px] w-[100%] relative py-[40px] flex '> 
                     <div className='basis-1/3'>
                         <div className='max-w-[550px] w-[100%] min-h-[400px] ml-[100px] md:ml-[200px] relative mt-[60px]'>
-                            <Image src={"/advantagefacility4.jpeg"} alt='advantage' fill />
+                            <Image src={"/advantages/sports 494400.png"} alt='advantage' fill />
                             <div className='absolute w-full h-full top-10 left-10 border-2 border-[#650010] -z-10'>
 
                             </div>
@@ -109,7 +109,7 @@ const AdvantageFeatures = () => {
                     </div>
                     <div className='basis-1/3'>
                         <div className='max-w-[550px] w-[100%] min-h-[400px] -ml-[150px] lx:-ml-[250px] relative mt-[60px]'>
-                            <Image src={"/advantagefacility5.jpeg"} alt='advantage' fill />
+                            <Image src={"/advantages/clubs and chapters494400.png"} alt='advantage' fill />
                             <div className='absolute w-full h-full top-10 right-10 bg-[#FCE3E5] -z-10'></div>
                         </div>
                     </div>
@@ -145,7 +145,7 @@ const AdvantageFeatures = () => {
                     </div>
                     <div className='basis-1/3'>
                         <div className='max-w-[550px] w-[100%] min-h-[400px] -ml-[150px] lx:-ml-[250px] relative mt-[60px]'>
-                            <Image src={"/advantagefacility7.jpeg"} alt='advantage' fill />
+                            <Image src={"/advantages/international_progrmmas290180.png"} alt='advantage' fill />
                             <div className='absolute w-full h-full top-10 right-10 bg-[#FCE3E5] -z-10'></div>
                         </div>
                     </div>
@@ -154,7 +154,7 @@ const AdvantageFeatures = () => {
                 <div className='min-h-[400px] w-[100%] relative py-[40px] flex '> 
                     <div className='basis-1/3'>
                         <div className='max-w-[550px] w-[100%] min-h-[400px] ml-[100px] md:ml-[200px] relative mt-[60px]'>
-                            <Image src={"/advantagefacility9.jpeg"} alt='advantage' fill />
+                            <Image src={"/advantages/community 494400.png"} alt='advantage' fill />
                             <div className='absolute w-full h-full top-10 left-10 border-2 border-[#650010] -z-10'>
 
                             </div>
@@ -190,7 +190,7 @@ const AdvantageFeatures = () => {
                 <div className='min-h-[400px] w-[100%] relative py-[40px] flex '> 
                     <div className='basis-1/3'>
                         <div className='max-w-[550px] w-[100%] min-h-[400px] ml-[100px] md:ml-[200px] relative mt-[60px]'>
-                            <Image src={"/advantagefacility9.jpeg"} alt='advantage' fill />
+                            <Image src={"/advantages/mentorship494400.png"} alt='advantage' fill />
                             <div className='absolute w-full h-full top-10 left-10 border-2 border-[#650010] -z-10'>
 
                             </div>
@@ -217,7 +217,7 @@ const AdvantageFeatures = () => {
                     </div>
                     <div className='basis-1/3'>
                         <div className='max-w-[550px] w-[100%] min-h-[400px] -ml-[150px] lx:-ml-[250px] relative mt-[60px]'>
-                            <Image src={"/advantagefacility10.jpeg"} alt='advantage' fill />
+                            <Image src={"/advantages/qualified290180.png"} alt='advantage' fill />
                             <div className='absolute w-full h-full top-10 right-10 bg-[#FCE3E5] -z-10'></div>
                         </div>
                     </div>
@@ -226,7 +226,7 @@ const AdvantageFeatures = () => {
                 <div className='min-h-[400px] w-[100%] relative py-[40px] flex '> 
                     <div className='basis-1/3'>
                         <div className='max-w-[550px] w-[100%] min-h-[400px] ml-[100px] md:ml-[200px] relative mt-[60px]'>
-                            <Image src={"/advantagefacility6.jpeg"} alt='advantage' fill />
+                            <Image src={"/advantages/alumini494400.png"} alt='advantage' fill />
                             <div className='absolute w-full h-full top-10 left-10 border-2 border-[#650010] -z-10'>
 
                             </div>
