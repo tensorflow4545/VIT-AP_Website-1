@@ -49,10 +49,10 @@ const AcheivementsSection = () => {
               </p>
             </div>
             <div className="text-[#5C0E14] flex justify-end items-end mr-[120px] max-md:mr-[70px] gap-2 mt-[10px]">
-              <div className="border border-red-900 p-[6px] rounded-sm cursor-pointer">
+              <div className="border border-red-900 p-[6px] rounded-sm cursor-pointer hover:bg-primary hover:text-white">
                 <AiOutlineArrowLeft size={25} onClick={prevSlide} />
               </div>
-              <div className="border border-red-900 p-[6px] rounded-sm cursor-pointer">
+              <div className="border border-red-900 p-[6px] rounded-sm cursor-pointer hover:bg-primary hover:text-white">
                 <AiOutlineArrowRight size={25} onClick={nextSlide} />
               </div>
             </div>

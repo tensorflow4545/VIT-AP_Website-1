@@ -19,7 +19,7 @@ const News = () => {
           >
             News
           </h2>
-          <div className="flex flex-row items-center justify-center relative transition-all duration-300 ease-in group top-[25px] left-[50%]">
+          <div className="flex flex-row items-center justify-center relative transition-all duration-300 ease-in group top-[25px] left-[45%]">
             <div className="Rectangle91 w-[32px] h-[30px] left-[40px] top-[45px] absolute bg-[#5C0E14] opacity-20 transition-transform group-hover:left-[-10px] group-hover:w-[90px] group-hover:transition-all group-hover:duration-300 group-hover:ease-in-out "></div>
             <Link href={"/"} className="mr-2 text-[#5C0E14] font-bold">See All</Link>
             <hr className=" h-[4px] w-[36px] font-bold bg-[#5C0E14] max-lx:w-[28px]" />
@@ -105,7 +105,7 @@ const News = () => {
             </button>
           </div>
           <div
-            className={`${styles.card3} max-w-[320px] h-[450px] bg-white ml-[35px] border-b shadow-2xl border-gray-800 section transition-transform transform hover:scale-105 mt-[15px]  group`}
+            className={`${styles.card3} max-w-[320px] h-[450px] bg-white ml-[35px] border-b shadow-2xl border-gray-800 section transition-transform transform hover:scale-105 mt-[15px]  group overflow-hidden`}
           >
             <Image
               src={news3}

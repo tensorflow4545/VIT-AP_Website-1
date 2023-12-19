@@ -35,6 +35,7 @@ const CDCHeader = () => {
     }, []);
 
     const [index, setIndex] = useState(0);
+    console.log(images);
 
     return (
         <>
