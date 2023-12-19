@@ -1,13 +1,11 @@
 "use client";
-import { Tb360View } from "react-icons/tb";
-import { FiSearch } from "react-icons/fi";
-import config from "@/config";
 import { motion, spring } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import { FiSearch } from "react-icons/fi";
+import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
+import { Tb360View } from "react-icons/tb";
 import "./NavbarUpper.css";
-import { RxHamburgerMenu } from "react-icons/rx";
-import Image from "next/image";
-import Link from "next/link";
+
 
 const navlinks = [];
 // import axios from 'axios';
@@ -34,6 +32,15 @@ const NavbarUpper = () => {
 
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const [sideOpen, setsideOpen] = useState(false);
+
+  const [campusesOpen , setcampusesOpen] = useState(false);
+
+
+  const toggleSidebar = () => {
+    setsideOpen(!sideOpen);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -139,10 +146,18 @@ const NavbarUpper = () => {
 
         <ul className="flex font-Montserrant h-[20px] md:space-x-[31px] ls:space-x-[20px]  text-[16px] ">
           <li>
-            <a href="https://alumni.vitap.ac.in/" target="_blank" rel="noopener noreferrer">Alumni</a>
+            <a
+              href="https://alumni.vitap.ac.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Alumni
+            </a>
           </li>
           <li>
-            <a href="/advantages" target="_blank">VIT-AP Advantages</a>
+            <a href="/advantages" target="_blank">
+              VIT-AP Advantages
+            </a>
           </li>
 
           <li>
@@ -151,7 +166,11 @@ const NavbarUpper = () => {
             </a>
           </li>
           <li>
-            <a href="/Campustour/index04.html" target="_blank" rel="noopener noreferrer">
+            <a
+              href="/Campustour/index04.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Tb360View size={25} />
             </a>
           </li>
@@ -159,8 +178,9 @@ const NavbarUpper = () => {
       </div>
 
       <div
-        className={`w-full h-[50px] text-white ls:hidden sm:flex items-center justify-between px-8 sticky top-0 z-30 ${scrolled ? "bg-white" : "bg-primary"
-          }`}
+        className={`w-full h-[50px] text-white ls:hidden sm:flex items-center justify-between px-8 sticky top-0 z-30 ${
+          scrolled ? "bg-white" : "bg-primary"
+        }`}
       >
         <div className="w-[95px] h-[32px]">
           <img
@@ -173,8 +193,79 @@ const NavbarUpper = () => {
             className={`logo ${scrolled ? "active" : ""}`}
           />
         </div>
+
         <div>
-          <RxHamburgerMenu size={30} className="" color={scrolled ? "black" : ""} />
+          <button
+            onClick={toggleSidebar}
+            className="text-white focus:outline-none"
+          >
+            <RxHamburgerMenu
+              size={30}
+              className=""
+              color={scrolled ? "black" : ""}
+            />
+          </button>
+        </div>
+
+        {/* Sidebar */}
+        <div
+          className={`fixed top-0 left-0 h-auto bg-white w-full transition-transform duration-300 transform ${
+            sideOpen ? "translate-y-0" : "-translate-y-full"
+          }`}
+        >
+
+        {/* Top element  */}
+          <div className="w-full flex justify-between px-8 py-3 bg-primary">
+            <div className="w-[95px] h-[32px]">
+              <img className="logo" />
+            </div>
+            <button
+              onClick={toggleSidebar}
+              className="text-white focus:outline-none"
+            >
+              <RxCross2 size={30} color="white" />
+            </button>
+          </div>
+          {/* end of top element  */}
+
+          
+          <div className="w-full h-[60px] bg-primary px-10 items-center flex justify-between">
+            <div>
+            <button onClick={() => {
+              setcampusesOpen(!campusesOpen);
+            }}>
+            <svg
+              width="25"
+              height="25"
+              viewBox="0 0 18 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.4375 3.50001V4.06251C17.4375 4.1371 17.4079 4.20864 17.3551 4.26138C17.3024 4.31413 17.2308 4.34376 17.1562 4.34376H16.3125V4.76563C16.3125 4.99862 16.1236 5.18751 15.8906 5.18751H2.10938C1.87639 5.18751 1.6875 4.99862 1.6875 4.76563V4.34376H0.84375C0.769158 4.34376 0.697621 4.31413 0.644876 4.26138C0.592132 4.20864 0.5625 4.1371 0.5625 4.06251V3.50001C0.5625 3.44437 0.579005 3.38998 0.609926 3.34372C0.640847 3.29746 0.684794 3.26141 0.736207 3.24013L8.89246 0.146385C8.96132 0.117872 9.03868 0.117872 9.10754 0.146385L17.2638 3.24013C17.3152 3.26141 17.3592 3.29746 17.3901 3.34372C17.421 3.38998 17.4375 3.44437 17.4375 3.50001ZM16.5938 14.1875H1.40625C0.940254 14.1875 0.5625 14.5653 0.5625 15.0313V15.5938C0.5625 15.6684 0.592132 15.7399 0.644876 15.7926C0.697621 15.8454 0.769158 15.875 0.84375 15.875H17.1562C17.2308 15.875 17.3024 15.8454 17.3551 15.7926C17.4079 15.7399 17.4375 15.6684 17.4375 15.5938V15.0313C17.4375 14.5653 17.0597 14.1875 16.5938 14.1875ZM3.375 5.75001V12.5H2.10938C1.87639 12.5 1.6875 12.6889 1.6875 12.9219V13.625H16.3125V12.9219C16.3125 12.6889 16.1236 12.5 15.8906 12.5H14.625V5.75001H12.375V12.5H10.125V5.75001H7.875V12.5H5.625V5.75001H3.375Z"
+                fill="#DDDDDD"
+              />
+            </svg>
+            </button>
+              
+            </div>
+            <h1 className="font-Montserrat text-[18px]">Alumini</h1>
+            <h1 className="font-Montserrat text-[18px]">VIT-AP Advantages</h1>
+            <Tb360View size={30}/>
+          </div>
+            {campusesOpen && 
+            
+            <div className="bg-primary h-10 px-8 w-full transition-transform ">
+              <div className="flex w-full justify-between">
+                <h1 className="font-Montserrat">Vellore</h1>
+                <h1 className="font-Montserrat">Chennai</h1>
+                <h1 className="font-Montserrat">Bhopal</h1>
+                <h1 className="font-Montserrat">Banglore</h1>
+
+              </div>
+            </div>
+            
+            }
         </div>
       </div>
     </>
