@@ -37,7 +37,7 @@ const News = () => {
           <div className="absolute bottom-0 left-[45%] w-[100px] h-[100px] border-[#fff] border-4 border-t-0 border-l-0 border-r-0"></div>
           <div className="absolute bottom-0 right-0 w-[100px] h-[100px] border-[#fff] border-4 border-l-0 border-t-0"></div>
           <div
-            className={`${styles.card1} max-w-[320px] h-[450px] bg-white ml-[24px] border-b shadow-2xl border-gray-800 section transition-transform transform hover:scale-105 mt-[15px]`}
+            className={`${styles.card1} max-w-[320px] h-[450px] bg-white ml-[24px] border-b shadow-2xl border-gray-800 section transition-transform transform hover:scale-105 mt-[15px]  group`}
           >
             <Image
               src={news1}
@@ -54,7 +54,7 @@ const News = () => {
               First-ever AI musical concert held at VIT-AP University
             </h3>
             <button
-              className={`${styles.button} flex ml-[24px] mt-[50px] rounded-full hover:bg-[#5C0E14] group`}
+              className={`${styles.button} flex ml-[24px] mt-[50px] rounded-full group-hover:bg-[#5C0E14]`}
             >
               <div
                 className={`${styles.circle} w-[40px] h-[40px] bg-white rounded-full group-hover:w-[190px] group-hover:h-[40px] group-hover:bg-[#5C0E14]`}
@@ -64,14 +64,14 @@ const News = () => {
                 className={`${styles.arrow} absolute mt-[13px] ml-[11px] group-hover:opacity-0`}
               />
               <p
-                className={`${styles.explore} ml-[16px] mt-[9px] text-[#5C0E14] font-semibold hover:text-[#FDFEFF] group-hover:ml-[28px] group-hover:mt-[9px] group-hover:absolute`}
+                className={`${styles.explore} ml-[16px] mt-[9px] text-[#5C0E14] font-semibold group-hover:text-[#FDFEFF] group-hover:ml-[28px] group-hover:mt-[9px] group-hover:absolute`}
               >
                 EXPLORE NEWS
               </p>
             </button>
           </div>
           <div
-            className={`${styles.card2} max-w-[320px] h-[450px] bg-white ml-[24px] border-b shadow-2xl border-gray-800 section transition-transform transform hover:scale-105 mt-[15px]`}
+            className={`${styles.card2} max-w-[320px] h-[450px] bg-white ml-[24px] border-b shadow-2xl border-gray-800 section transition-transform transform hover:scale-105 mt-[15px] group`}
           >
             <Image
               src={news1}
@@ -88,7 +88,7 @@ const News = () => {
               3rd Annual Convocation - 2023
             </h3>
             <button
-              className={`${styles.button} flex ml-[24px] mt-[50px] rounded-full hover:bg-[#5C0E14] group`}
+              className={`${styles.button} flex ml-[24px] mt-[50px] rounded-full  group-hover:bg-[#5C0E14]`}
             >
               <div
                 className={`${styles.circle} w-[40px] h-[40px] bg-white rounded-full group-hover:w-[190px] group-hover:h-[40px] group-hover:bg-[#5C0E14]`}
@@ -98,14 +98,14 @@ const News = () => {
                 className={`${styles.arrow} absolute mt-[13px] ml-[11px] group-hover:opacity-0`}
               />
               <p
-                className={`${styles.explore} ml-[16px] mt-[9px] text-[#5C0E14] font-semibold hover:text-[#FDFEFF] group-hover:ml-[28px] group-hover:mt-[9px] group-hover:absolute`}
+                className={`${styles.explore} ml-[16px] mt-[9px] text-[#5C0E14] font-semibold  group-hover:text-[#FDFEFF] group-hover:ml-[28px] group-hover:mt-[9px] group-hover:absolute`}
               >
                 EXPLORE NEWS
               </p>
             </button>
           </div>
           <div
-            className={`${styles.card3} max-w-[320px] h-[450px] bg-white ml-[35px] border-b shadow-2xl border-gray-800 section transition-transform transform hover:scale-105 mt-[15px]`}
+            className={`${styles.card3} max-w-[320px] h-[450px] bg-white ml-[35px] border-b shadow-2xl border-gray-800 section transition-transform transform hover:scale-105 mt-[15px]  group`}
           >
             <Image
               src={news3}
@@ -122,7 +122,7 @@ const News = () => {
               VIT-AP Men's Basketball team wins gold medal
             </h3>
             <button
-              className={`${styles.button} flex ml-[24px] mt-[25px] rounded-full hover:bg-[#5C0E14] group`}
+              className={`${styles.button} flex ml-[24px] mt-[25px] rounded-full  group-hover:bg-[#5C0E14]`}
             >
               <div
                 className={`${styles.circle} w-[40px] h-[40px] bg-white rounded-full group-hover:w-[190px] group-hover:h-[40px] group-hover:bg-[#5C0E14]`}
@@ -131,7 +131,7 @@ const News = () => {
                 src={arrow}
                 className={`${styles.arrow} absolute mt-[13px] ml-[11px] group-hover:opacity-0`}
               />
-              <p className="ml-[16px] mt-[9px] text-[#5C0E14] font-semibold hover:text-[#FDFEFF] group-hover:ml-[28px] group-hover:mt-[9px] group-hover:absolute">
+              <p className="ml-[16px] mt-[9px] text-[#5C0E14] font-semibold  group-hover:text-[#FDFEFF] group-hover:ml-[28px] group-hover:mt-[9px] group-hover:absolute">
                 EXPLORE NEWS
               </p>
             </button>
