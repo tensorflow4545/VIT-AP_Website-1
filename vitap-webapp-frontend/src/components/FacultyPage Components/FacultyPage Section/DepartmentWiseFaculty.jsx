@@ -7,19 +7,17 @@ import "./FacultyPage.css"
 import Link from 'next/link';
 import Image from 'next/image';
 
-const FacultyPage = (department) => {
-
-    const [active, setActive] = useState(0);
+const DepartmentFacultyPage = (department) => {
 
     const [numactive, setNumactive] = useState(1);
 
     const leftClick = () => {
-        { numactive === 1 ? setNumactive(4) : setNumactive(numactive - 1) }
+        { numactive === 1 ? setNumactive(roundedNumItems) : setNumactive(numactive - 1) }
     }
 
     const rightClick = () => {
         {
-            numactive === 8 ? setNumactive(1) : setNumactive(numactive + 1);
+            numactive === roundedNumItems ? setNumactive(1) : setNumactive(numactive + 1);
         }
     };
 
@@ -48,7 +46,7 @@ const FacultyPage = (department) => {
     }, []);
 
 
-    const numItems = Professors.length % 15;
+    const numItems = Professors.length / 15;
     const roundedNumItems = Math.ceil(numItems);
     const numArray = Array.from({ length: roundedNumItems }, (_, index) => index + 1);
 
@@ -63,28 +61,8 @@ const FacultyPage = (department) => {
                 </h1>
             </div>
 
-            <div className='grid grid-cols-4 max-w-[1440px] mx-auto gap-3 text-center p-[30px] text-[#650010] bg-[#F3F4F8] my-10'>
-                <div className={`py-5 font-Montserrant text-[20px] hover:bg-[#650010] hover:text-white transition-all duration-300 ${active === 0 ? 'bg-[#650010] text-white' : 'bg-[#F3F4F8]'} cursor-pointer`} onClick={() => setActive(0)}>
-                    School of Computer Science and Engineering (SCOPE)
-                </div>
-                <div className={`py-5 font-Montserrant text-[20px] hover:bg-[#650010] hover:text-white transition-all duration-300 ${active === 1 ? 'bg-[#650010] text-white' : 'bg-[#F3F4F8]'} cursor-pointer`} onClick={() => setActive(1)}>
-                    School of Electronics Engineering
-                </div>
-                <div className={`py-5 font-Montserrant text-[20px] hover:bg-[#650010] hover:text-white transition-all duration-300 ${active === 2 ? 'bg-[#650010] text-white' : 'bg-[#F3F4F8]'} cursor-pointer`} onClick={() => setActive(2)}>
-                    School of Mechanical Engineering (SMEC)
-                </div>
-                <div className={`py-5 font-Montserrant text-[20px] hover:bg-[#650010] hover:text-white transition-all duration-300 ${active === 3 ? 'bg-[#650010] text-white' : 'bg-[#F3F4F8]'} cursor-pointer`} onClick={() => setActive(3)}>
-                    School of Advanced Science (SAS)
-                </div>
-                <div className={`py-5 font-Montserrant text-[20px] hover:bg-[#650010] hover:text-white transition-all duration-300 ${active === 4 ? 'bg-[#650010] text-white' : 'bg-[#F3F4F8]'} cursor-pointer`} onClick={() => setActive(4)}>
-                    School of Business (VSB)
-                </div>
-                <div className={`py-5 font-Montserrant text-[20px] hover:bg-[#650010] hover:text-white transition-all duration-300 ${active === 5 ? 'bg-[#650010] text-white' : 'bg-[#F3F4F8]'} cursor-pointer`} onClick={() => setActive(5)}>
-                    School of Law (VSL)
-                </div>
-                <div className={`py-5 font-Montserrant text-[20px] hover:bg-[#650010] hover:text-white transition-all duration-300 ${active === 6 ? 'bg-[#650010] text-white' : 'bg-[#F3F4F8]'} cursor-pointer`} onClick={() => setActive(6)}>
-                    School of Social Science and Humanities (VISH)
-                </div>
+            <div className='max-w-[1440px] mx-auto gap-3 text-center p-[30px] text-[#650010] bg-[#F3F4F8] my-10'>
+                <h1 className='text-[40px]'>{decodeURIComponent(department.department)}</h1>
             </div>
 
             <div className='flex justify-center items-center'>
@@ -98,11 +76,9 @@ const FacultyPage = (department) => {
                 {
 
                     Professors.slice((numactive - 1) * 15, numactive * 15).map((professor) => {
-                        // console.log(decodeURIComponent(department.department));
-                        // console.log(professor.Department);
                         if (professor.Department === decodeURIComponent(department.department)) {
                             return (
-                                <Link key={professor.id} href={"/"}>
+                                <Link key={professor.id} href={`/${decodeURIComponent(department.department)}/faculty/profile/${professor.Employee_Id}`}>
                                     <div className='border border-black ml-[15px] max-w-[210px] min-h-[250px] w-[100%] h-[100%] relative overflow-hidden font-Emilo cursor-pointer group hover:shadow-2xl'>
                                         <div className='max-w-[210px] w-[100%] min-h-[180px] relative overflow-hidden'>
                                             <Image src={`${process.env.NEXT_PUBLIC_API_URL}${professor?.Photo.data[0].attributes.url}`} alt={professor.Photo.data[0].attributes.alternativeText || 'Professor Image'} fill className='' />
@@ -118,71 +94,6 @@ const FacultyPage = (department) => {
                     })
                 }
             </div>
-
-            {/* <div className="w-[100%] bg-red-100 h-[200px] mt-[-70px] -z-10 flex justify-center items-end gap-5 pb-[40px]">
-                <div className="cursor-pointer" onClick={() => leftClick()}>
-                    <AiOutlineArrowLeft size={30} />
-                </div>
-                <div
-                    className={`w-[40px] h-[40px] p-[5px] rounded-lg ${numactive === 1 ? `bg-[#650010] text-white` : `bg-[#F9C6CB] text-black`
-                        } flex justify-center items-center  cursor-pointer`}
-                    onClick={() => setNumactive(1)}
-                >
-                    1
-                </div>
-                <div
-                    className={`w-[40px] h-[40px] p-[5px] rounded-lg ${numactive === 2 ? `bg-[#650010] text-white` : `bg-[#F9C6CB] text-black`
-                        } flex justify-center items-center  cursor-pointer`}
-                    onClick={() => setNumactive(2)}
-                >
-                    2
-                </div>
-                <div
-                    className={`w-[40px] h-[40px] p-[5px] rounded-lg ${numactive === 3 ? `bg-[#650010] text-white` : `bg-[#F9C6CB] text-black`
-                        }  flex justify-center items-center  cursor-pointer`}
-                    onClick={() => setNumactive(3)}
-                >
-                    3
-                </div>
-                <div
-                    className={`w-[40px] h-[40px] p-[5px] rounded-lg ${numactive === 4 ? `bg-[#650010] text-white` : `bg-[#F9C6CB] text-black`
-                        } flex justify-center items-center  cursor-pointer`}
-                    onClick={() => setNumactive(4)}
-                >
-                    4
-                </div>
-                <div
-                    className={`w-[40px] h-[40px] p-[5px] rounded-lg ${numactive === 5 ? `bg-[#650010] text-white` : `bg-[#F9C6CB] text-black`
-                        } flex justify-center items-center  cursor-pointer`}
-                    onClick={() => setNumactive(5)}
-                >
-                    5
-                </div>
-                <div
-                    className={`w-[40px] h-[40px] p-[5px] rounded-lg ${numactive === 6 ? `bg-[#650010] text-white` : `bg-[#F9C6CB] text-black`
-                        } flex justify-center items-center  cursor-pointer`}
-                    onClick={() => setNumactive(4)}
-                >
-                    6
-                </div>
-                <div
-                    className={`w-[40px] h-[40px] p-[5px] rounded-lg ${numactive === 7 ? `bg-[#650010] text-white` : `bg-[#F9C6CB] text-black`
-                        } flex justify-center items-center  cursor-pointer`}
-                    onClick={() => setNumactive(4)}
-                >
-                    7
-                </div>
-                <div
-                    className={`w-[40px] h-[40px] p-[5px] rounded-lg ${numactive === 8 ? `bg-[#650010] text-white` : `bg-[#F9C6CB] text-black`
-                        } flex justify-center items-center  cursor-pointer`}
-                    onClick={() => setNumactive(4)}
-                >
-                    8
-                </div>
-                <div className="cursor-pointer" onClick={() => rightClick()}>
-                    <AiOutlineArrowRight size={30} />
-                </div>
-            </div> */}
             <div className="w-[100%] bg-red-100 h-[200px] mt-[-70px] -z-10 flex justify-center items-end gap-5 pb-[40px]">
                 <div className="cursor-pointer" onClick={leftClick}>
                     <AiOutlineArrowLeft size={30} />
@@ -192,7 +103,7 @@ const FacultyPage = (department) => {
                         key={num}
                         className={`w-[40px] h-[40px] p-[5px] rounded-lg ${numactive === num ? 'bg-[#650010] text-white' : 'bg-[#F9C6CB] text-black'
                             } flex justify-center items-center cursor-pointer`}
-                        onClick={() => setNumActive(num)}
+                        onClick={() => setNumactive(num)}
                     >
                         {num}
                     </div>
@@ -228,4 +139,4 @@ const FacultyPage = (department) => {
     )
 }
 
-export default FacultyPage
+export default DepartmentFacultyPage
