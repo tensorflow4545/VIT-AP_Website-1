@@ -1,9 +1,36 @@
+"use client"
+import axios from 'axios'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./FacultyPage.css"
 
-const EachFaculty = () => {
+const EachFaculty = (params) => {
+    // console.log(empid.empid);
+    const [professor, setProfessor] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/scope-faculty-profiles?populate=*&filters[Employee_Id][$eq]=${params.params.params.empid}`, {
+                    headers: {
+                        Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
+                    },
+                });
+                if (response.data && Array.isArray(response.data.data)) {
+                    const extractedAttributes = response.data.data.map((item) => item.attributes);
+                    setProfessor(extractedAttributes);
+                } else {
+                    console.error('The "data" property in the API response is not an array:', response.data);
+                }
+            } catch (error) {
+                console.error('Error fetching data:', error.message);
+            }
+        };
+
+        fetchData();
+    }, []);
+
     return (
         <div className="max-w-[1560px] w-[100%] h-[100%] mx-auto">
             <div
@@ -11,21 +38,22 @@ const EachFaculty = () => {
                 className="relative max-w-[1560px] w-full h-[300px] bg-cover bg-no-repeat bg-center mx-auto flex items-center justify-center"
             >
                 <h1 className="text-white text-[45px] font-semibold text-center flex justify-center items-center font-Emilio capitalize">
-                    Faculty Profile (SCOPE)
+                    {decodeURIComponent(params.params.params.department)}
                 </h1>
             </div>
 
+            {professor.map((profile, index) => (
             <div className='flex max-w-[1560px] w-[100%] min-h-[1000px] h-[100%] relative mb-[100px]'>
                 <div className='absolute w-[30%] h-[100%] bg-[#650010] overflow-visible '>
                     <div className=' bg-white ml-[100px] mt-[60px] shadow-2xl max-w-[450px] w-[100%] h-[800px] z-10 flex flex-col'>
                         <div className='flex-1 p-[25px]'>
                             <div className='flex justify-center items-center'>
-                                <Image src={"/facultyimg.png"} alt='facultyimg' width={150} height={120} className=' rounded-full shadow-xl'/>
+                                <Image src={`${process.env.NEXT_PUBLIC_API_URL}${profile?.Photo.data[0].attributes.url}`} alt={profile.Photo.data[0].attributes.alternativeText || 'Alt Text'} width={150} height={120} className=' rounded-full shadow-xl' />
                             </div>
                             <div className='flex flex-col gap-1'>
-                                <h1 className='font-Emilio text-[24px] md:text-[32px]'>Dr. Saroj Kumar Panigrahy</h1>
+                                <h1 className='font-Emilio text-[24px] md:text-[32px]'>{profile?.Name}</h1>
                                 <p className='font-Inter text-[14px] md:text-[16px]'>Associate Professor</p>
-                                <h3 className='font-Inter text-[14px] md:text-[16px]'>School of Computer Science and Engineering (SCOPE) </h3>
+                                <h3 className='font-Inter text-[14px] md:text-[16px]'>{profile?.Department}</h3>
                                 <p className='font-Inter text-[14px] md:text-[16px]'> <span className='text-[#650010]'>Office Address :</span> 329-B, AB-1</p>
                                 <p className='font-Inter text-[14px] md:text-[16px]'> <span className='text-[#650010]'>Contact No : </span> 700843963</p>
                             </div>
@@ -127,6 +155,7 @@ const EachFaculty = () => {
                     </div>
                 </div>
             </div>
+            ))}
 
             <div>
                 <div class="updated2">
