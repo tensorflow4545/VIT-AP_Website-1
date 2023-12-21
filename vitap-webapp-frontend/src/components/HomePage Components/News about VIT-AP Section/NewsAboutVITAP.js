@@ -2,8 +2,7 @@ import React from "react";
 import Image from "next/image";
 import news2 from "@/assets/images/newsPhotos/3rd Annual Convocation - 2023.jpg";
 import news1 from "@/assets/images/newsPhotos/aimusic.png";
-import news3 from "@/assets/images/newsPhotos/basketball.png";
-import news4 from "@/assets/images/newsPhotos/nationn.png";
+import news4 from "@/assets/images/newsPhotos/2.jpg";
 import circle from "@/assets/images/newsPhotos/circle.png";
 import arrow from "@/assets/images/newsPhotos/Vector.png";
 import styles from "../../../styles/News.module.css";
@@ -74,7 +73,7 @@ const News = () => {
             className={`${styles.card2} max-w-[320px] h-[450px] bg-white ml-[24px] border-b shadow-2xl border-gray-800 section transition-transform transform hover:scale-105 mt-[15px] group`}
           >
             <Image
-              src={news1}
+              src={news2}
               width={392}
               height={311}
               className={`${styles.img2} top-[223px] left-[108px]`}
@@ -107,22 +106,23 @@ const News = () => {
           <div
             className={`${styles.card3} max-w-[320px] h-[450px] bg-white ml-[35px] border-b shadow-2xl border-gray-800 section transition-transform transform hover:scale-105 mt-[15px]  group overflow-hidden`}
           >
+            <div className="overflow-hidden">
             <Image
-              src={news3}
+              src={news4}
               width={392}
               height={311}
               className={`${styles.img3} top-[223px] left-[108px]`}
-            />
+            /></div>
             <p className={`${styles.date} ml-[24px] mt-[21px]`}>
               Date: 09.09.2023
             </p>
             <h3
               className={`${styles.info} text-[#1B1C1E] font-Emilo font-bold ml-[24px] mt-[21px] text-[20px]`}
             >
-              VIT-AP Men's Basketball team wins gold medal
+              VIT-AP Men's basketball team
             </h3>
             <button
-              className={`${styles.button} flex ml-[24px] mt-[25px] rounded-full  group-hover:bg-[#5C0E14]`}
+              className={`${styles.button} flex ml-[24px] mt-[75px] rounded-full  group-hover:bg-[#5C0E14]`}
             >
               <div
                 className={`${styles.circle} w-[40px] h-[40px] bg-white rounded-full group-hover:w-[190px] group-hover:h-[40px] group-hover:bg-[#5C0E14]`}
@@ -131,7 +131,7 @@ const News = () => {
                 src={arrow}
                 className={`${styles.arrow} absolute mt-[13px] ml-[11px] group-hover:opacity-0`}
               />
-              <p className="ml-[16px] mt-[9px] text-[#5C0E14] font-semibold  group-hover:text-[#FDFEFF] group-hover:ml-[28px] group-hover:mt-[9px] group-hover:absolute">
+              <p className={`${styles.explore} ml-[16px] mt-[9px] text-[#5C0E14] font-semibold  group-hover:text-[#FDFEFF] group-hover:ml-[28px] group-hover:mt-[9px] group-hover:absolute`}>
                 EXPLORE NEWS
               </p>
             </button>
