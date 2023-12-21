@@ -13,7 +13,7 @@ import styles from "../../styles/GRC.module.css";
 const GRC = () => {
   return (
     <>
-      <div className={`${styles.container}`}>
+      <div className={`${styles.container} w-[100%]`}>
         <Image src={banner} className={`${styles.banner} w-full`} />
         <p
           className={`${styles.heading} text-[44px] font-Emilo text-[#650010] mt-10 ml-[27%] font-bold`}
@@ -349,7 +349,7 @@ const GRC = () => {
           </p>
         </div>
         <div
-          className={`${styles.footer} mt-[194px] w-screen h-[248px] bg-[#741D26] flex`}
+          className={`${styles.footer} mt-[194px] w-[100%] h-[248px] bg-[#741D26] flex`}
         >
           <div className={`${styles.end} w-[760px] mt-[75px] ml-[313px]`}>
             <p className="text-[26px] text-[#FDFEFF] font-Emilo">

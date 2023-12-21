@@ -3,11 +3,12 @@ import React from 'react'
 
 const AcademicBlocks = () => {
     return (
-        <div className="max-w-[1560px] w-[100%] max-h-[1600px] mx-auto">   
+        <div className="max-w-[1560px] w-[100%] max-h-[1600px] ls:mt-[90px] mx-auto">   
             <div className='flex flex-col gap-4 max-w-[1200px] md:mx-auto mt-10 mx-[30px]'>
                 <div className='flex flex-col text-center gap-2 pt-[30px]'>
-                    <h1 className='text-[24px] ls:text-[42px] font-Emilio text-[#000] capitalize px-[15px]'>Academic Blocks</h1>
-                    <p className='max-w-[1000px] mx-auto font-Montserrat text-[14px] ls:text-[16px] font-normal px-[15px]'>Well-planned, aesthetically appealing and well - ventilated comprehensive infrastructure is the striking feature of VIT-AP.</p>
+                <div className='max-w-[121px] mx-auto w-[100%] h-[3px] bg-[#650010] mt-[38px]'></div>
+                    <h1 className='text-[24px] ls:text-[48px] font-Emilio text-[#000] capitalize px-[15px]'>Academic Blocks</h1>
+                    <p className='max-w-[1000px] mx-auto font-Montserrat text-[16px] ls:text-[18px] font-normal px-[15px]'>Well-planned, aesthetically appealing and well - ventilated comprehensive infrastructure is the striking feature of VIT-AP.</p>
                 </div>
                 
                 <div className='grid grid-cols-1 ls:grid-cols-3 mt-10 gap-10'>

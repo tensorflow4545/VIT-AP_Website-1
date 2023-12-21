@@ -197,7 +197,7 @@ export default function Footer() {
         <div class="w-full h-max">
 
           {/* uni logo */}
-          <div class={`w-full h-max overflow-hidden flex justify-center pt-[30px] pb-[20px]`}>
+          <div class={`w-full h-max overflow-hidden flex justify-center pt-[20px] pb-[18px]`}>
             <div class={`w-[145px] h-[44px]`}>
               <Image width={145} height={44} src="/unilogom.png" alt="Uni Image" class="text-center"></Image>
             </div>
@@ -210,8 +210,8 @@ export default function Footer() {
                 <p class="text-primary text-[15px] font-Emilio font-bold">Apply Now</p>
               </div>
             </div>
-            <div class="basis pt-[5px] px-[40px]">
-              <div class="w-[5px] h-[5px] bg-primary rounded">
+            <div class="basis pt-[5px] px-[18px]">
+              <div class="w-[5px] h-[5px] bg-primary rounded-full">
 
               </div>
             </div>
@@ -220,7 +220,7 @@ export default function Footer() {
                 <p class="text-primary text-[15px] font-Emilio font-bold">Maps</p>
               </div>
             </div>
-            <div class="basis pt-[5px] px-[20px]">
+            <div class="basis pt-[5px] px-[18px]">
               <div class="w-[5px] h-[5px] bg-primary rounded">
 
               </div>
@@ -234,8 +234,8 @@ export default function Footer() {
 
           {/* Social icons */}
           {/* flex */}
-          <div class="flex flex-row w-full h-[20px] justify-center py-[17px]">
-            <div class="basis pr-[10px]">
+          <div class="flex flex-row w-full h-[20px] justify-center pt-[17px] pb-[21px]">
+            <div class="basis pr-[15px]">
               <a
                 href="https://www.instagram.com/vitap.university/?hl=en"
 
@@ -243,7 +243,7 @@ export default function Footer() {
                 <BiLogoInstagramAlt class="bg-[#DCCED0]" size={30} />
               </a>
             </div>
-            <div class="basis pr-[10px]">
+            <div class="basis pr-[15px]">
               <a
                 href="https://www.linkedin.com/school/vitap-university/?originalSubdomain=in"
 
@@ -251,7 +251,7 @@ export default function Footer() {
                 <AiFillLinkedin class="bg-[#DCCED0]" size={30} />
               </a>
             </div>
-            <div class="basis pr-[10px]">
+            <div class="basis pr-[15px]">
               <a
                 href="https://www.facebook.com/vitap.university/"
 
@@ -259,7 +259,7 @@ export default function Footer() {
                 <BiLogoFacebookCircle class="bg-[#DCCED0]" size={29} />
               </a>
             </div>
-            <div class="basis pr-[10px]">
+            <div class="basis pr-[15px]">
               <a href="https://www.youtube.com/c/VITAP" >
                 <AiFillYoutube class="bg-[#DCCED0]" size={30} />
               </a>
@@ -275,7 +275,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div class="w-full text-center pt-[20px]"><p class="text-primary text-[15px] font-Emilio font-bold pt-[30px] pb-[20px]">Quick Links</p></div>
+          <div class="w-full text-center pt-[20px]"><p class="text-primary text-[15px] font-Emilio font-bold pb-[20px]">Quick Links</p></div>
           {/* flex */}
           <div class="flex flex-row w-full justify-center">
             <div class="basis">
@@ -307,9 +307,10 @@ export default function Footer() {
             </div>
           </div>
           <div className="relative w-screen h-[2px] bg-primary top-[30px] bg-opacity-10"></div>
+          <hr class=" w-[400px] h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
 
           {/* Vit Connect */}
-          <div class="w-full text-center pt-[20px]"><p class="text-primary text-[15px] font-Emilio font-bold pt-[30px] pb-[20px]">VIT Connect</p></div>
+          <div class="w-full text-center"><p class="text-primary text-[15px] font-Emilio font-bold pb-[20px]">VIT Connect</p></div>
           {/* flex */}
           <div class="flex flex-row w-full justify-center">
             <div class="basis">
@@ -335,6 +336,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="relative w-screen h-[2px] bg-primary top-[30px] bg-opacity-10"></div>
+          <hr class=" w-[400px] h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
 
           {/* Ranking */}
           <div>
@@ -353,9 +355,11 @@ export default function Footer() {
             </div>
           </div>
           <div className="relative w-screen h-[2px] bg-primary top-[30px] bg-opacity-10"></div>
+          <hr class=" w-[400px] h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
+          
           {/* Research */}
           <div>
-            <div class="w-full text-center pt-[20px]"><p class="text-primary text-[15px] font-Emilio font-bold pt-[30px] pb-[20px]">Research</p></div>
+            <div class="w-full text-center"><p class="text-primary text-[15px] font-Emilio font-bold pb-[20px]">Research</p></div>
             {/* flex */}
             <div class="flex flex-row w-full pb-[7px] justify-center">
               <div class="basis">
@@ -394,10 +398,10 @@ export default function Footer() {
               </div>
             </div>
           </div>
-
+          <hr class=" w-[400px] h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
           {/* Program */}
           <div>
-            <div class="w-full text-center pt-[20px]"><p class="text-primary text-[15px] font-Emilio font-bold pt-[30px] pb-[20px]">Programs</p></div>
+          <div class="w-full text-center"><p class="text-primary text-[15px] font-Emilio font-bold  pb-[20px]">Programs</p></div>
             {/* flex */}
             <div class="flex flex-row w-screen pb-[7px] justify-center">
               <div class="basis">
@@ -417,6 +421,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="relative w-screen h-[2px] bg-primary top-[40px] bg-opacity-10"></div>
+
             {/* flex */}
             <div class="flex flex-row w-full justify-center">
               <div class="basis">
@@ -436,10 +441,11 @@ export default function Footer() {
               </div>
             </div>
           </div>
-
+          <hr class=" w-[400px] h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
+            
           {/* Information */}
           <div class="pb-[20px]">
-            <div class="w-full text-center pt-[20px]"><p class="text-primary text-[15px] font-Emilio font-bold pt-[30px] pb-[20px]">Information</p></div>
+            <div class="w-full text-center "><p class="text-primary text-[15px] font-Emilio font-bold pb-[20px]">Information</p></div>
             {/* flex */}
             <div class="flex flex-row w-full pb-[7px] justify-center">
               <div class="basis">
@@ -471,7 +477,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-
+            
           {/* Credit Section */}
           <div class="w-full h-[51px] bg-primary">
             <p class="text-white items-center text-center text-[16px] font-semibold font-Emilio py-[10px]">Crafted With Passion At VIT-AP University</p>

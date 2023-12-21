@@ -7,19 +7,19 @@ const CDCStatistics = () => {
             <div className="w-[100%] min-h-[400px] h-[100%] px-[20px] py-[20px] ls:py-[40px] ls:px-[50px] grid grid-cols-2 ls:grid-cols-5 justify-center items-center gap-5 max-md:px-[20px] max-lx:px-[0px] ">
 
                 <div className=''>
-                    <Card url={"./convocards/card1.jpeg"} title={"Schedule"} />
+                    <Card url={"./convocards/card1.jpeg"} href={"/cdc-superdream"} title={"Super dream offer"} />
                 </div>
                 <div className=''>
-                    <Card url={"./convocards/card2.jpeg"} title={"Videos"} />
+                    <Card url={"./convocards/card2.jpeg"} href={"/cdc-dream"} title={"Dream offer"} />
                 </div>
                 <div className=''>
-                    <Card url={"./convocards/card3.jpeg"} title={"Ranklist"} />
+                    <Card url={"./convocards/card3.jpeg"} href={"/cdc-internship"} title={"Internship"} />
                 </div>
                 <div className=''>
-                    <Card url={"./convocards/card4.jpeg"} title={"Instructions"} />
+                    <Card url={"./convocards/card4.jpeg"} href={"/cdc-statistics"} title={"Statistics"} />
                 </div>
                 <div className=''>
-                    <Card url={"./convocards/card5.jpeg"} title={"Photos"} />
+                    <Card url={"./convocards/card5.jpeg"} href={"/cdc-office"} title={"C.D.C Office"} />
                 </div>
             </div>
             <div className="min-h-[200px] w-[100%] bg-red-100 mt-[-150px] -z-20"></div>
