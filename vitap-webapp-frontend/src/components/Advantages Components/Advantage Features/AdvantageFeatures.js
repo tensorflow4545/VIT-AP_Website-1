@@ -217,7 +217,7 @@ const AdvantageFeatures = () => {
                     </div>
                     <div className='basis-1/3'>
                         <div className='max-w-[550px] w-[100%] min-h-[400px] -ml-[150px] lx:-ml-[250px] relative mt-[60px]'>
-                            <Image src={"/advantages/qualified290180.png"} alt='advantage' fill />
+                            <Image src={"/advantages/qualified494400.png"} alt='advantage' fill />
                             <div className='absolute w-full h-full top-10 right-10 bg-[#FCE3E5] -z-10'></div>
                         </div>
                     </div>
