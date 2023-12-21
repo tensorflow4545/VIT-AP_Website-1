@@ -716,7 +716,7 @@ export const advantagesFacilities = [
   },
   {
     id: 8,
-    imgUrl: "/advantages/community 494400.png",
+    imgUrl: "/advantages/community290180.png",
     title: "Community Developement"
   },
   {
@@ -736,7 +736,7 @@ export const advantagesFacilities = [
   },
   {
     id: 12,
-    imgUrl: "/advantages/alumini494400.png",
+    imgUrl: "/advantages/alumini290180.png",
     title: "Alumni Network"
   },
 ]

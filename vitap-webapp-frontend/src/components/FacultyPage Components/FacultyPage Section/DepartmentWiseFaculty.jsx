@@ -10,6 +10,7 @@ import Image from 'next/image';
 const DepartmentFacultyPage = (department) => {
 
     const [numactive, setNumactive] = useState(1);
+    const [searchQuery, setSearchQuery] = useState('');
 
     const leftClick = () => {
         { numactive === 1 ? setNumactive(roundedNumItems) : setNumactive(numactive - 1) }
@@ -22,6 +23,21 @@ const DepartmentFacultyPage = (department) => {
     };
 
     const [Professors, setProfessors] = useState([]);
+    const [filteredPeople, setFilteredPeople] = useState(Professors);
+
+    const handleInputChange = (event) => {
+        const inputValue = event.target.value.toLowerCase();
+        setSearchQuery(inputValue);
+
+        if (inputValue.trim() !== '') {
+            const filteredNames = Professors.filter((person) =>
+                person?.Name.toLowerCase().includes(inputValue)
+            );
+            setFilteredPeople(filteredNames);
+        } else {
+            setFilteredPeople(Professors);
+        }
+    };
 
     useEffect(() => {
         const fetchData = async () => {
@@ -46,7 +62,7 @@ const DepartmentFacultyPage = (department) => {
     }, []);
 
 
-    const numItems = Professors.length / 15;
+    const numItems = filteredPeople.length > 0 ? filteredPeople.length / 15 : Professors.length / 15;
     const roundedNumItems = Math.ceil(numItems);
     const numArray = Array.from({ length: roundedNumItems }, (_, index) => index + 1);
 
@@ -68,13 +84,41 @@ const DepartmentFacultyPage = (department) => {
             <div className='flex justify-center items-center'>
                 <div className='max-w-[800px] w-[100%] bg-gray-400 min-h-[55px] h-[100%] rounded-xl mb-[50px] flex justify-between items-center px-[50px] cursor-pointer'>
                     <h1 className='font-Inter text-[17px]'>Search Faculty</h1>
-                    <AiOutlineSearch size={25} />
+                    <div className='flex items-center'>
+                        <input
+                            type='text'
+                            placeholder='Enter name...'
+                            value={searchQuery}
+                            onChange={handleInputChange}
+                            className='border-none outline-none px-2 py-1 rounded-md flex-grow'
+                        />
+                        <button className='bg-transparent border-none outline-none p-2'>
+                            <AiOutlineSearch size={25} />
+                        </button>
+                    </div>
                 </div>
             </div>
 
             <div className='grid md:grid-cols-5 max-w-[1250px] md:mx-auto items-center justify-center grid-cols-4 gap-5 mx-[30px]'>
-                {
-
+                {filteredPeople.length > 0 ? (
+                    filteredPeople.slice((numactive - 1) * 15, numactive * 15).map((professor) => {
+                        if (professor.Department === decodeURIComponent(department.department)) {
+                            return (
+                                <Link key={professor.id} href={`/${decodeURIComponent(department.department)}/faculty/profile/${professor.Employee_Id}`}>
+                                    <div className='border border-black ml-[15px] max-w-[210px] min-h-[250px] w-[100%] h-[100%] relative overflow-hidden font-Emilo cursor-pointer group hover:shadow-2xl'>
+                                        <div className='max-w-[210px] w-[100%] min-h-[180px] relative overflow-hidden'>
+                                            <Image src={`${process.env.NEXT_PUBLIC_API_URL}${professor?.Photo.data[0].attributes.url}`} alt={professor.Photo.data[0].attributes.alternativeText || 'Professor Image'} fill className='' />
+                                        </div>
+                                        <div className='absolute w-full bottom-0 left-0 h-[70px] bg-[#650010] group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-red-700 transition-all duration-300 flex justify-center items-center'>
+                                            <h1 className='font-semibold text-center text-white font-Emilo text-[16px]'>{professor?.Name}</h1>
+                                        </div>
+                                    </div>
+                                </Link>
+                            );
+                        }
+                        return null;
+                    })
+                ) : (
                     Professors.slice((numactive - 1) * 15, numactive * 15).map((professor) => {
                         if (professor.Department === decodeURIComponent(department.department)) {
                             return (
@@ -90,8 +134,9 @@ const DepartmentFacultyPage = (department) => {
                                 </Link>
                             );
                         }
-                        return null; // If the condition is not met, return null or an empty fragment
+                        return null;
                     })
+                )
                 }
             </div>
             <div className="w-[100%] bg-red-100 h-[200px] mt-[-70px] -z-10 flex justify-center items-end gap-5 pb-[40px]">
