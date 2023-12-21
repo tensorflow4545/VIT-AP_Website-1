@@ -23,7 +23,7 @@ const Contact = () => {
     return (
         <>  <div className='bg-white w-[100%] h-[297px] pt-[37px] text-center'>
             <p className='text-primary font-Emilio text-[20px] font-bold'>Contact Us</p>
-            <p className='text-primary font-Emilio text-[20px] font-bold pb-[6px]'>{Profile?.Name}</p>
+            <p className='text-primary font-Emilio text-[32px] font-bold pb-[6px]'>{Profile?.Name}</p>
             <p className='text-primary font-Montserrat text-[20px] font-medium pb-[24px]'>{Profile?.Designation}</p>
             <p className='text-primary font-Montserrat text-[20px] font-medium pb-[12px]'>{Profile?.Address}</p>
             <p className='text-primary font-Montserrat text-[20px] font-medium pb-[12px]'>Email : {Profile?.Email}</p>

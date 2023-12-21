@@ -1,4 +1,6 @@
-import React from "react";
+"use client"
+
+import React,{useState} from "react";
 import Image from "next/image";
 import img1 from "@/assets/images/Mous/MoU.jpg";
 import stanford from "@/assets/images/Mous/stanford.png";
@@ -8,44 +10,47 @@ import mou1 from "@/assets/images/Mous/Juniper.png";
 import mou2 from "@/assets/images/Mous/IDS-Blockchain-academy.png"
 
 const Mous = () => {
+  const images = [
+    {
+      Image:mou1,
+    },
+    {
+      Image:mou2,
+    }
+  ]
+
+  const [index, setIndex] = useState(0);
+
+  const prevSlide = () => {
+    const isFirstSlide = index === 0;
+    const newIndex = isFirstSlide
+      ? images.length - 1
+      : index - 1;
+    setIndex(newIndex);
+  };
+  
+  const nextSlide = () => {
+    const isLastSlide = index === images.length - 1;
+    const newIndex = isLastSlide ? 0 : index + 1;
+    setIndex(newIndex);
+  };
+
   return (
     <>
       <div className="flex flex-col justify-center items-center h-screen">
         <div className="w-[100%] h-[80%] flex justify-end bg-[#FFE9EB]">
-          {/* <div className="w-1/5 flex flex-col border-l-[3px] border-l-[#FFFFFF]">
-            <div className="border-b-[3px] border-b-[#FFFFFF] h-1/3 flex items-center justify-center">
-              <Image src={mou1} />
-            </div>
-            <div className="border-b-[3px] border-b-[#FFFFFF] h-1/3 flex items-center justify-center">
-              <Image src={mou2} />
-            </div>
-            <div className="border border-b-[#FFFFFF] h-1/3 flex items-center justify-center">
-              <Image src={mou1} />
-            </div>
-          </div>
-          <div className="w-1/5 flex flex-col border-l-[3px] border-l-[#FFFFFF]">
-            <div className="border-b-[3px] border-b-[#FFFFFF] h-1/3 flex items-center justify-center">
-              <Image src={mou2} />
-            </div>
-            <div className="border-b-[3px] border-b-[#FFFFFF] h-1/3 flex items-center justify-center">
-              <Image src={mou1} />
-            </div>
-            <div className="border border-b-[#FFFFFF] h-1/3 flex items-center justify-center">
-              <Image src={mou2} />
-            </div>
-          </div> */}
           <div className="absolute w-full h-full">
             <div className="absolute left-[150px] w-[535px] h-full border-l-[3px] border-l-[#FFFFFF]">
 
               <div className="relative top-[150px] left-[42px] w-[493px] h-[297px] flex justify-center items-center">
-                <Image src={mou2} />
+                <Image src={images[index].Image} />
               </div>
 
               <div className="relative top-[180px] left-[234px]">
-                <button className="border border-black w-[54px] h-[54px] text-[30px] text-[#5C0E14] hover:text-white hover:bg-primary">
+                <button className="border border-black w-[54px] h-[54px] text-[30px] text-[#5C0E14] hover:text-white hover:bg-primary" onClick={prevSlide}>
                   &lt;
                 </button>
-                <button className="border border-black w-[54px] h-[54px] text-[30px] text-[#5C0E14] hover:text-white hover:bg-primary">
+                <button className="border border-black w-[54px] h-[54px] text-[30px] text-[#5C0E14] hover:text-white hover:bg-primary" onClick={nextSlide}>
                   &gt;
                 </button>
               </div>

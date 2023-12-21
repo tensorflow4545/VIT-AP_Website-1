@@ -340,7 +340,7 @@ export default function Footer() {
 
           {/* Ranking */}
           <div>
-            <div class="w-full text-center"><p class="text-primary text-[15px] font-Emilio font-bold pb-[20px]">Ranking & Accreditation</p></div>
+            <div class="w-full text-center pt-[20px]"><p class="text-primary text-[15px] font-Emilio font-bold pt-[30px] pb-[20px]">Ranking & Accreditation</p></div>
             {/* flex */}
             <div class="flex flex-row w-full justify-center">
               <div class="basis">
