@@ -1,0 +1,10 @@
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/FacilityToEmployeeImages/hero.png);
+    background-size: auto 362px;
+    background-repeat: no-repeat;
+}
+.mhero{
+    background-image: url(../../../assets/FacilityToEmployeeImages/hero.png);
+    background-size: auto 200px;
+    background-repeat: no-repeat;
+}

@@ -12,9 +12,9 @@ const News = () => {
   return (
     <>
       <div className={`${styles.container} bg-white h-screen w-screen`}>
-        <div className={`${styles.head} top-0 flex justify-left items-left w-screen`}>
+        <div className={`${styles.head} top-0 flex justify-left items-left w-screen px-[20px] lx:px-0`}>
           <h2
-            className={`${styles.heading} relative left-[100px] text-[#51060D] font-Emilio font-semibold text-[48px] w-[600px] mt-[50px] text-left`}
+            className={`${styles.heading} relative  text-[#51060D] font-Emilio font-semibold text-[48px] mt-[50px] text-left`}
           >
             News
           </h2>

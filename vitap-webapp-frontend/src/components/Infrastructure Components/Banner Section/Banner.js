@@ -3,25 +3,43 @@ import React from 'react'
 
 const Banner = () => {
     return (
-        <div className="max-w-[1560px] w-[100%] min-h-[700px] h-[100%] mx-auto relative">
-            <div className='max-w-[1560px] w-[100%] min-h-[500px] h-[100%] bg-[#F9C6CB]'></div>
-            <div className='flex justify-center items-center w-full h-full'>
-                <div className='max-w-[1250px] w-[100%] min-h-[700px] h-[100%] bg-white shadow-2xl translate-y-[7%] flex flex-col justify-center items-center text-center mt-[-500px] mx-[30px] md:none'>
-                    <div className='max-w-[950px] w-[100%] flex-1 pt-[20px] flex flex-col gap-2'>
-                        <h1 className='text-[42px] font-Emilio text-[#650010] capitalize px-[15px]'>Experience Excellence in Infrastructure</h1>
-                        <p className=' font-Montserrat text-[18px] text-[#000]'>At VIT-AP, we are dedicated to offering our students an environment that supports both their academic pursuits and their personal enjoyment. Our world-class infrastructure sets the stage for a transformative college experience.</p>
-
-                        <div className='flex flex-col gap-3 pt-[20px]'>
-                            <h1 className='text-[24px] font-bold text-[#650010] font-Emilio'>Secured Environment</h1>
-                            <p className=' font-Montserrat text-[18px] text-[#000]'>Our hostels are located in the heart of the university campus, ensuring easy access to classes, libraries, and other facilities.</p>
+        <>
+            <div className="max-w-[1560px] w-[100%] min-h-[1000px] h-[100%] mx-auto relative hidden ls:block">
+                <div className='max-w-[1560px] w-[100%] min-h-[830px] h-[100%] bg-[#f9c6cb80]'></div>
+                <div className='flex justify-center items-center w-full h-full'>
+                    <div className='max-w-[1250px] w-[100%] min-h-[1029px] h-[100%] bg-white shadow-2xl translate-y-[7%] flex flex-col justify-center items-center text-center mt-[-820px] mx-[30px] md:none'>
+                        <div className='max-w-[950px] w-[100%] flex-1 pt-[20px] flex flex-col gap-2'>
+                            <h1 className='text-[48px] font-Emilio text-[#650010] font-semibold capitalize px-[15px]'>Experience Excellence in Infrastructure</h1>
+                            <p className=' font-Montserrat font-normal text-[18px] text-[#000]'>At VIT-AP, we are dedicated to offering our students an environment that supports both their academic pursuits and their personal enjoyment. Our world-class infrastructure sets the stage for a transformative college experience.</p>
+                            <div className='max-w-[121px] mx-auto w-[100%] h-[16px] bg-[#650010] mt-[38px]'></div>
+                            <div className='flex flex-col gap-3 py-[20px]'>
+                                <h1 className='text-[20px] font-semibold text-[#650010] font-Emilio'>Secured Environment</h1>
+                                <p className=' font-Montserrat text-[18px] text-[#000]'>Our hostels are located in the heart of the university campus, ensuring easy access to classes, libraries, and other facilities.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className='flex-1 relative max-w-[1200px] w-[100%] -mt-[350px]'>
-                        <Image src={"/infrastructure.png"} fill alt='infrastructure' className='object-cover' />
+                        <div className='flex-1 relative max-w-[1200px] w-[100%] -mt-[590px]'>
+                            <Image src={"/infrastructure.png"} fill alt='infrastructure' className='object-cover' />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div className='block ls:hidden max-h-[800px] w-full'>
+                <div className='bg-backgroundRed2 min-h-[520px] px-[20px] py-[30px]'>
+                    <div className='flex flex-col justify-center items-center text-center'>
+                        <h1 className='text-[24px] font-Emilio text-[#650010] font-semibold capitalize px-[15px]'>Experience Excellence in Infrastructure</h1>
+                        <p className=' font-Montserrat font-normal text-[16px] text-[#000]'>At VIT-AP, we are dedicated to offering our students an environment that supports both their academic pursuits and their personal enjoyment. Our world-class infrastructure sets the stage for a transformative college experience.</p>
+                        <div className='max-w-[127px] mx-auto w-[100%] h-[10px] bg-[#650010] mt-[38px]'></div>
+                        <div className='flex flex-col gap-3 py-[20px]'>
+                            <h1 className='text-[20px] font-semibold text-[#650010] font-Emilio'>Secured Environment</h1>
+                            <p className=' font-Montserrat text-[16px] text-[#000]'>Our hostels are located in the heart of the university campus, ensuring easy access to classes, libraries, and other facilities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className='-mt-[70px] max-w-[320px] w-[100%] min-h-[250px] bg-white mx-auto rounded-xl relative shadow-2xl '>
+                    <Image src={"/infrastructure.png"} fill alt='infrastructure' className='object-contain px-[10px] py-[10px]' />
+                </div>
+            </div>
+        </>
     )
 }
 
