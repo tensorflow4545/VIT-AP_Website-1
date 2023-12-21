@@ -7,7 +7,7 @@ import { BiLogoInstagramAlt, BiLogoFacebookCircle } from "react-icons/bi";
 import { FiArrowUpRight } from "react-icons/fi";
 import { BsArrowUpRight } from "react-icons/bs";
 import Image from "next/image";
-import "../style/footer.css";
+import "./footer.css";
 import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
