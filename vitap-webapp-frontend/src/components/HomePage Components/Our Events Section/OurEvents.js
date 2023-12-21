@@ -49,40 +49,40 @@ const OurEvents = () => {
       imgUrl: "/eventImages/3.jpeg"
     },
     {
-      date: '20 Nov',
-      title: 'Industry Gues Lecture on Design Thinking',
-      description: 'Industry Gues Lecture on Design Thinking From Insights to Viability',
+      date: '21 Oct',
+      title: 'RECENT ADVANCES IN COMPUTER BASED SYSTEMS, PROCESSES AND APPLICATIONS',
+      description: "National Conference on 'RECENT ADVANCES IN COMPUTER BASED SYSTEMS, PROCESSES AND APPLICATIONS'",
       imgUrl: "/eventImages/1.jpeg"
     },
     {
-      date: '23 Nov',
-      title: 'Mentoring Event',
-      description: 'Exhibition of Ideas & Linkage with Innovation ambassadors for Mentorship programme',
+      date: '24 July',
+      title: '5-Day International FDP',
+      description: '5-Day International FDP on Unleashing Emerging Trends and Advancement in Computer Science 2.0 ',
       imgUrl: "/eventImages/2.jpeg"
     },
     {
-      date: '28 Oct',
-      title: 'Electoral Reforms in India',
-      description: 'Empowering Yout to Voting',
+      date: '29 July',
+      title: 'International seminar',
+      description: 'International seminar on "Unlocking Success: Strategies for Crafting Funded Proposals, Editorial Book Proposals, and Conference Proposals',
       imgUrl: "/eventImages/3.jpeg"
     },
     {
       imgUrl: "/eventImages/1.jpeg",
-      title: "Industry Gues Lecture on Design Thinking",
-      date: "20th Nov",
-      description: 'Industry Gues Lecture on Design Thinking From Insights to Viability'
+      title: "Industrial Talk Series on cloud Resiliency",
+      date: "30 July",
+      description: 'Industrial Talk Series on cloud Resiliency'
     },
     {
       imgUrl: "/eventImages/2.jpeg",
-      title: "Mentoring Event",
-      date: "23rd Nov",
-      description: 'Exhibition of Ideas & Linkage with Innovation ambassadors for Mentorship programme'
+      title: "2-Days National Level FDP",
+      date: "19 July",
+      description: '2-Days National Level FDP on Recent Advancement in Machine Learning and Deep Learning'
     },
     {
       imgUrl: "/eventImages/3.jpeg",
-      title: "Electoral Reforms in India",
-      date: "28 Oct",
-      description: 'Empowering Yout to Voting'
+      title: "Security Mechanisms",
+      date: "6 May",
+      description: 'Security Mechanisms for Data Transmission among UPFs belonging to Different 5G/5GB/6G Networks'
     },
   ];
 
@@ -125,10 +125,10 @@ const OurEvents = () => {
                   <h1 className='mx-[16px] my-[12px]'>{event.date}</h1>
                 </div>
                 <div className="flex-2 w-full">
-                  <h1 className="font-bold text-[18px] hover:underline hover:underline-offset-4">
+                  <h1 className="font-bold text-[18px] hover:underline hover:underline-offset-4 overflow-hidden max-h-[3.6em] leading-[1.8em]">
                     {event.title}
                   </h1>
-                  <p className="max-w-[280px] max-lx:max-w-[360px] font-normal text-[16px]">
+                  <p className="max-w-[280px] max-lx:max-w-[360px] font-normal text-[16px] overflow-hidden max-h-[3.6em] leading-[1.8em]">
                     {event.description}
                   </p>
                 </div>
