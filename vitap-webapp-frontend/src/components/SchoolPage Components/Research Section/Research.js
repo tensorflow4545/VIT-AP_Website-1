@@ -34,18 +34,21 @@ export default function Research() {
 
             {Research.map((research) => {
               {/* card */ }
-              return <div><div class="basis w-[350px] h-[550px] bg-white rounded-sm mr-[24px] rounded hover:shadow-xl">
-                <div class="w-[350px] h-[311px] relative">
-                  <Image class="absolute z-0" width={350} height={311} src={research.img} alt="Event Image"></Image>
-                </div>
+              return <div>
+                <div class="basis w-[350px] h-[550px] bg-white rounded-sm mr-[24px] rounded hover:shadow-xl  group">
+                  <div class="w-[350px] h-[311px] relative">
+                    <Image class="absolute z-0" width={350} height={311} src={research.img} alt="Event Image"></Image>
+                  </div>
 
-                <p class="text-[28px] text-dark font-medium text-emilio pt-[16px] pl-[20px]">{research.head}</p>
-                <p class="text-[18px] text-zinc-400 text-montserrat font-[400px] pt-[9px] pl-[20px] pb-[10px]">{research.desc}</p>
-                <div class={`w-[200px] h-[50px] bg-white hover:bg-red-950 rounded-full px-[10px] py-[10px] ml-[20px] justify-centers hover:text-white text-red-950`}>
-                  <div class="flex flex-row"><p class="text-[18px] text-red-950 text-montserrat text-center pl-[5px] pt-[3px]"><FaArrowRight /></p>
-                    <p class="text-[18px]  text-montserrat text-center pl-[5px]">EXPLORE MORE</p></div>
+                  <p class="text-[28px] text-dark font-medium text-emilio pt-[16px] pl-[20px]">{research.head}</p>
+                  <p class="text-[18px] text-zinc-400 text-montserrat font-[400px] pt-[9px] pl-[20px] pb-[10px]">{research.desc}</p>
+                  <div class={`w-fit h-[50px] bg-white text-primary rounded-full px-[10px] py-[10px] ml-[20px] justify-centers group-hover:text-white group-hover:bg-primary`}>
+                    <div class="flex flex-row">
+                      <p class="text-[18px] text-montserrat text-center pl-[5px] pt-[3px]"><FaArrowRight /></p>
+                      <p class="text-[18px] text-montserrat text-center pl-[5px]">EXPLORE MORE</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
 
 
                 <hr></hr>
