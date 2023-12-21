@@ -48,7 +48,7 @@ const News = () => {
               Date: 04.10.2023
             </p>
             <h3
-              className={`${styles.info} text-[#1B1C1E] font-Emilo font-bold ml-[24px] mt-[21px] text-[20px]`}
+              className={`${styles.info} text-[#1B1C1E] font-Emilo font-bold ml-[24px] mt-[21px] text-[20px] pr-[10px]`}
             >
               First-ever AI musical concert held at VIT-AP University
             </h3>
@@ -82,7 +82,7 @@ const News = () => {
               Date: 27.09.2023
             </p>
             <h3
-              className={`${styles.info} text-[#1B1C1E] font-Emilo font-bold ml-[24px] mt-[21px] text-[20px]`}
+              className={`${styles.info} text-[#1B1C1E] font-Emilo font-bold ml-[24px] mt-[21px] text-[20px] pr-[10px]`}
             >
               3rd Annual Convocation - 2023
             </h3>
@@ -117,12 +117,12 @@ const News = () => {
               Date: 09.09.2023
             </p>
             <h3
-              className={`${styles.info} text-[#1B1C1E] font-Emilo font-bold ml-[24px] mt-[21px] text-[20px]`}
+              className={`${styles.info} text-[#1B1C1E] font-Emilo font-bold ml-[24px] mt-[21px] text-[20px] pr-[10px]`}
             >
               VIT-AP Men's basketball team
             </h3>
             <button
-              className={`${styles.button} flex ml-[24px] mt-[75px] rounded-full  group-hover:bg-[#5C0E14]`}
+              className={`${styles.button} flex ml-[24px] mt-[50px] rounded-full  group-hover:bg-[#5C0E14]`}
             >
               <div
                 className={`${styles.circle} w-[40px] h-[40px] bg-white rounded-full group-hover:w-[190px] group-hover:h-[40px] group-hover:bg-[#5C0E14]`}

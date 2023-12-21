@@ -289,6 +289,7 @@ export const acheivements = [
       "50,000 seed Balls aerially dispersed In Vijayawada District, Andhra Pradesh in Collaboration with Indian Navy",
     description:
       "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur.",
+    image:"/acheivements1.jpeg"
   },
   {
     id: 2,
