@@ -48,7 +48,7 @@ const EachFaculty = (params) => {
                     <div className=' bg-white ml-[100px] mt-[60px] shadow-2xl max-w-[450px] w-[100%] h-[800px] z-10 flex flex-col'>
                         <div className='flex-1 p-[25px]'>
                             <div className='flex justify-center items-center'>
-                                <Image src={`${process.env.NEXT_PUBLIC_API_URL}${profile?.Photo.data[0].attributes.url}`} alt={profile.Photo.data[0].attributes.alternativeText || 'Alt Text'} width={150} height={120} className=' rounded-full shadow-xl' />
+                                <Image src={`${process.env.NEXT_PUBLIC_API_URL}${profile?.Photo.data[0].attributes.url}`} alt={profile.Photo.data[0].attributes.alternativeText || 'Alt Text'} width={150} height={120} className=' w-[180px] h-[180px] overflow-hidden shadow-xl' />
                             </div>
                             <div className='flex flex-col gap-1'>
                                 <h1 className='font-Emilio text-[24px] md:text-[32px]'>{profile?.Name}</h1>
