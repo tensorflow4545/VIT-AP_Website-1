@@ -1,72 +1,115 @@
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 360px) {
   .container {
     background-color: #e8e8e8;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
   }
   .img1 {
+    opacity: 0;
+  }
+  .mobile1 {
     position: absolute;
     top: 0px;
     left: 0px;
+    width: 130px;
+    height: 112px;
+    opacity: 100;
   }
   .img2 {
     position: absolute;
     top: 0px;
-    right: 0px;
-    width: 200px;
-    height: 200px;
+    left: 230px;
+    width: 130px;
+    height: 112px;
   }
   .img3 {
     position: absolute;
-    top: 750px;
-    left: 0px;
-    width: 280px;
+    opacity: 0;
+  }
+  .mobile3 {
+    position: absolute;
+    top: 136px;
+    right: 0px;
+    width: 99px;
+    opacity: 100;
   }
   .img4 {
+    opacity: 0;
+  }
+  .mobile4 {
     position: absolute;
-    top: 750px;
-    right: 0px;
-    width: 280px;
+    top: 136px;
+    left: 0px;
+    width: 110px;
+    opacity: 100;
   }
   .img5 {
+    opacity: 0;
+  }
+  .mobile5 {
     position: absolute;
-    top: 280px;
-    left: 0px;
+    top: 360px;
+    right: 0px;
+    width: 110px;
+    opacity: 100;
   }
   .img6 {
+    opacity: 0;
+  }
+  .mobile6 {
     position: absolute;
-    top: 280px;
-    right: 0px;
+    top: 360px;
+    left: 0px;
+    width: 110px;
+    opacity: 100;
   }
   .img7 {
+    opacity: 0;
+  }
+  .mobile7 {
     position: absolute;
-    bottom: 0px;
+    top: 525px;
     left: 0px;
-    width: 290px;
+    width: 130px;
+    height: 112px;
+    opacity: 100;
+  }
+  .mobile8 {
+    position: absolute;
+    top: 525px;
+    left: 230px;
+    width: 130px;
+    height: 112px;
+    opacity: 100;
   }
   .img8 {
     opacity: 0;
   }
   .img9 {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    width: 290px;
+    opacity: 0;
+  }
+  .centerdiv {
+    margin-top: 10px;
   }
   .explore {
-    top: 330px;
+    position: relative;
+    font-size: 10px;
+    margin-top: 258px;
   }
   .life {
-    top: 335px;
-    font-size: 30px;
+    font-size: 20px;
+    position: relative;
   }
   .experience {
-    top: 340px;
+    width: 253px;
     position: relative;
+    font-size: 12px;
   }
   .button {
-    width: 100px;
-    height: 40px;
-    top: 345px;
+    width: 104px;
+    height: 36px;
     position: relative;
-    font-size: 13px;
+    font-size: 12px;
   }
 }
