@@ -3,7 +3,6 @@ import Conclusion from '@/components/CDC page/Conclusion Section/Conclusion'
 import Hero from '@/components/CDC page/Hero Section/Hero'
 import Info from '@/components/CDC page/Info Section/Info'
 import Package from '@/components/CDC page/Package Section/Package'
-import ProfileCard from '@/components/CDC page/Package Section/ProfileCard'
 import Video from '@/components/CDC page/Video Section/Video'
 import CDCStatistics from '@/components/CDCOfficePage Components/CDCStatistics Section/CDCStatistics'
 import Component from '@/components/HomePage Components/Footer Section/Component'
@@ -25,7 +24,7 @@ const page = () => {
             <CDCStatistics />
             <Conclusion />
             <Component />
-            {/* <Footer /> */}
+            <Footer />
         </div>
     )
 }

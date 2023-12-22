@@ -1,6 +1,7 @@
+import Link from 'next/link';
 import React from 'react'
 
-const Card = ({ url, title }) => {
+const Card = ({ url, title, href }) => {
   return (
     <div
       style={{ backgroundImage: `url(${url})` }}
@@ -8,7 +9,7 @@ const Card = ({ url, title }) => {
     >
       <div className="absolute bottom-0 w-[100%] min-h-[75px] group-hover:bg-[#fff] group-hover:text-[#650010] bg-[#650010] text-white pl-6 pt-3">
         <h1 className="text-[15px] ls:text-[17px] font-bold">{title}</h1>
-        <p className="text-[13px] ls:text-[14px] font-semibold cursor-pointer">Explore Now</p>
+        <Link href={href}><p className="text-[13px] ls:text-[14px] font-semibold cursor-pointer">Explore Now</p></Link>
       </div>
     </div>
   );

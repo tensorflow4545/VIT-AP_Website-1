@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from dexifly.com/spark/index04.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 May 2022 10:59:04 GMT -->
+<head>
+  
+  <!-- krpano -->
+  <title>VIT-AP 360 View</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <!--                           styles                                              -->
+  <style>
+    @-ms-viewport { width:device-width;}
+    @media only screen and (min-device-width:800x) { html { overflow:hidden; } }
+    html { height:100%; }
+   
+    body { height: 100%; overflow:hidden; margin: 0; padding: 100px; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#ffffff; background-color:#ffffff; }
+   
+   
+    .overlay{
+          z-index:-1;
+          position: fixed;
+          right: 10px;
+          bottom:50px;
+          float: right;
+          width: 250px;
+          height: 150px;        
+      }
+
+/* videoPanel */
+      div.VideoPanel{
+z-index: 4;
+position: fixed;
+top: 20%;
+left: 950px;
+width: 20%;
+height: auto;
+}
+/* Background image campus map */
+#bgimage {
+          width: 100%;
+          height: auto;
+          position: fixed;
+            /* top: 0px;
+            right: 0px;
+            width: auto ;
+            height: auto; 
+            padding: auto;
+            z-index: 2;
+            zoom: 1.3; */
+          display: flex;
+          flex-direction: row;
+          justify-content : space-around;
+          flex-flow : wrap;
+
+           
+          }
+
+          img {
+  display: flex;
+  max-width: 100%;
+  max-height: 100%;
+  justify-content: center;
+  align-items:center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+html, body {
+    height: 100%;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  padding: 0vw;
+  width: auto;
+  height: 100vh;
+
+ 
+  
+}
+
+.Containers {
+  position: fixed;
+ 
+  /* max-width: 1152px; */
+   /* width: 1300px; */
+   /* width: 1300px; */
+   
+  border-radius: 1px;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 6px 24px #221625;
+
+  
+  margin-left: auto;
+  margin-right: auto;
+ 
+ 
+ 
+  
+  
+}
+
+.hotspots {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.hotspots .hotspot {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+/* Ab1 */
+.hotspots .hotspot:nth-child(1) .trigger {
+  top: 40%;
+  left: 33%;
+}
+/* central block */
+.hotspots .hotspot:nth-child(2) .trigger {
+  top: 30%;
+  left: 51%;
+  
+}
+/* AB2 Block */
+.hotspots .hotspot:nth-child(3) .trigger {
+  top: 40%;
+  left: 70%;
+  
+}
+.hotspots .hotspot:nth-child(4) .trigger {
+  top: 70%;
+  left: 50%;
+  
+}
+.hotspots .hotspot:nth-child(5) .trigger {
+  top: 15%;
+  left: 35%;
+  
+}
+
+/* ladies hostel */
+.hotspots .hotspot:nth-child(6) .trigger {
+  top: 15%;
+  left: 65%;
+  
+}
+/* Sports triangle */
+.hotspots .hotspot:nth-child(7) .trigger {
+  top: 20%;
+  left: 73%;
+  
+}
+
+.hotspots .hotspot:nth-child(8) .trigger {
+  top: 25%;
+  left: 67%;
+  
+}
+
+.hotspots .hotspot .trigger {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 36px;
+  height: 36px;
+  
+  background: #ff2255;
+  color: #EEE6F0; */
+  /* border-radius: 50%;
+  transform: translate(-50%, -50%); */
+ 
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  pointer-events: all;
+  /* box-shadow: 0 0 0 0 #ff2255;
+  transition: box-shadow 0.4s; */
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.hotspots .hotspot .trigger:hover {
+  
+  /* box-shadow: 0 0 0 2px rgba(255, 34, 85, 0.5); */
+}
+
+.hotspots .hotspot.reveal {
+  z-index: 1;
+  pointer-events: all;
+}
+.hotspots .hotspot.reveal .content {
+  opacity: 1;
+}
+.hotspots .hotspot.reveal .content::before {
+  opacity: 1;
+}
+.hotspots .hotspot.reveal .content figure {
+  opacity: 1;
+  /* transform: translate(0, 0);
+  transition-delay: 0.4s; */
+  pointer-events: all;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.hotspots .hotspot.reveal .content figure figcaption {
+  pointer-events: all;
+}
+          
+
+.rightTopMapIcon{
+  /* width: 4vw;
+  height: auto; 
+  left: 2vw;
+  top: 2vh; */
+position: relative;
+border: none;
+color: #fff;
+box-shadow: 0 0 0 0 rgba(217, 168, 8, 0.781);
+border-radius: 50%;
+background-color: #e4d01a97;
+background-size:cover;
+background-repeat: no-repeat;
+cursor: pointer;
+-webkit-animation: pulse 1.00s infinite cubic-bezier(00.4, 0, 0, 1);
+-moz-animation: pulse 1.00s infinite cubic-bezier(00.4, 0, 0, 1);
+-ms-animation: pulse 1.00s infinite cubic-bezier(00.4, 0, 0, 1);
+animation: pulse 1.00s infinite cubic-bezier(0.4, 0, 0, 1);
+
+
+
+}
+.rightTopMapIcon:hover 
+{
+  -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
+ 
+}
+
+.rightTopMapIcon:focus{
+     outline: none;
+    border: none;
+}
+
+
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+
+ </style>
+  
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- <title>Spark | Modern Multi-Purpose HTML5 Template</title> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CPoppins:300,400,500,600" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link id="theme" href="css/style.css" rel="stylesheet">
+    <link href="css/sparkicons.css" rel="stylesheet">
+    <link href="css/et-line.css" rel="stylesheet">
+    <link href="css/themify-icons.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <!--delete after config-->
+    <!-- <link rel="stylesheet" href="css/style.changer.css"> -->
+    <!--end delete-->
+  
+  </head>
+  
+  <div id="playoverlay" style="z-index: 100; position:absolute; width:100vw; height:100vh; pointer-events: fill; left: 0%; top: 0%;" >
+    
+    <div href="#" onclick="Scenes('1');" style="height:10vh; width: 10vh; left: 50vw; top: 50vh; position: absolute;z-index: 200;">
+     <img   src ="images/playicon.png" >
+    </div>
+    <div style="background-color: rgb(255, 255, 255);z-index: 90;padding: 100vw;opacity: 0.2;position: fixed;backdrop-filter: blur(6px);"></div>
+    <div style="position: relative;left: 38vw;top: 65vh; color: black;z-index: 95;font-size: 25px;"><b>Click "Play" button to start Experience</b></div>
+  </div>
+  <div class="VideoPanel">
+    <video playsinline src="#" class="embed-responsive-item" crossOrigin = "Anonymous"  id="colorbars"  autoplay="false" controls="controls" preload="metadata" style="display:none; pointer-events: none;" loop="true">
+  
+    </video>
+    
+
+<style>
+</style>
+  </div>
+  
+  <canvas  id="canvas" width="900px" height="850px" style="display: none; right : 0%; bottom : 0%; 
+  z-index: 2; position: fixed;height: 20vw;" >
+
+  </canvas>
+  <div class="loader" style="border-width: thin"></div>
+  <body>
+    
+  
+  <div id="frame" class="nav-container transition-fade">
+    <nav class="absolute transparent offscreen-nav" id='trans' >    
+      <div id ='panel1' class="nav-bar" style="z-index: 0">        
+        <div id="logoCollege" class="nav-block left" ><a href="#"><img alt="spark" src="images/logotype/VITLogo.png" class="logo logo-light"><img alt="spark" src="images/logotype/logo-dark.png" class="logo logo-dark"></a></div>
+       
+        <div id="righttopClose" class="nav-block nav-widget offscreen-toggle right" ><a href="#"><img class="rightTopMapIcon" style="top: 0.5vh;" width="50vw" src="images/Anchororange.png" alt="logo"></a><span class=""></span></div>
+      </div>
+      <!-- <div class="offscreen-cont image-bg">    offscreen-toggle  id="menuSelector"  -->
+       
+             <div  class="offscreen-cont image-bg" >
+              <main>
+                <div id="myMap" class="Containers" >
+         <!-- <div ><img id="bgimage" src="images/campus/Map.png" width="600" height="400" alt="campus"> </div> -->
+     
+          <div class="media">
+            <figure class="img-responsive" style="margin: 0 auto;"><img src="images/campus/Map.png"  ></figure>
+          </div>
+          <!-- <div id="canvas-wrap"  style="position: relative;"><canvas id="myCanvas" width="100px" height="100px"   style="position: fixed;zoom: 1.25; border: 0px solid black "></canvas> -->
+            
+            <!--                           IndividualElements                onclick="Scenes('scene1');        -->
+           <div class="hotspots">
+            <div class="hotspot" >
+              <div class="trigger nav-widget offscreen-toggle right" href="" onclick="Scenes('AB1 Block')" style="width: 30px ;">
+            <div id="scne1" >
+              <span class="ham"></span>
+              <img src="images/locationan.gif" alt="testimage" style="height: 60px;width: 60px;">
+               <div style="color:black; font-size: 15px;word-wrap: normal;text-align: center;white-space: wrap; "><b>Sarvepalli Radhakrishnan Academic Block(AB1)</b> </div>
+              <style>
+               
+              </style>
+             
+             </div>
+             <div class="content"></div>
+            </div>
+            </div>
+  
+            <div class="hotspot">
+            <div class="trigger nav-widget offscreen-toggle right" href="" onclick="Scenes('Central Building')" style="width: 30px ;">
+              <div id="scne2">
+                <span class="ham"></span>
+                <img src="images/locationan.gif" alt="testimage" style="height: 60px;width: 60px;">
+                 <div style="color:black;font-size: 15px;word-wrap: normal;text-align: center;white-space: wrap;"><b>Mahatma Gandhi Academic Block(Central Block)</b></div>
+                <style>
+                 
+                </style>
+                </div>
+              </div>
+              </div>
+
+              <div class="hotspot">
+                <div class="trigger nav-widget offscreen-toggle right" href="#" onclick="Scenes('AB2 Block')" style="width: 30px ;">
+                <div id="scne3" >
+                  <span class="ham"></span>
+                  <img src="images/locationan.gif" alt="testimage" style="height: 60px;width: 60px;">
+                   <div style="color:black;font-size: 15px;word-wrap: normal;text-align: center;white-space: wrap;"><b>APJ Abdul Kalam Academic Block(AB2) </b></div>
+                  <style>
+                    /* #scne3{
+                      position: absolute;
+                      right: 550px;
+                      top: 500px;
+                     
+                    } */
+                  </style>
+                  </div>
+                  </div>
+                  </div>
+  
+                  <div class="hotspot">
+                    <div class="trigger nav-widget offscreen-toggle right" href="#" onclick="Scenes('Main Entrance')" style="width: 30px ;">
+                  <div id="scne4" >
+                    <span class="ham"></span>
+                     <img src="images/locationan.gif" alt="testimage" style="height: 60px;width: 60px;">
+                     <div style="color:black;font-size: 15px;word-wrap: normal;text-align: center;white-space: nowrap;"><b>Main Entrance </b></div>
+                    <style>
+                      /* #scne4{
+                        position: absolute;
+                        right: 500px;
+                        top: 150px;
+                      } */
+                    </style>
+                    </div>
+                    </div>
+                    </div>
+
+
+                    <div class="hotspot">
+                      <div class="trigger nav-widget offscreen-toggle right" href="" onclick="Scenes('Men Hostel')" style="width: 30px ;">
+                    <div id="scne5" >
+                      <span class="ham"></span>
+                       <img src="images/locationan.gif" alt="testimage" style="height: 60px;width: 60px;">
+                       <div style="color:black;font-size: 15px;word-wrap: normal;text-align: center;white-space: nowrap;"><b> Men's Hostel </b></div>
+                      <style>
+                       
+                      </style>
+                      </div>
+                      </div>
+                      </div>
+
+                      <div class="hotspot">
+                        <div class="trigger nav-widget offscreen-toggle right" href="" onclick="Scenes('Ladies Hostel')" style="width: 30px ;">
+                      <div id="scne6" >
+                        <span class="ham"></span>
+                         <img src="images/locationan.gif" alt="testimage" style="height: 60px;width: 60px;">
+                         <div style="color:black;font-size: 15px;word-wrap: normal;text-align: center;white-space: nowrap;"><b> Ladies Hostel </b></div>
+                        <style>
+                         
+                        </style>
+                        </div>
+                        </div>
+                        </div>
+
+                        <div class="hotspot">
+                          <div class="trigger nav-widget offscreen-toggle right" href="" onclick="Scenes('Sports Triangle')" style="width: 30px ;">
+                        <div id="scne7" >
+                          <span class="ham"></span>
+                           <img src="images/locationan.gif" alt="testimage" style="height: 60px;width: 60px;">
+                           <div style="color:black;font-size: 15px;word-wrap: normal;text-align: center;white-space: nowrap;"><b> Sports Triangle </b></div>
+                          <style>
+                           
+                          </style>
+                          </div>
+                          </div>
+                          </div>
+
+
+                          <div class="hotspot">
+                            <div class="trigger nav-widget offscreen-toggle right" href="" onclick="Scenes('Rock Plaza')" style="width: 30px ;">
+                          <div id="scne8" >
+                            <span class="ham"></span>
+                             <img src="images/locationan.gif" alt="testimage" style="height: 60px;width: 60px;">
+                             <div style="color:black;font-size: 15px;word-wrap: normal;text-align: center;white-space: nowrap;"><b> Rock Plaza </b></div>
+                            <style>
+                             
+                            </style>
+                            </div>
+                            </div>
+                            </div>
+                    
+           
+             <!--                           IndividualElements                        -->
+            </div>
+          </div>
+        </main>
+            </div>
+           
+        
+      </div> 
+    
+        <div id="centerTxt" class="valign text-center"> 
+
+        
+        
+         
+          <!-- <div class="social-links"><a href="#" title="Facebook" target="_blank"><i class="ti-facebook"></i></a><a href="#" title="Twitter" target="_blank"><i class="ti-twitter-alt"></i></a><a href="#" title="Linkedin" target="_blank"><i class="ti-linkedin"></i></a><a href="#" title="Pinterst" target="_blank"><i class="ti-instagram"></i></a></div> -->
+      
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="main-container transition-fade">
+  </body>
+  <script>
+    ///////////////////////////////////////Change video
+  function changeVideo(green){
+    var vid = document.getElementById("colorbars");
+
+
+    console.log("video changed to "+green);
+		if(green=='0'){
+			var lastFrame = vid.duration;
+            vid.currentTime = lastFrame - 1;
+
+     // vid.pause();
+    }
+    if(green=='1'){
+    vid.src="images/videos/Main_Entrance.mp4";
+		// document.getElementById("myPopup").innerHTML="Welcome to Vellore Institute of Technology (VIT), a world class institution offering the best in terms of academics and overall learning experience.Our cosmopolitan campuses have students from all over India and from 50+ countries., providing a rich multi-cultural and International experience. Our pollution free and green campus resembles a city, with lake, gardens, lawns, residential complexes, food courts, salons and wide roads. With our own water supply and backup electricity, we cater to the needs of our residents.";
+        // Show loading animation.
+  var playPromise = vid.play();
+
+  if (playPromise !== undefined) {
+    playPromise.then(_ => {
+      // Automatic playback started!
+      // Show playing UI.
+    })
+    .catch(error => {
+      // Auto-play was prevented
+      // Show paused UI.
+      vidbtn.className = "fa fa-play";
+    });
+  }
+    }
+		else if(green=='2'){
+    vid.src="https://s3.ap-south-1.amazonaws.com/vitvlr-s3-vr360/bluemat/MGR Block.mp4";
+		document.getElementById("myPopup").innerHTML="M.G.R Block , also known as the Main Building is named after former Chief Minister of Tamil Nadu, Dr. M.G.Ramachandran. This is the administrative block where the offices of Chancellor, Vice Chancellor, Registrar and all other managerial offices are set-up. The doors of management are always open for discussions for students, staff and visitors.";
+        vid.play();
+    }
+  }
+  
+  </script>
+  <!-- /////////////////////////////////////////////////////////////chroma video script /////////////////////////////////////////////////-->
+  <script src="tour.js"></script>
+       <script src="seriously_js/seriously.js"></script>
+  <script src="seriously_js/seriously.chroma.js"></script>
+ <script>
+    // video play
+    //var vidplayer = document.getElementById("colorbars");
+    function vidplay(name){
+      var vidplayer = document.getElementById("colorbars");
+     
+      console.log(vidplayer.id);
+      if(name=="Entrance")
+      {
+        vidplayer.src="images/videos/Main_Entrance.mp4";
+      }
+      else if(name=="Ab2Entrance")
+      {
+       vidplayer.src="images/videos/SandhyaEshwaran-Ab11.mp4"
+      }
+      else if(name=="null1")
+      {
+        
+        
+        vidplayer.src="images/videos/nullvideo.mp4";
+      }
+      else if(name=="Auditorium")
+      {
+       vidplayer.src="images/videos/Priyanka - Auditorium-1.mp4"
+      } 
+      else if(name=="Intro2")
+      {
+       vidplayer.src="images/videos/Intro 2near gate.mp4"
+      }
+      else if(name=="Library")
+      {
+       vidplayer.src="images/videos/Library-1.mp4"
+      }
+      else if(name=="Ab2 Backside")
+      {
+       vidplayer.src="images/videos/Ab2 Backside.mp4"
+      }
+      else if(name=="centralJunction")
+      {
+       vidplayer.src="images/videos/centralJunction.mp4"
+      }
+      else if(name=="FionaFrancisEceLabs1")
+      {
+       vidplayer.src="images/videos/FionaFrancisEceLabs1.mp4"
+      }
+      else if(name=="HarshaBbaClassrooms1")
+      {
+       vidplayer.src="images/videos/HarshaBbaClassrooms1.mp4"
+      }
+      else if(name=="LadiesHostes1")
+      {
+       vidplayer.src="images/videos/LadiesHostes1.mp4"
+      }
+      else if(name=="MensHostel11")
+      {
+       vidplayer.src="images/videos/MensHostel11.mp4"
+      }
+      else if(name=="Parentstay")
+      {
+       vidplayer.src="images/videos/Parentstay.mp4"
+      }
+      else if(name=="ParnikaMedfac1")
+      {
+       vidplayer.src="images/videos/ParnikaMedfac1.mp4"
+      }
+      vidplayer.load();
+     
+     vidplayer.play();
+     
+     // vidplayer.muted = false;
+    }
+    function startgreen(){
+        
+      
+        var playBlock = document.getElementById("playoverlay");
+        playBlock.style.display = "none";
+        var canv = document.getElementById("canvas");
+        canv.style.display = "block";
+        var vidplayerr = document.getElementById("colorbars");
+        if(vidplayer.src==null){
+          vidplayerr.src="images/videos/Main_Entrance.mp4";
+        }
+       
+        vidplayerr.load();
+        
+       // vidplayerr.play();
+      
+      }
+    //main code goes here
+    // declare our variables
+    var seriously, // the main object that holds the entire composition
+    colorbars, // a wrapper object for our source image
+    vignette, // a vignette effect
+    target; // a wrapper object for our target canvas
+    
+    seriously = new Seriously();
+    colorbars = seriously.source('#colorbars');
+    target = seriously.target('#canvas');
+    // vignette = seriously.effect('vignette');
+    console.log("green matting");
+    // // connect all our nodes in the right order
+    // vignette.source = colorbars;
+    // target.source = vignette;
+    // seriously.go();
+     var chroma = seriously.effect('chroma');
+    chroma.source = colorbars;
+    target.source = chroma;
+    var r = 103 / 255;
+    var g = 180 / 255;//155/255
+    var b = 44  / 255;
+    chroma.screen = [r,g,b,1];
+    seriously.go();
+    </script>
+       <!-- /////////////////////////////////////////////////////////////chroma video script /////////////////////////////////////////////////-->
+      <script>
+
+        ///////////////////////////////get screen width
+        
+      ////////////////////////////////////////recentre map background
+        window.addEventListener('resize', resiZeMap, false);  
+        window.onloadstart=Initialscreen() ;
+        function Initialscreen() {
+       
+         resiZeMap();
+       }
+      
+        function resiZeMap(){
+          var w = window.innerWidth;
+          var c = document.getElementById("myMap");
+          var vidSide = document.getElementById("canvas");
+
+if(w<1500){
+  
+  c.style.left="0px"; 
+  if(w<1300){
+  vidSide.style.right="5%";
+  vidSide.style.bottom = "10%";
+}
+if(w<900){
+  vidSide.style.height="40vw";
+  vidSide.style.right="5%";
+  vidSide.style.bottom = "10%";
+
+}
+}
+else{
+  c.style.left="10vw";
+  vidSide.style.height="20vw";
+  vidSide.style.right="0%";
+  vidSide.style.bottom = "0%";
+  
+}
+        }
+
+        ////////////////////////////////////////recentre map background
+  
+  //...drawing code...
+
+  (function() {
+  var
+    // Obtain a reference to the canvas element using its id.
+    htmlCanvas = document.getElementById('myCanvas'),
+    // Obtain a graphics context on the canvas element for drawing.
+    context = htmlCanvas.getContext('2d');
+
+  // Start listening to resize events and draw canvas.
+  initialize();
+
+  function initialize() {
+    // Register an event listener to call the resizeCanvas() function 
+    // each time the window is resized.
+    window.addEventListener('resize', resizeCanvas, false);
+    // Draw canvas border for the first time.
+    resizeCanvas();
+  }
+
+  // Display custom canvas. In this case it's a blue, 5 pixel 
+  // border that resizes along with the browser window.
+  function redraw() {
+   
+    context.strokeStyle = 'blue';
+    context.lineWidth = '0';
+    context.strokeRect(0, 0, window.innerWidth, window.innerHeight);
+    loadImage();
+
+    
+  }
+
+  // Runs each time the DOM window resize event fires.
+  // Resets the canvas dimensions to match window,
+  // then draws the new borders accordingly.
+  function resizeCanvas() {
+    htmlCanvas.width = window.innerWidth;
+    htmlCanvas.height = window.innerHeight;
+    redraw();
+  }
+
+  
+
+
+  function loadImage() {  
+         var image = new Image();
+         image.src = 'images/campus/Map.png';
+         image.onload = function () {
+   
+          context.drawImage(image,
+          htmlCanvas.width / 2 - image.width / 1.63,
+          htmlCanvas.height / 2 - image.height / 1.63
+        );
+         
+    }
+  }
+  
+})();
+
+
+     //////////////////////////////////////////////////load individual elements
+/*
+         ////Men's Hostel
+         var canvas1= document.getElementById('myCanvas');
+         var imageicon1 = new Image();
+         imageicon1.src ='images/location.png';
+         imageicon1.onload = function () {
+          var cxt = canvas.getContext('2d');
+          cxt.drawImage(imageicon1,
+          canvas1.width / 2 -400 ,
+          canvas1.height / 2 - 250,
+          30,
+          50 
+             
+        );
+        };
+        ///Men's hostel
+        
+
+        ////Entrance
+        var canvas2= document.getElementById('myCanvas');
+        
+         var imageicon2 = new Image();
+         imageicon2.src ='images/location.png';
+       
+         imageicon2.onload = function () {
+          var cxt = canvas.getContext('2d');
+         
+          cxt.drawImage(imageicon2,
+          canvas2.width / 2 -150 ,
+          canvas2.height / 2 - 20,
+          30,
+          50 
+             
+        );
+        
+        };
+        ///entrance
+
+         ////Apjblock
+         var canvas3= document.getElementById('myCanvas');
+        
+        var imageicon3 = new Image();
+        imageicon3.src ='images/location.png';
+      
+        imageicon3.onload = function () {
+         var cxt = canvas.getContext('2d');
+        
+         cxt.drawImage(imageicon3,
+         canvas3.width / 2 -150 ,
+         canvas3.height / 2 - 350,
+         30,
+         50 
+            
+       );
+       
+       };
+       ///Apjblock
+
+        ////Ladies
+        var canvas3= document.getElementById('myCanvas');
+        
+        var imageicon3 = new Image();
+        imageicon3.src ='images/location.png';
+      
+        imageicon3.onload = function () {
+         var cxt = canvas.getContext('2d');
+        
+         cxt.drawImage(imageicon3,
+         canvas3.width / 2 +20 ,
+         canvas3.height / 2 - 280,
+         30,
+         50 
+            
+       );
+       
+       };
+       ///ladies
+        
+
+  }
+
+  //...drawing code clos 
+
+        /////////////////////////////////////////////////////////////canvas shrink
+         var canvas = document.getElementById('myCanvas');
+         var image = new Image();
+         
+         image.src = 'images/campus/Map.png';
+         image.onload = function () {
+          var cxt = canvas.getContext('2d');
+          
+          cxt.drawImage(image,
+             canvas.width / 2 - image.width/1.63 ,
+             canvas.height / 2 - image.height/1.63
+             
+        );
+       
+         };
+         //////////////////////////////////////////////////load individual elements
+
+         ////Men's Hostel
+         var canvas1= document.getElementById('myCanvas');
+         
+         var imageicon1 = new Image();
+         imageicon1.src ='images/location.png';
+         imageicon1.onload = function () {
+          var cxt = canvas.getContext('2d');
+         
+          cxt.drawImage(imageicon1,
+          canvas1.width / 2 - 400 ,
+          canvas1.height / 2 - 250,
+          30,
+          50 
+             
+        );
+        
+        };
+
+       
+        
+
+
+        
+        ///Men's hostel
+
+        ////Entrance
+        var canvas2= document.getElementById('myCanvas');
+        
+         var imageicon2 = new Image();
+         imageicon2.src ='images/location.png';
+       
+         imageicon2.onload = function () {
+          var cxt = canvas.getContext('2d');
+         
+          cxt.drawImage(imageicon2,
+          canvas2.width / 2 -150 ,
+          canvas2.height / 2 - 20,
+          30,
+          50 
+             
+        );
+        
+        };
+        ///entrance
+
+         ////Apjblock
+         var canvas3= document.getElementById('myCanvas');
+        
+        var imageicon3 = new Image();
+        imageicon3.src ='images/location.png';
+      
+        imageicon3.onload = function () {
+         var cxt = canvas.getContext('2d');
+        
+         cxt.drawImage(imageicon3,
+         canvas3.width / 2 -150 ,
+         canvas3.height / 2 - 350,
+         30,
+         50 
+            
+       );
+       
+       };
+       ///Apjblock
+
+        ////Ladies
+        var canvas3= document.getElementById('myCanvas');
+        
+        var imageicon3 = new Image();
+        imageicon3.src ='images/location.png';
+      
+        imageicon3.onload = function () {
+         var cxt = canvas.getContext('2d');
+        
+         cxt.drawImage(imageicon3,
+         canvas3.width / 2 +20 ,
+         canvas3.height / 2 - 280,
+         30,
+         50 
+            
+       );
+       
+       };
+       ///ladies
+       */
+    /////////////////////////////////////////////////canvas shrink end
+
+   /////////////////////////hotspots
+   document.getElementById("scne2").addEventListener("click", Scenes('scene2'));
+          let clickEvent = 'ontouchstart' in window ? 'touchend' : 'click';
+
+let triggers = document.querySelectorAll('.trigger');
+let hotspots = document.querySelectorAll('.hotspot');
+
+
+
+
+      </script>
+  <body class="scroll-reveal parallax-off gutted" >
+    
+    <div id="pano" class="absolute" style="width:100%;height:100%; z-index: 1;">
+       
+      <style>
+        div.absolute {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 400px;
+  height: 200px;
+  /* border: 3px solid #73AD21; */
+}
+      </style>
+        
+    
+      <noscript><table style="width:100%;height:100%;"><tr style="vertical-align:50px;"><td><div style="text-align:center;">ERROR:<br/><br/>Javascript not activated<br/><br/></div></td></tr></table></noscript>
+      <script>
+        embedpano({swf:"tour.swf", xml:"tour.xml", target:"pano", html5:"auto",id:"krObject", mobilescale:1.0, passQueryParameters:true});
+       
+        function Scenes(names) {
+              var krpano = document.getElementById('krObject');
+             
+             
+              if(names=="Main Entrance"){
+                krpano.call("loadscene(scene__30A0565_6_7_Panorama, null, MERGE(1));");
+          
+              }
+              if(names=="Men Hostel"){
+                krpano.call("loadscene(scene__30A1960_1_2_Panorama, null, MERGE(1));");
+              }
+              if(names=="Ladies Hostel"){
+                krpano.call("loadscene(scene__30A2083_4_5_Panorama, null, MERGE(1));");
+              }
+              if(names=="AB2 Block"){
+                krpano.call("loadscene(scene__30a0709_10_11_panorama(rightbuild), null, MERGE(1));");
+              }
+              if(names=="AB1 Block"){
+                krpano.call("loadscene(scene__30a1177_8_9_panorama, null, MERGE(1));");
+              }
+              if(names=="Central Building"){
+                krpano.call("loadscene(scene__30a0979_80_81_panorama, null, MERGE(1));");
+              }
+              if(names=="Rock Plaza"){
+                krpano.call("loadscene(scene__30a0880_1_2_panorama, null, MERGE(1));");
+              }//////////
+              if(names=="Sports Triangle"){
+                krpano.call("loadscene(scene__30A2035_6_7_Panorama, null, MERGE(1));");
+              }
+              if(names=="1"){
+                krpano.call("startup");
+                startgreen();
+              }
+             
+               
+                 }
+      </script>
+    </div>
+   
+</script>
+     
+        <div class="container">
+          <div class="row">
+            <div data-pagination="true" class="slider slider-controlsoutside pb-40 pt-40">
+              <ul class="slides">
+            
+            </div>
+            <div class="col-md-12 mb-20 blog-post-preview">
+              <div class="row">
+                <div class="col-md-4"><a href="blog-post.html" class="animsition-link">
+                    <div class="blog-pos-preview-title">
+                      <h4 class="mb-0">Desing is something more ...</h4>
+                    </div></a>
+                  <div class="blog-post-preview-date"><span>30 september | in design</span></div>
+                </div>
+                <div class="col-md-8">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi modi cupiditate ipsam molestiae eveniet incidunt nostrum atque alias dicta? Quos, quisquam iusto numquam dicta vel voluptatem aperiam voluptas similique</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+   
+      <div id="notify" class="notify notify-sm">
+        <div class="notify-inner valign text-center"></div><span class="notify-close"></span>
+      </div>
+    </div>
+    <!--JS scripts-->
+ 
+     
+  
+    <script src="js/vendor/jquery-2.2.0.min.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    
+    
+    
+   
+    <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
+    <!--delete after config-->
+    <script src="js/style.changer.js"></script>
+
+
+
+
+    
+    <!--end delete-->
+  </body>
+
+<!-- Mirrored from dexifly.com/spark/index04.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 May 2022 10:59:26 GMT -->
+</html>

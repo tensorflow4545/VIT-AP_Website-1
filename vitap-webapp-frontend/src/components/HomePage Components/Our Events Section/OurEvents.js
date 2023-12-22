@@ -1,6 +1,5 @@
 "use client";
 
-import { eventsMain } from '@/constants';
 import React, { useState } from 'react'
 import Card from './Card';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
@@ -15,13 +14,13 @@ const OurEvents = () => {
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide
-      ? eventsMain.length - 1
+      ? Events.length - 1
       : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
 
   const nextSlide = () => {
-    const isLastSlide = currentIndex === eventsMain.length - 1;
+    const isLastSlide = currentIndex === Events.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
@@ -30,7 +29,62 @@ const OurEvents = () => {
     setCurrentIndex(slideIndex);
   };
 
-  const [active, setActive] = useState(false);
+  const Events = [
+    {
+      date: '20 Nov',
+      title: 'Industry Gues Lecture on Design Thinking',
+      description: 'Industry Gues Lecture on Design Thinking From Insights to Viability',
+      imgUrl: "/eventImages/1.jpeg"
+    },
+    {
+      date: '23 Nov',
+      title: 'Mentoring Event',
+      description: 'Exhibition of Ideas & Linkage with Innovation ambassadors for Mentorship programme',
+      imgUrl: "/eventImages/2.jpeg"
+    },
+    {
+      date: '28 Oct',
+      title: 'Electoral Reforms in India',
+      description: 'Empowering Yout to Voting',
+      imgUrl: "/eventImages/3.jpeg"
+    },
+    {
+      date: '21 Oct',
+      title: 'RECENT ADVANCES IN COMPUTER BASED SYSTEMS, PROCESSES AND APPLICATIONS',
+      description: "National Conference on 'RECENT ADVANCES IN COMPUTER BASED SYSTEMS, PROCESSES AND APPLICATIONS'",
+      imgUrl: "/eventImages/1.jpeg"
+    },
+    {
+      date: '24 July',
+      title: '5-Day International FDP',
+      description: '5-Day International FDP on Unleashing Emerging Trends and Advancement in Computer Science 2.0 ',
+      imgUrl: "/eventImages/2.jpeg"
+    },
+    {
+      date: '29 July',
+      title: 'International seminar',
+      description: 'International seminar on "Unlocking Success: Strategies for Crafting Funded Proposals, Editorial Book Proposals, and Conference Proposals',
+      imgUrl: "/eventImages/3.jpeg"
+    },
+    {
+      imgUrl: "/eventImages/1.jpeg",
+      title: "Industrial Talk Series on cloud Resiliency",
+      date: "30 July",
+      description: 'Industrial Talk Series on cloud Resiliency'
+    },
+    {
+      imgUrl: "/eventImages/2.jpeg",
+      title: "2-Days National Level FDP",
+      date: "19 July",
+      description: '2-Days National Level FDP on Recent Advancement in Machine Learning and Deep Learning'
+    },
+    {
+      imgUrl: "/eventImages/3.jpeg",
+      title: "Security Mechanisms",
+      date: "6 May",
+      description: 'Security Mechanisms for Data Transmission among UPFs belonging to Different 5G/5GB/6G Networks'
+    },
+  ];
 
   return (
     <>
@@ -53,7 +107,7 @@ const OurEvents = () => {
             consectetur.Lorem ipsum dolor sit amet consectetur.
           </h1>
           <div className="flex gap-5 max-ls:gap-4 justify-center items-center mt-[40px] ls:flex-row">
-            {eventsMain.map((event) => (
+            {Events.slice(0, 3).map((event) => (
               <Card
                 imgUrl={event.imgUrl}
                 date={event.date}
@@ -64,90 +118,23 @@ const OurEvents = () => {
             ))}
           </div>
           <div className="grid grid-cols-3 items-start justify-center gap-5 mt-[50px] max-lx:flex-col max-lx:text-[12px]">
-            <div className="ml-[13%] md:w-[370px] max-lx:w-[350px] min-h-[145px] flex gap-4">
-              <div className="flex flex-1 items-center leading-[1.5rem] justify-center font-Emilio font-semi-bold text-center h-[65px] rounded-sm w-[65px] p-[15px] bg-[#5C0E14] text-white text-[18px]">
-                <h1 className='mx-[16px] my-[12px]'>04 Apr</h1>
+            {Events.slice(3, 9).map((event, index) => (
+              <Link href={"/"}>
+              <div key={index} className={`ml-[13%] md:w-[370px] max-lx:w-[350px] min-h-[145px] flex gap-5 lx:flex`}>
+                <div className="flex flex-1 items-center leading-[1.5rem] justify-center font-Emilio font-semi-bold text-center h-[65px] rounded-sm w-[65px] p-[15px] bg-[#5C0E14] text-white text-[18px]">
+                  <h1 className='mx-[16px] my-[12px]'>{event.date}</h1>
+                </div>
+                <div className="flex-2 w-full">
+                  <h1 className="font-bold text-[18px] hover:underline hover:underline-offset-4 overflow-hidden max-h-[3.6em] leading-[1.8em]">
+                    {event.title}
+                  </h1>
+                  <p className="max-w-[280px] max-lx:max-w-[360px] font-normal text-[16px] overflow-hidden max-h-[3.6em] leading-[1.8em]">
+                    {event.description}
+                  </p>
+                </div>
               </div>
-              <div className="flex-2 w-full">
-                <h1 className="font-bold text-[18px] hover:underline hover:underline-offset-4 ">
-                  A One Day Blockchain Event
-                </h1>
-                <p className="max-w-[280px] max-lx:max-w-[360px] font-normal text-[16px]">
-                  Lorem ipsum dolor sit amet consectetur. A nulla donec cursus
-                  tincidunt
-                </p>
-              </div>
-            </div>
-            <div className="ml-[5%] md:w-[370px] max-lx:w-[350px] min-h-[145px] flex gap-5">
-              <div className="flex flex-1 items-center leading-[1.5rem] justify-center font-Emilio font-semi-bold text-center h-[65px] rounded-sm w-[65px] p-[15px] bg-[#5C0E14] text-white text-[18px]">
-                <h1 className='mx-[16px] my-[12px]'>04 Apr</h1>
-              </div>
-              <div className="flex-2 w-full">
-                <h1 className="font-bold text-[18px] hover:underline hover:underline-offset-4">
-                  One Week Days Workshop on HFSS
-                </h1>
-                <p className="max-w-[280px] max-lx:max-w-[360px] font-normal text-[16px]">
-                  Lorem ipsum dolor sit amet consectetur. A nulla donec cursus
-                  tincidunt
-                </p>
-              </div>
-            </div>
-            <div className="md:w-[370px] max-lx:w-[350px] min-h-[145px] flex gap-5">
-              <div className="flex flex-1 items-center leading-[1.5rem] justify-center font-Emilio font-semi-bold text-center h-[65px] rounded-sm w-[65px] p-[15px] bg-[#5C0E14] text-white text-[18px]">
-                <h1 className='mx-[16px] my-[12px]'>04 Apr</h1>
-              </div>
-              <div className="flex-2 w-full">
-                <h1 className="font-bold text-[18px] hover:underline hover:underline-offset-4">
-                  University Day Invitation 2023
-                </h1>
-                <p className="max-w-[280px] max-lx:max-w-[360px] font-normal text-[16px]">
-                  Lorem ipsum dolor sit amet consectetur. A nulla donec cursus
-                  tincidunt
-                </p>
-              </div>
-            </div>
-            <div className="ml-[13%] md:w-[370px] max-lx:w-[350px] min-h-[145px] lx:flex gap-5 hidden">
-              <div className="flex flex-1 items-center leading-[1.5rem] justify-center font-Emilio font-semi-bold text-center h-[65px] rounded-sm w-[65px] p-[15px] bg-[#5C0E14] text-white text-[18px]">
-                <h1 className='mx-[16px] my-[12px]'>04 Apr</h1>
-              </div>
-              <div className="flex-2 w-full">
-                <h1 className="font-bold text-[18px] hover:underline hover:underline-offset-4">
-                  Athena 2023
-                </h1>
-                <p className="max-w-[280px] max-lx:max-w-[360px] font-normal text-[16px]">
-                  Lorem ipsum dolor sit amet consectetur. A nulla donec cursus
-                  tincidunt
-                </p>
-              </div>
-            </div>
-            <div className="ml-[5%] md:w-[370px] max-lx:w-[350px] min-h-[145px] lx:flex gap-5 hidden">
-              <div className="flex flex-1 items-center leading-[1.5rem] justify-center font-Emilio font-semi-bold text-center h-[65px] rounded-sm w-[65px] p-[15px] bg-[#5C0E14] text-white text-[18px]">
-                <h1 className='mx-[16px] my-[12px]'>04 Apr</h1>
-              </div>
-              <div className="flex-2 w-full">
-                <h1 className="font-bold text-[18px] hover:underline hover:underline-offset-4">
-                  5 Days National Level Lecture Series
-                </h1>
-                <p className="max-w-[280px] max-lx:max-w-[360px] font-normal text-[16px]">
-                  Lorem ipsum dolor sit amet consectetur. A nulla donec cursus
-                  tincidunt
-                </p>
-              </div>
-            </div>
-            <div className="md:w-[370px] max-lx:w-[350px] min-h-[145px] lx:flex gap-5 hidden">
-              <div className="flex flex-1 items-center leading-[1.5rem] justify-center font-Emilio font-semi-bold text-center h-[65px] rounded-sm w-[65px] p-[15px] bg-[#5C0E14] text-white text-[18px]">
-                <h1 className='mx-[16px] my-[12px]'>04 Apr</h1>
-              </div>
-              <div className="flex-2 w-full">
-                <h1 className="font-bold text-[18px] hover:underline hover:underline-offset-4">
-                  ICADCML - 2024
-                </h1>
-                <p className="max-w-[280px] max-lx:max-w-[360px] font-normal text-[16px]">
-                  Lorem ipsum dolor sit amet consectetur. A nulla donec cursus
-                  tincidunt
-                </p>
-              </div>
-            </div>
+              </Link>
+            ))}
           </div>
         </div>
       </div>
@@ -183,18 +170,18 @@ const OurEvents = () => {
           <div className="w-full h-full absolute bg-white">
             <div className="w-full h-[50%] overflow-hidden rounded-xl absolute">
               <Image
-                src={eventsMain[currentIndex].imgUrl}
+                src={Events[currentIndex].imgUrl}
                 alt="img"
                 fill
                 className="object-cover"
               />
             </div>
             <div className="absolute top-[37%] translate-y-[37%] bg-[#51060D] w-[70px] h-[70px] pl-[15px] flex justify-center items-center ml-[20px] text-white text-[16px] font-bold rounded-xl">
-              <h1>{eventsMain[currentIndex].date}</h1>
+              <h1>{Events[currentIndex].date}</h1>
             </div>
             <div className="w-full h-[50%] overflow-hidden rounded-xl absolute bottom-2 flex flex-col justify-center items-center px-[10px]">
               <h1 className="text-[20px] text-center font-semibold text-[#51060D]">
-                {eventsMain[currentIndex].title}
+                {Events[currentIndex].title}
               </h1>
               <p className="text-center text-[16px] font-medium text-[#51060D]">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
@@ -205,7 +192,7 @@ const OurEvents = () => {
         </div>
 
         <div className="flex top-4 justify-center py-2">
-          {eventsMain.map((event) => (
+          {Events.map((event) => (
             <div
               key={event.id}
               onClick={() => goToSlide(event.id - 1)}

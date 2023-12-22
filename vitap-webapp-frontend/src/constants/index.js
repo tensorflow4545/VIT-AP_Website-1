@@ -1,15 +1,15 @@
 export const researchInnovation = [
   {
     id: 1,
-    imgUrl: "/researchImages/research_image1.jpeg",
+    imgUrl: "/researchImages/11.png",
   },
   {
     id: 2,
-    imgUrl: "/researchImages/research_image2.jpeg",
+    imgUrl: "/researchImages/2.png",
   },
   {
     id: 3,
-    imgUrl: "/researchImages/1.png",
+    imgUrl: "/researchImages/n.png",
   },
 ];
 
@@ -31,52 +31,30 @@ export const researchNumbers = [
   }
 ]
 
-export const eventsMain = [
-  {
-    id: 1,
-    imgUrl: "/eventImages/1.jpg",
-    title: "VTAPP Internation Tech Fest by VIT-AP",
-    date: "19th Sept",
-  },
-  {
-    id: 2,
-    imgUrl: "/eventImages/2.png",
-    title: "VTAPP Internation Tech Fest by VIT-AP",
-    date: "19th Sept",
-  },
-  {
-    id: 3,
-    imgUrl: "/eventImages/3.jpeg",
-    title: "VTAPP Internation Tech Fest by VIT-AP",
-    date: "19th Sept",
-  },
-];
-
 export const programmesOffered = [
   {
     id: 1,
-    title: "B.Tech in Computer Science and Engineering",
+    title: "B.Tech. in Computer Science and Engineering",
     field: "undergraduate",
   },
   {
     id: 2,
-    title:
-      "B.Tech in Computer Science and Engineering with Specilization in Business System (In collabration with TCS)",
+    title:"B.Tech. in Computer Science and Engineering with specializations in Business System (In collaboration with TCS)",
     field: "undergraduate",
   },
   {
     id: 3,
-    title: "B.Tech in Electronics and Computer Engineering",
+    title: "B.Tech. in Electronics and Computer Engineering",
     field: "undergraduate",
   },
   {
     id: 4,
-    title: "B.Tech in Mechanical Engineering",
+    title: "B.Tech. in Mechanical Engineering",
     field: "undergraduate",
   },
   {
     id: 5,
-    title: "B.Com (Finance)",
+    title: "B.Com. Finance",
     field: "undergraduate",
   },
   {
@@ -86,24 +64,24 @@ export const programmesOffered = [
   },
   {
     id: 7,
-    title: "B.Sc, M.Sc - Data Science in Collaboration with Binghamton University, USA & QpiAI, India Pvt.Ltd",
+    title: "B.Sc. - M.Sc.  Data Science in Collaboration with Binghamton University, USA & QpiAI, India Pvt.Ltd",
     field: "Dual Degree",
   },
   {
     id: 8,
-    title: "B.A & M.A Public Services",
+    title: "B.A. - M.A. Public Services",
     field: "Dual Degree",
   },
-  {
-    id: 9,
-    title: "Integrated M.Tech CSE in Collaboration with Virtusa",
-    field: "postgraduate",
-  },
-  {
-    id: 10,
-    title: "Integrated M.Tech Software Engineering",
-    field: "postgraduate",
-  },
+  // {
+  //   id: 9,
+  //   title: "Integrated M.Tech CSE in Collaboration with Virtusa",
+  //   field: "postgraduate",
+  // },
+  // {
+  //   id: 10,
+  //   title: "Integrated M.Tech Software Engineering",
+  //   field: "Integrated",
+  // },
   // {
   //   id: 11,
   //   title:
@@ -126,25 +104,30 @@ export const programmesOffered = [
     field: "doctorial",
   },
   {
+    id: 15,
+    title: "Electrical Engineering",
+    field: "doctorial",
+  },
+  {
     id: 13,
-    title: "M.Tech VLSI",
+    title: "M.Tech. VLSI",
     field: "postgraduate",
   },
   {
     id: 14,
     title:
-      "M.Sc - Data Science in Collaboration with Binghamton University, USA & QpiAI, India Pvt.Ltd",
+      "M.Sc. - Data Science in Collaboration with Binghamton University, USA & QpiAI, India Pvt.Ltd",
     field: "postgraduate",
   },
-  {
-    id: 15,
-    title:
-      "M.Sc - Physics in Collaboration with NoPo Nanotech Pvt.Ltd & QpiAI, India Pvt.Ltd",
-    field: "postgraduate",
-  },
+  // {
+  //   id: 15,
+  //   title:
+  //     "M.Sc - Physics in Collaboration with NoPo Nanotech Pvt.Ltd & QpiAI, India Pvt.Ltd",
+  //   field: "postgraduate",
+  // },
   {
     id: 16,
-    title: "M.Sc Chemistry in collaboration with Mitsui kinzoku Components India (MKCI)",
+    title: "M.Sc. Chemistry in collaboration with Mitsui kinzoku Components India (MKCI)",
     field: "postgraduate",
   },
   {
@@ -159,7 +142,7 @@ export const programmesOffered = [
   },
   {
     id: 19,
-    title: "Social Science and Humanities",
+    title: "Social Sciences and Humanities",
     field: "doctorial",
   },
   {
@@ -171,61 +154,101 @@ export const programmesOffered = [
     id: 21,
     title: "Business",
     field: "doctorial",
+  },
+  {
+    id: 22,
+    title: "M.Tech. Computer Science and Engineering in Collaboration with Virtusa",
+    field: "Integrated",
+  },
+  {
+    id: 23,
+    title: "M.Tech. Software Engineering",
+    field: "Integrated",
+  },
+  {
+    id: 24,
+    title: "B.A., LL.B (Hons.)",
+    field: "Integrated",
+  },
+  {
+    id: 25,
+    title: "BBA., LL.B (Hons.)",
+    field: "Integrated",
   }
 ];
 
 export const announcements = [
   {
     id: 1,
-    content:
-      "Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
+    content:"VITEEE 2024 - Apply Now",
+    date:"1st Nov 2023",
+    link:"https://viteee.vit.ac.in/",
   },
   {
     id: 2,
-    content:
-      "Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
+    content:"2nd One Week International Workshop on Recent Trends in Optimization Techniques for Challenging Engineering Applications – SENSE",
+    link:"https://vitap.ac.in/2nd-one-week-international-workshop-on-recent-trends-in-optimization-techniques-for-challenging-engineering-applications-sense/",
+    date:"17th Nov 2023",
   },
   {
     id: 3,
-    content:
-      "Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
+    content:"NATIONAL CONFERENCE ON RECENT ADVANCES IN DATA SCIENCE",
+    link:"https://vitap.ac.in/crads-2023/",
+    date:"19th Oct 2023",
   },
   {
     id: 4,
-    content: "3rd Annual Convocation",
+    content: "5th International Conference on Advances in Distributed Computing and Machine Learning(ICADCML) - 2024",
+    link:"https://vitap.ac.in/5th-international-conference-on-advances-in-distributed-computing-and-machine-learningicadcml-2024/",
+    date:"14th July 2023",
   },
   {
     id: 5,
-    content: "3rd Annual Convocation",
+    content: "National Symposium and Workshop on Advances in Chemical Sciences and Applications - SAS",
+    link:"https://vitap.ac.in/wp-content/uploads/2023/11/NS-on-Advanced-Chemical-Sciences.pdf",
+    date:"7th Dec 2023",
   },
   {
     id: 6,
-    content: "3rd Annual Convocation",
+    content: "ATHENA 2023 - 3rd Annual International Conference - VISH",
+    link:"https://vitap.ac.in/wp-content/uploads/2023/10/ATHENA-2023.pdf",
+    date:"14th Nov 2023",
   },
   {
     id: 7,
-    content:
-      "Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
+    content:"Campus Info",
+    link:"https://vitap.ac.in/campus-info/",
+    date:"8th January 2023",
   },
   {
     id: 8,
-    content: "3rd Annual Convocation",
+    content: "VIT-AP University's Merit Scholarships for UG Non-engineering Courses",
+    link:"https://vitap.ac.in/sched_announcement/vit-ap-universitys-merit-scholarships-for-ug-non-engineering-courses-2/",
+    date:"8th Feb 2023",
   },
   {
     id: 9,
-    content: "CSI Meet'n Greet 23",
+    content: "VIT-AP University's Merit Scholarships for PG Non-engineering Courses",
+    link:"https://vitap.ac.in/sched_announcement/vit-ap-universitys-merit-scholarships-for-pg-non-engineering-courses/",
+    date:"8th Feb 2023",
   },
   {
     id: 10,
-    content: "CSI Meet'n Greet 23",
+    content: "Design Your Own Degree (DYOD®) at VIT-AP",
+    link:"https://vitap.ac.in/design-your-own-degree-at-vit-ap/",
+    date:"10th May 2023",
   },
   {
     id: 11,
-    content: "CSI Meet'n Greet 23",
+    content: "Minors or Specializations",
+    link:"https://vitap.ac.in/minors-or-specializations/",
+    date:"10th May 2023",
   },
   {
     id: 12,
-    content: "CSI Meet'n Greet 23",
+    content: "New Curriculum",
+    link:"https://vitap.ac.in/new-curriculum-ay-2021-2022/",
+    date:"10th May 2023",
   },
 ];
 
@@ -233,15 +256,20 @@ export const announcements2 = [
   {
     id: 1,
     content: "CSI Meet'n Greet 23",
+    link:"https://viteee.vit.ac.in/",
+    date:"1st Nov 2023",
   },
   {
     id: 2,
-    content:
-      "Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
+    content:"Five Day workshop on IoT and Beyond: Exploring Electronics, PCBs, and 3D Printing",
+    link:"https://viteee.vit.ac.in/",
+    date:"1st Nov 2023",
   },
   {
     id: 3,
     content: "3rd Annual Convocation",
+    link:"https://viteee.vit.ac.in/",
+    date:"1st Nov 2023",
   },
 ];
 
@@ -261,6 +289,7 @@ export const acheivements = [
       "50,000 seed Balls aerially dispersed In Vijayawada District, Andhra Pradesh in Collaboration with Indian Navy",
     description:
       "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur.",
+    image:"/acheivements1.jpeg"
   },
   {
     id: 2,
@@ -634,11 +663,7 @@ export const superdreamImages = [
 export const homeCDC = [
   {
     id: 1,
-    imgUrl: "/package.png"
-  },
-  {
-    id: 2,
-    imgUrl: "/super-dream-offer 1.png"
+    imgUrl: "/PAT-5th-Aug23.jpg"
   }
 ]
 
@@ -661,7 +686,7 @@ export const advantagesFacilities = [
   },
   {
     id: 2,
-    imgUrl: "/advantagefacility2.jpeg",
+    imgUrl: "/advantages/ecs494400.png",
     title: "Engineering Clinics"
   },
   {
@@ -671,12 +696,12 @@ export const advantagesFacilities = [
   },
   {
     id: 4,
-    imgUrl: "/advantagefacility4.jpeg",
+    imgUrl: "/advantages/sports 494400.png",
     title: "Sports"
   },
   {
     id: 5,
-    imgUrl: "/advantagefacility5.jpeg",
+    imgUrl: "/advantages/clubs and chapters494400.png",
     title: "Clubs & Chapters"
   },
   {
@@ -686,12 +711,12 @@ export const advantagesFacilities = [
   },
   {
     id: 7,
-    imgUrl: "/advantagefacility7.jpeg",
+    imgUrl: "/advantages/international_progrmmas290180.png",
     title: "Internationals Programmes"
   },
   {
     id: 8,
-    imgUrl: "/advantagefacility2.jpeg",
+    imgUrl: "/advantages/community290180.png",
     title: "Community Developement"
   },
   {
@@ -701,17 +726,17 @@ export const advantagesFacilities = [
   },
   {
     id: 10,
-    imgUrl: "/advantagefacility9.jpeg",
+    imgUrl: "/advantages/mentorship494400.png",
     title: "Mentoring Programme"
   },
   {
     id: 11,
-    imgUrl: "/advantagefacility10.jpeg",
+    imgUrl: "/advantages/qualified290180.png",
     title: "Qualified & Caring Faculty"
   },
   {
     id: 12,
-    imgUrl: "/advantagefacility8.jpeg",
+    imgUrl: "/advantages/alumini290180.png",
     title: "Alumni Network"
   },
 ]

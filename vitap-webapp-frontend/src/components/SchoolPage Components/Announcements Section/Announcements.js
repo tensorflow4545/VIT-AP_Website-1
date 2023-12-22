@@ -34,18 +34,14 @@ export default function Home() {
         </div>
 
         <div className="flex flex-wrap justify-center items-stretch ls:flex-nowrap ls:justify-start">
-          <AnnouncementCard title="Announcement-1">
-            Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
-            consectetur amet consectetur.
+          <AnnouncementCard title="DYDO">
+          Discover a unique academic path at VIT-AP with our Interdisciplinary Studies degree. Customize your education, explore various fields, and shape your future with endless possibilities and exciting opportunities.
           </AnnouncementCard>
-          <AnnouncementCard title="Announcement-2">
-            Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
-            consectetur amet consectetur.
+          <AnnouncementCard title="MINOR">
+          VIT-AP introduces minors to enrich your specialization. Enhance your academic journey by incorporating a minor into your major, broadening your knowledge, and refining your career options. Explore diverse interests, tailor your education, and achieve a well-rounded skill set for your unique goals.
           </AnnouncementCard>
-          <AnnouncementCard title="Announcement-3">
-            Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
-            consectetur amet consectetur.
-          </AnnouncementCard>
+          <AnnouncementCard title="NEW CRICULLUM">
+          Exciting news at VIT-AP! We've given our classes a makeover. Our updated curriculum brings fresh subjects, diverse viewpoints, and an overall awesome learning experience. Join us as we explore new horizons together and make your educational journey even more inspiring. It's time for a new chapter in learning!          </AnnouncementCard>
         </div>
       </div>
     </div>

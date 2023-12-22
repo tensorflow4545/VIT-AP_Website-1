@@ -1,92 +1,34 @@
 "use client";
 import style from "./programoffere.module.css";
-import react, { useState } from "react";
-const programoffered = () => {
+import react, { useState, useEffect } from "react";
+import axios from "axios";
+import Link from "next/link";
 
-  const programmesOffered = [
-    {
-      id: 1,
-      head: "B.Tech CSE",
-      title: "B.Tech in Computer Science and Engineering",
-      field: "undergraduate"
-    },
-    {
-      id: 1,
-      head: "B.Tech CSE",
-      title: "B.Tech in Computer Science and Engineering",
-      field: "undergraduate"
-    },
-    {
-      id: 1,
-      head: "B.Tech CSE",
-      title: "B.Tech in Computer Science and Engineering",
-      field: "undergraduate"
-    },
-    {
-      id: 2,
-      head: "B.Tech CSE",
-      title:
-        "B.Tech in Computer Science and Engineering Specialization in AI and ML",
-      field: "postgraduate"
-    },
-    {
-      id: 3,
-      head: "B.Tech CSE",
-      title:
-        "B.Tech in Computer Science and Engineering Specialization in Data Analytics",
-      field: "postgraduate"
-    },
-    {
-      id: 4,
-      head: "B.Tech CSE",
-      title:
-        "B.Tech in Computer Science and Engineering Specialization in Network and Security",
-      field: "postgraduate"
-    },
-    {
-      id: 5,
-      head: "B.Tech CSE",
-      title:
-        "B.Tech in Computer Science and Engineering Specialization in Network and Security",
-      field: "doctoral"
-    },
-    {
-      id: 6,
-      head: "B.Tech CSE",
-      title:
-        "B.Tech in Computer Science and Engineering Specialization in Network and Security",
-      field: "doctoral"
-    },
-    {
-      id: 7,
-      head: "B.Tech CSE",
-      title:
-        "B.Tech in Computer Science and Engineering Specialization in Network and Security",
-      field: "doctoral"
-    },
-    {
-      id: 8,
-      head: "B.Tech CSE",
-      title:
-        "B.Tech in Computer Science and Engineering Specialization in Network and Security",
-      field: "integrated"
-    },
-    {
-      id: 9,
-      head: "B.Tech CSE",
-      title:
-        "B.Tech in Computer Science and Engineering Specialization in Network and Security",
-      field: "integrated"
-    },
-    {
-      id: 10,
-      head: "B.Tech CSE",
-      title:
-        "B.Tech in Computer Science and Engineering Specialization in Network and Security",
-      field: "integrated"
-    },
-  ];
+const programoffered = () => {
+  const [ProgrammesOffered, SetProgrammesOffered] = useState([]);
   const [active, setActive] = useState("undergraduate");
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/scope-school-programmes-offereds`,{
+          headers: {
+            Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
+          },
+        });
+
+        if (response.data && Array.isArray(response.data.data)) {
+          const extractedAttributes = response.data.data.map(item => item.attributes);
+          SetProgrammesOffered(extractedAttributes);
+        } else {
+          console.error('The "data" property in the API response is not an array:', response.data);
+        }
+      } catch (error) {
+        console.error('Error fetching data:', error.message);
+      }
+    };
+
+    fetchData();
+  }, []);
   return (
     <div className="h-max w-full">
       <div class={` ${style.program}`}>
@@ -104,15 +46,24 @@ const programoffered = () => {
         </div>
         <div className="shadow-lg w-[100%] h-[400px] bg-white">
           <div class="pt-10">
-            {programmesOffered.map((program) => {
-              if (active === program.field) {
+            {ProgrammesOffered.map((attributes, index) => {
+              if (active === attributes.Field) {
 
-                return (<div className="pb-3 pl-[78px] group group-hover:pl-[100px] transition duration-300">
-                  <div className="pb-3 text-black font-Emilio text-[20px] font-semibold">{program.head}</div>
-                  <div className="pb-3 text-black font-Emilio text-[20px] font-medium">{program.title}</div>
-                  <hr className="w-[90%] h-[1px] bg-opacity-20 bg-black" />
-                </div>
+                return (
+                  <div className="relative group transition duration-1000" key={index}>
+                    <Link href={attributes.Link} target="_blank">
+                    <div className="relative pb-3 pl-[78px] w-[67%] group-hover:left-[20px] transition duration-1000">
+                      <div className="pb-3 text-black font-Emilio text-[20px] font-semibold group-hover:text-primary">{attributes.Head}</div>
+                      <div className="pb-3 text-black font-Emilio text-[18px] font-medium group-hover:text-primary group-hover:inline-block">{attributes.Title}</div>
+                    </div>
+                      <button className="absolute fixed right-[150px] top-[20px] w-[147px] h-[50px] bg-primary rounded-[6px] text-center text-white font-semibold invisible group-hover:visible hover:bg-[#7A1820]">
+                        Apply Now
+                      </button>
+                    </Link>
+                    <hr className="relative w-[85%] h-[1px] left-[78px] bg-opacity-20 bg-black" />
+                  </div>
                 )
+
               }
             })}
           </div>
