@@ -696,7 +696,7 @@ export const advantagesFacilities = [
   },
   {
     id: 4,
-    imgUrl: "/advantages/sports 494400.png",
+    imgUrl: "/advantages/sports290180.png",
     title: "Sports"
   },
   {
@@ -726,7 +726,7 @@ export const advantagesFacilities = [
   },
   {
     id: 10,
-    imgUrl: "/advantages/mentorship494400.png",
+    imgUrl: "/advantages/mentorship 290180.png",
     title: "Mentoring Programme"
   },
   {

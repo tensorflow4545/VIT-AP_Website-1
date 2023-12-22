@@ -82,22 +82,19 @@ const DepartmentFacultyPage = (department) => {
             </div>
 
             <div className='flex justify-center items-center'>
-                <div className='max-w-[800px] w-[100%] bg-gray-400 min-h-[55px] h-[100%] rounded-xl mb-[50px] flex justify-between items-center px-[50px] cursor-pointer'>
-                    <h1 className='font-Inter text-[17px]'>Search Faculty</h1>
-                    <div className='flex items-center'>
-                        <input
-                            type='text'
-                            placeholder='Enter name...'
-                            value={searchQuery}
-                            onChange={handleInputChange}
-                            className='border-none outline-none px-2 py-1 rounded-md flex-grow'
-                        />
-                        <button className='bg-transparent border-none outline-none p-2'>
-                            <AiOutlineSearch size={25} />
-                        </button>
-                    </div>
-                </div>
+                <input
+                    type='text'
+                    placeholder='Search Faculty...'
+                    value={searchQuery}
+                    onChange={handleInputChange}
+                    className='max-w-[800px] w-[100%] bg-gray-400 min-h-[55px] h-[100%] rounded-xl mb-[50px] flex justify-between items-center px-[50px] cursor-pointer border-none outline-none px-2 py-1 rounded-md flex-grow'
+                />
+                <button className='bg-transparent border-none outline-none p-2 relative right-[50px] bottom-[25px]'>
+                    <AiOutlineSearch size={25} />
+                </button>
+                {/* <div className='relative right-[800px] bottom-[25px] text-[21px]'> Search Faculty</div> */}
             </div>
+
 
             <div className='grid md:grid-cols-5 max-w-[1250px] md:mx-auto items-center justify-center grid-cols-4 gap-5 mx-[30px]'>
                 {filteredPeople.length > 0 ? (
