@@ -5,25 +5,25 @@ import Image from "next/image";
 const Testimonials = () => {
   const data = [
     {
-      name: 'MERVIN JOSEPH',
+      name: 'Srujan Cheemakurthi',
       company: 'SAPP LABS',
       quote: '“',
-      description: 'Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur.',
-      image: img,
+      description: 'I am very proud and blessed to be a part of this university as it has taught me many lessons for life. I have learnt to be disciplined towards my studies and carrier. Especially  Computer science department which I choose to pursue here had equipped me with great knowledge and real world problem solving skills , this knowledge in my UG  made myself  ready to pursue my  masters in computer science.',
+      image: "/testimonial/pic--3.png",
     },
     {
-      name: 'MERVIN JOSEPH',
+      name: 'Srujan Cheemakurthi',
       company: 'SAPP LABS',
       quote: '“',
-      description: 'Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur.',
-      image: img,
+      description: "VIT AP University's environment has clearly played a pivotal role in nurturing my curiosity and fostering a deep appreciation for the intricacies of the software industry. I am confident that I continued journey at VIT AP University will not only enhance their technical skills but also contribute significantly to the institution's vibrant academic community.",
+      image: "/testimonial/pic--1.png",
     },
     {
-      name: 'MERVIN JOSEPH',
-      company: 'SAPP LABS',
+      name: 'Lopamudra Panda',
+      company: 'Bajaj Direct Limited',
       quote: '“',
-      description: 'Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur.',
-      image: img,
+      description: "I had a phenomenal journey with SCOPE and VIT-AP University. The comprehensive syllabus and well-structured courses allowed me to delve into my dreams. The supportive and specific domain knowledged faculties were always approachable, fostering a conducive learning environment. Engaging in research distinguished me among my peers, and SCOPE's top-notch labs and infrastructure provided a seamless space to excel. The hands-on experience gained through semester-end assessments and lab activities proved invaluable, enabling a smooth transition into the corporate world where I thrive today.",
+      image: "/testimonial/pic--2.png",
     },
     {
       name: 'MERVIN JOSEPH',
@@ -64,7 +64,7 @@ const Testimonials = () => {
                 <p className="text-[#5C0E14] text-[60px] font-Montserrant font-bold">
                   {item.quote}
                 </p>
-                <p className="text-center font-Montserrant w-[320px] ml-[10px]">
+                <p className="text-center font-Montserrant w-[320px] h-[70px] ml-[10px] overflow-hidden">
                   {item.description}
                 </p>
               </div>

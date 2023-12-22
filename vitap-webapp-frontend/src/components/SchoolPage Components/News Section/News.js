@@ -59,7 +59,7 @@ export default function News() {
                   <Link href={"/"}>
                     <div className="w-[350px] h-[241px] relative overflow-hidden">
                       <Image className="absolute z-0" width={350} height={241} src={`${process.env.NEXT_PUBLIC_API_URL}${news?.Image.data[0].attributes.url}`} alt={news?.Image.data[0].attributes.alternativeText || 'Alt Text'}></Image>
-                      <div className="w-[53px] h-[72px] bg-red-900 absolute z-10 right-5 top-7 rounded-md text-center justify-center items-center">
+                      <div className="w-[53px] h-[72px] bg-primary absolute z-10 right-5 top-7 rounded-md text-center justify-center items-center">
                         <p className="text-[16px] text-white text-emilio font-semibold pt-[8px] px-[11px] text-center">{news.Date}</p>
                         {/* <p className="text-[28px] text-white text-emilio font-semibold px-[11px]">23</p> */}
                       </div>

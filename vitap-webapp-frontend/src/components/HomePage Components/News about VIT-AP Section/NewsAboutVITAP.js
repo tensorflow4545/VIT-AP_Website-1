@@ -14,11 +14,11 @@ const News = () => {
       <div className={`${styles.container} bg-white h-screen w-screen`}>
         <div className={`${styles.head} top-0 flex justify-left items-left w-screen px-[20px] lx:px-0`}>
           <h2
-            className={`${styles.heading} relative  text-[#51060D] font-Emilio font-semibold text-[48px] mt-[50px] text-left`}
+            className={`${styles.heading} relative  text-[#51060D] font-Emilio left-[120px] font-semibold text-[48px] mt-[50px] text-left`}
           >
             News
           </h2>
-          <div className="flex flex-row items-center justify-center relative transition-all duration-300 ease-in group top-[25px] left-[45%]">
+          <div className="flex flex-row items-center justify-center relative transition-all duration-300 ease-in group top-[25px] left-[78%]">
             <div className="Rectangle91 w-[32px] h-[30px] left-[40px] top-[45px] absolute bg-[#5C0E14] opacity-20 transition-transform group-hover:left-[-10px] group-hover:w-[90px] group-hover:transition-all group-hover:duration-300 group-hover:ease-in-out "></div>
             <Link href={"/"} className="mr-2 text-[#5C0E14] font-bold">See All</Link>
             <hr className=" h-[4px] w-[36px] font-bold bg-[#5C0E14] max-lx:w-[28px]" />
@@ -78,7 +78,7 @@ const News = () => {
               height={311}
               className={`${styles.img2} top-[223px] left-[108px]`}
             />
-            <p className={`${styles.date} ml-[24px] mt-[21px]`}>
+            <p className={`${styles.date} ml-[24px] mt-[11px]`}>
               Date: 27.09.2023
             </p>
             <h3

@@ -3,21 +3,32 @@ import React from "react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import axios from "axios";
-
-import img1 from "../../assets/images/newsPhotos/paper1.png";
-import img2 from "../../assets/images/newsPhotos/paper2.png";
-import i1 from "../../assets/images/newsPhotos/img1.png";
-import i2 from "../../assets/images/newsPhotos/img2.png";
-import i3 from "../../assets/images/newsPhotos/img3.png";
-import i4 from "../../assets/images/newsPhotos/img4.png";
-import i5 from "../../assets/images/newsPhotos/img5.png";
-import tr from "../../assets/images/newsPhotos/triangle.png";
+import { AiOutlineArrowLeft, AiOutlineArrowRight, AiOutlineSearch } from 'react-icons/ai';
+import img1 from "@/assets/images/newsPhotos/paper1.png";
+import img2 from "@/assets/images/newsPhotos/paper2.png";
+import i1 from "@/assets/images/newsPhotos/img1.png";
+import i2 from "@/assets/images/newsPhotos/img2.png";
+import i3 from "@/assets/images/newsPhotos/img3.png";
+import i4 from "@/assets/images/newsPhotos/img4.png";
+import i5 from "@/assets/images/newsPhotos/img5.png";
+import tr from "@/assets/images/newsPhotos/triangle.png";
 import Link from "next/link";
-import styles from "../../styles/AllNews.module.css";
+import styles from "@/styles/AllNews.module.css";
 import Component from "../HomePage Components/Footer Section/Component";
-import Footer from "../HomePage Components/Footer Section/Footer";
 
 const AllNews = () => {
+
+  const [numactive, setNumactive] = useState(1);
+  const leftClick = () => {
+    { numactive === 1 ? setNumactive(roundedNumItems) : setNumactive(numactive - 1) }
+  }
+
+  const rightClick = () => {
+    {
+      numactive === roundedNumItems ? setNumactive(1) : setNumactive(numactive + 1);
+    }
+  }
+
   const [News, setNews] = useState([]);
 
   useEffect(() => {
@@ -43,12 +54,16 @@ const AllNews = () => {
     fetchData();
   }, []);
 
+  const numItems = News.length;
+  const roundedNumItems = Math.ceil(numItems / 9);
+  const numArray = Array.from({ length: roundedNumItems }, (_, index) => index + 1);
+  const maxPagesToShow = 4;
+
   return (
     <>
-      <div className={`${styles.container} bg-[#e6cfcf] relative`}>
-        <div
-          className={`${styles.head} flex overflow-hidden h-[750px] absolute bg-[#e6cfcf]`}
-        >
+      <div class=""></div>
+      <div className={`${styles.container} bg-white relative`}>
+        <div className={`${styles.head} flex overflow-hidden h-[750px] absolute bg-[#e6cfcf]`}>
           <Image src={img1} className={`${styles.img}`} />
           <Image src={img2} className={`${styles.img}`} />
           <p
@@ -87,220 +102,74 @@ const AllNews = () => {
           />
         </div>
         <div className="h-[338px] bg-[#e6cfcf]"></div>
-        <div
-          className={`${styles.newsdiv1} absolute mt-[440px] absolute flex ml-[120px]`}
-        >
-          <Link href="/news/newsdetail">
-            <div
-              className={`${styles.div1} w-[384px] h-[428px] border border-black rounded bg-white hover:shadow-2xl cursor-pointer`}
-            >
-              <div className="w-[100%] h-[279px] overflow-hidden absolute p-[2px]">
-                <Image src={`${process.env.NEXT_PUBLIC_API_URL}${News[0]?.Image.data[0].attributes.url}`} alt={News[0]?.Image.data[0].attributes.alternativeText} width={376} height={279} className={`${styles.newsimg} absolute rounded-[10px]`} />
+        <div className={`ml-[30px] w-screen absolute mt-[440px] absolute flex ml-[120px] justify-center items-center`}>
+          <div className='grid md:grid-cols-3 max-w-[1250px] md:mx-auto items-center justify-center grid-cols-3 gap-5 mx-[30px]'>
+            {News.slice((numactive - 1) * 9, numactive * 9).map((element) => {
+              return <div>
+                <Link href="/news/newsdetail">
+                  <div className={`${styles.div1} w-[384px] h-[428px] border border-black rounded bg-white hover:shadow-2xl cursor-pointer`}>
+                    <div className="w-[100%] h-[279px] overflow-hidden absolute p-[2px]">
+                      <Image src={`${process.env.NEXT_PUBLIC_API_URL}${element?.Image.data[0].attributes.url}`} alt={element?.Image.data[0].attributes.alternativeText} width={376} height={279} className={`${styles.newsimg} absolute rounded-[10px]`} />
+                    </div>
+                    <Image src={tr} className="absolute" />
+                    <p className="font-Emilio text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
+                      {element?.Date}
+                    </p>
+                    <p className={`font-Emilio text-[20px] mt-[300px] text-center text-[#600912] font-semibold`}>
+                      {element?.Title}
+                    </p>
+                  </div>
+                </Link>
               </div>
-              <Image src={tr} className="absolute" />
-              <p className="font-Emilio text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
-                {News[0]?.Date}
-              </p>
-              <p
-                className={`${styles.divtext} font-Emilio text-[20px] mt-[300px] text-center text-[#600912] font-semibold`}
-              >
-                {News[0]?.Title}
-              </p>
-            </div>
-          </Link>
-          <Link href="/NewsInfo">
-            <div
-              className={`${styles.div2} w-[384px] h-[428px] border border-black ml-[50px] rounded bg-white hover:shadow-2xl cursor-pointer`}
-            >
-              <div className="w-[100%] h-[279px] overflow-hidden absolute p-[2px]">
-                <Image src={`${process.env.NEXT_PUBLIC_API_URL}${News[1]?.Image.data[0].attributes.url}`} alt={News[1]?.Image.data[0].attributes.alternativeText} width={376} height={279} className={`${styles.newsimg} absolute rounded-[10px]`} />
-              </div>
-              <Image src={tr} className="absolute" />
-              <p className="font-Emilio text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
-                {News[1]?.Date}
-              </p>
-              <p
-                className={`${styles.divtext} font-Emilio text-[20px] mt-[300px] text-center text-[#600912] font-semibold`}
-              >
-                {News[1]?.Title}
-              </p>
-            </div>
-          </Link>
-          <Link href="/NewsInfo">
-            <div
-              className={`${styles.div3} w-[384px] h-[428px] border border-black ml-[50px] rounded bg-white hover:shadow-2xl cursor-pointer`}
-            >
-              <div className="w-[100%] h-[279px] overflow-hidden absolute p-[2px]">
-
-                <Image src={`${process.env.NEXT_PUBLIC_API_URL}${News[2]?.Image.data[0].attributes.url}`} alt={News[2]?.Image.data[0].attributes.alternativeText} width={376} height={279} className="absolute rounded-[10px]" />
-              </div>
-              <Image src={tr} className="absolute" />
-              <p className="font-Emilio text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
-                {News[2]?.Date}
-              </p>
-              <p className="font-Emilio text-[20px] mt-[300px] text-center text-[#600912] font-semibold">
-                {News[2]?.Title}
-              </p>
-            </div>
-          </Link>
-        </div>
-        <div
-          className={`${styles.newsdiv2} mt-[916px] absolute flex ml-[120px]`}
-        >
-          <Link href="/NewsInfo">
-            <div
-              className={`${styles.div1} w-[384px] h-[428px] border border-black rounded bg-white hover:shadow-2xl cursor-pointer`}
-            >
-              <div className="w-[100%] h-[279px] overflow-hidden absolute p-[2px]">
-
-                <Image src={`${process.env.NEXT_PUBLIC_API_URL}${News[3]?.Image.data[0].attributes.url}`} alt={News[3]?.Image.data[0].attributes.alternativeText} width={376} height={279} className={`${styles.newsimg} absolute rounded-[10px]`} />
-              </div>
-              <Image src={tr} className="absolute" />
-              <p className="font-Emilio text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
-                {News[3]?.Date}
-              </p>
-              <p
-                className={`${styles.divtext} font-Emilio text-[20px] mt-[300px] text-center text-[#600912] font-semibold`}
-              >
-                {News[3]?.Title}
-              </p>
-            </div>
-          </Link>
-          <Link href="/NewsInfo">
-            <div
-              className={`${styles.div2} w-[384px] h-[428px] border border-black ml-[50px] rounded bg-white hover:shadow-2xl cursor-pointer`}
-            >
-              <div className="w-[100%] h-[279px] overflow-hidden absolute p-[2px]">
-
-                <Image src={`${process.env.NEXT_PUBLIC_API_URL}${News[4]?.Image.data[0].attributes.url}`} alt={News[4]?.Image.data[0].attributes.alternativeText} width={376} height={279} className={`${styles.newsimg} absolute rounded-[10px]`} />
-              </div>
-              <Image src={tr} className="absolute" />
-              <p className="font-Emilio text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
-                {News[4]?.Date}
-              </p>
-              <p
-                className={`${styles.divtext} font-Emilio text-[20px] mt-[300px] text-center text-[#600912] font-semibold`}
-              >
-                {News[4]?.Title}
-              </p>
-            </div>
-          </Link>
-          <Link href="/NewsInfo">
-            <div
-              className={`${styles.div3} w-[384px] h-[428px] border border-black ml-[50px] rounded bg-white hover:shadow-2xl cursor-pointer`}
-            >
-              <div className="w-[100%] h-[279px] overflow-hidden absolute p-[2px]">
-
-                <Image src={`${process.env.NEXT_PUBLIC_API_URL}${News[5]?.Image.data[0].attributes.url}`} alt={News[5]?.Image.data[0].attributes.alternativeText} width={376} height={279} className="absolute rounded-[10px]" />
-              </div>
-              <Image src={tr} className="absolute" />
-              <p className="font-Emilio text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
-                {News[5]?.Date}
-              </p>
-              <p className="font-Emilio text-[20px] mt-[300px] text-center text-[#600912] font-semibold">
-                {News[5]?.Title}
-              </p>
-            </div>
-          </Link>
-        </div>
-        <div
-          className={`${styles.newsdiv} mt-[1392px] absolute flex ml-[120px]`}
-        >
-          <Link href="/NewsInfo">
-            <div
-              className={`${styles.div1} w-[384px] h-[428px] border border-black rounded bg-white hover:shadow-2xl cursor-pointer`}
-            >
-              <div className="w-[100%] h-[279px] overflow-hidden absolute p-[2px]">
-
-                <Image src={`${process.env.NEXT_PUBLIC_API_URL}${News[6]?.Image.data[0].attributes.url}`} alt={News[6]?.Image.data[0].attributes.alternativeText} width={376} height={279} className={`${styles.newsimg} absolute rounded-[10px]`} />
-              </div>
-              <Image src={tr} className="absolute" />
-              <p className="font-Emilio text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
-                {News[6]?.Date}
-              </p>
-              <p
-                className={`${styles.divtext} font-Emilio text-[20px] mt-[300px] text-center text-[#600912] font-semibold`}
-              >
-                {News[6]?.Title}
-              </p>
-            </div>
-          </Link>
-          <Link href="/NewsInfo">
-            <div
-              className={`${styles.div2} w-[384px] h-[428px] border border-black ml-[50px] rounded bg-white hover:shadow-2xl cursor-pointer`}
-            >
-              <div className="w-[100%] h-[279px] overflow-hidden absolute p-[2px]">
-
-                <Image src={`${process.env.NEXT_PUBLIC_API_URL}${News[7]?.Image.data[0].attributes.url}`} alt={News[7]?.Image.data[0].attributes.alternativeText} width={376} height={279} className={`${styles.newsimg} absolute rounded-[10px]`} />
-              </div>
-              <Image src={tr} className="absolute" />
-              <p className="font-Emilio text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
-                {News[7]?.Date}
-              </p>
-              <p
-                className={`${styles.divtext} font-Emilio text-[20px] mt-[300px] text-center text-[#600912] font-semibold`}
-              >
-                {News[7]?.Title}
-              </p>
-            </div>
-          </Link>
-          <Link href="/NewsInfo">
-            <div
-              className={`${styles.div3} w-[384px] h-[428px] border border-black ml-[50px] rounded bg-white hover:shadow-2xl cursor-pointer`}
-            >
-              <div className="w-[100%] h-[279px] overflow-hidden absolute p-[2px]">
-
-                <Image src={`${process.env.NEXT_PUBLIC_API_URL}${News[8]?.Image.data[0].attributes.url}`} alt={News[8]?.Image.data[0].attributes.alternativeText} width={376} height={279} className="absolute rounded-[10px]" />
-              </div>
-              <Image src={tr} className="absolute" />
-              <p className="font-Emilio text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
-                {News[8]?.Date}
-              </p>
-              <p className="font-Emilio text-[20px] mt-[300px] text-center text-[#600912] font-semibold">
-                {News[8]?.Title}
-              </p>
-            </div>
-          </Link>
-        </div>
-        <div
-          className={`${styles.pinkbg} bg-[#E6CFCF] h-[200px] absolute mt-[1850px] w-[100%] justify-center items-center`}
-        >
-          <div
-            className={`${styles.menu} absolute flex items-center justify-center absolute ml-[47%] mt-[5%]`}
-          >
-            <ul className="flex list-none space-x-2">
-              <li
-                href="#"
-                className="items-center justify-center w-[12px] h-[12px]"
-              >
-                <a>&lt;</a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="flex items-center justify-center w-[12px] h-[12px] bg-white text-white rounded-full focus:outline-none focus:border-2 focus:border-black ml-[30px]"
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="flex items-center justify-center w-[12px] h-[12px] bg-white text-white rounded-full focus:outline-none focus:border-2 focus:border-black"
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="flex items-center justify-center w-[12px] h-[12px] bg-white text-white rounded-full focus:outline-none focus:border-2 focus:border-black mr-[30px]"
-                ></a>
-              </li>
-              <li>
-                <a>&gt;</a>
-              </li>
-            </ul>
+            })}
           </div>
-          <div className="relative top-[180px]">
-            <Component />
-            <Footer />
+        </div>
+
+
+        <div className={`relative bg-[#E6CFCF] h-[180px] top-[1850px] w-[100%] justify-center items-center`}>
+          <div class="flex flex-row justify-center relative top-[50%]">
+            <div className="cursor-pointer mr-[20px] mt-[5px]" onClick={leftClick}>
+              <AiOutlineArrowLeft size={30} />
+            </div>
+
+            <div className="flex flex-wrap gap-5">
+              {numArray.length > maxPagesToShow ? (
+                <>
+                  {numArray.slice(numactive - 1, numactive + maxPagesToShow - 1).map((num) => (
+                    <div
+                      key={num}
+                      className={`w-[40px] h-[40px] p-[5px] rounded-lg mb-2 ${numactive === num ? 'bg-black text-white' : 'bg-white text-black'
+                        } flex justify-center items-center cursor-pointer`}
+                      onClick={() => setNumactive(num)}
+                    >
+                      {num}
+                    </div>
+                  ))}
+                  <div
+                    key="ellipsis"
+                    className="w-[40px] h-[40px] p-[5px] rounded-lg mb-2 bg-[#F9C6CB] text-black flex justify-center items-center"
+                  >
+                    ......
+                  </div>
+                </>
+              ) : (
+                <>
+                  {numArray.map((num) => (
+                    <div
+                      key={num}
+                      className={`w-[40px] h-[40px] p-[5px] rounded-lg mb-2 ${numactive === num ? 'bg-black text-white' : 'bg-white text-black'
+                        } flex justify-center items-center cursor-pointer`}
+                      onClick={() => setNumactive(num)}
+                    >
+                      {num}
+                    </div>
+                  ))}
+                </>
+              )}
+            </div>
+            <div className="cursor-pointer ml-[20px] mt-[5px]" onClick={rightClick}>
+              <AiOutlineArrowRight size={30} />
+            </div>
           </div>
         </div>
       </div>
