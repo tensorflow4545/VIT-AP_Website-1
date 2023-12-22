@@ -10,7 +10,7 @@ const AdvantageFeatures = () => {
                 <div className='min-h-[400px] w-[100%] relative py-[40px] flex '> 
                     <div className='basis-1/3'>
                         <div className='max-w-[550px] w-[100%] min-h-[400px] ml-[100px] md:ml-[200px] relative mt-[60px]'>
-                            <Image src={"/advantagefacility.jpeg"} alt='advantage' fill />
+                            <Image src={"/advantages/unique 494400.png"} alt='advantage' fill />
                             <div className='absolute w-full h-full top-10 left-10 border-2 border-[#650010] -z-10'>
 
                             </div>
