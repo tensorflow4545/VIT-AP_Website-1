@@ -14,7 +14,7 @@ const CDCHeader = () => {
 
     return (
         <>
-            <div className="max-w-[1560px] w-[100%] min-h-[450px] h-[100%] mx-auto hidden ls:flex justify-center items-center mt-[30px] relative ">
+            <div className="w-full min-h-[450px] h-[100%] mx-auto hidden ls:flex justify-center items-center mt-[30px] relative ">
                 <div className='absolute max-w-[100px] lx:max-w-[150px] md:max-w-[200px] w-[100%] h-full top-0 left-16 bg-[#650010]'></div>
                 <div className='absolute max-w-[300px] w-[100%] max-h-[20px] h-[100%] right-24 lx:right-36 bottom-0 bg-[#650010] text-white text-[22px] flex justify-center items-center'></div>
                 <div className='max-w-[1400px] w-[100%] min-h-[420px] h-[100%] p-5 flex '>
@@ -30,7 +30,7 @@ const CDCHeader = () => {
                     </div>
                 </div>
             </div>
-            <div className="max-w-[1560px] w-[100%] min-h-[350px] lx:min-h-[350px] h-[100%] mx-auto bg-[#FCE3E5] hidden ls:flex flex-col relative overflow-hidden justify-center items-center">
+            <div className="w-full min-h-[350px] lx:min-h-[350px] h-[100%] mx-auto bg-[#FCE3E5] hidden ls:flex flex-col relative overflow-hidden justify-center items-center">
                 <div className='absolute max-w-[100px] lx:max-w-[150px] md:max-w-[200px] w-[100%] h-full top-0 left-16 bg-[#650010]'></div>
                 <div className='absolute bottom-8 right-32 max-w-[80px] w-[100%] max-h-[40px] h-[100%] flex justify-between items-center'>
                     <button className='bg-white rounded-full' onClick={() => setIndex(index - 1)}><GrFormPrevious size={35} /></button>
