@@ -30,11 +30,11 @@ export default function Research() {
           <p class="text-[48px] text-primary font-bold text-emilio pt-[68px] pl-[73px]">Research and Innovation</p>
 
           {/* flex */}
-          <div class="flex flex-row pt-[63px] pl-[80px]">
+          <div class="flex flex-row pt-[63px] pl-[80px] justify-center allign-center">
 
             {Research.map((research) => {
               {/* card */ }
-              return <div><div class="basis w-[350px] h-[550px] bg-white rounded-sm mr-[24px] rounded hover:shadow-xl ">
+              return <div><div class="basis w-[350px] h-[550px] bg-white rounded-sm mr-[24px] rounded hover:shadow-xl">
                 <div class="w-[350px] h-[311px] relative">
                   <Image class="absolute z-0" width={350} height={311} src={research.img} alt="Event Image"></Image>
                 </div>

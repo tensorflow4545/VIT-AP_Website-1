@@ -31,12 +31,12 @@ const DreamOffer = () => {
           className={`${styles.div1} w-[1332px] h-[745px] bg-[#FCE3E5] ml-[7%] flex`}
         >
           <p
-            className={`${styles.heading} text-[58px] text-[#51060D] font-Emilo font-semibold mt-[95px] ml-[54px] absolute`}
+            className={`${styles.heading} text-[58px] text-[#51060D] font-Emilo font-semibold ml-[54px] absolute mt-[20px]`}
           >
             Dream Offer
           </p>
           <div
-            className={`${styles.paragraph} w-[1189px] ml-[54px] mt-[173px] font-Montserrant text-[18px]`}
+            className={`${styles.paragraph} w-[1189px] ml-[54px] mt-[130px] font-Montserrant text-[18px]`}
           >
             <p>
               In Dream placement offer, 3836 students are presented with offers

@@ -44,7 +44,7 @@ const ProgrammesOffered = () => {
               Programmes Offered
             </h1>
             <p className="my-[15px] ls:text-[18px] text-[15px] font-Montserrat">
-              Program covers the entire spectrum of new-age specializations.
+              Programme covers the entire spectrum of new-age specializations.
               {/* This program seamlessly integrates basic science concepts to the
               latest technologies with relevant practice through lab and
               projects for building problem-solving skills */}
@@ -80,11 +80,11 @@ const ProgrammesOffered = () => {
                 Postgraduate
               </h1>
               <h1
-                className={`font-Montserrat lx:text-[20px] text-[16px] py-[19px] md:px-[23px] ${active === "doctorial" ? "border border-zinc-200" : ""
+                className={`font-Montserrat lx:text-[20px] text-[16px] py-[19px] md:px-[23px] ${active === "doctoral" ? "border border-zinc-200" : ""
                   } cursor-pointer w-full first-letter`}
-                onClick={() => setActive("doctorial")}
+                onClick={() => setActive("doctoral")}
               >
-                Doctorial
+                Doctoral
               </h1>
             </div>
           </div>
@@ -98,7 +98,7 @@ const ProgrammesOffered = () => {
                 attributes.Field === active ? (
                   <h1
                     key={index}
-                    className="py-[19px] max-w-[432px] font-Emilio max-lx:py-[16px] text-[#51060D] text-[20px] max-lx:text-[15px] font-[500] capitalize border border-l-0 border-t-0 border-r-0 border-b-gray-500 hover:font-bold"
+                    className="py-[19px] max-w-[432px] font-Emilio max-lx:py-[16px] text-[#51060D] text-[20px] max-lx:text-[15px] font-[500] border border-l-0 border-t-0 border-r-0 border-b-gray-500 hover:font-bold"
                   >
                     <a href="#">
                       {attributes.Title}
@@ -157,11 +157,11 @@ const ProgrammesOffered = () => {
               Post Graduate
             </li>
             <li
-              className={`py-[10px] px-[10px] ${active === "doctorial" ? "border border-zinc-200" : ""
+              className={`py-[10px] px-[10px] ${active === "doctoral" ? "border border-zinc-200" : ""
                 }`}
-              onClick={() => setActive("doctorial")}
+              onClick={() => setActive("doctoral")}
             >
-              Doctorial
+              Doctoral
             </li>
           </ul>
         </div>
@@ -175,7 +175,7 @@ const ProgrammesOffered = () => {
 
             {programmesOffered.map((program, index) =>
               program.field === active ? (
-                <h1 key={index} className="py-4 max-w-[432px] text-#51060D text-14 max-lx:text-15 font-semibold capitalize border border-l-0 border-t-0 border-r-0 border-b-gray-500 hover:text-bold">
+                <h1 key={index} className="py-4 max-w-[432px] text-#51060D text-14 max-lx:text-15 font-semibold border border-l-0 border-t-0 border-r-0 border-b-gray-500 hover:text-bold">
                   <a href="#">{program.title}</a>
                 </h1>
               ) : (

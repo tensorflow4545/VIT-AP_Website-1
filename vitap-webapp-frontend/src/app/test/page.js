@@ -51,8 +51,8 @@ const Contact = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/events-datas?populate=*`,{
-            headers: {
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/school-page-achievements?populate=*`,{
+        headers: {
               Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
             },
           });
@@ -70,14 +70,17 @@ const Contact = () => {
     fetchData();
   }, []);
 
+  // console.log(profiles[0]?.Image.data.attributes);
+// console.log(profiles[0]);
+
   return (
     <div>
-      {/* {profiles.map((profile, index) => ( */}
+      {profiles.map((profile, index) => (
         <div>
-          <p>Name: {profiles[0]?.Name}</p>
-          <img src={`${process.env.NEXT_PUBLIC_API_URL}${profiles[0]?.Image.data[0].attributes.url}`} alt={profiles[0]?.Image.data[0].attributes.alternativeText || 'Alt Text'} />
+          <p>Name: {profile?.Department}</p>
+          <img src={`${process.env.NEXT_PUBLIC_API_URL}${profile?.Image.data.attributes.url}`} alt={profile.Image.data.attributes.alternativeText || 'Alt Text'} /> 
         </div>
-      {/* ))} */}
+      ))}
     </div>
   );
 };

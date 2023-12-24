@@ -3,7 +3,7 @@ import { Carousel } from "@material-tailwind/react";
 const CarouselComp = () => {
   return (
     <>
-      <Carousel className=" h-[97vh] w-full">
+      <Carousel className=" h-[97vh] w-full z-0">
         <div className="w-full h-full object-cover relative ">
           <div className="absolute w-full h-full bg-black opacity-30 bg-gradient-to-b from-blue-gray-900 to-blue-gray-800"></div>
           <video autoPlay muted loop className="h-full w-full object-cover">

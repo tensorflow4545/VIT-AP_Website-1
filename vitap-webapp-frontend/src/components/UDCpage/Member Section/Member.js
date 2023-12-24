@@ -1,21 +1,28 @@
 import Image from "next/image";
-export default function Member() {
+export default function Member(){
     return (
         <>
 
             {/* Desktop view */}
-            <div class="md:grid hidden">
-                <div class="w-full h-max bg-indigo-50 px-[96px] pb-[50px]">
-                    <p class="text-[24px] text-black font-semibold pb-[42px]">Members</p>
+            <div className="md:grid hidden">
+            <div className="w-full h-max bg-indigo-50 px-[96px] pb-[50px]">
+             <p className="text-[24px] text-black font-semibold pb-[42px]">Members</p>
 
-                    <div className='grid grid-cols-4 justify-center items-center gap-5 text-center'>
-                        <div className=' shadow-xl max-w-[250px] bg-white w-[100%]'>
-                            <Image src={"/udc.png"} width={250} height={220} alt='faculty' className='p-3' />
-                            <div>
-                                <h1 className='text-[16px] text-[#650010] font-semibold'>Prof. Anjali Yadav</h1>
-                                <h1 className='text-[16px] text-[#650010] font-semibold pb-3'>VSL</h1>
+             <div className='grid grid-cols-4 justify-center items-center gap-5 text-center'>
+                            <div className=' shadow-xl max-w-[250px] bg-white w-[100%]'>
+                                <Image src={"/udc.png"} width={250} height={220} alt='faculty' className='p-3' />
+                                <div>
+                                    <h1 className='text-[16px] text-[#650010] font-semibold'>Prof. Anjali Yadav</h1>
+                                    <h1 className='text-[16px] text-[#650010] font-semibold pb-3'>VSL</h1>
+                                </div>
                             </div>
-                        </div>
+                            <div className=' shadow-xl bg-white max-w-[250px] w-[100%]'>
+                                <Image src={"/udc.png"} width={250} height={220} alt='faculty' className='p-3' />
+                                <div>
+                                    <h1 className='text-[16px] text-[#650010] font-semibold'>Dr. Priyanka Ghosh</h1>
+                                    <h1 className='text-[16px] text-[#650010] font-semibold pb-3'>VISH</h1>
+                                </div>
+
                         <div className=' shadow-xl bg-white max-w-[250px] w-[100%]'>
                             <Image src={"/udc.png"} width={250} height={220} alt='faculty' className='p-3' />
                             <div>
@@ -28,6 +35,7 @@ export default function Member() {
                             <div>
                                 <h1 className='text-[16px] text-[#650010] font-semibold'>Dr. Aby Abraham</h1>
                                 <h1 className='text-[16px] text-[#650010] font-semibold pb-3'>VISH</h1>
+
                             </div>
                         </div>
                         <div className=' shadow-xl bg-white max-w-[250px] w-[100%]'>
@@ -83,10 +91,13 @@ export default function Member() {
                 </div>
             </div>
 
-            {/* Mobile view */}
-            <div class="sm:hidden">
-                <div class="w-full h-max bg-indigo-50 px-[20px] py-[50px]">
-                    <p class="text-[20px] text-black font-semibold pb-[42px]">Members</p>
+
+                    {/* Mobile view */}
+                    <div className="sm:hidden">
+                     <div className="w-full h-max bg-indigo-50 px-[20px] py-[50px]">
+                     <p className="text-[20px] text-black font-semibold pb-[42px]">Members</p>
+
+           
 
                     <div className='grid grid-cols-2 justify-center items-center gap-5 text-center'>
                         <div className=' shadow-xl max-w-[250px] bg-white w-[100%]'>
@@ -164,4 +175,3 @@ export default function Member() {
             </div>
         </>
     )
-}
