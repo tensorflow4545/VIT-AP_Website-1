@@ -49,7 +49,7 @@ const Home = async () => {
       <LifeAtVITAP />
       <NewsAboutVITAP />
       <WallOfSocials />
-      <CDCHeader />
+      <CDCHeader /> 
       {/* <NumberAtGlance /> */}
       <Component />
       <Footer /> 
