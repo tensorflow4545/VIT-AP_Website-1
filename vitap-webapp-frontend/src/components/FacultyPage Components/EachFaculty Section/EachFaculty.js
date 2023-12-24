@@ -129,32 +129,10 @@ const EachFaculty = () => {
                     </div>
                 </div>
 
-                {/* <div>
-                <div class="updated2">
-                    <h1 class="updateheader">Keep Me Updated</h1>
-                    <p class="updatetext">Fill out this box to be the <span class="person">First Person</span> to hear about our updates</p>
-
-                    <form>
-                        <div class="flex flex-row flex-wrap gap-5 md:gap-0">
-                            <div class="basis-1/4">
-                                <input class="input" placeholder="*NAME" for="grid-first-name" />
-                            </div>
-                            <div class="basis-1/4">
-                                <input class="input" placeholder="*EMAIL ADDRESS" for="grid-first-name" />
-                            </div>
-                            <div class="basis-1/4">
-                                <input class="input" placeholder="*PHONE NUMBER" for="grid-first-name" />
-                            </div>
-                            <div class="basis-1/4">
-                                <button class="inputbutton"><span class="inputbuttontext">SUBSCRIBE</span></button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div> */}
+                
             </div>
 
-            <div className='w-full max-h-[2000px]'>
+            <div className='w-full max-h-[2000px] block ls:hidden'>
                 <div className='px-[20px] py-[30px]'>
                     <div className='w-full bg-white '>
                         <div className=' max-w-[600px] w-[100%] '>
@@ -236,6 +214,30 @@ const EachFaculty = () => {
                         </div>
                     </div>
                 </div>
+
+                <div>
+                <div class="updated2">
+                    <h1 class="updateheader">Keep Me Updated</h1>
+                    <p class="updatetext">Fill out this box to be the <span class="person">First Person</span> to hear about our updates</p>
+
+                    <form>
+                        <div class="flex flex-row flex-wrap gap-5 md:gap-0">
+                            <div class="basis-1/4">
+                                <input class="input" placeholder="*NAME" for="grid-first-name" />
+                            </div>
+                            <div class="basis-1/4">
+                                <input class="input" placeholder="*EMAIL ADDRESS" for="grid-first-name" />
+                            </div>
+                            <div class="basis-1/4">
+                                <input class="input" placeholder="*PHONE NUMBER" for="grid-first-name" />
+                            </div>
+                            <div class="basis-1/4">
+                                <button class="inputbutton"><span class="inputbuttontext">SUBSCRIBE</span></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
             </div>
         </>
     )
