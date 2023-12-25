@@ -51,11 +51,11 @@ const programoffered = () => {
 
                 return (
                   <div className="relative group transition duration-1000" key={index}>
+                    <Link href={attributes.Link} target="_blank">
                     <div className="relative pb-3 pl-[78px] w-[67%] group-hover:left-[20px] transition duration-1000">
                       <div className="pb-3 text-black font-Emilio text-[20px] font-semibold group-hover:text-primary">{attributes.Head}</div>
                       <div className="pb-3 text-black font-Emilio text-[18px] font-medium group-hover:text-primary group-hover:inline-block">{attributes.Title}</div>
                     </div>
-                    <Link href={attributes.Link} target="_blank">
                       <button className="absolute fixed right-[150px] top-[20px] w-[147px] h-[50px] bg-primary rounded-[6px] text-center text-white font-semibold invisible group-hover:visible hover:bg-[#7A1820]">
                         Apply Now
                       </button>

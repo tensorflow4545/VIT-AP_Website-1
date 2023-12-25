@@ -1,7 +1,8 @@
 "use client";
 
 import Image from 'next/image'
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
+import axios from 'axios';
 import "./SuperdreamOffers.css"
 import { homeCDC } from '@/constants';
 import { MdNavigateNext } from "react-icons/md";
@@ -10,7 +11,32 @@ import Link from 'next/link';
 
 const CDCHeader = () => {
 
+    const [images, setImages] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/home-page-cdc-scroll-images?populate=*`, {
+                    headers: {
+                        Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
+                    },
+                });
+                if (response.data && Array.isArray(response.data.data)) {
+                    const extractedAttributes = response.data.data.map((item) => item.attributes);
+                    setImages(extractedAttributes);
+                } else {
+                    console.error('The "data" property in the API response is not an array:', response.data);
+                }
+            } catch (error) {
+                console.error('Error fetching data:', error.message);
+            }
+        };
+
+        fetchData();
+    }, []);
+
     const [index, setIndex] = useState(0);
+    console.log(images);
 
     return (
         <>
@@ -19,7 +45,7 @@ const CDCHeader = () => {
                 <div className='absolute max-w-[300px] w-[100%] max-h-[20px] h-[100%] right-24 lx:right-36 bottom-0 bg-[#650010] text-white text-[22px] flex justify-center items-center'></div>
                 <div className='max-w-[1400px] w-[100%] min-h-[420px] h-[100%] p-5 flex '>
                     <div className='flex-1 flex justify-start items-center'>
-                        <div className='max-w-[430px] min-h-[430px] h-[100%] w-[100%] relative'>
+                        <div className='max-w-[400px] min-h-[370px] h-[100%] w-[100%] relative left-[7%]'>
                             <Image src={homeCDC[index].imgUrl} alt='glance' fill className='p-7' />
                             <div className='absolute right-0 bottom-0 max-h-[50px] max-w-[50px] w-[100%] h-[100%] border-4 border-[#650010] border-t-0 border-l-0'></div>
                         </div>
@@ -40,62 +66,11 @@ const CDCHeader = () => {
                     <button>Top Recruiters</button>
                 </div>
                 <div className='flex justify-center items-center gap-2 slide-track'>
-                    <div className='lx:min-w-[200px] w-[100%] lx:min-h-[150px] h-[100%] min-w-[180px] min-h-[130px] relative slide overflow-hidden group transition-all duration-300 ease-in-out' onClick={() => setIndex(0)}>
-                        <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
-                    </div>
-                    <div className='lx:min-w-[200px] w-[100%] lx:min-h-[150px] h-[100%] min-w-[180px] min-h-[130px] relative slide overflow-hidden group transition-all duration-300 ease-in-out' onClick={() => setIndex(1)}>
-                        <Image src={"/super-dream-offer 1.png"} fill alt='package' className='group-hover:scale-110' />
-                    </div>
-                    <div className='lx:min-w-[200px] w-[100%] lx:min-h-[150px] h-[100%] min-w-[180px] min-h-[130px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
-                        <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
-                    </div>
-                    <div className='lx:min-w-[200px] w-[100%] lx:min-h-[150px] h-[100%] min-w-[180px] min-h-[130px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
-                        <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
-                    </div>
-                    <div className='lx:min-w-[200px] w-[100%] lx:min-h-[150px] h-[100%] min-w-[180px] min-h-[130px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
-                        <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
-                    </div>
-                    <div className='lx:min-w-[200px] w-[100%] lx:min-h-[150px] h-[100%] min-w-[180px] min-h-[130px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
-                        <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
-                    </div>
-                    <div className='lx:min-w-[200px] w-[100%] lx:min-h-[150px] h-[100%] min-w-[180px] min-h-[130px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
-                        <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
-                    </div>
-                    <div className='lx:min-w-[200px] w-[100%] lx:min-h-[150px] h-[100%] min-w-[180px] min-h-[130px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
-                        <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
-                    </div>
-                    <div className='lx:min-w-[200px] w-[100%] lx:min-h-[150px] h-[100%] min-w-[180px] min-h-[130px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
-                        <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
-                    </div>
-
-                    <div className='lx:min-w-[200px] w-[100%] lx:min-h-[150px] h-[100%] min-w-[180px] min-h-[130px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
-                        <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
-                    </div>
-                    <div className='lx:min-w-[200px] w-[100%] lx:min-h-[150px] h-[100%] min-w-[180px] min-h-[130px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
-                        <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
-                    </div>
-                    <div className='lx:min-w-[200px] w-[100%] lx:min-h-[150px] h-[100%] min-w-[180px] min-h-[130px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
-                        <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
-                    </div>
-                    <div className='lx:min-w-[200px] w-[100%] lx:min-h-[150px] h-[100%] min-w-[180px] min-h-[130px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
-                        <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
-                    </div>
-                    <div className='lx:min-w-[200px] w-[100%] lx:min-h-[150px] h-[100%] min-w-[180px] min-h-[130px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
-                        <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
-                    </div>
-                    <div className='lx:min-w-[200px] w-[100%] lx:min-h-[150px] h-[100%] min-w-[180px] min-h-[130px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
-                        <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
-                    </div>
-                    <div className='lx:min-w-[200px] w-[100%] lx:min-h-[150px] h-[100%] min-w-[180px] min-h-[130px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
-                        <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
-                    </div>
-                    <div className='lx:min-w-[200px] w-[100%] lx:min-h-[150px] h-[100%] min-w-[180px] min-h-[130px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
-                        <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
-                    </div>
-                    <div className='lx:min-w-[200px] w-[100%] lx:min-h-[150px] h-[100%] min-w-[180px] min-h-[130px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
-                        <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
-                    </div>
-
+                    {images.map((image, index) => (
+                        <div key={index} className='lx:min-w-[200px] w-[100%] lx:min-h-[150px] h-[100%] min-w-[180px] min-h-[130px] relative slide overflow-hidden group transition-all duration-300 ease-in-out' onClick={() => setIndex(index)}>
+                            <Image src={`${process.env.NEXT_PUBLIC_API_URL}${image?.Image.data.attributes.url}`} fill alt='package' className='group-hover:scale-110' />
+                        </div>
+                    ))}
                 </div>
             </div>
 

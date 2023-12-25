@@ -41,8 +41,8 @@ const FacultySection = () => {
           <p className="pr-[10px] text-[#1E1E1E] text-[18px] font-normal mb-[25px] max-md:text-[14px]">
             Our multidisciplinary faculty are leaders in research and teaching
           </p>
-          <Link href={"/faculty"} target='_blank'>
-          <button className="py-[9px] px-[7px] text-[#650010] text-[20px] font-semibold border-2 border-red-800 max-md:text-[16px]">
+          <Link href={"/School%20of%20Computer%20Science%20and%20Engineering%20(SCOPE)/faculty"} target='_blank'>
+          <button className="py-[9px] px-[7px] text-[#650010] text-[20px] font-semibold border-2 border-red-800 max-md:text-[16px] hover:text-white hover:bg-primary">
             Faculty Profiles
           </button>
           </Link>
@@ -58,13 +58,15 @@ const FacultySection = () => {
             fill={true}
           ></Image>
           <div className='absolute w-full h-0 top-0 left-0 bg-[#650010] opacity-50 group-hover:h-full flex flex-col justify-between items-start'>
+          <Link href={`/School%20of%20Computer%20Science%20and%20Engineering%20(SCOPE)/faculty/profile/${profiles[0]?.Faculty_Id}`} className='text-white text-[18px] font-semibold'>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
               <h1 className='text-white text-[18px] font-semibold'>{profiles[0]?.Name}</h1>
               <h1 className='text-white text-[15px] font-semibold'>{profiles[0]?.Designation}</h1>
             </div>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
-              <Link href={"/"} className='text-white text-[18px] font-semibold'>See Profile</Link>
+            See Profile
             </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -76,13 +78,15 @@ const FacultySection = () => {
             fill={true}
           />
           <div className='absolute w-full h-0 top-0 left-0 bg-[#650010] opacity-50 group-hover:h-full flex flex-col justify-between items-start'>
+          <Link href={`/School%20of%20Computer%20Science%20and%20Engineering%20(SCOPE)/faculty/profile/${profiles[1]?.Faculty_Id}`} className='text-white text-[18px] font-semibold'>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
               <h1 className='text-white text-[18px] font-semibold'>{profiles[1]?.Name}</h1>
               <h1 className='text-white text-[15px] font-semibold'>{profiles[1]?.Designation}</h1>
             </div>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
-              <Link href={"/"} className='text-white text-[18px] font-semibold'>See Profile</Link>
+             See Profile
             </div>
+            </Link>
           </div>
         </div>
         <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative group transition-all duration-300 ease-in-out">
@@ -92,13 +96,15 @@ const FacultySection = () => {
             fill={true}
           />
           <div className='absolute w-full h-0 top-0 left-0 bg-[#650010] opacity-50 group-hover:h-full flex flex-col justify-between items-start'>
+          <Link href={`/School%20of%20Computer%20Science%20and%20Engineering%20(SCOPE)/faculty/profile/${profiles[2]?.Faculty_Id}`} className='text-white text-[18px] font-semibold'>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
               <h1 className='text-white text-[18px] font-semibold'>{profiles[2]?.Name}</h1>
               <h1 className='text-white text-[15px] font-semibold'>{profiles[2]?.Designation}</h1>
             </div>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
-              <Link href={"/"} className='text-white text-[18px] font-semibold'>See Profile</Link>
+              See Profile
             </div>
+            </Link>
           </div>
         </div>
         <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative group transition-all duration-300 ease-in-out">
@@ -108,13 +114,15 @@ const FacultySection = () => {
             fill={true}
           />
           <div className='absolute w-full h-0 top-0 left-0 bg-[#650010] opacity-50 group-hover:h-full flex flex-col justify-between items-start'>
+          <Link href={`/School%20of%20Computer%20Science%20and%20Engineering%20(SCOPE)/faculty/profile/${profiles[3]?.Faculty_Id}`} className='text-white text-[18px] font-semibold'>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
               <h1 className='text-white text-[18px] font-semibold'>{profiles[3]?.Name}</h1>
               <h1 className='text-white text-[15px] font-semibold'>{profiles[3]?.Designation}</h1>
             </div>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
-              <Link href={"/"} className='text-white text-[18px] font-semibold'>See Profile</Link>
+              See Profile
             </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -126,13 +134,15 @@ const FacultySection = () => {
             fill={true}
           />
           <div className='absolute w-full h-0 top-0 left-0 bg-[#650010] opacity-50 group-hover:h-full flex flex-col justify-between items-start'>
+          <Link href={`/School%20of%20Computer%20Science%20and%20Engineering%20(SCOPE)/faculty/profile/${profiles[4]?.Faculty_Id}`} className='text-white text-[18px] font-semibold'>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
               <h1 className='text-white text-[18px] font-semibold'>{profiles[4]?.Name}</h1>
               <h1 className='text-white text-[15px] font-semibold'>{profiles[4]?.Designation}</h1>
             </div>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
-              <Link href={"/"} className='text-white text-[18px] font-semibold'>See Profile</Link>
+              See Profile
             </div>
+            </Link>
           </div>
         </div>
         <div className="flex justify-center items-center overflow-hidden mt-[15px] max-w-[230px] max-h-[230px] h-full w-full relative group transition-all duration-300 ease-in-out">
@@ -142,13 +152,15 @@ const FacultySection = () => {
             fill={true}
           />
           <div className='absolute w-full h-0 top-0 left-0 bg-[#650010] opacity-50 group-hover:h-full flex flex-col justify-between items-start'>
+          <Link href={`/School%20of%20Computer%20Science%20and%20Engineering%20(SCOPE)/faculty/profile/${profiles[5]?.Faculty_Id}`} className='text-white text-[18px] font-semibold'>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
               <h1 className='text-white text-[18px] font-semibold'>{profiles[5]?.Name}</h1>
               <h1 className='text-white text-[15px] font-semibold'>{profiles[5]?.Designation}</h1>
             </div>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
-              <Link href={"/"} className='text-white text-[18px] font-semibold'>See Profile</Link>
+             See Profile
             </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -160,13 +172,15 @@ const FacultySection = () => {
             fill={true}
           />
           <div className='absolute w-full h-0 top-0 left-0 bg-[#650010] opacity-50 group-hover:h-full flex flex-col justify-between items-start'>
+          <Link href={`/School%20of%20Computer%20Science%20and%20Engineering%20(SCOPE)/faculty/profile/${profiles[6]?.Faculty_Id}`} className='text-white text-[18px] font-semibold'>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
               <h1 className='text-white text-[18px] font-semibold'>{profiles[6]?.Name}</h1>
               <h1 className='text-white text-[15px] font-semibold'>{profiles[6]?.Designation}</h1>
             </div>
             <div className='p-5 hidden group-hover:flex flex-col gap-1'>
-              <Link href={"/"} className='text-white text-[18px] font-semibold'>See Profile</Link>
+              See Profile
             </div>
+            </Link>
           </div>
         </div>
       </div>

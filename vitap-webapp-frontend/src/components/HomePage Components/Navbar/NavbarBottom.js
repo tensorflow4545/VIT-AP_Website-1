@@ -142,7 +142,7 @@ const NavbarBottom = () => {
                     </ol>
                   </div>
                 </div>
-                Programmes</div>
+              </div>
             </li>
 
             <li
@@ -189,7 +189,7 @@ const NavbarBottom = () => {
                     <li className="absolute left-[600px] invisible top-[20px] peer-hover/fas:visible">
                       <Image alt="A descriptive text here" src={image2} />
                     </li>
-                    <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => { setProgrammes([]); setProgramme(null); setunderline("") }} onMouseLeave={() => { setProgramme("Undergraduate") }}>Affidivit</li>
+                    <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => { setProgrammes([]); setProgramme(null); setunderline("") }} onMouseLeave={() => { setProgramme("Undergraduate") }}>Affidavit</li>
                     <li className="absolute left-[600px] invisible top-[20px] peer-hover/fas:visible">
                       <Image alt="A descriptive text here" src={image3} />
                     </li>
@@ -291,12 +291,12 @@ const NavbarBottom = () => {
                       <li className="custom-list-item w-[fit-content]">Academic Council</li>
                       <li className="custom-list-item w-[fit-content]">Faculty</li>
                       <li className="custom-list-item w-[fit-content]">Academic Calender</li>
-                      <li className="custom-list-item w-[fit-content]">International Collabration</li>
+                      <li className="custom-list-item w-[fit-content]">International Collaboration</li>
                       <li className="custom-list-item w-[fit-content]">Engineering Clinic </li>
                       <li className="custom-list-item w-[fit-content]">Value Added Courses</li>
                       <li className="custom-list-item w-[fit-content]">Centre of Examination</li>
                       <li className="custom-list-item w-[fit-content]">Fully Flexible Credit System (FFCS)</li>
-                      <li className="custom-list-item w-[fit-content]">Design your own degree (DYOD) </li>
+                      <li className="custom-list-item w-[fit-content]">Design Your Own Degree (DYOD) </li>
                     </ol>
 
                   </div>
@@ -331,7 +331,7 @@ const NavbarBottom = () => {
                       </li>
 
                       <li className="peer/leadership custom-list-item w-[fit-content]">
-                      <Link href="/cdc-superdream">Superdream</Link>
+                      <Link href="/cdc-superdream">Superdream offers</Link>
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/leadership:visible">
                         <Image alt="A descriptive text here" src={image2} />
@@ -396,7 +396,7 @@ const NavbarBottom = () => {
                       <li className="custom-list-item w-[fit-content]">Cafeteria</li>
                       <li className="custom-list-item w-[fit-content]">Sports</li>
                       <li className="custom-list-item w-[fit-content]">Gallery</li>
-                      <li className="custom-list-item w-[fit-content]">360 Campus Tour</li>
+                      <li className="custom-list-item w-[fit-content]"><a href="/Campustour/index04.html" target="_blank">360 Campus Tour</a></li>
                     </ol>
                     <span className="w-[6px] h-[500px] bg-primary opacity-20 rounded-lg absolute left-[400px] top-[25px]"></span>
                     <ol className="flex-row font-[400] text-[20px]  pt-[40px] pl-[200px] space-y-[15px]">
@@ -405,13 +405,13 @@ const NavbarBottom = () => {
                       </li>
                       <li className="custom-list-item w-[fit-content]">Infrastructure</li>
                       <li className="custom-list-item w-[fit-content]">Hostels</li>
-                      <li className="custom-list-item w-[fit-content]">Libraries</li>
-                      <li className="custom-list-item w-[fit-content]">Labs</li>
+                      <li className="custom-list-item w-[fit-content]">Library</li>
+                      <li className="custom-list-item w-[fit-content]">Laboratories</li>
                       <li className="custom-list-item w-[fit-content]">Bank and ATM</li>
                       <li className="custom-list-item w-[fit-content]">Transport</li>
                       <li className="custom-list-item w-[fit-content]">Health Center</li>
                       <li className="custom-list-item w-[fit-content]">Guest House</li>
-                      <li className="custom-list-item w-[fit-content]">Facilities to employees</li>
+                      <li className="custom-list-item w-[fit-content]">Facilities to Employees</li>
                     </ol>
                     <span className="w-[6px] h-[500px] bg-primary opacity-20 rounded-lg absolute left-[800px] top-[25px]"></span>
                     <ol className="flex-row font-[400] text-[20px]  pt-[40px] pl-[200px] space-y-[15px]">
@@ -419,10 +419,10 @@ const NavbarBottom = () => {
                         Committees
                       </li>
                       <li className="custom-list-item w-[fit-content]">V-CHANCE</li>
-                      <li className="custom-list-item w-[fit-content]">Anti - Ragging Commitee</li>
-                      <li className="custom-list-item w-[fit-content]">Internal Complaints committee</li>
-                      <li className="custom-list-item w-[fit-content]">University disciplinary committee</li>
-                      <li className="custom-list-item w-[fit-content]">Grievances Redressal Commitee</li>
+                      <li className="custom-list-item w-[fit-content]">Anti-Ragging Commitee</li>
+                      <li className="custom-list-item w-[fit-content]">Internal Complaints Committee</li>
+                      <li className="custom-list-item w-[fit-content]">University Disciplinary Committee</li>
+                      <li className="custom-list-item w-[fit-content]">Grievance Redressal Commitee</li>
 
                     </ol>
                   </div>
@@ -444,7 +444,7 @@ const NavbarBottom = () => {
                 <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px] flex-row flex">
 
                   <ol className="flex-row font-[400] text-[20px]  pt-[60px] pl-[110px] space-y-[19px]">
-                    <li className="custom-list-item w-[fit-content]" onMouseEnter={() => { setResearch("ar") }}>Academic Reasearch</li>
+                    <li className="custom-list-item w-[fit-content]" onMouseEnter={() => { setResearch("ar") }}>Academic Research</li>
 
                     <li className="custom-list-item w-[fit-content]" onMouseEnter={() => { setResearch("ure") }}>URE Project</li>
 
@@ -512,12 +512,16 @@ const NavbarBottom = () => {
         </div>
       </div> */}
 
+
+
       <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
         <div
           className="absolute top-0 right-0 px-8 py-8"
           onClick={() => setIsNavOpen(false)}
         ></div>
       </div>
+
+      
     </>
   );
 };

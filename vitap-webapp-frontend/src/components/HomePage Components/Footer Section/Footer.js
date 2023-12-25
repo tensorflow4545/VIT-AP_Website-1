@@ -7,7 +7,7 @@ import { BiLogoInstagramAlt, BiLogoFacebookCircle } from "react-icons/bi";
 import { FiArrowUpRight } from "react-icons/fi";
 import { BsArrowUpRight } from "react-icons/bs";
 import Image from "next/image";
-import "./footer.css";
+import "../style/footer.css";
 import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
@@ -43,7 +43,7 @@ export default function Footer() {
                   <p className="text-primary font-Emilio text-[24px] font-bold leading-[133.5%] pb-[10px]">Ranking & Accereditation</p>
                   <ul className="w-[147px] h-[136px]">
                     <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">RAAC</li>
-                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">NACC</li>
+                    <li className="text-black font-Montserrat text-[16px] font-light w-[max-content] leading-[133%] pb-[5px] hover:text-primary hover:font-semibold">NAAC</li>
                   </ul>
                 </div>
               </div>
@@ -93,10 +93,10 @@ export default function Footer() {
                 ></iframe>
               </div>
               <div className="flex flex-col items-start gap-[18px] pb-[10px]">
-                <p className="addresstext-primary font-Emilio text-[24px] font-bold leading-[133.5%] pb-[10px]">VIT-AP University, Amaravathi</p>
+                <p className="addresstext-primary font-Emilio text-[24px] font-bold leading-[133.5%] pb-[10px]">VIT-AP University, Amaravati</p>
                 <div className="text-black font-Montserrat text-[16px] font-light leading-[150%] text-left">
-                  <p>Near Vijayawada - 522237,</p>
-                  <p>AndhraPradesh.</p>
+                  <p>Near Vijayawada - 522241,</p>
+                  <p>Andhra Pradesh.</p>
                   <p>Phone: 040-29559555</p>
                   <p>Email: adminoffice@vitap.ac.in</p>
                 </div>
@@ -140,7 +140,7 @@ export default function Footer() {
                 <a className="creditlink">Terms of Use</a>
                 <a className="creditlink">Copyright</a>
                 <a className="creditlink">Trademarks</a>
-                <a className="creditlink">Non- Discrimination</a>
+                <a className="creditlink">Non-Discrimination</a>
                 <a className="creditlink">Accessibility</a>
               </div>
             </div>
@@ -197,7 +197,7 @@ export default function Footer() {
         <div class="w-full h-max">
 
           {/* uni logo */}
-          <div class={`w-full h-max overflow-hidden flex justify-center pt-[30px] pb-[20px]`}>
+          <div class={`w-full h-max overflow-hidden flex justify-center pt-[20px] pb-[18px]`}>
             <div class={`w-[145px] h-[44px]`}>
               <Image width={145} height={44} src="/unilogom.png" alt="Uni Image" class="text-center"></Image>
             </div>
@@ -210,8 +210,8 @@ export default function Footer() {
                 <p class="text-primary text-[15px] font-Emilio font-bold">Apply Now</p>
               </div>
             </div>
-            <div class="basis pt-[5px] px-[40px]">
-              <div class="w-[5px] h-[5px] bg-primary rounded">
+            <div class="basis pt-[5px] px-[18px]">
+              <div class="w-[5px] h-[5px] bg-primary rounded-full">
 
               </div>
             </div>
@@ -220,7 +220,7 @@ export default function Footer() {
                 <p class="text-primary text-[15px] font-Emilio font-bold">Maps</p>
               </div>
             </div>
-            <div class="basis pt-[5px] px-[20px]">
+            <div class="basis pt-[5px] px-[18px]">
               <div class="w-[5px] h-[5px] bg-primary rounded">
 
               </div>
@@ -234,8 +234,8 @@ export default function Footer() {
 
           {/* Social icons */}
           {/* flex */}
-          <div class="flex flex-row w-full h-[20px] justify-center py-[17px]">
-            <div class="basis pr-[10px]">
+          <div class="flex flex-row w-full h-[20px] justify-center pt-[17px] pb-[21px]">
+            <div class="basis pr-[15px]">
               <a
                 href="https://www.instagram.com/vitap.university/?hl=en"
 
@@ -243,7 +243,7 @@ export default function Footer() {
                 <BiLogoInstagramAlt class="bg-[#DCCED0]" size={30} />
               </a>
             </div>
-            <div class="basis pr-[10px]">
+            <div class="basis pr-[15px]">
               <a
                 href="https://www.linkedin.com/school/vitap-university/?originalSubdomain=in"
 
@@ -251,7 +251,7 @@ export default function Footer() {
                 <AiFillLinkedin class="bg-[#DCCED0]" size={30} />
               </a>
             </div>
-            <div class="basis pr-[10px]">
+            <div class="basis pr-[15px]">
               <a
                 href="https://www.facebook.com/vitap.university/"
 
@@ -259,7 +259,7 @@ export default function Footer() {
                 <BiLogoFacebookCircle class="bg-[#DCCED0]" size={29} />
               </a>
             </div>
-            <div class="basis pr-[10px]">
+            <div class="basis pr-[15px]">
               <a href="https://www.youtube.com/c/VITAP" >
                 <AiFillYoutube class="bg-[#DCCED0]" size={30} />
               </a>
@@ -275,7 +275,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div class="w-full text-center pt-[20px]"><p class="text-primary text-[15px] font-Emilio font-bold pt-[30px] pb-[20px]">Quick Links</p></div>
+          <div class="w-full text-center pt-[20px]"><p class="text-primary text-[15px] font-Emilio font-bold pb-[20px]">Quick Links</p></div>
           {/* flex */}
           <div class="flex flex-row w-full justify-center">
             <div class="basis">
@@ -307,9 +307,10 @@ export default function Footer() {
             </div>
           </div>
           <div className="relative w-screen h-[2px] bg-primary top-[30px] bg-opacity-10"></div>
+          <hr class=" w-[400px] h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
 
           {/* Vit Connect */}
-          <div class="w-full text-center pt-[20px]"><p class="text-primary text-[15px] font-Emilio font-bold pt-[30px] pb-[20px]">VIT Connect</p></div>
+          <div class="w-full text-center"><p class="text-primary text-[15px] font-Emilio font-bold pb-[20px]">VIT Connect</p></div>
           {/* flex */}
           <div class="flex flex-row w-full justify-center">
             <div class="basis">
@@ -335,10 +336,11 @@ export default function Footer() {
             </div>
           </div>
           <div className="relative w-screen h-[2px] bg-primary top-[30px] bg-opacity-10"></div>
+          <hr class=" w-[400px] h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
 
           {/* Ranking */}
           <div>
-            <div class="w-full text-center pt-[20px]"><p class="text-primary text-[15px] font-Emilio font-bold pt-[30px] pb-[20px]">Ranking & Accereditation</p></div>
+            <div class="w-full text-center pt-[20px]"><p class="text-primary text-[15px] font-Emilio font-bold pt-[30px] pb-[20px]">Ranking & Accreditation</p></div>
             {/* flex */}
             <div class="flex flex-row w-full justify-center">
               <div class="basis">
@@ -353,9 +355,11 @@ export default function Footer() {
             </div>
           </div>
           <div className="relative w-screen h-[2px] bg-primary top-[30px] bg-opacity-10"></div>
+          <hr class=" w-[400px] h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
+          
           {/* Research */}
           <div>
-            <div class="w-full text-center pt-[20px]"><p class="text-primary text-[15px] font-Emilio font-bold pt-[30px] pb-[20px]">Research</p></div>
+            <div class="w-full text-center"><p class="text-primary text-[15px] font-Emilio font-bold pb-[20px]">Research</p></div>
             {/* flex */}
             <div class="flex flex-row w-full pb-[7px] justify-center">
               <div class="basis">
@@ -394,10 +398,10 @@ export default function Footer() {
               </div>
             </div>
           </div>
-
+          <hr class=" w-[400px] h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
           {/* Program */}
           <div>
-            <div class="w-full text-center pt-[20px]"><p class="text-primary text-[15px] font-Emilio font-bold pt-[30px] pb-[20px]">Programs</p></div>
+          <div class="w-full text-center"><p class="text-primary text-[15px] font-Emilio font-bold  pb-[20px]">Programs</p></div>
             {/* flex */}
             <div class="flex flex-row w-screen pb-[7px] justify-center">
               <div class="basis">
@@ -417,6 +421,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="relative w-screen h-[2px] bg-primary top-[40px] bg-opacity-10"></div>
+
             {/* flex */}
             <div class="flex flex-row w-full justify-center">
               <div class="basis">
@@ -436,14 +441,15 @@ export default function Footer() {
               </div>
             </div>
           </div>
-
+          <hr class=" w-[400px] h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
+            
           {/* Information */}
           <div class="pb-[20px]">
-            <div class="w-full text-center pt-[20px]"><p class="text-primary text-[15px] font-Emilio font-bold pt-[30px] pb-[20px]">Information</p></div>
+            <div class="w-full text-center "><p class="text-primary text-[15px] font-Emilio font-bold pb-[20px]">Information</p></div>
             {/* flex */}
             <div class="flex flex-row w-full pb-[7px] justify-center">
               <div class="basis">
-                <p class="text-[14px] text-gray-500 font-Montserrat">Public Note: University Act</p>
+                <p class="text-[14px] text-gray-500 font-Montserrat">Public Note: &nbsp; University Act</p>
               </div>
               <div class="basis pt-[9px] px-[10px]">
                 <div class="w-[5px] h-[5px] bg-black rounded "></div>
@@ -471,7 +477,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-
+            
           {/* Credit Section */}
           <div class="w-full h-[51px] bg-primary">
             <p class="text-white items-center text-center text-[16px] font-semibold font-Emilio py-[10px]">Crafted With Passion At VIT-AP University</p>

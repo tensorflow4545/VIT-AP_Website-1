@@ -1,15 +1,15 @@
 export const researchInnovation = [
   {
     id: 1,
-    imgUrl: "/researchImages/research_image1.jpeg",
+    imgUrl: "/researchImages/11.png",
   },
   {
     id: 2,
-    imgUrl: "/researchImages/research_image2.jpeg",
+    imgUrl: "/researchImages/2.png",
   },
   {
     id: 3,
-    imgUrl: "/researchImages/1.png",
+    imgUrl: "/researchImages/n.png",
   },
 ];
 
@@ -30,27 +30,6 @@ export const researchNumbers = [
     name: "Sponsored Budget"
   }
 ]
-
-export const eventsMain = [
-  {
-    id: 1,
-    imgUrl: "/eventImages/1.jpg",
-    title: "VTAPP Internation Tech Fest by VIT-AP",
-    date: "19th Sept",
-  },
-  {
-    id: 2,
-    imgUrl: "/eventImages/2.png",
-    title: "VTAPP Internation Tech Fest by VIT-AP",
-    date: "19th Sept",
-  },
-  {
-    id: 3,
-    imgUrl: "/eventImages/3.jpeg",
-    title: "VTAPP Internation Tech Fest by VIT-AP",
-    date: "19th Sept",
-  },
-];
 
 export const programmesOffered = [
   {
@@ -310,6 +289,7 @@ export const acheivements = [
       "50,000 seed Balls aerially dispersed In Vijayawada District, Andhra Pradesh in Collaboration with Indian Navy",
     description:
       "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur.",
+    image:"/acheivements1.jpeg"
   },
   {
     id: 2,
@@ -683,11 +663,7 @@ export const superdreamImages = [
 export const homeCDC = [
   {
     id: 1,
-    imgUrl: "/package.png"
-  },
-  {
-    id: 2,
-    imgUrl: "/super-dream-offer 1.png"
+    imgUrl: "/PAT-5th-Aug23.jpg"
   }
 ]
 
@@ -710,7 +686,7 @@ export const advantagesFacilities = [
   },
   {
     id: 2,
-    imgUrl: "/advantagefacility2.jpeg",
+    imgUrl: "/advantages/ecs494400.png",
     title: "Engineering Clinics"
   },
   {
@@ -720,12 +696,12 @@ export const advantagesFacilities = [
   },
   {
     id: 4,
-    imgUrl: "/advantagefacility4.jpeg",
+    imgUrl: "/advantages/sports 494400.png",
     title: "Sports"
   },
   {
     id: 5,
-    imgUrl: "/advantagefacility5.jpeg",
+    imgUrl: "/advantages/clubs and chapters494400.png",
     title: "Clubs & Chapters"
   },
   {
@@ -735,12 +711,12 @@ export const advantagesFacilities = [
   },
   {
     id: 7,
-    imgUrl: "/advantagefacility7.jpeg",
+    imgUrl: "/advantages/international_progrmmas290180.png",
     title: "Internationals Programmes"
   },
   {
     id: 8,
-    imgUrl: "/advantagefacility2.jpeg",
+    imgUrl: "/advantages/community290180.png",
     title: "Community Developement"
   },
   {
@@ -750,17 +726,17 @@ export const advantagesFacilities = [
   },
   {
     id: 10,
-    imgUrl: "/advantagefacility9.jpeg",
+    imgUrl: "/advantages/mentorship494400.png",
     title: "Mentoring Programme"
   },
   {
     id: 11,
-    imgUrl: "/advantagefacility10.jpeg",
+    imgUrl: "/advantages/qualified290180.png",
     title: "Qualified & Caring Faculty"
   },
   {
     id: 12,
-    imgUrl: "/advantagefacility8.jpeg",
+    imgUrl: "/advantages/alumini290180.png",
     title: "Alumni Network"
   },
 ]
