@@ -132,29 +132,58 @@ const EachFaculty = () => {
                 
             </div>
 
-            <div className='w-full max-h-[2000px] block ls:hidden'>
+            <div className='w-full max-h-[2000px] relative ls:hidden'>
+                <div className='absolute top-0 left-0 w-full h-[439px] bg-[#650010] -z-10'></div>
                 <div className='px-[20px] py-[30px]'>
-                    <div className='w-full bg-white '>
+                    <div className=' bg-white shadow-2xl max-w-[450px] mx-auto w-[100%] max-h-[1000px] z-10 flex flex-col'>
+                        <div className='flex-1 p-[25px]'>
+                            <div className='flex justify-center items-center'>
+                                <Image src={"/facultyimg.png"} alt='facultyimg' width={150} height={120} className=' rounded-full shadow-xl' />
+                            </div>
+                            <div className='flex flex-col gap-1'>
+                                <h1 className='font-Emilio text-[24px]'>Dr. Saroj Kumar Panigrahy</h1>
+                                <p className='font-Inter text-[16px]'>Associate Professor</p>
+                                <h3 className='font-Inter text-[16px]'>School of Computer Science and Engineering (SCOPE) </h3>
+                                <p className='font-Inter text-[16px]'> <span className='text-[#650010]'>Office Address :</span> 329-B, AB-1</p>
+                                <p className='font-Inter text-[16px]'> <span className='text-[#650010]'>Contact No : </span> 700843963</p>
+                            </div>
+                            <div className='flex justify-center items-center pt-5 gap-4'>
+                                <Link href="/"><Image src={"/maillogo.png"} alt='linkedin' width={45} height={25}></Image></Link>
+                                <Link href="/"><Image src={"/weblogo.png"} alt='linkedin' width={45} height={25}></Image></Link>
+                                <Link href="/"><Image src={"/linkedinlogo.png"} alt='linkedin' width={35} height={25}></Image></Link>
+                            </div>
+                        </div>
+
+                        <div className='flex-1 bg-backgroundRed grid grid-rows-6 items-center text-center text-[16px]'>
+                            <div className=' bg-[#E6CFCF] py-[17px] cursor-pointer hover:bg-gradient-to-r hover:from-[#650010] hover:to-red-600 hover:text-white'>Education</div>
+                            <div className='bg-[#FFE9EB] cursor-pointer py-[19px] hover:bg-gradient-to-r hover:from-[#650010] hover:to-red-600 hover:text-white'>Research</div>
+                            <div className=' bg-[#E6CFCF] py-[17px] cursor-pointer hover:bg-gradient-to-r hover:from-[#650010] hover:to-red-600 hover:text-white'>Project</div>
+                            <div className='bg-[#FFE9EB] cursor-pointer py-[19px] hover:bg-gradient-to-r hover:from-[#650010] hover:to-red-600 hover:text-white'>Patents</div>
+                            <div className=' bg-[#E6CFCF] py-[17px] cursor-pointer hover:bg-gradient-to-r hover:from-[#650010] hover:to-red-600 hover:text-white'>Awards and Recognitions</div>
+                            <div className='bg-[#FFE9EB] cursor-pointer py-[19px] hover:bg-gradient-to-r hover:from-[#650010] hover:to-red-600 hover:text-white'>Professional Memberhips</div>
+                        </div>
+                    </div>
+                    <div className='w-full bg-white mt-5'>
                         <div className=' max-w-[600px] w-[100%] '>
                             <div>
                                 <h1 className='text-[#650010] text-[24px] md:text-[32px] font-Emilio'>Education</h1>
-                                <h2 className='text-[18px] md:text-[20px] font-Emilio leading-5'>Doctorial Degree & University</h2>
+                                <h2 className='text-[18px] md:text-[16px] font-Emilio leading-5'>Doctorial Degree & University</h2>
                             </div>
 
                             <div className='mt-7 flex flex-col gap-2    '>
                                 <div className='flex items-center gap-4'>
                                     <Image src={"/arrow.png"} alt='arrow' height={20} width={30} />
-                                    <h1 className='font-Inter text-[14px] md:text-[18px]'>Computer Science, NIT Rourkela</h1>
+                                    <h1 className='font-Inter text-[16px]'>Computer Science, NIT Rourkela</h1>
                                 </div>
-                                <h1 className=' font-Montserrat text-[14px] md:text-[18px]' >Master Degree & University</h1>
+                                <h1 className=' font-Montserrat text-[16px]' >Master Degree & University</h1>
                                 <div className='flex items-center gap-4'>
                                     <Image src={"/arrow.png"} alt='arrow' height={20} width={30} />
-                                    <h1 className='font-Inter text-[14px] md:text-[18px]'>M. Tech (Res), NIT Rourkela</h1>
+                                    <h1 className='font-Inter text-[16px]'>M. Tech (Res), NIT Rourkela</h1>
                                 </div>
-                                <h1 className=' font-Montserrat text-[14px] md:text-[18px]' >Graduation & University</h1>
+                                <h1 className=' font-Montserrat text-[16px]' >Graduation & University</h1>
                                 <div className='flex items-center gap-4'>
                                     <Image src={"/arrow.png"} alt='arrow' height={20} width={30} />
-                                    <h1 className='font-Inter text-[14px] md:text-[18px]'>B.Tech., GIET University</h1>
+                                    <h1 className='font-Inter text-[16px]'>B.Tech., GIET University</h1>
                                 </div>
                             </div>
 
