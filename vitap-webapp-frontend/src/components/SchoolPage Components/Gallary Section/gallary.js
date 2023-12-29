@@ -6,7 +6,7 @@ export default function gallary() {
           <div class="basis-1/3">
             <p className="text-primary font-Emilio text-[48px] font-bold capitalize pb-[10px]">Gallery</p>
             <p className="text-black font-Montserrat text-[18px] font-normal leading-[27px] pb-[100px] pr-[5px]">Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur.Lorem ipsum dolor sit amet consectetur.</p>
-            <button className="w-[232px] h-[50px] border-[1.5px] border-primary font-primary font-Montserrat font-[20px] font-medium leading-[140.4%] hover:bg-primary hover:border-[1.5px] hover:border-white hover:text-white">Visit Gallery Room</button>
+            <button className="w-[232px] h-[50px] border-[1.5px] border-primary font-primary font-Montserrat font-[20px]  leading-[140.4%] hover:bg-primary hover:border-[1.5px] hover:border-white hover:text-white">Visit Gallery Room</button>
           </div>
           <div className="basis-1/3 w-392 h-361 mr-5 bg-[url('/gallary5.jpeg')] bg-w-[392px] bg-h-[361px] bg-no-repeat">
 

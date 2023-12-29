@@ -74,7 +74,7 @@ const NavbarUpper = () => {
 
   return (
     <>
-      <div className="z-auto w-full h-[40px] text-white bg-primary md:flex sm:hidden ls:flex justify-between items-center px-[37px]">
+      <div className="z-auto w-full h-[40px] text-white bg-primary md:flex hidden ls:flex justify-between items-center px-[37px]">
         <div className="flex  h-[20px] md:space-x-[10px] ls:space-x-[20px] text-[14px] items-center ">
           {/* {navlinks.map((item) =>{
               return(
@@ -189,7 +189,7 @@ const NavbarUpper = () => {
       </div>
 
       <div
-        className={`w-full h-[50px] text-white ls:hidden sm:flex items-center justify-between px-8 sticky top-0 z-30 ${
+        className={`w-full h-[50px] text-white flex md:hidden items-center justify-between px-8 sticky top-0 z-30 ${
           scrolled ? "bg-white" : "bg-primary"
         }`}
       >
@@ -355,6 +355,8 @@ const NavbarUpper = () => {
           </div>
         </div>
       </div>
+
+      
     </>
   );
 };

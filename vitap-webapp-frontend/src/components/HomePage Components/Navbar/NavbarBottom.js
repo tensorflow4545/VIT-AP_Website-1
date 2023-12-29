@@ -11,7 +11,7 @@ import image6 from "../../../assets/images/Homepage Images/navbar-images/6.png";
 import "./navbar.css";
 import { useState, useEffect } from "react";
 
-import { RxHamburgerMenu } from "react-icons/rx";
+// import { RxHamburgerMenu } from "react-icons/rx";
 const NavbarBottom = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [navbar, setNavbar] = useState(false);
@@ -77,7 +77,7 @@ const NavbarBottom = () => {
 
   return (
     <>
-      <div className="sticky top-0 z-30 sm:hidden md:block ">
+      <div className="sticky top-0 z-30 hidden lg:block ">
         {/* {"bg-opacity-50 "} */}
         {/* Increased z-index to 30 */}
         <div
