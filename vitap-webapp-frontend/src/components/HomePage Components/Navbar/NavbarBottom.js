@@ -77,7 +77,7 @@ const NavbarBottom = () => {
 
   return (
     <>
-      <div className="sticky top-0 z-30 hidden lg:block ">
+      <div className="sticky top-0 z-30 hidden xl:block ">
         {/* {"bg-opacity-50 "} */}
         {/* Increased z-index to 30 */}
         <div
