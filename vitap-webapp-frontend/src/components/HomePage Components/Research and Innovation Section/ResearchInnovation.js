@@ -35,7 +35,7 @@ const ResearchInnovation = () => {
 
   return (
     <>
-      <div className="max-w-[1440px] min-h-[800px] mx-auto px-[55px] hidden flex-col max-xl:px-[25px] max-xl:pr-[20px] max-md:mt-[70px] ls:flex">
+      <div className="max-w-[1440px] min-h-[800px] mx-auto px-[55px] hidden flex-col max-xl:px-[25px] max-xl:pr-[20px] max-md:mt-[70px] lg:flex">
         <div className="flex flex-col justify-start items-start gap-5">
           <h1 className="text-[#51060D] font-Emilio text-[48px] font-bold max-lx:text-[32px] max-ls:text-[26px]">
             Research and Innovation
@@ -72,7 +72,7 @@ const ResearchInnovation = () => {
           onExit={() => setCounterOn(false)}
         >
           <div className=" max-w-[1000px] mx-auto">
-            <div className="flex max-ls:flex-col max-ls:justify-center max-ls:items-center flex-wrap  w-[100%] min-h-[240px] justify-between mt-[30px] max-ls:gap-1 md:ml-[120px] lg:ml-[0px] max-lg:max-w-[920px] max-md:ml-[0px]">
+            <div className="flex max-lg:flex-col max-ls:justify-center max-lg:items-center flex-wrap  w-[100%] min-h-[240px] justify-between mt-[30px] max-ls:gap-1 md:ml-[120px] lg:ml-[0px] max-lg:max-w-[920px] max-md:ml-[0px]">
               {researchNumbers.map((item) => (
                 <div key={item.id} className="flex-start">
                   <h1 className="text-[#5C0E14] text-[48px] max-lx:text-[38px] max-ls:text-[32px] font-bold">
@@ -97,7 +97,7 @@ const ResearchInnovation = () => {
         </ScrollTrigger>
       </div>
 
-      <div className="w-full min-h-[65vh] mx-auto py-[36px] px-[30px] relative ls:hidden">
+      <div className="w-full min-h-[65vh] mx-auto py-[36px] px-[30px] relative lg:hidden">
         <div className="absolute top-[50%] left-0 bg-[#E6CFCF] p-2 rounded-xl">
           <AiOutlineArrowLeft onClick={prevSlide} size={30} />
         </div>

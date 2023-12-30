@@ -90,10 +90,10 @@ const OurEvents = () => {
     <>
 
       <div className="flex-col  hidden min-h-[1020px] md:flex ">
-        <div className="w-full bg-backgroundRed h-[420px] px-[110px] max-md:px-[40px]  max-ls:px-[30px] py-2">
+        <div className="w-full bg-backgroundRed h-[420px] px-[110px] max-lg:px-[40px]  max-md:px-[30px] py-2">
 
           <div className="flex justify-between items-center mt-[20px] cursor-pointer">
-            <h1 className="text-[#51060D] font-Emilio text-[48px] font-bold max-lx:text-[32px]">
+            <h1 className="text-[#51060D] font-Emilio text-[48px] font-bold max-lg:text-[32px]">
               Events and Happenings
             </h1>
             <div className="flex flex-row items-center justify-center relative  transition-all duration-300 ease-in group">
@@ -106,7 +106,7 @@ const OurEvents = () => {
             Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
             consectetur.Lorem ipsum dolor sit amet consectetur.
           </h1>
-          <div className="flex gap-5 max-ls:gap-4 justify-center items-center mt-[40px] ls:flex-row">
+          <div className="flex gap-5 max-lg:gap-4 justify-center items-center mt-[40px] lg:flex-row">
             {Events.slice(0, 3).map((event) => (
               <Card
                 imgUrl={event.imgUrl}
@@ -117,10 +117,10 @@ const OurEvents = () => {
               />
             ))}
           </div>
-          <div className="grid grid-cols-3 items-start justify-center gap-5 mt-[50px] max-lx:flex-col max-lx:text-[12px]">
+          <div className="grid grid-cols-3 items-start justify-center gap-5 mt-[50px] max-lg:flex-col max-lg:text-[12px]">
             {Events.slice(3, 9).map((event, index) => (
               <Link href={"/"}>
-              <div key={index} className={`ml-[13%] md:w-[370px] max-lx:w-[350px] min-h-[145px] flex gap-5 lx:flex`}>
+              <div key={index} className={`ml-[13%] md:w-[370px] max-lg:w-[350px] min-h-[145px] flex gap-5 lg:flex`}>
                 <div className="flex flex-1 items-center leading-[1.5rem] justify-center font-Emilio font-semi-bold text-center h-[65px] rounded-sm w-[65px] p-[15px] bg-[#5C0E14] text-white text-[18px]">
                   <h1 className='mx-[16px] my-[12px]'>{event.date}</h1>
                 </div>
@@ -128,7 +128,7 @@ const OurEvents = () => {
                   <h1 className="font-bold text-[18px] hover:underline hover:underline-offset-4 overflow-hidden max-h-[3.6em] leading-[1.8em]">
                     {event.title}
                   </h1>
-                  <p className="max-w-[280px] max-lx:max-w-[360px] font-normal text-[16px] overflow-hidden max-h-[3.6em] leading-[1.8em]">
+                  <p className="max-w-[280px] max-lg:max-w-[360px] font-normal text-[16px] overflow-hidden max-h-[3.6em] leading-[1.8em]">
                     {event.description}
                   </p>
                 </div>
@@ -139,7 +139,7 @@ const OurEvents = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-5 w-full min-h-[80vh] mx-auto py-[36px] px-[30px] relative bg-[#E6CFCF]  ls:hidden ">
+      <div className="flex flex-col gap-5 w-full min-h-[80vh] mx-auto py-[36px] px-[30px] relative bg-[#E6CFCF]  lg:hidden ">
         <div className="absolute top-[50%] left-0 bg-white p-2 rounded-xl z-20">
           <AiOutlineArrowLeft size={30} onClick={prevSlide} />
         </div>
