@@ -38,20 +38,20 @@ const ProgrammesOffered = () => {
         style={{ backgroundImage: `url("/programsbackground3.png")` }}
         className="max-w-screen w-full h-full bg-center mx-auto"
       >
-        <div className="w-full mx-auto hidden max-h-[750px] pr-[40px] max-lx:pr-[20px] pt-[20px] text-white ls:flex">
-          <div className=" p-[110px] max-lx:p-[60px] flex flex-col flex-[60%] pt-[60px]">
-            <h1 className="text-white text-[48px] max-lx:text-[32px] font-bold font-Emilio">
+        <div className="w-full mx-auto hidden xl:block max-h-[750px] pr-[40px]  pt-[20px] text-white ">
+          <div className=" p-[110px]  flex flex-col flex-[50%] pt-[60px] z-0">
+            <h1 className="text-white text-[48px] font-Emilio" >
               Programmes Offered
             </h1>
-            <p className="my-[15px] ls:text-[18px] text-[15px] font-Montserrat">
+            <p className="my-[15px]  text-[18px]">
               Programme covers the entire spectrum of new-age specializations.
               {/* This program seamlessly integrates basic science concepts to the
               latest technologies with relevant practice through lab and
               projects for building problem-solving skills */}
             </p>
-            <div className="md:flex md:flex-col my-[20px] justify-center items-center text-center gap-5 grid grid-cols-2">
+            <div className="md:flex md:flex-col w-[40%] my-[20px] justify-center items-center text-center gap-5 grid grid-cols-2">
               <h1
-                className={`font-Montserrat lx:text-[20px] text-[16px] py-[19px] md:px-[23px] ${active === "undergraduate" ? "border border-zinc-200" : ""
+                className={`font-Montserrat   text-[20px] py-[19px] md:px-[23px] ${active === "undergraduate" ? "border border-zinc-200" : ""
                   } cursor-pointer w-full first-letter`}
 
                 onClick={() => setActive("undergraduate")}
@@ -59,28 +59,28 @@ const ProgrammesOffered = () => {
                 Undergraduate
               </h1>
               <h1
-                className={`font-Montserrat lx:text-[20px] text-[16px] py-[19px] md:px-[23px] ${active === "Dual Degree" ? "border border-zinc-200" : ""
+                className={`font-Montserrat  text-[16px] py-[19px] md:px-[23px] ${active === "Dual Degree" ? "border border-zinc-200" : ""
                   } cursor-pointer w-full first-letter`}
                 onClick={() => setActive("Dual Degree")}
               >
                 Dual Degree
               </h1>
               <h1
-                className={`font-Montserrat lx:text-[20px] text-[16px] py-[19px] md:px-[23px] ${active === "Integrated" ? "border border-zinc-200" : ""
+                className={`font-Montserrat  text-[16px] py-[19px] md:px-[23px] ${active === "Integrated" ? "border border-zinc-200" : ""
                   } cursor-pointer w-full first-letter`}
                 onClick={() => setActive("Integrated")}
               >
                 Integrated
               </h1>
               <h1
-                className={`font-Montserrat lx:text-[20px] text-[16px] py-[19px] md:px-[23px] ${active === "postgraduate" ? "border border-zinc-200" : ""
+                className={`font-Montserrat  text-[16px] py-[19px] md:px-[23px] ${active === "postgraduate" ? "border border-zinc-200" : ""
                   } cursor-pointer w-full first-letter`}
                 onClick={() => setActive("postgraduate")}
               >
                 Postgraduate
               </h1>
               <h1
-                className={`font-Montserrat lx:text-[20px] text-[16px] py-[19px] md:px-[23px] ${active === "doctoral" ? "border border-zinc-200" : ""
+                className={`font-Montserrat  text-[16px] py-[19px] md:px-[23px] ${active === "doctoral" ? "border border-zinc-200" : ""
                   } cursor-pointer w-full first-letter`}
                 onClick={() => setActive("doctoral")}
               >
@@ -88,7 +88,8 @@ const ProgrammesOffered = () => {
               </h1>
             </div>
           </div>
-          <div className="font-Montserrat lex flex-col border border-zinc-200 flex-[50%] bg-[#E6CFCF] min-h-[550px] md:min-h-[650px] overflow-auto my-auto z-10 relative max-w-[680px] scrollbar-thin scrollbar-thumb-red-900 scrollbar-track-gray-400">
+
+          <div className="font-Montserrat  flex-col border border-zinc-200 flex-[50%] bg-[#E6CFCF] min-h-[550px] lg:min-h-[650px] overflow-auto my-auto z-20 relative max-w-[680px] scrollbar-thin scrollbar-thumb-red-900 scrollbar-track-gray-400">
             <div className="w-full absolute md:pl-[75px] pl-[35px] max-lx:pl-[40px] pt-[55px] max-lx:pt-[30px] ">
               {/* <h3 className="text-[16px] max-lx:text-[14px] font-semibold text-gray-500 uppercase">
                 Engineering
@@ -112,13 +113,16 @@ const ProgrammesOffered = () => {
             <div className="absolute bottom-10 right-10 bg-white p-4 rounded-xl hidden">
               <BiSolidDownArrow className="text-black text-[20px]" />
             </div>
-          </div>
+          </div>  
         </div>
       </div>
 
-      <div className="w-full flex flex-col bg-[#51060D] min-h-[100vh] p-[30px] text-white ls:hidden">
+
+
+
+      <div className="w-full flex flex-col bg-[#51060D] min-h-[100vh] p-[30px] text-white xl:hidden">
         <div className="flex flex-col gap-3">
-          <h1 className="text-white text-[26px] font-bold">Programs Offered</h1>
+          <h1 className="text-white text-[30px] font-bold font-Emilio">Programs Offered</h1>
           <p className="text-white text-[16px]">
             Program covers the entire spectrum of new-age specializations. This
             program seamlessly integrates basic science concepts to the latest
@@ -166,12 +170,8 @@ const ProgrammesOffered = () => {
           </ul>
         </div>
 
-        <div className="flex flex-col flex-[50%] bg-[#E6CFCF] min-h-[750px] overflow-auto my-auto z-10 relative max-w-[680px] scrollbar-thin scrollbar-thumb-red-900 scrollbar-track-gray-400">
-          <div className="max-h-[1500px] h-full w-full absolute pl-[35px] max-lx:pl-[40px] pt-[55px] max-lx:pt-[30px] ">
-            {/* <h3 className="text-[16px] max-lx:text-[14px] font-semibold text-gray-500 uppercase">
-
-              Engineering
-            </h3>  */}
+        {/* <div className="flex flex-col flex-[50%] bg-[#E6CFCF] min-h-[750px] overflow-auto my-auto z-10 relative max-w-[680px] scrollbar-thin scrollbar-thumb-red-900 scrollbar-track-gray-400">
+          <div className="max-h-[1500px] h-full w-full absolute pl-[35px] max-md:pl-[40px] pt-[55px] max-md:pt-[30px] ">
 
             {programmesOffered.map((program, index) =>
               program.field === active ? (
@@ -183,10 +183,10 @@ const ProgrammesOffered = () => {
               )
             )}
           </div>
-          {/* <div className="absolute bottom-10 right-10 bg-white p-4 rounded-xl">
+          <div className="absolute bottom-10 right-10 bg-white p-4 rounded-xl">
             <BiSolidDownArrow className="text-black text-[20px]" />
-          </div> */}
-        </div>
+          </div>
+        </div> */}
       </div>
     </>
   );
