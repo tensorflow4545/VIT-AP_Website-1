@@ -68,7 +68,7 @@ const datarow2 = [
 const OurSchools = () => {
   return (
     <>
-      <div className="flex-col mb-[400px]">
+      <div className="flex-col xl:mb-[320px] md:mb-[220px] sm:mb-[100px] mb-[100px] ">
         <div className="w-full xl:bg-[#E6CFCF] h-[450px] xl:px-[80px] md:px-[40px] px-5 ">
           <h1 className="font-Emilio font-bold text-primary text-[35px] md:text-[48px] pt-[20px] md:pt-[40px] text-left ">
             Our Schools
