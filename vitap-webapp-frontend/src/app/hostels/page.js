@@ -20,7 +20,6 @@ const page = () => {
         <Facility/>
         <Fee/>
         <Gallary/>
-        <Hero/>
         <Hostel/>
         <Rules/>
         <Component/>
