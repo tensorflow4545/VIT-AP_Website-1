@@ -3,6 +3,7 @@
       width: 720px;
       margin: 0%;
       padding: 0%;
+      position: relative;
     }
     .head {
       width: 100%;
@@ -49,8 +50,8 @@
       opacity: 0;
     }
     .newsdiv1 {
-      margin-left: 30px;
-      margin-top: 100px;
+      margin-left: 0px;
+      margin-top: 0px;
     }
     .newsdiv2 {
       margin-left: 30px;

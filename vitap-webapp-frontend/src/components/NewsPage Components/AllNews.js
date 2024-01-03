@@ -14,7 +14,7 @@ import i5 from "../../assets/images/newsPhotos/img5.png";
 import tr from "../../assets/images/newsPhotos/triangle.png";
 import Allnews from "../../assets/images/newsPhotos/allnews.png";
 import Link from "next/link";
-import styles from "./AllNews.module.css";
+import styles from "../../styles/AllNews.module.css";
 
 const AllNews = () => {
 
@@ -100,10 +100,10 @@ const rightClick = () => {
   const maxPagesToShow = 4;
   return (
     <>
-    <div class=""></div>
       <div className={`${styles.container} bg-white relative`}>
+
         <div
-          className={`${styles.head} flex overflow-hidden h-[750px] absolute bg-[#e6cfcf]`}
+          className={`${styles.head} flex overflow-hidden h-[750px] relative  bg-[#e6cfcf]`}
         >
 
           <Image src={img1} className={`${styles.img}`} />
@@ -143,10 +143,13 @@ const rightClick = () => {
             className={`${styles.img3} absolute mt-[200px] ml-[900px]`}
           />
         </div>
-        <div className="h-[338px] bg-[#e6cfcf]"></div>
+
+        {/* <div className="h-[338px] bg-[#e6cfcf]"></div> */}
+
         <div
-          className={`${styles.newsdiv1} absolute mt-[440px] absolute flex ml-[120px]`}
+          className={`${styles.newsdiv1}  mt-[440px] relative flex `}
         >
+
          <div className='grid md:grid-cols-3 max-w-[1250px] md:mx-auto items-center justify-center grid-cols-3 gap-5 mx-[30px]'>
          {News.slice((numactive - 1) * 9, numactive * 9).map((element) => {
            return <div>
@@ -170,14 +173,12 @@ const rightClick = () => {
           </Link></div>
           
         })}
-          
           </div>
-          
         </div>
         
         
         <div
-          className={`${styles.pinkbg} bg-[#E6CFCF] h-[200px] absolute mt-[1850px] w-[100%] justify-center items-center`}
+          className={`${styles.pinkbg} bg-[#E6CFCF] h-[200px] relative mt-[1850px] w-[100%] justify-center items-center`}
         >
           <div class="flex flex-row justify-center">
           <div className="cursor-pointer" onClick={leftClick}>
