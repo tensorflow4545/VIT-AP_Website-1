@@ -1,30 +1,61 @@
+"use client"
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState,useEffect } from 'react'
 import "./FacultyPage.css"
+import axios from 'axios'
 
-const EachFaculty = () => {
+const EachFaculty = (params) => {
+    const empid = params.params.params.empid;
+
+    const [Professors, setProfessors] = useState();
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/scope-faculty-profiles?populate=*&filters[Employee_Id][$eq]=${empid}`, {
+                    headers: {
+                        Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
+                    },
+                });
+                if (response.data && Array.isArray(response.data.data)) {
+                    const extractedAttributes = response.data.data.map((item) => item.attributes);
+                    setProfessors(extractedAttributes);
+                } else {
+                    console.error('The "data" property in the API response is not an array:', response.data);
+                }
+            } catch (error) {
+                console.error('Error fetching data:', error.message);
+            }
+        };
+
+        fetchData();
+    }, []);
+
+
     return (
         <>
+        {Professors?.map((Professor) => (
+            <>
             <div className="max-w-[1560px] w-[100%] h-[100%] mx-auto">
                 <div
                     style={{ backgroundImage: `url("/facultybg.jpeg")` }}
                     className="relative max-w-[1560px] w-full h-[300px] bg-cover bg-no-repeat bg-center mx-auto flex items-center justify-center"
                 >
-                    <h1 className="text-white text-[24px] ls:text-[45px] font-semibold text-center flex justify-center items-center font-Emilio capitalize">
+                    <h1 className="text-white text-[24px] lg:text-[45px] font-semibold text-center flex justify-center items-center font-Emilio capitalize">
                         Faculty Profile (SCOPE)
                     </h1>
                 </div>
 
-                <div className='hidden ls:flex max-w-[1560px] w-[100%] min-h-[1000px] h-[100%] relative mb-[100px]'>
+                <div className='hidden lg:flex max-w-[1560px] w-[100%] min-h-[1000px] h-[100%] relative mb-[100px]'>
                     <div className='absolute w-[30%] h-[100%] bg-[#650010] overflow-visible '>
                         <div className=' bg-white ml-[100px] mt-[60px] shadow-2xl max-w-[450px] w-[100%] h-[800px] z-10 flex flex-col'>
                             <div className='flex-1 p-[25px]'>
                                 <div className='flex justify-center items-center'>
-                                    <Image src={"/facultyimg.png"} alt='facultyimg' width={150} height={120} className=' rounded-full shadow-xl' />
+                                    <Image src={`${process.env.NEXT_PUBLIC_API_URL}${Professor?.Photo.data[0]?.attributes.url}`} alt={Professor?.Photo.data[0]?.attributes.alternativeText || 'Alt Text'} width={150} height={120} className='w-[150px] h-[150px] shadow-xl' />
                                 </div>
                                 <div className='flex flex-col gap-1'>
-                                    <h1 className='font-Emilio text-[24px] md:text-[32px]'>Dr. Saroj Kumar Panigrahy</h1>
+                                    <h1 className='font-Emilio text-[24px] md:text-[32px]'>{Professor.Name}</h1>
                                     <p className='font-Inter text-[14px] md:text-[16px]'>Associate Professor</p>
                                     <h3 className='font-Inter text-[14px] md:text-[16px]'>School of Computer Science and Engineering (SCOPE) </h3>
                                     <p className='font-Inter text-[14px] md:text-[16px]'> <span className='text-[#650010]'>Office Address :</span> 329-B, AB-1</p>
@@ -132,7 +163,7 @@ const EachFaculty = () => {
                 
             </div>
 
-            <div className='w-full max-h-[2000px] relative ls:hidden'>
+            <div className='w-full max-h-[2000px] relative lg:hidden'>
                 <div className='absolute top-0 left-0 w-full h-[439px] bg-[#650010] -z-10'></div>
                 <div className='px-[20px] py-[30px]'>
                     <div className=' bg-white shadow-2xl max-w-[450px] mx-auto w-[100%] max-h-[1000px] z-10 flex flex-col'>
@@ -268,6 +299,8 @@ const EachFaculty = () => {
                 </div>
             </div>
             </div>
+            </>
+            ))}
         </>
     )
 }
