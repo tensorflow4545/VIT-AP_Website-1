@@ -50,7 +50,7 @@ const Home = async () => {
       <NewsAboutVITAP />
       <WallOfSocials />
       <CDCHeader />
-      <NumberAtGlance />
+      {/* <NumberAtGlance /> */}
       <Component />
       <Footer /> 
     </>

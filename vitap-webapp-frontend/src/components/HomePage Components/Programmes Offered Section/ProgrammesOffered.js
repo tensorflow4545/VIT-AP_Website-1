@@ -59,28 +59,28 @@ const ProgrammesOffered = () => {
                 Undergraduate
               </h1>
               <h1
-                className={`font-Montserrat  text-[16px] py-[19px] md:px-[23px] ${active === "Dual Degree" ? "border border-zinc-200" : ""
+                className={`font-Montserrat  text-[20px] py-[19px] md:px-[23px] ${active === "Dual Degree" ? "border border-zinc-200" : ""
                   } cursor-pointer w-full first-letter`}
                 onClick={() => setActive("Dual Degree")}
               >
                 Dual Degree
               </h1>
               <h1
-                className={`font-Montserrat  text-[16px] py-[19px] md:px-[23px] ${active === "Integrated" ? "border border-zinc-200" : ""
+                className={`font-Montserrat  text-[20px] py-[19px] md:px-[23px] ${active === "Integrated" ? "border border-zinc-200" : ""
                   } cursor-pointer w-full first-letter`}
                 onClick={() => setActive("Integrated")}
               >
                 Integrated
               </h1>
               <h1
-                className={`font-Montserrat  text-[16px] py-[19px] md:px-[23px] ${active === "postgraduate" ? "border border-zinc-200" : ""
+                className={`font-Montserrat  text-[20px] py-[19px] md:px-[23px] ${active === "postgraduate" ? "border border-zinc-200" : ""
                   } cursor-pointer w-full first-letter`}
                 onClick={() => setActive("postgraduate")}
               >
                 Postgraduate
               </h1>
               <h1
-                className={`font-Montserrat  text-[16px] py-[19px] md:px-[23px] ${active === "doctoral" ? "border border-zinc-200" : ""
+                className={`font-Montserrat  text-[20px] py-[19px] md:px-[23px] ${active === "doctoral" ? "border border-zinc-200" : ""
                   } cursor-pointer w-full first-letter`}
                 onClick={() => setActive("doctoral")}
               >
