@@ -52,7 +52,9 @@ const CDCHeader = () => {
                     </div>
                     <div className='flex-1 flex flex-col justify-center items-start gap-2 mr-[0px] -ml-[0px] lx:-ml-[100px] md:-ml-[300px] lx:mr-[20px]md:mr-[50px]'>
                         <h1 className='text-[#000] text-[36px] lx:text-[48px] font-bold font-Emilio'>Number At Glance</h1>
-                        <p className='text-[#000] text-[18px] lx:text-[20px] '>Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet onsectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.</p>
+                        <p className='text-[#000] text-[18px] lx:text-[20px] '>
+                        VIT-AP University proudly showcases its exceptional placements achievements, reflecting a commitment to nurturing industry-ready professionals. Boasting a stellar track record, our students have secured coveted positions in leading companies. The testament to our rigorous academic curriculum and holistic development approach is evident in the remarkable success stories of our graduates.
+                        </p>
                     </div>
                 </div>
             </div>
