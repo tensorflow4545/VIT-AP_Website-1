@@ -4,13 +4,13 @@ import React from 'react'
 const CDCPlacements = () => {
     return (
         <>
-            <div className='max-w-[1560px] mt-[50px] w-[100%] px-[40px] min-h-[450px] lx:min-h-[500px] h-[100%] hidden ls:block'>
+            <div className='max-w-[1560px] mt-[50px] w-[100%] px-[40px] min-h-[450px] lg:min-h-[500px] h-[100%] hidden lg:block'>
                 <div className='relative'>
-                    <div className='flex max-w-[1560px] w-[100%] min-h-[450px] lx:min-h-[500px] h-[100%] absolute top-0 left-0 ls:px-[50px] md:px-[100px] px-[30px] py-[20px] ls:py-[40px] gap-3 md:gap-5 flex-col'>
+                    <div className='flex max-w-[1560px] w-[100%] min-h-[450px] lg:min-h-[500px] h-[100%] absolute top-0 left-0 lg:px-[50px] md:px-[100px] px-[30px] py-[20px] lg:py-[40px] gap-3 md:gap-5 flex-col'>
                         <div className='flex flex-col justify-center items-start'>
-                            <h1 className='text-[24px] ls:text-[46px] font-Emilio text-[#650010] font-bold pb-2'>Co-ordinators Placements</h1>
+                            <h1 className='text-[24px] lg:text-[46px] font-Emilio text-[#650010] font-bold pb-2'>Co-ordinators Placements</h1>
                         </div>
-                        <div className='grid grid-cols-2 ls:grid-cols-4 justify-center items-center gap-5 text-center'>
+                        <div className='grid grid-cols-2 lg:grid-cols-4 justify-center items-center gap-5 text-center'>
                             <div className=' shadow-xl max-w-[300px] w-[100%]'>
                                 <Image src={"/faculty1.jpeg"} width={300} height={220} alt='faculty' className='p-3' />
                                 <div>
@@ -37,7 +37,7 @@ const CDCPlacements = () => {
                 </div>
             </div>
 
-            <div className='block ls:hidden max-h-[750px] w-full'>
+            <div className='block lg:hidden max-h-[750px] w-full'>
                 <div className='flex flex-col px-[30px] py-[20px]'>
                     <h1 className='text-[24px] font-Emilio text-[#650010] font-bold pb-2'>Co-ordinators Placements</h1>
                     <div className='grid grid-cols-2'>
