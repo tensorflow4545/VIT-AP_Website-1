@@ -16,14 +16,7 @@ const data  = [
     title: "NEW CRICULLUM",
     message: "VIT-AP introduces minors to enrich your specialization. Enhance your academic journey by incorporating a minor into your major, broadening your knowledge, and refining your career options. Explore diverse interests, tailor your education, and achieve a well-rounded skill set for your unique goals."
   },
-  {id:4,
-    title: "NEW CRICULLUM",
-    message: "VIT-AP introduces minors to enrich your specialization. Enhance your academic journey by incorporating a minor into your major, broadening your knowledge, and refining your career options. Explore diverse interests, tailor your education, and achieve a well-rounded skill set for your unique goals."
-  },
-  // {id:5,
-  //   title: "",
-  //   message: ""
-  // }
+
   
 ]
 

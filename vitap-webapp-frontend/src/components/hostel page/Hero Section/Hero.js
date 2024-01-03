@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function Hero(){
     return(
         <>
-            <div className={`w-full h-[363px] h-screen flex items-center justify-center ${style.hero}`}>
+            <div className={`w-full h-[363px]  flex items-center justify-center ${style.hero}`}>
                  <p className="text-white font-600 text-[44px]">Hostels</p>
             </div>
 

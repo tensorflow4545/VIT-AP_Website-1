@@ -16,6 +16,7 @@ const page = () => {
         <>
         <NavbarUpper/>
         <NavbarBottom/>
+        <Hero/>
         <Facility/>
         <Fee/>
         <Gallary/>

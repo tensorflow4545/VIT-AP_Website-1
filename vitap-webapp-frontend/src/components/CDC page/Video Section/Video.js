@@ -2,8 +2,8 @@ import ReactPlayer from 'react-player'
 export default function Video() {
   return (
     <>
-      <div class="max-w-[1560px] w-[100%] h-max bg-white hidden ls:flex flex-col justify-center items-center pt-[40px]">
-        <div class={`max-w-[780px] w-[100%] flex justify-center item-center`}><div class="px-[50px] lx:px-[0px] max-w-[763px] w-[100%] max-h-[400px] h-[100%]">
+      <div class="max-w-[1560px] w-[100%] h-max bg-white hidden lg:flex flex-col justify-center items-center pt-[40px]">
+        <div class={`max-w-[780px] w-[100%] flex justify-center item-center`}><div class="px-[50px] lg:px-[0px] max-w-[763px] w-[100%] max-h-[400px] h-[100%]">
           <div className='relative flex justify-center items-center'>
             <iframe
               width="753" 
@@ -21,12 +21,12 @@ export default function Video() {
         </div>
       </div>
 
-      <div className='w-full max-h-[800px] block ls:hidden'>
+      <div className='w-full max-h-[800px] block lg:hidden'>
         <div className='flex flex-col gap-3 px-[30px] py-[20px]'>
           <div className='relative flex justify-center max-w-[300px] mx-auto w-[100%] items-center'>
             <iframe
               height="279"
-              src="https://www.youtube.com/watch?v=wKajpIyy_yA"
+              src="https://www.youtube.com/watch?v=rvYqUiy0FFE"
               frameborder="0"
               allowfullscreen
             ></iframe>
