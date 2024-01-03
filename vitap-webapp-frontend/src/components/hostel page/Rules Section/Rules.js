@@ -1,5 +1,5 @@
 import Image from "next/image";
-export default function rules(){
+export default function Rules(){
     return(
         <>
             <div className="w-full h-[468px] bg-purple-200">

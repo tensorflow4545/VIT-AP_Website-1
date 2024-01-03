@@ -21,68 +21,68 @@ const Eresources = () => {
     };
 
     return (
-        <div className='max-w-[1560px] w-[100%] max-h-[1000px] ls:min-h-[800px] h-[100%] bg-backgroundRed2 px-[20px] ls:px-[50px] md:px-[100px] py-[40px] flex -z-10 gap-3 mt-[50px] flex-col'>
+        <div className='max-w-[1560px] w-[100%] max-h-[1000px] lg:min-h-[800px] h-[100%] bg-backgroundRed2 px-[20px] lg:px-[50px] md:px-[100px] py-[40px] flex -z-10 gap-3 mt-[50px] flex-col'>
             <div className='flex flex-col gap-3'>
-                <h1 className='text-[24px] ls:text-[46px] font-Emilio text-[#650010] font-bold'>E Resources</h1>
-                <p className='text-[16px] ls:text-[20px] font-Montserrat text-[#000]'>Library provides the different subjects e-resources to its users by subscribing institutionally or through the consortia basis.</p>
+                <h1 className='text-[24px] lg:text-[46px] font-Emilio text-[#650010] font-bold'>E Resources</h1>
+                <p className='text-[16px] lg:text-[20px] font-Montserrat text-[#000]'>Library provides the different subjects e-resources to its users by subscribing institutionally or through the consortia basis.</p>
             </div>
 
-            <div className='grid grid-rows-10 mt-[20px] max-h-[400px] ls:max-h-[700px] h-[100%]'>
-                <div className='grid grid-cols-4 text-center bg-[#650010] text-white p-2 text-[12px] ls:text-[22px] font-semibold'>
+            <div className='grid grid-rows-10 mt-[20px] max-h-[400px] lg:max-h-[700px] h-[100%]'>
+                <div className='grid grid-cols-4 text-center bg-[#650010] text-white p-2 text-[12px] lg:text-[22px] font-semibold'>
                     <h1>S.No</h1>
                     <h1>Title</h1>
                     <h1>URL</h1>
                     <h1>No Of Journals/Books</h1>
                 </div>
-                <div className='grid grid-cols-4 text-center bg-backgroundRed text-[#000] p-2 text-[7px] ls:text-[13px] md:text-[18px] font-semibold'>
+                <div className='grid grid-cols-4 text-center bg-backgroundRed text-[#000] p-2 text-[7px] lg:text-[13px] md:text-[18px] font-semibold'>
                     <h1>1</h1>
                     <h1>Bentham Sciencet</h1>
                     <Link href={"http://www.eurekaselect.com"} className='cursor-pointer'>http://www.eurekaselect.com</Link>
                     <h1>E Journals</h1>
                 </div>
-                <div className='grid grid-cols-4 text-center bg-white text-[#000] p-2 text-[7px] ls:text-[13px] md:text-[18px] font-semibold'>
+                <div className='grid grid-cols-4 text-center bg-white text-[#000] p-2 text-[7px] lg:text-[13px] md:text-[18px] font-semibold'>
                     <h1>2</h1>
                     <h1>Bentham Sciencet</h1>
                     <Link href={"http://www.eurekaselect.com"} className='cursor-pointer'>http://www.eurekaselect.com</Link>
                     <h1>E Journals</h1>
                 </div>
-                <div className='grid grid-cols-4 text-center bg-backgroundRed text-[#000] p-2 text-[7px] ls:text-[13px] md:text-[18px] font-semibold'>
+                <div className='grid grid-cols-4 text-center bg-backgroundRed text-[#000] p-2 text-[7px] lg:text-[13px] md:text-[18px] font-semibold'>
                     <h1>3</h1>
                     <h1>Bentham Sciencet</h1>
                     <Link href={"http://www.eurekaselect.com"} className='cursor-pointer'>http://www.eurekaselect.com</Link>
                     <h1>E Journals</h1>
                 </div>
-                <div className='grid grid-cols-4 border text-center bg-white text-[#000] p-2 text-[7px] ls:text-[13px] md:text-[18px] font-semibold'>
+                <div className='grid grid-cols-4 border text-center bg-white text-[#000] p-2 text-[7px] lg:text-[13px] md:text-[18px] font-semibold'>
                     <h1>4</h1>
                     <h1>Bentham Sciencet</h1>
                     <Link href={"http://www.eurekaselect.com"} className='cursor-pointer'>http://www.eurekaselect.com</Link>
                     <h1>E Journals</h1>
                 </div>
-                <div className='grid grid-cols-4 text-center bg-backgroundRed text-[#000] p-2 text-[7px] ls:text-[13px] md:text-[18px] font-semibold'>
+                <div className='grid grid-cols-4 text-center bg-backgroundRed text-[#000] p-2 text-[7px] lg:text-[13px] md:text-[18px] font-semibold'>
                     <h1>5</h1>
                     <h1>Bentham Sciencet</h1>
                     <Link href={"http://www.eurekaselect.com"} className='cursor-pointer'>http://www.eurekaselect.com</Link>
                     <h1>E Journals</h1>
                 </div>
-                <div className='grid grid-cols-4 text-center bg-white text-[#000] p-2 text-[7px] ls:text-[13px] md:text-[18px] font-semibold'>
+                <div className='grid grid-cols-4 text-center bg-white text-[#000] p-2 text-[7px] lg:text-[13px] md:text-[18px] font-semibold'>
                     <h1>6</h1>
                     <h1>Bentham Sciencet</h1>
                     <Link href={"http://www.eurekaselect.com"} className='cursor-pointer'>http://www.eurekaselect.com</Link>
                     <h1>E Journals</h1>
                 </div>
-                <div className='grid grid-cols-4 text-center bg-backgroundRed text-[#000] p-2 text-[7px] ls:text-[13px] md:text-[18px] font-semibold'>
+                <div className='grid grid-cols-4 text-center bg-backgroundRed text-[#000] p-2 text-[7px] lg:text-[13px] md:text-[18px] font-semibold'>
                     <h1>7</h1>
                     <h1>Bentham Sciencet</h1>
                     <Link href={"http://www.eurekaselect.com"} className='cursor-pointer'>http://www.eurekaselect.com</Link>
                     <h1>E Journals</h1>
                 </div>
-                <div className='grid grid-cols-4 text-center bg-white text-[#000] p-2 text-[7px] ls:text-[13px] md:text-[18px] font-semibold'>
+                <div className='grid grid-cols-4 text-center bg-white text-[#000] p-2 text-[7px] lg:text-[13px] md:text-[18px] font-semibold'>
                     <h1>8</h1>
                     <h1>Bentham Sciencet</h1>
                     <Link href={"http://www.eurekaselect.com"} className='cursor-pointer'>http://www.eurekaselect.com</Link>
                     <h1>E Journals</h1>
                 </div>
-                <div className='grid grid-cols-4 text-center bg-backgroundRed text-[#000] p-2 text-[7px] ls:text-[13px] md:text-[18px] font-semibold'>
+                <div className='grid grid-cols-4 text-center bg-backgroundRed text-[#000] p-2 text-[7px] lg:text-[13px] md:text-[18px] font-semibold'>
                     <h1>9</h1>
                     <h1>Bentham Sciencet</h1>
                     <Link href={"http://www.eurekaselect.com"} className='cursor-pointer'>http://www.eurekaselect.com</Link>

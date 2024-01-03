@@ -7,7 +7,7 @@ const SuperdreamHeader = () => {
                 style={{ backgroundImage: `url("/announcements.png")` }}
                 className="relative max-w-[1560px] w-full h-[300px] bg-center mx-auto flex items-end justify-start"
             >
-                <h1 className="text-white text-[40px] font-semibold text-start flex justify-center items-center p-[10px] pl-0 ml-[30px] mb-[30px] border-2 border-white border-t-0 border-l-0 border-r-0">
+                <h1 className="text-white font-Emilio text-[40px] font-semibold text-start flex justify-center items-center p-[10px] pl-0 ml-[30px] mb-[30px] border-2 border-white border-t-0 border-l-0 border-r-0">
                     Super <br /> Dream Offer
                 </h1>
             </div>

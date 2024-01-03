@@ -6,7 +6,7 @@ const HealthDetails = () => {
     return (
         <div className='max-w-[1560px] w-[100%] md:px-[100px] px-[50px] py-[30px] min-h-[450px] h-[100%]'>
             <h1 className='text-[46px] text-[#650010] font-bold font-Emilio'>Details</h1>
-            <div className='grid grid-cols-1 ls:grid-cols-2 lx:grid-cols-4 my-[15px] gap-4'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 my-[15px] gap-4'>
                 <div className='flex flex-col gap-3 items-center justify-start text-center bg-[#FCE3E5] min-h-[330px] h-[100%] py-[20px] px-[20px]'>
                     <h1><FaUserDoctor size={120} className='text-[#650010]' /></h1>
                     <h1 className='text-[#000] text-[20px] font-Emilio font-bold'>Doctors</h1>

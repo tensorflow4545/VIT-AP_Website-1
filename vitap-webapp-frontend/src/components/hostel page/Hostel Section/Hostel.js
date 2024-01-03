@@ -2,7 +2,7 @@
 import { BsFillTelephoneFill } from "react-icons/bs";
 import Image from "next/image";
 import react,{useState} from "react";
-export default function hostel(){
+export default function Hostel(){
     const hostels=[
         {
            id:"1",
@@ -83,7 +83,7 @@ export default function hostel(){
         
         <div className="pl-[108px] pr-[108px] pt-[92px]">
 
-          <p className="text-[40px] font-[400px] text-dark font-emilio text-center">Have a look at our hostels</p>
+          <p className="text-[40px] font-[400px] text-dark font-Emilio text-center">Have a look at our hostels</p>
            
            {/* felx */}
            <div className="flex flex-row pt-[55px]">
@@ -109,12 +109,12 @@ export default function hostel(){
                 <div className="basis-1/2 w-[625px] h-[282px] rounded-lg bg-white overflow-hidden"><Image className="rounded-lg" width={625} height={282} src={program.hostelimg} alt="Hostel Image"></Image></div>
                  
                  <div className="basis-1/2 pl-[45px]">
-                    <p className="text-dark text-[24px] font-[400px] text-emilio pt-[10px] pb-[10px]">{program.name}</p>
+                    <p className="text-dark text-[24px] font-[400px] font-Emilio pt-[10px] pb-[10px]">{program.name}</p>
                     <p className="text-dark-300">{program.desc}</p>
                  </div>
                 </div>
 
-                <p className="text-[24px] font-[400px] text-dark text-emilio text-center pt-[36px] pb-[30px]">Meet our Wardens</p>
+                <p className="text-[24px] font-[400px] text-dark font-Emilio text-center pt-[36px] pb-[30px]">Meet our Wardens</p>
     
                 {/* flex */}
                 <div className="flex felx-row pl-[113px] pr-[113px]">

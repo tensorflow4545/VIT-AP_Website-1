@@ -4,7 +4,7 @@ import React from 'react'
 const CDCCoordinators = () => {
     return (
         <>
-            <div className='max-w-[1560px] w-[100%] md:h-screen lx:min-h-[750px] min-h-[650px] ls:block hidden'>
+            <div className='max-w-[1560px] w-[100%] md:h-screen lg:min-h-[750px] min-h-[650px] lg:block hidden'>
                 <div className='relative'>
                     <div className='flex max-w-[1560px] w-[100%] absolute top-0 left-0 px-[50px] md:px-[100px] py-[40px] gap-3 md:gap-5 flex-col mt-5'>
                         <div className='flex flex-col justify-center items-start '>
@@ -65,7 +65,7 @@ const CDCCoordinators = () => {
                 </div>
             </div>
 
-            <div className='block ls:hidden max-h-[1200px] w-full'>
+            <div className='block lg:hidden max-h-[1200px] w-full'>
                 <div className='flex flex-col px-[30px] py-[20px]'>
                     <h1 className='text-[24px] font-Emilio text-[#650010] font-bold pb-2'>Co-ordinators Training</h1>
                     <div className='grid grid-cols-2'>

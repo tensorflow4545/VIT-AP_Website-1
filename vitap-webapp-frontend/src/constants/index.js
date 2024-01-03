@@ -182,7 +182,7 @@ export const announcements = [
     id: 1,
     content:"VITEEE 2024 - Apply Now",
     date:"1st Nov 2023",
-    link:"/singleannouncement",
+    link:"/announcements/singleannouncement",
   },
   {
     id: 2,

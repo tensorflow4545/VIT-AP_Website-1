@@ -1,5 +1,5 @@
 import style from "./facility.module.css";
-export default function facility(){
+export default function Facility(){
     return(
         <>
             <div className="w-full h-[800px] bg-white">
@@ -17,9 +17,9 @@ export default function facility(){
 
                {/* basis */}
                <div className="basis-1/2 pl-[50px]">
-                <p className="text-dark text-[20px] font-[400px] text-montserrat">AMENETIES</p>
-                <p className="text-dark text-[48px] font-[600px] text-montserrat">Comfortable facilities around hostels</p>
-                <p className="text-dark text-[16px] font-[400px] text-montserrat">We provide our students the best facilities to study and enjoy their college life</p>
+                <p className="text-dark text-[20px] font-[400px] font-Montserrat">AMENETIES</p>
+                <p className="text-dark text-[48px] font-[600px] font-Montserrat">Comfortable facilities around hostels</p>
+                <p className="text-dark text-[16px] font-[400px] font-Montserrat">We provide our students the best facilities to study and enjoy their college life</p>
                  
                  {/* Inner flex */}
                  <div className="flex flex-row pt-[25px] w-[620px] pb-[10px]">
@@ -29,8 +29,8 @@ export default function facility(){
                   </div>
                   {/* basis */}
                   <div className="basis pl-[16px] w-[400px]">
-                   <p className="text-dark text-[20px] font-[400px] text-montserrat">Night Canteen</p>
-                   <p className="text-dark-300 text-[14px] font-[400px] text-montserrat">Open until late night</p>
+                   <p className="text-dark text-[20px] font-[400px] font-Montserrat">Night Canteen</p>
+                   <p className="text-dark-300 text-[14px] font-[400px] font-Montserrat">Open until late night</p>
                   </div>
                   {/* basis */}
                   <div className="basis">
@@ -48,8 +48,8 @@ export default function facility(){
                   </div>
                   {/* basis */}
                   <div className="basis pl-[16px] w-[500px]">
-                   <p className="text-dark text-[20px] font-[400px] text-montserrat">Library</p>
-                   <p className="text-dark-300 text-[14px] font-[400px] text-montserrat">24/7 access</p>
+                   <p className="text-dark text-[20px] font-[400px] font-Montserrat">Library</p>
+                   <p className="text-dark-300 text-[14px] font-[400px] font-Montserrat">24/7 access</p>
                   </div>
                   {/* basis */}
                   <div className="basis">
@@ -67,8 +67,8 @@ export default function facility(){
                   </div>
                   {/* basis */}
                   <div className="basis pl-[16px] w-[550px]">
-                   <p className="text-dark text-[20px] font-[400px] text-montserrat">Indoor Games</p>
-                   <p className="text-dark-300 text-[14px] font-[400px] text-montserrat">Table tennis, foosball, and more</p>
+                   <p className="text-dark text-[20px] font-[400px] font-Montserrat">Indoor Games</p>
+                   <p className="text-dark-300 text-[14px] font-[400px] font-Montserrat">Table tennis, foosball, and more</p>
                   </div>
                   {/* basis */}
                   <div className="basis">

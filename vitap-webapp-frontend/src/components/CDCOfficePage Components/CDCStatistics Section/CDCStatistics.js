@@ -4,7 +4,7 @@ import Card from './Card'
 const CDCStatistics = () => {
     return (
         <div className='max-w-[1560px] w-[100%]'>
-            <div className="w-[100%] min-h-[400px] h-[100%] px-[20px] py-[20px] ls:py-[40px] ls:px-[50px] grid grid-cols-2 ls:grid-cols-5 justify-center items-center gap-5 max-md:px-[20px] max-lx:px-[0px] ">
+            <div className="w-[100%] min-h-[400px] h-[100%] px-[20px] py-[20px] lg:py-[40px] lg:px-[50px] grid grid-cols-2 lg:grid-cols-5 justify-center items-center gap-5 max-md:px-[20px] max-lg:px-[0px] ">
 
                 <div className=''>
                     <Card url={"./convocards/card1.jpeg"} href={"/cdc-superdream"} title={"Super dream offer"} />

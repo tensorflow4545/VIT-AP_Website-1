@@ -21,77 +21,77 @@ const UREtable = () => {
     };
 
     return (
-        <div className='max-w-[1560px] w-[100%] min-h-[900px] h-[100%] px-[30px] ls:px-[50px] md:px-[100px] py-[40px] flex -z-10 gap-3 flex-col'>
+        <div className='max-w-[1560px] w-[100%] min-h-[900px] h-[100%] px-[30px] lg:px-[50px] md:px-[100px] py-[40px] flex -z-10 gap-3 flex-col'>
             <div className='flex flex-col gap-3'>
-                <h1 className='text-[24px] ls:text-[46px] font-Emilio text-[#650010] font-bold'>URE(Undergraduate Research Experience) Projects</h1>
-                <p className='text-[16px] ls:text-[20px] font-Montserrat text-[#000]'>The following is the list of URE001 (Undergraduate Research Experience) projects that have been successfully defended before the evaluation panels and recommended for the award of URE001 to be printed in their grade sheet.</p>
+                <h1 className='text-[24px] lg:text-[46px] font-Emilio text-[#650010] font-bold'>URE(Undergraduate Research Experience) Projects</h1>
+                <p className='text-[16px] lg:text-[20px] font-Montserrat text-[#000]'>The following is the list of URE001 (Undergraduate Research Experience) projects that have been successfully defended before the evaluation panels and recommended for the award of URE001 to be printed in their grade sheet.</p>
             </div>
 
             <div className='grid grid-rows-10 mt-[20px] max-h-[1600px] '>
-                <div className='grid grid-cols-5 text-center bg-[#650010] text-white p-5 text-[10px] ls:text-[16px] md:text-[20px] font-semibold'>
+                <div className='grid grid-cols-5 text-center bg-[#650010] text-white p-5 text-[10px] lg:text-[16px] md:text-[20px] font-semibold'>
                     <h1>S.No</h1>
                     <h1>Project Code</h1>
                     <h1>Project Name</h1>
                     <h1>Students</h1>
                     <h1>Guide</h1>
                 </div>
-                <div className='grid grid-cols-5 text-center bg-[#FCE3E5] text-[#000] p-5 text-[7px] ls:text-[14px] md:text-[16px] font-semibold'>
+                <div className='grid grid-cols-5 text-center bg-[#FCE3E5] text-[#000] p-5 text-[7px] lg:text-[14px] md:text-[16px] font-semibold'>
                     <h1>1</h1>
                     <h1>URE001201901</h1>
                     <h1>Analysis of Architectures: Memristor Bridge Synapse</h1>
                     <h1>Rohit Bhargav Peesa</h1>
                     <h1>Dr. Santanu Mandal</h1>
                 </div>
-                <div className='grid grid-cols-5 text-center bg-white text-[#000] p-5 text-[7px] ls:text-[14px] md:text-[16px] font-semibold'>
+                <div className='grid grid-cols-5 text-center bg-white text-[#000] p-5 text-[7px] lg:text-[14px] md:text-[16px] font-semibold'>
                     <h1>1</h1>
                     <h1>URE001201901</h1>
                     <h1>Analysis of Architectures: Memristor Bridge Synapse</h1>
                     <h1>Rohit Bhargav Peesa</h1>
                     <h1>Dr. Santanu Mandal</h1>
                 </div>
-                <div className='grid grid-cols-5 text-center bg-[#FCE3E5] text-[#000] p-5 text-[7px] ls:text-[14px] md:text-[16px] font-semibold'>
+                <div className='grid grid-cols-5 text-center bg-[#FCE3E5] text-[#000] p-5 text-[7px] lg:text-[14px] md:text-[16px] font-semibold'>
                     <h1>1</h1>
                     <h1>URE001201901</h1>
                     <h1>Analysis of Architectures: Memristor Bridge Synapse</h1>
                     <h1>Rohit Bhargav Peesa</h1>
                     <h1>Dr. Santanu Mandal</h1>
                 </div>
-                <div className='grid grid-cols-5 text-center bg-white text-[#000] p-5 text-[7px] ls:text-[14px] md:text-[16px] font-semibold'>
+                <div className='grid grid-cols-5 text-center bg-white text-[#000] p-5 text-[7px] lg:text-[14px] md:text-[16px] font-semibold'>
                     <h1>1</h1>
                     <h1>URE001201901</h1>
                     <h1>Analysis of Architectures: Memristor Bridge Synapse</h1>
                     <h1>Rohit Bhargav Peesa</h1>
                     <h1>Dr. Santanu Mandal</h1>
                 </div>
-                <div className='grid grid-cols-5 text-center bg-[#FCE3E5] text-[#000] p-5 text-[7px] ls:text-[14px] md:text-[16px] font-semibold'>
+                <div className='grid grid-cols-5 text-center bg-[#FCE3E5] text-[#000] p-5 text-[7px] lg:text-[14px] md:text-[16px] font-semibold'>
                     <h1>1</h1>
                     <h1>URE001201901</h1>
                     <h1>Analysis of Architectures: Memristor Bridge Synapse</h1>
                     <h1>Rohit Bhargav Peesa</h1>
                     <h1>Dr. Santanu Mandal</h1>
                 </div>
-                <div className='grid grid-cols-5 text-center bg-white text-[#000] p-5 text-[7px] ls:text-[14px] md:text-[16px] font-semibold'>
+                <div className='grid grid-cols-5 text-center bg-white text-[#000] p-5 text-[7px] lg:text-[14px] md:text-[16px] font-semibold'>
                     <h1>1</h1>
                     <h1>URE001201901</h1>
                     <h1>Analysis of Architectures: Memristor Bridge Synapse</h1>
                     <h1>Rohit Bhargav Peesa</h1>
                     <h1>Dr. Santanu Mandal</h1>
                 </div>
-                <div className='grid grid-cols-5 text-center bg-[#FCE3E5] text-[#000] p-5 text-[7px] ls:text-[14px] md:text-[16px] font-semibold'>
+                <div className='grid grid-cols-5 text-center bg-[#FCE3E5] text-[#000] p-5 text-[7px] lg:text-[14px] md:text-[16px] font-semibold'>
                     <h1>1</h1>
                     <h1>URE001201901</h1>
                     <h1>Analysis of Architectures: Memristor Bridge Synapse</h1>
                     <h1>Rohit Bhargav Peesa</h1>
                     <h1>Dr. Santanu Mandal</h1>
                 </div>
-                <div className='grid grid-cols-5 text-center bg-white text-[#000] p-5 text-[7px] ls:text-[14px] md:text-[16px] font-semibold'>
+                <div className='grid grid-cols-5 text-center bg-white text-[#000] p-5 text-[7px] lg:text-[14px] md:text-[16px] font-semibold'>
                     <h1>1</h1>
                     <h1>URE001201901</h1>
                     <h1>Analysis of Architectures: Memristor Bridge Synapse</h1>
                     <h1>Rohit Bhargav Peesa</h1>
                     <h1>Dr. Santanu Mandal</h1>
                 </div>
-                <div className='grid grid-cols-5 text-center bg-[#FCE3E5] text-[#000] p-5 text-[7px] ls:text-[14px] md:text-[16px] font-semibold'>
+                <div className='grid grid-cols-5 text-center bg-[#FCE3E5] text-[#000] p-5 text-[7px] lg:text-[14px] md:text-[16px] font-semibold'>
                     <h1>1</h1>
                     <h1>URE001201901</h1>
                     <h1>Analysis of Architectures: Memristor Bridge Synapse</h1>
@@ -134,7 +134,7 @@ const UREtable = () => {
             </div>
 
             <div>
-                <p className='text-[16px] ls:text-[20px] font-Montserrat'>Congratulations to all the candidates and guides for putting up a great effort. Many of these projects culminated in a Scopus indexed publication.</p>
+                <p className='text-[16px] lg:text-[20px] font-Montserrat'>Congratulations to all the candidates and guides for putting up a great effort. Many of these projects culminated in a Scopus indexed publication.</p>
             </div>
         </div>
     )

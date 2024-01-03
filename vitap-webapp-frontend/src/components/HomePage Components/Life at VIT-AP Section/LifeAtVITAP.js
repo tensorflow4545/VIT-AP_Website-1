@@ -11,7 +11,6 @@ import exp7 from "@/assets/images/explorePhotos/explore7.png";
 import exp8 from "@/assets/images/explorePhotos/explore8.png";
 import exp9 from "@/assets/images/explorePhotos/explore9.png";
 import mob from "@/assets/images/explorePhotos/mobile.png";
-import Link from "next/Link";
 
 
 const Life = () => {

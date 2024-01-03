@@ -43,7 +43,7 @@ const Home = async () => {
       <HeroSection />
       <About />
       <OurSchools />
-      <ProgrammesOffered />
+      {/* <ProgrammesOffered /> */}
       <OurEvents />
       <ResearchInnovation />
       <LifeAtVITAP />

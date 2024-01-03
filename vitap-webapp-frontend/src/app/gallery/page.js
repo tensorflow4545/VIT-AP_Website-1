@@ -5,6 +5,7 @@ import NavbarBottom from '@/components/HomePage Components/Navbar/NavbarBottom';
 import NavbarUpper from '@/components/HomePage Components/Navbar/NavbarUpper';
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link';
 // Assuming you have local images or you can put URLs for your images here
 
 const imageData = [
@@ -52,7 +53,7 @@ export default function GalleryPage() {
         <section className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {imageData.map((image) => (
-              <div key={image.id} className="overflow-hidden shadow-lg">
+              <Link href="/gallery/subgallery" key={image.id} className="overflow-hidden shadow-lg">
                 <Image
                   src={image.src}
                   alt={image.title}
@@ -64,7 +65,7 @@ export default function GalleryPage() {
                 <div className="px-6 py-4">
                   <h3 className="font-semibold text-lg hover:text-primary">{image.title}</h3>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </section>

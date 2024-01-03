@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image'
 import react,{useState} from "react";
-export default function fee(){
+export default function Fee(){
 
     const [active, setActive] = useState("/1.jpeg");
     
@@ -10,7 +10,7 @@ export default function fee(){
             <div className="w-full h-[1250px] bg-red-200">
               
               <div className="pl-[148px] pr-[148px]">
-              <h1 className="text-[48px] font-[400px] font-emilio text-center pt-[96px]">Hostel and Mess Fee Structure</h1>
+              <h1 className="text-[48px] font-[400px] font-Emilio text-center pt-[96px]">Hostel and Mess Fee Structure</h1>
 
               <div className="flex flex-row pb-[20px] pt-[55px]">
                  <div className={`basis-1/3`}><button className={` ${active=="/1.jpeg"?"bg-red-900":"bg-white"} ${active=="/1.jpeg"?"text-white":"text-dark"} w-[340px] h-[84px] `} onClick={() => setActive("/1.jpeg")}>Fall & winter semester</button></div>
