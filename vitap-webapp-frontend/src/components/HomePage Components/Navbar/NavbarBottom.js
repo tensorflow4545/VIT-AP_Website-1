@@ -11,7 +11,7 @@ import image6 from "../../../assets/images/Homepage Images/navbar-images/6.png";
 import "./navbar.css";
 import { useState, useEffect } from "react";
 
-import { RxHamburgerMenu } from "react-icons/rx";
+// import { RxHamburgerMenu } from "react-icons/rx";
 const NavbarBottom = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [navbar, setNavbar] = useState(false);
@@ -77,7 +77,7 @@ const NavbarBottom = () => {
 
   return (
     <>
-      <div className="sticky top-0 z-30 sm:hidden md:block ">
+      <div className="sticky top-0 z-30 hidden xl:block ">
         {/* {"bg-opacity-50 "} */}
         {/* Increased z-index to 30 */}
         <div
@@ -289,7 +289,7 @@ const NavbarBottom = () => {
                     <ol className="flex-row font-[400] text-[20px]  pt-[61px] pl-[200px] space-y-[19px]">
                       <li className="custom-list-item w-[fit-content]">Academic Regulations</li>
                       <li className="custom-list-item w-[fit-content]">Academic Council</li>
-                      <li className="custom-list-item w-[fit-content]">Faculty</li>
+                      <li className="custom-list-item w-[fit-content]"><Link href="/allfaculty">Faculty</Link></li>
                       <li className="custom-list-item w-[fit-content]">Academic Calender</li>
                       <li className="custom-list-item w-[fit-content]">International Collaboration</li>
                       <li className="custom-list-item w-[fit-content]">Engineering Clinic </li>
@@ -383,7 +383,7 @@ const NavbarBottom = () => {
               onMouseEnter={() => handleDropdownEnter("Campus Life")}
               onMouseLeave={handleDropdownLeave}
             >
-              <Link className="custom-underline " href="/campuslife">Campus Life</Link>
+              <a className="custom-underline " href="/campuslife">Campus Life</a>
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
                 <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px]">
                   <div className="w-full h-full flex flex-row ">
@@ -403,9 +403,9 @@ const NavbarBottom = () => {
                       <li className="font-bold underline decoration-black underline-offset-[2px]">
                         Facilities
                       </li>
-                      <li className="custom-list-item w-[fit-content]">Infrastructure</li>
+                      <li className="custom-list-item w-[fit-content]"><Link href="/infrastructure">Infrastructure</Link></li>
                       <li className="custom-list-item w-[fit-content]">Hostels</li>
-                      <li className="custom-list-item w-[fit-content]">Library</li>
+                      <li className="custom-list-item w-[fit-content]"><Link href="/library">Library</Link></li>
                       <li className="custom-list-item w-[fit-content]">Laboratories</li>
                       <li className="custom-list-item w-[fit-content]">Bank and ATM</li>
                       <li className="custom-list-item w-[fit-content]">Transport</li>

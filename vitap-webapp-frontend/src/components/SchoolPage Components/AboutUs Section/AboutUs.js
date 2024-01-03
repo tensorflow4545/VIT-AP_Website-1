@@ -7,16 +7,16 @@ import { useEffect, useState } from "react";
 
 const AboutUs = () => {
   return (
-    <div className="flex flex-col md:flex-row md:px-[108px] md:py-[100px] justify-center md:justify-normal">
+    <div className="flex flex-col md:flex-row xl:px-[108px] md:py-[100px] justify-center md:justify-normal">
 
 
 
       {/* Left side with text */}
       <div className="flex-1 p-6 md:p-12 bg-white justify-center">
-        <h1 className="text-[48px] font-[700] mb-4 text-primary font-Emilio">
+        <h1 className="sm:text-[48px] text-[35px] sm:text-left text-center  font-[700] mb-4 text-primary font-Emilio">
           About School
         </h1>
-        <p className=" font-Montserrat text-[20px] font-[420] max-w-[600px] text-justify">
+        <p className=" font-Montserrat text-[18px] sm:text-[20px] font-[420] max-w-[600px] text-justify">
           The Department of Computer Science and Engineering was established in
           2017. It has become the School of Computer Science and Engineering
           (SCOPE) in January 2019. At present, the School is headed by Dr. CH.
@@ -34,9 +34,9 @@ const AboutUs = () => {
       </h1>
 
       {/* Right side with image */}
-      <div className="flex-1 relative max-w-[496px] h-[759px]">
+      <div className="flex-1 relative max-w-[496px] h-auto">
         <div className="relative flex">
-          <div className="bg-primary w-[300px] absolute h-[500px] top-0"></div>
+          <div className="bg-primary w-[300px] absolute h-[300px] sm:h-[500px] top-0"></div>
           <Image
             className="z-10 top-10 mt-10 ml-10"
             width={496}
