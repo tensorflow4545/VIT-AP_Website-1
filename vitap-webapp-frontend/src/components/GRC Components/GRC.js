@@ -14,72 +14,72 @@ const GRC = () => {
     <>
       <div>
         <Image src={banner} className="w-full" />
-        <p className="text-[44px] font-Emilo text-[#650010] mt-10 ml-[27%] font-bold">
+        <p className="text-[44px] font-Emilio text-[#650010] mt-10 ml-[27%] font-bold">
           Grievance Redressal Committee (GRC)
         </p>
-        <p className="mt-[15px] w-[1224px] text-center ml-[10%] font-Montserrant">
+        <p className="mt-[15px] w-[1224px] text-center ml-[10%] font-Montserrat">
           As per UGC regulations, the Grievance Redressal Committee and
           Ombudsman has been constituted for the purpose of redressal of
           grievances including the cases of caste based discrimination.
         </p>
-        <p className="ml-[10%] font-Montserrant font-bold mt-[30px] text-[22px]">
+        <p className="ml-[10%] font-Montserrat font-bold mt-[30px] text-[22px]">
           In accordance to the above the following are nominated as the members
           of the committee.
         </p>
 
         <table className="w-[1224px] ml-[10%] border mt-[15px]">
 <tbody>
-          <tr className="h-[80px] text-[30px] font-Emilo text-white bg-[#5C0E14]">
+          <tr className="h-[80px] text-[30px] font-Emilio text-white bg-[#5C0E14]">
             <th>Name</th>
             <th>School/Dept</th>
             <th>Role</th>
           </tr>
-          <tr className="text-center h-[80px] text-[24px] font-Montserrant bg-[#F9C6CB80]">
+          <tr className="text-center h-[80px] text-[24px] font-Montserrat bg-[#F9C6CB80]">
             <td>Dr. Hari Seetha</td>
             <td>SCOPE</td>
             <td>Chairman</td>
           </tr>
-          <tr className="text-center h-[80px] text-[24px] font-Montserrant">
+          <tr className="text-center h-[80px] text-[24px] font-Montserrat">
             <td>Dr. Hari Seetha</td>
             <td>SCOPE</td>
             <td>Chairman</td>
           </tr>
-          <tr className="text-center h-[80px] text-[24px] font-Montserrant bg-[#F9C6CB80]">
+          <tr className="text-center h-[80px] text-[24px] font-Montserrat bg-[#F9C6CB80]">
             <td>Dr. Hari Seetha</td>
             <td>SCOPE</td>
             <td>Chairman</td>
           </tr>
-          <tr className="text-center h-[80px] text-[24px] font-Montserrant">
+          <tr className="text-center h-[80px] text-[24px] font-Montserrat">
             <td>Dr. Hari Seetha</td>
             <td>SCOPE</td>
             <td>Chairman</td>
           </tr>
-          <tr className="text-center h-[80px] text-[24px] font-Montserrant bg-[#F9C6CB80]">
+          <tr className="text-center h-[80px] text-[24px] font-Montserrat bg-[#F9C6CB80]">
             <td>Dr. Hari Seetha</td>
             <td>SCOPE</td>
             <td>Chairman</td>
           </tr>
-          <tr className="text-center h-[80px] text-[24px] font-Montserrant">
+          <tr className="text-center h-[80px] text-[24px] font-Montserrat">
             <td>Dr. Hari Seetha</td>
             <td>SCOPE</td>
             <td>Chairman</td>
           </tr>
-          <tr className="text-center h-[80px] text-[24px] font-Montserrant bg-[#F9C6CB80]">
+          <tr className="text-center h-[80px] text-[24px] font-Montserrat bg-[#F9C6CB80]">
             <td>Dr. Hari Seetha</td>
             <td>SCOPE</td>
             <td>Chairman</td>
           </tr>
-          <tr className="text-center h-[80px] text-[24px] font-Montserrant">
+          <tr className="text-center h-[80px] text-[24px] font-Montserrat">
             <td>Dr. Hari Seetha</td>
             <td>SCOPE</td>
             <td>Chairman</td>
           </tr>
-          <tr className="text-center h-[80px] text-[24px] font-Montserrant bg-[#F9C6CB80]">
+          <tr className="text-center h-[80px] text-[24px] font-Montserrat bg-[#F9C6CB80]">
             <td>Dr. Hari Seetha</td>
             <td>SCOPE</td>
             <td>Chairman</td>
           </tr>
-          <tr className="text-center h-[80px] text-[24px] font-Montserrant">
+          <tr className="text-center h-[80px] text-[24px] font-Montserrat">
             <td>Dr. Hari Seetha</td>
             <td>SCOPE</td>
             <td>Chairman</td>
@@ -87,12 +87,12 @@ const GRC = () => {
           </tbody>
         </table>
 
-        <p className="font-bold mt-[32px] text-[22px] font-Montserrant ml-[6%]">
+        <p className="font-bold mt-[32px] text-[22px] font-Montserrat ml-[6%]">
           As per the UGC Regulations called as “Redress of Grievances of
           Students, 2023” defines Grievance as follows
         </p>
         <div className="flex ml-[6%] mt-[36px]">
-          <div className="font-Montserrant w-[700px] text-[22px]">
+          <div className="font-Montserrat w-[700px] text-[22px]">
             <p className="mb-[15px]">
               ✧ making admission contrary to merit determined in accordance with
               the declared admission policy of the institute;
@@ -132,7 +132,7 @@ const GRC = () => {
         </div>
         <div className="flex ml-[6%] mt-[36px]">
           <Image src={img2} width={500} height={500} />
-          <div className="font-Montserrant w-[700px] text-[22px] ml-[76px]">
+          <div className="font-Montserrat w-[700px] text-[22px] ml-[76px]">
             <p className="mb-[15px]">
               ✧ demand of money in excess of that specified in the declared
               admission policy or approved by the competent authority to be
@@ -167,8 +167,8 @@ const GRC = () => {
           </div>
         </div>
         <div className="bg-[#E6CFCF] h-[669px] mt-[70px] flex rounded-tr-3xl rounded-bl-3xl">
-          <div className="font-Montserrant text-[22px] ml-[5%]">
-            <p className="font-Emilo text-[30px] mt-[96px] font-bold mb-[15px]">
+          <div className="font-Montserrat text-[22px] ml-[5%]">
+            <p className="font-Emilio text-[30px] mt-[96px] font-bold mb-[15px]">
               Scope and Responsibilities of the Committee:
             </p>
             <p className="mb-[15px]">
@@ -211,23 +211,23 @@ const GRC = () => {
             </p>
           </div>
         </div>
-        <p className="text-[55px] mt-[96px] ml-[5%] font-Emilo">
+        <p className="text-[55px] mt-[96px] ml-[5%] font-Emilio">
           Reporting of Cases:
         </p>
-        <p className="text-[22px] mt-[15px] ml-[5%] font-Montserrant">
+        <p className="text-[22px] mt-[15px] ml-[5%] font-Montserrat">
           The aforementioned grievances may be reported to the Chairman of the
           committee by any means and additionally through the following email
           address grievance.redressal@vitap.ac.in{" "}
         </p>
         <div className="w-[1016px] h-[563px] shadow-2xl mt-[36px] ml-[17%] border flex">
           <div className="w-[440px] ml-[80px]">
-            <p className="mt-[96px] text-[67px] font-Emilo">Contact Us</p>
-            <p className="font-Montserrant text-[22px]">
+            <p className="mt-[96px] text-[67px] font-Emilio">Contact Us</p>
+            <p className="font-Montserrat text-[22px]">
               Feel free to contact us at any time we will get back to you as
               soon as we can
             </p>
             <form>
-              <div className="mt-[15px] font-Montserrant">
+              <div className="mt-[15px] font-Montserrat">
                 <label htmlFor="name">Name</label>
                 <input
                   type="text"
@@ -237,7 +237,7 @@ const GRC = () => {
                 />
               </div>
 
-              <div className="mt-[15px] font-Montserrant">
+              <div className="mt-[15px] font-Montserrat">
                 <label htmlFor="email">Email</label>
                 <input
                   type="email"
@@ -247,7 +247,7 @@ const GRC = () => {
                 />
               </div>
 
-              <div className="mt-[15px] font-Montserrant">
+              <div className="mt-[15px] font-Montserrat">
                 <label htmlFor="message">Message</label>
                 <textarea
                   id="message"
@@ -258,7 +258,7 @@ const GRC = () => {
 
               <button
                 type="submit"
-                className="font-Montserrant text-white bg-[#650010] w-full h-[48px]"
+                className="font-Montserrat text-white bg-[#650010] w-full h-[48px]"
               >
                 Send
               </button>
@@ -266,7 +266,7 @@ const GRC = () => {
           </div>
           <div className="w-[241px] bg-[#5C0E14] h-[563px] ml-[253px]"></div>
           <div className="w-[360px] h-[369px] ml-[578px] mt-[97px] bg-[#F9C6CB] absolute rounded">
-            <p className="font-Montserrant mt-[67px] ml-[20px] font-bold text-[22px] pb-[15px]">
+            <p className="font-Montserrat mt-[67px] ml-[20px] font-bold text-[22px] pb-[15px]">
               Info
             </p>
             <div className="text-[#650010] flex text-[20px] pb-[35px] ml-[20px] items-center">
@@ -288,10 +288,10 @@ const GRC = () => {
           </div>
         </div>
         <div className="w-[1224px] ml-[5%]">
-          <p className="mt-[166px] text-[55px] font-Emilo">
+          <p className="mt-[166px] text-[55px] font-Emilio">
             Role of Ombudsperson:
           </p>
-          <p className="font-Montserrant text-[22px]">
+          <p className="font-Montserrat text-[22px]">
             If in case a student/ person is not convinced by the decision given
             by the committee; he/ she is at liberty to approach the ombudsman
             for further trail of hearing. The ombudsman can resolve the issue by
@@ -300,7 +300,7 @@ const GRC = () => {
             false/ frivolous appropriate action is suggested against the
             complainant.
           </p>
-          <p className="font-Montserrant text-[22px] mt-[10px]">
+          <p className="font-Montserrat text-[22px] mt-[10px]">
             The Ombudsperson for GRC is Dr. Chandini Stephens. She can be
             contacted on{" "}
             <Link
@@ -310,7 +310,7 @@ const GRC = () => {
               ombudsman.grc@vitap.ac.in
             </Link>
           </p>
-          <p className="font-Emilo text-[55px] mt-[36px]">
+          <p className="font-Emilio text-[55px] mt-[36px]">
             Office Order: Click Here
           </p>
         </div>
