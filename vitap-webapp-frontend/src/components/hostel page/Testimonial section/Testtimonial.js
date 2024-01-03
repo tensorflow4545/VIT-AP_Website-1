@@ -1,4 +1,4 @@
-export default function testimonial(){
+export default function Testimonial(){
     return(
         <>
             <div className="w-full h-[250px] bg-red-900">

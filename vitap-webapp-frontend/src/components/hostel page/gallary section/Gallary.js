@@ -1,6 +1,6 @@
 import Image from "next/image";
 import style from "./gallary.module.css";
-export default function gallary(){
+export default function Gallary(){
     return(
         <>
             <div className="w-full h-[950px] bg-white">

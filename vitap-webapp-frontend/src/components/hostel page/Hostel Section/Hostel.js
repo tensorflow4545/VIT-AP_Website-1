@@ -2,7 +2,7 @@
 import { BsFillTelephoneFill } from "react-icons/bs";
 import Image from "next/image";
 import react,{useState} from "react";
-export default function hostel(){
+export default function Hostel(){
     const hostels=[
         {
            id:"1",

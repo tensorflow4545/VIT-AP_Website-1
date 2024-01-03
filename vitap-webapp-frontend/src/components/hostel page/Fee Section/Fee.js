@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image'
 import react,{useState} from "react";
-export default function fee(){
+export default function Fee(){
 
     const [active, setActive] = useState("/1.jpeg");
     

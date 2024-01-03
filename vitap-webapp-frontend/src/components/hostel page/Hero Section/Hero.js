@@ -1,6 +1,6 @@
 import style from "./hero.module.css";
 import Image from 'next/image'
-export default function hero(){
+export default function Hero(){
     return(
         <>
             <div className={`w-full h-[363px] h-screen flex items-center justify-center ${style.hero}`}>

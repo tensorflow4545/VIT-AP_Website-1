@@ -1,5 +1,5 @@
 import style from "./facility.module.css";
-export default function facility(){
+export default function Facility(){
     return(
         <>
             <div className="w-full h-[800px] bg-white">
