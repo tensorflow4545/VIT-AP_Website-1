@@ -34,7 +34,9 @@ const programoffered = () => {
       <div class={` ${style.program}`}>
         <p className="text-[#FDFEFF] font-Emilio text-[20px] font-semibold leading-[27px]">Explore our programs</p>
         <p className="text-[#FDFEFF] font-Emilio text-[48px] font-bold capitaliza">Programs Offered</p>
-        <p className="font-Montserrat text-[18px] font-normal leading-[27px] pb-[69px] text-white text-opacity-80">Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur amet consectetur.</p>
+        <p className="font-Montserrat text-[18px] font-normal leading-[27px] pb-[69px] text-white text-opacity-80">
+        SCOPE offers cutting-edge programs, blending theoretical knowledge with hands-on experience. Our diverse range of courses equips students with skills for innovation, ensuring a transformative learning journey.
+        </p>
 
         <div class="flex flex-row pb-20">
 
@@ -56,7 +58,7 @@ const programoffered = () => {
                       <div className="pb-3 text-black font-Emilio text-[20px] font-semibold group-hover:text-primary">{attributes.Head}</div>
                       <div className="pb-3 text-black font-Emilio text-[18px] font-medium group-hover:text-primary group-hover:inline-block">{attributes.Title}</div>
                     </div>
-                      <button className="absolute fixed right-[150px] top-[20px] w-[147px] h-[50px] bg-primary rounded-[6px] text-center text-white font-semibold invisible group-hover:visible hover:bg-[#7A1820]">
+                      <button className=" fixed right-[150px] top-[20px] w-[147px] h-[50px] bg-primary rounded-[6px] text-center text-white font-semibold invisible group-hover:visible hover:bg-[#7A1820]">
                         Apply Now
                       </button>
                     </Link>

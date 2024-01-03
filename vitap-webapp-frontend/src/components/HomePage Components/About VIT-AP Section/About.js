@@ -37,15 +37,16 @@ const About = () => {
   return (
     <>
 
-      <div className="lx:px-[108px] sm:px-[40px] mb-[100px] ">
-        <div className="md:flex  ls:pt-[70px] sm:pt-[50px]">
-          <div className="md:w-[50%]  sm:text-center md:text-left sm:flex-col sm:justify-center md:justify-normal ">
+      <div className="px-[40px] mb-[100px] ">
 
-            <h1 className="font-Emilio ls:text-[48px] sm:text-[40px] text-primary font-bold pb-[9px]">
+
+        <div className="md:flex md:flex-col lg:flex lg:flex-row sm:pt-[50px]">
+
+          <div className="lg:w-[50%] lg:pr-[20px] sm:w-[100%]  sm:text-center md:text-left sm:flex-col sm:justify-center md:justify-normal ">
+            <h1 className="font-Emilio text-center md:text-center lg:text-left  text-[40px] text-primary font-bold pb-[9px]">
               About VIT-AP
             </h1>
-            <div className="sm:justify-center md:justify-normal sm:hidden ls:flex w-full object-cover">
-              <div className="ls:w-[600px] ls:h-[335px] sm:h-[200px]">
+              <div className="w-full h-[400px]  mt-5">
                 <iframe
                   className="w-full h-full"
                   src="https://www.youtube.com/embed/Bx3tAXPJThM?si=3j6CacZA7uFGU6zb"
@@ -55,10 +56,8 @@ const About = () => {
                   allowfullscreen
                 ></iframe>
               </div>
-
-            </div>
-            <div className="w-[95%]">
-              <h1 className="font-Montserrant font-[680px] text-justify text-[18px] text-left mt-[35px] leading-7">
+            <div className="w-full">
+              <h1 className="font-Montserrant font-[680px] text-justify text-[18px]  mt-[35px] leading-7">
                 With a history of 37 years of innovation in educational and
                 research domain, VIT has been a forerunner in delivering quality
                 education. Consistently ranked among the top educational
@@ -72,14 +71,15 @@ const About = () => {
             </div>
           </div>
 
+
+
           {/* Anouncements section  */}
 
-          <div className="md:w-[50%]  sm:w-[100%] md:pl-[67px]  md:mt-[15px] ls:mt-[50px] sm:mt-[50px] md:block ls:flex-col ls:justify-center  relative">
-
+          <div className="lg:w-[50%] mt-5 sm:w-[100%] lg:ml-4 md:mt-[15px] sm:mt-[50px] md:block  relative">
             <motion.div
-              initial={{ left: "[80px]", width: "[32px]" }}
+              initial={{ left: "[70px]", width: "[32px]" }}
               whileHover={{ left: "[-20px]", width: "[125px]" }}
-              className="top-[-7px] z-0  right-5 absolute hover:cursor-pointer flex items-center"
+              className="top-[0px] z-0  right-5 absolute hover:cursor-pointer flex items-center"
             >
               <div className="flex flex-row items-center justify-center relative  transition-all duration-300 ease-in group">
                 <Link href="/announcements"><div className="Rectangle91 w-[32px] h-[30px] left-[45px] top-[-3px] absolute bg-[#5C0E14] opacity-20 transition-transform group-hover:left-[-10px] group-hover:w-[85px] group-hover:transition-all group-hover:duration-300 group-hover:ease-in-out "></div></Link>
@@ -102,6 +102,7 @@ const About = () => {
               )}
             </div>
           </div>
+
         </div>
       </div>
     </>

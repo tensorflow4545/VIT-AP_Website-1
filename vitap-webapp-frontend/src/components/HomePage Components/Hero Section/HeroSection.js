@@ -1,9 +1,5 @@
 "use client";
-import Image from "next/image";
 // import headerimage from "../../../assets/images/Homepage Images/HeaderImage.png";
-import headerimage2 from "../../../assets/images/Homepage Images/headerimage1280-720.png";
-import config from "@/config";
-import { headerimage3 } from "../../../assets/images/Homepage Images/1.JPG";
 import CarouselComp from "./CarouselComp";
 import HeaderText from "./HeaderText";
 

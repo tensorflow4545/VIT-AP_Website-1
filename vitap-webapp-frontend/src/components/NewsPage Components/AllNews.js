@@ -18,6 +18,7 @@ import styles from "./AllNews.module.css";
 
 const AllNews = () => {
 
+
   const [numactive, setNumactive] = useState(1);
   const leftClick = () => {
     { numactive === 1 ? setNumactive(roundedNumItems) : setNumactive(numactive - 1) }
@@ -104,6 +105,7 @@ const rightClick = () => {
         <div
           className={`${styles.head} flex overflow-hidden h-[750px] absolute bg-[#e6cfcf]`}
         >
+
           <Image src={img1} className={`${styles.img}`} />
           <Image src={img2} className={`${styles.img}`} />
           <p
@@ -210,6 +212,7 @@ const rightClick = () => {
                 </div>
                 </div>
             </div>
+
         </div>
     </>
   );
