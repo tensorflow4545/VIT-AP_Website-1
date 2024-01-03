@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { programmesOffered } from "@/constants";
 import { BiSolidDownArrow } from "react-icons/bi";
 import axios from "axios";
@@ -12,7 +12,7 @@ const ProgrammesOffered = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/home-page-programmres-offered-sections`,{
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/home-page-programmres-offered-sections`, {
           headers: {
             Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
           },
@@ -38,9 +38,9 @@ const ProgrammesOffered = () => {
         style={{ backgroundImage: `url("/programsbackground3.png")` }}
         className="max-w-screen w-full h-full bg-center mx-auto"
       >
-        <div className="w-full mx-auto hidden xl:block max-h-[750px] pr-[40px]  pt-[20px] text-white ">
-          <div className=" p-[110px]  flex flex-col flex-[50%] pt-[60px] z-0">
-            <h1 className="text-white text-[48px] font-Emilio" >
+        <div className="w-full mx-auto hidden xl:flex max-h-[750px] pr-[40px]  pt-[20px] text-white  ">
+          <div className=" p-[110px] flex flex-col flex-[50%] pt-[60px] z-0">
+            <h1 className="text-white text-[48px] font-Emilio text-left" >
               Programmes Offered
             </h1>
             <p className="my-[15px]  text-[18px]">
@@ -49,43 +49,45 @@ const ProgrammesOffered = () => {
               latest technologies with relevant practice through lab and
               projects for building problem-solving skills */}
             </p>
-            <div className="md:flex md:flex-col w-[40%] my-[20px] justify-center items-center text-center gap-5 grid grid-cols-2">
-              <h1
-                className={`font-Montserrat   text-[20px] py-[19px] md:px-[23px] ${active === "undergraduate" ? "border border-zinc-200" : ""
-                  } cursor-pointer w-full first-letter`}
+            <div className="flex justify-center items-center">
+              <div className="md:flex md:flex-col w-[80%] my-[20px] justify-center items-center text-center gap-5 grid grid-cols-2">
+                <h1
+                  className={`font-Montserrat   text-[20px] py-[19px] md:px-[23px] ${active === "undergraduate" ? "border border-zinc-200" : ""
+                    } cursor-pointer w-full first-letter`}
 
-                onClick={() => setActive("undergraduate")}
-              >
-                Undergraduate
-              </h1>
-              <h1
-                className={`font-Montserrat  text-[20px] py-[19px] md:px-[23px] ${active === "Dual Degree" ? "border border-zinc-200" : ""
-                  } cursor-pointer w-full first-letter`}
-                onClick={() => setActive("Dual Degree")}
-              >
-                Dual Degree
-              </h1>
-              <h1
-                className={`font-Montserrat  text-[20px] py-[19px] md:px-[23px] ${active === "Integrated" ? "border border-zinc-200" : ""
-                  } cursor-pointer w-full first-letter`}
-                onClick={() => setActive("Integrated")}
-              >
-                Integrated
-              </h1>
-              <h1
-                className={`font-Montserrat  text-[20px] py-[19px] md:px-[23px] ${active === "postgraduate" ? "border border-zinc-200" : ""
-                  } cursor-pointer w-full first-letter`}
-                onClick={() => setActive("postgraduate")}
-              >
-                Postgraduate
-              </h1>
-              <h1
-                className={`font-Montserrat  text-[20px] py-[19px] md:px-[23px] ${active === "doctoral" ? "border border-zinc-200" : ""
-                  } cursor-pointer w-full first-letter`}
-                onClick={() => setActive("doctoral")}
-              >
-                Doctoral
-              </h1>
+                  onClick={() => setActive("undergraduate")}
+                >
+                  Undergraduate
+                </h1>
+                <h1
+                  className={`font-Montserrat  text-[20px] py-[19px] md:px-[23px] ${active === "Dual Degree" ? "border border-zinc-200" : ""
+                    } cursor-pointer w-full first-letter`}
+                  onClick={() => setActive("Dual Degree")}
+                >
+                  Dual Degree
+                </h1>
+                <h1
+                  className={`font-Montserrat  text-[20px] py-[19px] md:px-[23px] ${active === "Integrated" ? "border border-zinc-200" : ""
+                    } cursor-pointer w-full first-letter`}
+                  onClick={() => setActive("Integrated")}
+                >
+                  Integrated
+                </h1>
+                <h1
+                  className={`font-Montserrat  text-[20px] py-[19px] md:px-[23px] ${active === "postgraduate" ? "border border-zinc-200" : ""
+                    } cursor-pointer w-full first-letter`}
+                  onClick={() => setActive("postgraduate")}
+                >
+                  Postgraduate
+                </h1>
+                <h1
+                  className={`font-Montserrat  text-[20px] py-[19px] md:px-[23px] ${active === "doctoral" ? "border border-zinc-200" : ""
+                    } cursor-pointer w-full first-letter`}
+                  onClick={() => setActive("doctoral")}
+                >
+                  Doctoral
+                </h1>
+              </div>
             </div>
           </div>
 
@@ -113,7 +115,7 @@ const ProgrammesOffered = () => {
             <div className="absolute bottom-10 right-10 bg-white p-4 rounded-xl hidden">
               <BiSolidDownArrow className="text-black text-[20px]" />
             </div>
-          </div>  
+          </div>
         </div>
       </div>
 
