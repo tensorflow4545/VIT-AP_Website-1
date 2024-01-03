@@ -4,7 +4,7 @@ import React from 'react'
 const Infrastructure = () => {
     return (
         <>
-            <div className='max-w-[1560px] w-[100%] min-h-[500px] h-[100%] hidden ls:block'>
+            <div className='max-w-[1560px] w-[100%] min-h-[500px] h-[100%] hidden lg:block'>
                 <div className='relative'>
 
                     <div className='flex max-w-[1560px] w-[100%] min-h-[500px] h-[100%] absolute top-0 left-0 px-[50px] md:px-[100px] py-[40px] gap-3 md:gap-5'>
@@ -15,14 +15,14 @@ const Infrastructure = () => {
                         <div className='flex-1 flex justify-center items-center'>
                             <div className='max-w-[300px] w-[100%] max-h-[250px] h-[100%] relative'>
                                 <Image fill src={"/libgallery1.jpeg"} alt='libbanner' className='z-10 rounded-3xl rounded-br-none rounded-tl-none ' />
-                                <div className='absolute -top-15 -right-10 lx:-right-20 max-w-[250px] w-[100%] max-h-[250px] h-[100%] bg-[#650010] rotate-45 rounded-3xl shadow-2xl'></div>
+                                <div className='absolute -top-15 -right-10 xl:-right-20 max-w-[250px] w-[100%] max-h-[250px] h-[100%] bg-[#650010] rotate-45 rounded-3xl shadow-2xl'></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className='w-full max-h-[800px] block ls:hidden'>
+            <div className='w-full max-h-[800px] block lg:hidden'>
                 <div className='flex flex-col gap-3 px-[30px] py-[20px] overflow-hidden'>
                     <div className='flex flex-col gap-2 justify-center items-start'>
                         <h1 className='text-[24px] font-Emilio text-[#650010] font-bold'>Library Infrastructure</h1>

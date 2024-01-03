@@ -4,7 +4,7 @@ import { FaBook } from 'react-icons/fa6'
 const Resources = () => {
     return (
         <>
-            <div className='max-w-[1560px] w-[100%] min-h-[500px] h-[100%] bg-backgroundRed2 px-[50px] md:px-[100px] py-[40px] ls:flex -z-10 gap-3 hidden'>
+            <div className='max-w-[1560px] w-[100%] min-h-[500px] h-[100%] bg-backgroundRed2 px-[50px] md:px-[100px] py-[40px] lg:flex -z-10 gap-3 hidden'>
                 <div className='flex-1 flex flex-col items-start justify-center'>
                     <h1 className='text-[46px] font-Emilio text-[#650010] font-bold'>Library Resources</h1>
                     <p className='text-[22px] font-Montserrat text-[#000]'>Discover a wide range of resources to support your studies.</p>
@@ -54,7 +54,7 @@ const Resources = () => {
                 </div>
             </div>
 
-            <div className='w-full max-h-[600px] bg-backgroundRed2 block ls:hidden'>
+            <div className='w-full max-h-[600px] bg-backgroundRed2 block lg:hidden'>
                 <div className='flex flex-col gap-2 px-[30px] py-[20px]'>
                     <h1 className='text-[24px] font-Emilio text-[#650010] font-bold justify-start items-center'>Library Resources</h1>
                     <div className='flex gap-2 items-center justify-start'>
