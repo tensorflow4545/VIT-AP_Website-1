@@ -1,6 +1,8 @@
 import style from "./team.module.css";
 import Image from 'next/image'
-export default function team(){
+import faculty from "../../assets/images/Vchance/faculty.png"
+
+export default function Team(){
     return(
         <>
     {/* desktop view */}
@@ -18,7 +20,7 @@ export default function team(){
     <div className="lg:pr-[105px] md:pb-[50px] sm:pb-[30px]">
     <div className={`lg:basis block max-w-sm w-[312px] h-max pb-[10px] bg-white border border-gray-200 shadow-lg`}>
     <div className={`w-[40px] border-rounded ${style.empty}`}></div>
-    <div className="flex justify-center texts-center pb-[5px]"><Image src="/faculty.png"  width={120} height={218} alt="faculty Image"></Image></div>
+    <div className="flex justify-center texts-center pb-[5px]"><Image src={faculty}  width={120} height={218} alt="faculty Image"></Image></div>
     <p className="text-red-900 text-[24px] font-bold text-center">Dr. Ilakkiya L</p>
     <p className="text-center text-[17.6px] font-medium font-inter">Head Counselor</p>
     <p className="text-center text-[17.6px] font-medium font-inter">Cabin No: 431-H 4th Floor</p>
@@ -31,7 +33,7 @@ export default function team(){
     <div className="lg:pr-[105px] md:pb-[50px] sm:pb-[30px]">
     <div className={`lg:basis block max-w-sm w-[312px] h-max pb-[10px] bg-white border border-gray-200 shadow-lg`}>
     <div className={`w-[20px] ${style.empty}`}></div>
-    <div className="flex justify-center texts-center pb-[5px]"><Image src="/faculty.png"  width={120} height={218} alt="faculty Image"></Image></div>
+    <div className="flex justify-center texts-center pb-[5px]"><Image src={faculty}  width={120} height={218} alt="faculty Image"></Image></div>
     <p className="text-red-900 text-[24px] font-bold text-center">Dr. Ilakkiya L</p>
     <p className="text-center text-[17.6px] font-medium font-inter">Head Counselor</p>
     <p className="text-center text-[17.6px] font-medium font-inter">Cabin No: 431-H 4th Floor</p>
@@ -44,7 +46,7 @@ export default function team(){
     <div className="sm:pb-[30px]">
     <div className={`lg:basis block max-w-sm w-[312px] h-max pb-[10px] bg-white border border-gray-200 shadow-lg`}>
     <div className={`w-[40px] ${style.empty}`}></div>
-    <div className="flex justify-center texts-center pb-[5px]"><Image src="/faculty.png"  width={120} height={218} alt="faculty Image"></Image></div>
+    <div className="flex justify-center texts-center pb-[5px]"><Image src={faculty}  width={120} height={218} alt="faculty Image"></Image></div>
     <p className="text-red-900 text-[24px] font-bold text-center">Dr. Ilakkiya L</p>
     <p className="text-center text-[17.6px] font-medium font-inter">Head Counselor</p>
     <p className="text-center text-[17.6px] font-medium font-inter">Cabin No: 431-H 4th Floor</p>
@@ -63,7 +65,7 @@ export default function team(){
     <div className="lg:pr-[105px] md:pb-[50px] sm:pb-[30px]">
     <div className={`lg:basis block max-w-sm w-[312px] h-max pb-[10px] bg-white border border-gray-200 shadow-lg`}>
     <div className={`w-[40px] border-rounded ${style.empty}`}></div>
-    <div className="flex justify-center texts-center pb-[5px]"><Image src="/faculty.png"  width={120} height={218} alt="faculty Image"></Image></div>
+    <div className="flex justify-center texts-center pb-[5px]"><Image src={faculty}  width={120} height={218} alt="faculty Image"></Image></div>
     <p className="text-red-900 text-[24px] font-bold text-center">Dr. Ilakkiya L</p>
     <p className="text-center text-[17.6px] font-medium font-inter">Head Counselor</p>
     <p className="text-center text-[17.6px] font-medium font-inter">Cabin No: 431-H 4th Floor</p>
@@ -76,7 +78,7 @@ export default function team(){
     <div className="lg:pr-[105px] md:pb-[50px] sm:pb-[30px]">
     <div className={`lg:basis block max-w-sm w-[312px] h-max pb-[10px] bg-white border border-gray-200 shadow-lg`}>
     <div className={`w-[40px] ${style.empty}`}></div>
-    <div className="flex justify-center texts-center pb-[5px]"><Image src="/faculty.png"  width={120} height={218} alt="faculty Image"></Image></div>
+    <div className="flex justify-center texts-center pb-[5px]"><Image src={faculty}  width={120} height={218} alt="faculty Image"></Image></div>
     <p className="text-red-900 text-[24px] font-bold text-center">Dr. Ilakkiya L</p>
     <p className="text-center text-[17.6px] font-medium font-inter">Head Counselor</p>
     <p className="text-center text-[17.6px] font-medium font-inter">Cabin No: 431-H 4th Floor</p>
@@ -89,7 +91,7 @@ export default function team(){
     <div className="sm:pb-[30px]">
     <div className={`lg:basis block max-w-sm w-[312px] h-max pb-[10px] bg-white border border-gray-200 shadow-lg`}>
     <div className={`w-[40px] ${style.empty}`}></div>
-    <div className="flex justify-center texts-center pb-[5px]"><Image src="/faculty.png"  width={120} height={218} alt="faculty Image"></Image></div>
+    <div className="flex justify-center texts-center pb-[5px]"><Image src={faculty}  width={120} height={218} alt="faculty Image"></Image></div>
     <p className="text-red-900 text-[24px] font-bold text-center">Dr. Ilakkiya L</p>
     <p className="text-center text-[17.6px] font-medium font-inter">Head Counselor</p>
     <p className="text-center text-[17.6px] font-medium font-inter">Cabin No: 431-H 4th Floor</p>
@@ -113,7 +115,7 @@ export default function team(){
     <div className="px-[50px] pb-[30px]">
     <div className={`lg:basis block max-w-sm w-[312px] h-max pb-[10px] bg-white border border-gray-200 shadow-lg`}>
     <div className={`w-[40px] border-rounded ${style.empty}`}></div>
-    <div className="flex justify-center texts-center pb-[5px]"><Image src="/faculty.png"  width={120} height={218} alt="faculty Image"></Image></div>
+    <div className="flex justify-center texts-center pb-[5px]"><Image src={faculty}  width={120} height={218} alt="faculty Image"></Image></div>
     <p className="text-red-900 text-[24px] font-bold text-center">Dr. Ilakkiya L</p>
     <p className="text-center text-[17.6px] font-medium font-inter">Head Counselor</p>
     <p className="text-center text-[17.6px] font-medium font-inter">Cabin No: 431-H 4th Floor</p>
@@ -125,7 +127,7 @@ export default function team(){
     <div className="px-[50px] pb-[30px]">
     <div className={`lg:basis block max-w-sm w-[312px] h-max pb-[10px] bg-white border border-gray-200 shadow-lg`}>
     <div className={`w-[40px] border-rounded ${style.empty}`}></div>
-    <div className="flex justify-center texts-center pb-[5px]"><Image src="/faculty.png"  width={120} height={218} alt="faculty Image"></Image></div>
+    <div className="flex justify-center texts-center pb-[5px]"><Image src={faculty}  width={120} height={218} alt="faculty Image"></Image></div>
     <p className="text-red-900 text-[24px] font-bold text-center">Dr. Ilakkiya L</p>
     <p className="text-center text-[17.6px] font-medium font-inter">Head Counselor</p>
     <p className="text-center text-[17.6px] font-medium font-inter">Cabin No: 431-H 4th Floor</p>
@@ -137,7 +139,7 @@ export default function team(){
     <div className="px-[50px] pb-[30px]">
     <div className={`lg:basis block max-w-sm w-[312px] h-max pb-[10px] bg-white border border-gray-200 shadow-lg`}>
     <div className={`w-[40px] border-rounded ${style.empty}`}></div>
-    <div className="flex justify-center texts-center pb-[5px]"><Image src="/faculty.png"  width={120} height={218} alt="faculty Image"></Image></div>
+    <div className="flex justify-center texts-center pb-[5px]"><Image src={faculty}  width={120} height={218} alt="faculty Image"></Image></div>
     <p className="text-red-900 text-[24px] font-bold text-center">Dr. Ilakkiya L</p>
     <p className="text-center text-[17.6px] font-medium font-inter">Head Counselor</p>
     <p className="text-center text-[17.6px] font-medium font-inter">Cabin No: 431-H 4th Floor</p>
@@ -149,7 +151,7 @@ export default function team(){
     <div className="px-[50px] pb-[30px]">
     <div className={`lg:basis block max-w-sm w-[312px] h-max pb-[10px] bg-white border border-gray-200 shadow-lg`}>
     <div className={`w-[40px] border-rounded ${style.empty}`}></div>
-    <div className="flex justify-center texts-center pb-[5px]"><Image src="/faculty.png"  width={120} height={218} alt="faculty Image"></Image></div>
+    <div className="flex justify-center texts-center pb-[5px]"><Image src={faculty}  width={120} height={218} alt="faculty Image"></Image></div>
     <p className="text-red-900 text-[24px] font-bold text-center">Dr. Ilakkiya L</p>
     <p className="text-center text-[17.6px] font-medium font-inter">Head Counselor</p>
     <p className="text-center text-[17.6px] font-medium font-inter">Cabin No: 431-H 4th Floor</p>
@@ -161,7 +163,7 @@ export default function team(){
     <div className="px-[50px] pb-[30px]">
     <div className={`lg:basis block max-w-sm w-[312px] h-max pb-[10px] bg-white border border-gray-200 shadow-lg`}>
     <div className={`w-[40px] border-rounded ${style.empty}`}></div>
-    <div className="flex justify-center texts-center pb-[5px]"><Image src="/faculty.png"  width={120} height={218} alt="faculty Image"></Image></div>
+    <div className="flex justify-center texts-center pb-[5px]"><Image src={faculty}  width={120} height={218} alt="faculty Image"></Image></div>
     <p className="text-red-900 text-[24px] font-bold text-center">Dr. Ilakkiya L</p>
     <p className="text-center text-[17.6px] font-medium font-inter">Head Counselor</p>
     <p className="text-center text-[17.6px] font-medium font-inter">Cabin No: 431-H 4th Floor</p>
@@ -173,7 +175,7 @@ export default function team(){
     <div className="px-[50px] pb-[30px]">
     <div className={`lg:basis block max-w-sm w-[312px] h-max pb-[10px] bg-white border border-gray-200 shadow-lg`}>
     <div className={`w-[40px] border-rounded ${style.empty}`}></div>
-    <div className="flex justify-center texts-center pb-[5px]"><Image src="/faculty.png"  width={120} height={218} alt="faculty Image"></Image></div>
+    <div className="flex justify-center texts-center pb-[5px]"><Image src={faculty}  width={120} height={218} alt="faculty Image"></Image></div>
     <p className="text-red-900 text-[24px] font-bold text-center">Dr. Ilakkiya L</p>
     <p className="text-center text-[17.6px] font-medium font-inter">Head Counselor</p>
     <p className="text-center text-[17.6px] font-medium font-inter">Cabin No: 431-H 4th Floor</p>

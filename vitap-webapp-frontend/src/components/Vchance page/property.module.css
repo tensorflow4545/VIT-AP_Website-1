@@ -1,18 +1,18 @@
 .desc5{
-    background-image: url(../../assets/Vchance/vimage5.png);
+    /* background-image: url(../../assets/Vchance/vimage5.png); */
     background-size: 500px 281px;
 }
 .desc55{
-    background-image: url(../../assets/Vchance/vimage5.png);
+    /* background-image: url(../../assets/Vchance/vimage5.png); */
     background-size: 300px 150px;
 }
 
 /* mobile view */
 .mdesc5{
-    background-image: url(../../assets/Vchance/vimage5.png);
+    /* background-image: url(../../assets/Vchance/vimage5.png); */
     background-size: 260px 146px;
 }
 .mdesc55{
-    background-image: url(../../assets/Vchance/vimage5.png);
+    /* background-image: url(../../assets/Vchance/vimage5.png); */
     background-size: 156px 78px;
 }
