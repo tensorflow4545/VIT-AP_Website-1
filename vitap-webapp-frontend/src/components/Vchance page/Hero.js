@@ -2,7 +2,6 @@ import Image from 'next/image'
 import style from './hero.module.css'
 import headerImg from "../../assets/images/Vchance/hero.png"
 import vlogo from "../../assets/images/Vchance/vlogo.png"
-
 export default function Hero(){
   return(
     <>
