@@ -1,6 +1,8 @@
 import style from "./property.module.css";
+import d5 from "../../assets/images/Vchance/vimage5.png";
+import Image from "next/image";
 
-export default function property(){
+export default function Property(){
     return(
         <>
 
@@ -25,11 +27,11 @@ export default function property(){
                </div>
                {/* Background image div */}
                <div className={`basis-1/2 w-[600px] h-[350px] relative`}>
-                   <div className={`rounded-lg w-[500px] h-[300px] relative float-right z-1 rounded-lg ${style.desc5}`}>
-                   
+                   <div className={`w-[500px] h-[300px] relative float-right z-1 rounded-lg ${style.desc5}`}>
+                  <Image src={d5} fill className='rounded-lg' />
                    </div>
-                   <div className={`rounded-lg w-[300px] h-[150px] absolute bottom-0 left-0 z-10 float-left rounded-lg border-2 border-white shadow-xl ${style.desc55}`}>
-
+                   <div className={`w-[300px] h-[150px] absolute bottom-0 left-0 z-10 float-left rounded-lg border-2 border-white shadow-xl ${style.desc55}`}>
+                  <Image src={d5} fill className='rounded-lg' />
                    </div>
                </div>
                </div>
@@ -52,11 +54,11 @@ export default function property(){
             {/* image  */}
             <div className={`w-[350px] h-[170px] pr-[20px] relative`}>
                    {/* Background image div */}
-                   <div className={`rounded-lg w-[260px] h-[146px] relative float-left z-1 rounded-lg ${style.mdesc5}`}>
-                    
+                   <div className={`w-[260px] h-[146px] relative float-left z-1 rounded-lg ${style.mdesc5}`}>
+                <Image src={d5} fill className='rounded-lg' />
                    </div>
-                   <div className={`rounded-lg w-[156px] h-[78px] absolute bottom-0 right-0 z-10 float-left rounded-lg border-2 border-white shadow-xl ${style.mdesc55}`}>
-
+                   <div className={`w-[156px] h-[78px] absolute bottom-0 right-0 z-10 float-left rounded-lg border-2 border-white shadow-xl ${style.mdesc55}`}>
+                <Image src={d5} fill className='rounded-lg' />
                    </div>
                </div>
                {/* Description */}
