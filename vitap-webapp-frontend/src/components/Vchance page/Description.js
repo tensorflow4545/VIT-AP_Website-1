@@ -1,4 +1,9 @@
+import Image from 'next/image';
 import style from './description.module.css';
+import d1 from "../../assets/images/Vchance/vimage1.png"
+import d2 from "../../assets/images/Vchance/vimage2.png"
+import d3 from "../../assets/images/Vchance/vimage3.png"
+import d4 from "../../assets/images/Vchance/vimage4.png"
 
 export default function Description(){
     return(
@@ -17,11 +22,11 @@ export default function Description(){
                   <p className="text-black text-[20px] font-[400px]">At V-CHANCE, we prioritize the mental well-being of our university students, faculty, and staff.</p>
                </div>
                <div className={`lg:basis-1/2 w-[600px] h-[350px] relative`}>
-                   <div className={`rounded-lg w-[500px] h-[300px] relative float-right z-1 rounded-lg ${style.desc1}`}>
-                   
+                   <div className={` w-[500px] h-[300px] relative float-right z-1 rounded-lg ${style.desc1} relative`}>
+                    <Image src={d1} fill className='rounded-lg'/>
                    </div>
-                   <div className={`rounded-lg w-[300px] h-[150px] absolute bottom-0 left-0 z-10 float-left rounded-lg border-2 border-white shadow-xl ${style.desc11}`}>
-
+                   <div className={`w-[300px] h-[150px] absolute bottom-0 left-0 z-10 float-left rounded-lg border-2 border-white shadow-xl ${style.desc11} `}>
+                                <Image src={d1} fill className='rounded-lg' />
                    </div>
                </div>
                </div>
@@ -30,11 +35,11 @@ export default function Description(){
                <div className="lg:flex lg:flex-row mb-[150px]">
                <div className={`basis-1/2 w-[600px] h-[350px] pr-[20px] relative`}>
                    {/* Background image div */}
-                   <div className={`rounded-lg w-[500px] h-[300px] relative float-left z-1 rounded-lg ${style.desc2}`}>
-                    
+                   <div className={`w-[500px] h-[300px] relative float-left z-1 rounded-lg ${style.desc2}`}>
+                                <Image src={d2} fill className='rounded-lg' />
                    </div>
-                   <div className={`rounded-lg w-[300px] h-[150px] absolute bottom-0 right-0 z-10 float-left rounded-lg border-2 border-white shadow-xl ${style.desc22}`}>
-
+                   <div className={`rounded-lg w-[300px] h-[150px] absolute bottom-0 right-0 z-10 float-left border-2 border-white shadow-xl ${style.desc22}`}>
+                                <Image src={d2} fill className='rounded-lg' />
                    </div>
                </div>
                {/* Description div */}
@@ -54,11 +59,11 @@ export default function Description(){
                </div>
                {/* Background image div */}
                <div className={`basis-1/2 w-[600px] h-[350px] relative`}>
-                   <div className={`rounded-lg w-[500px] h-[300px] relative float-right z-1 rounded-lg ${style.desc3}`}>
-                   
+                   <div className={`rounded-lg w-[500px] h-[300px] relative float-right z-1 ${style.desc3}`}>
+                                <Image src={d3} fill className='rounded-lg' />
                    </div>
-                   <div className={`rounded-lg w-[300px] h-[150px] absolute bottom-0 left-0 z-10 float-left rounded-lg border-2 border-white shadow-xl ${style.desc33}`}>
-
+                   <div className={` w-[300px] h-[150px] absolute bottom-0 left-0 z-10 float-left rounded-lg border-2 border-white shadow-xl ${style.desc33}`}>
+                                <Image src={d3} fill className='rounded-lg' />
                    </div>
                </div>
                </div>
@@ -67,11 +72,11 @@ export default function Description(){
                <div className="lg:flex lg:flex-row pb-[150px]">
                {/* Description div */}
                <div className={`basis-1/2 w-[600px] h-[350px] relative`}>
-                   <div className={`rounded-lg w-[500px] h-[300px] relative float-left z-1 rounded-lg ${style.desc4}`}>
-                   
+                   <div className={`rounded-lg w-[500px] h-[300px] relative float-left z-1 ${style.desc4}`}>
+                                <Image src={d4} fill className='rounded-lg' />
                    </div>
-                   <div className={`rounded-lg w-[300px] h-[150px] absolute bottom-0 right-0 z-10 float-left rounded-lg border-2 border-white shadow-xl ${style.desc44}`}>
-
+                   <div className={`rounded-lg w-[300px] h-[150px] absolute bottom-0 right-0 z-10 float-left  border-2 border-white shadow-xl ${style.desc44}`}>
+                                <Image src={d4} fill className='rounded-lg' />
                    </div>
                </div>
                <div className="basis-1/2 pl-[40px] md:pt-[40px]">
@@ -90,11 +95,11 @@ export default function Description(){
             <h1 className="font-extrabold text-[30px] text-center font-emilio text-red-900 pb-[25px] pt-[50px] pb-[5px]">Counselling Services</h1>
             {/* images */}
             <div className={`w-[350px] h-[170px] relative`}>
-                   <div className={`rounded-lg w-[260px] h-[146px] relative float-right z-1 rounded-lg ${style.mdesc1}`}>
-                   
+                   <div className={`rounded-lg w-[260px] h-[146px] relative float-right z-1  ${style.mdesc1}`}>
+                            <Image src={d1} fill className='rounded-lg' />
                    </div>
-                   <div className={`rounded-lg w-[156px] h-[78px] absolute bottom-0 left-0 z-10 float-left rounded-lg border-2 border-white shadow-xl ${style.mdesc11}`}>
-
+                   <div className={`rounded-lg w-[156px] h-[78px] absolute bottom-0 left-0 z-10 float-left border-2 border-white shadow-xl ${style.mdesc11}`}>
+                            <Image src={d1} fill className='rounded-lg' />
                    </div>
                </div>
                {/* description */}
@@ -104,15 +109,15 @@ export default function Description(){
             </div>
 
             <div className="w-full h-max px-[50px] pb-[20px] bg-white">
-            <h1 className="font-extrabold text-[30px] text-center font-emilio text-red-900 pb-[25px] pt-[50px] pb-[5px]">The Helping Hand</h1>
+            <h1 className="font-extrabold text-[30px] text-center font-emilio text-red-900 pt-[50px] pb-[5px]">The Helping Hand</h1>
             {/* image  */}
             <div className={`w-[350px] h-[170px] pr-[20px] relative`}>
                    {/* Background image div */}
-                   <div className={`rounded-lg w-[260px] h-[146px] relative float-left z-1 rounded-lg ${style.mdesc2}`}>
-                    
+                   <div className={`rounded-lg w-[260px] h-[146px] relative float-left z-1 ${style.mdesc2}`}>
+                            <Image src={d2} fill className='rounded-lg' />
                    </div>
-                   <div className={`rounded-lg w-[156px] h-[78px] absolute bottom-0 right-0 z-10 float-left rounded-lg border-2 border-white shadow-xl ${style.mdesc22}`}>
-
+                   <div className={` w-[156px] h-[78px] absolute bottom-0 right-0 z-10 float-left rounded-lg border-2 border-white shadow-xl ${style.mdesc22}`}>
+                            <Image src={d2} fill className='rounded-lg' />
                    </div>
                </div>
                {/* Description */}
@@ -124,11 +129,11 @@ export default function Description(){
             <h1 className="font-extrabold text-[30px] text-center font-emilio text-red-900 pb-[25px] pt-[50px] pb-[5px]">Gains From Seeking Counseling </h1>
             {/* images */}
             <div className={`w-[350px] h-[170px] relative`}>
-                   <div className={`rounded-lg w-[260px] h-[146px] relative float-right z-1 rounded-lg ${style.mdesc3}`}>
-                   
+                   <div className={`w-[260px] h-[146px] relative float-right z-1 rounded-lg ${style.mdesc3}`}>
+                            <Image src={d3} fill className='rounded-lg' />
                    </div>
-                   <div className={`rounded-lg w-[156px] h-[78px] absolute bottom-0 left-0 z-10 float-left rounded-lg border-2 border-white shadow-xl ${style.mdesc33}`}>
-
+                   <div className={`w-[156px] h-[78px] absolute bottom-0 left-0 z-10 float-left rounded-lg border-2 border-white shadow-xl ${style.mdesc33}`}>
+                            <Image src={d3} fill className='rounded-lg' />
                    </div>
                </div>
                {/* description */}
@@ -141,11 +146,11 @@ export default function Description(){
             {/* image  */}
             <div className={`w-[350px] h-[170px] pr-[20px] relative`}>
                    {/* Background image div */}
-                   <div className={`rounded-lg w-[260px] h-[146px] relative float-left z-1 rounded-lg ${style.mdesc4}`}>
-                    
+                   <div className={`w-[260px] h-[146px] relative float-left z-1 rounded-lg ${style.mdesc4}`}>
+                            <Image src={d4} fill className='rounded-lg' />
                    </div>
-                   <div className={`rounded-lg w-[156px] h-[78px] absolute bottom-0 right-0 z-10 float-left rounded-lg border-2 border-white shadow-xl ${style.mdesc44}`}>
-
+                   <div className={`w-[156px] h-[78px] absolute bottom-0 right-0 z-10 float-left rounded-lg border-2 border-white shadow-xl ${style.mdesc44}`}>
+                            <Image src={d4} fill className='rounded-lg' />
                    </div>
                </div>
                {/* Description */}

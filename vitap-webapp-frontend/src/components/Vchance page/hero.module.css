@@ -1,20 +1,20 @@
 .welcome{
-  background-image: '@/assets/Vchance/hero.png';
+  background-image: url('../../assets/images/Vchance/hero.png');
   background-size: auto auto;
   background-repeat: no-repeat;
 }
 .vlogo{
-  background-image: '@/assets/Vchance/vlogo.png';
+  background-image: url('../../assets/images/Vchance/vlogo.png');
   background-size: 560px 300px;
   background-repeat: no-repeat;
 }
 .mwelcome{
-  background-image: '@/assets/Vchance/hero.png';
+  background-image: url('../../assets/images/Vchance/hero.png');
   background-size: auto 144px;
   background-repeat: no-repeat;
 }
 .mvlogo{
-  background-image: '@/assets/Vchance/vlogo.png';
+  background-image: url('../../assets/images/Vchance/vlogo.png');
   background-size: 200px 107px;
   background-repeat: no-repeat;
 }

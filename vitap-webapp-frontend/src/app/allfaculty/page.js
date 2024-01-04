@@ -5,7 +5,7 @@ import NavbarBottom from '@/components/HomePage Components/Navbar/NavbarBottom'
 import NavbarUpper from '@/components/HomePage Components/Navbar/NavbarUpper'
 import React from 'react'
 
-const page = (params) => {
+const page = () => {
     return (
         <div>
             <NavbarUpper />

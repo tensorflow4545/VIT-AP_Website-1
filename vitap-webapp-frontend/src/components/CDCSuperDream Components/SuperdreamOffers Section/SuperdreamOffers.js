@@ -15,13 +15,13 @@ const SuperdreamOffers = () => {
 
     return (
         <>
-            <div className="max-w-[1560px] w-[100%] min-h-[700px] lx:min-h-[900px] h-[100%] mx-auto bg-[#FCE3E5] hidden ls:flex flex-col relative overflow-hidden ">
+            <div className="max-w-[1560px] w-[100%] min-h-[700px] lg:min-h-[900px] h-[100%] mx-auto bg-[#FCE3E5] hidden lg:flex flex-col relative overflow-hidden ">
                 <div className='absolute top-[60%] right-16 max-w-[80px] w-[100%] max-h-[40px] h-[100%] flex justify-between items-center'>
                     <button className='bg-white rounded-full' onClick={() => setIndex(index - 1)}><GrFormPrevious size={35} /></button>
                     <button className='bg-white rounded-full' onClick={() => setIndex(index + 1)}><MdNavigateNext size={35} /></button>
                 </div>
                 <div className='flex-1 flex flex-col justify-center items-center gap-4'>
-                    <h1 className='text-[#650010] text-center text-[32px] font-bold'>2024 Graduating Batch Students Grab Super Dream Offers</h1>
+                    <h1 className='text-[#650010] text-center text-[32px] font-bold font-Emilio'>2024 Graduating Batch Students Grab Super Dream Offers</h1>
                     <div className='flex gap-5'>
                         <div className='flex flex-col justify-center items-end'>
                             <div>
@@ -82,7 +82,7 @@ const SuperdreamOffers = () => {
                                 </svg>
                             </div>
                         </div>
-                        <div className='lx:w-[550px] lx:h-[350px] w-[400px] h-[250px] relative'>
+                        <div className='lg:w-[550px] lg:h-[350px] w-[400px] h-[250px] relative'>
                             <Image src={superdreamImages[index].imgUrl} alt='' fill />
                         </div>
                         <div className='flex flex-col justify-center items-start'>
@@ -148,72 +148,72 @@ const SuperdreamOffers = () => {
 
                 </div>
                 <div className='basis-1/4 flex justify-center items-center gap-2 mb-10 slide-track'>
-                    <div className='lx:min-w-[250px] w-[100%] lx:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out' onClick={() => setIndex(0)}>
+                    <div className='lg:min-w-[250px] w-[100%] lg:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out' onClick={() => setIndex(0)}>
                         <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
                     </div>
-                    <div className='lx:min-w-[250px] w-[100%] lx:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out' onClick={() => setIndex(1)}>
+                    <div className='lg:min-w-[250px] w-[100%] lg:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out' onClick={() => setIndex(1)}>
                         <Image src={"/super-dream-offer 1.png"} fill alt='package' className='group-hover:scale-110' />
                     </div>
-                    <div className='lx:min-w-[250px] w-[100%] lx:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
+                    <div className='lg:min-w-[250px] w-[100%] lg:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
                         <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
                     </div>
-                    <div className='lx:min-w-[250px] w-[100%] lx:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
+                    <div className='lg:min-w-[250px] w-[100%] lg:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
                         <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
                     </div>
-                    <div className='lx:min-w-[250px] w-[100%] lx:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
+                    <div className='lg:min-w-[250px] w-[100%] lg:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
                         <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
                     </div>
-                    <div className='lx:min-w-[250px] w-[100%] lx:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
+                    <div className='lg:min-w-[250px] w-[100%] lg:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
                         <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
                     </div>
-                    <div className='lx:min-w-[250px] w-[100%] lx:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
+                    <div className='lg:min-w-[250px] w-[100%] lg:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
                         <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
                     </div>
-                    <div className='lx:min-w-[250px] w-[100%] lx:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
+                    <div className='lg:min-w-[250px] w-[100%] lg:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
                         <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
                     </div>
-                    <div className='lx:min-w-[250px] w-[100%] lx:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
+                    <div className='lg:min-w-[250px] w-[100%] lg:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
                         <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
                     </div>
 
-                    <div className='lx:min-w-[250px] w-[100%] lx:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
+                    <div className='lg:min-w-[250px] w-[100%] lg:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
                         <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
                     </div>
-                    <div className='lx:min-w-[250px] w-[100%] lx:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
+                    <div className='lg:min-w-[250px] w-[100%] lg:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
                         <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
                     </div>
-                    <div className='lx:min-w-[250px] w-[100%] lx:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
+                    <div className='lg:min-w-[250px] w-[100%] lg:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
                         <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
                     </div>
-                    <div className='lx:min-w-[250px] w-[100%] lx:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
+                    <div className='lg:min-w-[250px] w-[100%] lg:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
                         <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
                     </div>
-                    <div className='lx:min-w-[250px] w-[100%] lx:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
+                    <div className='lg:min-w-[250px] w-[100%] lg:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
                         <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
                     </div>
-                    <div className='lx:min-w-[250px] w-[100%] lx:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
+                    <div className='lg:min-w-[250px] w-[100%] lg:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
                         <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
                     </div>
-                    <div className='lx:min-w-[250px] w-[100%] lx:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
+                    <div className='lg:min-w-[250px] w-[100%] lg:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
                         <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
                     </div>
-                    <div className='lx:min-w-[250px] w-[100%] lx:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
+                    <div className='lg:min-w-[250px] w-[100%] lg:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
                         <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
                     </div>
-                    <div className='lx:min-w-[250px] w-[100%] lx:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
+                    <div className='lg:min-w-[250px] w-[100%] lg:min-h-[250px] h-[100%] min-w-[200px] min-h-[200px] relative slide overflow-hidden group transition-all duration-300 ease-in-out'>
                         <Image src={"/package.png"} fill alt='package' className='group-hover:scale-110' />
                     </div>
 
                 </div>
             </div>
 
-            <div className='w-full max-h-[550px] bg-[#FCE3E5] block ls:hidden relative overflow-hidden'>
+            <div className='w-full max-h-[550px] bg-[#FCE3E5] block lg:hidden relative overflow-hidden'>
                 <div className='absolute top-[60%] left-[10%] max-w-[60px] w-[100%] max-h-[60px] h-[100%] flex justify-between items-center'>
                     <button className='bg-white rounded-full' onClick={() => setIndex(index - 1)}><GrFormPrevious size={25} /></button>
                     <button className='bg-white rounded-full' onClick={() => setIndex(index + 1)}><MdNavigateNext size={25} /></button>
                 </div>
                 <div className='flex flex-col gap-4 text-center px-[30px] py-[20px]'>
-                    <h1 className='text-[#650010] text-center text-[22px] font-bold'>2024 Graduating Batch Students Grab Super Dream Offers</h1>
+                    <h1 className='text-[#650010] text-center text-[22px] font-bold font-Emilio'>2024 Graduating Batch Students Grab Super Dream Offers</h1>
 
                     <div className='flex gap-5 justify-center items-center'>
                         <div className='flex flex-col justify-center items-end'>

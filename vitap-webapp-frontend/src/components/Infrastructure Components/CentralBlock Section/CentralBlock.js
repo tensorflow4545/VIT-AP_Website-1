@@ -9,7 +9,7 @@ const CentralBlock = () => {
                     <h1 className='text-[42px] font-Emilio text-[#000] capitalize px-[15px]'>Central Block</h1>
                     <p className='max-w-[1000px] mx-auto font-Montserrat text-[16px] font-normal px-[15px]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </div>
-                <div className='max-w-[1000px] min-h-[300px] ls:min-h-[400px] lx:min-h-[500px] w-[100%] relative mx-auto px-[15px]'>
+                <div className='max-w-[1000px] min-h-[300px] lg:min-h-[400px] xl:min-h-[500px] w-[100%] relative mx-auto px-[15px]'>
                     <Image src={"/cb.png"} alt=''fill/>
                 </div>
             </div>

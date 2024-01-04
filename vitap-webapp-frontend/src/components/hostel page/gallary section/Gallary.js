@@ -11,8 +11,8 @@ export default function Gallary(){
                
                {/* basis */}
                <div className="basis-1/3 pt-[148px]">
-               <p className="text-[48px] font-[400px] text-emilio text-dark">Gallery</p>
-               <p className="text-[16px] font-[500px] text-montserrat pt-[18px]">Lorem ipsum dolor sit amet consectetur. A nulla donec cursus tincidunt egestas eget dolor ultricies neque. Interdum Lorem ipsum dolor sit amet consectetur. A nulla donec cursus tincidunt egestas eget dolor ultricies neque. Interdum Lorem ipsum dolor sit amet consectetur. A nulla donec cursus tincidunt egestas eget dolor ultricies neque. Interdum Lorem ipsum dolor sit amet consectetur. A nulla donec cursus tincidunt egestas eget dolor ultricies neque. Interdum</p>
+               <p className="text-[48px] font-[400px] font-Emilio text-dark">Gallery</p>
+               <p className="text-[16px] font-[500px] font-Montserrat pt-[18px]">Lorem ipsum dolor sit amet consectetur. A nulla donec cursus tincidunt egestas eget dolor ultricies neque. Interdum Lorem ipsum dolor sit amet consectetur. A nulla donec cursus tincidunt egestas eget dolor ultricies neque. Interdum Lorem ipsum dolor sit amet consectetur. A nulla donec cursus tincidunt egestas eget dolor ultricies neque. Interdum Lorem ipsum dolor sit amet consectetur. A nulla donec cursus tincidunt egestas eget dolor ultricies neque. Interdum</p>
                </div>
 
               {/* basis */}
