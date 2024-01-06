@@ -20,16 +20,19 @@ const CampusGallery = () => {
     }
 
     return (
-        <div className="max-w-[1560px] w-[100%] min-h-[650px] h-[100%] mx-auto overflow-hidden flex flex-col justify-center gap-10 items-center">
+        <div className="max-w-[1560px] w-[100%] max-h-[1050px] py-[60px] mx-auto overflow-hidden flex flex-col justify-center gap-10 items-center relative">
             <h1 className='text-[#650010] font-Emilio text-[42px] font-bold'>Gallery</h1>
-            <Image src={sliderData.url} height={300} width={500} alt=''/>
-            <div className='flex gap-4'>
+            <div className='max-h-[450px] h-[100%] max-w-[1016px] overflow-hidden px-8 lg:px-0'>
+                <Image src={sliderData.url} height={452} width={1016} alt=''/>
+            </div>
+            <div className='flex gap-4 '>
                 {
                     imagePath.map((data, i) => (
-                        <Image key={data.id} src={data.url} height={100} width={150} onClick={() => handleClick(i)} alt='' className={`${sliderData.id === data.id ? "-translate-y-4" : ""} transition-all ease-in-out duration-300`}/>
+                        <Image key={data.id} src={data.url} height={208} width={208} onClick={() => handleClick(i)} alt='' className={`${sliderData.id === data.id ? "-translate-y-4" : ""} transition-all ease-in-out duration-300 shadow-2xl`}/>
                     ))
                 }
             </div>
+            <div className='w-full h-[211px] bg-[#650010] absolute top-[50%] left-0 -z-10'></div>
             <div className='flex justify-center items-center'>
                 <button className='border border-[#650010] text-[#650010] p-5 hover:bg-gradient-to-r hover:from-[#650010] hover:to-red-700 transition-all duration-300 hover:text-white hover:border-none text-semibold text-[16px] font-Montserrat'>Visit Gallery Room</button>
             </div>
