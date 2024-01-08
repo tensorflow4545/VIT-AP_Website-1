@@ -367,53 +367,77 @@ const GRC = () => {
           committee by any means and additionally through the following email
           address grievance.redressal@vitap.ac.in{" "}
         </p>
-        <div className="mx-auto max-w-[1016px] h-[563px] mt-[36px] flex flex-col sm:flex-row relative px-[30px] md:px-[50px] lg:px-[100px]">
-          <div className="max-w-[440px] mx-auto ">
-            <p className="mt-[96px] text-[24px] sm:text-[40px] lg:text-[55px] font-Emilio">Contact Us</p>
-            <p className="text-[14px] md:text-[18px] ">
-              Feel free to contact us at any time we will get back to you as
-              soon as we can
-            </p>
-            <form>
-              <div className="mt-[15px] font-Montserrat">
-                <label htmlFor="name">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  className="border-b-2 w-full focus:outline-none"
-                />
-              </div>
+        <div className="mx-auto max-w-[370px] sm:max-w-[1016px] h-[594px] sm:h-[563px] mt-[36px] flex flex-col sm:flex-row relative px-[30px] md:px-[50px] lg:px-[100px]">
+          <div className="max-w-[300px] shadow-2xl sm:shadow-none p-[20px] sm:p-0 sm:max-w-[440px] mx-auto">
+            <div className="">
+              <p className="mt-[96px] text-[24px] sm:text-[40px] lg:text-[55px] text-center sm:text-left font-Emilio">Contact Us</p>
+              <p className="text-[14px] md:text-[18px] ">
+                Feel free to contact us at any time we will get back to you as
+                soon as we can
+              </p>
+              <form>
+                <div className="mt-[15px] font-Montserrat">
+                  <label htmlFor="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    className="border-b-2 w-full focus:outline-none"
+                  />
+                </div>
 
-              <div className="mt-[15px] font-Montserrat">
-                <label htmlFor="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  className="border-b-2 w-full focus:outline-none"
-                />
-              </div>
+                <div className="mt-[15px] font-Montserrat">
+                  <label htmlFor="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    className="border-b-2 w-full focus:outline-none"
+                  />
+                </div>
 
-              <div className="mt-[15px] font-Montserrat">
-                <label htmlFor="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  className="border-b-2 w-full focus:outline-none"
-                />
-              </div>
+                <div className="mt-[15px] font-Montserrat">
+                  <label htmlFor="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    className="border-b-2 w-full focus:outline-none"
+                  />
+                </div>
 
-              <button
-                type="submit"
-                className="font-Montserrat text-white bg-[#650010] w-full h-[48px]"
-              >
-                Send
-              </button>
-            </form>
+                <button
+                  type="submit"
+                  className="font-Montserrat text-white bg-[#650010] w-full h-[48px]"
+                >
+                  Send
+                </button>
+              </form>
+            </div>
           </div>
-          <div className="w-full sm:w-[241px] bg-[#5C0E14] h-[563px] ml-[203px] "></div>
-          <div className="max-w-[300px] lg:max-w-[360px] mx-auto h-[369px] mt-[97px] bg-[#F9C6CB] absolute top-[3%] right-[10%] rounded">
+          <div className="sm:hidden bg-[#F9C6CB] w-[260px] h-[223px] mx-auto flex flex-col p-5 gap-3">
+            <p className="font-Montserrat font-bold text-[13px]">
+              Info
+            </p>
+            <div className="text-[#650010] flex text-[13px] items-center">
+              <RxEnvelopeClosed />
+              <p className="ml-[10px]">grievance.redressal@vitap.ac.in</p>
+            </div>
+            <div className="text-[#650010] flex text-[13px] items-center">
+              <FiPhone />
+              <p className="ml-[10px]">+91 8333909617</p>
+            </div>
+            <div className="text-[#650010] flex text-[13px] items-center">
+              <HiMiniBuildingOffice2 />
+              <p className="ml-[10px]">AB-1 G-01</p>
+            </div>
+            <div className="text-[#650010] flex text-[13px] items-center">
+              <FaRegClock />
+              <p className="ml-[10px]">09:00-18:00</p>
+            </div>
+          </div>
+          <div className="block sm:hidden min-w-[300px] -mt-[200px] -z-10 min-h-[150px] bg-[#650010] shadow-2xl sm:shadow-none p-[20px] sm:p-0 sm:max-w-[440px] mx-auto"></div>
+          <div className="hidden sm:block w-full sm:w-[241px] bg-[#5C0E14] h-[563px] ml-[203px] "></div>
+          <div className="hidden sm:block max-w-[300px] lg:max-w-[360px] mx-auto h-[369px] mt-[97px] bg-[#F9C6CB] absolute top-[3%] right-[10%] rounded">
             <p className="font-Montserrat mt-[67px] ml-[20px] font-bold text-[18px] lg:text-[22px] pb-[15px]">
               Info
             </p>
