@@ -1,13 +1,30 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import image0 from "../../../assets/images/Homepage Images/navbar-images/0.png";
-import image1 from "../../../assets/images/Homepage Images/navbar-images/1.png";
-import image2 from "../../../assets/images/Homepage Images/navbar-images/2.png";
-import image3 from "../../../assets/images/Homepage Images/navbar-images/3.png";
-import image4 from "../../../assets/images/Homepage Images/navbar-images/4.png";
-import image5 from "../../../assets/images/Homepage Images/navbar-images/5.png";
-import image6 from "../../../assets/images/Homepage Images/navbar-images/6.png";
+import image0 from "../../../assets/images/Homepage Images/navbar-images/Nav_Bar_About.avif";
+import image1 from "../../../assets/images/Homepage Images/navbar-images/Nav_Bar_Vision and Mission.avif";
+import image2 from "../../../assets/images/Homepage Images/navbar-images/Nav_Bar_Leadership.avif";
+import image3 from "../../../assets/images/Homepage Images/navbar-images/Nav_Bar_Governance.avif";
+import image4 from "../../../assets/images/Homepage Images/navbar-images/Nav_Bar_FAQ.avif";
+import image5 from "../../../assets/images/Homepage Images/navbar-images/Nav_Bar_Contact Us.avif";
+import image6 from "../../../assets/images/Homepage Images/navbar-images/Nav_Bar_Application Process.avif";
+import image7 from "../../../assets/images/Homepage Images/navbar-images/Nav_Bar_Fee and Scholarships.avif";
+import image8 from "../../../assets/images/Homepage Images/navbar-images/Nav_Bar_Stars.avif";
+import image9 from "../../../assets/images/Homepage Images/navbar-images/Nav_Bar_Affidavit.avif";
+import image10 from "../../../assets/images/Homepage Images/navbar-images/Nav_Bar_Videos.avif";
+import image11 from "../../../assets/images/Homepage Images/navbar-images/Nav_Bar_Enquiry.avif";
+import image12 from "../../../assets/images/Homepage Images/navbar-images/Nav_Bar_Super Dream Offers.avif";
+import image13 from "../../../assets/images/Homepage Images/navbar-images/Nav_Bar_Dream Offers.avif";
+import image14 from "../../../assets/images/Homepage Images/navbar-images/Nav_Bar_Internships.avif";
+import image15 from "../../../assets/images/Homepage Images/navbar-images/Nav_Bar_Industrial Collaborations.avif";
+import image16 from "../../../assets/images/Homepage Images/navbar-images/Nav_Bar_CDC Office.avif";
+import image17 from "../../../assets/images/Homepage Images/navbar-images/Nav_Bar_Statistics.avif";
+import image18 from "../../../assets/images/Homepage Images/navbar-images/Nav_Bar_CDC Overview.avif";
+import image19 from "../../../assets/images/Homepage Images/navbar-images/Nav_Bar_Academic Research.avif";
+import image20 from "../../../assets/images/Homepage Images/navbar-images/Nav_Bar_URE Projects.avif";
+import image21 from "../../../assets/images/Homepage Images/navbar-images/Nav_Bar_VTBIF.avif";
+
+
 import "./navbar.css";
 import { useState, useEffect } from "react";
 
@@ -104,12 +121,16 @@ const NavbarBottom = () => {
                     <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[430px] top-[45px]"></span>
 
                     <ol className="flex-row font-[400] text-[20px] h-full pt-[60px] pl-[110px] space-y-[19px]">
-                      <li className=" custom-list-item   w-[fit-content]">
+                      <li className="absolute left-[600px]  top-[60px]">
+                        <Image alt="A descriptive text here" src={image0} />
+                      </li>
+
+                      <li className="peer/vam custom-list-item w-[fit-content]">
                         <h1>Vision & Mission</h1>
                       </li>
 
-                      <li className="absolute left-[600px]  top-[40px]  ">
-                        <Image alt="A descriptive text here" src={image0} />
+                      <li className="absolute left-[600px] invisible top-[40px] peer-hover/vam:visible">
+                        <Image alt="A descriptive text here" src={image1} />
                       </li>
 
                       <li className="peer/leadership custom-list-item w-[fit-content]">
@@ -158,7 +179,7 @@ const NavbarBottom = () => {
               <div className="hidden group-hover:block hover:block  w-full h-[566px] absolute top-[55px] box-content  right-0 z-30">
                 <div className="bg-white w-full text-black font-Montserrant h-full relative top-[20px] flex-row flex">
 
-                  <ol className="flex-row font-[400] text-[20px]  pt-[60px] pl-[110px] space-y-[19px]">
+                  <ol className="flex-row font-[400] text-[20px]  pt-[60px] pl-[70px] space-y-[19px]">
                     <li
                       className={` hover:cursor-pointer custom-list-item w-[fit-content] ${underline}`}
 
@@ -179,33 +200,33 @@ const NavbarBottom = () => {
                     </li>
                     <li className="peer/ap custom-list-item w-[fit-content]" onMouseEnter={() => { setProgrammes([]); setProgramme(null); setunderline("") }} onMouseLeave={() => { setProgramme("Undergraduate") }}>Application Process</li>
                     <li className="absolute left-[600px] invisible top-[20px] peer-hover/ap:visible">
-                      <Image alt="A descriptive text here h-full" src={image0} />
+                      <Image alt="A descriptive text here h-full" src={image6} />
                     </li>
                     <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => { setProgrammes([]); setProgramme(null); setunderline("") }} onMouseLeave={() => { setProgramme("Undergraduate") }}>Fees & Scholarship</li>
                     <li className="absolute left-[600px] invisible top-[20px] peer-hover/fas:visible">
-                      <Image alt="A descriptive text here" src={image1} />
+                      <Image alt="A descriptive text here" src={image7} />
                     </li>
-                    <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => { setProgrammes([]); setProgramme(null); setunderline("") }} onMouseLeave={() => { setProgramme("Undergraduate") }}>STARS</li>
-                    <li className="absolute left-[600px] invisible top-[20px] peer-hover/fas:visible">
-                      <Image alt="A descriptive text here" src={image2} />
+                    <li className="peer/stars custom-list-item w-[fit-content]" onMouseEnter={() => { setProgrammes([]); setProgramme(null); setunderline("") }} onMouseLeave={() => { setProgramme("Undergraduate") }}>STARS</li>
+                    <li className="absolute left-[600px] invisible top-[20px] peer-hover/stars:visible">
+                      <Image alt="A descriptive text here" src={image8} />
                     </li>
-                    <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => { setProgrammes([]); setProgramme(null); setunderline("") }} onMouseLeave={() => { setProgramme("Undergraduate") }}>Affidavit</li>
-                    <li className="absolute left-[600px] invisible top-[20px] peer-hover/fas:visible">
-                      <Image alt="A descriptive text here" src={image3} />
+                    <li className="peer/aff custom-list-item w-[fit-content]" onMouseEnter={() => { setProgrammes([]); setProgramme(null); setunderline("") }} onMouseLeave={() => { setProgramme("Undergraduate") }}>Affidavit</li>
+                    <li className="absolute left-[600px] invisible top-[20px] peer-hover/aff:visible">
+                      <Image alt="A descriptive text here" src={image9} />
                     </li>
-                    <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => { setProgrammes([]); setProgramme(null); setunderline("") }} onMouseLeave={() => { setProgramme("Undergraduate") }}>Videos</li>
-                    <li className="absolute left-[600px] invisible top-[20px] peer-hover/fas:visible">
-                      <Image alt="A descriptive text here" src={image4} />
+                    <li className="peer/vid custom-list-item w-[fit-content]" onMouseEnter={() => { setProgrammes([]); setProgramme(null); setunderline("") }} onMouseLeave={() => { setProgramme("Undergraduate") }}>Videos</li>
+                    <li className="absolute left-[600px] invisible top-[20px] peer-hover/vid:visible">
+                      <Image alt="A descriptive text here" src={image10} />
                     </li>
-                    <li className="peer/fas custom-list-item w-[fit-content]" onMouseEnter={() => { setProgrammes([]); setProgramme(null); setunderline("") }} onMouseLeave={() => { setProgramme("Undergraduate") }}>Enquiry</li>
-                    <li className="absolute left-[600px] invisible top-[20px] peer-hover/fas:visible">
-                      <Image alt="A descriptive text here" src={image5} />
+                    <li className="peer/enq custom-list-item w-[fit-content]" onMouseEnter={() => { setProgrammes([]); setProgramme(null); setunderline("") }} onMouseLeave={() => { setProgramme("Undergraduate") }}>Enquiry</li>
+                    <li className="absolute left-[600px] invisible top-[20px] peer-hover/enq:visible">
+                      <Image alt="A descriptive text here" src={image11} />
                     </li>
                   </ol>
-                  <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[400px] top-[45px]"></span>
+                  <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[350px] top-[45px]"></span>
 
                   <ol
-                    className={` ${""}   flex-row font-[400] text-[20px]  pt-[60px] pl-[110px] space-y-[19px] absolute left-[350px] `}
+                    className={` ${""}   flex-row font-[400] text-[20px]  pt-[60px] pl-[70px] space-y-[19px] absolute left-[350px] `}
                   >
                     {Programmes.map((Program, index) => {
                       return <li key={index} className={`custom-list-item w-[fit-content] ${Programme === Program ? "custom-underline decoration-[#650010] underline-offset-8 decoration-[6px]" : ""
@@ -213,18 +234,27 @@ const NavbarBottom = () => {
                     })}
                   </ol>
                   {Programme === "Undergraduate" || Programme === "Dual Degree" || Programme === "Integrated" || Programme === "Postgraduate" || Programme === "Ph.D." ? (
-                    <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[750px] top-[45px]"></span>) : null}
+                    <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[670px] top-[45px]"></span>) : null}
                   {Programme === "Undergraduate" ? (
                     <div className="flex">
-                      <ol className="flex-row font-[400] text-[20px] pt-[60px] pl-[550px] space-y-[19px]">
-                        <lh className="underline decoration-primary underline-offset-8 decoration-[6px] text-[20px]">Engineering</lh>
+                      <ol className="flex-row font-[400] text-[20px] pt-[60px] pl-[470px] space-y-[19px]">
+                        {/* <lh className="underline decoration-primary underline-offset-8 decoration-[6px] text-[20px]">Engineering</lh> */}
                         <li className="custom-list-item w-[fit-content]">B.Tech. CSE</li>
+                        <li className="custom-list-item w-[fit-content]">B.Tech. CSE (AI & ML)</li>
+                        <li className="custom-list-item w-[fit-content]">B.Tech. CSE (Blockchain)</li>
+                        <li className="custom-list-item w-[fit-content]">B.Tech. CSE (Cyber Security)</li>
+                        <li className="custom-list-item w-[fit-content]">B.Tech. CSE (Data Analytics)</li>
+                        <li className="custom-list-item w-[fit-content]">B.Tech. CSE (Software Engineering)</li>
                         <li className="custom-list-item w-[fit-content]">B.Tech. CSBS</li>
                         <li className="custom-list-item w-[fit-content]">B.Tech. ECE</li>
-                        <li className="custom-list-item w-[fit-content]">B.Tech. Mechanical</li>
                       </ol>
-                      <ol className="flex-row font-[400] text-[20px] pt-[60px] pl-[110px] space-y-[19px]">
-                        <lh className="underline decoration-primary underline-offset-8 decoration-[6px] text-[20px]">Management</lh>
+                      <ol className="flex-row font-[400] text-[20px] pt-[60px] pl-[40px] space-y-[19px]">
+                        {/* <lh className="underline decoration-primary underline-offset-8 decoration-[6px] text-[20px]">Management</lh> */}
+                        <li className="custom-list-item w-[fit-content]">B.Tech. ECE (Embedded Systems)</li>
+                        <li className="custom-list-item w-[fit-content]">B.Tech. ECE (VLSI)</li>
+                        <li className="custom-list-item w-[fit-content]">B.Tech. Mechanical</li>
+                        <li className="custom-list-item w-[fit-content]">B.Tech. Mechanical (Automotive Design)</li>
+                        <li className="custom-list-item w-[fit-content]">B.Tech. Mechanical (Robotics)</li>
                         <li className="custom-list-item w-[fit-content]">BBA</li>
                         <li className="custom-list-item w-[fit-content]">B.Com. Finance</li>
                       </ol>
@@ -327,49 +357,49 @@ const NavbarBottom = () => {
                       </li>
 
                       <li className="absolute left-[600px]  top-[40px]  ">
-                        <Image alt="A descriptive text here" src={image0} />
+                        <Image alt="A descriptive text here" src={image18} />
                       </li>
 
                       <li className="peer/leadership custom-list-item w-[fit-content]">
                       <Link href="/cdc-superdream">Superdream offers</Link>
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/leadership:visible">
-                        <Image alt="A descriptive text here" src={image2} />
+                        <Image alt="A descriptive text here" src={image12} />
                       </li>
 
                       <li className="peer/Governance custom-list-item w-[fit-content]">
                         <Link href="cdc-dream">Dream offers</Link>
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/Governance:visible">
-                        <Image alt="A descriptive text here" src={image3} />
+                        <Image alt="A descriptive text here" src={image13} />
                       </li>
 
                       <li className="peer/contactus custom-list-item w-[fit-content]">
                         <Link href="/internships">Internships</Link>
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/contactus:visible">
-                        <Image alt="A descriptive text here" src={image4} />
+                        <Image alt="A descriptive text here" src={image14} />
                       </li>
 
                       <li className="peer/faq custom-list-item w-[fit-content]">
                         Industrial Collaboration
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/faq:visible">
-                        <Image alt="A descriptive text here" src={image5} />
+                        <Image alt="A descriptive text here" src={image15} />
                       </li>
 
                       <li className="peer/cdc custom-list-item w-[fit-content]">
                         <Link href="/cdc-office">CDC Office</Link>
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/cdc:visible">
-                        <Image alt="A descriptive text here" src={image5} />
+                        <Image alt="A descriptive text here" src={image16} />
                       </li>
 
                       <li className="peer/Statistics custom-list-item w-[fit-content]">
                         <Link href="/cdc-statistics">Statistics</Link>
                       </li>
                       <li className="absolute left-[600px] invisible top-[40px] peer-hover/Statistics:visible">
-                        <Image alt="A descriptive text here" src={image5} />
+                        <Image alt="A descriptive text here" src={image17} />
                       </li>
                     </ol>
                   </div>
@@ -454,11 +484,11 @@ const NavbarBottom = () => {
                       }`} onMouseEnter={() => { setResearch("iiec") }}>IIEC</li>
                     <li className="custom-list-item w-[fit-content]" onMouseEnter={() => { setResearch("vitbif") }}>VITBIF</li>
                     {research === "ar" ? (<li className="absolute left-[600px] top-[50px] visible">
-                      <Image alt="A descriptive text here" src={image0} />
+                      <Image alt="A descriptive text here" src={image19} />
                     </li>) : research === "ure" ? (<li className="absolute left-[600px] top-[50px] visible">
-                      <Image alt="A descriptive text here" src={image1} />
+                      <Image alt="A descriptive text here" src={image20} />
                     </li>) : research === "vitbif" ? (<li className="absolute left-[600px] top-[50px] visible">
-                      <Image alt="A descriptive text here" src={image2} />
+                      <Image alt="A descriptive text here" src={image21} />
                     </li>) : null}
                   </ol>
                   <span className="w-[6px] h-[450px] bg-primary opacity-20 rounded-lg absolute left-[400px] top-[60px]"></span>
