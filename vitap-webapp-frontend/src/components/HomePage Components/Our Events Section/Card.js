@@ -7,7 +7,7 @@ const Card = ({ imgUrl, date, index, title }) => {
   return (
     <div
       key={index}
-      className="max-w-[380px] relative rounded-lg overflow-hidden w-[400px] h-[350px] cursor-pointer "
+      className="max-w-[400px] relative rounded-lg overflow-hidden w-[400px] h-[400px] cursor-pointer "
       onMouseEnter={() => { setIsHovered(true) }}
       onMouseLeave={() => { setIsHovered(false) }}
     >
@@ -19,13 +19,13 @@ const Card = ({ imgUrl, date, index, title }) => {
         src={imgUrl}
         alt="A descriptive text here"
         width={400}
-        height={350}
+        height={400}
         className="opacity-85 w-full h-full object-cover rounded-lg relative transition-all duration-500 ease-in overflow-hidden scale-1.5"
       />
 
       <div className="absolute bottom-[0px] right-[0px] justify-between items-right text-[20px] font-semibold  max-ls:text-[14px]">
         {isHovered === false ? (
-          <div className="flex gap-7 items-center justify-center bg-[#5C0E14] w-[80px] h-[80px] p-[20px] text-center text-white text-right rounded-sm max-ls:p-[10px] hover:w-[400px] hover:h-[350px] hover:bg-opacity-80 duration-3000">
+          <div className="flex gap-7 items-center justify-center bg-[#5C0E14] w-[80px] h-[80px] p-[20px] text-center text-white text-right rounded-sm max-ls:p-[10px] hover:w-[400px] hover:h-[400px] hover:bg-opacity-80 duration-3000">
 
             <div className="flex-1">
               <div className="flex w-full mb-2 items-center justify-center">
@@ -34,7 +34,7 @@ const Card = ({ imgUrl, date, index, title }) => {
                 </h1>
               </div>
             </div>
-          </div>) : (<div className="flex gap-7 items-center justify-center bg-[#5C0E14] w-[400px] h-[350px] p-[20px] text-center text-white text-right rounded-sm max-ls:p-[10px] bg-opacity-80 duration-3000">
+          </div>) : (<div className="flex gap-7 items-center justify-center bg-[#5C0E14] w-[400px] h-[400px] p-[20px] text-center text-white text-right rounded-sm max-ls:p-[10px] bg-opacity-80 duration-3000">
 
             <div className="flex-1">
               <div className="flex w-full p-4 mb-2 items-center justify-center">

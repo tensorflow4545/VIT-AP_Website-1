@@ -99,7 +99,7 @@ const FacultyPage = () => {
             <div className='grid md:grid-cols-5 max-w-[1250px] md:mx-auto items-center justify-center grid-cols-4 gap-5 mx-[30px]'>
                 {Professors.slice((numactive - 1) * 15, numactive * 15).map((professor) => (
                     (professor.Department === Department) ? (
-                        <Link key={professor.id} href={"/"}>
+                        <Link key={professor.id} href={`/${professor.Department}/faculty/profile/${professor.Employee_Id}`}>
                             <div className='border border-black ml-[15px] max-w-[210px] min-h-[250px] w-[100%] h-[100%] relative overflow-hidden font-Emilo cursor-pointer group hover:shadow-2xl'>
                                 <div className='max-w-[210px] w-[100%] min-h-[180px] relative overflow-hidden'>
                                     <Image src={`${process.env.NEXT_PUBLIC_API_URL}${professor?.Photo.data[0].attributes.url}`} alt={professor.Photo.data[0].attributes.alternativeText || 'Professor Image'} fill className='' />
