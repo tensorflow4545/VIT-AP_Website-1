@@ -54,7 +54,7 @@ const ConvocationSection = () => {
           </svg>
         </div>
       </div>
-      <div className="w-[100%] min-h-[400px] h-[100%] py-[40px] px-[150px] grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 justify-center items-center gap-5 max-md:px-[20px] max-lg:px-[0px] ">
+      <div className="w-[100%] min-h-[400px] h-[100%] py-[40px] px-[50px] md:px-[100px] lg:px-[150px] grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 justify-center items-center gap-5 max-md:px-[20px] max-lg:px-[0px] ">
         <div className=''>
           <Card url={"./convocards/card1.jpeg"} title={"Schedule"} />
         </div>

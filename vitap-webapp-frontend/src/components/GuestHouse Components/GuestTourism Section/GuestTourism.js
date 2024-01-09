@@ -3,7 +3,7 @@ import React from 'react'
 const GuestTourism = () => {
     return (
         <div className='max-w-[1560px] w-[100%] min-h-[2100px] h-[100%] bg-[#FCE3E5] flex justify-center items-center'>
-            <div className='max-w-[1340px] w-[100%] min-h-[2000px] h-[100%] flex flex-col gap-2 p-[50px] md:p-0'>
+            <div className='max-w-[1340px] w-[100%] min-h-[2000px] h-[100%] flex flex-col gap-2 px-[50px] md:px-[100px] py-[40px]'>
                 <h1 className='text-[46px] font-Emilio text-[#650010] font-bold'>Tourism</h1>
                 <div className='flex-1'>
                     <h1 className='text-[30px] font-Montserrat font-semibold pb-3 text-center text-[#650010]'>Sri Durga Malleswara Swamy varla Devasthanam</h1>
