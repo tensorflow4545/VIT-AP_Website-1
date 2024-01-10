@@ -1,5 +1,5 @@
 "use client";
-import React,{Component} from "react";
+import React, { Component } from "react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -17,85 +17,84 @@ import Link from "next/link";
 import styles from "../../styles/AllNews.module.css";
 
 const AllNews = () => {
-
-
   const [numactive, setNumactive] = useState(1);
   const leftClick = () => {
     { numactive === 1 ? setNumactive(roundedNumItems) : setNumactive(numactive - 1) }
-}
+  }
 
-const rightClick = () => {
+  const rightClick = () => {
     {
-        numactive === roundedNumItems ? setNumactive(1) : setNumactive(numactive + 1);
-    }}
-  const News=[
+      numactive === roundedNumItems ? setNumactive(1) : setNumactive(numactive + 1);
+    }
+  }
+  const News = [
     {
-      Date:"04 April",
-      Title:"V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
+      Date: "04 April",
+      Title: "V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
     },
     {
-      Date:"04 April",
-      Title:"V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
+      Date: "04 April",
+      Title: "V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
     },
     {
-      Date:"04 April",
-      Title:"V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
+      Date: "04 April",
+      Title: "V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
     },
     {
-      Date:"04 April",
-      Title:"V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
+      Date: "04 April",
+      Title: "V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
     },
     {
-      Date:"04 April",
-      Title:"V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
+      Date: "04 April",
+      Title: "V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
     },
     {
-      Date:"04 April",
-      Title:"V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
+      Date: "04 April",
+      Title: "V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
     },
     {
-      Date:"04 April",
-      Title:"V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
+      Date: "04 April",
+      Title: "V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
     },
     {
-      Date:"04 April",
-      Title:"V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
+      Date: "04 April",
+      Title: "V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
     },
     {
-      Date:"04 April",
-      Title:"V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
+      Date: "04 April",
+      Title: "V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
     },
     {
-      Date:"04 April",
-      Title:"V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
+      Date: "04 April",
+      Title: "V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
     },
     {
-      Date:"04 April",
-      Title:"V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
+      Date: "04 April",
+      Title: "V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
     },
     {
-      Date:"04 April",
-      Title:"V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
+      Date: "04 April",
+      Title: "V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
     },
     {
-      Date:"04 April",
-      Title:"V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
+      Date: "04 April",
+      Title: "V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
     },
     {
-      Date:"04 April",
-      Title:"V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
+      Date: "04 April",
+      Title: "V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
     },
     {
-      Date:"04 April",
-      Title:"V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
+      Date: "04 April",
+      Title: "V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
     },
     {
-      Date:"04 April",
-      Title:"V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
+      Date: "04 April",
+      Title: "V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV "
     }
   ];
   const numItems = News.length;
-  const roundedNumItems = Math.ceil(numItems/15);
+  const roundedNumItems = Math.ceil(numItems / 15);
   const numArray = Array.from({ length: roundedNumItems }, (_, index) => index + 1);
   const maxPagesToShow = 4;
   return (
@@ -150,71 +149,71 @@ const rightClick = () => {
           className={`${styles.newsdiv1}  mt-[440px] relative flex `}
         >
 
-         <div className='grid md:grid-cols-3 max-w-[1250px] md:mx-auto items-center justify-center grid-cols-3 gap-5 mx-[30px]'>
-         {News.slice((numactive - 1) * 9, numactive * 9).map((element) => {
-           return <div>
-           <Link href="/news/newsdetail">
-            <div
-              className={`${styles.div1} w-[384px] h-[428px] border border-black rounded bg-white hover:shadow-2xl cursor-pointer`}
-            >
-              <div className="w-[100%] h-[279px] overflow-hidden absolute p-[2px]">
-                <Image src={Allnews} alt="News Image" width={376} height={279} className={`${styles.newsimg} absolute rounded-[10px]`} />
-              </div>
-              <Image src={tr} className="absolute" />
-              <p className="font-Emilio text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
-                {element.Date}
-              </p>
-              <p
-                className={`${styles.divtext} font-Emilio text-[20px] mt-[300px] text-center text-[#600912] font-semibold`}
-              >
-                {element.Title}
-              </p>
-            </div>
-          </Link></div>
-          
-        })}
+          <div className='grid md:grid-cols-3 max-w-[1250px] md:mx-auto items-center justify-center grid-cols-3 gap-5 mx-[30px]'>
+            {News.slice((numactive - 1) * 9, numactive * 9).map((element) => {
+              return <div>
+                <Link href="/news/newsdetail">
+                  <div
+                    className={`${styles.div1} w-[384px] h-[428px] border border-black rounded bg-white hover:shadow-2xl cursor-pointer`}
+                  >
+                    <div className="w-[100%] h-[279px] overflow-hidden absolute p-[2px]">
+                      <Image src={Allnews} alt="News Image" width={376} height={279} className={`${styles.newsimg} absolute rounded-[10px]`} />
+                    </div>
+                    <Image src={tr} className="absolute" />
+                    <p className="font-Emilio text-bold absolute text-[#FDFEFF] text-[20px] w-[10px] text-center ml-[19px]">
+                      {element.Date}
+                    </p>
+                    <p
+                      className={`${styles.divtext} font-Emilio text-[20px] mt-[300px] text-center text-[#600912] font-semibold`}
+                    >
+                      {element.Title}
+                    </p>
+                  </div>
+                </Link></div>
+
+            })}
           </div>
         </div>
-        
-        
+
+
         <div
           className={`${styles.pinkbg} bg-[#E6CFCF] h-[200px] relative mt-[1850px] w-[100%] justify-center items-center`}
         >
           <div class="flex flex-row justify-center">
-          <div className="cursor-pointer" onClick={leftClick}>
-                    <AiOutlineArrowLeft size={30} />
-                </div>
-                
-                <div>
-                {numArray.length > maxPagesToShow && (
-                    <>
-                        {numArray.slice(numactive - 1, numactive + maxPagesToShow - 1).map((num) => (
-                            <div
-                                key={num}
-                                className={`w-[40px] h-[40px] p-[5px] rounded-lg ${numactive === num ? 'bg-black text-white' : 'bg-white text-black'
-                                    } flex justify-center items-center cursor-pointer`}
-                                onClick={() => setNumactive(num)}
-                            >
-                                {num}
-                            </div>
-                        ))}
-                        <div
-                            key="ellipsis"
-                            className={`w-[40px] h-[40px] p-[5px] rounded-lg bg-[#F9C6CB] text-black flex justify-center items-center`}
-                        >
-                            ......
-                        </div>
-                    </>
-                )}
-                </div>
-
-                <div className="cursor-pointer" onClick={rightClick}>
-                    <AiOutlineArrowRight size={30} />
-                </div>
-                </div>
+            <div className="cursor-pointer" onClick={leftClick}>
+              <AiOutlineArrowLeft size={30} />
             </div>
 
+            <div>
+              {numArray.length > maxPagesToShow && (
+                <>
+                  {numArray.slice(numactive - 1, numactive + maxPagesToShow - 1).map((num) => (
+                    <div
+                      key={num}
+                      className={`w-[40px] h-[40px] p-[5px] rounded-lg ${numactive === num ? 'bg-black text-white' : 'bg-white text-black'
+                        } flex justify-center items-center cursor-pointer`}
+                      onClick={() => setNumactive(num)}
+                    >
+                      {num}
+                    </div>
+                  ))}
+                  <div
+                    key="ellipsis"
+                    className={`w-[40px] h-[40px] p-[5px] rounded-lg bg-[#F9C6CB] text-black flex justify-center items-center`}
+                  >
+                    ......
+                  </div>
+                </>
+              )}
+            </div>
+
+            <div className="cursor-pointer" onClick={rightClick}>
+              <AiOutlineArrowRight size={30} />
+            </div>
+          </div>
         </div>
+
+      </div>
     </>
   );
 };
