@@ -1,8 +1,22 @@
-import React from "react";
+'use client'
+
+import React, { useState } from "react";
 import img from "../../../assets/images/testimonials/img2.png";
 import Image from "next/image";
 
 const Testimonials = () => {
+  const [numactive, setNumactive] = useState(1);
+
+  const leftClick = () => {
+    { numactive === 1 ? setNumactive(roundedNumItems) : setNumactive(numactive - 1) }
+  }
+
+  const rightClick = () => {
+    {
+      numactive === roundedNumItems ? setNumactive(1) : setNumactive(numactive + 1);
+    }
+  };
+
   const data = [
     {
       name: 'Srujan Cheemakurthi',
@@ -33,6 +47,9 @@ const Testimonials = () => {
       image: img,
     },
   ];
+
+  const numItems = data.length;
+  const roundedNumItems = Math.ceil(numItems / 3);
   return (
     <>
       <div className="flex flex-col items-center justify-center h-screen relative">
@@ -49,7 +66,7 @@ const Testimonials = () => {
             consectetur amet consectetur.
           </p>
           <div className="flex ml-[80px] justify-center items-center">
-            {data.slice(0,3).map((item, index) => (
+            {data.slice((numactive - 1) * 3, (numactive * 3)).map((item, index) => (
               <div key={index} className="w-[350px] h-[302px] bg-[#FDFEFF] mt-[55px] ml-[36px]">
                 <Image
                   src={item.image}
@@ -71,10 +88,10 @@ const Testimonials = () => {
             ))}
           </div>
           <div className="mt-[10px]">
-            <button className="border border-black w-[54px] h-[54px] text-[30px] text-[#5C0E14] hover:text-white hover:bg-primary">
+            <button className="border border-black w-[54px] h-[54px] text-[30px] text-[#5C0E14] hover:text-white hover:bg-primary" onClick={leftClick}>
               &lt;
             </button>
-            <button className="border border-black w-[54px] h-[54px] text-[30px] text-[#5C0E14] hover:text-white hover:bg-primary">
+            <button className="border border-black w-[54px] h-[54px] text-[30px] text-[#5C0E14] hover:text-white hover:bg-primary" onClick={rightClick}>
               &gt;
             </button>
           </div>

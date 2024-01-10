@@ -50,7 +50,7 @@ const EachFaculty = (params) => {
 
                 <div className='hidden lg:flex max-w-[1560px] w-[100%] min-h-[1000px] h-[100%] relative mb-[100px]'>
                     <div className='absolute w-[30%] h-[100%] bg-[#650010] overflow-visible '>
-                        <div className=' bg-white ml-[100px] mt-[60px] shadow-2xl max-w-[450px] w-[100%] h-[800px] z-10 flex flex-col'>
+                        <div className=' bg-white ml-[100px] mt-[60px] shadow-2xl max-w-[450px] w-[100%] h-[840px] z-10 flex flex-col'>
                             <div className='flex-1 p-[25px]'>
                                 <div className='flex justify-center items-center'>
                                     <Image src={`${process.env.NEXT_PUBLIC_API_URL}${Professor?.Photo.data[0]?.attributes.url}`} alt={Professor?.Photo.data[0]?.attributes.alternativeText || 'Alt Text'} width={150} height={120} className='w-[150px] h-[150px] shadow-xl' />
@@ -69,7 +69,7 @@ const EachFaculty = (params) => {
                                 </div>
                             </div>
 
-                            <div className='flex-1 bg-backgroundRed grid grid-rows-6 items-center text-center'>
+                            <div className='bg-backgroundRed grid grid-rows-6 items-center text-center'>
                                 <div className=' bg-deep-orange-200 py-[17px] cursor-pointer hover:bg-gradient-to-r hover:from-[#650010] hover:to-red-600 hover:text-white'>Education</div>
                                 <div className=' cursor-pointer py-[19px] hover:bg-gradient-to-r hover:from-[#650010] hover:to-red-600 hover:text-white'>Research</div>
                                 <div className=' bg-deep-orange-200 py-[17px] cursor-pointer hover:bg-gradient-to-r hover:from-[#650010] hover:to-red-600 hover:text-white'>Project</div>
