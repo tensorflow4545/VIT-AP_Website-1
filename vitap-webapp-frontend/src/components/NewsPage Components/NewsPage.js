@@ -20,61 +20,85 @@ const NewsPage2 = () => {
 
     return (
         <div className='w-full max-h-[2500px]'>
-            <div className='h-[220px] w-full bg-[#E6CFCF]'></div>
+            <div className='h-[85px] sm:h-[220px] w-full bg-[#E6CFCF]'></div>
             <div className='h-[160px] w-full bg-gradient-to-b from-[#E6CFCF] to-white'></div>
-            <div className='grid grid-cols-2 sm:grid-cols-3 px-[25px] md:px-[50px] lg:px-[100px] -mt-[220px] gap-[24px]'>
-                <div className="min-h-[425px] border border-black bg-white rounded-md">
+            <div className='grid grid-cols-2 sm:grid-cols-3 px-[25px] md:px-[50px] lg:px-[100px] -mt-[180px] sm:-mt-[220px] gap-[24px]'>
+                <div className="min-h-[230px] sm:min-h-[425px] border border-black bg-white rounded-md relative">
                     <div className=" w-full h-[70%] relative">
                         <Image src={"/newsSection.png"} fill />
                     </div>
-                    <div className='flex justify-center items-center w-full h-[30%] text-left p-[20px] text-[12px] md:text-[16px] lg:text-[20px] font-semibold text-[#650010]'>
+                    <Image src={"/newsPolygon.png"} height={103} width={150} className='absolute top-0 left-0 hidden sm:block' />
+                    <Image src={"/newsPolygon.png"} height={60} width={79} className='absolute top-0 left-0 block sm:hidden' />
+                    <p className='absolute top-4 font-Emilio text-[8px] sm:text-[18px] font-semibold text-white left-4 z-10'>04 <br /> April</p>
+                    <div className='flex justify-center items-center w-full h-[30%] text-left p-[3px] sm:p-[10px] lg:p-[20px] text-[10px] md:text-[16px] lg:text-[20px] font-semibold text-[#650010]'>
                         <p>V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV</p>
                     </div>
+
                 </div>
 
-                <div className="min-h-[425px] border border-black bg-white rounded-md">
+                <div className="min-h-[230px] sm:min-h-[425px] border border-black bg-white rounded-md relative">
                     <div className=" w-full h-[70%] relative">
                         <Image src={"/newsSection.png"} fill />
                     </div>
-                    <div className='flex justify-center items-center w-full h-[30%] text-left p-[20px] text-[12px] md:text-[16px] lg:text-[20px] font-semibold text-[#650010]'>
+                    <Image src={"/newsPolygon.png"} height={103} width={150} className='absolute top-0 left-0 hidden sm:block' />
+                    <Image src={"/newsPolygon.png"} height={60} width={79} className='absolute top-0 left-0 block sm:hidden' />
+                    <p className='absolute top-4 font-Emilio text-[8px] sm:text-[18px] font-semibold text-white left-4 z-10'>04 <br /> April</p>
+                    <div className='flex justify-center items-center w-full h-[30%] text-left p-[3px] sm:p-[10px] lg:p-[20px] text-[10px] md:text-[16px] lg:text-[20px] font-semibold text-[#650010]'>
                         <p>V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV</p>
                     </div>
+
                 </div>
 
-                <div className="min-h-[425px] border border-black bg-white rounded-md">
+                <div className="min-h-[230px] sm:min-h-[425px] border border-black bg-white rounded-md relative">
                     <div className=" w-full h-[70%] relative">
                         <Image src={"/newsSection.png"} fill />
                     </div>
-                    <div className='flex justify-center items-center w-full h-[30%] text-left p-[20px] text-[12px] md:text-[16px] lg:text-[20px] font-semibold text-[#650010]'>
+                    <Image src={"/newsPolygon.png"} height={103} width={150} className='absolute top-0 left-0 hidden sm:block' />
+                    <Image src={"/newsPolygon.png"} height={60} width={79} className='absolute top-0 left-0 block sm:hidden' />
+                    <p className='absolute top-4 font-Emilio text-[8px] sm:text-[18px] font-semibold text-white left-4 z-10'>04 <br /> April</p>
+                    <div className='flex justify-center items-center w-full h-[30%] text-left p-[3px] sm:p-[10px] lg:p-[20px] text-[10px] md:text-[16px] lg:text-[20px] font-semibold text-[#650010]'>
                         <p>V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV</p>
                     </div>
+
                 </div>
 
-                <div className="min-h-[425px] border border-black bg-white rounded-md">
+                <div className="min-h-[230px] sm:min-h-[425px] border border-black bg-white rounded-md relative">
                     <div className=" w-full h-[70%] relative">
                         <Image src={"/newsSection.png"} fill />
                     </div>
-                    <div className='flex justify-center items-center w-full h-[30%] text-left p-[20px] text-[12px] md:text-[16px] lg:text-[20px] font-semibold text-[#650010]'>
+                    <Image src={"/newsPolygon.png"} height={103} width={150} className='absolute top-0 left-0 hidden sm:block' />
+                    <Image src={"/newsPolygon.png"} height={60} width={79} className='absolute top-0 left-0 block sm:hidden' />
+                    <p className='absolute top-4 font-Emilio text-[8px] sm:text-[18px] font-semibold text-white left-4 z-10'>04 <br /> April</p>
+                    <div className='flex justify-center items-center w-full h-[30%] text-left p-[3px] sm:p-[10px] lg:p-[20px] text-[10px] md:text-[16px] lg:text-[20px] font-semibold text-[#650010]'>
                         <p>V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV</p>
                     </div>
+
                 </div>
 
-                <div className="min-h-[425px] border border-black bg-white rounded-md">
+                <div className="min-h-[230px] sm:min-h-[425px] border border-black bg-white rounded-md relative">
                     <div className=" w-full h-[70%] relative">
                         <Image src={"/newsSection.png"} fill />
                     </div>
-                    <div className='flex justify-center items-center w-full h-[30%] text-left p-[20px] text-[12px] md:text-[16px] lg:text-[20px] font-semibold text-[#650010]'>
+                    <Image src={"/newsPolygon.png"} height={103} width={150} className='absolute top-0 left-0 hidden sm:block' />
+                    <Image src={"/newsPolygon.png"} height={60} width={79} className='absolute top-0 left-0 block sm:hidden' />
+                    <p className='absolute top-4 font-Emilio text-[8px] sm:text-[18px] font-semibold text-white left-4 z-10'>04 <br /> April</p>
+                    <div className='flex justify-center items-center w-full h-[30%] text-left p-[3px] sm:p-[10px] lg:p-[20px] text-[10px] md:text-[16px] lg:text-[20px] font-semibold text-[#650010]'>
                         <p>V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV</p>
                     </div>
+
                 </div>
 
-                <div className="min-h-[425px] border border-black bg-white rounded-md">
+                <div className="min-h-[230px] sm:min-h-[425px] border border-black bg-white rounded-md relative">
                     <div className=" w-full h-[70%] relative">
                         <Image src={"/newsSection.png"} fill />
                     </div>
-                    <div className='flex justify-center items-center w-full h-[30%] text-left p-[20px] text-[12px] md:text-[16px] lg:text-[20px] font-semibold text-[#650010]'>
+                    <Image src={"/newsPolygon.png"} height={103} width={150} className='absolute top-0 left-0 hidden sm:block' />
+                    <Image src={"/newsPolygon.png"} height={60} width={79} className='absolute top-0 left-0 block sm:hidden' />
+                    <p className='absolute top-4 font-Emilio text-[8px] sm:text-[18px] font-semibold text-white left-4 z-10'>04 <br /> April</p>
+                    <div className='flex justify-center items-center w-full h-[30%] text-left p-[3px] sm:p-[10px] lg:p-[20px] text-[10px] md:text-[16px] lg:text-[20px] font-semibold text-[#650010]'>
                         <p>V - Launch pad ujs hfuLaunch padV Launch pad ujs hfuLaunch pad ujs hfuLaunch padV</p>
                     </div>
+
                 </div>
                 
             </div>
